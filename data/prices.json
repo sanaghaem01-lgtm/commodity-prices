@@ -1,0 +1,1219 @@
+{
+ "source": "FRED (Federal Reserve Bank of St. Louis) / IMF Primary Commodity Prices",
+ "start_date": "2020-01-01",
+ "commodities": [
+  {
+   "fred_id": "PCOFFOTMUSDM",
+   "name_fa": "قهوه عربیکا",
+   "name_en": "Coffee Arabica",
+   "color": "#2A78D6",
+   "unit_original": "U.S. Cents per Pound",
+   "series": [
+    {
+     "date": "2020-01-01",
+     "price_original": 142.9365217391304,
+     "usd_per_ton": 3151.18
+    },
+    {
+     "date": "2020-02-01",
+     "price_original": 135.5005,
+     "usd_per_ton": 2987.24
+    },
+    {
+     "date": "2020-03-01",
+     "price_original": 148.3272727272727,
+     "usd_per_ton": 3270.02
+    },
+    {
+     "date": "2020-04-01",
+     "price_original": 154.6304545454545,
+     "usd_per_ton": 3408.98
+    },
+    {
+     "date": "2020-05-01",
+     "price_original": 149.9161904761905,
+     "usd_per_ton": 3305.05
+    },
+    {
+     "date": "2020-06-01",
+     "price_original": 141.52,
+     "usd_per_ton": 3119.95
+    },
+    {
+     "date": "2020-07-01",
+     "price_original": 146.7808695652174,
+     "usd_per_ton": 3235.93
+    },
+    {
+     "date": "2020-08-01",
+     "price_original": 163.0714285714286,
+     "usd_per_ton": 3595.07
+    },
+    {
+     "date": "2020-09-01",
+     "price_original": 166.5645454545455,
+     "usd_per_ton": 3672.08
+    },
+    {
+     "date": "2020-10-01",
+     "price_original": 152.0568181818182,
+     "usd_per_ton": 3352.24
+    },
+    {
+     "date": "2020-11-01",
+     "price_original": 150.7261904761905,
+     "usd_per_ton": 3322.91
+    },
+    {
+     "date": "2020-12-01",
+     "price_original": 157.9526086956522,
+     "usd_per_ton": 3482.22
+    },
+    {
+     "date": "2021-01-01",
+     "price_original": 160.8195238095238,
+     "usd_per_ton": 3545.43
+    },
+    {
+     "date": "2021-02-01",
+     "price_original": 166.429,
+     "usd_per_ton": 3669.09
+    },
+    {
+     "date": "2021-03-01",
+     "price_original": 167.0508695652174,
+     "usd_per_ton": 3682.8
+    },
+    {
+     "date": "2021-04-01",
+     "price_original": 168.6486363636364,
+     "usd_per_ton": 3718.03
+    },
+    {
+     "date": "2021-05-01",
+     "price_original": 186.4628571428571,
+     "usd_per_ton": 4110.76
+    },
+    {
+     "date": "2021-06-01",
+     "price_original": 192.0645454545455,
+     "usd_per_ton": 4234.25
+    },
+    {
+     "date": "2021-07-01",
+     "price_original": 204.5009090909091,
+     "usd_per_ton": 4508.43
+    },
+    {
+     "date": "2021-08-01",
+     "price_original": 216.4345454545455,
+     "usd_per_ton": 4771.52
+    },
+    {
+     "date": "2021-09-01",
+     "price_original": 225.5368181818182,
+     "usd_per_ton": 4972.18
+    },
+    {
+     "date": "2021-10-01",
+     "price_original": 241.0733333333333,
+     "usd_per_ton": 5314.7
+    },
+    {
+     "date": "2021-11-01",
+     "price_original": 258.9781818181818,
+     "usd_per_ton": 5709.43
+    },
+    {
+     "date": "2021-12-01",
+     "price_original": 268.3291304347826,
+     "usd_per_ton": 5915.58
+    },
+    {
+     "date": "2022-01-01",
+     "price_original": 271.0814285714286,
+     "usd_per_ton": 5976.26
+    },
+    {
+     "date": "2022-02-01",
+     "price_original": 279.8335,
+     "usd_per_ton": 6169.21
+    },
+    {
+     "date": "2022-03-01",
+     "price_original": 258.9934782608696,
+     "usd_per_ton": 5709.77
+    },
+    {
+     "date": "2022-04-01",
+     "price_original": 265.397619047619,
+     "usd_per_ton": 5850.96
+    },
+    {
+     "date": "2022-05-01",
+     "price_original": 260.4495454545455,
+     "usd_per_ton": 5741.87
+    },
+    {
+     "date": "2022-06-01",
+     "price_original": 273.7636363636364,
+     "usd_per_ton": 6035.39
+    },
+    {
+     "date": "2022-07-01",
+     "price_original": 255.9066666666667,
+     "usd_per_ton": 5641.72
+    },
+    {
+     "date": "2022-08-01",
+     "price_original": 268.4834782608696,
+     "usd_per_ton": 5918.99
+    },
+    {
+     "date": "2022-09-01",
+     "price_original": 267.4922727272727,
+     "usd_per_ton": 5897.13
+    },
+    {
+     "date": "2022-10-01",
+     "price_original": 240.082380952381,
+     "usd_per_ton": 5292.86
+    },
+    {
+     "date": "2022-11-01",
+     "price_original": 213.7181818181818,
+     "usd_per_ton": 4711.63
+    },
+    {
+     "date": "2022-12-01",
+     "price_original": 210.3886363636364,
+     "usd_per_ton": 4638.23
+    },
+    {
+     "date": "2023-01-01",
+     "price_original": 206.76,
+     "usd_per_ton": 4558.23
+    },
+    {
+     "date": "2023-02-01",
+     "price_original": 229.506,
+     "usd_per_ton": 5059.69
+    },
+    {
+     "date": "2023-03-01",
+     "price_original": 222.6639130434783,
+     "usd_per_ton": 4908.85
+    },
+    {
+     "date": "2023-04-01",
+     "price_original": 229.9555,
+     "usd_per_ton": 5069.6
+    },
+    {
+     "date": "2023-05-01",
+     "price_original": 220.1213043478261,
+     "usd_per_ton": 4852.79
+    },
+    {
+     "date": "2023-06-01",
+     "price_original": 207.385,
+     "usd_per_ton": 4572.01
+    },
+    {
+     "date": "2023-07-01",
+     "price_original": 193.4942857142857,
+     "usd_per_ton": 4265.78
+    },
+    {
+     "date": "2023-08-01",
+     "price_original": 186.3469565217391,
+     "usd_per_ton": 4108.21
+    },
+    {
+     "date": "2023-09-01",
+     "price_original": 183.5890476190476,
+     "usd_per_ton": 4047.4
+    },
+    {
+     "date": "2023-10-01",
+     "price_original": 183.9513636363636,
+     "usd_per_ton": 4055.39
+    },
+    {
+     "date": "2023-11-01",
+     "price_original": 197.4331818181818,
+     "usd_per_ton": 4352.61
+    },
+    {
+     "date": "2023-12-01",
+     "price_original": 210.3104761904762,
+     "usd_per_ton": 4636.5
+    },
+    {
+     "date": "2024-01-01",
+     "price_original": 203.8791304347826,
+     "usd_per_ton": 4494.72
+    },
+    {
+     "date": "2024-02-01",
+     "price_original": 208.7833333333333,
+     "usd_per_ton": 4602.84
+    },
+    {
+     "date": "2024-03-01",
+     "price_original": 208.9133333333333,
+     "usd_per_ton": 4605.7
+    },
+    {
+     "date": "2024-04-01",
+     "price_original": 239.8663636363636,
+     "usd_per_ton": 5288.09
+    },
+    {
+     "date": "2024-05-01",
+     "price_original": 232.3426086956522,
+     "usd_per_ton": 5122.23
+    },
+    {
+     "date": "2024-06-01",
+     "price_original": 248.405,
+     "usd_per_ton": 5476.34
+    },
+    {
+     "date": "2024-07-01",
+     "price_original": 257.0986956521739,
+     "usd_per_ton": 5668.0
+    },
+    {
+     "date": "2024-08-01",
+     "price_original": 261.4377272727273,
+     "usd_per_ton": 5763.66
+    },
+    {
+     "date": "2024-09-01",
+     "price_original": 278.7604761904762,
+     "usd_per_ton": 6145.55
+    },
+    {
+     "date": "2024-10-01",
+     "price_original": 276.7773913043478,
+     "usd_per_ton": 6101.83
+    },
+    {
+     "date": "2024-11-01",
+     "price_original": 304.9528571428571,
+     "usd_per_ton": 6722.99
+    },
+    {
+     "date": "2024-12-01",
+     "price_original": 344.1186363636364,
+     "usd_per_ton": 7586.44
+    },
+    {
+     "date": "2025-01-01",
+     "price_original": 353.9334782608696,
+     "usd_per_ton": 7802.82
+    },
+    {
+     "date": "2025-02-01",
+     "price_original": 409.5165,
+     "usd_per_ton": 9028.2
+    },
+    {
+     "date": "2025-03-01",
+     "price_original": 404.2104761904762,
+     "usd_per_ton": 8911.22
+    },
+    {
+     "date": "2025-04-01",
+     "price_original": 392.9127272727273,
+     "usd_per_ton": 8662.15
+    },
+    {
+     "date": "2025-05-01",
+     "price_original": 397.5886363636364,
+     "usd_per_ton": 8765.24
+    },
+    {
+     "date": "2025-06-01",
+     "price_original": 363.162380952381,
+     "usd_per_ton": 8006.28
+    },
+    {
+     "date": "2025-07-01",
+     "price_original": 316.725652173913,
+     "usd_per_ton": 6982.53
+    },
+    {
+     "date": "2025-08-01",
+     "price_original": 365.6857142857143,
+     "usd_per_ton": 8061.91
+    },
+    {
+     "date": "2025-09-01",
+     "price_original": 399.5513636363636,
+     "usd_per_ton": 8808.51
+    },
+    {
+     "date": "2025-10-01",
+     "price_original": 403.7926086956522,
+     "usd_per_ton": 8902.01
+    },
+    {
+     "date": "2025-11-01",
+     "price_original": 409.679,
+     "usd_per_ton": 9031.78
+    },
+    {
+     "date": "2025-12-01",
+     "price_original": 380.4172727272727,
+     "usd_per_ton": 8386.68
+    },
+    {
+     "date": "2026-01-01",
+     "price_original": 363.9104545454545,
+     "usd_per_ton": 8022.77
+    },
+    {
+     "date": "2026-02-01",
+     "price_original": 321.3525,
+     "usd_per_ton": 7084.54
+    },
+    {
+     "date": "2026-03-01",
+     "price_original": 334.1118181818182,
+     "usd_per_ton": 7365.83
+    },
+    {
+     "date": "2026-04-01",
+     "price_original": 331.2227272727273,
+     "usd_per_ton": 7302.14
+    },
+    {
+     "date": "2026-05-01",
+     "price_original": 315.0595238095238,
+     "usd_per_ton": 6945.8
+    },
+    {
+     "date": "2026-06-01",
+     "price_original": 307.8263636363636,
+     "usd_per_ton": 6786.34
+    },
+    {
+     "date": "2026-07-01",
+     "price_original": 359.1622727272727,
+     "usd_per_ton": 7918.09
+    }
+   ]
+  },
+  {
+   "fred_id": "PCOFFROBUSDM",
+   "name_fa": "قهوه روبوستا",
+   "name_en": "Coffee Robusta",
+   "color": "#EB6834",
+   "unit_original": "U.S. Cents per Pound",
+   "series": [
+    {
+     "date": "2020-01-01",
+     "price_original": 70.58391304347826,
+     "usd_per_ton": 1556.09
+    },
+    {
+     "date": "2020-02-01",
+     "price_original": 68.0665,
+     "usd_per_ton": 1500.59
+    },
+    {
+     "date": "2020-03-01",
+     "price_original": 67.45681818181818,
+     "usd_per_ton": 1487.15
+    },
+    {
+     "date": "2020-04-01",
+     "price_original": 64.02272727272727,
+     "usd_per_ton": 1411.45
+    },
+    {
+     "date": "2020-05-01",
+     "price_original": 64.53714285714285,
+     "usd_per_ton": 1422.79
+    },
+    {
+     "date": "2020-06-01",
+     "price_original": 64.61681818181818,
+     "usd_per_ton": 1424.54
+    },
+    {
+     "date": "2020-07-01",
+     "price_original": 67.68652173913043,
+     "usd_per_ton": 1492.22
+    },
+    {
+     "date": "2020-08-01",
+     "price_original": 72.63857142857142,
+     "usd_per_ton": 1601.39
+    },
+    {
+     "date": "2020-09-01",
+     "price_original": 72.77318181818183,
+     "usd_per_ton": 1604.36
+    },
+    {
+     "date": "2020-10-01",
+     "price_original": 68.35772727272727,
+     "usd_per_ton": 1507.01
+    },
+    {
+     "date": "2020-11-01",
+     "price_original": 72.38238095238096,
+     "usd_per_ton": 1595.74
+    },
+    {
+     "date": "2020-12-01",
+     "price_original": 71.94608695652174,
+     "usd_per_ton": 1586.12
+    },
+    {
+     "date": "2021-01-01",
+     "price_original": 70.81380952380952,
+     "usd_per_ton": 1561.16
+    },
+    {
+     "date": "2021-02-01",
+     "price_original": 73.3715,
+     "usd_per_ton": 1617.55
+    },
+    {
+     "date": "2021-03-01",
+     "price_original": 73.8595652173913,
+     "usd_per_ton": 1628.31
+    },
+    {
+     "date": "2021-04-01",
+     "price_original": 74.465,
+     "usd_per_ton": 1641.66
+    },
+    {
+     "date": "2021-05-01",
+     "price_original": 79.68380952380951,
+     "usd_per_ton": 1756.71
+    },
+    {
+     "date": "2021-06-01",
+     "price_original": 84.92727272727274,
+     "usd_per_ton": 1872.31
+    },
+    {
+     "date": "2021-07-01",
+     "price_original": 94.08909090909091,
+     "usd_per_ton": 2074.29
+    },
+    {
+     "date": "2021-08-01",
+     "price_original": 94.88818181818182,
+     "usd_per_ton": 2091.9
+    },
+    {
+     "date": "2021-09-01",
+     "price_original": 104.5895454545455,
+     "usd_per_ton": 2305.78
+    },
+    {
+     "date": "2021-10-01",
+     "price_original": 105.3047619047619,
+     "usd_per_ton": 2321.55
+    },
+    {
+     "date": "2021-11-01",
+     "price_original": 109.4345454545455,
+     "usd_per_ton": 2412.59
+    },
+    {
+     "date": "2021-12-01",
+     "price_original": 112.4647826086957,
+     "usd_per_ton": 2479.4
+    },
+    {
+     "date": "2022-01-01",
+     "price_original": 109.712380952381,
+     "usd_per_ton": 2418.72
+    },
+    {
+     "date": "2022-02-01",
+     "price_original": 109.4265,
+     "usd_per_ton": 2412.42
+    },
+    {
+     "date": "2022-03-01",
+     "price_original": 103.9247826086957,
+     "usd_per_ton": 2291.13
+    },
+    {
+     "date": "2022-04-01",
+     "price_original": 103.96,
+     "usd_per_ton": 2291.9
+    },
+    {
+     "date": "2022-05-01",
+     "price_original": 103.155,
+     "usd_per_ton": 2274.16
+    },
+    {
+     "date": "2022-06-01",
+     "price_original": 103.8454545454545,
+     "usd_per_ton": 2289.38
+    },
+    {
+     "date": "2022-07-01",
+     "price_original": 100.4442857142857,
+     "usd_per_ton": 2214.39
+    },
+    {
+     "date": "2022-08-01",
+     "price_original": 109.6891304347826,
+     "usd_per_ton": 2418.21
+    },
+    {
+     "date": "2022-09-01",
+     "price_original": 111.3581818181818,
+     "usd_per_ton": 2455.0
+    },
+    {
+     "date": "2022-10-01",
+     "price_original": 103.0119047619048,
+     "usd_per_ton": 2271.0
+    },
+    {
+     "date": "2022-11-01",
+     "price_original": 92.595,
+     "usd_per_ton": 2041.35
+    },
+    {
+     "date": "2022-12-01",
+     "price_original": 92.435,
+     "usd_per_ton": 2037.82
+    },
+    {
+     "date": "2023-01-01",
+     "price_original": 95.97909090909091,
+     "usd_per_ton": 2115.96
+    },
+    {
+     "date": "2023-02-01",
+     "price_original": 103.963,
+     "usd_per_ton": 2291.97
+    },
+    {
+     "date": "2023-03-01",
+     "price_original": 106.4873913043478,
+     "usd_per_ton": 2347.62
+    },
+    {
+     "date": "2023-04-01",
+     "price_original": 115.5835,
+     "usd_per_ton": 2548.15
+    },
+    {
+     "date": "2023-05-01",
+     "price_original": 122.5521739130435,
+     "usd_per_ton": 2701.79
+    },
+    {
+     "date": "2023-06-01",
+     "price_original": 132.1254545454545,
+     "usd_per_ton": 2912.84
+    },
+    {
+     "date": "2023-07-01",
+     "price_original": 127.5833333333333,
+     "usd_per_ton": 2812.7
+    },
+    {
+     "date": "2023-08-01",
+     "price_original": 124.3565217391304,
+     "usd_per_ton": 2741.56
+    },
+    {
+     "date": "2023-09-01",
+     "price_original": 123.8914285714286,
+     "usd_per_ton": 2731.31
+    },
+    {
+     "date": "2023-10-01",
+     "price_original": 118.835,
+     "usd_per_ton": 2619.84
+    },
+    {
+     "date": "2023-11-01",
+     "price_original": 122.7759090909091,
+     "usd_per_ton": 2706.72
+    },
+    {
+     "date": "2023-12-01",
+     "price_original": 135.3919047619048,
+     "usd_per_ton": 2984.85
+    },
+    {
+     "date": "2024-01-01",
+     "price_original": 148.1252173913043,
+     "usd_per_ton": 3265.57
+    },
+    {
+     "date": "2024-02-01",
+     "price_original": 153.227619047619,
+     "usd_per_ton": 3378.06
+    },
+    {
+     "date": "2024-03-01",
+     "price_original": 165.8395238095238,
+     "usd_per_ton": 3656.1
+    },
+    {
+     "date": "2024-04-01",
+     "price_original": 193.675,
+     "usd_per_ton": 4269.76
+    },
+    {
+     "date": "2024-05-01",
+     "price_original": 186.4573913043478,
+     "usd_per_ton": 4110.64
+    },
+    {
+     "date": "2024-06-01",
+     "price_original": 204.327,
+     "usd_per_ton": 4504.59
+    },
+    {
+     "date": "2024-07-01",
+     "price_original": 214.5413043478261,
+     "usd_per_ton": 4729.78
+    },
+    {
+     "date": "2024-08-01",
+     "price_original": 214.6954545454545,
+     "usd_per_ton": 4733.18
+    },
+    {
+     "date": "2024-09-01",
+     "price_original": 242.4619047619048,
+     "usd_per_ton": 5345.32
+    },
+    {
+     "date": "2024-10-01",
+     "price_original": 221.895652173913,
+     "usd_per_ton": 4891.91
+    },
+    {
+     "date": "2024-11-01",
+     "price_original": 226.13,
+     "usd_per_ton": 4985.26
+    },
+    {
+     "date": "2024-12-01",
+     "price_original": 237.6218181818182,
+     "usd_per_ton": 5238.61
+    },
+    {
+     "date": "2025-01-01",
+     "price_original": 244.9391304347826,
+     "usd_per_ton": 5399.93
+    },
+    {
+     "date": "2025-02-01",
+     "price_original": 263.045,
+     "usd_per_ton": 5799.09
+    },
+    {
+     "date": "2025-03-01",
+     "price_original": 257.6842857142857,
+     "usd_per_ton": 5680.91
+    },
+    {
+     "date": "2025-04-01",
+     "price_original": 246.5490909090909,
+     "usd_per_ton": 5435.42
+    },
+    {
+     "date": "2025-05-01",
+     "price_original": 237.3031818181818,
+     "usd_per_ton": 5231.59
+    },
+    {
+     "date": "2025-06-01",
+     "price_original": 196.2138095238095,
+     "usd_per_ton": 4325.73
+    },
+    {
+     "date": "2025-07-01",
+     "price_original": 167.1678260869565,
+     "usd_per_ton": 3685.38
+    },
+    {
+     "date": "2025-08-01",
+     "price_original": 198.8609523809524,
+     "usd_per_ton": 4384.09
+    },
+    {
+     "date": "2025-09-01",
+     "price_original": 210.8413636363636,
+     "usd_per_ton": 4648.21
+    },
+    {
+     "date": "2025-10-01",
+     "price_original": 215.06,
+     "usd_per_ton": 4741.21
+    },
+    {
+     "date": "2025-11-01",
+     "price_original": 214.826,
+     "usd_per_ton": 4736.05
+    },
+    {
+     "date": "2025-12-01",
+     "price_original": 190.2381818181818,
+     "usd_per_ton": 4193.99
+    },
+    {
+     "date": "2026-01-01",
+     "price_original": 192.2890909090909,
+     "usd_per_ton": 4239.21
+    },
+    {
+     "date": "2026-02-01",
+     "price_original": 179.5945,
+     "usd_per_ton": 3959.34
+    },
+    {
+     "date": "2026-03-01",
+     "price_original": 176.7640909090909,
+     "usd_per_ton": 3896.94
+    },
+    {
+     "date": "2026-04-01",
+     "price_original": 164.645,
+     "usd_per_ton": 3629.76
+    },
+    {
+     "date": "2026-05-01",
+     "price_original": 166.512380952381,
+     "usd_per_ton": 3670.93
+    },
+    {
+     "date": "2026-06-01",
+     "price_original": 169.3904545454545,
+     "usd_per_ton": 3734.38
+    },
+    {
+     "date": "2026-07-01",
+     "price_original": 185.2304545454545,
+     "usd_per_ton": 4083.59
+    }
+   ]
+  },
+  {
+   "fred_id": "PCOCOUSDM",
+   "name_fa": "کاکائو",
+   "name_en": "Cocoa",
+   "color": "#1BAF7A",
+   "unit_original": "U.S. Dollars per Metric Ton",
+   "series": [
+    {
+     "date": "2020-01-01",
+     "price_original": 2603.075561212662,
+     "usd_per_ton": 2603.08
+    },
+    {
+     "date": "2020-02-01",
+     "price_original": 2716.214397777276,
+     "usd_per_ton": 2716.21
+    },
+    {
+     "date": "2020-03-01",
+     "price_original": 2338.470536222704,
+     "usd_per_ton": 2338.47
+    },
+    {
+     "date": "2020-04-01",
+     "price_original": 2270.238696846814,
+     "usd_per_ton": 2270.24
+    },
+    {
+     "date": "2020-05-01",
+     "price_original": 2317.453931564956,
+     "usd_per_ton": 2317.45
+    },
+    {
+     "date": "2020-06-01",
+     "price_original": 2228.617635584422,
+     "usd_per_ton": 2228.62
+    },
+    {
+     "date": "2020-07-01",
+     "price_original": 2102.07713180143,
+     "usd_per_ton": 2102.08
+    },
+    {
+     "date": "2020-08-01",
+     "price_original": 2348.676309262007,
+     "usd_per_ton": 2348.68
+    },
+    {
+     "date": "2020-09-01",
+     "price_original": 2457.611923658554,
+     "usd_per_ton": 2457.61
+    },
+    {
+     "date": "2020-10-01",
+     "price_original": 2292.054175567769,
+     "usd_per_ton": 2292.05
+    },
+    {
+     "date": "2020-11-01",
+     "price_original": 2359.243716161572,
+     "usd_per_ton": 2359.24
+    },
+    {
+     "date": "2020-12-01",
+     "price_original": 2405.76492397114,
+     "usd_per_ton": 2405.76
+    },
+    {
+     "date": "2021-01-01",
+     "price_original": 2392.973563420423,
+     "usd_per_ton": 2392.97
+    },
+    {
+     "date": "2021-02-01",
+     "price_original": 2383.028506656238,
+     "usd_per_ton": 2383.03
+    },
+    {
+     "date": "2021-03-01",
+     "price_original": 2471.204322165759,
+     "usd_per_ton": 2471.2
+    },
+    {
+     "date": "2021-04-01",
+     "price_original": 2366.486057293951,
+     "usd_per_ton": 2366.49
+    },
+    {
+     "date": "2021-05-01",
+     "price_original": 2409.357431265938,
+     "usd_per_ton": 2409.36
+    },
+    {
+     "date": "2021-06-01",
+     "price_original": 2366.29376388017,
+     "usd_per_ton": 2366.29
+    },
+    {
+     "date": "2021-07-01",
+     "price_original": 2328.27955315558,
+     "usd_per_ton": 2328.28
+    },
+    {
+     "date": "2021-08-01",
+     "price_original": 2477.500361669303,
+     "usd_per_ton": 2477.5
+    },
+    {
+     "date": "2021-09-01",
+     "price_original": 2552.76442186016,
+     "usd_per_ton": 2552.76
+    },
+    {
+     "date": "2021-10-01",
+     "price_original": 2573.725247930012,
+     "usd_per_ton": 2573.73
+    },
+    {
+     "date": "2021-11-01",
+     "price_original": 2405.874465485019,
+     "usd_per_ton": 2405.87
+    },
+    {
+     "date": "2021-12-01",
+     "price_original": 2378.73085848743,
+     "usd_per_ton": 2378.73
+    },
+    {
+     "date": "2022-01-01",
+     "price_original": 2467.356862582399,
+     "usd_per_ton": 2467.36
+    },
+    {
+     "date": "2022-02-01",
+     "price_original": 2551.326883584084,
+     "usd_per_ton": 2551.33
+    },
+    {
+     "date": "2022-03-01",
+     "price_original": 2459.398319640722,
+     "usd_per_ton": 2459.4
+    },
+    {
+     "date": "2022-04-01",
+     "price_original": 2457.384107289146,
+     "usd_per_ton": 2457.38
+    },
+    {
+     "date": "2022-05-01",
+     "price_original": 2363.871129036004,
+     "usd_per_ton": 2363.87
+    },
+    {
+     "date": "2022-06-01",
+     "price_original": 2323.116687244048,
+     "usd_per_ton": 2323.12
+    },
+    {
+     "date": "2022-07-01",
+     "price_original": 2239.402286127753,
+     "usd_per_ton": 2239.4
+    },
+    {
+     "date": "2022-08-01",
+     "price_original": 2270.102773614096,
+     "usd_per_ton": 2270.1
+    },
+    {
+     "date": "2022-09-01",
+     "price_original": 2220.214244629552,
+     "usd_per_ton": 2220.21
+    },
+    {
+     "date": "2022-10-01",
+     "price_original": 2243.631098250515,
+     "usd_per_ton": 2243.63
+    },
+    {
+     "date": "2022-11-01",
+     "price_original": 2380.803070269115,
+     "usd_per_ton": 2380.8
+    },
+    {
+     "date": "2022-12-01",
+     "price_original": 2456.226953758389,
+     "usd_per_ton": 2456.23
+    },
+    {
+     "date": "2023-01-01",
+     "price_original": 2540.076523955292,
+     "usd_per_ton": 2540.08
+    },
+    {
+     "date": "2023-02-01",
+     "price_original": 2586.526817028014,
+     "usd_per_ton": 2586.53
+    },
+    {
+     "date": "2023-03-01",
+     "price_original": 2665.791316276091,
+     "usd_per_ton": 2665.79
+    },
+    {
+     "date": "2023-04-01",
+     "price_original": 2823.273984567432,
+     "usd_per_ton": 2823.27
+    },
+    {
+     "date": "2023-05-01",
+     "price_original": 2905.341733304136,
+     "usd_per_ton": 2905.34
+    },
+    {
+     "date": "2023-06-01",
+     "price_original": 3124.43913501557,
+     "usd_per_ton": 3124.44
+    },
+    {
+     "date": "2023-07-01",
+     "price_original": 3346.634548507881,
+     "usd_per_ton": 3346.63
+    },
+    {
+     "date": "2023-08-01",
+     "price_original": 3434.406596186068,
+     "usd_per_ton": 3434.41
+    },
+    {
+     "date": "2023-09-01",
+     "price_original": 3629.166883389024,
+     "usd_per_ton": 3629.17
+    },
+    {
+     "date": "2023-10-01",
+     "price_original": 3691.614716182179,
+     "usd_per_ton": 3691.61
+    },
+    {
+     "date": "2023-11-01",
+     "price_original": 4095.356207101358,
+     "usd_per_ton": 4095.36
+    },
+    {
+     "date": "2023-12-01",
+     "price_original": 4253.904329112389,
+     "usd_per_ton": 4253.9
+    },
+    {
+     "date": "2024-01-01",
+     "price_original": 4442.919775442222,
+     "usd_per_ton": 4442.92
+    },
+    {
+     "date": "2024-02-01",
+     "price_original": 5640.087618677671,
+     "usd_per_ton": 5640.09
+    },
+    {
+     "date": "2024-03-01",
+     "price_original": 7297.553884071729,
+     "usd_per_ton": 7297.55
+    },
+    {
+     "date": "2024-04-01",
+     "price_original": 9865.206034438286,
+     "usd_per_ton": 9865.21
+    },
+    {
+     "date": "2024-05-01",
+     "price_original": 7768.098379830387,
+     "usd_per_ton": 7768.1
+    },
+    {
+     "date": "2024-06-01",
+     "price_original": 8380.12660951907,
+     "usd_per_ton": 8380.13
+    },
+    {
+     "date": "2024-07-01",
+     "price_original": 7164.628035294687,
+     "usd_per_ton": 7164.63
+    },
+    {
+     "date": "2024-08-01",
+     "price_original": 6791.953817048214,
+     "usd_per_ton": 6791.95
+    },
+    {
+     "date": "2024-09-01",
+     "price_original": 6421.825658655629,
+     "usd_per_ton": 6421.83
+    },
+    {
+     "date": "2024-10-01",
+     "price_original": 6582.858019361083,
+     "usd_per_ton": 6582.86
+    },
+    {
+     "date": "2024-11-01",
+     "price_original": 7919.328269586367,
+     "usd_per_ton": 7919.33
+    },
+    {
+     "date": "2024-12-01",
+     "price_original": 10412.18571198528,
+     "usd_per_ton": 10412.19
+    },
+    {
+     "date": "2025-01-01",
+     "price_original": 10710.34548327711,
+     "usd_per_ton": 10710.35
+    },
+    {
+     "date": "2025-02-01",
+     "price_original": 9792.664209159075,
+     "usd_per_ton": 9792.66
+    },
+    {
+     "date": "2025-03-01",
+     "price_original": 8079.556127661486,
+     "usd_per_ton": 8079.56
+    },
+    {
+     "date": "2025-04-01",
+     "price_original": 8132.218491705632,
+     "usd_per_ton": 8132.22
+    },
+    {
+     "date": "2025-05-01",
+     "price_original": 9000.787338851027,
+     "usd_per_ton": 9000.79
+    },
+    {
+     "date": "2025-06-01",
+     "price_original": 8401.952731292095,
+     "usd_per_ton": 8401.95
+    },
+    {
+     "date": "2025-07-01",
+     "price_original": 7371.890765758022,
+     "usd_per_ton": 7371.89
+    },
+    {
+     "date": "2025-08-01",
+     "price_original": 7604.123627133267,
+     "usd_per_ton": 7604.12
+    },
+    {
+     "date": "2025-09-01",
+     "price_original": 7006.525855528091,
+     "usd_per_ton": 7006.53
+    },
+    {
+     "date": "2025-10-01",
+     "price_original": 5953.5678143082,
+     "usd_per_ton": 5953.57
+    },
+    {
+     "date": "2025-11-01",
+     "price_original": 5590.70810325549,
+     "usd_per_ton": 5590.71
+    },
+    {
+     "date": "2025-12-01",
+     "price_original": 5814.856918567877,
+     "usd_per_ton": 5814.86
+    },
+    {
+     "date": "2026-01-01",
+     "price_original": 5018.131520727123,
+     "usd_per_ton": 5018.13
+    },
+    {
+     "date": "2026-02-01",
+     "price_original": 3587.185951183889,
+     "usd_per_ton": 3587.19
+    },
+    {
+     "date": "2026-03-01",
+     "price_original": 3241.488951294424,
+     "usd_per_ton": 3241.49
+    },
+    {
+     "date": "2026-04-01",
+     "price_original": 3392.143554226435,
+     "usd_per_ton": 3392.14
+    },
+    {
+     "date": "2026-05-01",
+     "price_original": 4142.973092507544,
+     "usd_per_ton": 4142.97
+    },
+    {
+     "date": "2026-06-01",
+     "price_original": 4395.458431945616,
+     "usd_per_ton": 4395.46
+    },
+    {
+     "date": "2026-07-01",
+     "price_original": 5619.189873586655,
+     "usd_per_ton": 5619.19
+    }
+   ]
+  }
+ ],
+ "last_updated": "2026-10-06T12:47:48Z"
+}

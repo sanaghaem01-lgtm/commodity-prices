@@ -1,0 +1,44 @@
+# به‌روزرسانی هفتگی قیمت‌ها از FRED
+# اجرای خودکار: هر دوشنبه ساعت ۶ صبح UTC  |  اجرای دستی: تب Actions ← Run workflow
+name: Update prices
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-prices
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+
+      - name: Run tests
+        run: python -m unittest -v
+
+      - name: Fetch prices from FRED
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+        run: python -m scripts.fetch_prices
+
+      - name: Commit if data changed
+        run: |
+          if [ -z "$(git status --porcelain -- data/)" ]; then
+            echo "Data unchanged; nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git commit -m "Update commodity prices"
+          git push

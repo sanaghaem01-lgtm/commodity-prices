@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>دیدبان قیمت کالا</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root {
+    color-scheme: light;
+    --page: #f9f9f7;
+    --surface: #fcfcfb;
+    --ink: #0b0b0b;
+    --ink-2: #52514e;
+    --muted: #898781;
+    --grid: #e1e0d9;
+    --axis: #c3c2b7;
+    --border: rgba(11, 11, 11, 0.10);
+    --note-bg: #fff8e6;
+    --note-border: #f0d999;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--page);
+    color: var(--ink);
+    font-family: "Vazirmatn", system-ui, sans-serif;
+    line-height: 1.7;
+  }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 24px 16px 48px; }
+  h1 { font-size: 1.6rem; margin: 0 0 4px; }
+  h2 { font-size: 1.15rem; margin: 0 0 12px; }
+  .meta { color: var(--ink-2); font-size: 0.9rem; }
+  .num { unicode-bidi: isolate; direction: ltr; font-variant-numeric: tabular-nums; }
+  .note {
+    background: var(--note-bg); border: 1px solid var(--note-border);
+    border-radius: 10px; padding: 10px 14px; margin: 16px 0 24px; font-size: 0.92rem;
+  }
+  .panel {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 12px; padding: 16px; margin-bottom: 20px;
+  }
+
+  /* کارت‌ها */
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-bottom: 20px; }
+  .card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    padding: 16px; cursor: pointer; text-align: start; font: inherit; color: inherit;
+  }
+  .card:hover, .card:focus-visible { border-color: var(--axis); outline: none; }
+  .card[aria-pressed="true"] { box-shadow: 0 0 0 2px var(--ink-2) inset; }
+  .card-title { display: flex; align-items: center; gap: 8px; font-weight: 700; }
+  .swatch { width: 12px; height: 12px; border-radius: 3px; flex: none; }
+  .hero { font-size: 2rem; font-weight: 700; margin: 6px 0 0; line-height: 1.2; }
+  .hero small { font-size: 0.85rem; font-weight: 400; color: var(--ink-2); }
+  .sub { color: var(--ink-2); font-size: 0.85rem; margin-bottom: 10px; }
+  .rows { display: grid; grid-template-columns: auto 1fr; gap: 2px 12px; font-size: 0.9rem; }
+  .rows dt { color: var(--ink-2); }
+  .rows dd { margin: 0; text-align: left; }
+
+  /* کنترل‌ها */
+  .controls { display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: center; margin-bottom: 12px; }
+  .seg { display: inline-flex; flex-wrap: wrap; gap: 4px; background: var(--page); border: 1px solid var(--border); border-radius: 8px; padding: 3px; }
+  .seg button {
+    font: inherit; font-size: 0.88rem; border: 0; background: transparent; color: var(--ink-2);
+    padding: 4px 12px; border-radius: 6px; cursor: pointer;
+  }
+  .seg button[aria-pressed="true"] { background: var(--surface); color: var(--ink); font-weight: 700; box-shadow: 0 0 0 1px var(--border); }
+  .legend { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 0.88rem; color: var(--ink-2); margin-bottom: 8px; }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .legend i { width: 14px; height: 3px; border-radius: 2px; display: inline-block; }
+  .chart-box { position: relative; height: 380px; }
+
+  /* تحلیل */
+  .analysis p { margin: 0 0 10px; }
+  .analysis .foot { color: var(--ink-2); font-size: 0.88rem; margin-top: 12px; }
+
+  /* جدول */
+  details summary { cursor: pointer; font-weight: 700; }
+  .table-scroll { overflow-x: auto; margin-top: 12px; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.88rem; }
+  th, td { padding: 6px 10px; border-bottom: 1px solid var(--grid); text-align: left; white-space: nowrap; }
+  th:first-child, td:first-child { text-align: right; }
+  th { color: var(--ink-2); font-weight: 500; }
+
+  footer { color: var(--ink-2); font-size: 0.85rem; margin-top: 28px; }
+  footer a { color: inherit; }
+  .error { color: #d03b3b; font-weight: 700; }
+
+  @media (max-width: 600px) {
+    h1 { font-size: 1.3rem; }
+    .chart-box { height: 300px; }
+    .hero { font-size: 1.7rem; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>دیدبان قیمت جهانی کالا</h1>
+    <div class="meta" id="meta">در حال بارگذاری…</div>
+  </header>
+
+  <div class="note">
+    قیمت مرجع جهانی است و با قیمت فیزیکی تأمین‌کننده (بسته به مبدأ، گرید و شرط تحویل) فرق دارد؛
+    این صفحه پیش‌بینی یا توصیه‌ی خرید نیست.
+  </div>
+
+  <section class="cards" id="cards" aria-label="خلاصه‌ی قیمت کالاها"></section>
+
+  <section class="panel">
+    <h2>روند قیمت (دلار بر تن)</h2>
+    <div class="controls">
+      <div class="seg" id="pick-commodity" role="group" aria-label="انتخاب کالا"></div>
+      <div class="seg" id="pick-range" role="group" aria-label="بازه‌ی زمانی">
+        <button data-range="12">1 سال</button>
+        <button data-range="24" aria-pressed="true">2 سال</button>
+        <button data-range="all">از 2020</button>
+      </div>
+    </div>
+    <div class="legend" id="legend"></div>
+    <div class="chart-box"><canvas id="chart" aria-label="نمودار روند قیمت" role="img"></canvas></div>
+  </section>
+
+  <section class="panel analysis">
+    <h2>خلاصه‌ی وضعیت</h2>
+    <div id="analysis"></div>
+    <p class="foot">
+      این متن به‌طور خودکار از روی همین داده‌ها نوشته می‌شود و فقط وضعیت گذشته را توصیف می‌کند؛
+      پیش‌بینی یا توصیه‌ی خرید نیست.
+    </p>
+  </section>
+
+  <section class="panel">
+    <details>
+      <summary>جدول داده‌ها</summary>
+      <div class="table-scroll" id="table"></div>
+    </details>
+  </section>
+
+  <footer>
+    منبع: <a href="https://fred.stlouisfed.org/" target="_blank" rel="noopener">FRED</a>
+    (بانک فدرال رزرو سنت‌لوئیس) — قیمت‌های ماهانه‌ی کالای IMF.
+    قیمت‌های سنت بر پوند با ضریب 22.046 به دلار بر تن تبدیل شده‌اند.
+    داده‌ی IMF معمولاً با 1 تا 2 ماه تأخیر منتشر می‌شود.
+    · <a href="data/prices.csv">دانلود CSV</a>
+  </footer>
+</div>
+
+<script>
+const MONTHS_FA = ["ژانویه", "فوریه", "مارس", "آوریل", "مه", "ژوئن", "ژوئیه", "اوت", "سپتامبر", "اکتبر", "نوامبر", "دسامبر"];
+const UNITS_FA = {
+  "u.s. cents per pound": "سنت بر پوند",
+  "u.s. dollars per metric ton": "دلار بر تن",
+  "u.s. dollars per pound": "دلار بر پوند",
+  "u.s. dollars per kilogram": "دلار بر کیلوگرم",
+};
+
+const state = { data: null, commodity: null, range: "24", chart: null };
+
+// ---------- کمکی‌ها ----------
+const num = (s) => `<span class="num">${s}</span>`;
+const fmtPrice = (v) => v.toLocaleString("en-US", { maximumFractionDigits: 0 });
+const fmtPct = (p) => (p > 0 ? "+" : p < 0 ? "−" : "") + Math.abs(p).toFixed(1) + "%";
+const monthLabel = (d) => `${MONTHS_FA[+d.slice(5, 7) - 1]} ${d.slice(0, 4)}`;
+const unitFa = (u) => UNITS_FA[u.trim().toLowerCase()] || u;
+const esc = (s) => String(s).replace(/[&<>"]/g, (ch) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch]));
+
+function shiftMonth(d, n) {
+  const dt = new Date(Date.UTC(+d.slice(0, 4), +d.slice(5, 7) - 1 + n, 1));
+  return dt.toISOString().slice(0, 10);
+}
+
+// آمار هر کالا؛ مقایسه‌ها بر اساس تاریخ است، نه جایگاه در آرایه
+function stats(c) {
+  const s = c.series;
+  const byDate = Object.fromEntries(s.map((r) => [r.date, r.usd_per_ton]));
+  const last = s[s.length - 1];
+  const pct = (prev) => (prev ? ((last.usd_per_ton - prev) / prev) * 100 : null);
+  const prevMonth = byDate[shiftMonth(last.date, -1)];
+  const prevYear = byDate[shiftMonth(last.date, -12)];
+  const win = s.filter((r) => r.date > shiftMonth(last.date, -24));
+  const min = win.reduce((a, b) => (b.usd_per_ton < a.usd_per_ton ? b : a));
+  const max = win.reduce((a, b) => (b.usd_per_ton > a.usd_per_ton ? b : a));
+  // چند ماه پیاپی در یک جهت حرکت کرده؟
+  let streak = 0, dir = 0;
+  for (let i = s.length - 1; i > 0; i--) {
+    const d = Math.sign(s[i].usd_per_ton - s[i - 1].usd_per_ton);
+    if (d === 0 || (dir && d !== dir) || s[i - 1].date !== shiftMonth(s[i].date, -1)) break;
+    dir = d; streak++;
+  }
+  return { last, mom: pct(prevMonth), yoy: pct(prevYear), min, max, streak, dir };
+}
+
+// ---------- کارت‌ها ----------
+function renderCards() {
+  const el = document.getElementById("cards");
+  el.innerHTML = state.data.commodities.map((c) => {
+    const st = stats(c);
+    const delta = (p) => (p == null ? "—" : `${p > 0 ? "▲" : p < 0 ? "▼" : "■"} ${num(fmtPct(p))}`);
+    return `
+      <button class="card" data-id="${esc(c.fred_id)}" aria-pressed="${state.commodity === c.fred_id}">
+        <div class="card-title"><span class="swatch" style="background:${esc(c.color)}"></span>${esc(c.name_fa)}</div>
+        <div class="hero">${num(fmtPrice(st.last.usd_per_ton))} <small>دلار بر تن</small></div>
+        <div class="sub">${monthLabel(st.last.date)} · ${num(st.last.price_original.toLocaleString("en-US", { maximumFractionDigits: 2 }))} ${esc(unitFa(c.unit_original))}</div>
+        <dl class="rows">
+          <dt>نسبت به ماه قبل</dt><dd>${delta(st.mom)}</dd>
+          <dt>نسبت به سال قبل</dt><dd>${delta(st.yoy)}</dd>
+          <dt>کمترین 2 سال اخیر</dt><dd>${num(fmtPrice(st.min.usd_per_ton))} <span class="meta">(${monthLabel(st.min.date)})</span></dd>
+          <dt>بیشترین 2 سال اخیر</dt><dd>${num(fmtPrice(st.max.usd_per_ton))} <span class="meta">(${monthLabel(st.max.date)})</span></dd>
+        </dl>
+      </button>`;
+  }).join("");
+  el.querySelectorAll(".card").forEach((b) => b.addEventListener("click", () => select(b.dataset.id)));
+}
+
+// ---------- تحلیل متنی (فقط توصیفی) ----------
+function renderAnalysis() {
+  const items = state.data.commodities.map((c) => ({ c, st: stats(c) }));
+  const parts = items.map(({ c, st }) => {
+    const p = st.last.usd_per_ton;
+    let t = `<b>${esc(c.name_fa)}:</b> در ${monthLabel(st.last.date)} به ${num(fmtPrice(p))} دلار بر تن رسید`;
+    const cmp = [];
+    if (st.mom != null) cmp.push(st.mom === 0 ? "بدون تغییر نسبت به ماه قبل"
+      : `${num(Math.abs(st.mom).toFixed(1) + "%")} ${st.mom > 0 ? "بیشتر" : "کمتر"} از ماه قبل`);
+    if (st.yoy != null) cmp.push(`${num(Math.abs(st.yoy).toFixed(1) + "%")} ${st.yoy > 0 ? "بیشتر" : "کمتر"} از ${monthLabel(shiftMonth(st.last.date, -12))}`);
+    t += cmp.length ? `؛ ${cmp.join(" و ")}.` : ".";
+    if (st.streak >= 2) t += ` قیمت ${num(st.streak)} ماه پیاپی ${st.dir > 0 ? "افزایش" : "کاهش"} داشته است.`;
+
+    const range = st.max.usd_per_ton - st.min.usd_per_ton;
+    const pos = range > 0 ? (p - st.min.usd_per_ton) / range : 0.5;
+    const belowMax = ((st.max.usd_per_ton - p) / st.max.usd_per_ton) * 100;
+    const aboveMin = ((p - st.min.usd_per_ton) / st.min.usd_per_ton) * 100;
+    if (p === st.max.usd_per_ton) t += " این بالاترین قیمت 2 سال اخیر است.";
+    else if (p === st.min.usd_per_ton) t += " این پایین‌ترین قیمت 2 سال اخیر است.";
+    else if (pos >= 0.8) t += ` قیمت نزدیک سقف 2 سال اخیر است (${num(belowMax.toFixed(1) + "%")} زیر بیشترین قیمت در ${monthLabel(st.max.date)}).`;
+    else if (pos <= 0.2) t += ` قیمت نزدیک کف 2 سال اخیر است (${num(aboveMin.toFixed(1) + "%")} بالای کمترین قیمت در ${monthLabel(st.min.date)}).`;
+    else t += ` قیمت در میانه‌ی دامنه‌ی 2 سال اخیر است؛ ${num(belowMax.toFixed(1) + "%")} زیر بیشترین قیمت (${monthLabel(st.max.date)}).`;
+    return `<p>${t}</p>`;
+  });
+
+  const withYoy = items.filter((x) => x.st.yoy != null);
+  if (withYoy.length > 1) {
+    const big = withYoy.reduce((a, b) => (Math.abs(b.st.yoy) > Math.abs(a.st.yoy) ? b : a));
+    parts.push(`<p>بیشترین تغییر نسبت به سال قبل مربوط به <b>${esc(big.c.name_fa)}</b> بوده است (${num(Math.abs(big.st.yoy).toFixed(1) + "%")} ${big.st.yoy > 0 ? "افزایش" : "کاهش"}).</p>`);
+  }
+  document.getElementById("analysis").innerHTML = parts.join("");
+}
+
+// ---------- نمودار ----------
+const crosshair = {
+  id: "crosshair",
+  afterDatasetsDraw(chart) {
+    const a = chart.tooltip?.getActiveElements?.();
+    if (!a || !a.length) return;
+    const { ctx, chartArea } = chart;
+    ctx.save();
+    ctx.strokeStyle = "#c3c2b7"; ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(a[0].element.x, chartArea.top); ctx.lineTo(a[0].element.x, chartArea.bottom); ctx.stroke();
+    ctx.restore();
+  },
+};
+
+function selected() {
+  const all = state.data.commodities;
+  return state.commodity === "all" ? all : all.filter((c) => c.fred_id === state.commodity);
+}
+
+function visibleDates(list) {
+  const dates = [...new Set(list.flatMap((c) => c.series.map((r) => r.date)))].sort();
+  if (state.range === "all") return dates;
+  const from = shiftMonth(dates[dates.length - 1], -Number(state.range));
+  return dates.filter((d) => d > from); // همان پنجره‌ی «کمترین/بیشترین 2 سال» در کارت‌ها
+}
+
+function renderChart() {
+  const list = selected();
+  const dates = visibleDates(list);
+  document.getElementById("legend").innerHTML = list.map((c) =>
+    `<span><i style="background:${esc(c.color)}"></i>${esc(c.name_fa)}</span>`).join("");
+
+  const datasets = list.map((c) => {
+    const by = Object.fromEntries(c.series.map((r) => [r.date, r.usd_per_ton]));
+    return {
+      label: c.name_fa, data: dates.map((d) => by[d] ?? null),
+      borderColor: c.color, backgroundColor: c.color,
+      borderWidth: 2, pointRadius: 0, pointHoverRadius: 5,
+      pointHoverBorderColor: "#fcfcfb", pointHoverBorderWidth: 2, tension: 0,
+    };
+  });
+
+  if (state.chart) state.chart.destroy();
+  state.chart = new Chart(document.getElementById("chart"), {
+    type: "line",
+    data: { labels: dates, datasets },
+    plugins: [crosshair],
+    options: {
+      maintainAspectRatio: false, animation: false,
+      interaction: { mode: "index", intersect: false },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          rtl: true, textDirection: "rtl",
+          backgroundColor: "#ffffff", titleColor: "#0b0b0b", bodyColor: "#52514e",
+          borderColor: "rgba(11,11,11,0.15)", borderWidth: 1, padding: 10, boxPadding: 4,
+          callbacks: {
+            title: (it) => monthLabel(it[0].label),
+            label: (it) => `${it.dataset.label}: ${fmtPrice(it.parsed.y)} دلار بر تن`,
+          },
+        },
+      },
+      scales: {
+        x: {
+          grid: { display: false }, border: { color: "#c3c2b7" },
+          ticks: { color: "#898781", maxRotation: 0, autoSkipPadding: 16, callback(v) { const d = this.getLabelForValue(v); return d.slice(0, 7).replace("-", "/"); } },
+        },
+        y: {
+          position: "right", grid: { color: "#e1e0d9" }, border: { display: false },
+          ticks: { color: "#898781", callback: (v) => fmtPrice(v) },
+        },
+      },
+    },
+  });
+}
+
+function renderTable() {
+  const list = selected();
+  const dates = visibleDates(list).slice().reverse();
+  const maps = list.map((c) => Object.fromEntries(c.series.map((r) => [r.date, r.usd_per_ton])));
+  document.getElementById("table").innerHTML = `
+    <table>
+      <thead><tr><th>ماه</th>${list.map((c) => `<th>${esc(c.name_fa)} (دلار/تن)</th>`).join("")}</tr></thead>
+      <tbody>${dates.map((d) => `<tr><td>${monthLabel(d)}</td>${maps.map((m) =>
+        `<td class="num">${m[d] != null ? fmtPrice(m[d]) : "—"}</td>`).join("")}</tr>`).join("")}</tbody>
+    </table>`;
+}
+
+// ---------- کنترل‌ها ----------
+function renderCommodityPicker() {
+  const opts = [...state.data.commodities.map((c) => [c.fred_id, c.name_fa]), ["all", "مقایسه‌ی همه"]];
+  const el = document.getElementById("pick-commodity");
+  el.innerHTML = opts.map(([id, name]) =>
+    `<button data-id="${esc(id)}" aria-pressed="${state.commodity === id}">${esc(name)}</button>`).join("");
+  el.querySelectorAll("button").forEach((b) => b.addEventListener("click", () => select(b.dataset.id)));
+}
+
+function select(id) {
+  state.commodity = id;
+  document.querySelectorAll("#pick-commodity button, #cards .card").forEach((b) =>
+    b.setAttribute("aria-pressed", String(b.dataset.id === id)));
+  renderChart(); renderTable();
+}
+
+document.getElementById("pick-range").addEventListener("click", (e) => {
+  const b = e.target.closest("button"); if (!b) return;
+  state.range = b.dataset.range;
+  document.querySelectorAll("#pick-range button").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+  renderChart(); renderTable();
+});
+
+// ---------- شروع ----------
+async function init() {
+  try {
+    const res = await fetch("data/prices.json", { cache: "no-cache" });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    state.data = await res.json();
+  } catch (e) {
+    document.getElementById("meta").innerHTML = `<span class="error">داده بارگذاری نشد (${esc(e.message)}).</span>`;
+    return;
+  }
+  const d = state.data;
+  d.commodities = d.commodities.filter((c) => c.series.length);
+  const latest = d.commodities.map((c) => c.series[c.series.length - 1].date).sort().pop();
+  document.getElementById("meta").innerHTML =
+    `آخرین داده: <b>${monthLabel(latest)}</b> · منبع: FRED / IMF · آخرین به‌روزرسانی: ${num((d.last_updated || "").slice(0, 10))}`;
+  state.commodity = d.commodities[0]?.fred_id;
+  Chart.defaults.font.family = '"Vazirmatn", system-ui, sans-serif';
+  renderCards(); renderAnalysis(); renderCommodityPicker(); renderChart(); renderTable();
+}
+document.fonts?.ready.then(init) ?? init();
+</script>
+</body>
+</html>
