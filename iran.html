@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>بازار ایران</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .fa-news { list-style: none; padding: 0; margin: 0; }
+  .fa-news li { padding: 10px 0; border-bottom: 1px solid var(--grid); }
+  .fa-news li:last-child { border-bottom: 0; }
+  .fa-news a { color: var(--ink); text-decoration: none; font-weight: 500; }
+  .fa-news a:hover, .fa-news a:focus-visible { text-decoration: underline; }
+  .fa-news .news-src { display: block; color: var(--muted); font-size: 0.82rem; }
+  .soon { color: var(--ink-2); font-size: 0.92rem; margin: 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <nav class="nav" aria-label="صفحه‌ها">
+      <a href="./">قیمت جهانی</a>
+      <a href="iran.html" aria-current="page">بازار ایران</a>
+    </nav>
+    <h1>بازار ایران</h1>
+    <div class="meta" id="meta">در حال بارگذاری…</div>
+  </header>
+
+  <section class="panel" id="news-panel" style="margin-top:20px">
+    <h2>اخبار واردات، گمرک و کالاهای اساسی</h2>
+    <p class="meta" id="news-meta"></p>
+    <div id="news"></div>
+  </section>
+
+  <section class="panel">
+    <h2>به‌زودی</h2>
+    <p class="soon">
+      آمار واردات ایران به تفکیک کالا و کشور مبدأ (آمار سازمان ملل) و آمار گمرک ایران به این صفحه اضافه می‌شود.
+    </p>
+  </section>
+
+  <footer>
+    تیتر خبرها از خبرخوان سایت‌های خبری فارسی (دنیای اقتصاد، ایسنا، مهر، ایرنا، خبرآنلاین) جمع‌آوری می‌شود
+    و هر چند ساعت به‌روز می‌شود. · <a href="./">بازگشت به قیمت جهانی</a>
+  </footer>
+</div>
+
+<script>
+const esc = (s) => String(s).replace(/[&<>"]/g, (ch) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch]));
+const num = (s) => `<span class="num">${s}</span>`;
+
+async function init() {
+  let news;
+  try {
+    const res = await fetch("data/iran-news.json", { cache: "no-cache" });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    news = await res.json();
+  } catch (e) {
+    document.getElementById("meta").innerHTML = `<span class="error">داده بارگذاری نشد (${esc(e.message)}).</span>`;
+    document.getElementById("news-panel").hidden = true;
+    return;
+  }
+  document.getElementById("meta").innerHTML =
+    `آخرین به‌روزرسانی: ${num((news.last_updated || "").slice(0, 16).replace("T", " "))} (UTC)`;
+  document.getElementById("news-meta").innerHTML =
+    `تیترهای ${num(news.window_days)} روز اخیر؛ خبرهایی که هم به واردات یا گمرک و هم به یک کالا مربوط‌اند اول آمده‌اند.`;
+  const items = (news.items || []).slice(0, news.show || 15);
+  document.getElementById("news").innerHTML = items.length
+    ? `<ul class="fa-news">${items.map((n) => `<li>
+        <a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a>
+        <span class="news-src">${esc(n.source)} · ${num(esc(n.date.slice(0, 10)))}</span></li>`).join("")}</ul>`
+    : `<p class="soon">هنوز خبر مرتبطی جمع نشده است.</p>`;
+}
+init();
+</script>
+</body>
+</html>

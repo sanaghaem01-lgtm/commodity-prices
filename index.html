@@ -8,136 +8,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
-<style>
-  :root {
-    color-scheme: light;
-    --page: #f9f9f7;
-    --surface: #fcfcfb;
-    --ink: #0b0b0b;
-    --ink-2: #52514e;
-    --muted: #898781;
-    --grid: #e1e0d9;
-    --axis: #c3c2b7;
-    --border: rgba(11, 11, 11, 0.10);
-    --note-bg: #fff8e6;
-    --note-border: #f0d999;
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    background: var(--page);
-    color: var(--ink);
-    font-family: "Vazirmatn", system-ui, sans-serif;
-    line-height: 1.7;
-  }
-  .wrap { max-width: 1100px; margin: 0 auto; padding: 24px 16px 48px; }
-  h1 { font-size: 1.6rem; margin: 0 0 4px; }
-  h2 { font-size: 1.15rem; margin: 0 0 12px; }
-  .meta { color: var(--ink-2); font-size: 0.9rem; }
-  .num { unicode-bidi: isolate; direction: ltr; font-variant-numeric: tabular-nums; }
-  .note {
-    background: var(--note-bg); border: 1px solid var(--note-border);
-    border-radius: 10px; padding: 10px 14px; margin: 16px 0 24px; font-size: 0.92rem;
-  }
-  .panel {
-    background: var(--surface); border: 1px solid var(--border);
-    border-radius: 12px; padding: 16px; margin-bottom: 20px;
-  }
-
-  /* کارت‌ها */
-  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-bottom: 20px; }
-  .card {
-    background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
-    padding: 16px; cursor: pointer; text-align: start; font: inherit; color: inherit;
-  }
-  .card:hover, .card:focus-visible { border-color: var(--axis); outline: none; }
-  .card[aria-pressed="true"] { box-shadow: 0 0 0 2px var(--ink-2) inset; }
-  .card-title { display: flex; align-items: center; gap: 8px; font-weight: 700; }
-  .swatch { width: 12px; height: 12px; border-radius: 3px; flex: none; }
-  .hero { font-size: 2rem; font-weight: 700; margin: 6px 0 0; line-height: 1.2; }
-  .hero small { font-size: 0.85rem; font-weight: 400; color: var(--ink-2); }
-  .sub { color: var(--ink-2); font-size: 0.85rem; margin-bottom: 10px; }
-  .rows { display: grid; grid-template-columns: auto 1fr; gap: 2px 12px; font-size: 0.9rem; }
-  .rows dt { color: var(--ink-2); }
-  .rows dd { margin: 0; text-align: left; }
-
-  /* گروه‌ها */
-  .cat-bar { display: flex; margin-bottom: 16px; }
-  .cat-bar button { font-size: 0.95rem; padding: 6px 14px; }
-  .group-title { grid-column: 1 / -1; margin: 8px 0 -4px; font-size: 1rem; color: var(--ink-2); }
-  select#pick-commodity {
-    font: inherit; font-size: 0.92rem; padding: 6px 10px; border-radius: 8px;
-    border: 1px solid var(--border); background: var(--surface); color: var(--ink); min-width: 200px;
-  }
-
-  /* کنترل‌ها */
-  .controls { display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: center; margin-bottom: 12px; }
-  .seg { display: inline-flex; flex-wrap: wrap; gap: 4px; background: var(--page); border: 1px solid var(--border); border-radius: 8px; padding: 3px; }
-  .seg button {
-    font: inherit; font-size: 0.88rem; border: 0; background: transparent; color: var(--ink-2);
-    padding: 4px 12px; border-radius: 6px; cursor: pointer;
-  }
-  .seg button[aria-pressed="true"] { background: var(--surface); color: var(--ink); font-weight: 700; box-shadow: 0 0 0 1px var(--border); }
-  .legend { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 0.88rem; color: var(--ink-2); margin-bottom: 8px; }
-  .legend span { display: inline-flex; align-items: center; gap: 6px; }
-  .legend i { width: 14px; height: 3px; border-radius: 2px; display: inline-block; }
-  .chart-box { position: relative; height: 380px; }
-
-  /* تحلیل */
-  .analysis p { margin: 0 0 10px; }
-  .analysis .foot { color: var(--ink-2); font-size: 0.88rem; margin-top: 12px; }
-
-  /* جدول */
-  details summary { cursor: pointer; font-weight: 700; }
-  .table-scroll { overflow-x: auto; margin-top: 12px; }
-  table { border-collapse: collapse; width: 100%; font-size: 0.88rem; }
-  th, td { padding: 6px 10px; border-bottom: 1px solid var(--grid); text-align: left; white-space: nowrap; }
-  th:first-child, td:first-child { text-align: right; }
-  th { color: var(--ink-2); font-weight: 500; }
-
-  footer { color: var(--ink-2); font-size: 0.85rem; margin-top: 28px; }
-  footer a { color: inherit; }
-  .error { color: #d03b3b; font-weight: 700; }
-  .stale {
-    background: #fdecea; border: 1px solid #f3b8b3; border-radius: 10px;
-    padding: 10px 14px; margin: 16px 0 0; font-size: 0.92rem;
-  }
-  .stale[hidden] { display: none; }
-
-  /* لینک‌های قیمت روزانه‌ی بورس */
-  .live-grid { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 4px; }
-  .live-link {
-    display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px;
-    border: 1px solid var(--border); border-radius: 8px; background: var(--page);
-    color: var(--ink); text-decoration: none; font-size: 0.92rem;
-  }
-  .live-link:hover, .live-link:focus-visible { border-color: var(--axis); }
-  .live-link bdi { color: var(--muted); font-size: 0.82rem; }
-  #live-panel[hidden] { display: none; }
-
-  /* اخبار */
-  #news-panel[hidden] { display: none; }
-  .news-list { list-style: none; padding: 0; margin: 0 0 8px; }
-  .news-list li { padding: 8px 0; border-bottom: 1px solid var(--grid); text-align: left; }
-  .news-list li:last-child { border-bottom: 0; }
-  .news-list a { color: var(--ink); text-decoration: none; font-weight: 500; }
-  .news-list a:hover, .news-list a:focus-visible { text-decoration: underline; }
-  .news-src { display: block; color: var(--muted); font-size: 0.82rem; }
-  .news-group { margin: 16px 0 4px; font-size: 0.95rem; color: var(--ink-2); }
-  .news-empty { color: var(--ink-2); font-size: 0.9rem; }
-  .reports { margin-top: 12px; }
-  .reports h3 { font-size: 0.95rem; margin: 0 0 8px; color: var(--ink-2); }
-
-  @media (max-width: 600px) {
-    h1 { font-size: 1.3rem; }
-    .chart-box { height: 300px; }
-    .hero { font-size: 1.7rem; }
-  }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="wrap">
   <header>
+    <nav class="nav" aria-label="صفحه‌ها">
+      <a href="./" aria-current="page">قیمت جهانی</a>
+      <a href="iran.html">بازار ایران</a>
+    </nav>
     <h1>دیدبان قیمت جهانی کالا</h1>
     <div class="meta" id="meta">در حال بارگذاری…</div>
   </header>
