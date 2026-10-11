@@ -55,6 +55,18 @@
     </p>
   </section>
 
+  <section class="panel" id="harvest-panel" hidden>
+    <h2>تقویم برداشت</h2>
+    <p class="meta">ماه‌های برداشت در کشورهای اصلی تولیدکننده (میلادی). <span id="harvest-note"></span></p>
+    <div class="legend">
+      <span><i class="box" style="background:#2A78D6"></i>برداشت اصلی</span>
+      <span><i class="box" style="background:#9EC5F4"></i>برداشت دوم / کوچک</span>
+      <span><i class="box" style="box-shadow:inset 0 0 0 2px #0b0b0b"></i>ماه جاری</span>
+    </div>
+    <div class="table-scroll" id="harvest"></div>
+    <p class="meta" id="harvest-sources" style="margin-top:8px"></p>
+  </section>
+
   <section class="panel" id="news-panel" hidden>
     <h2>اخبار هفته</h2>
     <p class="meta" id="news-meta"></p>
@@ -97,7 +109,7 @@ const UNITS_FA = {
   "u.s. cents per kilogram": "سنت بر کیلوگرم",
 };
 
-const state = { data: null, news: null, category: null, commodity: null, range: "24", chart: null };
+const state = { data: null, news: null, harvest: null, category: null, commodity: null, range: "24", chart: null };
 const ALL = "all";          // گروه «همه»
 const COMPARE = "compare";  // مقایسه‌ی همه‌ی کالاهای یک گروه
 
@@ -154,7 +166,7 @@ function selectCategory(cat) {
   try { history.replaceState(null, "", "#" + encodeURIComponent(cat)); } catch (e) { /* بی‌اهمیت */ }
   document.querySelectorAll("#pick-category button").forEach((b) =>
     b.setAttribute("aria-pressed", String(b.dataset.cat === cat)));
-  renderCards(); renderAnalysis(); renderCommodityPicker(); renderChart(); renderTable(); renderLive(); renderNews();
+  renderCards(); renderAnalysis(); renderCommodityPicker(); renderChart(); renderTable(); renderLive(); renderNews(); renderHarvest();
 }
 
 // ---------- کارت‌ها ----------
@@ -398,6 +410,51 @@ function renderLive() {
   }).join("");
 }
 
+// ---------- تقویم برداشت ----------
+function renderHarvest() {
+  const h = state.harvest;
+  const panel = document.getElementById("harvest-panel");
+  const rows = h ? h.rows.filter((r) => state.category === ALL || r.category === state.category) : [];
+  if (!rows.length) { panel.hidden = true; return; }
+  panel.hidden = false;
+  const now = new Date().getMonth() + 1;
+  const months = Array.from({ length: 12 }, (_, i) => i + 1);
+  let lastGroup = null, lastCommodity = null;
+  const body = rows.map((r) => {
+    let head = "";
+    if (state.category === ALL && r.category !== lastGroup) {
+      head = `<tr class="group"><td colspan="14">${esc(r.category)}</td></tr>`;
+      lastGroup = r.category; lastCommodity = null;
+    }
+    const same = r.commodity === lastCommodity;
+    lastCommodity = r.commodity;
+    const cells = months.map((m) => {
+      const kind = (r.main || []).includes(m) ? "main" : (r.second || []).includes(m) ? "second" : "";
+      const label = `${r.commodity}، ${r.country}، ${MONTHS_FA[m - 1]}: ${kind === "main" ? "برداشت اصلی" : kind === "second" ? "برداشت دوم" : "بدون برداشت"}`;
+      return `<td class="m ${kind}${m === now ? " now" : ""}" title="${esc(label)}" aria-label="${esc(label)}"></td>`;
+    }).join("");
+    return head + `<tr><td class="name"><span class="${same ? "same" : ""}">${esc(r.commodity)}</span></td>
+      <td class="country">${esc(r.country)}${r.note ? `<small>${esc(r.note)}</small>` : ""}</td>${cells}</tr>`;
+  }).join("");
+  document.getElementById("harvest").innerHTML = `<table class="harvest">
+    <thead><tr><th></th><th></th>${months.map((m) => `<th class="${m === now ? "now" : ""}">${MONTHS_FA[m - 1]}</th>`).join("")}</tr></thead>
+    <tbody>${body}</tbody></table>`;
+  document.getElementById("harvest-note").textContent = h.note || "";
+  document.getElementById("harvest-sources").innerHTML = "برای بررسی دقیق‌تر: " + h.sources.map((x) =>
+    `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.name)}</a>`).join(" · ");
+}
+
+async function loadHarvest() {
+  try {
+    const res = await fetch("config/harvest.json", { cache: "no-cache" });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    state.harvest = await res.json();
+  } catch (e) {
+    state.harvest = null; // نبود تقویم نباید بقیه‌ی صفحه را خراب کند
+  }
+  renderHarvest();
+}
+
 // ---------- اخبار هفته ----------
 function newsItem(n) {
   return `<li dir="ltr"><a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a>
@@ -462,6 +519,7 @@ async function init() {
   renderCategoryPicker();
   selectCategory(state.category);
   loadNews();
+  loadHarvest();
 }
 document.fonts?.ready.then(init) ?? init();
 </script>

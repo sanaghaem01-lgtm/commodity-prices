@@ -1,0 +1,52 @@
+{
+  "note": "ماه‌ها تقریبی‌اند و بسته به سال، آب‌وهوا و منطقه چند هفته جابه‌جا می‌شوند.",
+
+  "sources": [
+    {"name": "USDA FAS — Crop Calendars", "url": "https://ipad.fas.usda.gov/ogamaps/cropcalendar.aspx"},
+    {"name": "ICO — International Coffee Organization", "url": "https://ico.org/"},
+    {"name": "ICCO — International Cocoa Organization", "url": "https://www.icco.org/"}
+  ],
+
+  "rows": [
+    {"category": "قهوه، کاکائو، شکر و چای", "commodity": "قهوه", "country": "برزیل (عربیکا و کنیلون)", "main": [5, 6, 7, 8, 9]},
+    {"category": "قهوه، کاکائو، شکر و چای", "commodity": "قهوه", "country": "ویتنام (روبوستا)", "main": [11, 12, 1]},
+    {"category": "قهوه، کاکائو، شکر و چای", "commodity": "قهوه", "country": "اندونزی (روبوستا)", "main": [4, 5, 6, 7, 8]},
+    {"category": "قهوه، کاکائو، شکر و چای", "commodity": "قهوه", "country": "هند", "main": [11, 12, 1, 2]},
+    {"category": "قهوه، کاکائو، شکر و چای", "commodity": "قهوه", "country": "اوگاندا (روبوستا)", "main": [10, 11, 12, 1, 2], "second": [5, 6, 7, 8]},
+    {"category": "قهوه، کاکائو، شکر و چای", "commodity": "قهوه", "country": "کلمبیا", "main": [10, 11, 12], "second": [4, 5, 6]},
+    {"category": "قهوه، کاکائو، شکر و چای", "commodity": "کاکائو", "country": "ساحل عاج", "main": [10, 11, 12, 1, 2, 3], "second": [5, 6, 7, 8]},
+    {"category": "قهوه، کاکائو، شکر و چای", "commodity": "کاکائو", "country": "غنا", "main": [10, 11, 12, 1, 2, 3], "second": [5, 6, 7, 8]},
+    {"category": "قهوه، کاکائو، شکر و چای", "commodity": "کاکائو", "country": "اکوادور", "main": [3, 4, 5, 6]},
+    {"category": "قهوه، کاکائو، شکر و چای", "commodity": "شکر", "country": "برزیل (مرکز-جنوب)", "main": [4, 5, 6, 7, 8, 9, 10, 11]},
+    {"category": "قهوه، کاکائو، شکر و چای", "commodity": "شکر", "country": "هند", "main": [11, 12, 1, 2, 3, 4]},
+    {"category": "قهوه، کاکائو، شکر و چای", "commodity": "شکر", "country": "تایلند", "main": [12, 1, 2, 3, 4]},
+    {"category": "قهوه، کاکائو، شکر و چای", "commodity": "چای", "country": "هند (آسام)", "main": [3, 4, 5, 6, 7, 8, 9, 10, 11]},
+    {"category": "قهوه، کاکائو، شکر و چای", "commodity": "چای", "country": "کنیا", "main": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], "note": "تقریباً تمام سال"},
+
+    {"category": "غلات", "commodity": "گندم", "country": "روسیه", "main": [7, 8, 9]},
+    {"category": "غلات", "commodity": "گندم", "country": "قزاقستان", "main": [8, 9]},
+    {"category": "غلات", "commodity": "گندم", "country": "اوکراین", "main": [7, 8]},
+    {"category": "غلات", "commodity": "گندم", "country": "استرالیا", "main": [10, 11, 12]},
+    {"category": "غلات", "commodity": "ذرت", "country": "برزیل", "main": [6, 7, 8, 9], "second": [1, 2, 3, 4], "note": "اصلی = کشت دوم (سافرینیا)"},
+    {"category": "غلات", "commodity": "ذرت", "country": "آرژانتین", "main": [3, 4, 5, 6, 7]},
+    {"category": "غلات", "commodity": "ذرت", "country": "آمریکا", "main": [9, 10, 11]},
+    {"category": "غلات", "commodity": "ذرت", "country": "اوکراین و روسیه", "main": [9, 10, 11]},
+    {"category": "غلات", "commodity": "جو", "country": "روسیه و اوکراین", "main": [7, 8]},
+    {"category": "غلات", "commodity": "جو", "country": "استرالیا", "main": [10, 11, 12]},
+    {"category": "غلات", "commodity": "برنج", "country": "هند", "main": [10, 11, 12], "second": [3, 4, 5]},
+    {"category": "غلات", "commodity": "برنج", "country": "پاکستان", "main": [10, 11, 12]},
+    {"category": "غلات", "commodity": "برنج", "country": "تایلند", "main": [11, 12, 1, 2], "second": [4, 5, 6]},
+
+    {"category": "دانه‌های روغنی و روغن", "commodity": "سویا", "country": "برزیل", "main": [1, 2, 3, 4]},
+    {"category": "دانه‌های روغنی و روغن", "commodity": "سویا", "country": "آرژانتین", "main": [4, 5, 6]},
+    {"category": "دانه‌های روغنی و روغن", "commodity": "سویا", "country": "آمریکا", "main": [9, 10, 11]},
+    {"category": "دانه‌های روغنی و روغن", "commodity": "روغن پالم", "country": "مالزی و اندونزی", "main": [8, 9, 10, 11], "note": "تولید تمام سال؛ اوج در این ماه‌ها، کمترین در ژانویه تا مارس"},
+    {"category": "دانه‌های روغنی و روغن", "commodity": "آفتابگردان", "country": "روسیه و اوکراین", "main": [8, 9, 10]},
+    {"category": "دانه‌های روغنی و روغن", "commodity": "کلزا", "country": "اتحادیه‌ی اروپا", "main": [7, 8]},
+    {"category": "دانه‌های روغنی و روغن", "commodity": "کلزا (کانولا)", "country": "کانادا", "main": [8, 9, 10]},
+
+    {"category": "مواد اولیه‌ی کشاورزی", "commodity": "پنبه", "country": "آمریکا", "main": [9, 10, 11, 12]},
+    {"category": "مواد اولیه‌ی کشاورزی", "commodity": "پنبه", "country": "هند", "main": [10, 11, 12, 1]},
+    {"category": "مواد اولیه‌ی کشاورزی", "commodity": "پنبه", "country": "برزیل", "main": [6, 7, 8, 9]}
+  ]
+}
