@@ -1,0 +1,26 @@
+{
+  "start": "2024-01",
+
+  "commodities": [
+    {
+      "hs": "100590", "name_fa": "ذرت", "fred_id": "PMAIZMTUSDM",
+      "note": "برزیل، تأمین‌کننده‌ی اصلی، مرتب گزارش می‌دهد؛ پوشش این کالا خوب است."
+    },
+    {
+      "hs": "1006", "name_fa": "برنج", "fred_id": "PRICENPQUSDM",
+      "note": "پاکستان در این آمار دیده نمی‌شود، پس بخشی از واردات برنج ایران اینجا نیست. برنج صادراتی هند به ایران عمدتاً باسماتی است و قیمتش با «برنج تایلند» (قیمت جهانی) قابل مقایسه‌ی مستقیم نیست."
+    }
+  ],
+
+  "country_fa": {
+    "Brazil": "برزیل", "India": "هند", "Thailand": "تایلند", "Romania": "رومانی", "Türkiye": "ترکیه",
+    "Georgia": "گرجستان", "Kazakhstan": "قزاقستان", "Oman": "عمان", "Azerbaijan": "آذربایجان",
+    "Russian Federation": "روسیه", "Pakistan": "پاکستان", "Argentina": "آرژانتین", "Ukraine": "اوکراین",
+    "Uruguay": "اروگوئه", "Paraguay": "پاراگوئه", "Indonesia": "اندونزی", "Viet Nam": "ویتنام",
+    "Colombia": "کلمبیا", "United Arab Emirates": "امارات", "China": "چین", "USA": "آمریکا",
+    "South Africa": "آفریقای جنوبی", "Bulgaria": "بلغارستان", "Serbia": "صربستان", "Hungary": "مجارستان",
+    "Italy": "ایتالیا", "Spain": "اسپانیا", "Germany": "آلمان", "Netherlands": "هلند", "Malaysia": "مالزی",
+    "Uzbekistan": "ازبکستان", "Turkmenistan": "ترکمنستان", "Armenia": "ارمنستان", "Iraq": "عراق",
+    "Afghanistan": "افغانستان", "Myanmar": "میانمار", "Cambodia": "کامبوج", "Moldova": "مولداوی"
+  }
+}

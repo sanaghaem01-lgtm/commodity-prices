@@ -1,0 +1,46 @@
+# آمار آینه‌ای واردات ایران از UN Comtrade
+# اجرای خودکار: هر دوشنبه ساعت ۷ صبح UTC  |  اجرای دستی: تب Actions ← Run workflow
+name: Update Iran imports
+
+on:
+  schedule:
+    - cron: "0 7 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+
+      - name: Run tests
+        run: python -m unittest -v
+
+      - name: Fetch mirror trade data from UN Comtrade
+        env:
+          COMTRADE_API_KEY: ${{ secrets.COMTRADE_API_KEY }}
+        run: python -m scripts.fetch_iran_imports
+
+      - name: Commit if data changed
+        run: |
+          if [ -z "$(git status --porcelain -- data/)" ]; then
+            echo "Data unchanged; nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git commit -m "Update Iran imports (UN Comtrade)"
+          for i in 1 2 3; do git pull --rebase && git push && exit 0; sleep 10; done
+          exit 1
