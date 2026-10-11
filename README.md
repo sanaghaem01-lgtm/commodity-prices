@@ -29,8 +29,10 @@
 2. در GitHub فایل `config/commodities.json` را باز کنید و روی آیکون مداد (Edit) بزنید.
 3. یک خط شبیه خط‌های قبلی اضافه کنید. **دقت کنید که بعد از خط قبلی یک ویرگول (`,`) باشد**:
    ```json
-   {"fred_id": "PSUGAISAUSDM", "name_fa": "شکر", "name_en": "Sugar", "color": "#EDA100"}
+   {"fred_id": "PSUGAISAUSDM", "name_fa": "شکر", "name_en": "Sugar", "color": "#EDA100", "tradingview_symbol": "ICEUS:SB1!"}
    ```
+   فیلد `tradingview_symbol` **اختیاری** است: اگر کالا در بورس معامله می‌شود، نماد TradingView آن را بنویسید
+   تا دکمه‌ی «قیمت روزانه‌ی بورس» برایش ساخته شود. اگر نماد بورسی ندارد (مثلاً خشکبار)، این قسمت را حذف کنید.
 4. **Commit changes** را بزنید.
 5. به تب **Actions** بروید و workflow را دستی اجرا کنید (پایین‌تر توضیح داده شده).
 

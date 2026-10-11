@@ -1,5 +1,5 @@
 [
-  {"fred_id": "PCOFFOTMUSDM", "name_fa": "قهوه عربیکا", "name_en": "Coffee Arabica", "color": "#2A78D6"},
-  {"fred_id": "PCOFFROBUSDM", "name_fa": "قهوه روبوستا", "name_en": "Coffee Robusta", "color": "#EB6834"},
-  {"fred_id": "PCOCOUSDM", "name_fa": "کاکائو", "name_en": "Cocoa", "color": "#1BAF7A"}
+  {"fred_id": "PCOFFOTMUSDM", "name_fa": "قهوه عربیکا", "name_en": "Coffee Arabica", "color": "#2A78D6", "tradingview_symbol": "ICEUS:KC1!"},
+  {"fred_id": "PCOFFROBUSDM", "name_fa": "قهوه روبوستا", "name_en": "Coffee Robusta", "color": "#EB6834", "tradingview_symbol": "ICEEUR:RC1!"},
+  {"fred_id": "PCOCOUSDM", "name_fa": "کاکائو", "name_en": "Cocoa", "color": "#1BAF7A", "tradingview_symbol": "ICEUS:CC1!"}
 ]

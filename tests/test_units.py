@@ -38,6 +38,8 @@ class TestCommoditiesConfig(unittest.TestCase):
             for field in ("fred_id", "name_fa", "name_en", "color"):
                 self.assertTrue(c.get(field), f"فیلد {field} برای {c} خالی است")
             self.assertRegex(c["color"], r"^#[0-9A-Fa-f]{6}$")
+            if "tradingview_symbol" in c:
+                self.assertRegex(c["tradingview_symbol"], r"^[A-Z0-9_]+:[A-Z0-9_.!]+$")
 
 
 if __name__ == "__main__":

@@ -36,6 +36,12 @@ class TestFetchPrices(unittest.TestCase):
         self.assertEqual([r["date"] for r in a["series"]], ["2026-07-01", "2026-08-01"])
         self.assertEqual(a["series"][-1]["usd_per_ton"], 2204.6)
         self.assertEqual(ds["commodities"][1]["series"][0]["usd_per_ton"], 5000.0)
+        self.assertIsNone(a["tradingview_symbol"])  # فیلد اختیاری
+
+    def test_tradingview_symbol_passed_through(self):
+        cfg = [{**CONFIG[0], "tradingview_symbol": "ICEUS:KC1!"}]
+        ds, _ = build_dataset(cfg, fake_fetch(GOOD))
+        self.assertEqual(ds["commodities"][0]["tradingview_symbol"], "ICEUS:KC1!")
 
     def test_source_error_and_unknown_unit_are_reported(self):
         data = {"AAA": SourceError("HTTP 400 bad key"), "BBB": {"unit": "Index", "observations": [("2026-08-01", 1.0)]}}

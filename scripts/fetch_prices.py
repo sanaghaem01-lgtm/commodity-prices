@@ -57,6 +57,7 @@ def build_dataset(config, fetch_series, start=START_DATE):
             "name_fa": c["name_fa"],
             "name_en": c["name_en"],
             "color": c["color"],
+            "tradingview_symbol": c.get("tradingview_symbol"),  # اختیاری؛ فقط برای ابزارک داشبورد
             "unit_original": unit,
             "series": series,
         })

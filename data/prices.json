@@ -7,6 +7,7 @@
    "name_fa": "قهوه عربیکا",
    "name_en": "Coffee Arabica",
    "color": "#2A78D6",
+   "tradingview_symbol": "ICEUS:KC1!",
    "unit_original": "U.S. Cents per Pound",
    "series": [
     {
@@ -411,6 +412,7 @@
    "name_fa": "قهوه روبوستا",
    "name_en": "Coffee Robusta",
    "color": "#EB6834",
+   "tradingview_symbol": "ICEEUR:RC1!",
    "unit_original": "U.S. Cents per Pound",
    "series": [
     {
@@ -815,6 +817,7 @@
    "name_fa": "کاکائو",
    "name_en": "Cocoa",
    "color": "#1BAF7A",
+   "tradingview_symbol": "ICEUS:CC1!",
    "unit_original": "U.S. Dollars per Metric Ton",
    "series": [
     {

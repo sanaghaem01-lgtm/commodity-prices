@@ -95,6 +95,17 @@
   }
   .stale[hidden] { display: none; }
 
+  /* لینک‌های قیمت روزانه‌ی بورس */
+  .live-grid { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 4px; }
+  .live-link {
+    display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px;
+    border: 1px solid var(--border); border-radius: 8px; background: var(--page);
+    color: var(--ink); text-decoration: none; font-size: 0.92rem;
+  }
+  .live-link:hover, .live-link:focus-visible { border-color: var(--axis); }
+  .live-link bdi { color: var(--muted); font-size: 0.82rem; }
+  #live-panel[hidden] { display: none; }
+
   @media (max-width: 600px) {
     h1 { font-size: 1.3rem; }
     .chart-box { height: 300px; }
@@ -139,6 +150,15 @@
       این متن به‌طور خودکار از روی همین داده‌ها نوشته می‌شود و فقط وضعیت گذشته را توصیف می‌کند؛
       پیش‌بینی یا توصیه‌ی خرید نیست.
     </p>
+  </section>
+
+  <section class="panel" id="live-panel" hidden>
+    <h2>قیمت روزانه‌ی بورس</h2>
+    <p class="meta">
+      قیمت روزانه‌ی قرارداد آتی در بورس ICE را می‌توانید در TradingView ببینید (با واحد خود بورس، عربیکا: سنت بر پوند؛
+      معمولاً با 10 تا 30 دقیقه تأخیر). این قیمت هم مرجع است و قیمت تأمین‌کننده نیست؛ پیش‌بینی یا توصیه‌ی خرید نیست.
+    </p>
+    <div class="live-grid" id="live"></div>
   </section>
 
   <section class="panel">
@@ -386,6 +406,21 @@ function renderStaleWarning() {
   el.hidden = false;
 }
 
+// ---------- لینک قیمت روزانه‌ی بورس در TradingView ----------
+// ابزارک رایگان TradingView قراردادهای بورس ICE را نمایش نمی‌دهد، پس فقط لینک می‌گذاریم.
+function renderLive() {
+  const list = state.data.commodities.filter((c) => c.tradingview_symbol);
+  if (!list.length) return;
+  document.getElementById("live").innerHTML = list.map((c) => {
+    const sym = c.tradingview_symbol;
+    const page = "https://www.tradingview.com/symbols/" + encodeURIComponent(sym.replace(":", "-")) + "/";
+    return `<a class="live-link" href="${esc(page)}" target="_blank" rel="noopener">
+      <span class="swatch" style="background:${esc(c.color)}"></span>${esc(c.name_fa)}
+      <bdi dir="ltr">${esc(sym)}</bdi> ↗</a>`;
+  }).join("");
+  document.getElementById("live-panel").hidden = false;
+}
+
 // ---------- شروع ----------
 async function init() {
   try {
@@ -404,7 +439,7 @@ async function init() {
   renderStaleWarning();
   state.commodity = d.commodities[0]?.fred_id;
   Chart.defaults.font.family = '"Vazirmatn", system-ui, sans-serif';
-  renderCards(); renderAnalysis(); renderCommodityPicker(); renderChart(); renderTable();
+  renderCards(); renderAnalysis(); renderCommodityPicker(); renderChart(); renderTable(); renderLive();
 }
 document.fonts?.ready.then(init) ?? init();
 </script>
