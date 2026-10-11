@@ -236,3 +236,1899 @@ date,commodity,price_original,unit_original,usd_per_ton
 2026-05-01,Cocoa,4142.973092507544,U.S. Dollars per Metric Ton,4142.97
 2026-06-01,Cocoa,4395.458431945616,U.S. Dollars per Metric Ton,4395.46
 2026-07-01,Cocoa,5619.189873586655,U.S. Dollars per Metric Ton,5619.19
+2020-01-01,Sugar,14.16666666666667,U.S. Cents per Pound,312.32
+2020-02-01,Sugar,15.07105263157895,U.S. Cents per Pound,332.26
+2020-03-01,Sugar,11.805,U.S. Cents per Pound,260.25
+2020-04-01,Sugar,10.05190476190476,U.S. Cents per Pound,221.6
+2020-05-01,Sugar,10.641,U.S. Cents per Pound,234.59
+2020-06-01,Sugar,11.82818181818182,U.S. Cents per Pound,260.76
+2020-07-01,Sugar,11.90181818181818,U.S. Cents per Pound,262.39
+2020-08-01,Sugar,12.81428571428571,U.S. Cents per Pound,282.5
+2020-09-01,Sugar,12.44142857142857,U.S. Cents per Pound,274.28
+2020-10-01,Sugar,14.28772727272727,U.S. Cents per Pound,314.99
+2020-11-01,Sugar,14.9335,U.S. Cents per Pound,329.22
+2020-12-01,Sugar,14.66772727272727,U.S. Cents per Pound,323.36
+2021-01-01,Sugar,15.91631578947368,U.S. Cents per Pound,350.89
+2021-02-01,Sugar,17.00052631578947,U.S. Cents per Pound,374.79
+2021-03-01,Sugar,15.80565217391304,U.S. Cents per Pound,348.45
+2021-04-01,Sugar,16.23761904761905,U.S. Cents per Pound,357.97
+2021-05-01,Sugar,17.20333333333333,U.S. Cents per Pound,379.26
+2021-06-01,Sugar,17.21409090909091,U.S. Cents per Pound,379.5
+2021-07-01,Sugar,17.7147619047619,U.S. Cents per Pound,390.54
+2021-08-01,Sugar,19.38363636363636,U.S. Cents per Pound,427.33
+2021-09-01,Sugar,19.26428571428571,U.S. Cents per Pound,424.7
+2021-10-01,Sugar,19.61904761904762,U.S. Cents per Pound,432.52
+2021-11-01,Sugar,19.74619047619048,U.S. Cents per Pound,435.32
+2021-12-01,Sugar,19.16727272727273,U.S. Cents per Pound,422.56
+2022-01-01,Sugar,18.461,U.S. Cents per Pound,406.99
+2022-02-01,Sugar,18.20315789473684,U.S. Cents per Pound,401.31
+2022-03-01,Sugar,19.10782608695652,U.S. Cents per Pound,421.25
+2022-04-01,Sugar,19.69904761904762,U.S. Cents per Pound,434.29
+2022-05-01,Sugar,19.28090909090909,U.S. Cents per Pound,425.07
+2022-06-01,Sugar,18.79409090909091,U.S. Cents per Pound,414.33
+2022-07-01,Sugar,18.34,U.S. Cents per Pound,404.32
+2022-08-01,Sugar,18.06260869565217,U.S. Cents per Pound,398.21
+2022-09-01,Sugar,18.18590909090909,U.S. Cents per Pound,400.93
+2022-10-01,Sugar,18.30095238095238,U.S. Cents per Pound,403.46
+2022-11-01,Sugar,19.40590909090909,U.S. Cents per Pound,427.82
+2022-12-01,Sugar,20.065,U.S. Cents per Pound,442.35
+2023-01-01,Sugar,19.94318181818182,U.S. Cents per Pound,439.67
+2023-02-01,Sugar,21.4035,U.S. Cents per Pound,471.86
+2023-03-01,Sugar,20.96173913043478,U.S. Cents per Pound,462.12
+2023-04-01,Sugar,24.582,U.S. Cents per Pound,541.93
+2023-05-01,Sugar,25.7295652173913,U.S. Cents per Pound,567.23
+2023-06-01,Sugar,24.76227272727273,U.S. Cents per Pound,545.91
+2023-07-01,Sugar,24.00809523809524,U.S. Cents per Pound,529.28
+2023-08-01,Sugar,24.19304347826087,U.S. Cents per Pound,533.36
+2023-09-01,Sugar,26.56380952380952,U.S. Cents per Pound,585.63
+2023-10-01,Sugar,26.90363636363636,U.S. Cents per Pound,593.12
+2023-11-01,Sugar,27.30954545454545,U.S. Cents per Pound,602.07
+2023-12-01,Sugar,22.14571428571429,U.S. Cents per Pound,488.22
+2024-01-01,Sugar,22.47478260869565,U.S. Cents per Pound,495.48
+2024-02-01,Sugar,23.34190476190476,U.S. Cents per Pound,514.6
+2024-03-01,Sugar,21.76904761904762,U.S. Cents per Pound,479.92
+2024-04-01,Sugar,20.64727272727273,U.S. Cents per Pound,455.19
+2024-05-01,Sugar,18.7995652173913,U.S. Cents per Pound,414.46
+2024-06-01,Sugar,19.1695,U.S. Cents per Pound,422.61
+2024-07-01,Sugar,19.35173913043478,U.S. Cents per Pound,426.63
+2024-08-01,Sugar,18.41954545454545,U.S. Cents per Pound,406.08
+2024-09-01,Sugar,20.6247619047619,U.S. Cents per Pound,454.69
+2024-10-01,Sugar,22.35521739130435,U.S. Cents per Pound,492.84
+2024-11-01,Sugar,21.6552380952381,U.S. Cents per Pound,477.41
+2024-12-01,Sugar,20.31181818181818,U.S. Cents per Pound,447.79
+2025-01-01,Sugar,18.93,U.S. Cents per Pound,417.33
+2025-02-01,Sugar,20.1855,U.S. Cents per Pound,445.01
+2025-03-01,Sugar,19.05619047619048,U.S. Cents per Pound,420.11
+2025-04-01,Sugar,18.17181818181818,U.S. Cents per Pound,400.62
+2025-05-01,Sugar,17.43136363636364,U.S. Cents per Pound,384.29
+2025-06-01,Sugar,16.22619047619048,U.S. Cents per Pound,357.72
+2025-07-01,Sugar,16.36478260869565,U.S. Cents per Pound,360.78
+2025-08-01,Sugar,16.38952380952381,U.S. Cents per Pound,361.32
+2025-09-01,Sugar,15.79,U.S. Cents per Pound,348.11
+2025-10-01,Sugar,15.55869565217391,U.S. Cents per Pound,343.01
+2025-11-01,Sugar,14.623,U.S. Cents per Pound,322.38
+2025-12-01,Sugar,14.935,U.S. Cents per Pound,329.26
+2026-01-01,Sugar,14.78590909090909,U.S. Cents per Pound,325.97
+2026-02-01,Sugar,14.2015,U.S. Cents per Pound,313.09
+2026-03-01,Sugar,14.79636363636364,U.S. Cents per Pound,326.2
+2026-04-01,Sugar,14.09,U.S. Cents per Pound,310.63
+2026-05-01,Sugar,14.77047619047619,U.S. Cents per Pound,325.63
+2026-06-01,Sugar,13.90772727272727,U.S. Cents per Pound,306.61
+2026-07-01,Sugar,14.81227272727273,U.S. Cents per Pound,326.55
+2020-01-01,Tea,280.542589726087,U.S. Cents per Kilogram,2805.43
+2020-02-01,Tea,267.24550411,U.S. Cents per Kilogram,2672.46
+2020-03-01,Tea,260.1179093454545,U.S. Cents per Kilogram,2601.18
+2020-04-01,Tea,257.2635620227273,U.S. Cents per Kilogram,2572.64
+2020-05-01,Tea,246.2854547714286,U.S. Cents per Kilogram,2462.85
+2020-06-01,Tea,229.7956403136364,U.S. Cents per Kilogram,2297.96
+2020-07-01,Tea,234.6032460695652,U.S. Cents per Kilogram,2346.03
+2020-08-01,Tea,247.7589204428571,U.S. Cents per Kilogram,2477.59
+2020-09-01,Tea,266.1989100818182,U.S. Cents per Kilogram,2661.99
+2020-10-01,Tea,253.9955412272727,U.S. Cents per Kilogram,2539.96
+2020-11-01,Tea,255.6896328142857,U.S. Cents per Kilogram,2556.9
+2020-12-01,Tea,247.700509426087,U.S. Cents per Kilogram,2477.01
+2021-01-01,Tea,249.059037252381,U.S. Cents per Kilogram,2490.59
+2021-02-01,Tea,266.28991827,U.S. Cents per Kilogram,2662.9
+2021-03-01,Tea,254.9020258434783,U.S. Cents per Kilogram,2549.02
+2021-04-01,Tea,239.6824374727273,U.S. Cents per Kilogram,2396.82
+2021-05-01,Tea,244.248605147619,U.S. Cents per Kilogram,2442.49
+2021-06-01,Tea,228.0168441954545,U.S. Cents per Kilogram,2280.17
+2021-07-01,Tea,225.4107010090909,U.S. Cents per Kilogram,2254.11
+2021-08-01,Tea,257.9254396590909,U.S. Cents per Kilogram,2579.25
+2021-09-01,Tea,292.6740153863636,U.S. Cents per Kilogram,2926.74
+2021-10-01,Tea,315.9283767952381,U.S. Cents per Kilogram,3159.28
+2021-11-01,Tea,315.6742630545455,U.S. Cents per Kilogram,3156.74
+2021-12-01,Tea,316.6293093173913,U.S. Cents per Kilogram,3166.29
+2022-01-01,Tea,312.3747242904762,U.S. Cents per Kilogram,3123.75
+2022-02-01,Tea,314.069209815,U.S. Cents per Kilogram,3140.69
+2022-03-01,Tea,282.4418907521739,U.S. Cents per Kilogram,2824.42
+2022-04-01,Tea,270.6409757238095,U.S. Cents per Kilogram,2706.41
+2022-05-01,Tea,263.4686648636364,U.S. Cents per Kilogram,2634.69
+2022-06-01,Tea,265.2888283545455,U.S. Cents per Kilogram,2652.89
+2022-07-01,Tea,264.4870896761905,U.S. Cents per Kilogram,2644.87
+2022-08-01,Tea,262.2222485434783,U.S. Cents per Kilogram,2622.22
+2022-09-01,Tea,268.7636858863636,U.S. Cents per Kilogram,2687.64
+2022-10-01,Tea,275.0613727761905,U.S. Cents per Kilogram,2750.61
+2022-11-01,Tea,283.2836264636364,U.S. Cents per Kilogram,2832.84
+2022-12-01,Tea,273.2727272727273,U.S. Cents per Kilogram,2732.73
+2023-01-01,Tea,264.9165221363636,U.S. Cents per Kilogram,2649.17
+2023-02-01,Tea,264.46975473,U.S. Cents per Kilogram,2644.7
+2023-03-01,Tea,278.8015637826087,U.S. Cents per Kilogram,2788.02
+2023-04-01,Tea,264.19673021,U.S. Cents per Kilogram,2641.97
+2023-05-01,Tea,260.8373415391304,U.S. Cents per Kilogram,2608.37
+2023-06-01,Tea,264.9992568590909,U.S. Cents per Kilogram,2649.99
+2023-07-01,Tea,273.2412092857143,U.S. Cents per Kilogram,2732.41
+2023-08-01,Tea,307.4493543521739,U.S. Cents per Kilogram,3074.49
+2023-09-01,Tea,326.7626832619048,U.S. Cents per Kilogram,3267.63
+2023-10-01,Tea,324.1132028772727,U.S. Cents per Kilogram,3241.13
+2023-11-01,Tea,335.5719593727273,U.S. Cents per Kilogram,3355.72
+2023-12-01,Tea,317.2284935904762,U.S. Cents per Kilogram,3172.28
+2024-01-01,Tea,315.1256960086957,U.S. Cents per Kilogram,3151.26
+2024-02-01,Tea,340.8906189333333,U.S. Cents per Kilogram,3408.91
+2024-03-01,Tea,364.9861165047619,U.S. Cents per Kilogram,3649.86
+2024-04-01,Tea,336.5234084636364,U.S. Cents per Kilogram,3365.23
+2024-05-01,Tea,295.8557042913043,U.S. Cents per Kilogram,2958.56
+2024-06-01,Tea,293.9108992,U.S. Cents per Kilogram,2939.11
+2024-07-01,Tea,300.6039569,U.S. Cents per Kilogram,3006.04
+2024-08-01,Tea,323.4513252227273,U.S. Cents per Kilogram,3234.51
+2024-09-01,Tea,346.7844816428571,U.S. Cents per Kilogram,3467.84
+2024-10-01,Tea,328.5395095391304,U.S. Cents per Kilogram,3285.4
+2024-11-01,Tea,352.4616582380952,U.S. Cents per Kilogram,3524.62
+2024-12-01,Tea,337.1439187272727,U.S. Cents per Kilogram,3371.44
+2025-01-01,Tea,342.6655609521739,U.S. Cents per Kilogram,3426.66
+2025-02-01,Tea,332.81689372,U.S. Cents per Kilogram,3328.17
+2025-03-01,Tea,320.8254833190476,U.S. Cents per Kilogram,3208.25
+2025-04-01,Tea,315.8810998045455,U.S. Cents per Kilogram,3158.81
+2025-05-01,Tea,318.9422838772727,U.S. Cents per Kilogram,3189.42
+2025-06-01,Tea,305.9608148428571,U.S. Cents per Kilogram,3059.61
+2025-07-01,Tea,303.7694586086957,U.S. Cents per Kilogram,3037.69
+2025-08-01,Tea,301.7571039047619,U.S. Cents per Kilogram,3017.57
+2025-09-01,Tea,323.5754272863636,U.S. Cents per Kilogram,3235.75
+2025-10-01,Tea,317.5393910652174,U.S. Cents per Kilogram,3175.39
+2025-11-01,Tea,303.78528611,U.S. Cents per Kilogram,3037.85
+2025-12-01,Tea,313.6616514565217,U.S. Cents per Kilogram,3136.62
+2026-01-01,Tea,309.8000990681818,U.S. Cents per Kilogram,3098.0
+2026-02-01,Tea,302.7386921,U.S. Cents per Kilogram,3027.39
+2026-03-01,Tea,289.8610354272727,U.S. Cents per Kilogram,2898.61
+2026-04-01,Tea,295.6524647136364,U.S. Cents per Kilogram,2956.52
+2026-05-01,Tea,287.369144952381,U.S. Cents per Kilogram,2873.69
+2026-06-01,Tea,275.9202378045455,U.S. Cents per Kilogram,2759.2
+2026-07-01,Tea,273.1432294956522,U.S. Cents per Kilogram,2731.43
+2020-01-01,Wheat,178.2417773015873,U.S. Dollars per Metric Ton,178.24
+2020-02-01,Wheat,172.2311028070175,U.S. Dollars per Metric Ton,172.23
+2020-03-01,Wheat,170.8747516666666,U.S. Dollars per Metric Ton,170.87
+2020-04-01,Wheat,179.746517936508,U.S. Dollars per Metric Ton,179.75
+2020-05-01,Wheat,174.9549688333334,U.S. Dollars per Metric Ton,174.95
+2020-06-01,Wheat,169.7223366666666,U.S. Dollars per Metric Ton,169.72
+2020-07-01,Wheat,170.5741216666668,U.S. Dollars per Metric Ton,170.57
+2020-08-01,Wheat,174.182476984127,U.S. Dollars per Metric Ton,174.18
+2020-09-01,Wheat,204.1373138095238,U.S. Dollars per Metric Ton,204.14
+2020-10-01,Wheat,203.4263,U.S. Dollars per Metric Ton,203.43
+2020-11-01,Wheat,210.7539364912282,U.S. Dollars per Metric Ton,210.75
+2020-12-01,Wheat,217.3125428571429,U.S. Dollars per Metric Ton,217.31
+2021-01-01,Wheat,237.9442498245614,U.S. Dollars per Metric Ton,237.94
+2021-02-01,Wheat,240.8063880701754,U.S. Dollars per Metric Ton,240.81
+2021-03-01,Wheat,229.8875492753623,U.S. Dollars per Metric Ton,229.89
+2021-04-01,Wheat,239.9361433333333,U.S. Dollars per Metric Ton,239.94
+2021-05-01,Wheat,278.4470053968253,U.S. Dollars per Metric Ton,278.45
+2021-06-01,Wheat,238.7670266666666,U.S. Dollars per Metric Ton,238.77
+2021-07-01,Wheat,243.628006984127,U.S. Dollars per Metric Ton,243.63
+2021-08-01,Wheat,274.87603,U.S. Dollars per Metric Ton,274.88
+2021-09-01,Wheat,269.7335073015873,U.S. Dollars per Metric Ton,269.73
+2021-10-01,Wheat,294.0368182539682,U.S. Dollars per Metric Ton,294.04
+2021-11-01,Wheat,317.4373548133334,U.S. Dollars per Metric Ton,317.44
+2021-12-01,Wheat,324.0179005555556,U.S. Dollars per Metric Ton,324.02
+2022-01-01,Wheat,326.0816698333334,U.S. Dollars per Metric Ton,326.08
+2022-02-01,Wheat,347.5032275000001,U.S. Dollars per Metric Ton,347.5
+2022-03-01,Wheat,387.6650136971014,U.S. Dollars per Metric Ton,387.67
+2022-04-01,Wheat,406.0268863016667,U.S. Dollars per Metric Ton,406.03
+2022-05-01,Wheat,444.1565678174603,U.S. Dollars per Metric Ton,444.16
+2022-06-01,Wheat,397.6523199,U.S. Dollars per Metric Ton,397.65
+2022-07-01,Wheat,321.9751276587302,U.S. Dollars per Metric Ton,321.98
+2022-08-01,Wheat,323.0167687681159,U.S. Dollars per Metric Ton,323.02
+2022-09-01,Wheat,346.3221810714287,U.S. Dollars per Metric Ton,346.32
+2022-10-01,Wheat,353.7129071666667,U.S. Dollars per Metric Ton,353.71
+2022-11-01,Wheat,344.3298607283333,U.S. Dollars per Metric Ton,344.33
+2022-12-01,Wheat,323.6548381349207,U.S. Dollars per Metric Ton,323.65
+2023-01-01,Wheat,320.0970451249999,U.S. Dollars per Metric Ton,320.1
+2023-02-01,Wheat,332.4120234368421,U.S. Dollars per Metric Ton,332.41
+2023-03-01,Wheat,309.4295998550725,U.S. Dollars per Metric Ton,309.43
+2023-04-01,Wheat,312.8108243719297,U.S. Dollars per Metric Ton,312.81
+2023-05-01,Wheat,299.44000625,U.S. Dollars per Metric Ton,299.44
+2023-06-01,Wheat,282.2767452825397,U.S. Dollars per Metric Ton,282.28
+2023-07-01,Wheat,278.6176009920635,U.S. Dollars per Metric Ton,278.62
+2023-08-01,Wheat,241.4138777536232,U.S. Dollars per Metric Ton,241.41
+2023-09-01,Wheat,229.390711,U.S. Dollars per Metric Ton,229.39
+2023-10-01,Wheat,216.4639391269841,U.S. Dollars per Metric Ton,216.46
+2023-11-01,Wheat,216.000269047619,U.S. Dollars per Metric Ton,216.0
+2023-12-01,Wheat,229.6334125877193,U.S. Dollars per Metric Ton,229.63
+2024-01-01,Wheat,226.0785319047619,U.S. Dollars per Metric Ton,226.08
+2024-02-01,Wheat,219.2380684633333,U.S. Dollars per Metric Ton,219.24
+2024-03-01,Wheat,211.8410172083334,U.S. Dollars per Metric Ton,211.84
+2024-04-01,Wheat,208.3816845,U.S. Dollars per Metric Ton,208.38
+2024-05-01,Wheat,227.4307704166667,U.S. Dollars per Metric Ton,227.43
+2024-06-01,Wheat,205.2260548983333,U.S. Dollars per Metric Ton,205.23
+2024-07-01,Wheat,183.2256341666667,U.S. Dollars per Metric Ton,183.23
+2024-08-01,Wheat,175.5104662666666,U.S. Dollars per Metric Ton,175.51
+2024-09-01,Wheat,188.5052165740741,U.S. Dollars per Metric Ton,188.51
+2024-10-01,Wheat,197.3719458333333,U.S. Dollars per Metric Ton,197.37
+2024-11-01,Wheat,185.7347870824562,U.S. Dollars per Metric Ton,185.73
+2024-12-01,Wheat,185.7943505,U.S. Dollars per Metric Ton,185.79
+2025-01-01,Wheat,190.6296420634921,U.S. Dollars per Metric Ton,190.63
+2025-02-01,Wheat,190.1026421105263,U.S. Dollars per Metric Ton,190.1
+2025-03-01,Wheat,179.6065420634921,U.S. Dollars per Metric Ton,179.61
+2025-04-01,Wheat,174.8167426587301,U.S. Dollars per Metric Ton,174.82
+2025-05-01,Wheat,196.8410714285714,U.S. Dollars per Metric Ton,196.84
+2025-06-01,Wheat,173.1947634816666,U.S. Dollars per Metric Ton,173.19
+2025-07-01,Wheat,165.2666224637681,U.S. Dollars per Metric Ton,165.27
+2025-08-01,Wheat,159.3079408380954,U.S. Dollars per Metric Ton,159.31
+2025-09-01,Wheat,155.1151385317461,U.S. Dollars per Metric Ton,155.12
+2025-10-01,Wheat,157.39233125,U.S. Dollars per Metric Ton,157.39
+2025-11-01,Wheat,169.2032881647058,U.S. Dollars per Metric Ton,169.2
+2025-12-01,Wheat,165.6266704583334,U.S. Dollars per Metric Ton,165.63
+2026-01-01,Wheat,169.2505145833334,U.S. Dollars per Metric Ton,169.25
+2026-02-01,Wheat,174.7524918912281,U.S. Dollars per Metric Ton,174.75
+2026-03-01,Wheat,193.8771220833334,U.S. Dollars per Metric Ton,193.88
+2026-04-01,Wheat,202.641496636508,U.S. Dollars per Metric Ton,202.64
+2026-05-01,Wheat,220.8845521666666,U.S. Dollars per Metric Ton,220.88
+2026-06-01,Wheat,199.6482875619048,U.S. Dollars per Metric Ton,199.65
+2026-07-01,Wheat,228.73884495,U.S. Dollars per Metric Ton,228.74
+2020-01-01,Corn,171.8141352040817,U.S. Dollars per Metric Ton,171.81
+2020-02-01,Corn,168.7445984962405,U.S. Dollars per Metric Ton,168.74
+2020-03-01,Corn,162.1791482142857,U.S. Dollars per Metric Ton,162.18
+2020-04-01,Corn,147.0121602040815,U.S. Dollars per Metric Ton,147.01
+2020-05-01,Corn,143.9892437500002,U.S. Dollars per Metric Ton,143.99
+2020-06-01,Corn,148.0423803571428,U.S. Dollars per Metric Ton,148.04
+2020-07-01,Corn,152.5876196428571,U.S. Dollars per Metric Ton,152.59
+2020-08-01,Corn,149.3929998299319,U.S. Dollars per Metric Ton,149.39
+2020-09-01,Corn,166.6025335034014,U.S. Dollars per Metric Ton,166.6
+2020-10-01,Corn,186.7663875,U.S. Dollars per Metric Ton,186.77
+2020-11-01,Corn,190.6250375939849,U.S. Dollars per Metric Ton,190.63
+2020-12-01,Corn,199.1844175170068,U.S. Dollars per Metric Ton,199.18
+2021-01-01,Corn,231.7544614661655,U.S. Dollars per Metric Ton,231.75
+2021-02-01,Corn,245.5540565789474,U.S. Dollars per Metric Ton,245.55
+2021-03-01,Corn,245.7603568322983,U.S. Dollars per Metric Ton,245.76
+2021-04-01,Corn,268.6224488095237,U.S. Dollars per Metric Ton,268.62
+2021-05-01,Corn,304.297549659864,U.S. Dollars per Metric Ton,304.3
+2021-06-01,Corn,292.5237267857143,U.S. Dollars per Metric Ton,292.52
+2021-07-01,Corn,278.445755612245,U.S. Dollars per Metric Ton,278.45
+2021-08-01,Corn,257.020755357143,U.S. Dollars per Metric Ton,257.02
+2021-09-01,Corn,235.8156035714281,U.S. Dollars per Metric Ton,235.82
+2021-10-01,Corn,239.60245085034,U.S. Dollars per Metric Ton,239.6
+2021-11-01,Corn,248.7677460714286,U.S. Dollars per Metric Ton,248.77
+2021-12-01,Corn,264.5731467687075,U.S. Dollars per Metric Ton,264.57
+2022-01-01,Corn,276.7191782142856,U.S. Dollars per Metric Ton,276.72
+2022-02-01,Corn,292.6715930451127,U.S. Dollars per Metric Ton,292.67
+2022-03-01,Corn,335.9306841614907,U.S. Dollars per Metric Ton,335.93
+2022-04-01,Corn,348.5071169642857,U.S. Dollars per Metric Ton,348.51
+2022-05-01,Corn,344.9092996031747,U.S. Dollars per Metric Ton,344.91
+2022-06-01,Corn,335.7171340136054,U.S. Dollars per Metric Ton,335.72
+2022-07-01,Corn,312.6820419642856,U.S. Dollars per Metric Ton,312.68
+2022-08-01,Corn,293.9307903338509,U.S. Dollars per Metric Ton,293.93
+2022-09-01,Corn,312.5461278911564,U.S. Dollars per Metric Ton,312.55
+2022-10-01,Corn,343.5532833333333,U.S. Dollars per Metric Ton,343.55
+2022-11-01,Corn,320.929682857143,U.S. Dollars per Metric Ton,320.93
+2022-12-01,Corn,302.2354051020408,U.S. Dollars per Metric Ton,302.24
+2023-01-01,Corn,302.8399883928572,U.S. Dollars per Metric Ton,302.84
+2023-02-01,Corn,298.2453033834586,U.S. Dollars per Metric Ton,298.25
+2023-03-01,Corn,284.9574049689442,U.S. Dollars per Metric Ton,284.96
+2023-04-01,Corn,291.1797449248119,U.S. Dollars per Metric Ton,291.18
+2023-05-01,Corn,268.1725263605443,U.S. Dollars per Metric Ton,268.17
+2023-06-01,Corn,266.9352396258504,U.S. Dollars per Metric Ton,266.94
+2023-07-01,Corn,235.2719472789116,U.S. Dollars per Metric Ton,235.27
+2023-08-01,Corn,207.6758886645963,U.S. Dollars per Metric Ton,207.68
+2023-09-01,Corn,223.8476664285715,U.S. Dollars per Metric Ton,223.85
+2023-10-01,Corn,221.90251875,U.S. Dollars per Metric Ton,221.9
+2023-11-01,Corn,209.0402968303571,U.S. Dollars per Metric Ton,209.04
+2023-12-01,Corn,207.3979688909774,U.S. Dollars per Metric Ton,207.4
+2024-01-01,Corn,198.7579285289115,U.S. Dollars per Metric Ton,198.76
+2024-02-01,Corn,188.9477444642856,U.S. Dollars per Metric Ton,188.95
+2024-03-01,Corn,190.2272114285714,U.S. Dollars per Metric Ton,190.23
+2024-04-01,Corn,190.9000500000001,U.S. Dollars per Metric Ton,190.9
+2024-05-01,Corn,201.0194705357142,U.S. Dollars per Metric Ton,201.02
+2024-06-01,Corn,191.2409429464286,U.S. Dollars per Metric Ton,191.24
+2024-07-01,Corn,177.7677084464286,U.S. Dollars per Metric Ton,177.77
+2024-08-01,Corn,169.2967424107143,U.S. Dollars per Metric Ton,169.3
+2024-09-01,Corn,183.6558276597744,U.S. Dollars per Metric Ton,183.66
+2024-10-01,Corn,189.5879058618013,U.S. Dollars per Metric Ton,189.59
+2024-11-01,Corn,201.3082701884922,U.S. Dollars per Metric Ton,201.31
+2024-12-01,Corn,202.8299610267858,U.S. Dollars per Metric Ton,202.83
+2025-01-01,Corn,214.3599267857142,U.S. Dollars per Metric Ton,214.36
+2025-02-01,Corn,221.2545443139097,U.S. Dollars per Metric Ton,221.25
+2025-03-01,Corn,207.7516908163266,U.S. Dollars per Metric Ton,207.75
+2025-04-01,Corn,215.5690933673469,U.S. Dollars per Metric Ton,215.57
+2025-05-01,Corn,204.8084481292517,U.S. Dollars per Metric Ton,204.81
+2025-06-01,Corn,195.7190773214286,U.S. Dollars per Metric Ton,195.72
+2025-07-01,Corn,192.4525892142857,U.S. Dollars per Metric Ton,192.45
+2025-08-01,Corn,183.0247028911564,U.S. Dollars per Metric Ton,183.02
+2025-09-01,Corn,196.1459412448979,U.S. Dollars per Metric Ton,196.15
+2025-10-01,Corn,198.0176441964286,U.S. Dollars per Metric Ton,198.02
+2025-11-01,Corn,201.6578882352942,U.S. Dollars per Metric Ton,201.66
+2025-12-01,Corn,205.3150795535714,U.S. Dollars per Metric Ton,205.32
+2026-01-01,Corn,203.8978238392856,U.S. Dollars per Metric Ton,203.9
+2026-02-01,Corn,210.6354865131578,U.S. Dollars per Metric Ton,210.64
+2026-03-01,Corn,213.3041428571428,U.S. Dollars per Metric Ton,213.3
+2026-04-01,Corn,214.5239610119047,U.S. Dollars per Metric Ton,214.52
+2026-05-01,Corn,215.6206469812925,U.S. Dollars per Metric Ton,215.62
+2026-06-01,Corn,195.7818789965986,U.S. Dollars per Metric Ton,195.78
+2026-07-01,Corn,213.1901539821428,U.S. Dollars per Metric Ton,213.19
+2020-01-01,Barley,115.0516597904742,U.S. Dollars per Metric Ton,115.05
+2020-02-01,Barley,110.8359566742724,U.S. Dollars per Metric Ton,110.84
+2020-03-01,Barley,101.676812669613,U.S. Dollars per Metric Ton,101.68
+2020-04-01,Barley,97.98402126180477,U.S. Dollars per Metric Ton,97.98
+2020-05-01,Barley,98.64062639946562,U.S. Dollars per Metric Ton,98.64
+2020-06-01,Barley,101.6783568901043,U.S. Dollars per Metric Ton,101.68
+2020-07-01,Barley,102.0305104261734,U.S. Dollars per Metric Ton,102.03
+2020-08-01,Barley,102.6101036488883,U.S. Dollars per Metric Ton,102.61
+2020-09-01,Barley,102.1204787904564,U.S. Dollars per Metric Ton,102.12
+2020-10-01,Barley,102.3711640532456,U.S. Dollars per Metric Ton,102.37
+2020-11-01,Barley,108.0519156641246,U.S. Dollars per Metric Ton,108.05
+2020-12-01,Barley,112.4613829436995,U.S. Dollars per Metric Ton,112.46
+2021-01-01,Barley,125.6985334253686,U.S. Dollars per Metric Ton,125.7
+2021-02-01,Barley,137.8452873786104,U.S. Dollars per Metric Ton,137.85
+2021-03-01,Barley,138.9813247795116,U.S. Dollars per Metric Ton,138.98
+2021-04-01,Barley,154.2521256663417,U.S. Dollars per Metric Ton,154.25
+2021-05-01,Barley,195.8352260726747,U.S. Dollars per Metric Ton,195.84
+2021-06-01,Barley,187.3654014434545,U.S. Dollars per Metric Ton,187.37
+2021-07-01,Barley,180.1690828548253,U.S. Dollars per Metric Ton,180.17
+2021-08-01,Barley,169.7758415523893,U.S. Dollars per Metric Ton,169.78
+2021-09-01,Barley,175.5744790978633,U.S. Dollars per Metric Ton,175.57
+2021-10-01,Barley,208.6562858597143,U.S. Dollars per Metric Ton,208.66
+2021-11-01,Barley,224.3597324741005,U.S. Dollars per Metric Ton,224.36
+2021-12-01,Barley,238.5108045662492,U.S. Dollars per Metric Ton,238.51
+2022-01-01,Barley,250.9187942883161,U.S. Dollars per Metric Ton,250.92
+2022-02-01,Barley,249.2470198256373,U.S. Dollars per Metric Ton,249.25
+2022-03-01,Barley,256.2667716263684,U.S. Dollars per Metric Ton,256.27
+2022-04-01,Barley,262.9558672755319,U.S. Dollars per Metric Ton,262.96
+2022-05-01,Barley,257.3645704578824,U.S. Dollars per Metric Ton,257.36
+2022-06-01,Barley,259.1346069896603,U.S. Dollars per Metric Ton,259.13
+2022-07-01,Barley,240.2980620266026,U.S. Dollars per Metric Ton,240.3
+2022-08-01,Barley,212.4007654289837,U.S. Dollars per Metric Ton,212.4
+2022-09-01,Barley,180.5875147215413,U.S. Dollars per Metric Ton,180.59
+2022-10-01,Barley,175.4284935696351,U.S. Dollars per Metric Ton,175.43
+2022-11-01,Barley,178.6164032284305,U.S. Dollars per Metric Ton,178.62
+2022-12-01,Barley,179.3103751202727,U.S. Dollars per Metric Ton,179.31
+2023-01-01,Barley,182.4280938491766,U.S. Dollars per Metric Ton,182.43
+2023-02-01,Barley,182.1660478168462,U.S. Dollars per Metric Ton,182.17
+2023-03-01,Barley,182.8916487679013,U.S. Dollars per Metric Ton,182.89
+2023-04-01,Barley,185.8270988062516,U.S. Dollars per Metric Ton,185.83
+2023-05-01,Barley,180.3704364041095,U.S. Dollars per Metric Ton,180.37
+2023-06-01,Barley,175.4762438558907,U.S. Dollars per Metric Ton,175.48
+2023-07-01,Barley,172.9287223642282,U.S. Dollars per Metric Ton,172.93
+2023-08-01,Barley,159.4437327840906,U.S. Dollars per Metric Ton,159.44
+2023-09-01,Barley,148.2003029177796,U.S. Dollars per Metric Ton,148.2
+2023-10-01,Barley,142.1169310511096,U.S. Dollars per Metric Ton,142.12
+2023-11-01,Barley,143.3029217635999,U.S. Dollars per Metric Ton,143.3
+2023-12-01,Barley,147.8210978431144,U.S. Dollars per Metric Ton,147.82
+2024-01-01,Barley,161.7852646567206,U.S. Dollars per Metric Ton,161.79
+2024-02-01,Barley,153.5375539048987,U.S. Dollars per Metric Ton,153.54
+2024-03-01,Barley,137.0894974301566,U.S. Dollars per Metric Ton,137.09
+2024-04-01,Barley,132.5411079048619,U.S. Dollars per Metric Ton,132.54
+2024-05-01,Barley,133.8855463950967,U.S. Dollars per Metric Ton,133.89
+2024-06-01,Barley,135.9903528114609,U.S. Dollars per Metric Ton,135.99
+2024-07-01,Barley,139.8373207460553,U.S. Dollars per Metric Ton,139.84
+2024-08-01,Barley,134.67721365246,U.S. Dollars per Metric Ton,134.68
+2024-09-01,Barley,137.7218070752046,U.S. Dollars per Metric Ton,137.72
+2024-10-01,Barley,121.0060018952859,U.S. Dollars per Metric Ton,121.01
+2024-11-01,Barley,123.7511766851277,U.S. Dollars per Metric Ton,123.75
+2024-12-01,Barley,121.9439985694972,U.S. Dollars per Metric Ton,121.94
+2025-01-01,Barley,113.213100914494,U.S. Dollars per Metric Ton,113.21
+2025-02-01,Barley,113.5130604911878,U.S. Dollars per Metric Ton,113.51
+2025-03-01,Barley,110.4356473424062,U.S. Dollars per Metric Ton,110.44
+2025-04-01,Barley,113.2644073758933,U.S. Dollars per Metric Ton,113.26
+2025-05-01,Barley,117.6646488999768,U.S. Dollars per Metric Ton,117.66
+2025-06-01,Barley,117.8295202030324,U.S. Dollars per Metric Ton,117.83
+2025-07-01,Barley,119.2641607969493,U.S. Dollars per Metric Ton,119.26
+2025-08-01,Barley,118.9332751469211,U.S. Dollars per Metric Ton,118.93
+2025-09-01,Barley,115.1575613576706,U.S. Dollars per Metric Ton,115.16
+2025-10-01,Barley,113.2463074955972,U.S. Dollars per Metric Ton,113.25
+2025-11-01,Barley,112.7114342048468,U.S. Dollars per Metric Ton,112.71
+2025-12-01,Barley,119.1187739003372,U.S. Dollars per Metric Ton,119.12
+2026-01-01,Barley,118.6946163279736,U.S. Dollars per Metric Ton,118.69
+2026-02-01,Barley,117.7668905703948,U.S. Dollars per Metric Ton,117.77
+2026-03-01,Barley,117.198700623259,U.S. Dollars per Metric Ton,117.2
+2026-04-01,Barley,121.6442659463537,U.S. Dollars per Metric Ton,121.64
+2026-05-01,Barley,124.9654568970523,U.S. Dollars per Metric Ton,124.97
+2026-06-01,Barley,121.0900080253843,U.S. Dollars per Metric Ton,121.09
+2026-07-01,Barley,121.9043696921157,U.S. Dollars per Metric Ton,121.9
+2020-01-01,Rice,428.5217391304348,U.S. Dollars per Metric Ton,428.52
+2020-02-01,Rice,430.25,U.S. Dollars per Metric Ton,430.25
+2020-03-01,Rice,471.6818181818182,U.S. Dollars per Metric Ton,471.68
+2020-04-01,Rice,542.8181818181819,U.S. Dollars per Metric Ton,542.82
+2020-05-01,Rice,498.8571428571428,U.S. Dollars per Metric Ton,498.86
+2020-06-01,Rice,503.0454545454546,U.S. Dollars per Metric Ton,503.05
+2020-07-01,Rice,464.4782608695652,U.S. Dollars per Metric Ton,464.48
+2020-08-01,Rice,484.4285714285714,U.S. Dollars per Metric Ton,484.43
+2020-09-01,Rice,491.9090909090909,U.S. Dollars per Metric Ton,491.91
+2020-10-01,Rice,458.8636363636364,U.S. Dollars per Metric Ton,458.86
+2020-11-01,Rice,459.8571428571428,U.S. Dollars per Metric Ton,459.86
+2020-12-01,Rice,499.3478260869565,U.S. Dollars per Metric Ton,499.35
+2021-01-01,Rice,518.4761904761905,U.S. Dollars per Metric Ton,518.48
+2021-02-01,Rice,535.75,U.S. Dollars per Metric Ton,535.75
+2021-03-01,Rice,502.3478260869565,U.S. Dollars per Metric Ton,502.35
+2021-04-01,Rice,470.2727272727273,U.S. Dollars per Metric Ton,470.27
+2021-05-01,Rice,477.1904761904762,U.S. Dollars per Metric Ton,477.19
+2021-06-01,Rice,454.8636363636364,U.S. Dollars per Metric Ton,454.86
+2021-07-01,Rice,414.8636363636364,U.S. Dollars per Metric Ton,414.86
+2021-08-01,Rice,386.7727272727273,U.S. Dollars per Metric Ton,386.77
+2021-09-01,Rice,387.0,U.S. Dollars per Metric Ton,387.0
+2021-10-01,Rice,388.9047619047619,U.S. Dollars per Metric Ton,388.9
+2021-11-01,Rice,383.5454545454546,U.S. Dollars per Metric Ton,383.55
+2021-12-01,Rice,383.5652173913044,U.S. Dollars per Metric Ton,383.57
+2022-01-01,Rice,397.0,U.S. Dollars per Metric Ton,397.0
+2022-02-01,Rice,410.0,U.S. Dollars per Metric Ton,410.0
+2022-03-01,Rice,419.4347826086956,U.S. Dollars per Metric Ton,419.43
+2022-04-01,Rice,415.7619047619048,U.S. Dollars per Metric Ton,415.76
+2022-05-01,Rice,425.2727272727273,U.S. Dollars per Metric Ton,425.27
+2022-06-01,Rice,434.1818181818182,U.S. Dollars per Metric Ton,434.18
+2022-07-01,Rice,412.4761904761905,U.S. Dollars per Metric Ton,412.48
+2022-08-01,Rice,411.0869565217391,U.S. Dollars per Metric Ton,411.09
+2022-09-01,Rice,426.8181818181818,U.S. Dollars per Metric Ton,426.82
+2022-10-01,Rice,416.0952380952381,U.S. Dollars per Metric Ton,416.1
+2022-11-01,Rice,416.3181818181818,U.S. Dollars per Metric Ton,416.32
+2022-12-01,Rice,444.2272727272727,U.S. Dollars per Metric Ton,444.23
+2023-01-01,Rice,480.6363636363636,U.S. Dollars per Metric Ton,480.64
+2023-02-01,Rice,484.95,U.S. Dollars per Metric Ton,484.95
+2023-03-01,Rice,453.5652173913044,U.S. Dollars per Metric Ton,453.57
+2023-04-01,Rice,479.5,U.S. Dollars per Metric Ton,479.5
+2023-05-01,Rice,491.7391304347826,U.S. Dollars per Metric Ton,491.74
+2023-06-01,Rice,492.2727272727273,U.S. Dollars per Metric Ton,492.27
+2023-07-01,Rice,512.2380952380952,U.S. Dollars per Metric Ton,512.24
+2023-08-01,Rice,607.9565217391304,U.S. Dollars per Metric Ton,607.96
+2023-09-01,Rice,606.9047619047619,U.S. Dollars per Metric Ton,606.9
+2023-10-01,Rice,574.4545454545455,U.S. Dollars per Metric Ton,574.45
+2023-11-01,Rice,555.4090909090909,U.S. Dollars per Metric Ton,555.41
+2023-12-01,Rice,603.2380952380952,U.S. Dollars per Metric Ton,603.24
+2024-01-01,Rice,629.0869565217391,U.S. Dollars per Metric Ton,629.09
+2024-02-01,Rice,609.5238095238095,U.S. Dollars per Metric Ton,609.52
+2024-03-01,Rice,601.7142857142857,U.S. Dollars per Metric Ton,601.71
+2024-04-01,Rice,570.1363636363636,U.S. Dollars per Metric Ton,570.14
+2024-05-01,Rice,600.5217391304348,U.S. Dollars per Metric Ton,600.52
+2024-06-01,Rice,605.5,U.S. Dollars per Metric Ton,605.5
+2024-07-01,Rice,567.0434782608696,U.S. Dollars per Metric Ton,567.04
+2024-08-01,Rice,563.7727272727273,U.S. Dollars per Metric Ton,563.77
+2024-09-01,Rice,555.0952380952381,U.S. Dollars per Metric Ton,555.1
+2024-10-01,Rice,496.6086956521739,U.S. Dollars per Metric Ton,496.61
+2024-11-01,Rice,487.4285714285714,U.S. Dollars per Metric Ton,487.43
+2024-12-01,Rice,495.6818181818182,U.S. Dollars per Metric Ton,495.68
+2025-01-01,Rice,459.7826086956522,U.S. Dollars per Metric Ton,459.78
+2025-02-01,Rice,423.5,U.S. Dollars per Metric Ton,423.5
+2025-03-01,Rice,417.0,U.S. Dollars per Metric Ton,417.0
+2025-04-01,Rice,403.9090909090909,U.S. Dollars per Metric Ton,403.91
+2025-05-01,Rice,396.4545454545454,U.S. Dollars per Metric Ton,396.45
+2025-06-01,Rice,385.7142857142857,U.S. Dollars per Metric Ton,385.71
+2025-07-01,Rice,367.5652173913044,U.S. Dollars per Metric Ton,367.57
+2025-08-01,Rice,351.2380952380952,U.S. Dollars per Metric Ton,351.24
+2025-09-01,Rice,349.1363636363636,U.S. Dollars per Metric Ton,349.14
+2025-10-01,Rice,330.6086956521739,U.S. Dollars per Metric Ton,330.61
+2025-11-01,Rice,336.0,U.S. Dollars per Metric Ton,336.0
+2025-12-01,Rice,388.6956521739131,U.S. Dollars per Metric Ton,388.7
+2026-01-01,Rice,384.5454545454546,U.S. Dollars per Metric Ton,384.55
+2026-02-01,Rice,388.5,U.S. Dollars per Metric Ton,388.5
+2026-03-01,Rice,383.2727272727273,U.S. Dollars per Metric Ton,383.27
+2026-04-01,Rice,385.9545454545454,U.S. Dollars per Metric Ton,385.95
+2026-05-01,Rice,405.5714285714286,U.S. Dollars per Metric Ton,405.57
+2026-06-01,Rice,444.0,U.S. Dollars per Metric Ton,444.0
+2026-07-01,Rice,464.0,U.S. Dollars per Metric Ton,464.0
+2020-01-01,Soybeans,337.079705,U.S. Dollars per Metric Ton,337.08
+2020-02-01,Soybeans,325.4283145657895,U.S. Dollars per Metric Ton,325.43
+2020-03-01,Soybeans,319.3361563636364,U.S. Dollars per Metric Ton,319.34
+2020-04-01,Soybeans,309.994349,U.S. Dollars per Metric Ton,309.99
+2020-05-01,Soybeans,309.3314314125,U.S. Dollars per Metric Ton,309.33
+2020-06-01,Soybeans,318.6430365681818,U.S. Dollars per Metric Ton,318.64
+2020-07-01,Soybeans,328.9354479886364,U.S. Dollars per Metric Ton,328.94
+2020-08-01,Soybeans,332.14117675,U.S. Dollars per Metric Ton,332.14
+2020-09-01,Soybeans,366.824605,U.S. Dollars per Metric Ton,366.82
+2020-10-01,Soybeans,387.5750528522727,U.S. Dollars per Metric Ton,387.58
+2020-11-01,Soybeans,419.585496225,U.S. Dollars per Metric Ton,419.59
+2020-12-01,Soybeans,443.6551249772727,U.S. Dollars per Metric Ton,443.66
+2021-01-01,Soybeans,504.3121171973684,U.S. Dollars per Metric Ton,504.31
+2021-02-01,Soybeans,507.8172727894737,U.S. Dollars per Metric Ton,507.82
+2021-03-01,Soybeans,519.8794223152174,U.S. Dollars per Metric Ton,519.88
+2021-04-01,Soybeans,537.4183667045455,U.S. Dollars per Metric Ton,537.42
+2021-05-01,Soybeans,576.96794925,U.S. Dollars per Metric Ton,576.97
+2021-06-01,Soybeans,537.3557353977272,U.S. Dollars per Metric Ton,537.36
+2021-07-01,Soybeans,523.5714795,U.S. Dollars per Metric Ton,523.57
+2021-08-01,Soybeans,504.0400555909091,U.S. Dollars per Metric Ton,504.04
+2021-09-01,Soybeans,469.44013575,U.S. Dollars per Metric Ton,469.44
+2021-10-01,Soybeans,452.02187225,U.S. Dollars per Metric Ton,452.02
+2021-11-01,Soybeans,454.57643425,U.S. Dollars per Metric Ton,454.58
+2021-12-01,Soybeans,473.8100115,U.S. Dollars per Metric Ton,473.81
+2022-01-01,Soybeans,514.4485437,U.S. Dollars per Metric Ton,514.45
+2022-02-01,Soybeans,583.6930132894737,U.S. Dollars per Metric Ton,583.69
+2022-03-01,Soybeans,617.1983068695652,U.S. Dollars per Metric Ton,617.2
+2022-04-01,Soybeans,618.13839025,U.S. Dollars per Metric Ton,618.14
+2022-05-01,Soybeans,617.1229677613636,U.S. Dollars per Metric Ton,617.12
+2022-06-01,Soybeans,621.198178125,U.S. Dollars per Metric Ton,621.2
+2022-07-01,Soybeans,571.00147225,U.S. Dollars per Metric Ton,571.0
+2022-08-01,Soybeans,576.8241695543478,U.S. Dollars per Metric Ton,576.82
+2022-09-01,Soybeans,537.5519801590909,U.S. Dollars per Metric Ton,537.55
+2022-10-01,Soybeans,507.5442275,U.S. Dollars per Metric Ton,507.54
+2022-11-01,Soybeans,529.7481193295455,U.S. Dollars per Metric Ton,529.75
+2022-12-01,Soybeans,541.831786125,U.S. Dollars per Metric Ton,541.83
+2023-01-01,Soybeans,555.5062881136364,U.S. Dollars per Metric Ton,555.51
+2023-02-01,Soybeans,561.2921682375,U.S. Dollars per Metric Ton,561.29
+2023-03-01,Soybeans,547.2255216521739,U.S. Dollars per Metric Ton,547.23
+2023-04-01,Soybeans,546.87485895,U.S. Dollars per Metric Ton,546.87
+2023-05-01,Soybeans,508.3450956195652,U.S. Dollars per Metric Ton,508.35
+2023-06-01,Soybeans,526.2950466136364,U.S. Dollars per Metric Ton,526.3
+2023-07-01,Soybeans,555.11419625,U.S. Dollars per Metric Ton,555.11
+2023-08-01,Soybeans,510.150329576087,U.S. Dollars per Metric Ton,510.15
+2023-09-01,Soybeans,487.151474,U.S. Dollars per Metric Ton,487.15
+2023-10-01,Soybeans,471.9310722954545,U.S. Dollars per Metric Ton,471.93
+2023-11-01,Soybeans,494.3489047159091,U.S. Dollars per Metric Ton,494.35
+2023-12-01,Soybeans,481.48682025,U.S. Dollars per Metric Ton,481.49
+2024-01-01,Soybeans,452.626469673913,U.S. Dollars per Metric Ton,452.63
+2024-02-01,Soybeans,429.72632,U.S. Dollars per Metric Ton,429.73
+2024-03-01,Soybeans,433.52754325,U.S. Dollars per Metric Ton,433.53
+2024-04-01,Soybeans,427.9221407045455,U.S. Dollars per Metric Ton,427.92
+2024-05-01,Soybeans,447.4943333152174,U.S. Dollars per Metric Ton,447.49
+2024-06-01,Soybeans,430.9714502625,U.S. Dollars per Metric Ton,430.97
+2024-07-01,Soybeans,411.0821253913043,U.S. Dollars per Metric Ton,411.08
+2024-08-01,Soybeans,361.8294103295455,U.S. Dollars per Metric Ton,361.83
+2024-09-01,Soybeans,372.09557625,U.S. Dollars per Metric Ton,372.1
+2024-10-01,Soybeans,368.4913844347826,U.S. Dollars per Metric Ton,368.49
+2024-11-01,Soybeans,365.51670425,U.S. Dollars per Metric Ton,365.52
+2024-12-01,Soybeans,361.236500625,U.S. Dollars per Metric Ton,361.24
+2025-01-01,Soybeans,377.853040173913,U.S. Dollars per Metric Ton,377.85
+2025-02-01,Soybeans,382.0839574125,U.S. Dollars per Metric Ton,382.08
+2025-03-01,Soybeans,369.344173,U.S. Dollars per Metric Ton,369.34
+2025-04-01,Soybeans,378.0661990472382,U.S. Dollars per Metric Ton,378.07
+2025-05-01,Soybeans,387.649984262981,U.S. Dollars per Metric Ton,387.65
+2025-06-01,Soybeans,383.520686981273,U.S. Dollars per Metric Ton,383.52
+2025-07-01,Soybeans,374.7692583960979,U.S. Dollars per Metric Ton,374.77
+2025-08-01,Soybeans,372.962786097465,U.S. Dollars per Metric Ton,372.96
+2025-09-01,Soybeans,368.574390192018,U.S. Dollars per Metric Ton,368.57
+2025-10-01,Soybeans,371.5741425506887,U.S. Dollars per Metric Ton,371.57
+2025-11-01,Soybeans,410.1693589372302,U.S. Dollars per Metric Ton,410.17
+2025-12-01,Soybeans,391.5498835528245,U.S. Dollars per Metric Ton,391.55
+2026-01-01,Soybeans,383.2414025347702,U.S. Dollars per Metric Ton,383.24
+2026-02-01,Soybeans,409.479246388148,U.S. Dollars per Metric Ton,409.48
+2026-03-01,Soybeans,426.5981083814549,U.S. Dollars per Metric Ton,426.6
+2026-04-01,Soybeans,425.2924899966025,U.S. Dollars per Metric Ton,425.29
+2026-05-01,Soybeans,439.149647497951,U.S. Dollars per Metric Ton,439.15
+2026-06-01,Soybeans,414.542332960393,U.S. Dollars per Metric Ton,414.54
+2026-07-01,Soybeans,442.4505721529122,U.S. Dollars per Metric Ton,442.45
+2020-01-01,Soybean Meal,327.9796075368095,U.S. Dollars per Metric Ton,327.98
+2020-02-01,Soybean Meal,320.6449551635789,U.S. Dollars per Metric Ton,320.64
+2020-03-01,Soybean Meal,341.4559597903636,U.S. Dollars per Metric Ton,341.46
+2020-04-01,Soybean Meal,321.8171624037619,U.S. Dollars per Metric Ton,321.82
+2020-05-01,Soybean Meal,313.98786509695,U.S. Dollars per Metric Ton,313.99
+2020-06-01,Soybean Meal,316.1027996603636,U.S. Dollars per Metric Ton,316.1
+2020-07-01,Soybean Meal,319.0640086795,U.S. Dollars per Metric Ton,319.06
+2020-08-01,Soybean Meal,319.5390523630952,U.S. Dollars per Metric Ton,319.54
+2020-09-01,Soybean Meal,355.358920836619,U.S. Dollars per Metric Ton,355.36
+2020-10-01,Soybean Meal,405.2146480619545,U.S. Dollars per Metric Ton,405.21
+2020-11-01,Soybean Meal,430.23761584955,U.S. Dollars per Metric Ton,430.24
+2020-12-01,Soybean Meal,442.1070034052727,U.S. Dollars per Metric Ton,442.11
+2021-01-01,Soybean Meal,488.2484890298421,U.S. Dollars per Metric Ton,488.25
+2021-02-01,Soybean Meal,472.6478831741053,U.S. Dollars per Metric Ton,472.65
+2021-03-01,Soybean Meal,450.3516820294348,U.S. Dollars per Metric Ton,450.35
+2021-04-01,Soybean Meal,453.3605997791818,U.S. Dollars per Metric Ton,453.36
+2021-05-01,Soybean Meal,457.0130200245238,U.S. Dollars per Metric Ton,457.01
+2021-06-01,Soybean Meal,412.26442994,U.S. Dollars per Metric Ton,412.26
+2021-07-01,Soybean Meal,397.5511985022381,U.S. Dollars per Metric Ton,397.55
+2021-08-01,Soybean Meal,390.9697796331818,U.S. Dollars per Metric Ton,390.97
+2021-09-01,Soybean Meal,372.6599593021429,U.S. Dollars per Metric Ton,372.66
+2021-10-01,Soybean Meal,355.3746681410476,U.S. Dollars per Metric Ton,355.37
+2021-11-01,Soybean Meal,388.3022817011905,U.S. Dollars per Metric Ton,388.3
+2021-12-01,Soybean Meal,425.1965458086818,U.S. Dollars per Metric Ton,425.2
+2022-01-01,Soybean Meal,456.7537144116,U.S. Dollars per Metric Ton,456.75
+2022-02-01,Soybean Meal,496.5100222163684,U.S. Dollars per Metric Ton,496.51
+2022-03-01,Soybean Meal,529.2004892995217,U.S. Dollars per Metric Ton,529.2
+2022-04-01,Soybean Meal,504.995056618381,U.S. Dollars per Metric Ton,505.0
+2022-05-01,Soybean Meal,463.9377778492273,U.S. Dollars per Metric Ton,463.94
+2022-06-01,Soybean Meal,472.7712998470909,U.S. Dollars per Metric Ton,472.77
+2022-07-01,Soybean Meal,510.7533209377619,U.S. Dollars per Metric Ton,510.75
+2022-08-01,Soybean Meal,527.1108904683913,U.S. Dollars per Metric Ton,527.11
+2022-09-01,Soybean Meal,484.0750012805455,U.S. Dollars per Metric Ton,484.08
+2022-10-01,Soybean Meal,453.5696094561429,U.S. Dollars per Metric Ton,453.57
+2022-11-01,Soybean Meal,454.8537305536364,U.S. Dollars per Metric Ton,454.85
+2022-12-01,Soybean Meal,500.2088304541818,U.S. Dollars per Metric Ton,500.21
+2023-01-01,Soybean Meal,534.9266262132273,U.S. Dollars per Metric Ton,534.93
+2023-02-01,Soybean Meal,543.25759446385,U.S. Dollars per Metric Ton,543.26
+2023-03-01,Soybean Meal,523.9525289323478,U.S. Dollars per Metric Ton,523.95
+2023-04-01,Soybean Meal,496.83926519975,U.S. Dollars per Metric Ton,496.84
+2023-05-01,Soybean Meal,459.0551487205652,U.S. Dollars per Metric Ton,459.06
+2023-06-01,Soybean Meal,448.3601148365455,U.S. Dollars per Metric Ton,448.36
+2023-07-01,Soybean Meal,479.6681419957619,U.S. Dollars per Metric Ton,479.67
+2023-08-01,Soybean Meal,470.1980782673043,U.S. Dollars per Metric Ton,470.2
+2023-09-01,Soybean Meal,439.4390282822381,U.S. Dollars per Metric Ton,439.44
+2023-10-01,Soybean Meal,440.7792193273182,U.S. Dollars per Metric Ton,440.78
+2023-11-01,Soybean Meal,498.7106891737727,U.S. Dollars per Metric Ton,498.71
+2023-12-01,Soybean Meal,454.2414944450952,U.S. Dollars per Metric Ton,454.24
+2024-01-01,Soybean Meal,401.4186451811739,U.S. Dollars per Metric Ton,401.42
+2024-02-01,Soybean Meal,379.720000787619,U.S. Dollars per Metric Ton,379.72
+2024-03-01,Soybean Meal,371.3161893242381,U.S. Dollars per Metric Ton,371.32
+2024-04-01,Soybean Meal,373.2325885540909,U.S. Dollars per Metric Ton,373.23
+2024-05-01,Soybean Meal,408.1571221457826,U.S. Dollars per Metric Ton,408.16
+2024-06-01,Soybean Meal,399.65950011015,U.S. Dollars per Metric Ton,399.66
+2024-07-01,Soybean Meal,393.9948181412174,U.S. Dollars per Metric Ton,393.99
+2024-08-01,Soybean Meal,355.4753554511818,U.S. Dollars per Metric Ton,355.48
+2024-09-01,Soybean Meal,354.2881041354762,U.S. Dollars per Metric Ton,354.29
+2024-10-01,Soybean Meal,350.3528755809565,U.S. Dollars per Metric Ton,350.35
+2024-11-01,Soybean Meal,322.231841420381,U.S. Dollars per Metric Ton,322.23
+2024-12-01,Soybean Meal,319.9909522810909,U.S. Dollars per Metric Ton,319.99
+2025-01-01,Soybean Meal,332.6919313316087,U.S. Dollars per Metric Ton,332.69
+2025-02-01,Soybean Meal,327.9596609512,U.S. Dollars per Metric Ton,327.96
+2025-03-01,Soybean Meal,325.9167106566667,U.S. Dollars per Metric Ton,325.92
+2025-04-01,Soybean Meal,321.9500601093182,U.S. Dollars per Metric Ton,321.95
+2025-05-01,Soybean Meal,318.97811405693,U.S. Dollars per Metric Ton,318.98
+2025-06-01,Soybean Meal,313.115831065598,U.S. Dollars per Metric Ton,313.12
+2025-07-01,Soybean Meal,245.5437327248165,U.S. Dollars per Metric Ton,245.54
+2025-08-01,Soybean Meal,281.3619931484271,U.S. Dollars per Metric Ton,281.36
+2025-09-01,Soybean Meal,325.7359283466679,U.S. Dollars per Metric Ton,325.74
+2025-10-01,Soybean Meal,297.813708987262,U.S. Dollars per Metric Ton,297.81
+2025-11-01,Soybean Meal,319.0816163775602,U.S. Dollars per Metric Ton,319.08
+2025-12-01,Soybean Meal,305.5506355141425,U.S. Dollars per Metric Ton,305.55
+2026-01-01,Soybean Meal,286.1949177974116,U.S. Dollars per Metric Ton,286.19
+2026-02-01,Soybean Meal,287.7815574654268,U.S. Dollars per Metric Ton,287.78
+2026-03-01,Soybean Meal,312.4266867864314,U.S. Dollars per Metric Ton,312.43
+2026-04-01,Soybean Meal,317.1431873648664,U.S. Dollars per Metric Ton,317.14
+2026-05-01,Soybean Meal,322.0874319356683,U.S. Dollars per Metric Ton,322.09
+2026-06-01,Soybean Meal,296.1593875998523,U.S. Dollars per Metric Ton,296.16
+2026-07-01,Soybean Meal,329.4329095064775,U.S. Dollars per Metric Ton,329.43
+2020-01-01,Soybean Oil,728.0285131428572,U.S. Dollars per Metric Ton,728.03
+2020-02-01,Soybean Oil,666.8627402105263,U.S. Dollars per Metric Ton,666.86
+2020-03-01,Soybean Oil,592.932549,U.S. Dollars per Metric Ton,592.93
+2020-04-01,Soybean Oil,577.6734291428571,U.S. Dollars per Metric Ton,577.67
+2020-05-01,Soybean Oil,585.3927486,U.S. Dollars per Metric Ton,585.39
+2020-06-01,Soybean Oil,614.898581,U.S. Dollars per Metric Ton,614.9
+2020-07-01,Soybean Oil,642.997465,U.S. Dollars per Metric Ton,643.0
+2020-08-01,Soybean Oil,701.2266328571429,U.S. Dollars per Metric Ton,701.23
+2020-09-01,Soybean Oil,740.9517856190477,U.S. Dollars per Metric Ton,740.95
+2020-10-01,Soybean Oil,735.170623,U.S. Dollars per Metric Ton,735.17
+2020-11-01,Soybean Oil,812.6780475,U.S. Dollars per Metric Ton,812.68
+2020-12-01,Soybean Oil,881.286824,U.S. Dollars per Metric Ton,881.29
+2021-01-01,Soybean Oil,956.6078245263158,U.S. Dollars per Metric Ton,956.61
+2021-02-01,Soybean Oil,1034.987867157895,U.S. Dollars per Metric Ton,1034.99
+2021-03-01,Soybean Oil,1192.325593130435,U.S. Dollars per Metric Ton,1192.33
+2021-04-01,Soybean Oil,1277.757668,U.S. Dollars per Metric Ton,1277.76
+2021-05-01,Soybean Oil,1475.153234761905,U.S. Dollars per Metric Ton,1475.15
+2021-06-01,Soybean Oil,1438.364235,U.S. Dollars per Metric Ton,1438.36
+2021-07-01,Soybean Oil,1451.689779047619,U.S. Dollars per Metric Ton,1451.69
+2021-08-01,Soybean Oil,1371.443997,U.S. Dollars per Metric Ton,1371.44
+2021-09-01,Soybean Oil,1261.389080285714,U.S. Dollars per Metric Ton,1261.39
+2021-10-01,Soybean Oil,1347.610718666667,U.S. Dollars per Metric Ton,1347.61
+2021-11-01,Soybean Oil,1305.901407904762,U.S. Dollars per Metric Ton,1305.9
+2021-12-01,Soybean Oil,1216.078413,U.S. Dollars per Metric Ton,1216.08
+2022-01-01,Soybean Oil,1336.0327893,U.S. Dollars per Metric Ton,1336.03
+2022-02-01,Soybean Oil,1477.373878315789,U.S. Dollars per Metric Ton,1477.37
+2022-03-01,Soybean Oil,1672.424732,U.S. Dollars per Metric Ton,1672.42
+2022-04-01,Soybean Oil,1745.796585238095,U.S. Dollars per Metric Ton,1745.8
+2022-05-01,Soybean Oil,1838.863521,U.S. Dollars per Metric Ton,1838.86
+2022-06-01,Soybean Oil,1680.241112,U.S. Dollars per Metric Ton,1680.24
+2022-07-01,Soybean Oil,1371.210650857143,U.S. Dollars per Metric Ton,1371.21
+2022-08-01,Soybean Oil,1518.724376782609,U.S. Dollars per Metric Ton,1518.72
+2022-09-01,Soybean Oil,1509.292873,U.S. Dollars per Metric Ton,1509.29
+2022-10-01,Soybean Oil,1548.021174857143,U.S. Dollars per Metric Ton,1548.02
+2022-11-01,Soybean Oil,1656.100523,U.S. Dollars per Metric Ton,1656.1
+2022-12-01,Soybean Oil,1438.905369,U.S. Dollars per Metric Ton,1438.91
+2023-01-01,Soybean Oil,1380.523023,U.S. Dollars per Metric Ton,1380.52
+2023-02-01,Soybean Oil,1340.8388609,U.S. Dollars per Metric Ton,1340.84
+2023-03-01,Soybean Oil,1249.540274782609,U.S. Dollars per Metric Ton,1249.54
+2023-04-01,Soybean Oil,1189.3594207,U.S. Dollars per Metric Ton,1189.36
+2023-05-01,Soybean Oil,1094.23917373913,U.S. Dollars per Metric Ton,1094.24
+2023-06-01,Soybean Oil,1235.358817,U.S. Dollars per Metric Ton,1235.36
+2023-07-01,Soybean Oil,1498.742668761905,U.S. Dollars per Metric Ton,1498.74
+2023-08-01,Soybean Oil,1469.944762956522,U.S. Dollars per Metric Ton,1469.94
+2023-09-01,Soybean Oil,1373.257798,U.S. Dollars per Metric Ton,1373.26
+2023-10-01,Soybean Oil,1205.155523,U.S. Dollars per Metric Ton,1205.16
+2023-11-01,Soybean Oil,1141.09127,U.S. Dollars per Metric Ton,1141.09
+2023-12-01,Soybean Oil,1095.370696095238,U.S. Dollars per Metric Ton,1095.37
+2024-01-01,Soybean Oil,1045.047391826087,U.S. Dollars per Metric Ton,1045.05
+2024-02-01,Soybean Oil,1006.136077047619,U.S. Dollars per Metric Ton,1006.14
+2024-03-01,Soybean Oil,1041.315513333333,U.S. Dollars per Metric Ton,1041.32
+2024-04-01,Soybean Oil,1014.405788,U.S. Dollars per Metric Ton,1014.41
+2024-05-01,Soybean Oil,977.5380933043479,U.S. Dollars per Metric Ton,977.54
+2024-06-01,Soybean Oil,964.2236263,U.S. Dollars per Metric Ton,964.22
+2024-07-01,Soybean Oil,1022.502756,U.S. Dollars per Metric Ton,1022.5
+2024-08-01,Soybean Oil,912.562365,U.S. Dollars per Metric Ton,912.56
+2024-09-01,Soybean Oil,922.465498952381,U.S. Dollars per Metric Ton,922.47
+2024-10-01,Soybean Oil,955.6069169565217,U.S. Dollars per Metric Ton,955.61
+2024-11-01,Soybean Oil,980.6569687619047,U.S. Dollars per Metric Ton,980.66
+2024-12-01,Soybean Oil,903.222793,U.S. Dollars per Metric Ton,903.22
+2025-01-01,Soybean Oil,966.5245786086957,U.S. Dollars per Metric Ton,966.52
+2025-02-01,Soybean Oil,1010.4986001,U.S. Dollars per Metric Ton,1010.5
+2025-03-01,Soybean Oil,936.7640343809524,U.S. Dollars per Metric Ton,936.76
+2025-04-01,Soybean Oil,1047.936054,U.S. Dollars per Metric Ton,1047.94
+2025-05-01,Soybean Oil,1075.3506468099,U.S. Dollars per Metric Ton,1075.35
+2025-06-01,Soybean Oil,1168.538062881204,U.S. Dollars per Metric Ton,1168.54
+2025-07-01,Soybean Oil,1179.732049221543,U.S. Dollars per Metric Ton,1179.73
+2025-08-01,Soybean Oil,1150.99180247024,U.S. Dollars per Metric Ton,1150.99
+2025-09-01,Soybean Oil,1107.942448544899,U.S. Dollars per Metric Ton,1107.94
+2025-10-01,Soybean Oil,1097.657107726828,U.S. Dollars per Metric Ton,1097.66
+2025-11-01,Soybean Oil,1098.941909586284,U.S. Dollars per Metric Ton,1098.94
+2025-12-01,Soybean Oil,1080.426722069366,U.S. Dollars per Metric Ton,1080.43
+2026-01-01,Soybean Oil,1110.597474749131,U.S. Dollars per Metric Ton,1110.6
+2026-02-01,Soybean Oil,1241.4371676921,U.S. Dollars per Metric Ton,1241.44
+2026-03-01,Soybean Oil,1419.956304534877,U.S. Dollars per Metric Ton,1419.96
+2026-04-01,Soybean Oil,1493.597077683237,U.S. Dollars per Metric Ton,1493.6
+2026-05-01,Soybean Oil,1615.924825470154,U.S. Dollars per Metric Ton,1615.92
+2026-06-01,Soybean Oil,1581.357763089017,U.S. Dollars per Metric Ton,1581.36
+2026-07-01,Soybean Oil,1590.383802874623,U.S. Dollars per Metric Ton,1590.38
+2020-01-01,Palm Oil,726.5856019038262,U.S. Dollars per Metric Ton,726.59
+2020-02-01,Palm Oil,642.25215585718,U.S. Dollars per Metric Ton,642.25
+2020-03-01,Palm Oil,557.90283704059,U.S. Dollars per Metric Ton,557.9
+2020-04-01,Palm Oil,518.4741550884727,U.S. Dollars per Metric Ton,518.47
+2020-05-01,Palm Oil,498.4821647684416,U.S. Dollars per Metric Ton,498.48
+2020-06-01,Palm Oil,573.2235865309505,U.S. Dollars per Metric Ton,573.22
+2020-07-01,Palm Oil,610.4955975339356,U.S. Dollars per Metric Ton,610.5
+2020-08-01,Palm Oil,674.6994388652095,U.S. Dollars per Metric Ton,674.7
+2020-09-01,Palm Oil,707.3252812562195,U.S. Dollars per Metric Ton,707.33
+2020-10-01,Palm Oil,730.9498228269114,U.S. Dollars per Metric Ton,730.95
+2020-11-01,Palm Oil,841.6396843757267,U.S. Dollars per Metric Ton,841.64
+2020-12-01,Palm Oil,910.6483996162732,U.S. Dollars per Metric Ton,910.65
+2021-01-01,Palm Oil,936.4496533697779,U.S. Dollars per Metric Ton,936.45
+2021-02-01,Palm Oil,968.8684064130083,U.S. Dollars per Metric Ton,968.87
+2021-03-01,Palm Oil,995.8010452409874,U.S. Dollars per Metric Ton,995.8
+2021-04-01,Palm Oil,1036.293411796465,U.S. Dollars per Metric Ton,1036.29
+2021-05-01,Palm Oil,1104.584932926943,U.S. Dollars per Metric Ton,1104.58
+2021-06-01,Palm Oil,920.9626479348372,U.S. Dollars per Metric Ton,920.96
+2021-07-01,Palm Oil,1010.223853931312,U.S. Dollars per Metric Ton,1010.22
+2021-08-01,Palm Oil,1077.780612557658,U.S. Dollars per Metric Ton,1077.78
+2021-09-01,Palm Oil,1105.978301157521,U.S. Dollars per Metric Ton,1105.98
+2021-10-01,Palm Oil,1238.172856573188,U.S. Dollars per Metric Ton,1238.17
+2021-11-01,Palm Oil,1279.640812291128,U.S. Dollars per Metric Ton,1279.64
+2021-12-01,Palm Oil,1207.463905100909,U.S. Dollars per Metric Ton,1207.46
+2022-01-01,Palm Oil,1293.59521574041,U.S. Dollars per Metric Ton,1293.6
+2022-02-01,Palm Oil,1458.069777111682,U.S. Dollars per Metric Ton,1458.07
+2022-03-01,Palm Oil,1652.71639279719,U.S. Dollars per Metric Ton,1652.72
+2022-04-01,Palm Oil,1613.074355494296,U.S. Dollars per Metric Ton,1613.07
+2022-05-01,Palm Oil,1601.222103747414,U.S. Dollars per Metric Ton,1601.22
+2022-06-01,Palm Oil,1322.184621394614,U.S. Dollars per Metric Ton,1322.18
+2022-07-01,Palm Oil,902.8911478709676,U.S. Dollars per Metric Ton,902.89
+2022-08-01,Palm Oil,926.3244325864226,U.S. Dollars per Metric Ton,926.32
+2022-09-01,Palm Oil,794.4888788748764,U.S. Dollars per Metric Ton,794.49
+2022-10-01,Palm Oil,796.6763181978419,U.S. Dollars per Metric Ton,796.68
+2022-11-01,Palm Oil,875.6599362215159,U.S. Dollars per Metric Ton,875.66
+2022-12-01,Palm Oil,887.10700458863,U.S. Dollars per Metric Ton,887.11
+2023-01-01,Palm Oil,903.286923999129,U.S. Dollars per Metric Ton,903.29
+2023-02-01,Palm Oil,902.161131806761,U.S. Dollars per Metric Ton,902.16
+2023-03-01,Palm Oil,910.1555270140257,U.S. Dollars per Metric Ton,910.16
+2023-04-01,Palm Oil,934.8096818445915,U.S. Dollars per Metric Ton,934.81
+2023-05-01,Palm Oil,834.6285512233048,U.S. Dollars per Metric Ton,834.63
+2023-06-01,Palm Oil,769.0984765977591,U.S. Dollars per Metric Ton,769.1
+2023-07-01,Palm Oil,844.9770167263662,U.S. Dollars per Metric Ton,844.98
+2023-08-01,Palm Oil,823.608174534714,U.S. Dollars per Metric Ton,823.61
+2023-09-01,Palm Oil,790.712155888081,U.S. Dollars per Metric Ton,790.71
+2023-10-01,Palm Oil,767.4813350049695,U.S. Dollars per Metric Ton,767.48
+2023-11-01,Palm Oil,795.9879305070082,U.S. Dollars per Metric Ton,795.99
+2023-12-01,Palm Oil,783.3439657010138,U.S. Dollars per Metric Ton,783.34
+2024-01-01,Palm Oil,815.3644216007488,U.S. Dollars per Metric Ton,815.36
+2024-02-01,Palm Oil,825.0890261438295,U.S. Dollars per Metric Ton,825.09
+2024-03-01,Palm Oil,899.0439225363853,U.S. Dollars per Metric Ton,899.04
+2024-04-01,Palm Oil,896.8726177074504,U.S. Dollars per Metric Ton,896.87
+2024-05-01,Palm Oil,826.1660945755757,U.S. Dollars per Metric Ton,826.17
+2024-06-01,Palm Oil,838.2293131073425,U.S. Dollars per Metric Ton,838.23
+2024-07-01,Palm Oil,860.5929647660643,U.S. Dollars per Metric Ton,860.59
+2024-08-01,Palm Oil,888.2027183667709,U.S. Dollars per Metric Ton,888.2
+2024-09-01,Palm Oil,942.6072506733376,U.S. Dollars per Metric Ton,942.61
+2024-10-01,Palm Oil,1034.051876257193,U.S. Dollars per Metric Ton,1034.05
+2024-11-01,Palm Oil,1132.87300496479,U.S. Dollars per Metric Ton,1132.87
+2024-12-01,Palm Oil,1127.777051645224,U.S. Dollars per Metric Ton,1127.78
+2025-01-01,Palm Oil,1030.038108872655,U.S. Dollars per Metric Ton,1030.04
+2025-02-01,Palm Oil,1067.324800188176,U.S. Dollars per Metric Ton,1067.32
+2025-03-01,Palm Oil,1057.147306041863,U.S. Dollars per Metric Ton,1057.15
+2025-04-01,Palm Oil,981.1776320381373,U.S. Dollars per Metric Ton,981.18
+2025-05-01,Palm Oil,902.7881676158836,U.S. Dollars per Metric Ton,902.79
+2025-06-01,Palm Oil,934.5034070879443,U.S. Dollars per Metric Ton,934.5
+2025-07-01,Palm Oil,931.0405934196078,U.S. Dollars per Metric Ton,931.04
+2025-08-01,Palm Oil,1026.012903505442,U.S. Dollars per Metric Ton,1026.01
+2025-09-01,Palm Oil,1034.900269774872,U.S. Dollars per Metric Ton,1034.9
+2025-10-01,Palm Oil,1038.281370551327,U.S. Dollars per Metric Ton,1038.28
+2025-11-01,Palm Oil,977.0566075979775,U.S. Dollars per Metric Ton,977.06
+2025-12-01,Palm Oil,981.2246703958918,U.S. Dollars per Metric Ton,981.22
+2026-01-01,Palm Oil,1004.341820515184,U.S. Dollars per Metric Ton,1004.34
+2026-02-01,Palm Oil,1033.768393945682,U.S. Dollars per Metric Ton,1033.77
+2026-03-01,Palm Oil,1121.177897131898,U.S. Dollars per Metric Ton,1121.18
+2026-04-01,Palm Oil,1137.410862248689,U.S. Dollars per Metric Ton,1137.41
+2026-05-01,Palm Oil,1130.026757355915,U.S. Dollars per Metric Ton,1130.03
+2026-06-01,Palm Oil,1108.681095730554,U.S. Dollars per Metric Ton,1108.68
+2026-07-01,Palm Oil,1106.469929089015,U.S. Dollars per Metric Ton,1106.47
+2020-01-01,Sunflower Oil,1000.215851465217,U.S. Dollars per Metric Ton,1000.22
+2020-02-01,Sunflower Oil,913.6840625,U.S. Dollars per Metric Ton,913.68
+2020-03-01,Sunflower Oil,846.996875,U.S. Dollars per Metric Ton,847.0
+2020-04-01,Sunflower Oil,878.2458333363636,U.S. Dollars per Metric Ton,878.25
+2020-05-01,Sunflower Oil,900.0531746047619,U.S. Dollars per Metric Ton,900.05
+2020-06-01,Sunflower Oil,963.9416666590909,U.S. Dollars per Metric Ton,963.94
+2020-07-01,Sunflower Oil,974.1107789565217,U.S. Dollars per Metric Ton,974.11
+2020-08-01,Sunflower Oil,1033.431448490476,U.S. Dollars per Metric Ton,1033.43
+2020-09-01,Sunflower Oil,1188.552083272727,U.S. Dollars per Metric Ton,1188.55
+2020-10-01,Sunflower Oil,1198.377083272727,U.S. Dollars per Metric Ton,1198.38
+2020-11-01,Sunflower Oil,1348.078372952381,U.S. Dollars per Metric Ton,1348.08
+2020-12-01,Sunflower Oil,1432.385326086957,U.S. Dollars per Metric Ton,1432.39
+2021-01-01,Sunflower Oil,1551.076389047619,U.S. Dollars per Metric Ton,1551.08
+2021-02-01,Sunflower Oil,1653.54750005,U.S. Dollars per Metric Ton,1653.55
+2021-03-01,Sunflower Oil,1972.238224652174,U.S. Dollars per Metric Ton,1972.24
+2021-04-01,Sunflower Oil,1919.695833318182,U.S. Dollars per Metric Ton,1919.7
+2021-05-01,Sunflower Oil,1936.486706380952,U.S. Dollars per Metric Ton,1936.49
+2021-06-01,Sunflower Oil,1586.464583227273,U.S. Dollars per Metric Ton,1586.46
+2021-07-01,Sunflower Oil,1560.264583363636,U.S. Dollars per Metric Ton,1560.26
+2021-08-01,Sunflower Oil,1678.710416636364,U.S. Dollars per Metric Ton,1678.71
+2021-09-01,Sunflower Oil,1601.202083272727,U.S. Dollars per Metric Ton,1601.2
+2021-10-01,Sunflower Oil,1735.490079333333,U.S. Dollars per Metric Ton,1735.49
+2021-11-01,Sunflower Oil,1746.120833409091,U.S. Dollars per Metric Ton,1746.12
+2021-12-01,Sunflower Oil,1685.604528913043,U.S. Dollars per Metric Ton,1685.6
+2022-01-01,Sunflower Oil,1703.467857238095,U.S. Dollars per Metric Ton,1703.47
+2022-02-01,Sunflower Oil,1829.7697917,U.S. Dollars per Metric Ton,1829.77
+2022-03-01,Sunflower Oil,2487.813405869565,U.S. Dollars per Metric Ton,2487.81
+2022-04-01,Sunflower Oil,2536.617460428571,U.S. Dollars per Metric Ton,2536.62
+2022-05-01,Sunflower Oil,2498.825000090909,U.S. Dollars per Metric Ton,2498.83
+2022-06-01,Sunflower Oil,2154.404166727273,U.S. Dollars per Metric Ton,2154.4
+2022-07-01,Sunflower Oil,1839.848214285714,U.S. Dollars per Metric Ton,1839.85
+2022-08-01,Sunflower Oil,1823.439311695652,U.S. Dollars per Metric Ton,1823.44
+2022-09-01,Sunflower Oil,1578.277083363636,U.S. Dollars per Metric Ton,1578.28
+2022-10-01,Sunflower Oil,1627.129166619048,U.S. Dollars per Metric Ton,1627.13
+2022-11-01,Sunflower Oil,1617.577083318182,U.S. Dollars per Metric Ton,1617.58
+2022-12-01,Sunflower Oil,1512.777083272727,U.S. Dollars per Metric Ton,1512.78
+2023-01-01,Sunflower Oil,1488.487500045455,U.S. Dollars per Metric Ton,1488.49
+2023-02-01,Sunflower Oil,1428.0910417,U.S. Dollars per Metric Ton,1428.09
+2023-03-01,Sunflower Oil,1282.803261043478,U.S. Dollars per Metric Ton,1282.8
+2023-04-01,Sunflower Oil,1267.77979155,U.S. Dollars per Metric Ton,1267.78
+2023-05-01,Sunflower Oil,1129.566485521739,U.S. Dollars per Metric Ton,1129.57
+2023-06-01,Sunflower Oil,1108.860416545455,U.S. Dollars per Metric Ton,1108.86
+2023-07-01,Sunflower Oil,1253.441269952381,U.S. Dollars per Metric Ton,1253.44
+2023-08-01,Sunflower Oil,1182.037681086957,U.S. Dollars per Metric Ton,1182.04
+2023-09-01,Sunflower Oil,1084.466865,U.S. Dollars per Metric Ton,1084.47
+2023-10-01,Sunflower Oil,1103.675,U.S. Dollars per Metric Ton,1103.67
+2023-11-01,Sunflower Oil,1146.250000090909,U.S. Dollars per Metric Ton,1146.25
+2023-12-01,Sunflower Oil,1141.363492142857,U.S. Dollars per Metric Ton,1141.36
+2024-01-01,Sunflower Oil,1142.096920304348,U.S. Dollars per Metric Ton,1142.1
+2024-02-01,Sunflower Oil,1109.913095333333,U.S. Dollars per Metric Ton,1109.91
+2024-03-01,Sunflower Oil,1134.501587333333,U.S. Dollars per Metric Ton,1134.5
+2024-04-01,Sunflower Oil,1171.085416727273,U.S. Dollars per Metric Ton,1171.09
+2024-05-01,Sunflower Oil,1205.662771826087,U.S. Dollars per Metric Ton,1205.66
+2024-06-01,Sunflower Oil,1248.26625005,U.S. Dollars per Metric Ton,1248.27
+2024-07-01,Sunflower Oil,1287.893749956522,U.S. Dollars per Metric Ton,1287.89
+2024-08-01,Sunflower Oil,1258.418750045455,U.S. Dollars per Metric Ton,1258.42
+2024-09-01,Sunflower Oil,1284.033928380952,U.S. Dollars per Metric Ton,1284.03
+2024-10-01,Sunflower Oil,1436.301086869565,U.S. Dollars per Metric Ton,1436.3
+2024-11-01,Sunflower Oil,1517.624603095238,U.S. Dollars per Metric Ton,1517.62
+2024-12-01,Sunflower Oil,1446.185416636364,U.S. Dollars per Metric Ton,1446.19
+2025-01-01,Sunflower Oil,1450.658876695652,U.S. Dollars per Metric Ton,1450.66
+2025-02-01,Sunflower Oil,1460.8137501,U.S. Dollars per Metric Ton,1460.81
+2025-03-01,Sunflower Oil,1470.306051571429,U.S. Dollars per Metric Ton,1470.31
+2025-04-01,Sunflower Oil,1471.703124954545,U.S. Dollars per Metric Ton,1471.7
+2025-05-01,Sunflower Oil,1456.692708227273,U.S. Dollars per Metric Ton,1456.69
+2025-06-01,Sunflower Oil,1446.718254,U.S. Dollars per Metric Ton,1446.72
+2025-07-01,Sunflower Oil,1486.944927521739,U.S. Dollars per Metric Ton,1486.94
+2025-08-01,Sunflower Oil,1538.782142761905,U.S. Dollars per Metric Ton,1538.78
+2025-09-01,Sunflower Oil,1576.912499954545,U.S. Dollars per Metric Ton,1576.91
+2025-10-01,Sunflower Oil,1643.314311608696,U.S. Dollars per Metric Ton,1643.31
+2025-11-01,Sunflower Oil,1649.1644584,U.S. Dollars per Metric Ton,1649.16
+2025-12-01,Sunflower Oil,1655.975271652174,U.S. Dollars per Metric Ton,1655.98
+2026-01-01,Sunflower Oil,1786.512499954545,U.S. Dollars per Metric Ton,1786.51
+2026-02-01,Sunflower Oil,1733.2528125,U.S. Dollars per Metric Ton,1733.25
+2026-03-01,Sunflower Oil,1738.888541636364,U.S. Dollars per Metric Ton,1738.89
+2026-04-01,Sunflower Oil,1786.239583318182,U.S. Dollars per Metric Ton,1786.24
+2026-05-01,Sunflower Oil,1807.540079285714,U.S. Dollars per Metric Ton,1807.54
+2026-06-01,Sunflower Oil,1805.889583363636,U.S. Dollars per Metric Ton,1805.89
+2026-07-01,Sunflower Oil,1786.892210086957,U.S. Dollars per Metric Ton,1786.89
+2020-01-01,Rapeseed Oil,940.3214530434783,U.S. Dollars per Metric Ton,940.32
+2020-02-01,Rapeseed Oil,890.0421225,U.S. Dollars per Metric Ton,890.04
+2020-03-01,Rapeseed Oil,793.10661,U.S. Dollars per Metric Ton,793.11
+2020-04-01,Rapeseed Oil,759.3401213636364,U.S. Dollars per Metric Ton,759.34
+2020-05-01,Rapeseed Oil,792.7317,U.S. Dollars per Metric Ton,792.73
+2020-06-01,Rapeseed Oil,848.1638309090908,U.S. Dollars per Metric Ton,848.16
+2020-07-01,Rapeseed Oil,891.3357,U.S. Dollars per Metric Ton,891.34
+2020-08-01,Rapeseed Oil,924.926660952381,U.S. Dollars per Metric Ton,924.93
+2020-09-01,Rapeseed Oil,937.5470272727273,U.S. Dollars per Metric Ton,937.55
+2020-10-01,Rapeseed Oil,926.8438181818182,U.S. Dollars per Metric Ton,926.84
+2020-11-01,Rapeseed Oil,1047.152142857143,U.S. Dollars per Metric Ton,1047.15
+2020-12-01,Rapeseed Oil,1085.858465217391,U.S. Dollars per Metric Ton,1085.86
+2021-01-01,Rapeseed Oil,1123.084895238095,U.S. Dollars per Metric Ton,1123.08
+2021-02-01,Rapeseed Oil,1249.118,U.S. Dollars per Metric Ton,1249.12
+2021-03-01,Rapeseed Oil,1282.51047826087,U.S. Dollars per Metric Ton,1282.51
+2021-04-01,Rapeseed Oil,1345.515381818182,U.S. Dollars per Metric Ton,1345.52
+2021-05-01,Rapeseed Oil,1583.066,U.S. Dollars per Metric Ton,1583.07
+2021-06-01,Rapeseed Oil,1595.272181818182,U.S. Dollars per Metric Ton,1595.27
+2021-07-01,Rapeseed Oil,1450.598772727273,U.S. Dollars per Metric Ton,1450.6
+2021-08-01,Rapeseed Oil,1481.322218181818,U.S. Dollars per Metric Ton,1481.32
+2021-09-01,Rapeseed Oil,1623.430977272727,U.S. Dollars per Metric Ton,1623.43
+2021-10-01,Rapeseed Oil,1755.892714285714,U.S. Dollars per Metric Ton,1755.89
+2021-11-01,Rapeseed Oil,1816.900363636364,U.S. Dollars per Metric Ton,1816.9
+2021-12-01,Rapeseed Oil,1813.827065217391,U.S. Dollars per Metric Ton,1813.83
+2022-01-01,Rapeseed Oil,1829.998828571429,U.S. Dollars per Metric Ton,1830.0
+2022-02-01,Rapeseed Oil,1731.73035,U.S. Dollars per Metric Ton,1731.73
+2022-03-01,Rapeseed Oil,2164.063739130435,U.S. Dollars per Metric Ton,2164.06
+2022-04-01,Rapeseed Oil,2290.65980952381,U.S. Dollars per Metric Ton,2290.66
+2022-05-01,Rapeseed Oil,2208.957045454545,U.S. Dollars per Metric Ton,2208.96
+2022-06-01,Rapeseed Oil,2061.027704545455,U.S. Dollars per Metric Ton,2061.03
+2022-07-01,Rapeseed Oil,1884.616238095238,U.S. Dollars per Metric Ton,1884.62
+2022-08-01,Rapeseed Oil,1664.329282608696,U.S. Dollars per Metric Ton,1664.33
+2022-09-01,Rapeseed Oil,1376.401954545455,U.S. Dollars per Metric Ton,1376.4
+2022-10-01,Rapeseed Oil,1381.271857142857,U.S. Dollars per Metric Ton,1381.27
+2022-11-01,Rapeseed Oil,1350.832681818182,U.S. Dollars per Metric Ton,1350.83
+2022-12-01,Rapeseed Oil,1215.657295454545,U.S. Dollars per Metric Ton,1215.66
+2023-01-01,Rapeseed Oil,1184.529659090909,U.S. Dollars per Metric Ton,1184.53
+2023-02-01,Rapeseed Oil,1157.30044,U.S. Dollars per Metric Ton,1157.3
+2023-03-01,Rapeseed Oil,1018.161413043478,U.S. Dollars per Metric Ton,1018.16
+2023-04-01,Rapeseed Oil,995.41132,U.S. Dollars per Metric Ton,995.41
+2023-05-01,Rapeseed Oil,896.0958217391304,U.S. Dollars per Metric Ton,896.1
+2023-06-01,Rapeseed Oil,952.7645,U.S. Dollars per Metric Ton,952.76
+2023-07-01,Rapeseed Oil,1094.239452380952,U.S. Dollars per Metric Ton,1094.24
+2023-08-01,Rapeseed Oil,1034.2192,U.S. Dollars per Metric Ton,1034.22
+2023-09-01,Rapeseed Oil,1025.836619047619,U.S. Dollars per Metric Ton,1025.84
+2023-10-01,Rapeseed Oil,1093.592545454545,U.S. Dollars per Metric Ton,1093.59
+2023-11-01,Rapeseed Oil,1036.680454545455,U.S. Dollars per Metric Ton,1036.68
+2023-12-01,Rapeseed Oil,978.8547619047619,U.S. Dollars per Metric Ton,978.85
+2024-01-01,Rapeseed Oil,932.8794304347826,U.S. Dollars per Metric Ton,932.88
+2024-02-01,Rapeseed Oil,928.1248666666667,U.S. Dollars per Metric Ton,928.12
+2024-03-01,Rapeseed Oil,993.8658904761905,U.S. Dollars per Metric Ton,993.87
+2024-04-01,Rapeseed Oil,1029.082513636364,U.S. Dollars per Metric Ton,1029.08
+2024-05-01,Rapeseed Oil,1091.109630434783,U.S. Dollars per Metric Ton,1091.11
+2024-06-01,Rapeseed Oil,1094.966965,U.S. Dollars per Metric Ton,1094.97
+2024-07-01,Rapeseed Oil,1101.713265217391,U.S. Dollars per Metric Ton,1101.71
+2024-08-01,Rapeseed Oil,1040.518518181818,U.S. Dollars per Metric Ton,1040.52
+2024-09-01,Rapeseed Oil,1044.623695238095,U.S. Dollars per Metric Ton,1044.62
+2024-10-01,Rapeseed Oil,1126.306986956522,U.S. Dollars per Metric Ton,1126.31
+2024-11-01,Rapeseed Oil,1224.947447619048,U.S. Dollars per Metric Ton,1224.95
+2024-12-01,Rapeseed Oil,1155.702772727273,U.S. Dollars per Metric Ton,1155.7
+2025-01-01,Rapeseed Oil,1121.699095652174,U.S. Dollars per Metric Ton,1121.7
+2025-02-01,Rapeseed Oil,1124.44539,U.S. Dollars per Metric Ton,1124.45
+2025-03-01,Rapeseed Oil,1167.413580952381,U.S. Dollars per Metric Ton,1167.41
+2025-04-01,Rapeseed Oil,1229.580690909091,U.S. Dollars per Metric Ton,1229.58
+2025-05-01,Rapeseed Oil,1209.768468181818,U.S. Dollars per Metric Ton,1209.77
+2025-06-01,Rapeseed Oil,1265.730419047619,U.S. Dollars per Metric Ton,1265.73
+2025-07-01,Rapeseed Oil,1240.964304347826,U.S. Dollars per Metric Ton,1240.96
+2025-08-01,Rapeseed Oil,1215.55889047619,U.S. Dollars per Metric Ton,1215.56
+2025-09-01,Rapeseed Oil,1273.7107,U.S. Dollars per Metric Ton,1273.71
+2025-10-01,Rapeseed Oil,1310.45667826087,U.S. Dollars per Metric Ton,1310.46
+2025-11-01,Rapeseed Oil,1274.644325,U.S. Dollars per Metric Ton,1274.64
+2025-12-01,Rapeseed Oil,1256.451556521739,U.S. Dollars per Metric Ton,1256.45
+2026-01-01,Rapeseed Oil,1224.504672727273,U.S. Dollars per Metric Ton,1224.5
+2026-02-01,Rapeseed Oil,1273.640485,U.S. Dollars per Metric Ton,1273.64
+2026-03-01,Rapeseed Oil,1318.389886363636,U.S. Dollars per Metric Ton,1318.39
+2026-04-01,Rapeseed Oil,1340.037413636364,U.S. Dollars per Metric Ton,1340.04
+2026-05-01,Rapeseed Oil,1472.408976190476,U.S. Dollars per Metric Ton,1472.41
+2026-06-01,Rapeseed Oil,1526.195522727273,U.S. Dollars per Metric Ton,1526.2
+2026-07-01,Rapeseed Oil,1500.1025,U.S. Dollars per Metric Ton,1500.1
+2020-01-01,Olive Oil,2687.323068217391,U.S. Dollars per Metric Ton,2687.32
+2020-02-01,Olive Oil,2737.9373004,U.S. Dollars per Metric Ton,2737.94
+2020-03-01,Olive Oil,2796.255093772727,U.S. Dollars per Metric Ton,2796.26
+2020-04-01,Olive Oil,2775.087914454545,U.S. Dollars per Metric Ton,2775.09
+2020-05-01,Olive Oil,2754.381499285714,U.S. Dollars per Metric Ton,2754.38
+2020-06-01,Olive Oil,2842.235292340909,U.S. Dollars per Metric Ton,2842.24
+2020-07-01,Olive Oil,2868.076227391304,U.S. Dollars per Metric Ton,2868.08
+2020-08-01,Olive Oil,2995.763235857143,U.S. Dollars per Metric Ton,2995.76
+2020-09-01,Olive Oil,3094.022897818182,U.S. Dollars per Metric Ton,3094.02
+2020-10-01,Olive Oil,3285.642800590909,U.S. Dollars per Metric Ton,3285.64
+2020-11-01,Olive Oil,1389.965258261905,U.S. Dollars per Metric Ton,1389.97
+2020-12-01,Olive Oil,1313.413877869565,U.S. Dollars per Metric Ton,1313.41
+2021-01-01,Olive Oil,3468.289925690476,U.S. Dollars per Metric Ton,3468.29
+2021-02-01,Olive Oil,3898.1193009,U.S. Dollars per Metric Ton,3898.12
+2021-03-01,Olive Oil,3933.915365826087,U.S. Dollars per Metric Ton,3933.92
+2021-04-01,Olive Oil,4124.206972545455,U.S. Dollars per Metric Ton,4124.21
+2021-05-01,Olive Oil,4397.940186,U.S. Dollars per Metric Ton,4397.94
+2021-06-01,Olive Oil,4489.524257272727,U.S. Dollars per Metric Ton,4489.52
+2021-07-01,Olive Oil,4402.403741045455,U.S. Dollars per Metric Ton,4402.4
+2021-08-01,Olive Oil,4383.349996431818,U.S. Dollars per Metric Ton,4383.35
+2021-09-01,Olive Oil,4441.536519090909,U.S. Dollars per Metric Ton,4441.54
+2021-10-01,Olive Oil,4366.575867880952,U.S. Dollars per Metric Ton,4366.58
+2021-11-01,Olive Oil,4186.366359181818,U.S. Dollars per Metric Ton,4186.37
+2021-12-01,Olive Oil,4124.928600347826,U.S. Dollars per Metric Ton,4124.93
+2022-01-01,Olive Oil,4250.125721642857,U.S. Dollars per Metric Ton,4250.13
+2022-02-01,Olive Oil,4233.020082,U.S. Dollars per Metric Ton,4233.02
+2022-03-01,Olive Oil,4398.573457478261,U.S. Dollars per Metric Ton,4398.57
+2022-04-01,Olive Oil,4284.608483714286,U.S. Dollars per Metric Ton,4284.61
+2022-05-01,Olive Oil,4098.475979090909,U.S. Dollars per Metric Ton,4098.48
+2022-06-01,Olive Oil,4030.654475477273,U.S. Dollars per Metric Ton,4030.65
+2022-07-01,Olive Oil,4065.024497166667,U.S. Dollars per Metric Ton,4065.02
+2022-08-01,Olive Oil,4247.087650673913,U.S. Dollars per Metric Ton,4247.09
+2022-09-01,Olive Oil,4316.417289840909,U.S. Dollars per Metric Ton,4316.42
+2022-10-01,Olive Oil,4777.175330190476,U.S. Dollars per Metric Ton,4777.18
+2022-11-01,Olive Oil,5145.091441136364,U.S. Dollars per Metric Ton,5145.09
+2022-12-01,Olive Oil,5792.367543,U.S. Dollars per Metric Ton,5792.37
+2023-01-01,Olive Oil,5893.296774636364,U.S. Dollars per Metric Ton,5893.3
+2023-02-01,Olive Oil,5895.82131535,U.S. Dollars per Metric Ton,5895.82
+2023-03-01,Olive Oil,5989.731269217391,U.S. Dollars per Metric Ton,5989.73
+2023-04-01,Olive Oil,6269.6321431,U.S. Dollars per Metric Ton,6269.63
+2023-05-01,Olive Oil,6727.532049717391,U.S. Dollars per Metric Ton,6727.53
+2023-06-01,Olive Oil,7235.789694159091,U.S. Dollars per Metric Ton,7235.79
+2023-07-01,Olive Oil,8599.038156119048,U.S. Dollars per Metric Ton,8599.04
+2023-08-01,Olive Oil,9034.554858326086,U.S. Dollars per Metric Ton,9034.55
+2023-09-01,Olive Oil,9364.941141309524,U.S. Dollars per Metric Ton,9364.94
+2023-10-01,Olive Oil,9145.115741568183,U.S. Dollars per Metric Ton,9145.12
+2023-11-01,Olive Oil,8891.228564454545,U.S. Dollars per Metric Ton,8891.23
+2023-12-01,Olive Oil,9468.72856007143,U.S. Dollars per Metric Ton,9468.73
+2024-01-01,Olive Oil,10281.36925719565,U.S. Dollars per Metric Ton,10281.37
+2024-02-01,Olive Oil,10067.17198240476,U.S. Dollars per Metric Ton,10067.17
+2024-03-01,Olive Oil,9915.865634309524,U.S. Dollars per Metric Ton,9915.87
+2024-04-01,Olive Oil,9069.792685545455,U.S. Dollars per Metric Ton,9069.79
+2024-05-01,Olive Oil,9127.833069,U.S. Dollars per Metric Ton,9127.83
+2024-06-01,Olive Oil,9157.497892775,U.S. Dollars per Metric Ton,9157.5
+2024-07-01,Olive Oil,8856.581933782609,U.S. Dollars per Metric Ton,8856.58
+2024-08-01,Olive Oil,8703.630796636364,U.S. Dollars per Metric Ton,8703.63
+2024-09-01,Olive Oil,8923.684953857142,U.S. Dollars per Metric Ton,8923.68
+2024-10-01,Olive Oil,8776.465108673912,U.S. Dollars per Metric Ton,8776.47
+2024-11-01,Olive Oil,7634.716749166667,U.S. Dollars per Metric Ton,7634.72
+2024-12-01,Olive Oil,5809.499041568182,U.S. Dollars per Metric Ton,5809.5
+2025-01-01,Olive Oil,5448.733095326087,U.S. Dollars per Metric Ton,5448.73
+2025-02-01,Olive Oil,5261.2079998,U.S. Dollars per Metric Ton,5261.21
+2025-03-01,Olive Oil,5309.713937357143,U.S. Dollars per Metric Ton,5309.71
+2025-04-01,Olive Oil,5191.168865113636,U.S. Dollars per Metric Ton,5191.17
+2025-05-01,Olive Oil,5031.683371090909,U.S. Dollars per Metric Ton,5031.68
+2025-06-01,Olive Oil,5075.409503904762,U.S. Dollars per Metric Ton,5075.41
+2025-07-01,Olive Oil,5279.039937173913,U.S. Dollars per Metric Ton,5279.04
+2025-08-01,Olive Oil,5364.817794428571,U.S. Dollars per Metric Ton,5364.82
+2025-09-01,Olive Oil,5821.493705068182,U.S. Dollars per Metric Ton,5821.49
+2025-10-01,Olive Oil,5929.22498,U.S. Dollars per Metric Ton,5929.22
+2025-11-01,Olive Oil,5856.74583725,U.S. Dollars per Metric Ton,5856.75
+2025-12-01,Olive Oil,6005.29342076087,U.S. Dollars per Metric Ton,6005.29
+2026-01-01,Olive Oil,6092.928711022727,U.S. Dollars per Metric Ton,6092.93
+2026-02-01,Olive Oil,6150.11739675,U.S. Dollars per Metric Ton,6150.12
+2026-03-01,Olive Oil,6068.960345340909,U.S. Dollars per Metric Ton,6068.96
+2026-04-01,Olive Oil,6142.469817727273,U.S. Dollars per Metric Ton,6142.47
+2026-05-01,Olive Oil,6195.911363571429,U.S. Dollars per Metric Ton,6195.91
+2026-06-01,Olive Oil,6153.5823425,U.S. Dollars per Metric Ton,6153.58
+2026-07-01,Olive Oil,6185.217099456522,U.S. Dollars per Metric Ton,6185.22
+2020-01-01,Groundnuts,1884.615256826087,U.S. Dollars per Metric Ton,1884.62
+2020-02-01,Groundnuts,1927.676573,U.S. Dollars per Metric Ton,1927.68
+2020-03-01,Groundnuts,1910.10832,U.S. Dollars per Metric Ton,1910.11
+2020-04-01,Groundnuts,1914.939589727273,U.S. Dollars per Metric Ton,1914.94
+2020-05-01,Groundnuts,1939.869777428571,U.S. Dollars per Metric Ton,1939.87
+2020-06-01,Groundnuts,1945.244826090909,U.S. Dollars per Metric Ton,1945.24
+2020-07-01,Groundnuts,1962.335681130435,U.S. Dollars per Metric Ton,1962.34
+2020-08-01,Groundnuts,1928.82687547619,U.S. Dollars per Metric Ton,1928.83
+2020-09-01,Groundnuts,1916.696414681818,U.S. Dollars per Metric Ton,1916.7
+2020-10-01,Groundnuts,1943.927207318182,U.S. Dollars per Metric Ton,1943.93
+2020-11-01,Groundnuts,1978.519934333333,U.S. Dollars per Metric Ton,1978.52
+2020-12-01,Groundnuts,1970.737889086957,U.S. Dollars per Metric Ton,1970.74
+2021-01-01,Groundnuts,1962.415702238095,U.S. Dollars per Metric Ton,1962.42
+2021-02-01,Groundnuts,1942.6535088,U.S. Dollars per Metric Ton,1942.65
+2021-03-01,Groundnuts,2030.813676652174,U.S. Dollars per Metric Ton,2030.81
+2021-04-01,Groundnuts,2009.8081565,U.S. Dollars per Metric Ton,2009.81
+2021-05-01,Groundnuts,2026.372509190476,U.S. Dollars per Metric Ton,2026.37
+2021-06-01,Groundnuts,2016.396251454545,U.S. Dollars per Metric Ton,2016.4
+2021-07-01,Groundnuts,2084.912438545455,U.S. Dollars per Metric Ton,2084.91
+2021-08-01,Groundnuts,2051.971963863636,U.S. Dollars per Metric Ton,2051.97
+2021-09-01,Groundnuts,2079.641962636364,U.S. Dollars per Metric Ton,2079.64
+2021-10-01,Groundnuts,2233.887041904762,U.S. Dollars per Metric Ton,2233.89
+2021-11-01,Groundnuts,2309.346872,U.S. Dollars per Metric Ton,2309.35
+2021-12-01,Groundnuts,2282.03969573913,U.S. Dollars per Metric Ton,2282.04
+2022-01-01,Groundnuts,2374.223921095238,U.S. Dollars per Metric Ton,2374.22
+2022-02-01,Groundnuts,2355.24393325,U.S. Dollars per Metric Ton,2355.24
+2022-03-01,Groundnuts,2403.031491347826,U.S. Dollars per Metric Ton,2403.03
+2022-04-01,Groundnuts,2362.260777285714,U.S. Dollars per Metric Ton,2362.26
+2022-05-01,Groundnuts,2352.389091954545,U.S. Dollars per Metric Ton,2352.39
+2022-06-01,Groundnuts,2336.577664272727,U.S. Dollars per Metric Ton,2336.58
+2022-07-01,Groundnuts,2405.972263857143,U.S. Dollars per Metric Ton,2405.97
+2022-08-01,Groundnuts,2412.273920130435,U.S. Dollars per Metric Ton,2412.27
+2022-09-01,Groundnuts,2452.088928681818,U.S. Dollars per Metric Ton,2452.09
+2022-10-01,Groundnuts,2514.560800047619,U.S. Dollars per Metric Ton,2514.56
+2022-11-01,Groundnuts,2614.595270090909,U.S. Dollars per Metric Ton,2614.6
+2022-12-01,Groundnuts,2530.706861363636,U.S. Dollars per Metric Ton,2530.71
+2023-01-01,Groundnuts,2401.140994681818,U.S. Dollars per Metric Ton,2401.14
+2023-02-01,Groundnuts,2601.6386831,U.S. Dollars per Metric Ton,2601.64
+2023-03-01,Groundnuts,2582.838742826087,U.S. Dollars per Metric Ton,2582.84
+2023-04-01,Groundnuts,2474.57629235,U.S. Dollars per Metric Ton,2474.58
+2023-05-01,Groundnuts,2652.997179695652,U.S. Dollars per Metric Ton,2653.0
+2023-06-01,Groundnuts,2697.605266,U.S. Dollars per Metric Ton,2697.61
+2023-07-01,Groundnuts,2701.830012571429,U.S. Dollars per Metric Ton,2701.83
+2023-08-01,Groundnuts,2535.366267434783,U.S. Dollars per Metric Ton,2535.37
+2023-09-01,Groundnuts,2549.529989571429,U.S. Dollars per Metric Ton,2549.53
+2023-10-01,Groundnuts,2407.289883090909,U.S. Dollars per Metric Ton,2407.29
+2023-11-01,Groundnuts,2603.615111863636,U.S. Dollars per Metric Ton,2603.62
+2023-12-01,Groundnuts,2338.33448952381,U.S. Dollars per Metric Ton,2338.33
+2024-01-01,Groundnuts,2511.419974695652,U.S. Dollars per Metric Ton,2511.42
+2024-02-01,Groundnuts,2397.229966761905,U.S. Dollars per Metric Ton,2397.23
+2024-03-01,Groundnuts,2574.836639857143,U.S. Dollars per Metric Ton,2574.84
+2024-04-01,Groundnuts,2642.265268590909,U.S. Dollars per Metric Ton,2642.27
+2024-05-01,Groundnuts,2543.348364913043,U.S. Dollars per Metric Ton,2543.35
+2024-06-01,Groundnuts,2474.57629255,U.S. Dollars per Metric Ton,2474.58
+2024-07-01,Groundnuts,2592.081171565217,U.S. Dollars per Metric Ton,2592.08
+2024-08-01,Groundnuts,2503.476068863636,U.S. Dollars per Metric Ton,2503.48
+2024-09-01,Groundnuts,2559.652649761905,U.S. Dollars per Metric Ton,2559.65
+2024-10-01,Groundnuts,2392.108621043478,U.S. Dollars per Metric Ton,2392.11
+2024-11-01,Groundnuts,2350.297633380952,U.S. Dollars per Metric Ton,2350.3
+2024-12-01,Groundnuts,2245.6619545,U.S. Dollars per Metric Ton,2245.66
+2025-01-01,Groundnuts,2444.622420869565,U.S. Dollars per Metric Ton,2444.62
+2025-02-01,Groundnuts,2438.82489725,U.S. Dollars per Metric Ton,2438.82
+2025-03-01,Groundnuts,2398.150208571429,U.S. Dollars per Metric Ton,2398.15
+2025-04-01,Groundnuts,2449.014484318182,U.S. Dollars per Metric Ton,2449.01
+2025-05-01,Groundnuts,2414.756390636364,U.S. Dollars per Metric Ton,2414.76
+2025-06-01,Groundnuts,2511.80007447619,U.S. Dollars per Metric Ton,2511.8
+2025-07-01,Groundnuts,2582.418632478261,U.S. Dollars per Metric Ton,2582.42
+2025-08-01,Groundnuts,2466.708224809524,U.S. Dollars per Metric Ton,2466.71
+2025-09-01,Groundnuts,2462.629880409091,U.S. Dollars per Metric Ton,2462.63
+2025-10-01,Groundnuts,2340.67195,U.S. Dollars per Metric Ton,2340.67
+2025-11-01,Groundnuts,2362.17195,U.S. Dollars per Metric Ton,2362.17
+2025-12-01,Groundnuts,2383.67195,U.S. Dollars per Metric Ton,2383.67
+2026-01-01,Groundnuts,2406.17195,U.S. Dollars per Metric Ton,2406.17
+2026-02-01,Groundnuts,2427.17195,U.S. Dollars per Metric Ton,2427.17
+2026-03-01,Groundnuts,2448.17195,U.S. Dollars per Metric Ton,2448.17
+2026-04-01,Groundnuts,2470.17195,U.S. Dollars per Metric Ton,2470.17
+2026-05-01,Groundnuts,2491.67195,U.S. Dollars per Metric Ton,2491.67
+2026-06-01,Groundnuts,2513.17195,U.S. Dollars per Metric Ton,2513.17
+2026-07-01,Groundnuts,2523.67195,U.S. Dollars per Metric Ton,2523.67
+2020-01-01,Beef,212.5,U.S. Cents per Pound,4684.77
+2020-02-01,Beef,206.875,U.S. Cents per Pound,4560.77
+2020-03-01,Beef,192.3863636363636,U.S. Cents per Pound,4241.35
+2020-04-01,Beef,195.4318181818182,U.S. Cents per Pound,4308.49
+2020-05-01,Beef,214.9047619047619,U.S. Cents per Pound,4737.79
+2020-06-01,Beef,215.7272727272727,U.S. Cents per Pound,4755.92
+2020-07-01,Beef,199.304347826087,U.S. Cents per Pound,4393.86
+2020-08-01,Beef,200.4285714285714,U.S. Cents per Pound,4418.65
+2020-09-01,Beef,197.7272727272727,U.S. Cents per Pound,4359.1
+2020-10-01,Beef,190.0454545454545,U.S. Cents per Pound,4189.74
+2020-11-01,Beef,190.7857142857143,U.S. Cents per Pound,4206.06
+2020-12-01,Beef,189.1086956521739,U.S. Cents per Pound,4169.09
+2021-01-01,Beef,197.0952380952381,U.S. Cents per Pound,4345.16
+2021-02-01,Beef,204.625,U.S. Cents per Pound,4511.16
+2021-03-01,Beef,205.2826086956522,U.S. Cents per Pound,4525.66
+2021-04-01,Beef,224.8181818181818,U.S. Cents per Pound,4956.34
+2021-05-01,Beef,239.952380952381,U.S. Cents per Pound,5289.99
+2021-06-01,Beef,246.9772727272727,U.S. Cents per Pound,5444.86
+2021-07-01,Beef,245.6818181818182,U.S. Cents per Pound,5416.3
+2021-08-01,Beef,247.1363636363636,U.S. Cents per Pound,5448.37
+2021-09-01,Beef,249.25,U.S. Cents per Pound,5494.97
+2021-10-01,Beef,251.2857142857143,U.S. Cents per Pound,5539.84
+2021-11-01,Beef,258.4545454545454,U.S. Cents per Pound,5697.89
+2021-12-01,Beef,260.9347826086956,U.S. Cents per Pound,5752.57
+2022-01-01,Beef,262.5238095238095,U.S. Cents per Pound,5787.6
+2022-02-01,Beef,269.875,U.S. Cents per Pound,5949.66
+2022-03-01,Beef,275.3043478260869,U.S. Cents per Pound,6069.36
+2022-04-01,Beef,271.3095238095238,U.S. Cents per Pound,5981.29
+2022-05-01,Beef,269.1818181818182,U.S. Cents per Pound,5934.38
+2022-06-01,Beef,262.8409090909091,U.S. Cents per Pound,5794.59
+2022-07-01,Beef,257.6428571428572,U.S. Cents per Pound,5679.99
+2022-08-01,Beef,252.0434782608696,U.S. Cents per Pound,5556.55
+2022-09-01,Beef,246.6136363636364,U.S. Cents per Pound,5436.84
+2022-10-01,Beef,241.5238095238095,U.S. Cents per Pound,5324.63
+2022-11-01,Beef,228.6136363636364,U.S. Cents per Pound,5040.02
+2022-12-01,Beef,213.0,U.S. Cents per Pound,4695.8
+2023-01-01,Beef,211.0,U.S. Cents per Pound,4651.71
+2023-02-01,Beef,216.9,U.S. Cents per Pound,4781.78
+2023-03-01,Beef,238.4782608695652,U.S. Cents per Pound,5257.49
+2023-04-01,Beef,248.375,U.S. Cents per Pound,5475.68
+2023-05-01,Beef,240.9565217391304,U.S. Cents per Pound,5312.13
+2023-06-01,Beef,228.8863636363636,U.S. Cents per Pound,5046.03
+2023-07-01,Beef,216.8809523809524,U.S. Cents per Pound,4781.36
+2023-08-01,Beef,214.3478260869565,U.S. Cents per Pound,4725.51
+2023-09-01,Beef,220.5,U.S. Cents per Pound,4861.14
+2023-10-01,Beef,226.9090909090909,U.S. Cents per Pound,5002.44
+2023-11-01,Beef,221.1590909090909,U.S. Cents per Pound,4875.67
+2023-12-01,Beef,218.9285714285714,U.S. Cents per Pound,4826.5
+2024-01-01,Beef,219.8913043478261,U.S. Cents per Pound,4847.72
+2024-02-01,Beef,234.0,U.S. Cents per Pound,5158.76
+2024-03-01,Beef,250.7619047619048,U.S. Cents per Pound,5528.3
+2024-04-01,Beef,270.5681818181818,U.S. Cents per Pound,5964.95
+2024-05-01,Beef,269.0217391304348,U.S. Cents per Pound,5930.85
+2024-06-01,Beef,263.625,U.S. Cents per Pound,5811.88
+2024-07-01,Beef,270.6304347826087,U.S. Cents per Pound,5966.32
+2024-08-01,Beef,273.5454545454546,U.S. Cents per Pound,6030.58
+2024-09-01,Beef,271.1428571428572,U.S. Cents per Pound,5977.62
+2024-10-01,Beef,272.2173913043478,U.S. Cents per Pound,6001.3
+2024-11-01,Beef,269.5238095238095,U.S. Cents per Pound,5941.92
+2024-12-01,Beef,276.2272727272727,U.S. Cents per Pound,6089.71
+2025-01-01,Beef,281.7608695652174,U.S. Cents per Pound,6211.7
+2025-02-01,Beef,285.875,U.S. Cents per Pound,6302.4
+2025-03-01,Beef,292.1666666666667,U.S. Cents per Pound,6441.11
+2025-04-01,Beef,294.0681818181818,U.S. Cents per Pound,6483.03
+2025-05-01,Beef,292.7272727272727,U.S. Cents per Pound,6453.47
+2025-06-01,Beef,298.2619047619048,U.S. Cents per Pound,6575.48
+2025-07-01,Beef,304.9347826086956,U.S. Cents per Pound,6722.59
+2025-08-01,Beef,309.4285714285714,U.S. Cents per Pound,6821.66
+2025-09-01,Beef,309.9090909090909,U.S. Cents per Pound,6832.26
+2025-10-01,Beef,314.0,U.S. Cents per Pound,6922.44
+2025-11-01,Beef,325.5,U.S. Cents per Pound,7175.97
+2025-12-01,Beef,338.6521739130435,U.S. Cents per Pound,7465.93
+2026-01-01,Beef,330.9545454545454,U.S. Cents per Pound,7296.22
+2026-02-01,Beef,344.5,U.S. Cents per Pound,7594.85
+2026-03-01,Beef,349.7727272727273,U.S. Cents per Pound,7711.09
+2026-04-01,Beef,351.4090909090909,U.S. Cents per Pound,7747.16
+2026-05-01,Beef,346.1428571428572,U.S. Cents per Pound,7631.07
+2026-06-01,Beef,341.6022727272727,U.S. Cents per Pound,7530.96
+2026-07-01,Beef,331.7826086956522,U.S. Cents per Pound,7314.48
+2020-01-01,Lamb,135.0480917225713,U.S. Cents per Pound,2977.27
+2020-02-01,Lamb,128.682071685791,U.S. Cents per Pound,2836.92
+2020-03-01,Lamb,117.463062286377,U.S. Cents per Pound,2589.59
+2020-04-01,Lamb,112.1485460454767,U.S. Cents per Pound,2472.43
+2020-05-01,Lamb,110.3416297549293,U.S. Cents per Pound,2432.59
+2020-06-01,Lamb,110.697884646329,U.S. Cents per Pound,2440.45
+2020-07-01,Lamb,110.584670688795,U.S. Cents per Pound,2437.95
+2020-08-01,Lamb,113.421871366955,U.S. Cents per Pound,2500.5
+2020-09-01,Lamb,114.0932346690785,U.S. Cents per Pound,2515.3
+2020-10-01,Lamb,115.4751143022017,U.S. Cents per Pound,2545.76
+2020-11-01,Lamb,112.9092508951823,U.S. Cents per Pound,2489.2
+2020-12-01,Lamb,113.1055311120075,U.S. Cents per Pound,2493.52
+2021-01-01,Lamb,123.9812193371001,U.S. Cents per Pound,2733.29
+2021-02-01,Lamb,128.3334808349609,U.S. Cents per Pound,2829.24
+2021-03-01,Lamb,132.5004571002463,U.S. Cents per Pound,2921.11
+2021-04-01,Lamb,138.9014268354936,U.S. Cents per Pound,3062.22
+2021-05-01,Lamb,149.3492090134393,U.S. Cents per Pound,3292.55
+2021-06-01,Lamb,152.3772839632901,U.S. Cents per Pound,3359.31
+2021-07-01,Lamb,150.0203087546609,U.S. Cents per Pound,3307.35
+2021-08-01,Lamb,150.1332876032049,U.S. Cents per Pound,3309.84
+2021-09-01,Lamb,152.044299732555,U.S. Cents per Pound,3351.97
+2021-10-01,Lamb,153.6953749883743,U.S. Cents per Pound,3388.37
+2021-11-01,Lamb,162.3472477306019,U.S. Cents per Pound,3579.11
+2021-12-01,Lamb,165.0965562903363,U.S. Cents per Pound,3639.72
+2022-01-01,Lamb,168.2808648972284,U.S. Cents per Pound,3709.92
+2022-02-01,Lamb,166.2922172546387,U.S. Cents per Pound,3666.08
+2022-03-01,Lamb,165.9461510699728,U.S. Cents per Pound,3658.45
+2022-04-01,Lamb,162.9059273856027,U.S. Cents per Pound,3591.42
+2022-05-01,Lamb,145.4593013416637,U.S. Cents per Pound,3206.8
+2022-06-01,Lamb,140.4446418068626,U.S. Cents per Pound,3096.24
+2022-07-01,Lamb,135.5714031401135,U.S. Cents per Pound,2988.81
+2022-08-01,Lamb,135.4743632440982,U.S. Cents per Pound,2986.67
+2022-09-01,Lamb,123.568248055198,U.S. Cents per Pound,2724.19
+2022-10-01,Lamb,115.4675787062872,U.S. Cents per Pound,2545.6
+2022-11-01,Lamb,106.5504417419434,U.S. Cents per Pound,2349.01
+2022-12-01,Lamb,96.35738199407405,U.S. Cents per Pound,2124.29
+2023-01-01,Lamb,94.68350531838156,U.S. Cents per Pound,2087.39
+2023-02-01,Lamb,96.96488342285156,U.S. Cents per Pound,2137.69
+2023-03-01,Lamb,100.1297113169795,U.S. Cents per Pound,2207.46
+2023-04-01,Lamb,110.3033981323242,U.S. Cents per Pound,2431.75
+2023-05-01,Lamb,108.7166024912959,U.S. Cents per Pound,2396.77
+2023-06-01,Lamb,104.7718089710582,U.S. Cents per Pound,2309.8
+2023-07-01,Lamb,96.24103400820778,U.S. Cents per Pound,2121.73
+2023-08-01,Lamb,81.9923039311948,U.S. Cents per Pound,1807.6
+2023-09-01,Lamb,82.58612242199126,U.S. Cents per Pound,1820.69
+2023-10-01,Lamb,85.6969125921076,U.S. Cents per Pound,1889.27
+2023-11-01,Lamb,88.37443750554866,U.S. Cents per Pound,1948.3
+2023-12-01,Lamb,91.7216092064267,U.S. Cents per Pound,2022.09
+2024-01-01,Lamb,93.97737353780995,U.S. Cents per Pound,2071.83
+2024-02-01,Lamb,95.95964994884673,U.S. Cents per Pound,2115.53
+2024-03-01,Lamb,98.95060185023716,U.S. Cents per Pound,2181.46
+2024-04-01,Lamb,100.9832465431907,U.S. Cents per Pound,2226.28
+2024-05-01,Lamb,100.8375104821247,U.S. Cents per Pound,2223.06
+2024-06-01,Lamb,112.0224781036377,U.S. Cents per Pound,2469.65
+2024-07-01,Lamb,120.9996095740277,U.S. Cents per Pound,2667.56
+2024-08-01,Lamb,122.0991901050914,U.S. Cents per Pound,2691.8
+2024-09-01,Lamb,128.5684901646205,U.S. Cents per Pound,2834.42
+2024-10-01,Lamb,133.1614512567935,U.S. Cents per Pound,2935.68
+2024-11-01,Lamb,125.4158474150158,U.S. Cents per Pound,2764.92
+2024-12-01,Lamb,125.9992127852006,U.S. Cents per Pound,2777.78
+2025-01-01,Lamb,127.7859765757685,U.S. Cents per Pound,2817.17
+2025-02-01,Lamb,133.6187477111816,U.S. Cents per Pound,2945.76
+2025-03-01,Lamb,139.2758389427548,U.S. Cents per Pound,3070.48
+2025-04-01,Lamb,150.6892797296697,U.S. Cents per Pound,3322.1
+2025-05-01,Lamb,159.2625413374467,U.S. Cents per Pound,3511.1
+2025-06-01,Lamb,166.5960424514044,U.S. Cents per Pound,3672.78
+2025-07-01,Lamb,165.9495265794837,U.S. Cents per Pound,3658.52
+2025-08-01,Lamb,162.9905184791202,U.S. Cents per Pound,3593.29
+2025-09-01,Lamb,161.1034996726296,U.S. Cents per Pound,3551.69
+2025-10-01,Lamb,160.8425093941067,U.S. Cents per Pound,3545.93
+2025-11-01,Lamb,158.837329864502,U.S. Cents per Pound,3501.73
+2025-12-01,Lamb,164.7984367038893,U.S. Cents per Pound,3633.15
+2026-01-01,Lamb,168.5528474287553,U.S. Cents per Pound,3715.92
+2026-02-01,Lamb,169.2443084716797,U.S. Cents per Pound,3731.16
+2026-03-01,Lamb,166.6839211203835,U.S. Cents per Pound,3674.71
+2026-04-01,Lamb,168.8444234674627,U.S. Cents per Pound,3722.34
+2026-05-01,Lamb,169.3264312744141,U.S. Cents per Pound,3732.97
+2026-06-01,Lamb,168.6977566805753,U.S. Cents per Pound,3719.11
+2026-07-01,Lamb,170.2056314219599,U.S. Cents per Pound,3752.35
+2020-01-01,Poultry,121.7091641633407,U.S. Cents per Pound,2683.2
+2020-02-01,Poultry,108.4255237579346,U.S. Cents per Pound,2390.35
+2020-03-01,Poultry,108.4102443348278,U.S. Cents per Pound,2390.01
+2020-04-01,Poultry,73.8577336398038,U.S. Cents per Pound,1628.27
+2020-05-01,Poultry,98.10984838576545,U.S. Cents per Pound,2162.93
+2020-06-01,Poultry,99.13035306063566,U.S. Cents per Pound,2185.43
+2020-07-01,Poultry,94.28949604863706,U.S. Cents per Pound,2078.71
+2020-08-01,Poultry,88.75815727597191,U.S. Cents per Pound,1956.76
+2020-09-01,Poultry,85.50053336403586,U.S. Cents per Pound,1884.94
+2020-10-01,Poultry,90.4781677939675,U.S. Cents per Pound,1994.68
+2020-11-01,Poultry,104.3394008818127,U.S. Cents per Pound,2300.27
+2020-12-01,Poultry,110.8344872516135,U.S. Cents per Pound,2443.46
+2021-01-01,Poultry,110.5599866594587,U.S. Cents per Pound,2437.41
+2021-02-01,Poultry,111.5652732849121,U.S. Cents per Pound,2459.57
+2021-03-01,Poultry,114.7205133852751,U.S. Cents per Pound,2529.13
+2021-04-01,Poultry,135.2939938631925,U.S. Cents per Pound,2982.69
+2021-05-01,Poultry,141.775623139881,U.S. Cents per Pound,3125.59
+2021-06-01,Poultry,143.1980694857511,U.S. Cents per Pound,3156.94
+2021-07-01,Poultry,141.9536604447798,U.S. Cents per Pound,3129.51
+2021-08-01,Poultry,140.9683997414329,U.S. Cents per Pound,3107.79
+2021-09-01,Poultry,142.1266257546165,U.S. Cents per Pound,3133.32
+2021-10-01,Poultry,138.6253117152623,U.S. Cents per Pound,3056.13
+2021-11-01,Poultry,143.0929364291104,U.S. Cents per Pound,3154.63
+2021-12-01,Poultry,168.4537333612857,U.S. Cents per Pound,3713.73
+2022-01-01,Poultry,176.2273733956473,U.S. Cents per Pound,3885.11
+2022-02-01,Poultry,168.6021308898926,U.S. Cents per Pound,3717.0
+2022-03-01,Poultry,198.3721021569293,U.S. Cents per Pound,4373.31
+2022-04-01,Poultry,223.9866354806083,U.S. Cents per Pound,4938.01
+2022-05-01,Poultry,227.9633241133256,U.S. Cents per Pound,5025.68
+2022-06-01,Poultry,222.8475577614524,U.S. Cents per Pound,4912.9
+2022-07-01,Poultry,197.1026789347331,U.S. Cents per Pound,4345.33
+2022-08-01,Poultry,175.722063810929,U.S. Cents per Pound,3873.97
+2022-09-01,Poultry,168.1787893121893,U.S. Cents per Pound,3707.67
+2022-10-01,Poultry,166.3837738037109,U.S. Cents per Pound,3668.1
+2022-11-01,Poultry,168.6967759565873,U.S. Cents per Pound,3719.09
+2022-12-01,Poultry,168.4147234829989,U.S. Cents per Pound,3712.87
+2023-01-01,Poultry,164.7574053677646,U.S. Cents per Pound,3632.24
+2023-02-01,Poultry,163.8630226135254,U.S. Cents per Pound,3612.52
+2023-03-01,Poultry,170.9726648745329,U.S. Cents per Pound,3769.26
+2023-04-01,Poultry,179.6553421020508,U.S. Cents per Pound,3960.68
+2023-05-01,Poultry,182.0729602316152,U.S. Cents per Pound,4013.98
+2023-06-01,Poultry,174.092978737571,U.S. Cents per Pound,3838.05
+2023-07-01,Poultry,154.1092296781994,U.S. Cents per Pound,3397.49
+2023-08-01,Poultry,147.5447281547215,U.S. Cents per Pound,3252.77
+2023-09-01,Poultry,155.9459199451265,U.S. Cents per Pound,3437.98
+2023-10-01,Poultry,155.7319238836115,U.S. Cents per Pound,3433.27
+2023-11-01,Poultry,159.2253286188299,U.S. Cents per Pound,3510.28
+2023-12-01,Poultry,167.0633210681734,U.S. Cents per Pound,3683.08
+2024-01-01,Poultry,168.7589383332626,U.S. Cents per Pound,3720.46
+2024-02-01,Poultry,167.023675101144,U.S. Cents per Pound,3682.2
+2024-03-01,Poultry,168.4180755615234,U.S. Cents per Pound,3712.94
+2024-04-01,Poultry,170.8597460660067,U.S. Cents per Pound,3766.77
+2024-05-01,Poultry,170.8745320638021,U.S. Cents per Pound,3767.1
+2024-06-01,Poultry,171.466423034668,U.S. Cents per Pound,3780.15
+2024-07-01,Poultry,171.6530721913213,U.S. Cents per Pound,3784.26
+2024-08-01,Poultry,168.6045303344727,U.S. Cents per Pound,3717.06
+2024-09-01,Poultry,171.0247490292504,U.S. Cents per Pound,3770.41
+2024-10-01,Poultry,173.1807304050612,U.S. Cents per Pound,3817.94
+2024-11-01,Poultry,172.4371148972284,U.S. Cents per Pound,3801.55
+2024-12-01,Poultry,175.3559993397106,U.S. Cents per Pound,3865.9
+2025-01-01,Poultry,176.7941733466254,U.S. Cents per Pound,3897.6
+2025-02-01,Poultry,171.8696899414062,U.S. Cents per Pound,3789.04
+2025-03-01,Poultry,173.492669241769,U.S. Cents per Pound,3824.82
+2025-04-01,Poultry,176.1111795525802,U.S. Cents per Pound,3882.55
+2025-05-01,Poultry,175.6779594421387,U.S. Cents per Pound,3873.0
+2025-06-01,Poultry,177.9414596557617,U.S. Cents per Pound,3922.9
+2025-07-01,Poultry,176.1187109696238,U.S. Cents per Pound,3882.71
+2025-08-01,Poultry,172.4947240920294,U.S. Cents per Pound,3802.82
+2025-09-01,Poultry,171.4371528625488,U.S. Cents per Pound,3779.5
+2025-10-01,Poultry,162.994571685791,U.S. Cents per Pound,3593.38
+2025-11-01,Poultry,161.6286659240723,U.S. Cents per Pound,3563.27
+2025-12-01,Poultry,164.2401428222656,U.S. Cents per Pound,3620.84
+2026-01-01,Poultry,168.220775604248,U.S. Cents per Pound,3708.6
+2026-02-01,Poultry,166.5426635742188,U.S. Cents per Pound,3671.6
+2026-03-01,Poultry,168.3283941095526,U.S. Cents per Pound,3710.97
+2026-04-01,Poultry,168.3437659523704,U.S. Cents per Pound,3711.31
+2026-05-01,Poultry,167.8010944184803,U.S. Cents per Pound,3699.34
+2026-06-01,Poultry,167.1097238714045,U.S. Cents per Pound,3684.1
+2026-07-01,Poultry,166.2929614523183,U.S. Cents per Pound,3666.09
+2020-01-01,Fish (Salmon),8.427607391191566,U.S. Dollars per Kilogram,8427.61
+2020-02-01,Fish (Salmon),7.29450798034668,U.S. Dollars per Kilogram,7294.51
+2020-03-01,Fish (Salmon),6.241109631278298,U.S. Dollars per Kilogram,6241.11
+2020-04-01,Fish (Salmon),5.497762224890969,U.S. Dollars per Kilogram,5497.76
+2020-05-01,Fish (Salmon),6.020296891530355,U.S. Dollars per Kilogram,6020.3
+2020-06-01,Fish (Salmon),6.784126910296354,U.S. Dollars per Kilogram,6784.13
+2020-07-01,Fish (Salmon),5.816350874693497,U.S. Dollars per Kilogram,5816.35
+2020-08-01,Fish (Salmon),5.66818786802746,U.S. Dollars per Kilogram,5668.19
+2020-09-01,Fish (Salmon),5.422683000564575,U.S. Dollars per Kilogram,5422.68
+2020-10-01,Fish (Salmon),5.226352366534146,U.S. Dollars per Kilogram,5226.35
+2020-11-01,Fish (Salmon),5.253237815130325,U.S. Dollars per Kilogram,5253.24
+2020-12-01,Fish (Salmon),5.546397603076437,U.S. Dollars per Kilogram,5546.4
+2021-01-01,Fish (Salmon),5.740490867978051,U.S. Dollars per Kilogram,5740.49
+2021-02-01,Fish (Salmon),6.035576581954956,U.S. Dollars per Kilogram,6035.58
+2021-03-01,Fish (Salmon),7.323440261509107,U.S. Dollars per Kilogram,7323.44
+2021-04-01,Fish (Salmon),7.559603669426658,U.S. Dollars per Kilogram,7559.6
+2021-05-01,Fish (Salmon),8.03862730662028,U.S. Dollars per Kilogram,8038.63
+2021-06-01,Fish (Salmon),7.079855528744784,U.S. Dollars per Kilogram,7079.86
+2021-07-01,Fish (Salmon),7.14874495159496,U.S. Dollars per Kilogram,7148.74
+2021-08-01,Fish (Salmon),6.617833137512207,U.S. Dollars per Kilogram,6617.83
+2021-09-01,Fish (Salmon),6.171151334589178,U.S. Dollars per Kilogram,6171.15
+2021-10-01,Fish (Salmon),6.68741394224621,U.S. Dollars per Kilogram,6687.41
+2021-11-01,Fish (Salmon),6.555554585023359,U.S. Dollars per Kilogram,6555.55
+2021-12-01,Fish (Salmon),7.412604311238164,U.S. Dollars per Kilogram,7412.6
+2022-01-01,Fish (Salmon),8.01759047735305,U.S. Dollars per Kilogram,8017.59
+2022-02-01,Fish (Salmon),8.832648944854736,U.S. Dollars per Kilogram,8832.65
+2022-03-01,Fish (Salmon),9.418716016023055,U.S. Dollars per Kilogram,9418.72
+2022-04-01,Fish (Salmon),10.38220673515683,U.S. Dollars per Kilogram,10382.21
+2022-05-01,Fish (Salmon),10.53703204068271,U.S. Dollars per Kilogram,10537.03
+2022-06-01,Fish (Salmon),9.923865795135498,U.S. Dollars per Kilogram,9923.87
+2022-07-01,Fish (Salmon),8.842366718110585,U.S. Dollars per Kilogram,8842.37
+2022-08-01,Fish (Salmon),7.428818764893905,U.S. Dollars per Kilogram,7428.82
+2022-09-01,Fish (Salmon),6.173658284274015,U.S. Dollars per Kilogram,6173.66
+2022-10-01,Fish (Salmon),6.62087143035162,U.S. Dollars per Kilogram,6620.87
+2022-11-01,Fish (Salmon),7.015431078997525,U.S. Dollars per Kilogram,7015.43
+2022-12-01,Fish (Salmon),7.889446431940252,U.S. Dollars per Kilogram,7889.45
+2023-01-01,Fish (Salmon),9.22827759656039,U.S. Dollars per Kilogram,9228.28
+2023-02-01,Fish (Salmon),9.49063982963562,U.S. Dollars per Kilogram,9490.64
+2023-03-01,Fish (Salmon),11.24840043938678,U.S. Dollars per Kilogram,11248.4
+2023-04-01,Fish (Salmon),10.82360458374023,U.S. Dollars per Kilogram,10823.6
+2023-05-01,Fish (Salmon),10.25255103733229,U.S. Dollars per Kilogram,10252.55
+2023-06-01,Fish (Salmon),9.121304598721592,U.S. Dollars per Kilogram,9121.3
+2023-07-01,Fish (Salmon),9.13956660316104,U.S. Dollars per Kilogram,9139.57
+2023-08-01,Fish (Salmon),7.74312744969907,U.S. Dollars per Kilogram,7743.13
+2023-09-01,Fish (Salmon),7.132769130525135,U.S. Dollars per Kilogram,7132.77
+2023-10-01,Fish (Salmon),7.505125067450783,U.S. Dollars per Kilogram,7505.13
+2023-11-01,Fish (Salmon),7.52636228908192,U.S. Dollars per Kilogram,7526.36
+2023-12-01,Fish (Salmon),8.277622790563674,U.S. Dollars per Kilogram,8277.62
+2024-01-01,Fish (Salmon),10.20790270100469,U.S. Dollars per Kilogram,10207.9
+2024-02-01,Fish (Salmon),10.26542132241385,U.S. Dollars per Kilogram,10265.42
+2024-03-01,Fish (Salmon),10.15644395919073,U.S. Dollars per Kilogram,10156.44
+2024-04-01,Fish (Salmon),10.9639988379045,U.S. Dollars per Kilogram,10964.0
+2024-05-01,Fish (Salmon),11.08842028742251,U.S. Dollars per Kilogram,11088.42
+2024-06-01,Fish (Salmon),8.66761577129364,U.S. Dollars per Kilogram,8667.62
+2024-07-01,Fish (Salmon),7.393667988155199,U.S. Dollars per Kilogram,7393.67
+2024-08-01,Fish (Salmon),7.469211946834218,U.S. Dollars per Kilogram,7469.21
+2024-09-01,Fish (Salmon),6.961546284811837,U.S. Dollars per Kilogram,6961.55
+2024-10-01,Fish (Salmon),6.814045159713082,U.S. Dollars per Kilogram,6814.05
+2024-11-01,Fish (Salmon),7.285276276724679,U.S. Dollars per Kilogram,7285.28
+2024-12-01,Fish (Salmon),8.029616659337824,U.S. Dollars per Kilogram,8029.62
+2025-01-01,Fish (Salmon),9.622742487036664,U.S. Dollars per Kilogram,9622.74
+2025-02-01,Fish (Salmon),8.325320482254028,U.S. Dollars per Kilogram,8325.32
+2025-03-01,Fish (Salmon),8.342180978684198,U.S. Dollars per Kilogram,8342.18
+2025-04-01,Fish (Salmon),8.006162339990789,U.S. Dollars per Kilogram,8006.16
+2025-05-01,Fish (Salmon),7.470978866923939,U.S. Dollars per Kilogram,7470.98
+2025-06-01,Fish (Salmon),7.480055082411993,U.S. Dollars per Kilogram,7480.06
+2025-07-01,Fish (Salmon),6.695070411847985,U.S. Dollars per Kilogram,6695.07
+2025-08-01,Fish (Salmon),6.192445664178758,U.S. Dollars per Kilogram,6192.45
+2025-09-01,Fish (Salmon),7.323115565560081,U.S. Dollars per Kilogram,7323.12
+2025-10-01,Fish (Salmon),7.651407573534095,U.S. Dollars per Kilogram,7651.41
+2025-11-01,Fish (Salmon),7.952345252037048,U.S. Dollars per Kilogram,7952.35
+2025-12-01,Fish (Salmon),8.791041540062945,U.S. Dollars per Kilogram,8791.04
+2026-01-01,Fish (Salmon),9.02821415120905,U.S. Dollars per Kilogram,9028.21
+2026-02-01,Fish (Salmon),9.211789608001709,U.S. Dollars per Kilogram,9211.79
+2026-03-01,Fish (Salmon),9.29478680003773,U.S. Dollars per Kilogram,9294.79
+2026-04-01,Fish (Salmon),8.825551943345504,U.S. Dollars per Kilogram,8825.55
+2026-05-01,Fish (Salmon),8.564031532832555,U.S. Dollars per Kilogram,8564.03
+2026-06-01,Fish (Salmon),7.497015346180309,U.S. Dollars per Kilogram,7497.02
+2026-07-01,Fish (Salmon),7.135598742443582,U.S. Dollars per Kilogram,7135.6
+2020-01-01,Shrimp,8.05955,U.S. Dollars per Kilogram,8059.55
+2020-02-01,Shrimp,7.5080425,U.S. Dollars per Kilogram,7508.04
+2020-03-01,Shrimp,7.502631,U.S. Dollars per Kilogram,7502.63
+2020-04-01,Shrimp,7.111524,U.S. Dollars per Kilogram,7111.52
+2020-05-01,Shrimp,7.3867035,U.S. Dollars per Kilogram,7386.7
+2020-06-01,Shrimp,7.952175,U.S. Dollars per Kilogram,7952.18
+2020-07-01,Shrimp,6.970559,U.S. Dollars per Kilogram,6970.56
+2020-08-01,Shrimp,6.890206,U.S. Dollars per Kilogram,6890.21
+2020-09-01,Shrimp,6.890976,U.S. Dollars per Kilogram,6890.98
+2020-10-01,Shrimp,6.853532,U.S. Dollars per Kilogram,6853.53
+2020-11-01,Shrimp,7.0866285,U.S. Dollars per Kilogram,7086.63
+2020-12-01,Shrimp,7.751366128,U.S. Dollars per Kilogram,7751.37
+2021-01-01,Shrimp,7.569308955,U.S. Dollars per Kilogram,7569.31
+2021-02-01,Shrimp,7.425409614,U.S. Dollars per Kilogram,7425.41
+2021-03-01,Shrimp,6.596584731,U.S. Dollars per Kilogram,6596.58
+2021-04-01,Shrimp,6.984418951,U.S. Dollars per Kilogram,6984.42
+2021-05-01,Shrimp,7.358002796,U.S. Dollars per Kilogram,7358.0
+2021-06-01,Shrimp,7.55715778,U.S. Dollars per Kilogram,7557.16
+2021-07-01,Shrimp,7.753274814,U.S. Dollars per Kilogram,7753.27
+2021-08-01,Shrimp,8.129517435,U.S. Dollars per Kilogram,8129.52
+2021-09-01,Shrimp,8.258825959,U.S. Dollars per Kilogram,8258.83
+2021-10-01,Shrimp,8.218737136,U.S. Dollars per Kilogram,8218.74
+2021-11-01,Shrimp,8.537962861,U.S. Dollars per Kilogram,8537.96
+2021-12-01,Shrimp,8.455036285,U.S. Dollars per Kilogram,8455.04
+2022-01-01,Shrimp,8.711909029,U.S. Dollars per Kilogram,8711.91
+2022-02-01,Shrimp,8.232611442,U.S. Dollars per Kilogram,8232.61
+2022-03-01,Shrimp,7.915022283,U.S. Dollars per Kilogram,7915.02
+2022-04-01,Shrimp,7.698528732,U.S. Dollars per Kilogram,7698.53
+2022-05-01,Shrimp,7.729731204,U.S. Dollars per Kilogram,7729.73
+2022-06-01,Shrimp,8.034964007,U.S. Dollars per Kilogram,8034.96
+2022-07-01,Shrimp,7.765343848,U.S. Dollars per Kilogram,7765.34
+2022-08-01,Shrimp,8.093983913,U.S. Dollars per Kilogram,8093.98
+2022-09-01,Shrimp,8.439137457,U.S. Dollars per Kilogram,8439.14
+2022-10-01,Shrimp,8.206034506,U.S. Dollars per Kilogram,8206.03
+2022-11-01,Shrimp,8.138941583,U.S. Dollars per Kilogram,8138.94
+2022-12-01,Shrimp,7.683218878,U.S. Dollars per Kilogram,7683.22
+2023-01-01,Shrimp,7.006224609,U.S. Dollars per Kilogram,7006.22
+2023-02-01,Shrimp,6.925510296,U.S. Dollars per Kilogram,6925.51
+2023-03-01,Shrimp,7.164858454,U.S. Dollars per Kilogram,7164.86
+2023-04-01,Shrimp,6.998268832,U.S. Dollars per Kilogram,6998.27
+2023-05-01,Shrimp,7.032373326,U.S. Dollars per Kilogram,7032.37
+2023-06-01,Shrimp,7.002735928,U.S. Dollars per Kilogram,7002.74
+2023-07-01,Shrimp,6.809539357,U.S. Dollars per Kilogram,6809.54
+2023-08-01,Shrimp,6.728818966,U.S. Dollars per Kilogram,6728.82
+2023-09-01,Shrimp,7.024740932,U.S. Dollars per Kilogram,7024.74
+2023-10-01,Shrimp,7.071025958,U.S. Dollars per Kilogram,7071.03
+2023-11-01,Shrimp,6.716963927,U.S. Dollars per Kilogram,6716.96
+2023-12-01,Shrimp,7.027763878,U.S. Dollars per Kilogram,7027.76
+2024-01-01,Shrimp,7.141213956,U.S. Dollars per Kilogram,7141.21
+2024-02-01,Shrimp,7.213143098,U.S. Dollars per Kilogram,7213.14
+2024-03-01,Shrimp,7.155343071,U.S. Dollars per Kilogram,7155.34
+2024-04-01,Shrimp,7.068443735,U.S. Dollars per Kilogram,7068.44
+2024-05-01,Shrimp,7.100701319,U.S. Dollars per Kilogram,7100.7
+2024-06-01,Shrimp,7.066316721,U.S. Dollars per Kilogram,7066.32
+2024-07-01,Shrimp,6.985876638,U.S. Dollars per Kilogram,6985.88
+2024-08-01,Shrimp,7.308345292,U.S. Dollars per Kilogram,7308.35
+2024-09-01,Shrimp,7.692149377,U.S. Dollars per Kilogram,7692.15
+2024-10-01,Shrimp,7.972779669,U.S. Dollars per Kilogram,7972.78
+2024-11-01,Shrimp,8.39842686,U.S. Dollars per Kilogram,8398.43
+2024-12-01,Shrimp,8.001999864,U.S. Dollars per Kilogram,8002.0
+2025-01-01,Shrimp,7.331618459,U.S. Dollars per Kilogram,7331.62
+2025-02-01,Shrimp,7.387819319,U.S. Dollars per Kilogram,7387.82
+2025-03-01,Shrimp,7.245942391,U.S. Dollars per Kilogram,7245.94
+2025-04-01,Shrimp,6.590042386,U.S. Dollars per Kilogram,6590.04
+2025-05-01,Shrimp,7.135317609,U.S. Dollars per Kilogram,7135.32
+2025-06-01,Shrimp,6.629075187,U.S. Dollars per Kilogram,6629.08
+2025-07-01,Shrimp,7.282416351,U.S. Dollars per Kilogram,7282.42
+2025-08-01,Shrimp,6.691989697,U.S. Dollars per Kilogram,6691.99
+2025-09-01,Shrimp,6.72960704,U.S. Dollars per Kilogram,6729.61
+2025-10-01,Shrimp,6.852495401,U.S. Dollars per Kilogram,6852.5
+2025-11-01,Shrimp,6.743217123,U.S. Dollars per Kilogram,6743.22
+2025-12-01,Shrimp,7.273271021,U.S. Dollars per Kilogram,7273.27
+2026-01-01,Shrimp,7.274965978,U.S. Dollars per Kilogram,7274.97
+2026-02-01,Shrimp,7.455101571,U.S. Dollars per Kilogram,7455.1
+2026-03-01,Shrimp,7.19388853,U.S. Dollars per Kilogram,7193.89
+2026-04-01,Shrimp,7.016045516,U.S. Dollars per Kilogram,7016.05
+2026-05-01,Shrimp,6.930315068,U.S. Dollars per Kilogram,6930.32
+2026-06-01,Shrimp,6.061063853,U.S. Dollars per Kilogram,6061.06
+2026-07-01,Shrimp,6.538102328,U.S. Dollars per Kilogram,6538.1
+2020-01-01,Cotton,79.06818181818181,U.S. Cents per Pound,1743.14
+2020-02-01,Cotton,76.5675,U.S. Cents per Pound,1688.01
+2020-03-01,Cotton,67.68636363636364,U.S. Cents per Pound,1492.21
+2020-04-01,Cotton,63.5325,U.S. Cents per Pound,1400.64
+2020-05-01,Cotton,65.70263157894738,U.S. Cents per Pound,1448.48
+2020-06-01,Cotton,67.8,U.S. Cents per Pound,1494.72
+2020-07-01,Cotton,68.52391304347826,U.S. Cents per Pound,1510.68
+2020-08-01,Cotton,70.0,U.S. Cents per Pound,1543.22
+2020-09-01,Cotton,70.81363636363636,U.S. Cents per Pound,1561.16
+2020-10-01,Cotton,74.81590909090909,U.S. Cents per Pound,1649.39
+2020-11-01,Cotton,77.72380952380952,U.S. Cents per Pound,1713.5
+2020-12-01,Cotton,81.02142857142857,U.S. Cents per Pound,1786.2
+2021-01-01,Cotton,87.235,U.S. Cents per Pound,1923.18
+2021-02-01,Cotton,92.76,U.S. Cents per Pound,2044.99
+2021-03-01,Cotton,91.45217391304348,U.S. Cents per Pound,2016.15
+2021-04-01,Cotton,90.73,U.S. Cents per Pound,2000.23
+2021-05-01,Cotton,90.88684210526316,U.S. Cents per Pound,2003.69
+2021-06-01,Cotton,94.50454545454545,U.S. Cents per Pound,2083.45
+2021-07-01,Cotton,97.7,U.S. Cents per Pound,2153.89
+2021-08-01,Cotton,101.3047619047619,U.S. Cents per Pound,2233.36
+2021-09-01,Cotton,103.6818181818182,U.S. Cents per Pound,2285.77
+2021-10-01,Cotton,117.3833333333333,U.S. Cents per Pound,2587.83
+2021-11-01,Cotton,126.5431818181818,U.S. Cents per Pound,2789.77
+2021-12-01,Cotton,120.0404761904762,U.S. Cents per Pound,2646.41
+2022-01-01,Cotton,132.3325,U.S. Cents per Pound,2917.4
+2022-02-01,Cotton,138.405,U.S. Cents per Pound,3051.28
+2022-03-01,Cotton,141.1260869565217,U.S. Cents per Pound,3111.27
+2022-04-01,Cotton,155.3157894736842,U.S. Cents per Pound,3424.09
+2022-05-01,Cotton,163.9795454545455,U.S. Cents per Pound,3615.09
+2022-06-01,Cotton,154.4454545454545,U.S. Cents per Pound,3404.9
+2022-07-01,Cotton,131.0357142857143,U.S. Cents per Pound,2888.81
+2022-08-01,Cotton,124.7586956521739,U.S. Cents per Pound,2750.43
+2022-09-01,Cotton,117.9409090909091,U.S. Cents per Pound,2600.13
+2022-10-01,Cotton,100.2761904761905,U.S. Cents per Pound,2210.69
+2022-11-01,Cotton,101.1659090909091,U.S. Cents per Pound,2230.3
+2022-12-01,Cotton,100.8863636363636,U.S. Cents per Pound,2224.14
+2023-01-01,Cotton,100.3113636363636,U.S. Cents per Pound,2211.46
+2023-02-01,Cotton,99.43,U.S. Cents per Pound,2192.03
+2023-03-01,Cotton,95.3913043478261,U.S. Cents per Pound,2103.0
+2023-04-01,Cotton,95.1325,U.S. Cents per Pound,2097.29
+2023-05-01,Cotton,93.88478260869564,U.S. Cents per Pound,2069.78
+2023-06-01,Cotton,92.41818181818182,U.S. Cents per Pound,2037.45
+2023-07-01,Cotton,93.26904761904763,U.S. Cents per Pound,2056.21
+2023-08-01,Cotton,95.99565217391304,U.S. Cents per Pound,2116.32
+2023-09-01,Cotton,97.76904761904763,U.S. Cents per Pound,2155.42
+2023-10-01,Cotton,95.68636363636364,U.S. Cents per Pound,2109.5
+2023-11-01,Cotton,90.43181818181819,U.S. Cents per Pound,1993.66
+2023-12-01,Cotton,90.40714285714286,U.S. Cents per Pound,1993.12
+2024-01-01,Cotton,92.10652173913043,U.S. Cents per Pound,2030.58
+2024-02-01,Cotton,99.35238095238095,U.S. Cents per Pound,2190.32
+2024-03-01,Cotton,99.56428571428572,U.S. Cents per Pound,2194.99
+2024-04-01,Cotton,90.60227272727273,U.S. Cents per Pound,1997.42
+2024-05-01,Cotton,85.88913043478261,U.S. Cents per Pound,1893.51
+2024-06-01,Cotton,83.24,U.S. Cents per Pound,1835.11
+2024-07-01,Cotton,81.38260869565217,U.S. Cents per Pound,1794.16
+2024-08-01,Cotton,79.92727272727274,U.S. Cents per Pound,1762.08
+2024-09-01,Cotton,82.55714285714286,U.S. Cents per Pound,1820.05
+2024-10-01,Cotton,83.69347826086957,U.S. Cents per Pound,1845.11
+2024-11-01,Cotton,81.55238095238094,U.S. Cents per Pound,1797.9
+2024-12-01,Cotton,79.90454545454546,U.S. Cents per Pound,1761.58
+2025-01-01,Cotton,78.23695652173913,U.S. Cents per Pound,1724.81
+2025-02-01,Cotton,78.0975,U.S. Cents per Pound,1721.74
+2025-03-01,Cotton,77.63809523809525,U.S. Cents per Pound,1711.61
+2025-04-01,Cotton,78.28181818181818,U.S. Cents per Pound,1725.8
+2025-05-01,Cotton,77.98863636363636,U.S. Cents per Pound,1719.34
+2025-06-01,Cotton,78.19047619047619,U.S. Cents per Pound,1723.79
+2025-07-01,Cotton,78.90652173913043,U.S. Cents per Pound,1739.57
+2025-08-01,Cotton,78.57380952380952,U.S. Cents per Pound,1732.24
+2025-09-01,Cotton,77.97727272727273,U.S. Cents per Pound,1719.09
+2025-10-01,Cotton,75.98434782608696,U.S. Cents per Pound,1675.15
+2025-11-01,Cotton,75.28,U.S. Cents per Pound,1659.62
+2025-12-01,Cotton,74.06590909090909,U.S. Cents per Pound,1632.86
+2026-01-01,Cotton,74.48636363636363,U.S. Cents per Pound,1642.13
+2026-02-01,Cotton,73.96,U.S. Cents per Pound,1630.52
+2026-03-01,Cotton,76.93863636363636,U.S. Cents per Pound,1696.19
+2026-04-01,Cotton,85.58181818181818,U.S. Cents per Pound,1886.74
+2026-05-01,Cotton,92.09285714285714,U.S. Cents per Pound,2030.28
+2026-06-01,Cotton,86.29318181818182,U.S. Cents per Pound,1902.42
+2026-07-01,Cotton,88.775,U.S. Cents per Pound,1957.13
+2020-01-01,Wool (Coarse),1188.525231223762,U.S. Cents per Kilogram,11885.25
+2020-02-01,Wool (Coarse),1143.091099764525,U.S. Cents per Kilogram,11430.91
+2020-03-01,Wool (Coarse),1008.145571265867,U.S. Cents per Kilogram,10081.46
+2020-04-01,Wool (Coarse),893.98485929992,U.S. Cents per Kilogram,8939.85
+2020-05-01,Wool (Coarse),805.25872793585,U.S. Cents per Kilogram,8052.59
+2020-06-01,Wool (Coarse),815.43042049152,U.S. Cents per Kilogram,8154.3
+2020-07-01,Wool (Coarse),822.49418713635,U.S. Cents per Kilogram,8224.94
+2020-08-01,Wool (Coarse),719.4768573888188,U.S. Cents per Kilogram,7194.77
+2020-09-01,Wool (Coarse),606.81693548692,U.S. Cents per Kilogram,6068.17
+2020-10-01,Wool (Coarse),766.8437128008143,U.S. Cents per Kilogram,7668.44
+2020-11-01,Wool (Coarse),822.5870719537625,U.S. Cents per Kilogram,8225.87
+2020-12-01,Wool (Coarse),842.7840721916,U.S. Cents per Kilogram,8427.84
+2021-01-01,Wool (Coarse),862.099441627325,U.S. Cents per Kilogram,8620.99
+2021-02-01,Wool (Coarse),921.8305460857857,U.S. Cents per Kilogram,9218.31
+2021-03-01,Wool (Coarse),946.9077896748636,U.S. Cents per Kilogram,9469.08
+2021-04-01,Wool (Coarse),920.7455880272626,U.S. Cents per Kilogram,9207.46
+2021-05-01,Wool (Coarse),926.25237721649,U.S. Cents per Kilogram,9262.52
+2021-06-01,Wool (Coarse),959.847694329057,U.S. Cents per Kilogram,9598.48
+2021-07-01,Wool (Coarse),909.48058655,U.S. Cents per Kilogram,9094.81
+2021-08-01,Wool (Coarse),879.076768948175,U.S. Cents per Kilogram,8790.77
+2021-09-01,Wool (Coarse),868.0936731291333,U.S. Cents per Kilogram,8680.94
+2021-10-01,Wool (Coarse),892.4307588935,U.S. Cents per Kilogram,8924.31
+2021-11-01,Wool (Coarse),907.98350414054,U.S. Cents per Kilogram,9079.84
+2021-12-01,Wool (Coarse),909.3060507614857,U.S. Cents per Kilogram,9093.06
+2022-01-01,Wool (Coarse),933.3671241026714,U.S. Cents per Kilogram,9333.67
+2022-02-01,Wool (Coarse),924.55906404006,U.S. Cents per Kilogram,9245.59
+2022-03-01,Wool (Coarse),931.1780628614333,U.S. Cents per Kilogram,9311.78
+2022-04-01,Wool (Coarse),917.0763585193,U.S. Cents per Kilogram,9170.76
+2022-05-01,Wool (Coarse),917.3349763456667,U.S. Cents per Kilogram,9173.35
+2022-06-01,Wool (Coarse),949.0047429991222,U.S. Cents per Kilogram,9490.05
+2022-07-01,Wool (Coarse),900.966142340375,U.S. Cents per Kilogram,9009.66
+2022-08-01,Wool (Coarse),864.3002181919092,U.S. Cents per Kilogram,8643.0
+2022-09-01,Wool (Coarse),819.34342087025,U.S. Cents per Kilogram,8193.43
+2022-10-01,Wool (Coarse),786.0700684732429,U.S. Cents per Kilogram,7860.7
+2022-11-01,Wool (Coarse),789.7820551117,U.S. Cents per Kilogram,7897.82
+2022-12-01,Wool (Coarse),838.8368503453333,U.S. Cents per Kilogram,8388.37
+2023-01-01,Wool (Coarse),919.36947513603,U.S. Cents per Kilogram,9193.69
+2023-02-01,Wool (Coarse),949.8553065823556,U.S. Cents per Kilogram,9498.55
+2023-03-01,Wool (Coarse),902.2994069860143,U.S. Cents per Kilogram,9022.99
+2023-04-01,Wool (Coarse),903.32942435718,U.S. Cents per Kilogram,9033.29
+2023-05-01,Wool (Coarse),897.6660301215429,U.S. Cents per Kilogram,8976.66
+2023-06-01,Wool (Coarse),836.880043113,U.S. Cents per Kilogram,8368.8
+2023-07-01,Wool (Coarse),833.838937338,U.S. Cents per Kilogram,8338.39
+2023-08-01,Wool (Coarse),874.3449333333333,U.S. Cents per Kilogram,8743.45
+2023-09-01,Wool (Coarse),842.342775,U.S. Cents per Kilogram,8423.43
+2023-10-01,Wool (Coarse),835.8938777777778,U.S. Cents per Kilogram,8358.94
+2023-11-01,Wool (Coarse),865.9661,U.S. Cents per Kilogram,8659.66
+2023-12-01,Wool (Coarse),928.0811333333334,U.S. Cents per Kilogram,9280.81
+2024-01-01,Wool (Coarse),907.5368666666667,U.S. Cents per Kilogram,9075.37
+2024-02-01,Wool (Coarse),873.4706,U.S. Cents per Kilogram,8734.71
+2024-03-01,Wool (Coarse),883.26905,U.S. Cents per Kilogram,8832.69
+2024-04-01,Wool (Coarse),882.3874,U.S. Cents per Kilogram,8823.87
+2024-05-01,Wool (Coarse),881.31695,U.S. Cents per Kilogram,8813.17
+2024-06-01,Wool (Coarse),904.8890125,U.S. Cents per Kilogram,9048.89
+2024-07-01,Wool (Coarse),875.9605333333333,U.S. Cents per Kilogram,8759.61
+2024-08-01,Wool (Coarse),877.4532,U.S. Cents per Kilogram,8774.53
+2024-09-01,Wool (Coarse),863.620125,U.S. Cents per Kilogram,8636.2
+2024-10-01,Wool (Coarse),879.46536,U.S. Cents per Kilogram,8794.65
+2024-11-01,Wool (Coarse),874.0378142857143,U.S. Cents per Kilogram,8740.38
+2024-12-01,Wool (Coarse),867.1746,U.S. Cents per Kilogram,8671.75
+2025-01-01,Wool (Coarse),883.8392166666667,U.S. Cents per Kilogram,8838.39
+2025-02-01,Wool (Coarse),909.4804142857143,U.S. Cents per Kilogram,9094.8
+2025-03-01,Wool (Coarse),943.2445,U.S. Cents per Kilogram,9432.44
+2025-04-01,Wool (Coarse),938.7994571428571,U.S. Cents per Kilogram,9387.99
+2025-05-01,Wool (Coarse),938.7646333333333,U.S. Cents per Kilogram,9387.65
+2025-06-01,Wool (Coarse),939.6087857142857,U.S. Cents per Kilogram,9396.09
+2025-07-01,Wool (Coarse),953.7746428571429,U.S. Cents per Kilogram,9537.75
+2025-08-01,Wool (Coarse),959.527975,U.S. Cents per Kilogram,9595.28
+2025-09-01,Wool (Coarse),1054.999455555556,U.S. Cents per Kilogram,10549.99
+2025-10-01,Wool (Coarse),1113.3076,U.S. Cents per Kilogram,11133.08
+2025-11-01,Wool (Coarse),1127.279683333333,U.S. Cents per Kilogram,11272.8
+2025-12-01,Wool (Coarse),1218.74898,U.S. Cents per Kilogram,12187.49
+2026-01-01,Wool (Coarse),1361.336966666667,U.S. Cents per Kilogram,13613.37
+2026-02-01,Wool (Coarse),1423.73774,U.S. Cents per Kilogram,14237.38
+2026-03-01,Wool (Coarse),1454.1967,U.S. Cents per Kilogram,14541.97
+2026-04-01,Wool (Coarse),1518.194975,U.S. Cents per Kilogram,15181.95
+2026-05-01,Wool (Coarse),1541.58043125,U.S. Cents per Kilogram,15415.8
+2026-06-01,Wool (Coarse),1550.65328,U.S. Cents per Kilogram,15506.53
+2026-07-01,Wool (Coarse),1483.992925,U.S. Cents per Kilogram,14839.93
+2020-01-01,Wool (Fine),1255.18035,U.S. Cents per Kilogram,12551.8
+2020-02-01,Wool (Fine),1224.221957142857,U.S. Cents per Kilogram,12242.22
+2020-03-01,Wool (Fine),1066.098422222222,U.S. Cents per Kilogram,10660.98
+2020-04-01,Wool (Fine),937.3273857142857,U.S. Cents per Kilogram,9373.27
+2020-05-01,Wool (Fine),899.479175,U.S. Cents per Kilogram,8994.79
+2020-06-01,Wool (Fine),916.088425,U.S. Cents per Kilogram,9160.88
+2020-07-01,Wool (Fine),895.9678666666667,U.S. Cents per Kilogram,8959.68
+2020-08-01,Wool (Fine),801.2659333333334,U.S. Cents per Kilogram,8012.66
+2020-09-01,Wool (Fine),726.0245666666667,U.S. Cents per Kilogram,7260.25
+2020-10-01,Wool (Fine),933.51415,U.S. Cents per Kilogram,9335.14
+2020-11-01,Wool (Fine),1010.4887,U.S. Cents per Kilogram,10104.89
+2020-12-01,Wool (Fine),1047.5726,U.S. Cents per Kilogram,10475.73
+2021-01-01,Wool (Fine),1103.760042857143,U.S. Cents per Kilogram,11037.6
+2021-02-01,Wool (Fine),1225.328685714286,U.S. Cents per Kilogram,12253.29
+2021-03-01,Wool (Fine),1221.78917,U.S. Cents per Kilogram,12217.89
+2021-04-01,Wool (Fine),1224.267242857143,U.S. Cents per Kilogram,12242.67
+2021-05-01,Wool (Fine),1257.418277777778,U.S. Cents per Kilogram,12574.18
+2021-06-01,Wool (Fine),1338.21804,U.S. Cents per Kilogram,13382.18
+2021-07-01,Wool (Fine),1309.074685714286,U.S. Cents per Kilogram,13090.75
+2021-08-01,Wool (Fine),1218.582271428571,U.S. Cents per Kilogram,12185.82
+2021-09-01,Wool (Fine),1213.261122222222,U.S. Cents per Kilogram,12132.61
+2021-10-01,Wool (Fine),1227.00285,U.S. Cents per Kilogram,12270.03
+2021-11-01,Wool (Fine),1196.173471428571,U.S. Cents per Kilogram,11961.73
+2021-12-01,Wool (Fine),1196.222483333333,U.S. Cents per Kilogram,11962.22
+2022-01-01,Wool (Fine),1224.0971,U.S. Cents per Kilogram,12240.97
+2022-02-01,Wool (Fine),1234.9840125,U.S. Cents per Kilogram,12349.84
+2022-03-01,Wool (Fine),1241.76001,U.S. Cents per Kilogram,12417.6
+2022-04-01,Wool (Fine),1242.0937,U.S. Cents per Kilogram,12420.94
+2022-05-01,Wool (Fine),1224.2495,U.S. Cents per Kilogram,12242.49
+2022-06-01,Wool (Fine),1253.1141625,U.S. Cents per Kilogram,12531.14
+2022-07-01,Wool (Fine),1156.6970125,U.S. Cents per Kilogram,11566.97
+2022-08-01,Wool (Fine),1124.786825,U.S. Cents per Kilogram,11247.87
+2022-09-01,Wool (Fine),1067.41655,U.S. Cents per Kilogram,10674.17
+2022-10-01,Wool (Fine),1004.82212,U.S. Cents per Kilogram,10048.22
+2022-11-01,Wool (Fine),1020.35903,U.S. Cents per Kilogram,10203.59
+2022-12-01,Wool (Fine),1061.1169625,U.S. Cents per Kilogram,10611.17
+2023-01-01,Wool (Fine),1154.500511111111,U.S. Cents per Kilogram,11545.01
+2023-02-01,Wool (Fine),1192.424957142857,U.S. Cents per Kilogram,11924.25
+2023-03-01,Wool (Fine),1125.742244444444,U.S. Cents per Kilogram,11257.42
+2023-04-01,Wool (Fine),1086.5432,U.S. Cents per Kilogram,10865.43
+2023-05-01,Wool (Fine),1050.105711111111,U.S. Cents per Kilogram,10501.06
+2023-06-01,Wool (Fine),981.958,U.S. Cents per Kilogram,9819.58
+2023-07-01,Wool (Fine),991.8670285714286,U.S. Cents per Kilogram,9918.67
+2023-08-01,Wool (Fine),932.6027,U.S. Cents per Kilogram,9326.03
+2023-09-01,Wool (Fine),907.5589875,U.S. Cents per Kilogram,9075.59
+2023-10-01,Wool (Fine),894.0867555555556,U.S. Cents per Kilogram,8940.87
+2023-11-01,Wool (Fine),931.1157111111111,U.S. Cents per Kilogram,9311.16
+2023-12-01,Wool (Fine),983.4548,U.S. Cents per Kilogram,9834.55
+2024-01-01,Wool (Fine),970.0218222222222,U.S. Cents per Kilogram,9700.22
+2024-02-01,Wool (Fine),921.175125,U.S. Cents per Kilogram,9211.75
+2024-03-01,Wool (Fine),933.5147125,U.S. Cents per Kilogram,9335.15
+2024-04-01,Wool (Fine),925.9809428571428,U.S. Cents per Kilogram,9259.81
+2024-05-01,Wool (Fine),927.8486666666666,U.S. Cents per Kilogram,9278.49
+2024-06-01,Wool (Fine),943.9426875,U.S. Cents per Kilogram,9439.43
+2024-07-01,Wool (Fine),913.5610444444444,U.S. Cents per Kilogram,9135.61
+2024-08-01,Wool (Fine),913.628275,U.S. Cents per Kilogram,9136.28
+2024-09-01,Wool (Fine),910.2677125,U.S. Cents per Kilogram,9102.68
+2024-10-01,Wool (Fine),936.9981,U.S. Cents per Kilogram,9369.98
+2024-11-01,Wool (Fine),916.9264625,U.S. Cents per Kilogram,9169.26
+2024-12-01,Wool (Fine),905.5296,U.S. Cents per Kilogram,9055.3
+2025-01-01,Wool (Fine),915.5909833333333,U.S. Cents per Kilogram,9155.91
+2025-02-01,Wool (Fine),933.7911875,U.S. Cents per Kilogram,9337.91
+2025-03-01,Wool (Fine),973.4509125,U.S. Cents per Kilogram,9734.51
+2025-04-01,Wool (Fine),971.0928571428572,U.S. Cents per Kilogram,9710.93
+2025-05-01,Wool (Fine),984.5667909090909,U.S. Cents per Kilogram,9845.67
+2025-06-01,Wool (Fine),986.6638875,U.S. Cents per Kilogram,9866.64
+2025-07-01,Wool (Fine),983.17085,U.S. Cents per Kilogram,9831.71
+2025-08-01,Wool (Fine),993.677775,U.S. Cents per Kilogram,9936.78
+2025-09-01,Wool (Fine),1096.304777777778,U.S. Cents per Kilogram,10963.05
+2025-10-01,Wool (Fine),1168.983044444444,U.S. Cents per Kilogram,11689.83
+2025-11-01,Wool (Fine),1177.948714285714,U.S. Cents per Kilogram,11779.49
+2025-12-01,Wool (Fine),1266.326283333333,U.S. Cents per Kilogram,12663.26
+2026-01-01,Wool (Fine),1407.44575,U.S. Cents per Kilogram,14074.46
+2026-02-01,Wool (Fine),1472.343666666667,U.S. Cents per Kilogram,14723.44
+2026-03-01,Wool (Fine),1538.701233333333,U.S. Cents per Kilogram,15387.01
+2026-04-01,Wool (Fine),1644.90605,U.S. Cents per Kilogram,16449.06
+2026-05-01,Wool (Fine),1685.200911764706,U.S. Cents per Kilogram,16852.01
+2026-06-01,Wool (Fine),1693.5405375,U.S. Cents per Kilogram,16935.41
+2026-07-01,Wool (Fine),1600.7030625,U.S. Cents per Kilogram,16007.03
+2020-01-01,Hides,38.00582653043478,U.S. Cents per Pound,837.88
+2020-02-01,Hides,39.341606414,U.S. Cents per Pound,867.33
+2020-03-01,Hides,40.33202728136364,U.S. Cents per Pound,889.16
+2020-04-01,Hides,36.01466590272727,U.S. Cents per Pound,793.98
+2020-05-01,Hides,34.63421801333333,U.S. Cents per Pound,763.55
+2020-06-01,Hides,35.58740566863636,U.S. Cents per Pound,784.56
+2020-07-01,Hides,34.86732184304348,U.S. Cents per Pound,768.68
+2020-08-01,Hides,28.74619522142857,U.S. Cents per Pound,633.74
+2020-09-01,Hides,24.96260118590909,U.S. Cents per Pound,550.33
+2020-10-01,Hides,26.12580626227273,U.S. Cents per Pound,575.97
+2020-11-01,Hides,29.85348622761905,U.S. Cents per Pound,658.15
+2020-12-01,Hides,34.33539994217391,U.S. Cents per Pound,756.96
+2021-01-01,Hides,35.67047854619048,U.S. Cents per Pound,786.39
+2021-02-01,Hides,36.058559842,U.S. Cents per Pound,794.95
+2021-03-01,Hides,41.98507854434783,U.S. Cents per Pound,925.6
+2021-04-01,Hides,41.44297332363636,U.S. Cents per Pound,913.65
+2021-05-01,Hides,40.16601043285714,U.S. Cents per Pound,885.5
+2021-06-01,Hides,39.73131807363636,U.S. Cents per Pound,875.92
+2021-07-01,Hides,50.64687838045455,U.S. Cents per Pound,1116.56
+2021-08-01,Hides,54.72096165409091,U.S. Cents per Pound,1206.38
+2021-09-01,Hides,57.01504072590909,U.S. Cents per Pound,1256.95
+2021-10-01,Hides,56.73554196190476,U.S. Cents per Pound,1250.79
+2021-11-01,Hides,57.12366305227273,U.S. Cents per Pound,1259.35
+2021-12-01,Hides,57.72899864478261,U.S. Cents per Pound,1272.69
+2022-01-01,Hides,58.58194375095238,U.S. Cents per Pound,1291.5
+2022-02-01,Hides,58.656901343,U.S. Cents per Pound,1293.15
+2022-03-01,Hides,56.92478258347826,U.S. Cents per Pound,1254.96
+2022-04-01,Hides,57.40013324238095,U.S. Cents per Pound,1265.44
+2022-05-01,Hides,57.26252962136364,U.S. Cents per Pound,1262.41
+2022-06-01,Hides,58.44464228090909,U.S. Cents per Pound,1288.47
+2022-07-01,Hides,56.47295977,U.S. Cents per Pound,1245.0
+2022-08-01,Hides,58.23295207,U.S. Cents per Pound,1283.8
+2022-09-01,Hides,56.045446,U.S. Cents per Pound,1235.58
+2022-10-01,Hides,56.12681669,U.S. Cents per Pound,1237.37
+2022-11-01,Hides,58.31097144,U.S. Cents per Pound,1285.52
+2022-12-01,Hides,58.21758279,U.S. Cents per Pound,1283.46
+2023-01-01,Hides,59.22328006,U.S. Cents per Pound,1305.64
+2023-02-01,Hides,57.44899488,U.S. Cents per Pound,1266.52
+2023-03-01,Hides,59.0686117,U.S. Cents per Pound,1302.23
+2023-04-01,Hides,60.65456938,U.S. Cents per Pound,1337.19
+2023-05-01,Hides,58.51508473,U.S. Cents per Pound,1290.02
+2023-06-01,Hides,60.10212157,U.S. Cents per Pound,1325.01
+2023-07-01,Hides,60.38361616,U.S. Cents per Pound,1331.22
+2023-08-01,Hides,57.76153594,U.S. Cents per Pound,1273.41
+2023-09-01,Hides,57.26058691,U.S. Cents per Pound,1262.37
+2023-10-01,Hides,56.63963507,U.S. Cents per Pound,1248.68
+2023-11-01,Hides,58.01113935,U.S. Cents per Pound,1278.91
+2023-12-01,Hides,58.53850183,U.S. Cents per Pound,1290.54
+2024-01-01,Hides,58.49381693,U.S. Cents per Pound,1289.55
+2024-02-01,Hides,57.86158095,U.S. Cents per Pound,1275.62
+2024-03-01,Hides,58.87724486,U.S. Cents per Pound,1298.01
+2024-04-01,Hides,57.62406595,U.S. Cents per Pound,1270.38
+2024-05-01,Hides,59.35016489,U.S. Cents per Pound,1308.43
+2024-06-01,Hides,58.5810978,U.S. Cents per Pound,1291.48
+2024-07-01,Hides,59.04043033,U.S. Cents per Pound,1301.61
+2024-08-01,Hides,60.2226386,U.S. Cents per Pound,1327.67
+2024-09-01,Hides,58.98748515,U.S. Cents per Pound,1300.44
+2024-10-01,Hides,59.12349903,U.S. Cents per Pound,1303.44
+2024-11-01,Hides,57.57788261,U.S. Cents per Pound,1269.36
+2024-12-01,Hides,58.0923283,U.S. Cents per Pound,1280.7
+2025-01-01,Hides,57.01886128,U.S. Cents per Pound,1257.04
+2025-02-01,Hides,57.92994228,U.S. Cents per Pound,1277.12
+2025-03-01,Hides,60.2627169,U.S. Cents per Pound,1328.55
+2025-04-01,Hides,59.15844086,U.S. Cents per Pound,1304.21
+2025-05-01,Hides,58.24464783,U.S. Cents per Pound,1284.06
+2025-06-01,Hides,59.94236311,U.S. Cents per Pound,1321.49
+2025-07-01,Hides,58.91965078,U.S. Cents per Pound,1298.94
+2025-08-01,Hides,58.10554268,U.S. Cents per Pound,1280.99
+2025-09-01,Hides,60.36384977,U.S. Cents per Pound,1330.78
+2025-10-01,Hides,59.86128567,U.S. Cents per Pound,1319.7
+2025-11-01,Hides,59.94635466,U.S. Cents per Pound,1321.58
+2025-12-01,Hides,58.01855844,U.S. Cents per Pound,1279.08
+2026-01-01,Hides,57.42323223,U.S. Cents per Pound,1265.95
+2026-02-01,Hides,58.55509712,U.S. Cents per Pound,1290.91
+2026-03-01,Hides,57.22571402,U.S. Cents per Pound,1261.6
+2026-04-01,Hides,57.88420819,U.S. Cents per Pound,1276.12
+2026-05-01,Hides,57.83830503,U.S. Cents per Pound,1275.1
+2026-06-01,Hides,57.14219909,U.S. Cents per Pound,1259.76
+2026-07-01,Hides,56.69320116,U.S. Cents per Pound,1249.86
+2020-01-01,Rubber,75.21250827807054,U.S. Cents per Pound,1658.13
+2020-02-01,Rubber,71.6608757971896,U.S. Cents per Pound,1579.84
+2020-03-01,Rubber,68.37294573956673,U.S. Cents per Pound,1507.35
+2020-04-01,Rubber,60.69937114743024,U.S. Cents per Pound,1338.18
+2020-05-01,Rubber,61.37364060725006,U.S. Cents per Pound,1353.04
+2020-06-01,Rubber,64.78543818312123,U.S. Cents per Pound,1428.26
+2020-07-01,Rubber,67.98493725946071,U.S. Cents per Pound,1498.8
+2020-08-01,Rubber,79.9616260398618,U.S. Cents per Pound,1762.83
+2020-09-01,Rubber,89.3124438678774,U.S. Cents per Pound,1968.98
+2020-10-01,Rubber,101.5202784895521,U.S. Cents per Pound,2238.12
+2020-11-01,Rubber,110.151798107092,U.S. Cents per Pound,2428.41
+2020-12-01,Rubber,107.7455957208477,U.S. Cents per Pound,2375.36
+2021-01-01,Rubber,104.3989440357068,U.S. Cents per Pound,2301.58
+2021-02-01,Rubber,105.2461547921082,U.S. Cents per Pound,2320.26
+2021-03-01,Rubber,108.1602153264706,U.S. Cents per Pound,2384.5
+2021-04-01,Rubber,99.32820730146344,U.S. Cents per Pound,2189.79
+2021-05-01,Rubber,105.4149921528426,U.S. Cents per Pound,2323.98
+2021-06-01,Rubber,97.06888261922691,U.S. Cents per Pound,2139.98
+2021-07-01,Rubber,84.92339247752876,U.S. Cents per Pound,1872.22
+2021-08-01,Rubber,86.24961174606929,U.S. Cents per Pound,1901.46
+2021-09-01,Rubber,81.22405757825918,U.S. Cents per Pound,1790.67
+2021-10-01,Rubber,85.53682288838468,U.S. Cents per Pound,1885.74
+2021-11-01,Rubber,88.50245652959951,U.S. Cents per Pound,1951.13
+2021-12-01,Rubber,88.18670873809627,U.S. Cents per Pound,1944.16
+2022-01-01,Rubber,90.21055782856006,U.S. Cents per Pound,1988.78
+2022-02-01,Rubber,96.88996541606072,U.S. Cents per Pound,2136.04
+2022-03-01,Rubber,98.30147204704113,U.S. Cents per Pound,2167.15
+2022-04-01,Rubber,97.06672265299143,U.S. Cents per Pound,2139.93
+2022-05-01,Rubber,96.05448393085264,U.S. Cents per Pound,2117.62
+2022-06-01,Rubber,94.02156298220014,U.S. Cents per Pound,2072.8
+2022-07-01,Rubber,82.93838350718895,U.S. Cents per Pound,1828.46
+2022-08-01,Rubber,73.30455845096834,U.S. Cents per Pound,1616.07
+2022-09-01,Rubber,66.95649879055641,U.S. Cents per Pound,1476.12
+2022-10-01,Rubber,68.53572864948971,U.S. Cents per Pound,1510.94
+2022-11-01,Rubber,65.26583430993259,U.S. Cents per Pound,1438.85
+2022-12-01,Rubber,69.88423484236819,U.S. Cents per Pound,1540.67
+2023-01-01,Rubber,73.95626209752909,U.S. Cents per Pound,1630.44
+2023-02-01,Rubber,73.28700637751635,U.S. Cents per Pound,1615.69
+2023-03-01,Rubber,71.78403613281678,U.S. Cents per Pound,1582.55
+2023-04-01,Rubber,69.80114486850346,U.S. Cents per Pound,1538.84
+2023-05-01,Rubber,70.83740745225543,U.S. Cents per Pound,1561.68
+2023-06-01,Rubber,69.54404016029144,U.S. Cents per Pound,1533.17
+2023-07-01,Rubber,68.07781580758333,U.S. Cents per Pound,1500.84
+2023-08-01,Rubber,67.07455844702409,U.S. Cents per Pound,1478.73
+2023-09-01,Rubber,70.80801312913876,U.S. Cents per Pound,1561.03
+2023-10-01,Rubber,73.19546308124836,U.S. Cents per Pound,1613.67
+2023-11-01,Rubber,76.64689276486314,U.S. Cents per Pound,1689.76
+2023-12-01,Rubber,76.53840355167567,U.S. Cents per Pound,1687.37
+2024-01-01,Rubber,84.60888261133834,U.S. Cents per Pound,1865.29
+2024-02-01,Rubber,93.78573394140705,U.S. Cents per Pound,2067.6
+2024-03-01,Rubber,114.0159777022366,U.S. Cents per Pound,2513.6
+2024-04-01,Rubber,107.7881077835718,U.S. Cents per Pound,2376.3
+2024-05-01,Rubber,100.0093479582204,U.S. Cents per Pound,2204.81
+2024-06-01,Rubber,105.1314965844454,U.S. Cents per Pound,2317.73
+2024-07-01,Rubber,94.7496423518517,U.S. Cents per Pound,2088.85
+2024-08-01,Rubber,107.971606733298,U.S. Cents per Pound,2380.34
+2024-09-01,Rubber,122.8113602128171,U.S. Cents per Pound,2707.5
+2024-10-01,Rubber,119.7859988096144,U.S. Cents per Pound,2640.8
+2024-11-01,Rubber,105.0996370824731,U.S. Cents per Pound,2317.03
+2024-12-01,Rubber,110.0632394914402,U.S. Cents per Pound,2426.45
+2025-01-01,Rubber,108.883991838483,U.S. Cents per Pound,2400.46
+2025-02-01,Rubber,110.2389527446907,U.S. Cents per Pound,2430.33
+2025-03-01,Rubber,108.6268619448941,U.S. Cents per Pound,2394.79
+2025-04-01,Rubber,98.86469818340164,U.S. Cents per Pound,2179.57
+2025-05-01,Rubber,101.0811180817804,U.S. Cents per Pound,2228.43
+2025-06-01,Rubber,100.0237164292648,U.S. Cents per Pound,2205.12
+2025-07-01,Rubber,102.2733682192298,U.S. Cents per Pound,2254.72
+2025-08-01,Rubber,98.32598296823424,U.S. Cents per Pound,2167.69
+2025-09-01,Rubber,96.67095793049477,U.S. Cents per Pound,2131.21
+2025-10-01,Rubber,91.89792345166057,U.S. Cents per Pound,2025.98
+2025-11-01,Rubber,93.174787491722,U.S. Cents per Pound,2054.13
+2025-12-01,Rubber,94.68133448683386,U.S. Cents per Pound,2087.34
+2026-01-01,Rubber,97.14516869945018,U.S. Cents per Pound,2141.66
+2026-02-01,Rubber,103.2422821166459,U.S. Cents per Pound,2276.08
+2026-03-01,Rubber,110.3880198690189,U.S. Cents per Pound,2433.61
+2026-04-01,Rubber,115.9136062203257,U.S. Cents per Pound,2555.43
+2026-05-01,Rubber,127.8808009673192,U.S. Cents per Pound,2819.26
+2026-06-01,Rubber,133.781043280186,U.S. Cents per Pound,2949.34
+2026-07-01,Rubber,129.5048992157791,U.S. Cents per Pound,2855.07
