@@ -28,7 +28,15 @@
   .chart-box.small { height: 300px; }
   .caveat { background: var(--note-bg); border: 1px solid var(--note-border); border-radius: 10px;
             padding: 10px 14px; font-size: 0.9rem; margin: 12px 0 0; }
-  #imports-panel[hidden] { display: none; }
+  #imports-panel[hidden], #customs-panel[hidden] { display: none; }
+  .breakdown { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; margin-top: 8px; }
+  .breakdown h3 { font-size: 0.95rem; margin: 0 0 8px; color: var(--ink-2); }
+  .bars { list-style: none; padding: 0; margin: 0; font-size: 0.88rem; }
+  .bars li { display: grid; grid-template-columns: minmax(6rem, 10rem) minmax(48px, 1fr); gap: 2px 8px; align-items: center; padding: 4px 0; }
+  .bars .name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .bars .track { background: var(--grid); border-radius: 2px; height: 8px; }
+  .bars .fill { background: #2A78D6; border-radius: 2px; height: 8px; }
+  .bars .val { grid-column: 1 / -1; color: var(--muted); font-size: 0.8rem; }
 </style>
 </head>
 <body>
@@ -64,6 +72,19 @@
     <div class="caveat" id="caveat"></div>
   </section>
 
+  <section class="panel" id="customs-panel" hidden>
+    <h2>آمار گمرک ایران</h2>
+    <p class="meta" id="customs-meta"></p>
+    <div class="seg" id="pick-customs" role="group" aria-label="انتخاب کالا"></div>
+    <div class="table-scroll" id="customs-years" style="margin-top:12px"></div>
+    <div class="breakdown" id="customs-breakdown"></div>
+    <div class="caveat">
+      <b>توجه:</b> «کشور» در آمار گمرک <b>کشور طرف معامله</b> است، نه لزوماً کشور تولیدکننده
+      (مثلاً ذرت برزیل که از یک شرکت اماراتی خریده شده، «امارات» ثبت می‌شود). آمار گمرک با تأخیر زیاد منتشر می‌شود؛
+      برای ماه‌های اخیر، بخش «واردات ایران (آمار کشورهای صادرکننده)» بالای همین صفحه را ببینید.
+    </div>
+  </section>
+
   <section class="panel" id="news-panel">
     <h2>اخبار واردات، گمرک و کالاهای اساسی</h2>
     <p class="meta" id="news-meta"></p>
@@ -72,10 +93,11 @@
 
   <section class="panel">
     <h2>به‌زودی</h2>
-    <p class="soon">آمار گمرک ایران (بارگذاری فایل) برای همه‌ی کالاها، از جمله کاکائو، قهوه و روغن سویا.</p>
+    <p class="soon">آمار ماهانه‌ی گمرک (برای سال‌هایی که منتشر شده) و کالاهای بیشتر.</p>
   </section>
 
   <footer>
+    آمار گمرک: <a href="https://service.tccim.ir/stats" target="_blank" rel="noopener">سامانه‌ی آمار اتاق بازرگانی تهران</a>. ·
     آمار واردات: <a href="https://comtradeplus.un.org/" target="_blank" rel="noopener">UN Comtrade</a> —
     صادراتی که کشورهای دیگر به مقصد ایران گزارش کرده‌اند (ارزش FOB صادرکننده).
     قیمت جهانی: FRED / IMF.
@@ -94,7 +116,7 @@ const esc = (s) => String(s).replace(/[&<>"]/g, (ch) => ({ "&": "&amp;", "<": "&
 const num = (s) => `<span class="num">${s}</span>`;
 const fmt = (v, d = 0) => v.toLocaleString("en-US", { maximumFractionDigits: d, minimumFractionDigits: d });
 const monthLabel = (p) => `${MONTHS_FA[+p.slice(5, 7) - 1]} ${p.slice(0, 4)}`;
-const state = { imports: null, prices: null, hs: null, charts: {} };
+const state = { imports: null, prices: null, hs: null, customs: null, customsHs: null, charts: {} };
 
 function shiftMonth(p, n) {
   const d = new Date(Date.UTC(+p.slice(0, 4), +p.slice(5, 7) - 1 + n, 1));
@@ -256,6 +278,59 @@ function draw(key, config) {
   state.charts[key] = new Chart(document.getElementById(key + "-chart"), { ...config, plugins: [crosshair] });
 }
 
+// ---------- آمار گمرک ----------
+const yearLabel = (y) => `${y} (مارس ${y + 621} تا مارس ${y + 622})`;
+
+function groupSum(rows, key) {
+  const m = {};
+  rows.forEach((r) => {
+    const k = typeof key === "function" ? key(r) : r[key];
+    const x = m[k] ||= { tons: 0, usd: 0 };
+    x.tons += r.tons; x.usd += r.usd;
+  });
+  return Object.entries(m).sort((a, b) => b[1].tons - a[1].tons);
+}
+
+function barList(title, entries, total, limit = 6) {
+  const shown = entries.slice(0, limit);
+  const rest = entries.slice(limit);
+  if (rest.length) shown.push(["سایر", rest.reduce((a, [, x]) => ({ tons: a.tons + x.tons, usd: a.usd + x.usd }), { tons: 0, usd: 0 })]);
+  return `<div><h3>${esc(title)}</h3><ul class="bars">${shown.map(([name, x]) => {
+    const share = total ? (x.tons / total) * 100 : 0;
+    return `<li><span class="name" title="${esc(name)}">${esc(name)}</span>
+      <span class="track"><span class="fill" style="display:block;width:${share.toFixed(1)}%"></span></span>
+      <span class="val">${num(fmt(share, 1) + "%")} · ${num(fmt(x.tons))} تن${x.tons ? " · " + num(fmt(x.usd / x.tons)) + " دلار/تن" : ""}</span></li>`;
+  }).join("")}</ul></div>`;
+}
+
+function renderCustoms() {
+  const c = state.customs.commodities.find((x) => x.hs === state.customsHs);
+  document.querySelectorAll("#pick-customs button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.hs === c.hs)));
+  const years = groupSum(c.rows, "year").map(([y, x]) => [+y, x]).sort((a, b) => a[0] - b[0]);
+  if (!years.length) {
+    document.getElementById("customs-years").innerHTML = `<p class="soon">برای این کالا داده‌ای منتشر نشده است.</p>`;
+    document.getElementById("customs-breakdown").innerHTML = "";
+    return;
+  }
+  document.getElementById("customs-years").innerHTML = `<table>
+    <thead><tr><th>سال</th><th>مقدار (تن)</th><th>ارزش (دلار)</th><th>میانگین (دلار/تن)</th><th>تغییر مقدار نسبت به سال قبل</th></tr></thead>
+    <tbody>${years.slice().reverse().map(([y, x], i, arr) => {
+      const prev = arr[i + 1]?.[1];
+      const ch = prev && prev.tons ? ((x.tons - prev.tons) / prev.tons) * 100 : null;
+      return `<tr><td>${yearLabel(y)}</td><td class="num">${fmt(x.tons)}</td><td class="num">${fmt(x.usd)}</td>
+        <td class="num">${x.tons ? fmt(x.usd / x.tons) : "—"}</td>
+        <td class="num">${ch == null ? "—" : (ch > 0 ? "▲ " : ch < 0 ? "▼ " : "") + fmt(Math.abs(ch), 1) + "%"}</td></tr>`;
+    }).join("")}</tbody></table>`;
+
+  const [lastYear, lastTotal] = years[years.length - 1];
+  const rows = c.rows.filter((r) => r.year === lastYear);
+  document.getElementById("customs-breakdown").innerHTML =
+    `<p class="meta" style="grid-column:1/-1;margin:8px 0 0">جزئیات سال ${lastYear}:</p>` +
+    barList("کشور طرف معامله", groupSum(rows, "country"), lastTotal.tons) +
+    barList("گمرک ورودی", groupSum(rows, "customs"), lastTotal.tons, 5) +
+    barList("نوع کالا (کد تعرفه)", groupSum(rows, (r) => `${r.code} — ${r.desc}`), lastTotal.tons, 5);
+}
+
 // ---------- اخبار فارسی ----------
 function renderNews(news) {
   document.getElementById("news-meta").innerHTML =
@@ -278,8 +353,26 @@ async function getJson(path) {
 
 async function init() {
   Chart.defaults.font.family = '"Vazirmatn", system-ui, sans-serif';
-  const [imports, prices, news] = await Promise.allSettled(
-    ["data/iran-imports.json", "data/prices.json", "data/iran-news.json"].map(getJson));
+  const [imports, prices, news, customs] = await Promise.allSettled(
+    ["data/iran-imports.json", "data/prices.json", "data/iran-news.json", "data/iran-customs.json"].map(getJson));
+
+  if (customs.status === "fulfilled") {
+    state.customs = customs.value;
+    state.customsHs = state.customs.commodities[0]?.hs;
+    const yrs = state.customs.commodities.flatMap((c) => c.rows.map((r) => r.year));
+    document.getElementById("customs-meta").innerHTML =
+      `منبع: گمرک ایران، از سامانه‌ی آمار اتاق بازرگانی تهران · آخرین سال منتشرشده: ${yrs.length ? yearLabel(Math.max(...yrs)) : "—"}` +
+      ` · به‌روزرسانی: ${num((state.customs.last_updated || "").slice(0, 10))}`;
+    const pick = document.getElementById("pick-customs");
+    pick.innerHTML = state.customs.commodities.map((c) =>
+      `<button data-hs="${esc(c.hs)}">${esc(c.name_fa)}</button>`).join("");
+    pick.addEventListener("click", (e) => {
+      const b = e.target.closest("button"); if (!b) return;
+      state.customsHs = b.dataset.hs; renderCustoms();
+    });
+    document.getElementById("customs-panel").hidden = false;
+    renderCustoms();
+  }
 
   if (news.status === "fulfilled") renderNews(news.value);
   else document.getElementById("news-panel").hidden = true;
