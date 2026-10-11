@@ -1,0 +1,45 @@
+# به‌روزرسانی هفتگی «اخبار هفته» از خبرخوان‌های سایت‌های تخصصی
+# اجرای خودکار: هر دوشنبه ساعت ۶:۳۰ صبح UTC  |  اجرای دستی: تب Actions ← Run workflow
+name: Update news
+
+on:
+  schedule:
+    - cron: "30 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# با workflow قیمت‌ها در یک صف است تا هم‌زمان در مخزن ذخیره نکنند
+concurrency:
+  group: data-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+
+      - name: Run tests
+        run: python -m unittest -v
+
+      - name: Fetch news headlines
+        run: python -m scripts.fetch_news
+
+      - name: Commit if news changed
+        run: |
+          if [ -z "$(git status --porcelain -- data/)" ]; then
+            echo "News unchanged; nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git commit -m "Update weekly news"
+          git pull --rebase
+          git push

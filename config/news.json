@@ -1,0 +1,63 @@
+{
+  "window_days": 7,
+  "per_category": 6,
+
+  "sources": [
+    {"name": "Daily Coffee News", "url": "https://dailycoffeenews.com/feed/"},
+    {"name": "Confectionery News", "url": "https://www.confectionerynews.com/arc/outboundfeeds/rss/"},
+    {"name": "BeverageDaily", "url": "https://www.beveragedaily.com/arc/outboundfeeds/rss/"},
+    {"name": "ChiniMandi", "url": "https://www.chinimandi.com/feed/"},
+    {"name": "World-Grain", "url": "https://www.world-grain.com/rss/articles"},
+    {"name": "Baking Business", "url": "https://www.bakingbusiness.com/rss/articles"},
+    {"name": "Farm Progress", "url": "https://www.farmprogress.com/rss.xml"},
+    {"name": "Feedstuffs", "url": "https://www.feedstuffs.com/rss.xml"},
+    {"name": "FeedNavigator", "url": "https://www.feednavigator.com/arc/outboundfeeds/rss/"},
+    {"name": "Palm Oil Magazine", "url": "https://www.palmoilmagazine.com/feed/"},
+    {"name": "Food Business News", "url": "https://www.foodbusinessnews.net/rss/articles"},
+    {"name": "Meat+Poultry", "url": "https://www.meatpoultry.com/rss/articles"},
+    {"name": "WATTPoultry", "url": "https://www.wattagnet.com/rss"},
+    {"name": "Euromeat News", "url": "https://www.euromeatnews.com/rss"},
+    {"name": "Undercurrent News", "url": "https://www.undercurrentnews.com/feed/"},
+    {"name": "Cotton Grower", "url": "https://www.cottongrower.com/feed/"},
+    {"name": "Textile World", "url": "https://www.textileworld.com/feed/"},
+    {"name": "Innovation in Textiles", "url": "https://www.innovationintextiles.com/rss"},
+    {"name": "Rubber Journal Asia", "url": "https://www.rubberjournalasia.com/feed/"},
+    {"name": "FoodNavigator", "url": "https://www.foodnavigator.com/arc/outboundfeeds/rss/"},
+    {"name": "Just Food", "url": "https://www.just-food.com/feed/"},
+    {"name": "Food Business MEA", "url": "https://www.foodbusinessmea.com/feed/"}
+  ],
+
+  "keywords": {
+    "قهوه، کاکائو، شکر و چای": ["coffee", "arabica", "robusta", "cocoa", "cacao", "sugar", "sugarcane", "tea"],
+    "غلات": ["wheat", "corn", "maize", "barley", "rice", "grain", "grains", "flour"],
+    "دانه‌های روغنی و روغن": ["soybean", "soybeans", "soy", "soymeal", "palm oil", "sunflower oil", "sunflower", "rapeseed", "canola", "olive oil", "vegetable oil", "vegetable oils", "oilseed", "oilseeds", "groundnut", "groundnuts", "peanut", "peanuts"],
+    "گوشت و آبزیان": ["beef", "cattle", "lamb", "sheep", "mutton", "poultry", "chicken", "broiler", "broilers", "salmon", "shrimp", "seafood", "aquaculture", "meat"],
+    "مواد اولیه‌ی کشاورزی": ["cotton", "wool", "hides", "leather", "rubber"]
+  },
+
+  "market_words": ["price", "prices", "market", "markets", "harvest", "crop", "crops", "export", "exports", "import", "imports", "tariff", "tariffs", "supply", "demand", "production", "output", "shipment", "shipments", "futures", "stocks", "drought", "weather", "ban", "quota"],
+
+  "reports": {
+    "_همه": [
+      {"name": "FAO Food Price Index (شاخص قیمت غذای فائو)", "url": "https://www.fao.org/worldfoodsituation/foodpricesindex/en/"}
+    ],
+    "قهوه، کاکائو، شکر و چای": [
+      {"name": "ICO — سازمان بین‌المللی قهوه", "url": "https://ico.org/"},
+      {"name": "ICCO — سازمان بین‌المللی کاکائو", "url": "https://www.icco.org/"}
+    ],
+    "غلات": [
+      {"name": "IGC Grain Market Report", "url": "https://www.igc.int/en/gmr_summary.aspx"},
+      {"name": "USDA WASDE", "url": "https://www.usda.gov/oce/commodity/wasde"}
+    ],
+    "دانه‌های روغنی و روغن": [
+      {"name": "IGC Grain Market Report (شامل دانه‌های روغنی)", "url": "https://www.igc.int/en/gmr_summary.aspx"},
+      {"name": "USDA WASDE", "url": "https://www.usda.gov/oce/commodity/wasde"}
+    ],
+    "گوشت و آبزیان": [
+      {"name": "FAO Markets and Trade", "url": "https://www.fao.org/markets-and-trade/en/"}
+    ],
+    "مواد اولیه‌ی کشاورزی": [
+      {"name": "ICAC — کمیته‌ی بین‌المللی پنبه", "url": "https://icac.org/"}
+    ]
+  }
+}

@@ -115,6 +115,19 @@
   .live-link bdi { color: var(--muted); font-size: 0.82rem; }
   #live-panel[hidden] { display: none; }
 
+  /* اخبار */
+  #news-panel[hidden] { display: none; }
+  .news-list { list-style: none; padding: 0; margin: 0 0 8px; }
+  .news-list li { padding: 8px 0; border-bottom: 1px solid var(--grid); text-align: left; }
+  .news-list li:last-child { border-bottom: 0; }
+  .news-list a { color: var(--ink); text-decoration: none; font-weight: 500; }
+  .news-list a:hover, .news-list a:focus-visible { text-decoration: underline; }
+  .news-src { display: block; color: var(--muted); font-size: 0.82rem; }
+  .news-group { margin: 16px 0 4px; font-size: 0.95rem; color: var(--ink-2); }
+  .news-empty { color: var(--ink-2); font-size: 0.9rem; }
+  .reports { margin-top: 12px; }
+  .reports h3 { font-size: 0.95rem; margin: 0 0 8px; color: var(--ink-2); }
+
   @media (max-width: 600px) {
     h1 { font-size: 1.3rem; }
     .chart-box { height: 300px; }
@@ -163,6 +176,13 @@
     </p>
   </section>
 
+  <section class="panel" id="news-panel" hidden>
+    <h2>اخبار هفته</h2>
+    <p class="meta" id="news-meta"></p>
+    <div id="news"></div>
+    <div class="reports" id="reports"></div>
+  </section>
+
   <section class="panel" id="live-panel" hidden>
     <h2>قیمت روزانه‌ی بورس</h2>
     <p class="meta">
@@ -198,7 +218,7 @@ const UNITS_FA = {
   "u.s. cents per kilogram": "سنت بر کیلوگرم",
 };
 
-const state = { data: null, category: null, commodity: null, range: "24", chart: null };
+const state = { data: null, news: null, category: null, commodity: null, range: "24", chart: null };
 const ALL = "all";          // گروه «همه»
 const COMPARE = "compare";  // مقایسه‌ی همه‌ی کالاهای یک گروه
 
@@ -255,7 +275,7 @@ function selectCategory(cat) {
   try { history.replaceState(null, "", "#" + encodeURIComponent(cat)); } catch (e) { /* بی‌اهمیت */ }
   document.querySelectorAll("#pick-category button").forEach((b) =>
     b.setAttribute("aria-pressed", String(b.dataset.cat === cat)));
-  renderCards(); renderAnalysis(); renderCommodityPicker(); renderChart(); renderTable(); renderLive();
+  renderCards(); renderAnalysis(); renderCommodityPicker(); renderChart(); renderTable(); renderLive(); renderNews();
 }
 
 // ---------- کارت‌ها ----------
@@ -312,7 +332,7 @@ function moversLine(items, label, sign) {
     .sort((a, b) => Math.abs(b.st.yoy) - Math.abs(a.st.yoy)).slice(0, 3);
   if (!picked.length) return "";
   return `<p><b>${label}:</b> ` + picked.map((x) =>
-    `${esc(x.c.name_fa)} (${num(fmtPct(x.st.yoy))})`).join("، ") + ".</p>";
+    `${esc(x.c.name_fa)} (${num(Math.abs(x.st.yoy).toFixed(1) + "%")})`).join("، ") + ".</p>";
 }
 
 function renderAnalysis() {
@@ -499,6 +519,46 @@ function renderLive() {
   }).join("");
 }
 
+// ---------- اخبار هفته ----------
+function newsItem(n) {
+  return `<li dir="ltr"><a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a>
+    <span class="news-src">${esc(n.source)} · ${esc(n.date)}</span></li>`;
+}
+
+function renderNews() {
+  const news = state.news;
+  const panel = document.getElementById("news-panel");
+  if (!news) { panel.hidden = true; return; }
+  panel.hidden = false;
+  document.getElementById("news-meta").innerHTML =
+    `تیتر خبرهای ${num(news.window_days)} روز اخیر از سایت‌های تخصصی (به انگلیسی) · به‌روزرسانی: ${num((news.last_updated || "").slice(0, 10))}`;
+
+  const list = (items) => items.length
+    ? `<ul class="news-list">${items.map(newsItem).join("")}</ul>`
+    : `<p class="news-empty">این هفته خبر مرتبطی پیدا نشد.</p>`;
+  const cats = news.categories || {};
+  document.getElementById("news").innerHTML = state.category === ALL
+    ? categories().map((cat) => `<h3 class="news-group">${esc(cat)}</h3>` + list((cats[cat] || []).slice(0, 2))).join("")
+    : list(cats[state.category] || []);
+
+  const reports = [...(news.reports?._همه || []), ...(state.category === ALL ? [] : news.reports?.[state.category] || [])];
+  document.getElementById("reports").innerHTML = reports.length
+    ? `<h3>گزارش‌های رسمی ماهانه</h3><div class="live-grid">${reports.map((r) =>
+        `<a class="live-link" href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.name)} ↗</a>`).join("")}</div>`
+    : "";
+}
+
+async function loadNews() {
+  try {
+    const res = await fetch("data/news.json", { cache: "no-cache" });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    state.news = await res.json();
+  } catch (e) {
+    state.news = null; // نبود اخبار نباید بقیه‌ی صفحه را خراب کند
+  }
+  renderNews();
+}
+
 // ---------- شروع ----------
 async function init() {
   try {
@@ -522,6 +582,7 @@ async function init() {
   state.category = [...categories(), ALL].includes(fromHash) ? fromHash : categories()[0];
   renderCategoryPicker();
   selectCategory(state.category);
+  loadNews();
 }
 document.fonts?.ready.then(init) ?? init();
 </script>
