@@ -1,0 +1,1192 @@
+{
+ "source": "UN Comtrade — صادرات گزارش‌شده‌ی کشورها به ایران (آمار آینه‌ای)",
+ "start": "2024-01",
+ "commodities": [
+  {
+   "hs": "100590",
+   "name_fa": "ذرت",
+   "fred_id": "PMAIZMTUSDM",
+   "note": "برزیل، تأمین‌کننده‌ی اصلی، مرتب گزارش می‌دهد؛ پوشش این کالا خوب است.",
+   "rows": [
+    {
+     "period": "2024-01",
+     "country": "Brazil",
+     "country_fa": "برزیل",
+     "tons": 473524.1,
+     "usd": 119422279
+    },
+    {
+     "period": "2024-01",
+     "country": "Romania",
+     "country_fa": "رومانی",
+     "tons": 128931.0,
+     "usd": 29728659
+    },
+    {
+     "period": "2024-01",
+     "country": "Türkiye",
+     "country_fa": "ترکیه",
+     "tons": 22398.2,
+     "usd": 6422229
+    },
+    {
+     "period": "2024-01",
+     "country": "Kazakhstan",
+     "country_fa": "قزاقستان",
+     "tons": 4970.0,
+     "usd": 1043700
+    },
+    {
+     "period": "2024-01",
+     "country": "Georgia",
+     "country_fa": "گرجستان",
+     "tons": 263.6,
+     "usd": 68429
+    },
+    {
+     "period": "2024-02",
+     "country": "Romania",
+     "country_fa": "رومانی",
+     "tons": 257554.0,
+     "usd": 60409732
+    },
+    {
+     "period": "2024-02",
+     "country": "Brazil",
+     "country_fa": "برزیل",
+     "tons": 205536.1,
+     "usd": 47294665
+    },
+    {
+     "period": "2024-02",
+     "country": "Türkiye",
+     "country_fa": "ترکیه",
+     "tons": 600.0,
+     "usd": 432000
+    },
+    {
+     "period": "2024-02",
+     "country": "Georgia",
+     "country_fa": "گرجستان",
+     "tons": 1124.5,
+     "usd": 275618
+    },
+    {
+     "period": "2024-03",
+     "country": "Brazil",
+     "country_fa": "برزیل",
+     "tons": 190429.5,
+     "usd": 42570447
+    },
+    {
+     "period": "2024-03",
+     "country": "Romania",
+     "country_fa": "رومانی",
+     "tons": 132513.0,
+     "usd": 30662989
+    },
+    {
+     "period": "2024-03",
+     "country": "Türkiye",
+     "country_fa": "ترکیه",
+     "tons": 24105.1,
+     "usd": 7698788
+    },
+    {
+     "period": "2024-03",
+     "country": "Georgia",
+     "country_fa": "گرجستان",
+     "tons": 1003.4,
+     "usd": 246119
+    },
+    {
+     "period": "2024-04",
+     "country": "Georgia",
+     "country_fa": "گرجستان",
+     "tons": 1180.6,
+     "usd": 288814
+    },
+    {
+     "period": "2024-04",
+     "country": "Türkiye",
+     "country_fa": "ترکیه",
+     "tons": 300.0,
+     "usd": 192000
+    },
+    {
+     "period": "2024-05",
+     "country": "Türkiye",
+     "country_fa": "ترکیه",
+     "tons": 100.0,
+     "usd": 70000
+    },
+    {
+     "period": "2024-05",
+     "country": "France",
+     "country_fa": "France",
+     "tons": 22.7,
+     "usd": 14597
+    },
+    {
+     "period": "2024-06",
+     "country": "Georgia",
+     "country_fa": "گرجستان",
+     "tons": 307.9,
+     "usd": 82994
+    },
+    {
+     "period": "2024-07",
+     "country": "Brazil",
+     "country_fa": "برزیل",
+     "tons": 650.0,
+     "usd": 379950
+    },
+    {
+     "period": "2024-07",
+     "country": "Türkiye",
+     "country_fa": "ترکیه",
+     "tons": 300.0,
+     "usd": 276000
+    },
+    {
+     "period": "2024-07",
+     "country": "Georgia",
+     "country_fa": "گرجستان",
+     "tons": 238.7,
+     "usd": 67061
+    },
+    {
+     "period": "2024-08",
+     "country": "Brazil",
+     "country_fa": "برزیل",
+     "tons": 75795.6,
+     "usd": 16343567
+    },
+    {
+     "period": "2024-08",
+     "country": "Türkiye",
+     "country_fa": "ترکیه",
+     "tons": 75.0,
+     "usd": 71250
+    },
+    {
+     "period": "2024-08",
+     "country": "Georgia",
+     "country_fa": "گرجستان",
+     "tons": 140.7,
+     "usd": 38078
+    },
+    {
+     "period": "2024-09",
+     "country": "Brazil",
+     "country_fa": "برزیل",
+     "tons": 576321.7,
+     "usd": 110993459
+    },
+    {
+     "period": "2024-09",
+     "country": "Georgia",
+     "country_fa": "گرجستان",
+     "tons": 1262.1,
+     "usd": 334449
+    },
+    {
+     "period": "2024-09",
+     "country": "Türkiye",
+     "country_fa": "ترکیه",
+     "tons": 425.0,
+     "usd": 313750
+    },
+    {
+     "period": "2024-10",
+     "country": "Brazil",
+     "country_fa": "برزیل",
+     "tons": 1169426.4,
+     "usd": 234565055
+    },
+    {
+     "period": "2024-10",
+     "country": "Georgia",
+     "country_fa": "گرجستان",
+     "tons": 2029.8,
+     "usd": 538098
+    },
+    {
+     "period": "2024-11",
+     "country": "Brazil",
+     "country_fa": "برزیل",
+     "tons": 809197.1,
+     "usd": 166590175
+    },
+    {
+     "period": "2024-11",
+     "country": "Türkiye",
+     "country_fa": "ترکیه",
+     "tons": 250.0,
+     "usd": 312500
+    },
+    {
+     "period": "2024-11",
+     "country": "Georgia",
+     "country_fa": "گرجستان",
+     "tons": 1080.4,
+     "usd": 276576
+    },
+    {
+     "period": "2024-12",
+     "country": "Brazil",
+     "country_fa": "برزیل",
+     "tons": 836247.2,
+     "usd": 184825829
+    },
+    {
+     "period": "2024-12",
+     "country": "Georgia",
+     "country_fa": "گرجستان",
+     "tons": 1930.7,
+     "usd": 518686
+    },
+    {
+     "period": "2024-12",
+     "country": "Türkiye",
+     "country_fa": "ترکیه",
+     "tons": 425.0,
+     "usd": 401250
+    },
+    {
+     "period": "2025-01",
+     "country": "Brazil",
+     "country_fa": "برزیل",
+     "tons": 1081155.7,
+     "usd": 248552445
+    },
+    {
+     "period": "2025-01",
+     "country": "Georgia",
+     "country_fa": "گرجستان",
+     "tons": 376.9,
+     "usd": 101776
+    },
+    {
+     "period": "2025-01",
+     "country": "Türkiye",
+     "country_fa": "ترکیه",
+     "tons": 50.0,
+     "usd": 38246
+    },
+    {
+     "period": "2025-02",
+     "country": "Brazil",
+     "country_fa": "برزیل",
+     "tons": 617061.6,
+     "usd": 140261644
+    },
+    {
+     "period": "2025-02",
+     "country": "Türkiye",
+     "country_fa": "ترکیه",
+     "tons": 43680.4,
+     "usd": 10240843
+    },
+    {
+     "period": "2025-02",
+     "country": "Georgia",
+     "country_fa": "گرجستان",
+     "tons": 474.1,
+     "usd": 129194
+    },
+    {
+     "period": "2025-02",
+     "country": "Kazakhstan",
+     "country_fa": "قزاقستان",
+     "tons": 399.4,
+     "usd": 99850
+    },
+    {
+     "period": "2025-03",
+     "country": "Brazil",
+     "country_fa": "برزیل",
+     "tons": 304805.2,
+     "usd": 72260401
+    },
+    {
+     "period": "2025-03",
+     "country": "Romania",
+     "country_fa": "رومانی",
+     "tons": 43105.9,
+     "usd": 10743060
+    },
+    {
+     "period": "2025-03",
+     "country": "Türkiye",
+     "country_fa": "ترکیه",
+     "tons": 275.0,
+     "usd": 135222
+    },
+    {
+     "period": "2025-03",
+     "country": "Georgia",
+     "country_fa": "گرجستان",
+     "tons": 213.0,
+     "usd": 59175
+    },
+    {
+     "period": "2025-04",
+     "country": "Brazil",
+     "country_fa": "برزیل",
+     "tons": 143509.5,
+     "usd": 35738494
+    },
+    {
+     "period": "2025-04",
+     "country": "Georgia",
+     "country_fa": "گرجستان",
+     "tons": 116.8,
+     "usd": 36208
+    },
+    {
+     "period": "2025-05",
+     "country": "Brazil",
+     "country_fa": "برزیل",
+     "tons": 29733.0,
+     "usd": 7737933
+    },
+    {
+     "period": "2025-05",
+     "country": "Georgia",
+     "country_fa": "گرجستان",
+     "tons": 324.3,
+     "usd": 100521
+    },
+    {
+     "period": "2025-05",
+     "country": "Türkiye",
+     "country_fa": "ترکیه",
+     "tons": 55.2,
+     "usd": 26292
+    },
+    {
+     "period": "2025-06",
+     "country": "Brazil",
+     "country_fa": "برزیل",
+     "tons": 127807.3,
+     "usd": 31794325
+    },
+    {
+     "period": "2025-06",
+     "country": "Georgia",
+     "country_fa": "گرجستان",
+     "tons": 231.1,
+     "usd": 71647
+    },
+    {
+     "period": "2025-07",
+     "country": "Brazil",
+     "country_fa": "برزیل",
+     "tons": 385891.1,
+     "usd": 84220439
+    },
+    {
+     "period": "2025-07",
+     "country": "Georgia",
+     "country_fa": "گرجستان",
+     "tons": 296.7,
+     "usd": 91621
+    },
+    {
+     "period": "2025-07",
+     "country": "Türkiye",
+     "country_fa": "ترکیه",
+     "tons": 50.0,
+     "usd": 23250
+    },
+    {
+     "period": "2025-08",
+     "country": "Brazil",
+     "country_fa": "برزیل",
+     "tons": 844806.6,
+     "usd": 172777870
+    },
+    {
+     "period": "2025-08",
+     "country": "Georgia",
+     "country_fa": "گرجستان",
+     "tons": 2617.0,
+     "usd": 784460
+    },
+    {
+     "period": "2025-08",
+     "country": "Türkiye",
+     "country_fa": "ترکیه",
+     "tons": 50.0,
+     "usd": 25000
+    },
+    {
+     "period": "2025-09",
+     "country": "Brazil",
+     "country_fa": "برزیل",
+     "tons": 1436498.4,
+     "usd": 298238421
+    },
+    {
+     "period": "2025-09",
+     "country": "Georgia",
+     "country_fa": "گرجستان",
+     "tons": 4305.9,
+     "usd": 1319270
+    },
+    {
+     "period": "2025-09",
+     "country": "Türkiye",
+     "country_fa": "ترکیه",
+     "tons": 325.0,
+     "usd": 167250
+    },
+    {
+     "period": "2025-10",
+     "country": "Brazil",
+     "country_fa": "برزیل",
+     "tons": 1410338.4,
+     "usd": 298597092
+    },
+    {
+     "period": "2025-10",
+     "country": "Georgia",
+     "country_fa": "گرجستان",
+     "tons": 2738.5,
+     "usd": 782260
+    },
+    {
+     "period": "2025-10",
+     "country": "Türkiye",
+     "country_fa": "ترکیه",
+     "tons": 423.0,
+     "usd": 236880
+    },
+    {
+     "period": "2025-11",
+     "country": "Brazil",
+     "country_fa": "برزیل",
+     "tons": 1053449.0,
+     "usd": 226204233
+    },
+    {
+     "period": "2025-11",
+     "country": "Georgia",
+     "country_fa": "گرجستان",
+     "tons": 2465.0,
+     "usd": 711817
+    },
+    {
+     "period": "2025-11",
+     "country": "Türkiye",
+     "country_fa": "ترکیه",
+     "tons": 195.0,
+     "usd": 107900
+    },
+    {
+     "period": "2025-12",
+     "country": "Brazil",
+     "country_fa": "برزیل",
+     "tons": 1644538.6,
+     "usd": 368251828
+    },
+    {
+     "period": "2025-12",
+     "country": "Georgia",
+     "country_fa": "گرجستان",
+     "tons": 3569.9,
+     "usd": 1027003
+    },
+    {
+     "period": "2025-12",
+     "country": "Türkiye",
+     "country_fa": "ترکیه",
+     "tons": 125.0,
+     "usd": 67775
+    },
+    {
+     "period": "2026-01",
+     "country": "Brazil",
+     "country_fa": "برزیل",
+     "tons": 1171716.1,
+     "usd": 273249692
+    },
+    {
+     "period": "2026-01",
+     "country": "Georgia",
+     "country_fa": "گرجستان",
+     "tons": 233.2,
+     "usd": 67631
+    },
+    {
+     "period": "2026-01",
+     "country": "India",
+     "country_fa": "هند",
+     "tons": 105.0,
+     "usd": 25040
+    },
+    {
+     "period": "2026-02",
+     "country": "Brazil",
+     "country_fa": "برزیل",
+     "tons": 160366.8,
+     "usd": 35245659
+    },
+    {
+     "period": "2026-02",
+     "country": "Georgia",
+     "country_fa": "گرجستان",
+     "tons": 632.2,
+     "usd": 202314
+    },
+    {
+     "period": "2026-02",
+     "country": "India",
+     "country_fa": "هند",
+     "tons": 100.0,
+     "usd": 23213
+    },
+    {
+     "period": "2026-03",
+     "country": "Brazil",
+     "country_fa": "برزیل",
+     "tons": 1096.2,
+     "usd": 255689
+    },
+    {
+     "period": "2026-04",
+     "country": "Brazil",
+     "country_fa": "برزیل",
+     "tons": 134668.6,
+     "usd": 32682571
+    },
+    {
+     "period": "2026-04",
+     "country": "Oman",
+     "country_fa": "عمان",
+     "tons": 50.1,
+     "usd": 28533
+    },
+    {
+     "period": "2026-04",
+     "country": "Georgia",
+     "country_fa": "گرجستان",
+     "tons": 69.2,
+     "usd": 22131
+    },
+    {
+     "period": "2026-05",
+     "country": "Oman",
+     "country_fa": "عمان",
+     "tons": 66.1,
+     "usd": 37256
+    },
+    {
+     "period": "2026-06",
+     "country": "Brazil",
+     "country_fa": "برزیل",
+     "tons": 157.1,
+     "usd": 37329
+    },
+    {
+     "period": "2026-07",
+     "country": "Brazil",
+     "country_fa": "برزیل",
+     "tons": 104203.9,
+     "usd": 22522684
+    },
+    {
+     "period": "2026-08",
+     "country": "Brazil",
+     "country_fa": "برزیل",
+     "tons": 426985.6,
+     "usd": 93554217
+    }
+   ]
+  },
+  {
+   "hs": "1006",
+   "name_fa": "برنج",
+   "fred_id": "PRICENPQUSDM",
+   "note": "پاکستان در این آمار دیده نمی‌شود، پس بخشی از واردات برنج ایران اینجا نیست. برنج صادراتی هند به ایران عمدتاً باسماتی است و قیمتش با «برنج تایلند» (قیمت جهانی) قابل مقایسه‌ی مستقیم نیست.",
+   "rows": [
+    {
+     "period": "2024-01",
+     "country": "India",
+     "country_fa": "هند",
+     "tons": 75497.2,
+     "usd": 79206355
+    },
+    {
+     "period": "2024-01",
+     "country": "Thailand",
+     "country_fa": "تایلند",
+     "tons": 505.0,
+     "usd": 449075
+    },
+    {
+     "period": "2024-02",
+     "country": "India",
+     "country_fa": "هند",
+     "tons": 55143.7,
+     "usd": 56174353
+    },
+    {
+     "period": "2024-02",
+     "country": "Thailand",
+     "country_fa": "تایلند",
+     "tons": 25.0,
+     "usd": 21875
+    },
+    {
+     "period": "2024-03",
+     "country": "India",
+     "country_fa": "هند",
+     "tons": 27231.7,
+     "usd": 27314877
+    },
+    {
+     "period": "2024-03",
+     "country": "Thailand",
+     "country_fa": "تایلند",
+     "tons": 153.0,
+     "usd": 96936
+    },
+    {
+     "period": "2024-03",
+     "country": "Türkiye",
+     "country_fa": "ترکیه",
+     "tons": 73.8,
+     "usd": 66031
+    },
+    {
+     "period": "2024-04",
+     "country": "India",
+     "country_fa": "هند",
+     "tons": 70469.5,
+     "usd": 69413548
+    },
+    {
+     "period": "2024-04",
+     "country": "Thailand",
+     "country_fa": "تایلند",
+     "tons": 224.0,
+     "usd": 172501
+    },
+    {
+     "period": "2024-05",
+     "country": "India",
+     "country_fa": "هند",
+     "tons": 48325.8,
+     "usd": 47024638
+    },
+    {
+     "period": "2024-05",
+     "country": "Thailand",
+     "country_fa": "تایلند",
+     "tons": 25.0,
+     "usd": 25190
+    },
+    {
+     "period": "2024-06",
+     "country": "India",
+     "country_fa": "هند",
+     "tons": 136319.0,
+     "usd": 135062657
+    },
+    {
+     "period": "2024-06",
+     "country": "Thailand",
+     "country_fa": "تایلند",
+     "tons": 50.0,
+     "usd": 46750
+    },
+    {
+     "period": "2024-07",
+     "country": "India",
+     "country_fa": "هند",
+     "tons": 102602.0,
+     "usd": 99151599
+    },
+    {
+     "period": "2024-07",
+     "country": "Thailand",
+     "country_fa": "تایلند",
+     "tons": 181.0,
+     "usd": 121345
+    },
+    {
+     "period": "2024-08",
+     "country": "India",
+     "country_fa": "هند",
+     "tons": 43486.4,
+     "usd": 41162396
+    },
+    {
+     "period": "2024-08",
+     "country": "Oman",
+     "country_fa": "عمان",
+     "tons": 0.1,
+     "usd": 260
+    },
+    {
+     "period": "2024-09",
+     "country": "India",
+     "country_fa": "هند",
+     "tons": 6226.5,
+     "usd": 5710343
+    },
+    {
+     "period": "2024-09",
+     "country": "Thailand",
+     "country_fa": "تایلند",
+     "tons": 960.0,
+     "usd": 921600
+    },
+    {
+     "period": "2024-09",
+     "country": "Türkiye",
+     "country_fa": "ترکیه",
+     "tons": 0.1,
+     "usd": 210
+    },
+    {
+     "period": "2024-09",
+     "country": "Oman",
+     "country_fa": "عمان",
+     "tons": 0.0,
+     "usd": 31
+    },
+    {
+     "period": "2024-10",
+     "country": "India",
+     "country_fa": "هند",
+     "tons": 57931.4,
+     "usd": 48860992
+    },
+    {
+     "period": "2024-10",
+     "country": "Thailand",
+     "country_fa": "تایلند",
+     "tons": 265.0,
+     "usd": 255025
+    },
+    {
+     "period": "2024-10",
+     "country": "Oman",
+     "country_fa": "عمان",
+     "tons": 0.7,
+     "usd": 479
+    },
+    {
+     "period": "2024-11",
+     "country": "India",
+     "country_fa": "هند",
+     "tons": 33865.8,
+     "usd": 28690794
+    },
+    {
+     "period": "2024-11",
+     "country": "Thailand",
+     "country_fa": "تایلند",
+     "tons": 250.0,
+     "usd": 149000
+    },
+    {
+     "period": "2024-12",
+     "country": "India",
+     "country_fa": "هند",
+     "tons": 88154.2,
+     "usd": 71800738
+    },
+    {
+     "period": "2024-12",
+     "country": "Thailand",
+     "country_fa": "تایلند",
+     "tons": 265.0,
+     "usd": 260200
+    },
+    {
+     "period": "2024-12",
+     "country": "Türkiye",
+     "country_fa": "ترکیه",
+     "tons": 67.5,
+     "usd": 25650
+    },
+    {
+     "period": "2025-01",
+     "country": "India",
+     "country_fa": "هند",
+     "tons": 45105.2,
+     "usd": 35058244
+    },
+    {
+     "period": "2025-01",
+     "country": "Thailand",
+     "country_fa": "تایلند",
+     "tons": 745.0,
+     "usd": 730600
+    },
+    {
+     "period": "2025-01",
+     "country": "Türkiye",
+     "country_fa": "ترکیه",
+     "tons": 0.1,
+     "usd": 408
+    },
+    {
+     "period": "2025-02",
+     "country": "India",
+     "country_fa": "هند",
+     "tons": 124440.0,
+     "usd": 96500314
+    },
+    {
+     "period": "2025-02",
+     "country": "Thailand",
+     "country_fa": "تایلند",
+     "tons": 1466.0,
+     "usd": 1425500
+    },
+    {
+     "period": "2025-02",
+     "country": "Oman",
+     "country_fa": "عمان",
+     "tons": 1.2,
+     "usd": 1095
+    },
+    {
+     "period": "2025-03",
+     "country": "India",
+     "country_fa": "هند",
+     "tons": 106024.9,
+     "usd": 78867865
+    },
+    {
+     "period": "2025-03",
+     "country": "Thailand",
+     "country_fa": "تایلند",
+     "tons": 325.0,
+     "usd": 185500
+    },
+    {
+     "period": "2025-03",
+     "country": "Türkiye",
+     "country_fa": "ترکیه",
+     "tons": 100.0,
+     "usd": 12000
+    },
+    {
+     "period": "2025-03",
+     "country": "Oman",
+     "country_fa": "عمان",
+     "tons": 1.7,
+     "usd": 1038
+    },
+    {
+     "period": "2025-04",
+     "country": "India",
+     "country_fa": "هند",
+     "tons": 134742.8,
+     "usd": 100259622
+    },
+    {
+     "period": "2025-04",
+     "country": "Oman",
+     "country_fa": "عمان",
+     "tons": 0.3,
+     "usd": 343
+    },
+    {
+     "period": "2025-05",
+     "country": "India",
+     "country_fa": "هند",
+     "tons": 92270.5,
+     "usd": 71231109
+    },
+    {
+     "period": "2025-05",
+     "country": "Thailand",
+     "country_fa": "تایلند",
+     "tons": 1011.0,
+     "usd": 1046426
+    },
+    {
+     "period": "2025-05",
+     "country": "Türkiye",
+     "country_fa": "ترکیه",
+     "tons": 106.5,
+     "usd": 82872
+    },
+    {
+     "period": "2025-06",
+     "country": "India",
+     "country_fa": "هند",
+     "tons": 90799.7,
+     "usd": 72795133
+    },
+    {
+     "period": "2025-07",
+     "country": "India",
+     "country_fa": "هند",
+     "tons": 76236.0,
+     "usd": 61681081
+    },
+    {
+     "period": "2025-07",
+     "country": "Thailand",
+     "country_fa": "تایلند",
+     "tons": 19.9,
+     "usd": 14902
+    },
+    {
+     "period": "2025-08",
+     "country": "India",
+     "country_fa": "هند",
+     "tons": 87108.2,
+     "usd": 69527828
+    },
+    {
+     "period": "2025-08",
+     "country": "Türkiye",
+     "country_fa": "ترکیه",
+     "tons": 222.7,
+     "usd": 84626
+    },
+    {
+     "period": "2025-09",
+     "country": "India",
+     "country_fa": "هند",
+     "tons": 51626.2,
+     "usd": 41247217
+    },
+    {
+     "period": "2025-09",
+     "country": "Thailand",
+     "country_fa": "تایلند",
+     "tons": 720.0,
+     "usd": 489600
+    },
+    {
+     "period": "2025-09",
+     "country": "Türkiye",
+     "country_fa": "ترکیه",
+     "tons": 95.3,
+     "usd": 9534
+    },
+    {
+     "period": "2025-10",
+     "country": "India",
+     "country_fa": "هند",
+     "tons": 28678.9,
+     "usd": 22250203
+    },
+    {
+     "period": "2025-10",
+     "country": "Thailand",
+     "country_fa": "تایلند",
+     "tons": 506.0,
+     "usd": 336280
+    },
+    {
+     "period": "2025-10",
+     "country": "Brazil",
+     "country_fa": "برزیل",
+     "tons": 0.4,
+     "usd": 421
+    },
+    {
+     "period": "2025-11",
+     "country": "India",
+     "country_fa": "هند",
+     "tons": 41292.7,
+     "usd": 31670998
+    },
+    {
+     "period": "2025-11",
+     "country": "Thailand",
+     "country_fa": "تایلند",
+     "tons": 78.0,
+     "usd": 31824
+    },
+    {
+     "period": "2025-11",
+     "country": "Kazakhstan",
+     "country_fa": "قزاقستان",
+     "tons": 115.0,
+     "usd": 16330
+    },
+    {
+     "period": "2025-12",
+     "country": "India",
+     "country_fa": "هند",
+     "tons": 84127.8,
+     "usd": 66220813
+    },
+    {
+     "period": "2025-12",
+     "country": "Kyrgyzstan",
+     "country_fa": "Kyrgyzstan",
+     "tons": 22.0,
+     "usd": 15400
+    },
+    {
+     "period": "2025-12",
+     "country": "Italy",
+     "country_fa": "ایتالیا",
+     "tons": 2.9,
+     "usd": 7906
+    },
+    {
+     "period": "2025-12",
+     "country": "Kazakhstan",
+     "country_fa": "قزاقستان",
+     "tons": 69.0,
+     "usd": 6900
+    },
+    {
+     "period": "2026-01",
+     "country": "India",
+     "country_fa": "هند",
+     "tons": 121550.3,
+     "usd": 93286992
+    },
+    {
+     "period": "2026-01",
+     "country": "Thailand",
+     "country_fa": "تایلند",
+     "tons": 134.0,
+     "usd": 63089
+    },
+    {
+     "period": "2026-01",
+     "country": "Kazakhstan",
+     "country_fa": "قزاقستان",
+     "tons": 345.0,
+     "usd": 38180
+    },
+    {
+     "period": "2026-01",
+     "country": "Oman",
+     "country_fa": "عمان",
+     "tons": 0.0,
+     "usd": 39
+    },
+    {
+     "period": "2026-02",
+     "country": "India",
+     "country_fa": "هند",
+     "tons": 195226.2,
+     "usd": 152046314
+    },
+    {
+     "period": "2026-02",
+     "country": "Thailand",
+     "country_fa": "تایلند",
+     "tons": 745.0,
+     "usd": 867216
+    },
+    {
+     "period": "2026-02",
+     "country": "Kazakhstan",
+     "country_fa": "قزاقستان",
+     "tons": 138.0,
+     "usd": 13800
+    },
+    {
+     "period": "2026-02",
+     "country": "Oman",
+     "country_fa": "عمان",
+     "tons": 8.5,
+     "usd": 4088
+    },
+    {
+     "period": "2026-03",
+     "country": "India",
+     "country_fa": "هند",
+     "tons": 34905.2,
+     "usd": 27900104
+    },
+    {
+     "period": "2026-03",
+     "country": "Oman",
+     "country_fa": "عمان",
+     "tons": 3.6,
+     "usd": 10411
+    },
+    {
+     "period": "2026-03",
+     "country": "Kazakhstan",
+     "country_fa": "قزاقستان",
+     "tons": 23.0,
+     "usd": 2300
+    },
+    {
+     "period": "2026-04",
+     "country": "India",
+     "country_fa": "هند",
+     "tons": 40371.3,
+     "usd": 32753950
+    },
+    {
+     "period": "2026-04",
+     "country": "Kazakhstan",
+     "country_fa": "قزاقستان",
+     "tons": 92.0,
+     "usd": 24725
+    },
+    {
+     "period": "2026-04",
+     "country": "Azerbaijan",
+     "country_fa": "آذربایجان",
+     "tons": 23.0,
+     "usd": 21552
+    },
+    {
+     "period": "2026-04",
+     "country": "Oman",
+     "country_fa": "عمان",
+     "tons": 20.8,
+     "usd": 5259
+    },
+    {
+     "period": "2026-05",
+     "country": "India",
+     "country_fa": "هند",
+     "tons": 47532.9,
+     "usd": 36348712
+    },
+    {
+     "period": "2026-05",
+     "country": "Uzbekistan",
+     "country_fa": "ازبکستان",
+     "tons": 259.7,
+     "usd": 262120
+    },
+    {
+     "period": "2026-05",
+     "country": "Oman",
+     "country_fa": "عمان",
+     "tons": 50.1,
+     "usd": 9519
+    },
+    {
+     "period": "2026-06",
+     "country": "India",
+     "country_fa": "هند",
+     "tons": 45198.3,
+     "usd": 40758354
+    },
+    {
+     "period": "2026-07",
+     "country": "India",
+     "country_fa": "هند",
+     "tons": 92797.8,
+     "usd": 83034132
+    }
+   ]
+  }
+ ],
+ "last_updated": "2026-10-11T11:54:32Z"
+}
