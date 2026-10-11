@@ -3,8 +3,8 @@
 اجرا:  python3 -m scripts.fetch_prices
 کلید API فقط از متغیر محیطی FRED_API_KEY خوانده می‌شود.
 
-اگر هر خطایی رخ دهد یا داده ناقص باشد، هیچ فایلی تغییر نمی‌کند
-و برنامه با کد خطا تمام می‌شود (تا workflow در GitHub قرمز شود).
+اگر داده‌ی یک کالا خطا داشته باشد یا ناقص باشد، داده‌ی قبلیِ همان کالا حفظ می‌شود،
+بقیه‌ی کالاها به‌روز می‌شوند و برنامه با کد خطا تمام می‌شود (تا workflow در GitHub قرمز شود).
 """
 
 import csv
@@ -37,8 +37,20 @@ def load_existing(data_dir=DATA_DIR):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def metadata(c):
+    """اطلاعات نمایشی هر کالا، از فایل تنظیمات."""
+    return {
+        "fred_id": c["fred_id"],
+        "category": c.get("category", ""),
+        "name_fa": c["name_fa"],
+        "name_en": c["name_en"],
+        "color": c["color"],
+        "tradingview_symbol": c.get("tradingview_symbol"),  # اختیاری؛ فقط برای لینک داشبورد
+    }
+
+
 def build_dataset(config, fetch_series, start=START_DATE):
-    """داده‌ی همه‌ی کالاها را می‌گیرد. خروجی: (dataset, errors)."""
+    """داده‌ی همه‌ی کالاها را می‌گیرد. خروجی: (dataset, errors) و هر خطا به شکل (شناسه، پیام)."""
     commodities, errors = [], []
     for c in config:
         sid = c["fred_id"]
@@ -50,41 +62,48 @@ def build_dataset(config, fetch_series, start=START_DATE):
                 for d, v in sorted(result["observations"])
             ]
         except (UnknownUnitError, RuntimeError) as e:
-            errors.append(f"{sid}: {e}")
+            errors.append((sid, str(e)))
             continue
-        commodities.append({
-            "fred_id": sid,
-            "name_fa": c["name_fa"],
-            "name_en": c["name_en"],
-            "color": c["color"],
-            "tradingview_symbol": c.get("tradingview_symbol"),  # اختیاری؛ فقط برای ابزارک داشبورد
-            "unit_original": unit,
-            "series": series,
-        })
+        commodities.append({**metadata(c), "unit_original": unit, "series": series})
     return {"source": SOURCE, "start_date": start, "commodities": commodities}, errors
 
 
 def validate(dataset, existing, today=None):
-    """بررسی کامل بودن داده‌ی جدید، در مقایسه با داده‌ی قبلی. خروجی: فهرست خطاها."""
+    """بررسی کامل بودن داده‌ی جدید، در مقایسه با داده‌ی قبلی. خروجی: فهرست (شناسه، پیام)."""
     today = today or date.today()
     errors = []
     old = {c["fred_id"]: c for c in (existing or {}).get("commodities", [])}
     for c in dataset["commodities"]:
         sid, series = c["fred_id"], c["series"]
         if not series:
-            errors.append(f"{sid}: هیچ داده‌ای برنگشت")
+            errors.append((sid, "هیچ داده‌ای برنگشت"))
             continue
         latest = series[-1]["date"]
         age = (today - date.fromisoformat(latest)).days
         if age > MAX_STALE_DAYS:
-            errors.append(f"{sid}: آخرین داده {latest} است ({age} روز پیش) — شاید سری متوقف شده")
+            errors.append((sid, f"آخرین داده {latest} است ({age} روز پیش) — شاید سری متوقف شده"))
         if sid in old and old[sid]["series"]:
             old_series = old[sid]["series"]
             if latest < old_series[-1]["date"]:
-                errors.append(f"{sid}: آخرین تاریخ ({latest}) از داده‌ی قبلی ({old_series[-1]['date']}) عقب‌تر است")
+                errors.append((sid, f"آخرین تاریخ ({latest}) از داده‌ی قبلی ({old_series[-1]['date']}) عقب‌تر است"))
             if len(series) < len(old_series):
-                errors.append(f"{sid}: تعداد ماه‌ها از {len(old_series)} به {len(series)} کم شده")
+                errors.append((sid, f"تعداد ماه‌ها از {len(old_series)} به {len(series)} کم شده"))
     return errors
+
+
+def merge_with_existing(config, dataset, existing, bad_ids):
+    """کالاهای سالم از داده‌ی جدید؛ کالاهای خطادار از داده‌ی قبلی (اگر بوده). ترتیب = فایل تنظیمات."""
+    new = {c["fred_id"]: c for c in dataset["commodities"] if c["fred_id"] not in bad_ids}
+    old = {c["fred_id"]: c for c in (existing or {}).get("commodities", [])}
+    merged = []
+    for c in config:
+        sid = c["fred_id"]
+        if sid in new:
+            merged.append(new[sid])
+        elif sid in old:
+            # داده‌ی قبلی حفظ می‌شود، ولی نام/رنگ/گروه از تنظیمات فعلی می‌آید
+            merged.append({**metadata(c), "unit_original": old[sid]["unit_original"], "series": old[sid]["series"]})
+    return {**dataset, "commodities": merged}
 
 
 def has_changed(dataset, existing):
@@ -131,24 +150,32 @@ def main():
     existing = load_existing()
     dataset, errors = build_dataset(config, make_fetcher(api_key))
     errors += validate(dataset, existing)
+    bad_ids = {sid for sid, _ in errors}
+    dataset = merge_with_existing(config, dataset, existing, bad_ids)
 
-    if errors:
-        print("به‌روزرسانی انجام نشد؛ داده‌ی قبلی دست‌نخورده ماند. خطاها:", file=sys.stderr)
-        for e in errors:
-            print("  - " + e, file=sys.stderr)
+    if not dataset["commodities"]:
+        print("خطا: داده‌ی هیچ کالایی در دسترس نیست؛ فایلی نوشته نشد.", file=sys.stderr)
+        for sid, msg in errors:
+            print(f"  - {sid}: {msg}", file=sys.stderr)
         return 1
 
     for c in dataset["commodities"]:
         last = c["series"][-1]
-        print(f"{c['name_en']}: {len(c['series'])} ماه، آخرین: {last['date']} = {last['usd_per_ton']} USD/t ({c['unit_original']})")
+        flag = "  (داده‌ی قبلی حفظ شد)" if c["fred_id"] in bad_ids else ""
+        print(f"{c['name_en']}: {len(c['series'])} ماه، آخرین: {last['date']} = {last['usd_per_ton']} USD/t ({c['unit_original']}){flag}")
 
-    if not has_changed(dataset, existing):
+    if has_changed(dataset, existing):
+        dataset["last_updated"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+        write_outputs(dataset)
+        print("فایل‌های data/prices.json و data/prices.csv به‌روز شدند.")
+    else:
         print("داده نسبت به قبل تغییری نکرده؛ فایلی نوشته نشد.")
-        return 0
 
-    dataset["last_updated"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-    write_outputs(dataset)
-    print("فایل‌های data/prices.json و data/prices.csv به‌روز شدند.")
+    if errors:
+        print("این کالاها به‌روز نشدند (داده‌ی قبلی‌شان، اگر بود، دست‌نخورده ماند):", file=sys.stderr)
+        for sid, msg in errors:
+            print(f"  - {sid}: {msg}", file=sys.stderr)
+        return 1
     return 0
 
 

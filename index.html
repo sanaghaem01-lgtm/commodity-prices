@@ -61,6 +61,15 @@
   .rows dt { color: var(--ink-2); }
   .rows dd { margin: 0; text-align: left; }
 
+  /* گروه‌ها */
+  .cat-bar { display: flex; margin-bottom: 16px; }
+  .cat-bar button { font-size: 0.95rem; padding: 6px 14px; }
+  .group-title { grid-column: 1 / -1; margin: 8px 0 -4px; font-size: 1rem; color: var(--ink-2); }
+  select#pick-commodity {
+    font: inherit; font-size: 0.92rem; padding: 6px 10px; border-radius: 8px;
+    border: 1px solid var(--border); background: var(--surface); color: var(--ink); min-width: 200px;
+  }
+
   /* کنترل‌ها */
   .controls { display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: center; margin-bottom: 12px; }
   .seg { display: inline-flex; flex-wrap: wrap; gap: 4px; background: var(--page); border: 1px solid var(--border); border-radius: 8px; padding: 3px; }
@@ -127,12 +136,14 @@
     این صفحه پیش‌بینی یا توصیه‌ی خرید نیست.
   </div>
 
+  <nav class="seg cat-bar" id="pick-category" role="group" aria-label="گروه کالا"></nav>
+
   <section class="cards" id="cards" aria-label="خلاصه‌ی قیمت کالاها"></section>
 
   <section class="panel">
-    <h2>روند قیمت (دلار بر تن)</h2>
+    <h2 id="chart-title">روند قیمت (دلار بر تن)</h2>
     <div class="controls">
-      <div class="seg" id="pick-commodity" role="group" aria-label="انتخاب کالا"></div>
+      <select id="pick-commodity" aria-label="انتخاب کالا"></select>
       <div class="seg" id="pick-range" role="group" aria-label="بازه‌ی زمانی">
         <button data-range="12">1 سال</button>
         <button data-range="24" aria-pressed="true">2 سال</button>
@@ -140,7 +151,7 @@
       </div>
     </div>
     <div class="legend" id="legend"></div>
-    <div class="chart-box"><canvas id="chart" aria-label="نمودار روند قیمت" role="img"></canvas></div>
+    <div class="chart-box"><canvas id="chart" dir="ltr" aria-label="نمودار روند قیمت" role="img"></canvas></div>
   </section>
 
   <section class="panel analysis">
@@ -155,8 +166,8 @@
   <section class="panel" id="live-panel" hidden>
     <h2>قیمت روزانه‌ی بورس</h2>
     <p class="meta">
-      قیمت روزانه‌ی قرارداد آتی در بورس ICE را می‌توانید در TradingView ببینید (با واحد خود بورس، عربیکا: سنت بر پوند؛
-      معمولاً با 10 تا 30 دقیقه تأخیر). این قیمت هم مرجع است و قیمت تأمین‌کننده نیست؛ پیش‌بینی یا توصیه‌ی خرید نیست.
+      قیمت روزانه‌ی قرارداد آتی بورس را می‌توانید در TradingView ببینید (با واحد خود بورس و معمولاً با 10 تا 30 دقیقه تأخیر).
+      قرارداد بورسی همیشه دقیقاً همان کالای جدول بالا نیست. این قیمت هم مرجع است و قیمت تأمین‌کننده نیست؛ پیش‌بینی یا توصیه‌ی خرید نیست.
     </p>
     <div class="live-grid" id="live"></div>
   </section>
@@ -171,7 +182,7 @@
   <footer>
     منبع: <a href="https://fred.stlouisfed.org/" target="_blank" rel="noopener">FRED</a>
     (بانک فدرال رزرو سنت‌لوئیس) — قیمت‌های ماهانه‌ی کالای IMF.
-    قیمت‌های سنت بر پوند با ضریب 22.046 به دلار بر تن تبدیل شده‌اند.
+    همه‌ی قیمت‌ها به دلار بر تن تبدیل شده‌اند (مثلاً سنت بر پوند × 22.046).
     داده‌ی IMF معمولاً با 1 تا 2 ماه تأخیر منتشر می‌شود.
     · <a href="data/prices.csv">دانلود CSV</a>
   </footer>
@@ -184,9 +195,12 @@ const UNITS_FA = {
   "u.s. dollars per metric ton": "دلار بر تن",
   "u.s. dollars per pound": "دلار بر پوند",
   "u.s. dollars per kilogram": "دلار بر کیلوگرم",
+  "u.s. cents per kilogram": "سنت بر کیلوگرم",
 };
 
-const state = { data: null, commodity: null, range: "24", chart: null };
+const state = { data: null, category: null, commodity: null, range: "24", chart: null };
+const ALL = "all";          // گروه «همه»
+const COMPARE = "compare";  // مقایسه‌ی همه‌ی کالاهای یک گروه
 
 // ---------- کمکی‌ها ----------
 const num = (s) => `<span class="num">${s}</span>`;
@@ -200,6 +214,10 @@ function shiftMonth(d, n) {
   const dt = new Date(Date.UTC(+d.slice(0, 4), +d.slice(5, 7) - 1 + n, 1));
   return dt.toISOString().slice(0, 10);
 }
+
+const categories = () => [...new Set(state.data.commodities.map((c) => c.category || "سایر"))];
+const inCategory = (cat = state.category) =>
+  cat === ALL ? state.data.commodities : state.data.commodities.filter((c) => (c.category || "سایر") === cat);
 
 // آمار هر کالا؛ مقایسه‌ها بر اساس تاریخ است، نه جایگاه در آرایه
 function stats(c) {
@@ -222,59 +240,100 @@ function stats(c) {
   return { last, mom: pct(prevMonth), yoy: pct(prevYear), min, max, streak, dir };
 }
 
+// ---------- گروه‌ها ----------
+function renderCategoryPicker() {
+  const opts = [...categories().map((c) => [c, c]), [ALL, "همه‌ی کالاها"]];
+  const el = document.getElementById("pick-category");
+  el.innerHTML = opts.map(([id, name]) =>
+    `<button data-cat="${esc(id)}" aria-pressed="${state.category === id}">${esc(name)}</button>`).join("");
+  el.querySelectorAll("button").forEach((b) => b.addEventListener("click", () => selectCategory(b.dataset.cat)));
+}
+
+function selectCategory(cat) {
+  state.category = cat;
+  state.commodity = inCategory()[0]?.fred_id;
+  try { history.replaceState(null, "", "#" + encodeURIComponent(cat)); } catch (e) { /* بی‌اهمیت */ }
+  document.querySelectorAll("#pick-category button").forEach((b) =>
+    b.setAttribute("aria-pressed", String(b.dataset.cat === cat)));
+  renderCards(); renderAnalysis(); renderCommodityPicker(); renderChart(); renderTable(); renderLive();
+}
+
 // ---------- کارت‌ها ----------
+function cardHtml(c) {
+  const st = stats(c);
+  const delta = (p) => (p == null ? "—" : `${p > 0 ? "▲" : p < 0 ? "▼" : "■"} ${num(fmtPct(p))}`);
+  return `
+    <button class="card" data-id="${esc(c.fred_id)}" aria-pressed="${state.commodity === c.fred_id}">
+      <div class="card-title"><span class="swatch" style="background:${esc(c.color)}"></span>${esc(c.name_fa)}</div>
+      <div class="hero">${num(fmtPrice(st.last.usd_per_ton))} <small>دلار بر تن</small></div>
+      <div class="sub">${monthLabel(st.last.date)} · ${num(st.last.price_original.toLocaleString("en-US", { maximumFractionDigits: 2 }))} ${esc(unitFa(c.unit_original))}</div>
+      <dl class="rows">
+        <dt>نسبت به ماه قبل</dt><dd>${delta(st.mom)}</dd>
+        <dt>نسبت به سال قبل</dt><dd>${delta(st.yoy)}</dd>
+        <dt>کمترین 2 سال اخیر</dt><dd>${num(fmtPrice(st.min.usd_per_ton))} <span class="meta">(${monthLabel(st.min.date)})</span></dd>
+        <dt>بیشترین 2 سال اخیر</dt><dd>${num(fmtPrice(st.max.usd_per_ton))} <span class="meta">(${monthLabel(st.max.date)})</span></dd>
+      </dl>
+    </button>`;
+}
+
 function renderCards() {
   const el = document.getElementById("cards");
-  el.innerHTML = state.data.commodities.map((c) => {
-    const st = stats(c);
-    const delta = (p) => (p == null ? "—" : `${p > 0 ? "▲" : p < 0 ? "▼" : "■"} ${num(fmtPct(p))}`);
-    return `
-      <button class="card" data-id="${esc(c.fred_id)}" aria-pressed="${state.commodity === c.fred_id}">
-        <div class="card-title"><span class="swatch" style="background:${esc(c.color)}"></span>${esc(c.name_fa)}</div>
-        <div class="hero">${num(fmtPrice(st.last.usd_per_ton))} <small>دلار بر تن</small></div>
-        <div class="sub">${monthLabel(st.last.date)} · ${num(st.last.price_original.toLocaleString("en-US", { maximumFractionDigits: 2 }))} ${esc(unitFa(c.unit_original))}</div>
-        <dl class="rows">
-          <dt>نسبت به ماه قبل</dt><dd>${delta(st.mom)}</dd>
-          <dt>نسبت به سال قبل</dt><dd>${delta(st.yoy)}</dd>
-          <dt>کمترین 2 سال اخیر</dt><dd>${num(fmtPrice(st.min.usd_per_ton))} <span class="meta">(${monthLabel(st.min.date)})</span></dd>
-          <dt>بیشترین 2 سال اخیر</dt><dd>${num(fmtPrice(st.max.usd_per_ton))} <span class="meta">(${monthLabel(st.max.date)})</span></dd>
-        </dl>
-      </button>`;
-  }).join("");
+  el.innerHTML = state.category === ALL
+    ? categories().map((cat) => `<h3 class="group-title">${esc(cat)}</h3>` + inCategory(cat).map(cardHtml).join("")).join("")
+    : inCategory().map(cardHtml).join("");
   el.querySelectorAll(".card").forEach((b) => b.addEventListener("click", () => select(b.dataset.id)));
 }
 
 // ---------- تحلیل متنی (فقط توصیفی) ----------
+function describe(c, st) {
+  const p = st.last.usd_per_ton;
+  let t = `<b>${esc(c.name_fa)}:</b> در ${monthLabel(st.last.date)} به ${num(fmtPrice(p))} دلار بر تن رسید`;
+  const cmp = [];
+  if (st.mom != null) cmp.push(st.mom === 0 ? "بدون تغییر نسبت به ماه قبل"
+    : `${num(Math.abs(st.mom).toFixed(1) + "%")} ${st.mom > 0 ? "بیشتر" : "کمتر"} از ماه قبل`);
+  if (st.yoy != null) cmp.push(`${num(Math.abs(st.yoy).toFixed(1) + "%")} ${st.yoy > 0 ? "بیشتر" : "کمتر"} از ${monthLabel(shiftMonth(st.last.date, -12))}`);
+  t += cmp.length ? `؛ ${cmp.join(" و ")}.` : ".";
+  if (st.streak >= 2) t += ` قیمت ${num(st.streak)} ماه پیاپی ${st.dir > 0 ? "افزایش" : "کاهش"} داشته است.`;
+
+  const range = st.max.usd_per_ton - st.min.usd_per_ton;
+  const pos = range > 0 ? (p - st.min.usd_per_ton) / range : 0.5;
+  const belowMax = ((st.max.usd_per_ton - p) / st.max.usd_per_ton) * 100;
+  const aboveMin = ((p - st.min.usd_per_ton) / st.min.usd_per_ton) * 100;
+  if (p === st.max.usd_per_ton) t += " این بالاترین قیمت 2 سال اخیر است.";
+  else if (p === st.min.usd_per_ton) t += " این پایین‌ترین قیمت 2 سال اخیر است.";
+  else if (pos >= 0.8) t += ` قیمت نزدیک سقف 2 سال اخیر است (${num(belowMax.toFixed(1) + "%")} زیر بیشترین قیمت در ${monthLabel(st.max.date)}).`;
+  else if (pos <= 0.2) t += ` قیمت نزدیک کف 2 سال اخیر است (${num(aboveMin.toFixed(1) + "%")} بالای کمترین قیمت در ${monthLabel(st.min.date)}).`;
+  else t += ` قیمت در میانه‌ی دامنه‌ی 2 سال اخیر است؛ ${num(belowMax.toFixed(1) + "%")} زیر بیشترین قیمت (${monthLabel(st.max.date)}).`;
+  return `<p>${t}</p>`;
+}
+
+function moversLine(items, label, sign) {
+  const picked = items.filter((x) => Math.sign(x.st.yoy) === sign)
+    .sort((a, b) => Math.abs(b.st.yoy) - Math.abs(a.st.yoy)).slice(0, 3);
+  if (!picked.length) return "";
+  return `<p><b>${label}:</b> ` + picked.map((x) =>
+    `${esc(x.c.name_fa)} (${num(fmtPct(x.st.yoy))})`).join("، ") + ".</p>";
+}
+
 function renderAnalysis() {
-  const items = state.data.commodities.map((c) => ({ c, st: stats(c) }));
-  const parts = items.map(({ c, st }) => {
-    const p = st.last.usd_per_ton;
-    let t = `<b>${esc(c.name_fa)}:</b> در ${monthLabel(st.last.date)} به ${num(fmtPrice(p))} دلار بر تن رسید`;
-    const cmp = [];
-    if (st.mom != null) cmp.push(st.mom === 0 ? "بدون تغییر نسبت به ماه قبل"
-      : `${num(Math.abs(st.mom).toFixed(1) + "%")} ${st.mom > 0 ? "بیشتر" : "کمتر"} از ماه قبل`);
-    if (st.yoy != null) cmp.push(`${num(Math.abs(st.yoy).toFixed(1) + "%")} ${st.yoy > 0 ? "بیشتر" : "کمتر"} از ${monthLabel(shiftMonth(st.last.date, -12))}`);
-    t += cmp.length ? `؛ ${cmp.join(" و ")}.` : ".";
-    if (st.streak >= 2) t += ` قیمت ${num(st.streak)} ماه پیاپی ${st.dir > 0 ? "افزایش" : "کاهش"} داشته است.`;
-
-    const range = st.max.usd_per_ton - st.min.usd_per_ton;
-    const pos = range > 0 ? (p - st.min.usd_per_ton) / range : 0.5;
-    const belowMax = ((st.max.usd_per_ton - p) / st.max.usd_per_ton) * 100;
-    const aboveMin = ((p - st.min.usd_per_ton) / st.min.usd_per_ton) * 100;
-    if (p === st.max.usd_per_ton) t += " این بالاترین قیمت 2 سال اخیر است.";
-    else if (p === st.min.usd_per_ton) t += " این پایین‌ترین قیمت 2 سال اخیر است.";
-    else if (pos >= 0.8) t += ` قیمت نزدیک سقف 2 سال اخیر است (${num(belowMax.toFixed(1) + "%")} زیر بیشترین قیمت در ${monthLabel(st.max.date)}).`;
-    else if (pos <= 0.2) t += ` قیمت نزدیک کف 2 سال اخیر است (${num(aboveMin.toFixed(1) + "%")} بالای کمترین قیمت در ${monthLabel(st.min.date)}).`;
-    else t += ` قیمت در میانه‌ی دامنه‌ی 2 سال اخیر است؛ ${num(belowMax.toFixed(1) + "%")} زیر بیشترین قیمت (${monthLabel(st.max.date)}).`;
-    return `<p>${t}</p>`;
-  });
-
+  const items = inCategory().map((c) => ({ c, st: stats(c) }));
   const withYoy = items.filter((x) => x.st.yoy != null);
-  if (withYoy.length > 1) {
-    const big = withYoy.reduce((a, b) => (Math.abs(b.st.yoy) > Math.abs(a.st.yoy) ? b : a));
-    parts.push(`<p>بیشترین تغییر نسبت به سال قبل مربوط به <b>${esc(big.c.name_fa)}</b> بوده است (${num(Math.abs(big.st.yoy).toFixed(1) + "%")} ${big.st.yoy > 0 ? "افزایش" : "کاهش"}).</p>`);
+  let html;
+  if (state.category === ALL) {
+    // نمای کلی: فقط بیشترین تغییرها؛ جزئیات هر کالا در گروه خودش
+    const up = withYoy.filter((x) => x.st.yoy > 0).length;
+    html = `<p>از ${num(items.length)} کالا، قیمت ${num(up)} کالا نسبت به سال قبل بالاتر و ${num(withYoy.length - up)} کالا پایین‌تر است.</p>` +
+      moversLine(withYoy, "بیشترین افزایش نسبت به سال قبل", 1) +
+      moversLine(withYoy, "بیشترین کاهش نسبت به سال قبل", -1) +
+      `<p class="meta">برای توضیح جزئی هر کالا، گروه آن را از بالای صفحه انتخاب کنید.</p>`;
+  } else {
+    html = items.map(({ c, st }) => describe(c, st)).join("");
+    if (withYoy.length > 1) {
+      const big = withYoy.reduce((a, b) => (Math.abs(b.st.yoy) > Math.abs(a.st.yoy) ? b : a));
+      html += `<p>در این گروه، بیشترین تغییر نسبت به سال قبل مربوط به <b>${esc(big.c.name_fa)}</b> بوده است (${num(Math.abs(big.st.yoy).toFixed(1) + "%")} ${big.st.yoy > 0 ? "افزایش" : "کاهش"}).</p>`;
+    }
   }
-  document.getElementById("analysis").innerHTML = parts.join("");
+  document.getElementById("analysis").innerHTML = html;
 }
 
 // ---------- نمودار ----------
@@ -292,8 +351,8 @@ const crosshair = {
 };
 
 function selected() {
-  const all = state.data.commodities;
-  return state.commodity === "all" ? all : all.filter((c) => c.fred_id === state.commodity);
+  return state.commodity === COMPARE ? inCategory()
+    : state.data.commodities.filter((c) => c.fred_id === state.commodity);
 }
 
 function visibleDates(list) {
@@ -306,13 +365,21 @@ function visibleDates(list) {
 function renderChart() {
   const list = selected();
   const dates = visibleDates(list);
+  const compare = state.commodity === COMPARE;
+  document.getElementById("chart-title").textContent = compare
+    ? "مقایسه‌ی گروه: درصد تغییر از ابتدای بازه"
+    : "روند قیمت (دلار بر تن)";
   document.getElementById("legend").innerHTML = list.map((c) =>
     `<span><i style="background:${esc(c.color)}"></i>${esc(c.name_fa)}</span>`).join("");
 
   const datasets = list.map((c) => {
     const by = Object.fromEntries(c.series.map((r) => [r.date, r.usd_per_ton]));
+    const prices = dates.map((d) => by[d] ?? null);
+    // در حالت مقایسه، هر کالا نسبت به اولین ماه بازه سنجیده می‌شود تا کالاهای ارزان و گران روی یک محور خوانا باشند
+    const base = prices.find((v) => v != null);
     return {
-      label: c.name_fa, data: dates.map((d) => by[d] ?? null),
+      label: c.name_fa, prices,
+      data: compare ? prices.map((v) => (v == null ? null : (v / base - 1) * 100)) : prices,
       borderColor: c.color, backgroundColor: c.color,
       borderWidth: 2, pointRadius: 0, pointHoverRadius: 5,
       pointHoverBorderColor: "#fcfcfb", pointHoverBorderWidth: 2, tension: 0,
@@ -333,9 +400,15 @@ function renderChart() {
           rtl: true, textDirection: "rtl",
           backgroundColor: "#ffffff", titleColor: "#0b0b0b", bodyColor: "#52514e",
           borderColor: "rgba(11,11,11,0.15)", borderWidth: 1, padding: 10, boxPadding: 4,
+          itemSort: compare ? (a, b) => b.parsed.y - a.parsed.y : undefined,
           callbacks: {
             title: (it) => monthLabel(it[0].label),
-            label: (it) => `${it.dataset.label}: ${fmtPrice(it.parsed.y)} دلار بر تن`,
+            label: (it) => {
+              const price = it.dataset.prices[it.dataIndex];
+              return compare
+                ? `${it.dataset.label}: ${fmtPct(it.parsed.y)} (${fmtPrice(price)} دلار/تن)`
+                : `${it.dataset.label}: ${fmtPrice(price)} دلار بر تن`;
+            },
           },
         },
       },
@@ -345,8 +418,9 @@ function renderChart() {
           ticks: { color: "#898781", maxRotation: 0, autoSkipPadding: 16, callback(v) { const d = this.getLabelForValue(v); return d.slice(0, 7).replace("-", "/"); } },
         },
         y: {
-          position: "right", grid: { color: "#e1e0d9" }, border: { display: false },
-          ticks: { color: "#898781", callback: (v) => fmtPrice(v) },
+          position: "right", border: { display: false },
+          grid: { color: (ctx) => (compare && ctx.tick?.value === 0 ? "#c3c2b7" : "#e1e0d9") },
+          ticks: { color: "#898781", callback: (v) => (compare ? fmtPct(v).replace(".0%", "%") : fmtPrice(v)) },
         },
       },
     },
@@ -367,19 +441,23 @@ function renderTable() {
 
 // ---------- کنترل‌ها ----------
 function renderCommodityPicker() {
-  const opts = [...state.data.commodities.map((c) => [c.fred_id, c.name_fa]), ["all", "مقایسه‌ی همه"]];
   const el = document.getElementById("pick-commodity");
-  el.innerHTML = opts.map(([id, name]) =>
-    `<button data-id="${esc(id)}" aria-pressed="${state.commodity === id}">${esc(name)}</button>`).join("");
-  el.querySelectorAll("button").forEach((b) => b.addEventListener("click", () => select(b.dataset.id)));
+  const opt = (c) => `<option value="${esc(c.fred_id)}">${esc(c.name_fa)}</option>`;
+  el.innerHTML = state.category === ALL
+    ? categories().map((cat) => `<optgroup label="${esc(cat)}">${inCategory(cat).map(opt).join("")}</optgroup>`).join("")
+    : (inCategory().length > 1 ? `<option value="${COMPARE}">مقایسه‌ی همه‌ی این گروه</option>` : "") + inCategory().map(opt).join("");
+  el.value = state.commodity;
 }
 
 function select(id) {
   state.commodity = id;
-  document.querySelectorAll("#pick-commodity button, #cards .card").forEach((b) =>
+  document.getElementById("pick-commodity").value = id;
+  document.querySelectorAll("#cards .card").forEach((b) =>
     b.setAttribute("aria-pressed", String(b.dataset.id === id)));
   renderChart(); renderTable();
 }
+
+document.getElementById("pick-commodity").addEventListener("change", (e) => select(e.target.value));
 
 document.getElementById("pick-range").addEventListener("click", (e) => {
   const b = e.target.closest("button"); if (!b) return;
@@ -407,10 +485,11 @@ function renderStaleWarning() {
 }
 
 // ---------- لینک قیمت روزانه‌ی بورس در TradingView ----------
-// ابزارک رایگان TradingView قراردادهای بورس ICE را نمایش نمی‌دهد، پس فقط لینک می‌گذاریم.
+// ابزارک رایگان TradingView قراردادهای بورسی را نمایش نمی‌دهد، پس فقط لینک می‌گذاریم.
 function renderLive() {
-  const list = state.data.commodities.filter((c) => c.tradingview_symbol);
-  if (!list.length) return;
+  const list = inCategory().filter((c) => c.tradingview_symbol);
+  const panel = document.getElementById("live-panel");
+  panel.hidden = !list.length;
   document.getElementById("live").innerHTML = list.map((c) => {
     const sym = c.tradingview_symbol;
     const page = "https://www.tradingview.com/symbols/" + encodeURIComponent(sym.replace(":", "-")) + "/";
@@ -418,7 +497,6 @@ function renderLive() {
       <span class="swatch" style="background:${esc(c.color)}"></span>${esc(c.name_fa)}
       <bdi dir="ltr">${esc(sym)}</bdi> ↗</a>`;
   }).join("");
-  document.getElementById("live-panel").hidden = false;
 }
 
 // ---------- شروع ----------
@@ -435,11 +513,15 @@ async function init() {
   d.commodities = d.commodities.filter((c) => c.series.length);
   const latest = d.commodities.map((c) => c.series[c.series.length - 1].date).sort().pop();
   document.getElementById("meta").innerHTML =
-    `آخرین داده: <b>${monthLabel(latest)}</b> · منبع: FRED / IMF · آخرین به‌روزرسانی: ${num((d.last_updated || "").slice(0, 10))}`;
+    `آخرین داده: <b>${monthLabel(latest)}</b> · ${num(d.commodities.length)} کالا · منبع: FRED / IMF · آخرین به‌روزرسانی: ${num((d.last_updated || "").slice(0, 10))}`;
   renderStaleWarning();
-  state.commodity = d.commodities[0]?.fred_id;
   Chart.defaults.font.family = '"Vazirmatn", system-ui, sans-serif';
-  renderCards(); renderAnalysis(); renderCommodityPicker(); renderChart(); renderTable(); renderLive();
+  // گروه از آدرس صفحه (مثلاً ‎#غلات‎) تا بشود لینک یک گروه را برای کسی فرستاد
+  let fromHash = "";
+  try { fromHash = decodeURIComponent(location.hash.slice(1)); } catch (e) { /* آدرس نامعتبر */ }
+  state.category = [...categories(), ALL].includes(fromHash) ? fromHash : categories()[0];
+  renderCategoryPicker();
+  selectCategory(state.category);
 }
 document.fonts?.ready.then(init) ?? init();
 </script>

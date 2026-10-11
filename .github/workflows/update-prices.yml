@@ -31,7 +31,9 @@ jobs:
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
         run: python -m scripts.fetch_prices
 
+      # حتی اگر بعضی کالاها خطا داده باشند، کالاهای سالم ذخیره شوند (اجرا همچنان قرمز می‌ماند)
       - name: Commit if data changed
+        if: ${{ !cancelled() }}
         run: |
           if [ -z "$(git status --porcelain -- data/)" ]; then
             echo "Data unchanged; nothing to commit."

@@ -19,6 +19,7 @@ class TestUnitConversion(unittest.TestCase):
     def test_dollars_per_pound_and_kilogram(self):
         self.assertEqual(to_usd_per_ton(1, "U.S. Dollars per Pound"), 2204.6)
         self.assertEqual(to_usd_per_ton(2.5, "U.S. Dollars per Kilogram"), 2500.0)
+        self.assertEqual(to_usd_per_ton(273.14, "U.S. Cents per Kilogram"), 2731.4)
 
     def test_unit_name_is_case_and_space_insensitive(self):
         self.assertEqual(factor_for("  u.s. CENTS   per pound "), 22.046)
@@ -35,7 +36,7 @@ class TestCommoditiesConfig(unittest.TestCase):
         ids = [c["fred_id"] for c in items]
         self.assertEqual(len(ids), len(set(ids)), "شناسه‌ی تکراری در فایل تنظیمات")
         for c in items:
-            for field in ("fred_id", "name_fa", "name_en", "color"):
+            for field in ("fred_id", "category", "name_fa", "name_en", "color"):
                 self.assertTrue(c.get(field), f"فیلد {field} برای {c} خالی است")
             self.assertRegex(c["color"], r"^#[0-9A-Fa-f]{6}$")
             if "tradingview_symbol" in c:

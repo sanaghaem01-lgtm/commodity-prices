@@ -4,7 +4,7 @@ import unittest
 from datetime import date
 from pathlib import Path
 
-from scripts.fetch_prices import build_dataset, has_changed, to_csv, validate, write_outputs
+from scripts.fetch_prices import build_dataset, has_changed, merge_with_existing, to_csv, validate, write_outputs
 from scripts.fred_source import SourceError
 
 CONFIG = [
@@ -38,15 +38,16 @@ class TestFetchPrices(unittest.TestCase):
         self.assertEqual(ds["commodities"][1]["series"][0]["usd_per_ton"], 5000.0)
         self.assertIsNone(a["tradingview_symbol"])  # فیلد اختیاری
 
-    def test_tradingview_symbol_passed_through(self):
-        cfg = [{**CONFIG[0], "tradingview_symbol": "ICEUS:KC1!"}]
+    def test_optional_fields_passed_through(self):
+        cfg = [{**CONFIG[0], "tradingview_symbol": "ICEUS:KC1!", "category": "غلات"}]
         ds, _ = build_dataset(cfg, fake_fetch(GOOD))
         self.assertEqual(ds["commodities"][0]["tradingview_symbol"], "ICEUS:KC1!")
+        self.assertEqual(ds["commodities"][0]["category"], "غلات")
 
     def test_source_error_and_unknown_unit_are_reported(self):
         data = {"AAA": SourceError("HTTP 400 bad key"), "BBB": {"unit": "Index", "observations": [("2026-08-01", 1.0)]}}
         ds, errors = build_dataset(CONFIG, fake_fetch(data))
-        self.assertEqual(len(errors), 2)
+        self.assertEqual([sid for sid, _ in errors], ["AAA", "BBB"])
         self.assertEqual(ds["commodities"], [])
 
     def test_validate_empty_and_stale(self):
@@ -63,6 +64,26 @@ class TestFetchPrices(unittest.TestCase):
         errors = validate(new, old, today=TODAY)
         self.assertEqual(len(errors), 2)  # هم عقب‌تر، هم کوتاه‌تر
         self.assertEqual(validate(old, old, today=TODAY), [])
+
+    def test_merge_keeps_old_data_for_failed_commodity(self):
+        old, _ = build_dataset(CONFIG, fake_fetch(GOOD))
+        broken = {**GOOD, "AAA": SourceError("timeout"),
+                  "BBB": {"unit": "U.S. Dollars per Metric Ton", "observations": [("2026-08-01", 5100.0)]}}
+        new, errors = build_dataset(CONFIG, fake_fetch(broken))
+        renamed = [{**CONFIG[0], "name_fa": "نام جدید"}, CONFIG[1]]
+        merged = merge_with_existing(renamed, new, old, {sid for sid, _ in errors})
+        a, b = merged["commodities"]
+        self.assertEqual(a["series"], old["commodities"][0]["series"])  # داده‌ی قبلی حفظ شد
+        self.assertEqual(a["name_fa"], "نام جدید")                       # ولی نام از تنظیمات فعلی
+        self.assertEqual(b["series"][0]["usd_per_ton"], 5100.0)          # کالای سالم به‌روز شد
+
+    def test_merge_drops_failed_new_commodity_and_follows_config_order(self):
+        new, errors = build_dataset(CONFIG, fake_fetch({**GOOD, "AAA": SourceError("x")}))
+        merged = merge_with_existing(list(reversed(CONFIG)), new, None, {sid for sid, _ in errors})
+        self.assertEqual([c["fred_id"] for c in merged["commodities"]], ["BBB"])
+        both, _ = build_dataset(CONFIG, fake_fetch(GOOD))
+        merged = merge_with_existing(list(reversed(CONFIG)), both, None, set())
+        self.assertEqual([c["fred_id"] for c in merged["commodities"]], ["BBB", "AAA"])
 
     def test_has_changed_ignores_last_updated(self):
         ds, _ = build_dataset(CONFIG, fake_fetch(GOOD))

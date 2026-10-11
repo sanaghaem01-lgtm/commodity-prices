@@ -13,6 +13,7 @@ FACTORS = {
     "u.s. dollars per pound": CENTS_PER_LB_TO_USD_PER_TON * 100,
     "u.s. dollars per metric ton": 1.0,
     "u.s. dollars per kilogram": 1000.0,
+    "u.s. cents per kilogram": 10.0,
 }
 
 
