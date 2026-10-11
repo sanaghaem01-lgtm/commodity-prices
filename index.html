@@ -89,6 +89,11 @@
   footer { color: var(--ink-2); font-size: 0.85rem; margin-top: 28px; }
   footer a { color: inherit; }
   .error { color: #d03b3b; font-weight: 700; }
+  .stale {
+    background: #fdecea; border: 1px solid #f3b8b3; border-radius: 10px;
+    padding: 10px 14px; margin: 16px 0 0; font-size: 0.92rem;
+  }
+  .stale[hidden] { display: none; }
 
   @media (max-width: 600px) {
     h1 { font-size: 1.3rem; }
@@ -103,6 +108,8 @@
     <h1>دیدبان قیمت جهانی کالا</h1>
     <div class="meta" id="meta">در حال بارگذاری…</div>
   </header>
+
+  <div class="stale" id="stale" role="alert" hidden></div>
 
   <div class="note">
     قیمت مرجع جهانی است و با قیمت فیزیکی تأمین‌کننده (بسته به مبدأ، گرید و شرط تحویل) فرق دارد؛
@@ -361,6 +368,24 @@ document.getElementById("pick-range").addEventListener("click", (e) => {
   renderChart(); renderTable();
 });
 
+// ---------- هشدار قدیمی بودن داده ----------
+// داده‌ی IMF به‌طور عادی حدود 2 تا 4 ماه عقب است؛ بیش از 150 روز یعنی احتمالاً به‌روزرسانی متوقف شده.
+const STALE_DAYS = 150;
+
+function renderStaleWarning() {
+  const now = Date.now();
+  const stale = state.data.commodities.filter((c) => {
+    const last = c.series[c.series.length - 1].date;
+    return (now - Date.parse(last + "T00:00:00Z")) / 86400000 > STALE_DAYS;
+  });
+  const el = document.getElementById("stale");
+  if (!stale.length) { el.hidden = true; return; }
+  const names = stale.map((c) => `${esc(c.name_fa)} (${monthLabel(c.series[c.series.length - 1].date)})`).join("، ");
+  el.innerHTML = `⚠️ <b>داده قدیمی‌تر از حد معمول است:</b> ${names}. ` +
+    `ممکن است به‌روزرسانی خودکار متوقف شده باشد؛ لطفاً به مسئول فنی اطلاع دهید (بررسی: تب Actions در GitHub).`;
+  el.hidden = false;
+}
+
 // ---------- شروع ----------
 async function init() {
   try {
@@ -376,6 +401,7 @@ async function init() {
   const latest = d.commodities.map((c) => c.series[c.series.length - 1].date).sort().pop();
   document.getElementById("meta").innerHTML =
     `آخرین داده: <b>${monthLabel(latest)}</b> · منبع: FRED / IMF · آخرین به‌روزرسانی: ${num((d.last_updated || "").slice(0, 10))}`;
+  renderStaleWarning();
   state.commodity = d.commodities[0]?.fred_id;
   Chart.defaults.font.family = '"Vazirmatn", system-ui, sans-serif';
   renderCards(); renderAnalysis(); renderCommodityPicker(); renderChart(); renderTable();
