@@ -189,8 +189,9 @@ h3.chart-title { font-size: 1rem; margin: 20px 0 6px; }
 .bars .val { grid-column: 1 / -1; color: var(--muted); font-size: 0.8rem; }
 
 /* الگوی ماهانه: ستون‌های کوچک */
-.cols { display: grid; grid-template-columns: repeat(12, 1fr); gap: 3px; align-items: end; height: 120px; margin: 6px 0; }
+.cols { display: grid; grid-template-columns: repeat(12, 1fr); gap: 3px; align-items: end; height: 130px; margin: 6px 0; }
 .cols .col { display: flex; flex-direction: column; justify-content: flex-end; align-items: center; height: 100%; }
 .cols .bar { width: 100%; background: #2A78D6; border-radius: 3px 3px 0 0; }
 .cols span { font-size: 0.66rem; color: var(--muted); margin-top: 3px; white-space: nowrap; }
+.cols b { font-size: 0.62rem; font-weight: 500; color: var(--ink-2); margin-bottom: 2px; }
 .page-pick { margin: 16px 0 4px; }

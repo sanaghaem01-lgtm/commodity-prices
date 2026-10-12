@@ -7,8 +7,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<script src="iran-common.js"></script>
+<link rel="stylesheet" href="style.css?v=20261012">
+<script src="iran-common.js?v=20261012"></script>
 </head>
 <body>
 <div class="wrap">
@@ -17,6 +17,7 @@
       <a href="./">قیمت جهانی</a>
       <a href="iran.html" aria-current="page">بازار ایران</a>
       <a href="iran-imports.html">آمار واردات ایران</a>
+      <a href="about.html">درباره‌ی داده‌ها</a>
     </nav>
     <h1>بازار ایران</h1>
     <p class="meta">نمای سریع: الان در بازار ایران چه خبر است؟ کالا را از دکمه‌های زیر انتخاب کنید.</p>
@@ -59,7 +60,7 @@ function sigFlow(c) {
   if (!mirror || !mirror.rows.length) {
     el.innerHTML = `<h3>۱. جریان واردات اخیر</h3>
       <p>برای ${esc(c.name_fa)} آمار ماهانه‌ی به‌روز در دسترس نیست؛ آمار کشورهای صادرکننده برای این کالا پوشش کافی ندارد
-      (بیشتر از راه امارات وارد می‌شود).</p><p class="muted">آمار سالانه در بخش «آمار گمرک ایران» پایین همین صفحه.</p>`;
+      (بیشتر از راه امارات وارد می‌شود).</p><p class="muted">آمار سالانه‌ی گمرک این کالا در صفحه‌ی <a href="iran-imports.html">آمار واردات ایران</a> است.</p>`;
     return;
   }
   const tonsOf = (p) => mirror.rows.filter((r) => r.period === p).reduce((a, r) => a + (r.tons || 0), 0);
@@ -141,11 +142,12 @@ function sigPattern(c) {
     <div class="cols" role="img" aria-label="سهم هر ماه از واردات سال ${year}">${by.map((t, i) => {
       const share = total ? (t / total) * 100 : 0;
       return `<div class="col" title="${MONTHS_IR[i]}: ${fmt(share, 1)}% از واردات سال (${fmt(t)} تن)">
-        <div class="bar" style="height:${max ? Math.max(2, (t / max) * 100).toFixed(1) : 0}%"></div>
+        <b>${num(fmt(share, 0) + "%")}</b>
+        <div class="bar" style="height:${max ? Math.max(2, (t / max) * 90).toFixed(0) : 0}px"></div>
         <span>${MONTHS_IR[i].slice(0, 3)}</span></div>`;
     }).join("")}</div>
     <p>بیشترین واردات: <b>${MONTHS_IR[peak]}</b> (${num(fmt(total ? (max / total) * 100 : 0, 1) + "%")} از کل سال).</p>
-    <p class="muted">فقط یک سال داده‌ی ماهانه منتشر شده؛ ممکن است الگوی همه‌ی سال‌ها نباشد. برای جزئیات هر ماه، ماوس را روی ستون ببرید.</p>`;
+    <p class="muted">فقط یک سال داده‌ی ماهانه منتشر شده؛ ممکن است الگوی همه‌ی سال‌ها نباشد. عدد بالای هر ستون سهم آن ماه از واردات کل سال است.</p>`;
 }
 
 function renderSignals(c) {

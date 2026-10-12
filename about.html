@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>درباره‌ی داده‌ها</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=20261012">
+<style>
+  .about td, .about th { white-space: normal; vertical-align: top; text-align: right; }
+  .about td.when { white-space: nowrap; }
+  .about td small { display: block; color: var(--muted); font-size: 0.78rem; }
+  .about .fresh { white-space: nowrap; }
+  .panel h2 { margin-top: 0; }
+  .panel p, .panel li { font-size: 0.93rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <nav class="nav" aria-label="صفحه‌ها">
+      <a href="./">قیمت جهانی</a>
+      <a href="iran.html">بازار ایران</a>
+      <a href="iran-imports.html">آمار واردات ایران</a>
+      <a href="about.html" aria-current="page">درباره‌ی داده‌ها</a>
+    </nav>
+    <h1>درباره‌ی داده‌ها</h1>
+    <p class="meta">هر بخش داده‌اش را از کجا می‌آورد، کی به‌روز می‌شود و چقدر تأخیر دارد.</p>
+  </header>
+
+  <section class="panel" style="margin-top:20px">
+    <h2>منبع و زمان به‌روزرسانی هر بخش</h2>
+    <p class="meta">ساعت‌ها به وقت تهران است. «آخرین تغییر» زمانی است که داده واقعاً عوض شده؛
+      اگر منبع داده‌ی تازه‌ای منتشر نکرده باشد، به‌روزرسانی اجرا می‌شود ولی این تاریخ عوض نمی‌شود.</p>
+    <div class="table-scroll">
+      <table class="about">
+        <thead><tr><th>بخش</th><th>صفحه</th><th>منبع</th><th>به‌روزرسانی خودکار</th><th>تأخیر و پوشش داده</th><th>آخرین تغییر</th></tr></thead>
+        <tbody>
+          <tr><td>قیمت جهانی کالاها (27 کالا)</td><td>قیمت جهانی</td>
+            <td>FRED (بانک فدرال رزرو سنت‌لوئیس)، قیمت‌های ماهانه‌ی IMF</td>
+            <td class="when">هر دوشنبه، 9:30</td>
+            <td>میانگین ماهانه؛ معمولاً 1 تا 2 ماه دیرتر منتشر می‌شود</td>
+            <td class="fresh" data-file="data/prices.json"></td></tr>
+          <tr><td>اخبار هفته (انگلیسی)</td><td>قیمت جهانی</td>
+            <td>22 سایت تخصصی صنعت غذا و کالا (خبرخوان RSS)</td>
+            <td class="when">هر دوشنبه، 10:00</td>
+            <td>تیترهای 7 روز اخیر</td>
+            <td class="fresh" data-file="data/news.json"></td></tr>
+          <tr><td>قیمت روزانه‌ی بورس</td><td>قیمت جهانی</td>
+            <td>TradingView (فقط لینک)</td>
+            <td class="when">—</td>
+            <td>در خود سایت TradingView، معمولاً با 10 تا 30 دقیقه تأخیر</td>
+            <td>—</td></tr>
+          <tr><td>تقویم برداشت و صید</td><td>قیمت جهانی</td>
+            <td>دانسته‌های عمومی (USDA، ICO، ICCO، FAO)</td>
+            <td class="when">دستی</td>
+            <td>ماه‌ها تقریبی‌اند<small>فایل: config/harvest.json</small></td>
+            <td>—</td></tr>
+          <tr><td>اخبار فارسی واردات و گمرک</td><td>بازار ایران</td>
+            <td>دنیای اقتصاد، ایسنا، مهر، ایرنا، خبرآنلاین</td>
+            <td class="when">هر 4 ساعت</td>
+            <td>تیترهای 7 روز اخیر</td>
+            <td class="fresh" data-file="data/iran-news.json"></td></tr>
+          <tr><td>خبرهای کمبود و محدودیت</td><td>بازار ایران</td>
+            <td>همان خبرهای فارسی</td>
+            <td class="when">هر 4 ساعت</td>
+            <td>120 روز نگه داشته می‌شود؛ جمع‌آوری از 20 مهر 1405</td>
+            <td class="fresh" data-file="data/iran-signals.json"></td></tr>
+          <tr><td>تقویم تقاضای ایران</td><td>بازار ایران</td>
+            <td>دستی</td>
+            <td class="when">دستی</td>
+            <td>تاریخ‌های رمضان و محرم تا خرداد 1407 وارد شده و باید سالانه تمدید شود<small>فایل: config/iran_demand.json</small></td>
+            <td>—</td></tr>
+          <tr><td>آمار گمرک ایران</td><td>آمار واردات ایران</td>
+            <td>گمرک ایران، از سامانه‌ی آمار اتاق بازرگانی تهران</td>
+            <td class="when">روز 3 هر ماه، 11:30</td>
+            <td>تأخیر زیاد: آخرین سال منتشرشده 1403 (سالانه)؛ آمار ماهانه فقط تا 1402</td>
+            <td class="fresh" data-file="data/iran-customs.json"></td></tr>
+          <tr><td>آمار کشورهای صادرکننده</td><td>آمار واردات ایران، و کارت «جریان واردات» در بازار ایران</td>
+            <td>UN Comtrade (گزارش کشورهای صادرکننده)</td>
+            <td class="when">هر دوشنبه، 10:30</td>
+            <td>ماهانه، 2 تا 3 ماه تأخیر؛ فقط ذرت و برنج پوشش کافی دارند</td>
+            <td class="fresh" data-file="data/iran-imports.json"></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>اگر داده به‌روز نشد</h2>
+    <ul>
+      <li>اگر داده‌ی قیمت جهانی بیش از حد معمول قدیمی شود، بالای صفحه‌ی «قیمت جهانی» یک <b>هشدار قرمز</b> ظاهر می‌شود.</li>
+      <li>اگر یک منبع خطا بدهد، <b>داده‌ی قبلی پاک نمی‌شود</b> و صفحه همان داده‌ی قبلی را نشان می‌دهد.</li>
+      <li>مسئول فنی می‌تواند وضعیت هر به‌روزرسانی را در
+        <a href="https://github.com/sanaghaem01-lgtm/commodity-prices/actions" target="_blank" rel="noopener">تب Actions در GitHub</a>
+        ببیند (سبز = موفق، قرمز = خطا). راهنمای کامل در
+        <a href="https://github.com/sanaghaem01-lgtm/commodity-prices#readme" target="_blank" rel="noopener">README</a> است.</li>
+    </ul>
+  </section>
+
+  <section class="panel">
+    <h2>نکته‌های مهم</h2>
+    <ul>
+      <li>قیمت‌ها <b>مرجع جهانی</b> هستند و با قیمت فیزیکی تأمین‌کننده (بسته به مبدأ، گرید و شرط تحویل) فرق دارند.</li>
+      <li>هیچ بخشی از این سایت <b>پیش‌بینی یا توصیه‌ی خرید</b> نیست؛ فقط داده‌ها و نشانه‌ها را کنار هم می‌گذارد.</li>
+      <li>این سایت <b>عمومی</b> است و فقط از داده‌های عمومی ساخته شده؛ هیچ اطلاعات داخلی شرکت در آن نیست.</li>
+      <li>در آمار گمرک، «کشور» کشور <b>طرف معامله</b> است، نه لزوماً کشور تولیدکننده.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <a href="./">بازگشت به قیمت جهانی</a>
+  </footer>
+</div>
+
+<script>
+// آخرین تغییر هر فایل داده، به وقت تهران (UTC+3:30)
+const esc = (s) => String(s).replace(/[&<>"]/g, (ch) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch]));
+function tehran(iso) {
+  const d = new Date(Date.parse(iso) + 3.5 * 3600000);
+  return d.toISOString().slice(0, 16).replace("T", " ");
+}
+document.querySelectorAll(".fresh").forEach(async (td) => {
+  try {
+    const res = await fetch(td.dataset.file, { cache: "no-cache" });
+    if (!res.ok) throw new Error();
+    const data = await res.json();
+    td.innerHTML = data.last_updated ? `<span class="num">${esc(tehran(data.last_updated))}</span>` : "—";
+  } catch (e) {
+    td.textContent = "در دسترس نیست";
+  }
+});
+</script>
+</body>
+</html>

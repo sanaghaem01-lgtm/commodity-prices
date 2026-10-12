@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=20261012">
 </head>
 <body>
 <div class="wrap">
@@ -17,6 +17,7 @@
       <a href="./" aria-current="page">قیمت جهانی</a>
       <a href="iran.html">بازار ایران</a>
       <a href="iran-imports.html">آمار واردات ایران</a>
+      <a href="about.html">درباره‌ی داده‌ها</a>
     </nav>
     <h1>دیدبان قیمت جهانی کالا</h1>
     <div class="meta" id="meta">در حال بارگذاری…</div>
@@ -84,12 +85,6 @@
     <div class="live-grid" id="live"></div>
   </section>
 
-  <section class="panel">
-    <details>
-      <summary>جدول داده‌ها</summary>
-      <div class="table-scroll" id="table"></div>
-    </details>
-  </section>
 
   <footer>
     منبع: <a href="https://fred.stlouisfed.org/" target="_blank" rel="noopener">FRED</a>
@@ -167,7 +162,7 @@ function selectCategory(cat) {
   try { history.replaceState(null, "", "#" + encodeURIComponent(cat)); } catch (e) { /* بی‌اهمیت */ }
   document.querySelectorAll("#pick-category button").forEach((b) =>
     b.setAttribute("aria-pressed", String(b.dataset.cat === cat)));
-  renderCards(); renderAnalysis(); renderCommodityPicker(); renderChart(); renderTable(); renderLive(); renderNews(); renderHarvest();
+  renderCards(); renderAnalysis(); renderCommodityPicker(); renderChart(); renderLive(); renderNews(); renderHarvest();
 }
 
 // ---------- کارت‌ها ----------
@@ -339,18 +334,6 @@ function renderChart() {
   });
 }
 
-function renderTable() {
-  const list = selected();
-  const dates = visibleDates(list).slice().reverse();
-  const maps = list.map((c) => Object.fromEntries(c.series.map((r) => [r.date, r.usd_per_ton])));
-  document.getElementById("table").innerHTML = `
-    <table>
-      <thead><tr><th>ماه</th>${list.map((c) => `<th>${esc(c.name_fa)} (دلار/تن)</th>`).join("")}</tr></thead>
-      <tbody>${dates.map((d) => `<tr><td>${monthLabel(d)}</td>${maps.map((m) =>
-        `<td class="num">${m[d] != null ? fmtPrice(m[d]) : "—"}</td>`).join("")}</tr>`).join("")}</tbody>
-    </table>`;
-}
-
 // ---------- کنترل‌ها ----------
 function renderCommodityPicker() {
   const el = document.getElementById("pick-commodity");
@@ -366,7 +349,7 @@ function select(id) {
   document.getElementById("pick-commodity").value = id;
   document.querySelectorAll("#cards .card").forEach((b) =>
     b.setAttribute("aria-pressed", String(b.dataset.id === id)));
-  renderChart(); renderTable();
+  renderChart();
 }
 
 document.getElementById("pick-commodity").addEventListener("change", (e) => select(e.target.value));
@@ -375,7 +358,7 @@ document.getElementById("pick-range").addEventListener("click", (e) => {
   const b = e.target.closest("button"); if (!b) return;
   state.range = b.dataset.range;
   document.querySelectorAll("#pick-range button").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
-  renderChart(); renderTable();
+  renderChart();
 });
 
 // ---------- هشدار قدیمی بودن داده ----------
