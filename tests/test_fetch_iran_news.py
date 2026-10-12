@@ -44,5 +44,50 @@ class TestIranNews(unittest.TestCase):
         self.assertEqual(out[0]["source"], "الف")  # نسخه‌ی قدیمی‌تر ماند
 
 
+
+class TestShortageSignals(unittest.TestCase):
+    SCONFIG = {
+        "window_days": 120,
+        "shortage_words": ["کمبود", "توقف ثبت سفارش", "افزایش قیمت"],
+        "commodities": [
+            {"key": "corn", "words": ["ذرت"]},
+            {"key": "oil", "words": ["روغن"], "exclude": ["موتور"]},
+        ],
+    }
+
+    def test_needs_both_commodity_and_shortage_word(self):
+        from scripts.fetch_iran_news import merge_signals
+        new = [item("کمبود ذرت دامی در بازار"),                 # هر دو ← نگه داشته می‌شود
+               item("واردات ذرت از برزیل"),                     # بدون کلمه‌ی کمبود
+               item("کمبود دارو در داروخانه‌ها"),               # بدون کالا
+               item("افزایش قیمت روغن موتور"),                  # روغن موتور حذف می‌شود
+               item("توقف ثبت سفارش روغن و ذرت")]               # دو کالا
+        out = merge_signals([], new, self.SCONFIG, NOW)
+        tags = {i["title"]: i["commodities"] for i in out}
+        self.assertEqual(tags, {"کمبود ذرت دامی در بازار": ["corn"], "توقف ثبت سفارش روغن و ذرت": ["corn", "oil"]})
+
+    def test_keeps_old_signals_within_window(self):
+        from scripts.fetch_iran_news import merge_signals
+        old = [{"title": "کمبود ذرت", "url": "https://ex.ir/1", "source": "الف",
+                "date": (NOW - timedelta(days=60)).isoformat(), "commodities": ["corn"]},
+               {"title": "کمبود روغن", "url": "https://ex.ir/2", "source": "الف",
+                "date": (NOW - timedelta(days=200)).isoformat(), "commodities": ["oil"]}]
+        out = merge_signals(old, [], self.SCONFIG, NOW)
+        self.assertEqual([i["title"] for i in out], ["کمبود ذرت"])
+
+    def test_signals_config_is_valid(self):
+        import json
+        from pathlib import Path
+        root = Path(__file__).resolve().parent.parent
+        s = json.loads((root / "config" / "iran_signals.json").read_text(encoding="utf-8"))
+        keys = {c["key"] for c in s["commodities"]}
+        self.assertEqual(len(keys), len(s["commodities"]))
+        d = json.loads((root / "config" / "iran_demand.json").read_text(encoding="utf-8"))
+        for e in d["events"]:
+            start, end = datetime.fromisoformat(e["start"]), datetime.fromisoformat(e["end"])
+            self.assertLessEqual(start, end, e)
+            self.assertTrue(set(e["commodities"]) <= keys, e)
+
+
 if __name__ == "__main__":
     unittest.main()

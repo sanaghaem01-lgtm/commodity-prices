@@ -28,7 +28,20 @@
   .chart-box.small { height: 300px; }
   .caveat { background: var(--note-bg); border: 1px solid var(--note-border); border-radius: 10px;
             padding: 10px 14px; font-size: 0.9rem; margin: 12px 0 0; }
-  #imports-panel[hidden], #customs-panel[hidden] { display: none; }
+  #imports-panel[hidden], #customs-panel[hidden], #signals-panel[hidden] { display: none; }
+  .signal-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 14px; margin-top: 14px; }
+  .sig { border: 1px solid var(--border); border-radius: 10px; padding: 14px; background: var(--page); }
+  .sig h3 { font-size: 0.98rem; margin: 0 0 8px; }
+  .sig .big { font-size: 1.4rem; font-weight: 700; line-height: 1.3; }
+  .sig .big small { font-size: 0.8rem; font-weight: 400; color: var(--ink-2); }
+  .sig p { margin: 4px 0; font-size: 0.9rem; }
+  .sig .muted { color: var(--muted); font-size: 0.8rem; }
+  .sig ul { list-style: none; padding: 0; margin: 6px 0 0; font-size: 0.88rem; }
+  .sig ul li { padding: 5px 0; border-bottom: 1px solid var(--grid); }
+  .sig ul li:last-child { border-bottom: 0; }
+  .sig a { color: var(--ink); }
+  .ev.rel { font-weight: 700; }
+  .chip { display: inline-block; font-size: 0.75rem; padding: 0 6px; border-radius: 10px; background: #dbe8f8; color: #184f95; margin-inline-start: 4px; }
   .breakdown { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; margin-top: 8px; }
   .breakdown h3 { font-size: 0.95rem; margin: 0 0 8px; color: var(--ink-2); }
   .bars { list-style: none; padding: 0; margin: 0; font-size: 0.88rem; }
@@ -49,7 +62,20 @@
     <h1>بازار ایران</h1>
   </header>
 
-  <section class="panel" id="imports-panel" style="margin-top:20px" hidden>
+  <section class="panel" id="signals-panel" style="margin-top:20px" hidden>
+    <h2>نشانه‌های بازار ایران</h2>
+    <p class="meta">چهار نشانه که معمولاً همراه کمبود یا تغییر بازار دیده می‌شوند، کنار هم.
+      این بخش پیش‌بینی یا توصیه‌ی خرید نیست؛ تصمیم با تیم است.</p>
+    <div class="seg" id="pick-signal" role="group" aria-label="انتخاب کالا"></div>
+    <div class="signal-grid">
+      <div class="sig" id="sig-flow"></div>
+      <div class="sig" id="sig-news"></div>
+      <div class="sig" id="sig-demand"></div>
+      <div class="sig" id="sig-pattern"></div>
+    </div>
+  </section>
+
+  <section class="panel" id="imports-panel" hidden>
     <h2>واردات ایران (آمار کشورهای صادرکننده)</h2>
     <p class="meta" id="imports-meta"></p>
     <div class="seg" id="pick-import" role="group" aria-label="انتخاب کالا"></div>
@@ -278,6 +304,104 @@ function draw(key, config) {
   state.charts[key] = new Chart(document.getElementById(key + "-chart"), { ...config, plugins: [crosshair] });
 }
 
+// ---------- نشانه‌های بازار ایران ----------
+const MONTHS_IR = ["فروردین", "اردیبهشت", "خرداد", "تیر", "مرداد", "شهریور", "مهر", "آبان", "آذر", "دی", "بهمن", "اسفند"];
+const DAY = 86400000;
+const dayLabel = (d, withYear = true) => `${+d.slice(8, 10)} ${MONTHS_FA[+d.slice(5, 7) - 1]}${withYear ? " " + d.slice(0, 4) : ""}`;
+const rangeLabel = (a, b) => `${dayLabel(a, a.slice(0, 4) !== b.slice(0, 4))} تا ${dayLabel(b)}`;
+
+function sigFlow(c) {
+  const el = document.getElementById("sig-flow");
+  const mirror = c.mirror_hs && state.imports?.commodities.find((x) => x.hs === c.mirror_hs);
+  if (!mirror || !mirror.rows.length) {
+    el.innerHTML = `<h3>۱. جریان واردات اخیر</h3>
+      <p>برای ${esc(c.name_fa)} آمار ماهانه‌ی به‌روز در دسترس نیست؛ آمار کشورهای صادرکننده برای این کالا پوشش کافی ندارد
+      (بیشتر از راه امارات وارد می‌شود).</p><p class="muted">آمار سالانه در بخش «آمار گمرک ایران» پایین همین صفحه.</p>`;
+    return;
+  }
+  const tonsOf = (p) => mirror.rows.filter((r) => r.period === p).reduce((a, r) => a + (r.tons || 0), 0);
+  const last = mirror.rows.reduce((m, r) => (r.period > m ? r.period : m), "");
+  const recent = [-2, -1, 0].map((n) => shiftMonth(last, n));
+  const now3 = recent.reduce((a, p) => a + tonsOf(p), 0);
+  const prevYears = [-12, -24].map((k) => recent.map((p) => shiftMonth(p, k)))
+    .filter((ps) => ps[0] >= state.imports.start);
+  const prev = prevYears.map((ps) => ps.reduce((a, p) => a + tonsOf(p), 0));
+  const avg = prev.length ? prev.reduce((a, b) => a + b, 0) / prev.length : null;
+  const ch = avg ? ((now3 - avg) / avg) * 100 : null;
+  el.innerHTML = `<h3>۱. جریان واردات اخیر</h3>
+    <div class="big">${num(fmt(now3 / 1000))} <small>هزار تن در ${monthLabel(recent[0])} تا ${monthLabel(last)}</small></div>
+    <p>${ch == null ? "داده‌ی سال‌های قبل برای مقایسه نیست." :
+      `${ch > 0 ? "▲" : ch < 0 ? "▼" : "■"} ${num(fmt(Math.abs(ch), 0) + "%")} ${ch >= 0 ? "بیشتر" : "کمتر"} از میانگین همین ماه‌ها در ${num(prev.length)} سال قبل (${num(fmt(avg / 1000))} هزار تن)`}</p>
+    <ul>${recent.map((p) => `<li>${monthLabel(p)}: ${num(fmt(tonsOf(p) / 1000, 1))} هزار تن</li>`).join("")}</ul>
+    <p class="muted">منبع: گزارش کشورهای صادرکننده (UN Comtrade). ماه‌های اخیر ممکن است هنوز کامل نباشند؛ واردات از راه کشور واسطه در آن نیست.</p>`;
+}
+
+function sigNews(c) {
+  const el = document.getElementById("sig-news");
+  const sig = state.signals;
+  if (!sig) { el.innerHTML = `<h3>۲. خبرهای کمبود و محدودیت</h3><p class="muted">داده در دسترس نیست.</p>`; return; }
+  const now = Date.now();
+  const items = sig.items.filter((i) => i.commodities.includes(c.key));
+  const age = (i) => (now - Date.parse(i.date)) / DAY;
+  const last4 = items.filter((i) => age(i) <= 28).length;
+  const prev4 = items.filter((i) => age(i) > 28 && age(i) <= 56).length;
+  const since = state.signalsConfig?.collect_since;
+  const young = since && (now - Date.parse(since)) / DAY < 56;
+  el.innerHTML = `<h3>۲. خبرهای کمبود و محدودیت</h3>
+    <div class="big">${num(last4)} <small>خبر در ۴ هفته‌ی اخیر</small></div>
+    <p>${young ? `جمع‌آوری از ${num(since)} شروع شده؛ مقایسه با ۴ هفته‌ی قبل از حدود ۸ هفته بعد معنی‌دار می‌شود.`
+      : `۴ هفته‌ی قبل از آن: ${num(prev4)} خبر.`}</p>
+    ${items.length ? `<ul>${items.slice(0, 5).map((i) => `<li><a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.title)}</a>
+      <span class="muted"> · ${esc(i.source)} · ${num(i.date.slice(0, 10))}</span></li>`).join("")}</ul>`
+      : `<p class="muted">فعلاً خبری با نام «${esc(c.name_fa)}» و کلمه‌هایی مثل کمبود، گرانی یا توقف ثبت سفارش پیدا نشده است.</p>`}`;
+}
+
+function sigDemand(c) {
+  const el = document.getElementById("sig-demand");
+  const d = state.demand;
+  if (!d) { el.innerHTML = `<h3>۳. تقویم تقاضای ایران</h3><p class="muted">داده در دسترس نیست.</p>`; return; }
+  const today = new Date(new Date().toISOString().slice(0, 10)).getTime();
+  const names = Object.fromEntries(state.signalsConfig.commodities.map((x) => [x.key, x.name_fa]));
+  const upcoming = d.events.filter((e) => Date.parse(e.end) >= today && Date.parse(e.start) - today <= 365 * DAY)
+    .sort((a, b) => a.start.localeCompare(b.start));
+  el.innerHTML = `<h3>۳. تقویم تقاضای ایران (۱۲ ماه آینده)</h3>
+    <ul>${upcoming.map((e) => {
+      const rel = e.commodities.includes(c.key);
+      const days = Math.round((Date.parse(e.start) - today) / DAY);
+      const when = days <= 0 ? "در جریان" : `${num(days)} روز مانده`;
+      return `<li class="ev${rel ? " rel" : ""}">${esc(e.name)}: ${rangeLabel(e.start, e.end)} · ${when}
+        ${e.commodities.map((k) => `<span class="chip">${esc(names[k] || k)}</span>`).join("")}
+        <div class="muted">${esc(e.note || "")}</div></li>`;
+    }).join("")}</ul>
+    <p class="muted">رویدادهای مرتبط با «${esc(c.name_fa)}» پررنگ‌اند. ${esc(d.lead_time)} ${esc(d.note)}</p>`;
+}
+
+function sigPattern(c) {
+  const el = document.getElementById("sig-pattern");
+  const cu = state.customs?.commodities.find((x) => x.hs === c.customs_hs);
+  const monthly = cu ? cu.rows.filter((r) => r.month) : [];
+  if (!monthly.length) {
+    el.innerHTML = `<h3>۴. الگوی ماهانه‌ی واردات ایران</h3><p class="muted">آمار ماهانه‌ی گمرک برای این کالا موجود نیست.</p>`;
+    return;
+  }
+  const year = Math.max(...monthly.map((r) => r.year));
+  const rows = monthly.filter((r) => r.year === year);
+  const total = rows.reduce((a, r) => a + r.tons, 0);
+  const by = Array.from({ length: 12 }, (_, i) => rows.filter((r) => r.month === i + 1).reduce((a, r) => a + r.tons, 0));
+  const max = Math.max(...by);
+  el.innerHTML = `<h3>۴. الگوی ماهانه‌ی واردات ایران (گمرک، سال ${year})</h3>
+    <ul class="bars">${by.map((t, i) => `<li><span class="name">${MONTHS_IR[i]}</span>
+      <span class="track"><span class="fill" style="display:block;width:${max ? ((t / max) * 100).toFixed(1) : 0}%"></span></span>
+      <span class="val">${num(fmt(total ? (t / total) * 100 : 0, 1) + "%")} از واردات سال · ${num(fmt(t))} تن</span></li>`).join("")}</ul>
+    <p class="muted">فقط یک سال داده‌ی ماهانه منتشر شده؛ ممکن است الگوی همه‌ی سال‌ها نباشد. «کشور» و «ماه» طبق ثبت گمرک.</p>`;
+}
+
+function renderSignals() {
+  const c = state.signalsConfig.commodities.find((x) => x.key === state.signalKey);
+  document.querySelectorAll("#pick-signal button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.key === c.key)));
+  sigFlow(c); sigNews(c); sigDemand(c); sigPattern(c);
+}
+
 // ---------- آمار گمرک ----------
 const yearLabel = (y) => `${y} (مارس ${y + 621} تا مارس ${y + 622})`;
 
@@ -353,8 +477,11 @@ async function getJson(path) {
 
 async function init() {
   Chart.defaults.font.family = '"Vazirmatn", system-ui, sans-serif';
-  const [imports, prices, news, customs] = await Promise.allSettled(
-    ["data/iran-imports.json", "data/prices.json", "data/iran-news.json", "data/iran-customs.json"].map(getJson));
+  const [imports, prices, news, customs, signals, signalsConfig, demand] = await Promise.allSettled(
+    ["data/iran-imports.json", "data/prices.json", "data/iran-news.json", "data/iran-customs.json",
+     "data/iran-signals.json", "config/iran_signals.json", "config/iran_demand.json"].map(getJson));
+  const ok = (r) => (r.status === "fulfilled" ? r.value : null);
+  state.signals = ok(signals); state.signalsConfig = ok(signalsConfig); state.demand = ok(demand);
 
   if (customs.status === "fulfilled") {
     state.customs = customs.value;
@@ -392,6 +519,20 @@ async function init() {
     });
     document.getElementById("imports-panel").hidden = false;
     renderImports();
+  }
+
+  // نشانه‌ها آخر ساخته می‌شوند چون از داده‌ی بخش‌های دیگر هم استفاده می‌کنند
+  if (state.signalsConfig) {
+    state.signalKey = state.signalsConfig.commodities[0].key;
+    const pick = document.getElementById("pick-signal");
+    pick.innerHTML = state.signalsConfig.commodities.map((c) =>
+      `<button data-key="${esc(c.key)}">${esc(c.name_fa)}</button>`).join("");
+    pick.addEventListener("click", (e) => {
+      const b = e.target.closest("button"); if (!b) return;
+      state.signalKey = b.dataset.key; renderSignals();
+    });
+    document.getElementById("signals-panel").hidden = false;
+    renderSignals();
   }
 }
 document.fonts?.ready.then(init) ?? init();
