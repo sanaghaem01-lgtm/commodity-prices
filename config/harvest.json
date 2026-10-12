@@ -4,7 +4,8 @@
   "sources": [
     {"name": "USDA FAS — Crop Calendars", "url": "https://ipad.fas.usda.gov/ogamaps/cropcalendar.aspx"},
     {"name": "ICO — International Coffee Organization", "url": "https://ico.org/"},
-    {"name": "ICCO — International Cocoa Organization", "url": "https://www.icco.org/"}
+    {"name": "ICCO — International Cocoa Organization", "url": "https://www.icco.org/"},
+    {"name": "FAO GLOBEFISH — بازار آبزیان", "url": "https://www.fao.org/in-action/globefish/en"}
   ],
 
   "rows": [
@@ -45,6 +46,10 @@
     {"category": "دانه‌های روغنی و روغن", "commodity": "کلزا", "country": "اتحادیه‌ی اروپا", "main": [7, 8]},
     {"category": "دانه‌های روغنی و روغن", "commodity": "کلزا (کانولا)", "country": "کانادا", "main": [8, 9, 10]},
 
+    {"category": "گوشت و آبزیان", "commodity": "ماهی سالمون (پرورشی)", "country": "نروژ", "main": [9, 10, 11, 12], "second": [1, 2, 3, 4, 5, 6, 7, 8], "note": "برداشت تمام سال؛ عرضه در پاییز بیشتر است"},
+    {"category": "گوشت و آبزیان", "commodity": "میگو (پرورشی)", "country": "اکوادور", "main": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], "note": "تقریباً تمام سال"},
+    {"category": "گوشت و آبزیان", "commodity": "میگو (پرورشی)", "country": "هند", "main": [5, 6, 7, 8], "second": [10, 11, 12]},
+    {"category": "گوشت و آبزیان", "commodity": "آنچوی (پودر ماهی)", "country": "پرو", "main": [4, 5, 6, 7], "second": [11, 12, 1], "note": "دو فصل صید رسمی؛ تاریخ دقیق را دولت پرو هر سال اعلام می‌کند"},
     {"category": "مواد اولیه‌ی کشاورزی", "commodity": "پنبه", "country": "آمریکا", "main": [9, 10, 11, 12]},
     {"category": "مواد اولیه‌ی کشاورزی", "commodity": "پنبه", "country": "هند", "main": [10, 11, 12, 1]},
     {"category": "مواد اولیه‌ی کشاورزی", "commodity": "پنبه", "country": "برزیل", "main": [6, 7, 8, 9]}
