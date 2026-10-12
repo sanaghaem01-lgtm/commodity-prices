@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>آمار واردات ایران</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<link rel="stylesheet" href="style.css">
+<script src="iran-common.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <nav class="nav" aria-label="صفحه‌ها">
+      <a href="./">قیمت جهانی</a>
+      <a href="iran.html">بازار ایران</a>
+      <a href="iran-imports.html" aria-current="page">آمار واردات ایران</a>
+    </nav>
+    <h1>آمار واردات ایران</h1>
+    <p class="meta">جزئیات: واردات این کالا از کجا، چقدر و به چه قیمتی بوده است؟ کالا را از دکمه‌های زیر انتخاب کنید.</p>
+  </header>
+
+  <div class="seg page-pick" id="pick" role="group" aria-label="انتخاب کالا"></div>
+
+  <section class="panel" id="customs-panel" style="margin-top:12px" hidden>
+    <h2>آمار گمرک ایران</h2>
+    <p class="meta" id="customs-meta"></p>
+    <div class="table-scroll" id="customs-years" style="margin-top:12px"></div>
+    <div class="breakdown" id="customs-breakdown"></div>
+    <div class="caveat">
+      <b>توجه:</b> «کشور» در آمار گمرک <b>کشور طرف معامله</b> است، نه لزوماً کشور تولیدکننده
+      (مثلاً ذرت برزیل که از یک شرکت اماراتی خریده شده، «امارات» ثبت می‌شود). آمار گمرک با تأخیر زیاد منتشر می‌شود؛
+      برای ماه‌های اخیر، بخش «آمار کشورهای صادرکننده» پایین همین صفحه را ببینید.
+    </div>
+  </section>
+
+  <section class="panel" id="imports-panel" hidden>
+    <h2>آمار کشورهای صادرکننده (ماهانه)</h2>
+    <p class="meta" id="imports-meta"></p>
+    <p class="soon" id="imports-empty" hidden></p>
+    <div id="imports-body">
+    <div class="tiles" id="tiles"></div>
+
+    <h3 class="chart-title">مقدار واردات گزارش‌شده در هر ماه (هزار تن)</h3>
+    <div class="legend" id="vol-legend"></div>
+    <div class="chart-box small"><canvas id="vol-chart" dir="ltr" role="img" aria-label="مقدار واردات ماهانه"></canvas></div>
+
+    <h3 class="chart-title">میانگین قیمت صادرات به ایران در برابر قیمت جهانی (دلار بر تن)</h3>
+    <div class="legend" id="price-legend"></div>
+    <div class="chart-box small"><canvas id="price-chart" dir="ltr" role="img" aria-label="قیمت صادرات به ایران و قیمت جهانی"></canvas></div>
+    <p class="meta" id="price-note"></p>
+
+    <details style="margin-top:12px">
+      <summary>جدول کشورها (12 ماه اخیر)</summary>
+      <div class="table-scroll" id="country-table"></div>
+    </details>
+
+    <div class="caveat" id="caveat"></div>
+    </div>
+  </section>
+
+  <footer>
+    آمار گمرک: <a href="https://service.tccim.ir/stats" target="_blank" rel="noopener">سامانه‌ی آمار اتاق بازرگانی تهران</a>. ·
+    آمار کشورهای صادرکننده: <a href="https://comtradeplus.un.org/" target="_blank" rel="noopener">UN Comtrade</a>
+    (ارزش FOB صادرکننده). · قیمت جهانی: FRED / IMF.
+  </footer>
+</div>
+
+<script>
+const SERIES = ["#2A78D6", "#EB6834", "#1BAF7A"]; // سه کشور اول؛ ترتیب ثابت
+const OTHER = "#B5B3AC";
+const MIN_SHARE_OF_TYPICAL_MONTH = 0.05; // ماه‌های خیلی کم‌حجم در نمودار قیمت نمی‌آیند
+const state = { imports: null, prices: null, customs: null, charts: {} };
+
+// ---------- آمار گمرک ----------
+const yearLabel = (y) => `${y} (مارس ${y + 621} تا مارس ${y + 622})`;
+
+function groupSum(rows, key) {
+  const m = {};
+  rows.forEach((r) => {
+    const k = typeof key === "function" ? key(r) : r[key];
+    const x = m[k] ||= { tons: 0, usd: 0 };
+    x.tons += r.tons; x.usd += r.usd;
+  });
+  return Object.entries(m).sort((a, b) => b[1].tons - a[1].tons);
+}
+
+function barList(title, entries, total, limit = 6) {
+  const shown = entries.slice(0, limit);
+  const rest = entries.slice(limit);
+  if (rest.length) shown.push(["سایر", rest.reduce((a, [, x]) => ({ tons: a.tons + x.tons, usd: a.usd + x.usd }), { tons: 0, usd: 0 })]);
+  return `<div><h3>${esc(title)}</h3><ul class="bars">${shown.map(([name, x]) => {
+    const share = total ? (x.tons / total) * 100 : 0;
+    return `<li><span class="name" title="${esc(name)}">${esc(name)}</span>
+      <span class="track"><span class="fill" style="display:block;width:${share.toFixed(1)}%"></span></span>
+      <span class="val">${num(fmt(share, 1) + "%")} · ${num(fmt(x.tons))} تن${x.tons ? " · " + num(fmt(x.usd / x.tons)) + " دلار/تن" : ""}</span></li>`;
+  }).join("")}</ul></div>`;
+}
+
+function renderCustoms(sel) {
+  const c = state.customs?.commodities.find((x) => x.hs === sel.customs_hs);
+  if (!c) {
+    document.getElementById("customs-years").innerHTML = `<p class="soon">برای این کالا آمار گمرک تعریف نشده است.</p>`;
+    document.getElementById("customs-breakdown").innerHTML = "";
+    return;
+  }
+  const years = groupSum(c.rows, "year").map(([y, x]) => [+y, x]).sort((a, b) => a[0] - b[0]);
+  if (!years.length) {
+    document.getElementById("customs-years").innerHTML = `<p class="soon">برای این کالا داده‌ای منتشر نشده است.</p>`;
+    document.getElementById("customs-breakdown").innerHTML = "";
+    return;
+  }
+  document.getElementById("customs-years").innerHTML = `<table>
+    <thead><tr><th>سال</th><th>مقدار (تن)</th><th>ارزش (دلار)</th><th>میانگین (دلار/تن)</th><th>تغییر مقدار نسبت به سال قبل</th></tr></thead>
+    <tbody>${years.slice().reverse().map(([y, x], i, arr) => {
+      const prev = arr[i + 1]?.[1];
+      const ch = prev && prev.tons ? ((x.tons - prev.tons) / prev.tons) * 100 : null;
+      return `<tr><td>${yearLabel(y)}</td><td class="num">${fmt(x.tons)}</td><td class="num">${fmt(x.usd)}</td>
+        <td class="num">${x.tons ? fmt(x.usd / x.tons) : "—"}</td>
+        <td class="num">${ch == null ? "—" : (ch > 0 ? "▲ " : ch < 0 ? "▼ " : "") + fmt(Math.abs(ch), 1) + "%"}</td></tr>`;
+    }).join("")}</tbody></table>`;
+
+  const [lastYear, lastTotal] = years[years.length - 1];
+  const rows = c.rows.filter((r) => r.year === lastYear);
+  document.getElementById("customs-breakdown").innerHTML =
+    `<p class="meta" style="grid-column:1/-1;margin:8px 0 0">جزئیات سال ${lastYear}:</p>` +
+    barList("کشور طرف معامله", groupSum(rows, "country"), lastTotal.tons) +
+    barList("گمرک ورودی", groupSum(rows, "customs"), lastTotal.tons, 5) +
+    barList("نوع کالا (کد تعرفه)", groupSum(rows, (r) => `${r.code} — ${r.desc}`), lastTotal.tons, 5);
+}
+// ---------- واردات ----------
+function renderImports(sel) {
+  const c = sel.mirror_hs && state.imports?.commodities.find((x) => x.hs === sel.mirror_hs);
+  const has = !!(c && c.rows.length);
+  document.getElementById("imports-body").hidden = !has;
+  document.getElementById("imports-empty").hidden = has;
+  if (!has) {
+    document.getElementById("imports-empty").innerHTML =
+      `برای ${esc(sel.name_fa)} این آمار پوشش کافی ندارد: بیشتر این کالا از راه کشورهای واسطه (به‌ویژه امارات) وارد می‌شود ` +
+      `و کشور تولیدکننده آن را «صادرات به ایران» ثبت نمی‌کند. فعلاً فقط برای ذرت و برنج نمایش داده می‌شود.`;
+    return;
+  }
+  const rows = c.rows;
+
+  const last = rows.reduce((m, r) => (r.period > m ? r.period : m), "");
+  const months = monthRange(state.imports.start, last);
+  const recent = (r) => r.period > shiftMonth(last, -12);
+
+  // کشورها به ترتیب کل واردات (ثابت، تا رنگ هر کشور با تغییر بازه عوض نشود)
+  const totals = {};
+  rows.forEach((r) => { totals[r.country_fa] = (totals[r.country_fa] || 0) + (r.tons || 0); });
+  const top = Object.keys(totals).sort((a, b) => totals[b] - totals[a]).slice(0, 3);
+
+  // کاشی‌ها: 12 ماه اخیر
+  const r12 = rows.filter(recent);
+  const tons12 = r12.reduce((s, r) => s + (r.tons || 0), 0);
+  const priced = r12.filter((r) => r.tons);
+  const avg12 = priced.reduce((s, r) => s + r.usd, 0) / priced.reduce((s, r) => s + r.tons, 0);
+  const by12 = {};
+  r12.forEach((r) => { by12[r.country_fa] = (by12[r.country_fa] || 0) + (r.tons || 0); });
+  const lead = Object.keys(by12).sort((a, b) => by12[b] - by12[a])[0];
+  const global = globalByMonth(c.fred_id);
+  const g12 = months.filter((p) => p > shiftMonth(last, -12) && global[p] != null).map((p) => global[p]);
+  const gAvg = g12.length ? g12.reduce((a, b) => a + b, 0) / g12.length : null;
+  document.getElementById("tiles").innerHTML = `
+    <div class="tile"><div class="label">واردات گزارش‌شده، 12 ماه اخیر</div>
+      <div class="value">${num(fmt(tons12 / 1000))} <small>هزار تن</small></div>
+      <div class="hint">تا ${monthLabel(last)}</div></div>
+    <div class="tile"><div class="label">بزرگ‌ترین صادرکننده (12 ماه اخیر)</div>
+      <div class="value">${esc(lead || "—")}</div>
+      <div class="hint">${lead ? num(fmt((by12[lead] / tons12) * 100, 1) + "%") + " از مقدار گزارش‌شده" : ""}</div></div>
+    <div class="tile"><div class="label">میانگین قیمت صادرات به ایران (12 ماه اخیر)</div>
+      <div class="value">${num(isFinite(avg12) ? fmt(avg12) : "—")} <small>دلار بر تن</small></div>
+      <div class="hint">${gAvg ? "میانگین قیمت جهانی همان ماه‌ها: " + num(fmt(gAvg)) : ""}</div></div>`;
+
+  // نمودار مقدار: سه کشور اول + سایر
+  const series = [...top.map((name, i) => ({ name, color: SERIES[i] })), { name: "سایر", color: OTHER }];
+  const volData = series.map((s) => months.map((p) => {
+    const t = rows.filter((r) => r.period === p && (s.name === "سایر" ? !top.includes(r.country_fa) : r.country_fa === s.name))
+      .reduce((a, r) => a + (r.tons || 0), 0);
+    return t ? t / 1000 : null;
+  }));
+  document.getElementById("vol-legend").innerHTML = series.map((s) =>
+    `<span><i style="background:${s.color};height:10px;width:10px"></i>${esc(s.name)}</span>`).join("");
+  draw("vol", {
+    type: "bar",
+    data: { labels: months, datasets: series.map((s, i) => ({
+      label: s.name, data: volData[i], backgroundColor: s.color, borderColor: "#fcfcfb", borderWidth: 1,
+      borderRadius: 2, stack: "v", maxBarThickness: 22 })) },
+    options: (() => {
+      const o = baseOptions((v) => fmt(v), (it) => `${it.dataset.label}: ${fmt(it.parsed.y, 1)} هزار تن`);
+      o.scales.x.stacked = true; o.scales.y.stacked = true;
+      return o;
+    })(),
+  });
+
+  // نمودار قیمت: میانگین وزنی قیمت صادرات به ایران در برابر قیمت جهانی
+  const monthTons = months.map((p) => rows.filter((r) => r.period === p).reduce((a, r) => a + (r.tons || 0), 0));
+  const sorted = monthTons.filter((t) => t > 0).sort((a, b) => a - b);
+  const minTons = (sorted[Math.floor(sorted.length / 2)] || 0) * MIN_SHARE_OF_TYPICAL_MONTH;
+  const iranPrice = months.map((p, i) => {
+    if (!monthTons[i] || monthTons[i] < minTons) return null;
+    const m = rows.filter((r) => r.period === p && r.tons);
+    return m.reduce((a, r) => a + r.usd, 0) / m.reduce((a, r) => a + r.tons, 0);
+  });
+  document.getElementById("price-note").innerHTML =
+    `ماه‌هایی که کمتر از ${num(fmt(minTons))} تن (5% یک ماه معمولی) گزارش شده در نمودار قیمت نیامده‌اند، چون محموله‌های کوچک قیمت هر تن را نامعتبر می‌کنند.`;
+  const priceSeries = [
+    { name: "صادرات به ایران (میانگین)", color: SERIES[0], data: iranPrice },
+    { name: "قیمت جهانی (IMF)", color: "#52514e", data: months.map((p) => global[p] ?? null) },
+  ];
+  document.getElementById("price-legend").innerHTML = priceSeries.map((s) =>
+    `<span><i style="background:${s.color}"></i>${esc(s.name)}</span>`).join("");
+  draw("price", {
+    type: "line",
+    data: { labels: months, datasets: priceSeries.map((s, i) => ({
+      label: s.name, data: s.data, borderColor: s.color, backgroundColor: s.color,
+      borderWidth: 2, borderDash: i === 1 ? [5, 4] : [], pointRadius: i === 0 ? 3 : 0, pointHoverRadius: 5,
+      spanGaps: false, tension: 0 })) },
+    options: baseOptions((v) => fmt(v), (it) => `${it.dataset.label}: ${fmt(it.parsed.y)} دلار بر تن`),
+  });
+
+  // جدول کشورها
+  const rowsByCountry = {};
+  r12.forEach((r) => {
+    const x = rowsByCountry[r.country_fa] ||= { tons: 0, usd: 0, pricedTons: 0, pricedUsd: 0 };
+    x.tons += r.tons || 0; x.usd += r.usd;
+    if (r.tons) { x.pricedTons += r.tons; x.pricedUsd += r.usd; }
+  });
+  const list = Object.entries(rowsByCountry).sort((a, b) => b[1].tons - a[1].tons);
+  document.getElementById("country-table").innerHTML = `<table>
+    <thead><tr><th>کشور</th><th>مقدار (تن)</th><th>سهم</th><th>ارزش (دلار)</th><th>میانگین (دلار/تن)</th></tr></thead>
+    <tbody>${list.map(([name, x]) => `<tr><td>${esc(name)}</td><td class="num">${fmt(x.tons)}</td>
+      <td class="num">${tons12 ? fmt((x.tons / tons12) * 100, 1) + "%" : "—"}</td><td class="num">${fmt(x.usd)}</td>
+      <td class="num">${x.pricedTons ? fmt(x.pricedUsd / x.pricedTons) : "—"}</td></tr>`).join("")}</tbody></table>`;
+
+  document.getElementById("caveat").innerHTML =
+    `<b>توجه:</b> این آمار از گزارش کشورهای صادرکننده است، نه گمرک ایران؛ کالایی که از راه کشور واسطه (مثلاً امارات) ` +
+    `یا از کشوری که گزارش نمی‌دهد (مثلاً روسیه) وارد شده، اینجا دیده نمی‌شود. ماه‌های اخیر ممکن است هنوز کامل نباشند. ` +
+    esc(c.note || "");
+}
+
+function globalByMonth(fredId) {
+  const c = state.prices?.commodities.find((x) => x.fred_id === fredId);
+  return c ? Object.fromEntries(c.series.map((r) => [r.date.slice(0, 7), r.usd_per_ton])) : {};
+}
+
+function draw(key, config) {
+  if (state.charts[key]) state.charts[key].destroy();
+  state.charts[key] = new Chart(document.getElementById(key + "-chart"), { ...config, plugins: [crosshair] });
+}
+// ---------- شروع ----------
+async function init() {
+  Chart.defaults.font.family = '"Vazirmatn", system-ui, sans-serif';
+  const [imports, prices, customs, config] = await Promise.allSettled(
+    ["data/iran-imports.json", "data/prices.json", "data/iran-customs.json", "config/iran_signals.json"].map(getJson));
+  const ok = (r) => (r.status === "fulfilled" ? r.value : null);
+  Object.assign(state, { imports: ok(imports), prices: ok(prices), customs: ok(customs) });
+  if (!ok(config)) return;
+
+  if (state.customs) {
+    const yrs = state.customs.commodities.flatMap((c) => c.rows.map((r) => r.year));
+    document.getElementById("customs-meta").innerHTML =
+      `منبع: گمرک ایران، از سامانه‌ی آمار اتاق بازرگانی تهران · آخرین سال منتشرشده: ${yrs.length ? yearLabel(Math.max(...yrs)) : "—"}` +
+      ` · به‌روزرسانی: ${num((state.customs.last_updated || "").slice(0, 10))}`;
+    document.getElementById("customs-panel").hidden = false;
+  }
+  if (state.imports) {
+    document.getElementById("imports-meta").innerHTML =
+      `منبع: UN Comtrade · به‌روزرسانی: ${num((state.imports.last_updated || "").slice(0, 10))}`;
+    document.getElementById("imports-panel").hidden = false;
+  }
+  setupPicker(ok(config).commodities, (sel) => {
+    if (state.customs) renderCustoms(sel);
+    if (state.imports) renderImports(sel);
+  });
+}
+document.fonts?.ready.then(init) ?? init();
+</script>
+</body>
+</html>

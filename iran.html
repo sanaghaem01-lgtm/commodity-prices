@@ -7,50 +7,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <link rel="stylesheet" href="style.css">
-<style>
-  .fa-news { list-style: none; padding: 0; margin: 0; }
-  .fa-news li { padding: 10px 0; border-bottom: 1px solid var(--grid); }
-  .fa-news li:last-child { border-bottom: 0; }
-  .fa-news a { color: var(--ink); text-decoration: none; font-weight: 500; }
-  .fa-news a:hover, .fa-news a:focus-visible { text-decoration: underline; }
-  .fa-news .news-src { display: block; color: var(--muted); font-size: 0.82rem; }
-  .soon { color: var(--ink-2); font-size: 0.92rem; margin: 0; }
-
-  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin: 12px 0 16px; }
-  .tile { border: 1px solid var(--border); border-radius: 10px; padding: 12px; background: var(--page); }
-  .tile .label { color: var(--ink-2); font-size: 0.85rem; }
-  .tile .value { font-size: 1.5rem; font-weight: 700; line-height: 1.3; }
-  .tile .value small { font-size: 0.8rem; font-weight: 400; color: var(--ink-2); }
-  .tile .hint { color: var(--muted); font-size: 0.8rem; }
-  h3.chart-title { font-size: 1rem; margin: 20px 0 6px; }
-  .chart-box.small { height: 300px; }
-  .caveat { background: var(--note-bg); border: 1px solid var(--note-border); border-radius: 10px;
-            padding: 10px 14px; font-size: 0.9rem; margin: 12px 0 0; }
-  #imports-panel[hidden], #customs-panel[hidden], #signals-panel[hidden] { display: none; }
-  .signal-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 14px; margin-top: 14px; }
-  .sig { border: 1px solid var(--border); border-radius: 10px; padding: 14px; background: var(--page); }
-  .sig h3 { font-size: 0.98rem; margin: 0 0 8px; }
-  .sig .big { font-size: 1.4rem; font-weight: 700; line-height: 1.3; }
-  .sig .big small { font-size: 0.8rem; font-weight: 400; color: var(--ink-2); }
-  .sig p { margin: 4px 0; font-size: 0.9rem; }
-  .sig .muted { color: var(--muted); font-size: 0.8rem; }
-  .sig ul { list-style: none; padding: 0; margin: 6px 0 0; font-size: 0.88rem; }
-  .sig ul li { padding: 5px 0; border-bottom: 1px solid var(--grid); }
-  .sig ul li:last-child { border-bottom: 0; }
-  .sig a { color: var(--ink); }
-  .ev.rel { font-weight: 700; }
-  .chip { display: inline-block; font-size: 0.75rem; padding: 0 6px; border-radius: 10px; background: #dbe8f8; color: #184f95; margin-inline-start: 4px; }
-  .breakdown { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; margin-top: 8px; }
-  .breakdown h3 { font-size: 0.95rem; margin: 0 0 8px; color: var(--ink-2); }
-  .bars { list-style: none; padding: 0; margin: 0; font-size: 0.88rem; }
-  .bars li { display: grid; grid-template-columns: minmax(6rem, 10rem) minmax(48px, 1fr); gap: 2px 8px; align-items: center; padding: 4px 0; }
-  .bars .name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-  .bars .track { background: var(--grid); border-radius: 2px; height: 8px; }
-  .bars .fill { background: #2A78D6; border-radius: 2px; height: 8px; }
-  .bars .val { grid-column: 1 / -1; color: var(--muted); font-size: 0.8rem; }
-</style>
+<script src="iran-common.js"></script>
 </head>
 <body>
 <div class="wrap">
@@ -58,15 +16,18 @@
     <nav class="nav" aria-label="صفحه‌ها">
       <a href="./">قیمت جهانی</a>
       <a href="iran.html" aria-current="page">بازار ایران</a>
+      <a href="iran-imports.html">آمار واردات ایران</a>
     </nav>
     <h1>بازار ایران</h1>
+    <p class="meta">نمای سریع: الان در بازار ایران چه خبر است؟ کالا را از دکمه‌های زیر انتخاب کنید.</p>
   </header>
 
-  <section class="panel" id="signals-panel" style="margin-top:20px" hidden>
-    <h2>نشانه‌های بازار ایران</h2>
+  <div class="seg page-pick" id="pick" role="group" aria-label="انتخاب کالا"></div>
+
+  <section class="panel" id="signals-panel" style="margin-top:12px" hidden>
+    <h2>نشانه‌های بازار</h2>
     <p class="meta">چهار نشانه که معمولاً همراه کمبود یا تغییر بازار دیده می‌شوند، کنار هم.
       این بخش پیش‌بینی یا توصیه‌ی خرید نیست؛ تصمیم با تیم است.</p>
-    <div class="seg" id="pick-signal" role="group" aria-label="انتخاب کالا"></div>
     <div class="signal-grid">
       <div class="sig" id="sig-flow"></div>
       <div class="sig" id="sig-news"></div>
@@ -75,240 +36,22 @@
     </div>
   </section>
 
-  <section class="panel" id="imports-panel" hidden>
-    <h2>واردات ایران (آمار کشورهای صادرکننده)</h2>
-    <p class="meta" id="imports-meta"></p>
-    <div class="seg" id="pick-import" role="group" aria-label="انتخاب کالا"></div>
-    <div class="tiles" id="tiles"></div>
-
-    <h3 class="chart-title">مقدار واردات گزارش‌شده در هر ماه (هزار تن)</h3>
-    <div class="legend" id="vol-legend"></div>
-    <div class="chart-box small"><canvas id="vol-chart" dir="ltr" role="img" aria-label="مقدار واردات ماهانه"></canvas></div>
-
-    <h3 class="chart-title">میانگین قیمت صادرات به ایران در برابر قیمت جهانی (دلار بر تن)</h3>
-    <div class="legend" id="price-legend"></div>
-    <div class="chart-box small"><canvas id="price-chart" dir="ltr" role="img" aria-label="قیمت صادرات به ایران و قیمت جهانی"></canvas></div>
-    <p class="meta" id="price-note"></p>
-
-    <details style="margin-top:12px">
-      <summary>جدول کشورها (12 ماه اخیر)</summary>
-      <div class="table-scroll" id="country-table"></div>
-    </details>
-
-    <div class="caveat" id="caveat"></div>
-  </section>
-
-  <section class="panel" id="customs-panel" hidden>
-    <h2>آمار گمرک ایران</h2>
-    <p class="meta" id="customs-meta"></p>
-    <div class="seg" id="pick-customs" role="group" aria-label="انتخاب کالا"></div>
-    <div class="table-scroll" id="customs-years" style="margin-top:12px"></div>
-    <div class="breakdown" id="customs-breakdown"></div>
-    <div class="caveat">
-      <b>توجه:</b> «کشور» در آمار گمرک <b>کشور طرف معامله</b> است، نه لزوماً کشور تولیدکننده
-      (مثلاً ذرت برزیل که از یک شرکت اماراتی خریده شده، «امارات» ثبت می‌شود). آمار گمرک با تأخیر زیاد منتشر می‌شود؛
-      برای ماه‌های اخیر، بخش «واردات ایران (آمار کشورهای صادرکننده)» بالای همین صفحه را ببینید.
-    </div>
-  </section>
-
-  <section class="panel" id="news-panel">
+  <section class="panel" id="news-panel" hidden>
     <h2>اخبار واردات، گمرک و کالاهای اساسی</h2>
     <p class="meta" id="news-meta"></p>
     <div id="news"></div>
   </section>
 
-  <section class="panel">
-    <h2>به‌زودی</h2>
-    <p class="soon">آمار ماهانه‌ی گمرک (برای سال‌هایی که منتشر شده) و کالاهای بیشتر.</p>
-  </section>
-
   <footer>
-    آمار گمرک: <a href="https://service.tccim.ir/stats" target="_blank" rel="noopener">سامانه‌ی آمار اتاق بازرگانی تهران</a>. ·
-    آمار واردات: <a href="https://comtradeplus.un.org/" target="_blank" rel="noopener">UN Comtrade</a> —
-    صادراتی که کشورهای دیگر به مقصد ایران گزارش کرده‌اند (ارزش FOB صادرکننده).
-    قیمت جهانی: FRED / IMF.
+    جزئیات واردات هر کالا (کشورها، گمرکات، قیمت هر تن): صفحه‌ی <a href="iran-imports.html">آمار واردات ایران</a>. ·
     تیتر خبرها از خبرخوان دنیای اقتصاد، ایسنا، مهر، ایرنا و خبرآنلاین و هر چند ساعت به‌روز می‌شود.
-    · <a href="./">بازگشت به قیمت جهانی</a>
   </footer>
 </div>
 
 <script>
-const MONTHS_FA = ["ژانویه", "فوریه", "مارس", "آوریل", "مه", "ژوئن", "ژوئیه", "اوت", "سپتامبر", "اکتبر", "نوامبر", "دسامبر"];
-const SERIES = ["#2A78D6", "#EB6834", "#1BAF7A"]; // سه کشور اول؛ ترتیب ثابت
-const OTHER = "#B5B3AC";
-const MIN_SHARE_OF_TYPICAL_MONTH = 0.05; // ماه‌های خیلی کم‌حجم در نمودار قیمت نمی‌آیند
-
-const esc = (s) => String(s).replace(/[&<>"]/g, (ch) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch]));
-const num = (s) => `<span class="num">${s}</span>`;
-const fmt = (v, d = 0) => v.toLocaleString("en-US", { maximumFractionDigits: d, minimumFractionDigits: d });
-const monthLabel = (p) => `${MONTHS_FA[+p.slice(5, 7) - 1]} ${p.slice(0, 4)}`;
-const state = { imports: null, prices: null, hs: null, customs: null, customsHs: null, charts: {} };
-
-function shiftMonth(p, n) {
-  const d = new Date(Date.UTC(+p.slice(0, 4), +p.slice(5, 7) - 1 + n, 1));
-  return d.toISOString().slice(0, 7);
-}
-function monthRange(from, to) {
-  const out = [];
-  for (let p = from; p <= to; p = shiftMonth(p, 1)) out.push(p);
-  return out;
-}
-
-const crosshair = {
-  id: "crosshair",
-  afterDatasetsDraw(chart) {
-    const a = chart.tooltip?.getActiveElements?.();
-    if (!a || !a.length) return;
-    const { ctx, chartArea } = chart;
-    ctx.save(); ctx.strokeStyle = "#c3c2b7"; ctx.lineWidth = 1;
-    ctx.beginPath(); ctx.moveTo(a[0].element.x, chartArea.top); ctx.lineTo(a[0].element.x, chartArea.bottom); ctx.stroke();
-    ctx.restore();
-  },
-};
-
-function baseOptions(yFmt, tooltipLabel) {
-  return {
-    maintainAspectRatio: false, animation: false,
-    interaction: { mode: "index", intersect: false },
-    plugins: {
-      legend: { display: false },
-      tooltip: {
-        rtl: true, textDirection: "rtl",
-        backgroundColor: "#ffffff", titleColor: "#0b0b0b", bodyColor: "#52514e",
-        borderColor: "rgba(11,11,11,0.15)", borderWidth: 1, padding: 10, boxPadding: 4,
-        filter: (it) => it.parsed.y != null,
-        callbacks: { title: (it) => monthLabel(it[0].label), label: tooltipLabel },
-      },
-    },
-    scales: {
-      x: { grid: { display: false }, border: { color: "#c3c2b7" },
-           ticks: { color: "#898781", maxRotation: 0, autoSkipPadding: 16, callback(v) { return this.getLabelForValue(v).replace("-", "/"); } } },
-      y: { position: "right", grid: { color: "#e1e0d9" }, border: { display: false },
-           ticks: { color: "#898781", callback: yFmt } },
-    },
-  };
-}
-
-// ---------- واردات ----------
-function renderImports() {
-  const c = state.imports.commodities.find((x) => x.hs === state.hs);
-  const rows = c.rows;
-  document.querySelectorAll("#pick-import button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.hs === c.hs)));
-  if (!rows.length) { document.getElementById("tiles").innerHTML = `<p class="soon">داده‌ای نیست.</p>`; return; }
-
-  const last = rows.reduce((m, r) => (r.period > m ? r.period : m), "");
-  const months = monthRange(state.imports.start, last);
-  const recent = (r) => r.period > shiftMonth(last, -12);
-
-  // کشورها به ترتیب کل واردات (ثابت، تا رنگ هر کشور با تغییر بازه عوض نشود)
-  const totals = {};
-  rows.forEach((r) => { totals[r.country_fa] = (totals[r.country_fa] || 0) + (r.tons || 0); });
-  const top = Object.keys(totals).sort((a, b) => totals[b] - totals[a]).slice(0, 3);
-
-  // کاشی‌ها: 12 ماه اخیر
-  const r12 = rows.filter(recent);
-  const tons12 = r12.reduce((s, r) => s + (r.tons || 0), 0);
-  const priced = r12.filter((r) => r.tons);
-  const avg12 = priced.reduce((s, r) => s + r.usd, 0) / priced.reduce((s, r) => s + r.tons, 0);
-  const by12 = {};
-  r12.forEach((r) => { by12[r.country_fa] = (by12[r.country_fa] || 0) + (r.tons || 0); });
-  const lead = Object.keys(by12).sort((a, b) => by12[b] - by12[a])[0];
-  const global = globalByMonth(c.fred_id);
-  const g12 = months.filter((p) => p > shiftMonth(last, -12) && global[p] != null).map((p) => global[p]);
-  const gAvg = g12.length ? g12.reduce((a, b) => a + b, 0) / g12.length : null;
-  document.getElementById("tiles").innerHTML = `
-    <div class="tile"><div class="label">واردات گزارش‌شده، 12 ماه اخیر</div>
-      <div class="value">${num(fmt(tons12 / 1000))} <small>هزار تن</small></div>
-      <div class="hint">تا ${monthLabel(last)}</div></div>
-    <div class="tile"><div class="label">بزرگ‌ترین صادرکننده (12 ماه اخیر)</div>
-      <div class="value">${esc(lead || "—")}</div>
-      <div class="hint">${lead ? num(fmt((by12[lead] / tons12) * 100, 1) + "%") + " از مقدار گزارش‌شده" : ""}</div></div>
-    <div class="tile"><div class="label">میانگین قیمت صادرات به ایران (12 ماه اخیر)</div>
-      <div class="value">${num(isFinite(avg12) ? fmt(avg12) : "—")} <small>دلار بر تن</small></div>
-      <div class="hint">${gAvg ? "میانگین قیمت جهانی همان ماه‌ها: " + num(fmt(gAvg)) : ""}</div></div>`;
-
-  // نمودار مقدار: سه کشور اول + سایر
-  const series = [...top.map((name, i) => ({ name, color: SERIES[i] })), { name: "سایر", color: OTHER }];
-  const volData = series.map((s) => months.map((p) => {
-    const t = rows.filter((r) => r.period === p && (s.name === "سایر" ? !top.includes(r.country_fa) : r.country_fa === s.name))
-      .reduce((a, r) => a + (r.tons || 0), 0);
-    return t ? t / 1000 : null;
-  }));
-  document.getElementById("vol-legend").innerHTML = series.map((s) =>
-    `<span><i style="background:${s.color};height:10px;width:10px"></i>${esc(s.name)}</span>`).join("");
-  draw("vol", {
-    type: "bar",
-    data: { labels: months, datasets: series.map((s, i) => ({
-      label: s.name, data: volData[i], backgroundColor: s.color, borderColor: "#fcfcfb", borderWidth: 1,
-      borderRadius: 2, stack: "v", maxBarThickness: 22 })) },
-    options: (() => {
-      const o = baseOptions((v) => fmt(v), (it) => `${it.dataset.label}: ${fmt(it.parsed.y, 1)} هزار تن`);
-      o.scales.x.stacked = true; o.scales.y.stacked = true;
-      return o;
-    })(),
-  });
-
-  // نمودار قیمت: میانگین وزنی قیمت صادرات به ایران در برابر قیمت جهانی
-  const monthTons = months.map((p) => rows.filter((r) => r.period === p).reduce((a, r) => a + (r.tons || 0), 0));
-  const sorted = monthTons.filter((t) => t > 0).sort((a, b) => a - b);
-  const minTons = (sorted[Math.floor(sorted.length / 2)] || 0) * MIN_SHARE_OF_TYPICAL_MONTH;
-  const iranPrice = months.map((p, i) => {
-    if (!monthTons[i] || monthTons[i] < minTons) return null;
-    const m = rows.filter((r) => r.period === p && r.tons);
-    return m.reduce((a, r) => a + r.usd, 0) / m.reduce((a, r) => a + r.tons, 0);
-  });
-  document.getElementById("price-note").innerHTML =
-    `ماه‌هایی که کمتر از ${num(fmt(minTons))} تن (5% یک ماه معمولی) گزارش شده در نمودار قیمت نیامده‌اند، چون محموله‌های کوچک قیمت هر تن را نامعتبر می‌کنند.`;
-  const priceSeries = [
-    { name: "صادرات به ایران (میانگین)", color: SERIES[0], data: iranPrice },
-    { name: "قیمت جهانی (IMF)", color: "#52514e", data: months.map((p) => global[p] ?? null) },
-  ];
-  document.getElementById("price-legend").innerHTML = priceSeries.map((s) =>
-    `<span><i style="background:${s.color}"></i>${esc(s.name)}</span>`).join("");
-  draw("price", {
-    type: "line",
-    data: { labels: months, datasets: priceSeries.map((s, i) => ({
-      label: s.name, data: s.data, borderColor: s.color, backgroundColor: s.color,
-      borderWidth: 2, borderDash: i === 1 ? [5, 4] : [], pointRadius: i === 0 ? 3 : 0, pointHoverRadius: 5,
-      spanGaps: false, tension: 0 })) },
-    options: baseOptions((v) => fmt(v), (it) => `${it.dataset.label}: ${fmt(it.parsed.y)} دلار بر تن`),
-  });
-
-  // جدول کشورها
-  const rowsByCountry = {};
-  r12.forEach((r) => {
-    const x = rowsByCountry[r.country_fa] ||= { tons: 0, usd: 0, pricedTons: 0, pricedUsd: 0 };
-    x.tons += r.tons || 0; x.usd += r.usd;
-    if (r.tons) { x.pricedTons += r.tons; x.pricedUsd += r.usd; }
-  });
-  const list = Object.entries(rowsByCountry).sort((a, b) => b[1].tons - a[1].tons);
-  document.getElementById("country-table").innerHTML = `<table>
-    <thead><tr><th>کشور</th><th>مقدار (تن)</th><th>سهم</th><th>ارزش (دلار)</th><th>میانگین (دلار/تن)</th></tr></thead>
-    <tbody>${list.map(([name, x]) => `<tr><td>${esc(name)}</td><td class="num">${fmt(x.tons)}</td>
-      <td class="num">${tons12 ? fmt((x.tons / tons12) * 100, 1) + "%" : "—"}</td><td class="num">${fmt(x.usd)}</td>
-      <td class="num">${x.pricedTons ? fmt(x.pricedUsd / x.pricedTons) : "—"}</td></tr>`).join("")}</tbody></table>`;
-
-  document.getElementById("caveat").innerHTML =
-    `<b>توجه:</b> این آمار از گزارش کشورهای صادرکننده است، نه گمرک ایران؛ کالایی که از راه کشور واسطه (مثلاً امارات) ` +
-    `یا از کشوری که گزارش نمی‌دهد (مثلاً روسیه) وارد شده، اینجا دیده نمی‌شود. ماه‌های اخیر ممکن است هنوز کامل نباشند. ` +
-    esc(c.note || "");
-}
-
-function globalByMonth(fredId) {
-  const c = state.prices?.commodities.find((x) => x.fred_id === fredId);
-  return c ? Object.fromEntries(c.series.map((r) => [r.date.slice(0, 7), r.usd_per_ton])) : {};
-}
-
-function draw(key, config) {
-  if (state.charts[key]) state.charts[key].destroy();
-  state.charts[key] = new Chart(document.getElementById(key + "-chart"), { ...config, plugins: [crosshair] });
-}
+const state = { imports: null, customs: null, signals: null, signalsConfig: null, demand: null };
 
 // ---------- نشانه‌های بازار ایران ----------
-const MONTHS_IR = ["فروردین", "اردیبهشت", "خرداد", "تیر", "مرداد", "شهریور", "مهر", "آبان", "آذر", "دی", "بهمن", "اسفند"];
-const DAY = 86400000;
-const dayLabel = (d, withYear = true) => `${+d.slice(8, 10)} ${MONTHS_FA[+d.slice(5, 7) - 1]}${withYear ? " " + d.slice(0, 4) : ""}`;
-const rangeLabel = (a, b) => `${dayLabel(a, a.slice(0, 4) !== b.slice(0, 4))} تا ${dayLabel(b)}`;
 
 function sigFlow(c) {
   const el = document.getElementById("sig-flow");
@@ -365,15 +108,19 @@ function sigDemand(c) {
   const upcoming = d.events.filter((e) => Date.parse(e.end) >= today && Date.parse(e.start) - today <= 365 * DAY)
     .sort((a, b) => a.start.localeCompare(b.start));
   el.innerHTML = `<h3>۳. تقویم تقاضای ایران (۱۲ ماه آینده)</h3>
-    <ul>${upcoming.map((e) => {
+    <ul>${upcoming.slice(0, 3).map(eventItem).join("")}</ul>
+    ${upcoming.length > 3 ? `<details><summary class="muted">نمایش همه (${num(upcoming.length)} رویداد)</summary>
+      <ul>${upcoming.slice(3).map(eventItem).join("")}</ul></details>` : ""}
+    <p class="muted">رویدادهای مرتبط با «${esc(c.name_fa)}» پررنگ‌اند. ${esc(d.lead_time)} ${esc(d.note)}</p>`;
+
+  function eventItem(e) {
       const rel = e.commodities.includes(c.key);
       const days = Math.round((Date.parse(e.start) - today) / DAY);
       const when = days <= 0 ? "در جریان" : `${num(days)} روز مانده`;
       return `<li class="ev${rel ? " rel" : ""}">${esc(e.name)}: ${rangeLabel(e.start, e.end)} · ${when}
         ${e.commodities.map((k) => `<span class="chip">${esc(names[k] || k)}</span>`).join("")}
         <div class="muted">${esc(e.note || "")}</div></li>`;
-    }).join("")}</ul>
-    <p class="muted">رویدادهای مرتبط با «${esc(c.name_fa)}» پررنگ‌اند. ${esc(d.lead_time)} ${esc(d.note)}</p>`;
+  }
 }
 
 function sigPattern(c) {
@@ -389,72 +136,21 @@ function sigPattern(c) {
   const total = rows.reduce((a, r) => a + r.tons, 0);
   const by = Array.from({ length: 12 }, (_, i) => rows.filter((r) => r.month === i + 1).reduce((a, r) => a + r.tons, 0));
   const max = Math.max(...by);
+  const peak = by.indexOf(max);
   el.innerHTML = `<h3>۴. الگوی ماهانه‌ی واردات ایران (گمرک، سال ${year})</h3>
-    <ul class="bars">${by.map((t, i) => `<li><span class="name">${MONTHS_IR[i]}</span>
-      <span class="track"><span class="fill" style="display:block;width:${max ? ((t / max) * 100).toFixed(1) : 0}%"></span></span>
-      <span class="val">${num(fmt(total ? (t / total) * 100 : 0, 1) + "%")} از واردات سال · ${num(fmt(t))} تن</span></li>`).join("")}</ul>
-    <p class="muted">فقط یک سال داده‌ی ماهانه منتشر شده؛ ممکن است الگوی همه‌ی سال‌ها نباشد. «کشور» و «ماه» طبق ثبت گمرک.</p>`;
+    <div class="cols" role="img" aria-label="سهم هر ماه از واردات سال ${year}">${by.map((t, i) => {
+      const share = total ? (t / total) * 100 : 0;
+      return `<div class="col" title="${MONTHS_IR[i]}: ${fmt(share, 1)}% از واردات سال (${fmt(t)} تن)">
+        <div class="bar" style="height:${max ? Math.max(2, (t / max) * 100).toFixed(1) : 0}%"></div>
+        <span>${MONTHS_IR[i].slice(0, 3)}</span></div>`;
+    }).join("")}</div>
+    <p>بیشترین واردات: <b>${MONTHS_IR[peak]}</b> (${num(fmt(total ? (max / total) * 100 : 0, 1) + "%")} از کل سال).</p>
+    <p class="muted">فقط یک سال داده‌ی ماهانه منتشر شده؛ ممکن است الگوی همه‌ی سال‌ها نباشد. برای جزئیات هر ماه، ماوس را روی ستون ببرید.</p>`;
 }
 
-function renderSignals() {
-  const c = state.signalsConfig.commodities.find((x) => x.key === state.signalKey);
-  document.querySelectorAll("#pick-signal button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.key === c.key)));
+function renderSignals(c) {
   sigFlow(c); sigNews(c); sigDemand(c); sigPattern(c);
 }
-
-// ---------- آمار گمرک ----------
-const yearLabel = (y) => `${y} (مارس ${y + 621} تا مارس ${y + 622})`;
-
-function groupSum(rows, key) {
-  const m = {};
-  rows.forEach((r) => {
-    const k = typeof key === "function" ? key(r) : r[key];
-    const x = m[k] ||= { tons: 0, usd: 0 };
-    x.tons += r.tons; x.usd += r.usd;
-  });
-  return Object.entries(m).sort((a, b) => b[1].tons - a[1].tons);
-}
-
-function barList(title, entries, total, limit = 6) {
-  const shown = entries.slice(0, limit);
-  const rest = entries.slice(limit);
-  if (rest.length) shown.push(["سایر", rest.reduce((a, [, x]) => ({ tons: a.tons + x.tons, usd: a.usd + x.usd }), { tons: 0, usd: 0 })]);
-  return `<div><h3>${esc(title)}</h3><ul class="bars">${shown.map(([name, x]) => {
-    const share = total ? (x.tons / total) * 100 : 0;
-    return `<li><span class="name" title="${esc(name)}">${esc(name)}</span>
-      <span class="track"><span class="fill" style="display:block;width:${share.toFixed(1)}%"></span></span>
-      <span class="val">${num(fmt(share, 1) + "%")} · ${num(fmt(x.tons))} تن${x.tons ? " · " + num(fmt(x.usd / x.tons)) + " دلار/تن" : ""}</span></li>`;
-  }).join("")}</ul></div>`;
-}
-
-function renderCustoms() {
-  const c = state.customs.commodities.find((x) => x.hs === state.customsHs);
-  document.querySelectorAll("#pick-customs button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.hs === c.hs)));
-  const years = groupSum(c.rows, "year").map(([y, x]) => [+y, x]).sort((a, b) => a[0] - b[0]);
-  if (!years.length) {
-    document.getElementById("customs-years").innerHTML = `<p class="soon">برای این کالا داده‌ای منتشر نشده است.</p>`;
-    document.getElementById("customs-breakdown").innerHTML = "";
-    return;
-  }
-  document.getElementById("customs-years").innerHTML = `<table>
-    <thead><tr><th>سال</th><th>مقدار (تن)</th><th>ارزش (دلار)</th><th>میانگین (دلار/تن)</th><th>تغییر مقدار نسبت به سال قبل</th></tr></thead>
-    <tbody>${years.slice().reverse().map(([y, x], i, arr) => {
-      const prev = arr[i + 1]?.[1];
-      const ch = prev && prev.tons ? ((x.tons - prev.tons) / prev.tons) * 100 : null;
-      return `<tr><td>${yearLabel(y)}</td><td class="num">${fmt(x.tons)}</td><td class="num">${fmt(x.usd)}</td>
-        <td class="num">${x.tons ? fmt(x.usd / x.tons) : "—"}</td>
-        <td class="num">${ch == null ? "—" : (ch > 0 ? "▲ " : ch < 0 ? "▼ " : "") + fmt(Math.abs(ch), 1) + "%"}</td></tr>`;
-    }).join("")}</tbody></table>`;
-
-  const [lastYear, lastTotal] = years[years.length - 1];
-  const rows = c.rows.filter((r) => r.year === lastYear);
-  document.getElementById("customs-breakdown").innerHTML =
-    `<p class="meta" style="grid-column:1/-1;margin:8px 0 0">جزئیات سال ${lastYear}:</p>` +
-    barList("کشور طرف معامله", groupSum(rows, "country"), lastTotal.tons) +
-    barList("گمرک ورودی", groupSum(rows, "customs"), lastTotal.tons, 5) +
-    barList("نوع کالا (کد تعرفه)", groupSum(rows, (r) => `${r.code} — ${r.desc}`), lastTotal.tons, 5);
-}
-
 // ---------- اخبار فارسی ----------
 function renderNews(news) {
   document.getElementById("news-meta").innerHTML =
@@ -467,72 +163,18 @@ function renderNews(news) {
         <span class="news-src">${esc(n.source)} · ${num(esc(n.date.slice(0, 10)))}</span></li>`).join("")}</ul>`
     : `<p class="soon">هنوز خبر مرتبطی جمع نشده است.</p>`;
 }
-
 // ---------- شروع ----------
-async function getJson(path) {
-  const res = await fetch(path, { cache: "no-cache" });
-  if (!res.ok) throw new Error("HTTP " + res.status);
-  return res.json();
-}
-
 async function init() {
-  Chart.defaults.font.family = '"Vazirmatn", system-ui, sans-serif';
-  const [imports, prices, news, customs, signals, signalsConfig, demand] = await Promise.allSettled(
-    ["data/iran-imports.json", "data/prices.json", "data/iran-news.json", "data/iran-customs.json",
-     "data/iran-signals.json", "config/iran_signals.json", "config/iran_demand.json"].map(getJson));
+  const [imports, news, customs, signals, signalsConfig, demand] = await Promise.allSettled(
+    ["data/iran-imports.json", "data/iran-news.json", "data/iran-customs.json", "data/iran-signals.json",
+     "config/iran_signals.json", "config/iran_demand.json"].map(getJson));
   const ok = (r) => (r.status === "fulfilled" ? r.value : null);
-  state.signals = ok(signals); state.signalsConfig = ok(signalsConfig); state.demand = ok(demand);
-
-  if (customs.status === "fulfilled") {
-    state.customs = customs.value;
-    state.customsHs = state.customs.commodities[0]?.hs;
-    const yrs = state.customs.commodities.flatMap((c) => c.rows.map((r) => r.year));
-    document.getElementById("customs-meta").innerHTML =
-      `منبع: گمرک ایران، از سامانه‌ی آمار اتاق بازرگانی تهران · آخرین سال منتشرشده: ${yrs.length ? yearLabel(Math.max(...yrs)) : "—"}` +
-      ` · به‌روزرسانی: ${num((state.customs.last_updated || "").slice(0, 10))}`;
-    const pick = document.getElementById("pick-customs");
-    pick.innerHTML = state.customs.commodities.map((c) =>
-      `<button data-hs="${esc(c.hs)}">${esc(c.name_fa)}</button>`).join("");
-    pick.addEventListener("click", (e) => {
-      const b = e.target.closest("button"); if (!b) return;
-      state.customsHs = b.dataset.hs; renderCustoms();
-    });
-    document.getElementById("customs-panel").hidden = false;
-    renderCustoms();
-  }
-
-  if (news.status === "fulfilled") renderNews(news.value);
-  else document.getElementById("news-panel").hidden = true;
-
-  if (imports.status === "fulfilled") {
-    state.imports = imports.value;
-    state.prices = prices.status === "fulfilled" ? prices.value : null;
-    state.hs = state.imports.commodities[0]?.hs;
-    document.getElementById("imports-meta").innerHTML =
-      `منبع: UN Comtrade · به‌روزرسانی: ${num((state.imports.last_updated || "").slice(0, 10))}`;
-    const pick = document.getElementById("pick-import");
-    pick.innerHTML = state.imports.commodities.map((c) =>
-      `<button data-hs="${esc(c.hs)}">${esc(c.name_fa)}</button>`).join("");
-    pick.addEventListener("click", (e) => {
-      const b = e.target.closest("button"); if (!b) return;
-      state.hs = b.dataset.hs; renderImports();
-    });
-    document.getElementById("imports-panel").hidden = false;
-    renderImports();
-  }
-
-  // نشانه‌ها آخر ساخته می‌شوند چون از داده‌ی بخش‌های دیگر هم استفاده می‌کنند
+  Object.assign(state, { imports: ok(imports), customs: ok(customs), signals: ok(signals),
+                         signalsConfig: ok(signalsConfig), demand: ok(demand) });
+  if (ok(news)) { document.getElementById("news-panel").hidden = false; renderNews(ok(news)); }
   if (state.signalsConfig) {
-    state.signalKey = state.signalsConfig.commodities[0].key;
-    const pick = document.getElementById("pick-signal");
-    pick.innerHTML = state.signalsConfig.commodities.map((c) =>
-      `<button data-key="${esc(c.key)}">${esc(c.name_fa)}</button>`).join("");
-    pick.addEventListener("click", (e) => {
-      const b = e.target.closest("button"); if (!b) return;
-      state.signalKey = b.dataset.key; renderSignals();
-    });
     document.getElementById("signals-panel").hidden = false;
-    renderSignals();
+    setupPicker(state.signalsConfig.commodities, renderSignals);
   }
 }
 document.fonts?.ready.then(init) ?? init();

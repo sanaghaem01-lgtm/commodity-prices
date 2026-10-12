@@ -144,9 +144,15 @@ Google Sheets هر چند ساعت یک بار خودش فایل را دوبار
 
 ---
 
-## صفحه‌ی «بازار ایران»
+## صفحه‌های ایران
 
-آدرس: https://sanaghaem01-lgtm.github.io/commodity-prices/iran.html
+- **بازار ایران** (نمای سریع): https://sanaghaem01-lgtm.github.io/commodity-prices/iran.html
+  — نشانه‌های بازار و اخبار فارسی.
+- **آمار واردات ایران** (جزئیات): https://sanaghaem01-lgtm.github.io/commodity-prices/iran-imports.html
+  — آمار گمرک و آمار کشورهای صادرکننده.
+
+در هر دو صفحه کالا یک بار از دکمه‌های بالای صفحه انتخاب می‌شود و انتخاب بین دو صفحه یادش می‌ماند.
+فهرست این کالاها (و کد تعرفه‌شان) در `config/iran_signals.json` است.
 
 - **نشانه‌های بازار ایران** (بالای صفحه، برای ذرت، برنج، قهوه، کاکائو و روغن): چهار نشانه کنار هم —
   جریان واردات 3 ماه اخیر در برابر همین ماه‌ها در سال‌های قبل، تعداد خبرهای کمبود و محدودیت (4 هفته‌ی اخیر)،
@@ -187,7 +193,7 @@ Google Sheets هر چند ساعت یک بار خودش فایل را دوبار
 | `.github/workflows/update-iran-news.yml` | اخبار فارسی؛ هر 4 ساعت و دستی |
 | `.github/workflows/update-iran-imports.yml` | آمار آینه‌ای واردات ایران؛ هفتگی (دوشنبه 07:00 UTC) و دستی |
 | `.github/workflows/update-iran-customs.yml` | آمار گمرک ایران؛ ماهانه (روز 3، ساعت 08:00 UTC) و دستی |
-| `iran.html`، `style.css` | صفحه‌ی «بازار ایران» و ظاهر مشترک دو صفحه |
+| `iran.html`، `iran-imports.html`، `iran-common.js`، `style.css` | صفحه‌های ایران، کد مشترکشان و ظاهر مشترک همه‌ی صفحه‌ها |
 | `index.html` | داشبورد (Chart.js، بدون فریم‌ورک) |
 
 اجرای محلی:
