@@ -7,8 +7,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261012">
-<script src="iran-common.js?v=20261012"></script>
+<link rel="stylesheet" href="style.css?v=20261014">
+<script src="iran-common.js?v=20261014"></script>
 </head>
 <body>
 <div class="wrap">
@@ -27,30 +27,22 @@
 
   <section class="panel" id="signals-panel" style="margin-top:12px" hidden>
     <h2>نشانه‌های بازار</h2>
-    <p class="meta">چهار نشانه که معمولاً همراه کمبود یا تغییر بازار دیده می‌شوند، کنار هم.
+    <p class="meta">سه نشانه که معمولاً همراه کمبود یا تغییر بازار دیده می‌شوند، کنار هم.
       این بخش پیش‌بینی یا توصیه‌ی خرید نیست؛ تصمیم با تیم است.</p>
     <div class="signal-grid">
       <div class="sig" id="sig-flow"></div>
-      <div class="sig" id="sig-news"></div>
       <div class="sig" id="sig-demand"></div>
       <div class="sig" id="sig-pattern"></div>
     </div>
   </section>
 
-  <section class="panel" id="news-panel" hidden>
-    <h2>اخبار واردات، گمرک و کالاهای اساسی</h2>
-    <p class="meta" id="news-meta"></p>
-    <div id="news"></div>
-  </section>
-
   <footer>
-    جزئیات واردات هر کالا (کشورها، گمرکات، قیمت هر تن): صفحه‌ی <a href="iran-imports.html">آمار واردات ایران</a>. ·
-    تیتر خبرها از خبرخوان دنیای اقتصاد، ایسنا، مهر، ایرنا و خبرآنلاین و هر چند ساعت به‌روز می‌شود.
+    جزئیات واردات هر کالا (کشورها، گمرکات، قیمت هر تن): صفحه‌ی <a href="iran-imports.html">آمار واردات ایران</a>.
   </footer>
 </div>
 
 <script>
-const state = { imports: null, customs: null, signals: null, signalsConfig: null, demand: null };
+const state = { imports: null, customs: null, signalsConfig: null, demand: null };
 
 // ---------- نشانه‌های بازار ایران ----------
 
@@ -80,35 +72,15 @@ function sigFlow(c) {
     <p class="muted">منبع: گزارش کشورهای صادرکننده (UN Comtrade). ماه‌های اخیر ممکن است هنوز کامل نباشند؛ واردات از راه کشور واسطه در آن نیست.</p>`;
 }
 
-function sigNews(c) {
-  const el = document.getElementById("sig-news");
-  const sig = state.signals;
-  if (!sig) { el.innerHTML = `<h3>۲. خبرهای کمبود و محدودیت</h3><p class="muted">داده در دسترس نیست.</p>`; return; }
-  const now = Date.now();
-  const items = sig.items.filter((i) => i.commodities.includes(c.key));
-  const age = (i) => (now - Date.parse(i.date)) / DAY;
-  const last4 = items.filter((i) => age(i) <= 28).length;
-  const prev4 = items.filter((i) => age(i) > 28 && age(i) <= 56).length;
-  const since = state.signalsConfig?.collect_since;
-  const young = since && (now - Date.parse(since)) / DAY < 56;
-  el.innerHTML = `<h3>۲. خبرهای کمبود و محدودیت</h3>
-    <div class="big">${num(last4)} <small>خبر در ۴ هفته‌ی اخیر</small></div>
-    <p>${young ? `جمع‌آوری از ${num(since)} شروع شده؛ مقایسه با ۴ هفته‌ی قبل از حدود ۸ هفته بعد معنی‌دار می‌شود.`
-      : `۴ هفته‌ی قبل از آن: ${num(prev4)} خبر.`}</p>
-    ${items.length ? `<ul>${items.slice(0, 5).map((i) => `<li><a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.title)}</a>
-      <span class="muted"> · ${esc(i.source)} · ${num(i.date.slice(0, 10))}</span></li>`).join("")}</ul>`
-      : `<p class="muted">فعلاً خبری با نام «${esc(c.name_fa)}» و کلمه‌هایی مثل کمبود، گرانی یا توقف ثبت سفارش پیدا نشده است.</p>`}`;
-}
-
 function sigDemand(c) {
   const el = document.getElementById("sig-demand");
   const d = state.demand;
-  if (!d) { el.innerHTML = `<h3>۳. تقویم تقاضای ایران</h3><p class="muted">داده در دسترس نیست.</p>`; return; }
+  if (!d) { el.innerHTML = `<h3>۲. تقویم تقاضای ایران</h3><p class="muted">داده در دسترس نیست.</p>`; return; }
   const today = new Date(new Date().toISOString().slice(0, 10)).getTime();
   const names = Object.fromEntries(state.signalsConfig.commodities.map((x) => [x.key, x.name_fa]));
   const upcoming = d.events.filter((e) => Date.parse(e.end) >= today && Date.parse(e.start) - today <= 365 * DAY)
     .sort((a, b) => a.start.localeCompare(b.start));
-  el.innerHTML = `<h3>۳. تقویم تقاضای ایران (۱۲ ماه آینده)</h3>
+  el.innerHTML = `<h3>۲. تقویم تقاضای ایران (۱۲ ماه آینده)</h3>
     <ul>${upcoming.slice(0, 3).map(eventItem).join("")}</ul>
     ${upcoming.length > 3 ? `<details><summary class="muted">نمایش همه (${num(upcoming.length)} رویداد)</summary>
       <ul>${upcoming.slice(3).map(eventItem).join("")}</ul></details>` : ""}
@@ -129,7 +101,7 @@ function sigPattern(c) {
   const cu = state.customs?.commodities.find((x) => x.hs === c.customs_hs);
   const monthly = cu ? cu.rows.filter((r) => r.month) : [];
   if (!monthly.length) {
-    el.innerHTML = `<h3>۴. الگوی ماهانه‌ی واردات ایران</h3><p class="muted">آمار ماهانه‌ی گمرک برای این کالا موجود نیست.</p>`;
+    el.innerHTML = `<h3>۳. الگوی ماهانه‌ی واردات ایران</h3><p class="muted">آمار ماهانه‌ی گمرک برای این کالا موجود نیست.</p>`;
     return;
   }
   const year = Math.max(...monthly.map((r) => r.year));
@@ -138,7 +110,7 @@ function sigPattern(c) {
   const by = Array.from({ length: 12 }, (_, i) => rows.filter((r) => r.month === i + 1).reduce((a, r) => a + r.tons, 0));
   const max = Math.max(...by);
   const peak = by.indexOf(max);
-  el.innerHTML = `<h3>۴. الگوی ماهانه‌ی واردات ایران (گمرک، سال ${year})</h3>
+  el.innerHTML = `<h3>۳. الگوی ماهانه‌ی واردات ایران (گمرک، سال ${year})</h3>
     <div class="cols" role="img" aria-label="سهم هر ماه از واردات سال ${year}">${by.map((t, i) => {
       const share = total ? (t / total) * 100 : 0;
       return `<div class="col" title="${MONTHS_IR[i]}: ${fmt(share, 1)}% از واردات سال (${fmt(t)} تن)">
@@ -151,29 +123,15 @@ function sigPattern(c) {
 }
 
 function renderSignals(c) {
-  sigFlow(c); sigNews(c); sigDemand(c); sigPattern(c);
+  sigFlow(c); sigDemand(c); sigPattern(c);
 }
-// ---------- اخبار فارسی ----------
-function renderNews(news) {
-  document.getElementById("news-meta").innerHTML =
-    `تیترهای ${num(news.window_days)} روز اخیر؛ خبرهایی که هم به واردات یا گمرک و هم به یک کالا مربوط‌اند اول آمده‌اند.` +
-    ` · به‌روزرسانی: ${num((news.last_updated || "").slice(0, 10))}`;
-  const items = (news.items || []).slice(0, news.show || 15);
-  document.getElementById("news").innerHTML = items.length
-    ? `<ul class="fa-news">${items.map((n) => `<li>
-        <a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a>
-        <span class="news-src">${esc(n.source)} · ${num(esc(n.date.slice(0, 10)))}</span></li>`).join("")}</ul>`
-    : `<p class="soon">هنوز خبر مرتبطی جمع نشده است.</p>`;
-}
+
 // ---------- شروع ----------
 async function init() {
-  const [imports, news, customs, signals, signalsConfig, demand] = await Promise.allSettled(
-    ["data/iran-imports.json", "data/iran-news.json", "data/iran-customs.json", "data/iran-signals.json",
-     "config/iran_signals.json", "config/iran_demand.json"].map(getJson));
+  const [imports, customs, signalsConfig, demand] = await Promise.allSettled(
+    ["data/iran-imports.json", "data/iran-customs.json", "config/iran_signals.json", "config/iran_demand.json"].map(getJson));
   const ok = (r) => (r.status === "fulfilled" ? r.value : null);
-  Object.assign(state, { imports: ok(imports), customs: ok(customs), signals: ok(signals),
-                         signalsConfig: ok(signalsConfig), demand: ok(demand) });
-  if (ok(news)) { document.getElementById("news-panel").hidden = false; renderNews(ok(news)); }
+  Object.assign(state, { imports: ok(imports), customs: ok(customs), signalsConfig: ok(signalsConfig), demand: ok(demand) });
   if (state.signalsConfig) {
     document.getElementById("signals-panel").hidden = false;
     setupPicker(state.signalsConfig.commodities, renderSignals);

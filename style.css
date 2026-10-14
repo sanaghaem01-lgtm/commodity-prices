@@ -147,12 +147,6 @@ footer a { color: inherit; }
 #harvest-sources a { color: inherit; }
 
 /* صفحه‌های ایران */
-.fa-news { list-style: none; padding: 0; margin: 0; }
-.fa-news li { padding: 10px 0; border-bottom: 1px solid var(--grid); }
-.fa-news li:last-child { border-bottom: 0; }
-.fa-news a { color: var(--ink); text-decoration: none; font-weight: 500; }
-.fa-news a:hover, .fa-news a:focus-visible { text-decoration: underline; }
-.fa-news .news-src { display: block; color: var(--muted); font-size: 0.82rem; }
 .soon { color: var(--ink-2); font-size: 0.92rem; margin: 0; }
 
 .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin: 12px 0 16px; }

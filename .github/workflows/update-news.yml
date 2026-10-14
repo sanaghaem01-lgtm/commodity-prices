@@ -1,10 +1,10 @@
 # به‌روزرسانی هفتگی «اخبار هفته» از خبرخوان‌های سایت‌های تخصصی
-# اجرای خودکار: هر دوشنبه ساعت ۶:۳۰ صبح UTC  |  اجرای دستی: تب Actions ← Run workflow
+# اجرای خودکار: دوشنبه و پنجشنبه ساعت ۶:۳۰ صبح UTC (۱۰ صبح تهران)  |  اجرای دستی: تب Actions ← Run workflow
 name: Update news
 
 on:
   schedule:
-    - cron: "30 6 * * 1"
+    - cron: "30 6 * * 1,4"
   workflow_dispatch:
 
 permissions:
