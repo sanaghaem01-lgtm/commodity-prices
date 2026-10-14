@@ -1,320 +1,328 @@
 date,commodity,price_original,unit_original,usd_per_ton
-2020-01-01,Coffee Arabica,142.9365217391304,U.S. Cents per Pound,3151.18
-2020-02-01,Coffee Arabica,135.5005,U.S. Cents per Pound,2987.24
-2020-03-01,Coffee Arabica,148.3272727272727,U.S. Cents per Pound,3270.02
-2020-04-01,Coffee Arabica,154.6304545454545,U.S. Cents per Pound,3408.98
-2020-05-01,Coffee Arabica,149.9161904761905,U.S. Cents per Pound,3305.05
-2020-06-01,Coffee Arabica,141.52,U.S. Cents per Pound,3119.95
-2020-07-01,Coffee Arabica,146.7808695652174,U.S. Cents per Pound,3235.93
-2020-08-01,Coffee Arabica,163.0714285714286,U.S. Cents per Pound,3595.07
-2020-09-01,Coffee Arabica,166.5645454545455,U.S. Cents per Pound,3672.08
-2020-10-01,Coffee Arabica,152.0568181818182,U.S. Cents per Pound,3352.24
-2020-11-01,Coffee Arabica,150.7261904761905,U.S. Cents per Pound,3322.91
-2020-12-01,Coffee Arabica,157.9526086956522,U.S. Cents per Pound,3482.22
-2021-01-01,Coffee Arabica,160.8195238095238,U.S. Cents per Pound,3545.43
-2021-02-01,Coffee Arabica,166.429,U.S. Cents per Pound,3669.09
-2021-03-01,Coffee Arabica,167.0508695652174,U.S. Cents per Pound,3682.8
-2021-04-01,Coffee Arabica,168.6486363636364,U.S. Cents per Pound,3718.03
-2021-05-01,Coffee Arabica,186.4628571428571,U.S. Cents per Pound,4110.76
-2021-06-01,Coffee Arabica,192.0645454545455,U.S. Cents per Pound,4234.25
-2021-07-01,Coffee Arabica,204.5009090909091,U.S. Cents per Pound,4508.43
-2021-08-01,Coffee Arabica,216.4345454545455,U.S. Cents per Pound,4771.52
-2021-09-01,Coffee Arabica,225.5368181818182,U.S. Cents per Pound,4972.18
-2021-10-01,Coffee Arabica,241.0733333333333,U.S. Cents per Pound,5314.7
-2021-11-01,Coffee Arabica,258.9781818181818,U.S. Cents per Pound,5709.43
-2021-12-01,Coffee Arabica,268.3291304347826,U.S. Cents per Pound,5915.58
-2022-01-01,Coffee Arabica,271.0814285714286,U.S. Cents per Pound,5976.26
-2022-02-01,Coffee Arabica,279.8335,U.S. Cents per Pound,6169.21
-2022-03-01,Coffee Arabica,258.9934782608696,U.S. Cents per Pound,5709.77
-2022-04-01,Coffee Arabica,265.397619047619,U.S. Cents per Pound,5850.96
-2022-05-01,Coffee Arabica,260.4495454545455,U.S. Cents per Pound,5741.87
-2022-06-01,Coffee Arabica,273.7636363636364,U.S. Cents per Pound,6035.39
-2022-07-01,Coffee Arabica,255.9066666666667,U.S. Cents per Pound,5641.72
-2022-08-01,Coffee Arabica,268.4834782608696,U.S. Cents per Pound,5918.99
-2022-09-01,Coffee Arabica,267.4922727272727,U.S. Cents per Pound,5897.13
-2022-10-01,Coffee Arabica,240.082380952381,U.S. Cents per Pound,5292.86
-2022-11-01,Coffee Arabica,213.7181818181818,U.S. Cents per Pound,4711.63
-2022-12-01,Coffee Arabica,210.3886363636364,U.S. Cents per Pound,4638.23
-2023-01-01,Coffee Arabica,206.76,U.S. Cents per Pound,4558.23
-2023-02-01,Coffee Arabica,229.506,U.S. Cents per Pound,5059.69
-2023-03-01,Coffee Arabica,222.6639130434783,U.S. Cents per Pound,4908.85
-2023-04-01,Coffee Arabica,229.9555,U.S. Cents per Pound,5069.6
-2023-05-01,Coffee Arabica,220.1213043478261,U.S. Cents per Pound,4852.79
-2023-06-01,Coffee Arabica,207.385,U.S. Cents per Pound,4572.01
-2023-07-01,Coffee Arabica,193.4942857142857,U.S. Cents per Pound,4265.78
-2023-08-01,Coffee Arabica,186.3469565217391,U.S. Cents per Pound,4108.21
-2023-09-01,Coffee Arabica,183.5890476190476,U.S. Cents per Pound,4047.4
-2023-10-01,Coffee Arabica,183.9513636363636,U.S. Cents per Pound,4055.39
-2023-11-01,Coffee Arabica,197.4331818181818,U.S. Cents per Pound,4352.61
-2023-12-01,Coffee Arabica,210.3104761904762,U.S. Cents per Pound,4636.5
-2024-01-01,Coffee Arabica,203.8791304347826,U.S. Cents per Pound,4494.72
-2024-02-01,Coffee Arabica,208.7833333333333,U.S. Cents per Pound,4602.84
-2024-03-01,Coffee Arabica,208.9133333333333,U.S. Cents per Pound,4605.7
-2024-04-01,Coffee Arabica,239.8663636363636,U.S. Cents per Pound,5288.09
-2024-05-01,Coffee Arabica,232.3426086956522,U.S. Cents per Pound,5122.23
-2024-06-01,Coffee Arabica,248.405,U.S. Cents per Pound,5476.34
-2024-07-01,Coffee Arabica,257.0986956521739,U.S. Cents per Pound,5668.0
-2024-08-01,Coffee Arabica,261.4377272727273,U.S. Cents per Pound,5763.66
-2024-09-01,Coffee Arabica,278.7604761904762,U.S. Cents per Pound,6145.55
-2024-10-01,Coffee Arabica,276.7773913043478,U.S. Cents per Pound,6101.83
-2024-11-01,Coffee Arabica,304.9528571428571,U.S. Cents per Pound,6722.99
-2024-12-01,Coffee Arabica,344.1186363636364,U.S. Cents per Pound,7586.44
-2025-01-01,Coffee Arabica,353.9334782608696,U.S. Cents per Pound,7802.82
-2025-02-01,Coffee Arabica,409.5165,U.S. Cents per Pound,9028.2
-2025-03-01,Coffee Arabica,404.2104761904762,U.S. Cents per Pound,8911.22
-2025-04-01,Coffee Arabica,392.9127272727273,U.S. Cents per Pound,8662.15
-2025-05-01,Coffee Arabica,397.5886363636364,U.S. Cents per Pound,8765.24
-2025-06-01,Coffee Arabica,363.162380952381,U.S. Cents per Pound,8006.28
-2025-07-01,Coffee Arabica,316.725652173913,U.S. Cents per Pound,6982.53
-2025-08-01,Coffee Arabica,365.6857142857143,U.S. Cents per Pound,8061.91
-2025-09-01,Coffee Arabica,399.5513636363636,U.S. Cents per Pound,8808.51
-2025-10-01,Coffee Arabica,403.7926086956522,U.S. Cents per Pound,8902.01
-2025-11-01,Coffee Arabica,409.679,U.S. Cents per Pound,9031.78
-2025-12-01,Coffee Arabica,380.4172727272727,U.S. Cents per Pound,8386.68
-2026-01-01,Coffee Arabica,363.9104545454545,U.S. Cents per Pound,8022.77
-2026-02-01,Coffee Arabica,321.3525,U.S. Cents per Pound,7084.54
-2026-03-01,Coffee Arabica,334.1118181818182,U.S. Cents per Pound,7365.83
-2026-04-01,Coffee Arabica,331.2227272727273,U.S. Cents per Pound,7302.14
-2026-05-01,Coffee Arabica,315.0595238095238,U.S. Cents per Pound,6945.8
-2026-06-01,Coffee Arabica,307.8263636363636,U.S. Cents per Pound,6786.34
-2026-07-01,Coffee Arabica,359.1622727272727,U.S. Cents per Pound,7918.09
-2020-01-01,Coffee Robusta,70.58391304347826,U.S. Cents per Pound,1556.09
-2020-02-01,Coffee Robusta,68.0665,U.S. Cents per Pound,1500.59
-2020-03-01,Coffee Robusta,67.45681818181818,U.S. Cents per Pound,1487.15
-2020-04-01,Coffee Robusta,64.02272727272727,U.S. Cents per Pound,1411.45
-2020-05-01,Coffee Robusta,64.53714285714285,U.S. Cents per Pound,1422.79
-2020-06-01,Coffee Robusta,64.61681818181818,U.S. Cents per Pound,1424.54
-2020-07-01,Coffee Robusta,67.68652173913043,U.S. Cents per Pound,1492.22
-2020-08-01,Coffee Robusta,72.63857142857142,U.S. Cents per Pound,1601.39
-2020-09-01,Coffee Robusta,72.77318181818183,U.S. Cents per Pound,1604.36
-2020-10-01,Coffee Robusta,68.35772727272727,U.S. Cents per Pound,1507.01
-2020-11-01,Coffee Robusta,72.38238095238096,U.S. Cents per Pound,1595.74
-2020-12-01,Coffee Robusta,71.94608695652174,U.S. Cents per Pound,1586.12
-2021-01-01,Coffee Robusta,70.81380952380952,U.S. Cents per Pound,1561.16
-2021-02-01,Coffee Robusta,73.3715,U.S. Cents per Pound,1617.55
-2021-03-01,Coffee Robusta,73.8595652173913,U.S. Cents per Pound,1628.31
-2021-04-01,Coffee Robusta,74.465,U.S. Cents per Pound,1641.66
-2021-05-01,Coffee Robusta,79.68380952380951,U.S. Cents per Pound,1756.71
-2021-06-01,Coffee Robusta,84.92727272727274,U.S. Cents per Pound,1872.31
-2021-07-01,Coffee Robusta,94.08909090909091,U.S. Cents per Pound,2074.29
-2021-08-01,Coffee Robusta,94.88818181818182,U.S. Cents per Pound,2091.9
-2021-09-01,Coffee Robusta,104.5895454545455,U.S. Cents per Pound,2305.78
-2021-10-01,Coffee Robusta,105.3047619047619,U.S. Cents per Pound,2321.55
-2021-11-01,Coffee Robusta,109.4345454545455,U.S. Cents per Pound,2412.59
-2021-12-01,Coffee Robusta,112.4647826086957,U.S. Cents per Pound,2479.4
-2022-01-01,Coffee Robusta,109.712380952381,U.S. Cents per Pound,2418.72
-2022-02-01,Coffee Robusta,109.4265,U.S. Cents per Pound,2412.42
-2022-03-01,Coffee Robusta,103.9247826086957,U.S. Cents per Pound,2291.13
-2022-04-01,Coffee Robusta,103.96,U.S. Cents per Pound,2291.9
-2022-05-01,Coffee Robusta,103.155,U.S. Cents per Pound,2274.16
-2022-06-01,Coffee Robusta,103.8454545454545,U.S. Cents per Pound,2289.38
-2022-07-01,Coffee Robusta,100.4442857142857,U.S. Cents per Pound,2214.39
-2022-08-01,Coffee Robusta,109.6891304347826,U.S. Cents per Pound,2418.21
-2022-09-01,Coffee Robusta,111.3581818181818,U.S. Cents per Pound,2455.0
-2022-10-01,Coffee Robusta,103.0119047619048,U.S. Cents per Pound,2271.0
-2022-11-01,Coffee Robusta,92.595,U.S. Cents per Pound,2041.35
-2022-12-01,Coffee Robusta,92.435,U.S. Cents per Pound,2037.82
-2023-01-01,Coffee Robusta,95.97909090909091,U.S. Cents per Pound,2115.96
-2023-02-01,Coffee Robusta,103.963,U.S. Cents per Pound,2291.97
-2023-03-01,Coffee Robusta,106.4873913043478,U.S. Cents per Pound,2347.62
-2023-04-01,Coffee Robusta,115.5835,U.S. Cents per Pound,2548.15
-2023-05-01,Coffee Robusta,122.5521739130435,U.S. Cents per Pound,2701.79
-2023-06-01,Coffee Robusta,132.1254545454545,U.S. Cents per Pound,2912.84
-2023-07-01,Coffee Robusta,127.5833333333333,U.S. Cents per Pound,2812.7
-2023-08-01,Coffee Robusta,124.3565217391304,U.S. Cents per Pound,2741.56
-2023-09-01,Coffee Robusta,123.8914285714286,U.S. Cents per Pound,2731.31
-2023-10-01,Coffee Robusta,118.835,U.S. Cents per Pound,2619.84
-2023-11-01,Coffee Robusta,122.7759090909091,U.S. Cents per Pound,2706.72
-2023-12-01,Coffee Robusta,135.3919047619048,U.S. Cents per Pound,2984.85
-2024-01-01,Coffee Robusta,148.1252173913043,U.S. Cents per Pound,3265.57
-2024-02-01,Coffee Robusta,153.227619047619,U.S. Cents per Pound,3378.06
-2024-03-01,Coffee Robusta,165.8395238095238,U.S. Cents per Pound,3656.1
-2024-04-01,Coffee Robusta,193.675,U.S. Cents per Pound,4269.76
-2024-05-01,Coffee Robusta,186.4573913043478,U.S. Cents per Pound,4110.64
-2024-06-01,Coffee Robusta,204.327,U.S. Cents per Pound,4504.59
-2024-07-01,Coffee Robusta,214.5413043478261,U.S. Cents per Pound,4729.78
-2024-08-01,Coffee Robusta,214.6954545454545,U.S. Cents per Pound,4733.18
-2024-09-01,Coffee Robusta,242.4619047619048,U.S. Cents per Pound,5345.32
-2024-10-01,Coffee Robusta,221.895652173913,U.S. Cents per Pound,4891.91
-2024-11-01,Coffee Robusta,226.13,U.S. Cents per Pound,4985.26
-2024-12-01,Coffee Robusta,237.6218181818182,U.S. Cents per Pound,5238.61
-2025-01-01,Coffee Robusta,244.9391304347826,U.S. Cents per Pound,5399.93
-2025-02-01,Coffee Robusta,263.045,U.S. Cents per Pound,5799.09
-2025-03-01,Coffee Robusta,257.6842857142857,U.S. Cents per Pound,5680.91
-2025-04-01,Coffee Robusta,246.5490909090909,U.S. Cents per Pound,5435.42
-2025-05-01,Coffee Robusta,237.3031818181818,U.S. Cents per Pound,5231.59
-2025-06-01,Coffee Robusta,196.2138095238095,U.S. Cents per Pound,4325.73
-2025-07-01,Coffee Robusta,167.1678260869565,U.S. Cents per Pound,3685.38
-2025-08-01,Coffee Robusta,198.8609523809524,U.S. Cents per Pound,4384.09
-2025-09-01,Coffee Robusta,210.8413636363636,U.S. Cents per Pound,4648.21
-2025-10-01,Coffee Robusta,215.06,U.S. Cents per Pound,4741.21
-2025-11-01,Coffee Robusta,214.826,U.S. Cents per Pound,4736.05
-2025-12-01,Coffee Robusta,190.2381818181818,U.S. Cents per Pound,4193.99
-2026-01-01,Coffee Robusta,192.2890909090909,U.S. Cents per Pound,4239.21
-2026-02-01,Coffee Robusta,179.5945,U.S. Cents per Pound,3959.34
-2026-03-01,Coffee Robusta,176.7640909090909,U.S. Cents per Pound,3896.94
-2026-04-01,Coffee Robusta,164.645,U.S. Cents per Pound,3629.76
-2026-05-01,Coffee Robusta,166.512380952381,U.S. Cents per Pound,3670.93
-2026-06-01,Coffee Robusta,169.3904545454545,U.S. Cents per Pound,3734.38
-2026-07-01,Coffee Robusta,185.2304545454545,U.S. Cents per Pound,4083.59
-2020-01-01,Cocoa,2603.075561212662,U.S. Dollars per Metric Ton,2603.08
-2020-02-01,Cocoa,2716.214397777276,U.S. Dollars per Metric Ton,2716.21
-2020-03-01,Cocoa,2338.470536222704,U.S. Dollars per Metric Ton,2338.47
-2020-04-01,Cocoa,2270.238696846814,U.S. Dollars per Metric Ton,2270.24
-2020-05-01,Cocoa,2317.453931564956,U.S. Dollars per Metric Ton,2317.45
-2020-06-01,Cocoa,2228.617635584422,U.S. Dollars per Metric Ton,2228.62
-2020-07-01,Cocoa,2102.07713180143,U.S. Dollars per Metric Ton,2102.08
-2020-08-01,Cocoa,2348.676309262007,U.S. Dollars per Metric Ton,2348.68
-2020-09-01,Cocoa,2457.611923658554,U.S. Dollars per Metric Ton,2457.61
-2020-10-01,Cocoa,2292.054175567769,U.S. Dollars per Metric Ton,2292.05
-2020-11-01,Cocoa,2359.243716161572,U.S. Dollars per Metric Ton,2359.24
-2020-12-01,Cocoa,2405.76492397114,U.S. Dollars per Metric Ton,2405.76
-2021-01-01,Cocoa,2392.973563420423,U.S. Dollars per Metric Ton,2392.97
-2021-02-01,Cocoa,2383.028506656238,U.S. Dollars per Metric Ton,2383.03
-2021-03-01,Cocoa,2471.204322165759,U.S. Dollars per Metric Ton,2471.2
-2021-04-01,Cocoa,2366.486057293951,U.S. Dollars per Metric Ton,2366.49
-2021-05-01,Cocoa,2409.357431265938,U.S. Dollars per Metric Ton,2409.36
-2021-06-01,Cocoa,2366.29376388017,U.S. Dollars per Metric Ton,2366.29
-2021-07-01,Cocoa,2328.27955315558,U.S. Dollars per Metric Ton,2328.28
-2021-08-01,Cocoa,2477.500361669303,U.S. Dollars per Metric Ton,2477.5
-2021-09-01,Cocoa,2552.76442186016,U.S. Dollars per Metric Ton,2552.76
-2021-10-01,Cocoa,2573.725247930012,U.S. Dollars per Metric Ton,2573.73
-2021-11-01,Cocoa,2405.874465485019,U.S. Dollars per Metric Ton,2405.87
-2021-12-01,Cocoa,2378.73085848743,U.S. Dollars per Metric Ton,2378.73
-2022-01-01,Cocoa,2467.356862582399,U.S. Dollars per Metric Ton,2467.36
-2022-02-01,Cocoa,2551.326883584084,U.S. Dollars per Metric Ton,2551.33
-2022-03-01,Cocoa,2459.398319640722,U.S. Dollars per Metric Ton,2459.4
-2022-04-01,Cocoa,2457.384107289146,U.S. Dollars per Metric Ton,2457.38
-2022-05-01,Cocoa,2363.871129036004,U.S. Dollars per Metric Ton,2363.87
-2022-06-01,Cocoa,2323.116687244048,U.S. Dollars per Metric Ton,2323.12
-2022-07-01,Cocoa,2239.402286127753,U.S. Dollars per Metric Ton,2239.4
-2022-08-01,Cocoa,2270.102773614096,U.S. Dollars per Metric Ton,2270.1
-2022-09-01,Cocoa,2220.214244629552,U.S. Dollars per Metric Ton,2220.21
-2022-10-01,Cocoa,2243.631098250515,U.S. Dollars per Metric Ton,2243.63
-2022-11-01,Cocoa,2380.803070269115,U.S. Dollars per Metric Ton,2380.8
-2022-12-01,Cocoa,2456.226953758389,U.S. Dollars per Metric Ton,2456.23
-2023-01-01,Cocoa,2540.076523955292,U.S. Dollars per Metric Ton,2540.08
-2023-02-01,Cocoa,2586.526817028014,U.S. Dollars per Metric Ton,2586.53
-2023-03-01,Cocoa,2665.791316276091,U.S. Dollars per Metric Ton,2665.79
-2023-04-01,Cocoa,2823.273984567432,U.S. Dollars per Metric Ton,2823.27
-2023-05-01,Cocoa,2905.341733304136,U.S. Dollars per Metric Ton,2905.34
-2023-06-01,Cocoa,3124.43913501557,U.S. Dollars per Metric Ton,3124.44
-2023-07-01,Cocoa,3346.634548507881,U.S. Dollars per Metric Ton,3346.63
-2023-08-01,Cocoa,3434.406596186068,U.S. Dollars per Metric Ton,3434.41
-2023-09-01,Cocoa,3629.166883389024,U.S. Dollars per Metric Ton,3629.17
-2023-10-01,Cocoa,3691.614716182179,U.S. Dollars per Metric Ton,3691.61
-2023-11-01,Cocoa,4095.356207101358,U.S. Dollars per Metric Ton,4095.36
-2023-12-01,Cocoa,4253.904329112389,U.S. Dollars per Metric Ton,4253.9
-2024-01-01,Cocoa,4442.919775442222,U.S. Dollars per Metric Ton,4442.92
-2024-02-01,Cocoa,5640.087618677671,U.S. Dollars per Metric Ton,5640.09
-2024-03-01,Cocoa,7297.553884071729,U.S. Dollars per Metric Ton,7297.55
-2024-04-01,Cocoa,9865.206034438286,U.S. Dollars per Metric Ton,9865.21
-2024-05-01,Cocoa,7768.098379830387,U.S. Dollars per Metric Ton,7768.1
-2024-06-01,Cocoa,8380.12660951907,U.S. Dollars per Metric Ton,8380.13
-2024-07-01,Cocoa,7164.628035294687,U.S. Dollars per Metric Ton,7164.63
-2024-08-01,Cocoa,6791.953817048214,U.S. Dollars per Metric Ton,6791.95
-2024-09-01,Cocoa,6421.825658655629,U.S. Dollars per Metric Ton,6421.83
-2024-10-01,Cocoa,6582.858019361083,U.S. Dollars per Metric Ton,6582.86
-2024-11-01,Cocoa,7919.328269586367,U.S. Dollars per Metric Ton,7919.33
-2024-12-01,Cocoa,10412.18571198528,U.S. Dollars per Metric Ton,10412.19
-2025-01-01,Cocoa,10710.34548327711,U.S. Dollars per Metric Ton,10710.35
-2025-02-01,Cocoa,9792.664209159075,U.S. Dollars per Metric Ton,9792.66
-2025-03-01,Cocoa,8079.556127661486,U.S. Dollars per Metric Ton,8079.56
-2025-04-01,Cocoa,8132.218491705632,U.S. Dollars per Metric Ton,8132.22
-2025-05-01,Cocoa,9000.787338851027,U.S. Dollars per Metric Ton,9000.79
-2025-06-01,Cocoa,8401.952731292095,U.S. Dollars per Metric Ton,8401.95
-2025-07-01,Cocoa,7371.890765758022,U.S. Dollars per Metric Ton,7371.89
-2025-08-01,Cocoa,7604.123627133267,U.S. Dollars per Metric Ton,7604.12
-2025-09-01,Cocoa,7006.525855528091,U.S. Dollars per Metric Ton,7006.53
-2025-10-01,Cocoa,5953.5678143082,U.S. Dollars per Metric Ton,5953.57
-2025-11-01,Cocoa,5590.70810325549,U.S. Dollars per Metric Ton,5590.71
-2025-12-01,Cocoa,5814.856918567877,U.S. Dollars per Metric Ton,5814.86
-2026-01-01,Cocoa,5018.131520727123,U.S. Dollars per Metric Ton,5018.13
-2026-02-01,Cocoa,3587.185951183889,U.S. Dollars per Metric Ton,3587.19
-2026-03-01,Cocoa,3241.488951294424,U.S. Dollars per Metric Ton,3241.49
-2026-04-01,Cocoa,3392.143554226435,U.S. Dollars per Metric Ton,3392.14
-2026-05-01,Cocoa,4142.973092507544,U.S. Dollars per Metric Ton,4142.97
-2026-06-01,Cocoa,4395.458431945616,U.S. Dollars per Metric Ton,4395.46
-2026-07-01,Cocoa,5619.189873586655,U.S. Dollars per Metric Ton,5619.19
-2020-01-01,Sugar,14.16666666666667,U.S. Cents per Pound,312.32
-2020-02-01,Sugar,15.07105263157895,U.S. Cents per Pound,332.26
-2020-03-01,Sugar,11.805,U.S. Cents per Pound,260.25
-2020-04-01,Sugar,10.05190476190476,U.S. Cents per Pound,221.6
-2020-05-01,Sugar,10.641,U.S. Cents per Pound,234.59
-2020-06-01,Sugar,11.82818181818182,U.S. Cents per Pound,260.76
-2020-07-01,Sugar,11.90181818181818,U.S. Cents per Pound,262.39
-2020-08-01,Sugar,12.81428571428571,U.S. Cents per Pound,282.5
-2020-09-01,Sugar,12.44142857142857,U.S. Cents per Pound,274.28
-2020-10-01,Sugar,14.28772727272727,U.S. Cents per Pound,314.99
-2020-11-01,Sugar,14.9335,U.S. Cents per Pound,329.22
-2020-12-01,Sugar,14.66772727272727,U.S. Cents per Pound,323.36
-2021-01-01,Sugar,15.91631578947368,U.S. Cents per Pound,350.89
-2021-02-01,Sugar,17.00052631578947,U.S. Cents per Pound,374.79
-2021-03-01,Sugar,15.80565217391304,U.S. Cents per Pound,348.45
-2021-04-01,Sugar,16.23761904761905,U.S. Cents per Pound,357.97
-2021-05-01,Sugar,17.20333333333333,U.S. Cents per Pound,379.26
-2021-06-01,Sugar,17.21409090909091,U.S. Cents per Pound,379.5
-2021-07-01,Sugar,17.7147619047619,U.S. Cents per Pound,390.54
-2021-08-01,Sugar,19.38363636363636,U.S. Cents per Pound,427.33
-2021-09-01,Sugar,19.26428571428571,U.S. Cents per Pound,424.7
-2021-10-01,Sugar,19.61904761904762,U.S. Cents per Pound,432.52
-2021-11-01,Sugar,19.74619047619048,U.S. Cents per Pound,435.32
-2021-12-01,Sugar,19.16727272727273,U.S. Cents per Pound,422.56
-2022-01-01,Sugar,18.461,U.S. Cents per Pound,406.99
-2022-02-01,Sugar,18.20315789473684,U.S. Cents per Pound,401.31
-2022-03-01,Sugar,19.10782608695652,U.S. Cents per Pound,421.25
-2022-04-01,Sugar,19.69904761904762,U.S. Cents per Pound,434.29
-2022-05-01,Sugar,19.28090909090909,U.S. Cents per Pound,425.07
-2022-06-01,Sugar,18.79409090909091,U.S. Cents per Pound,414.33
-2022-07-01,Sugar,18.34,U.S. Cents per Pound,404.32
-2022-08-01,Sugar,18.06260869565217,U.S. Cents per Pound,398.21
-2022-09-01,Sugar,18.18590909090909,U.S. Cents per Pound,400.93
-2022-10-01,Sugar,18.30095238095238,U.S. Cents per Pound,403.46
-2022-11-01,Sugar,19.40590909090909,U.S. Cents per Pound,427.82
-2022-12-01,Sugar,20.065,U.S. Cents per Pound,442.35
-2023-01-01,Sugar,19.94318181818182,U.S. Cents per Pound,439.67
-2023-02-01,Sugar,21.4035,U.S. Cents per Pound,471.86
-2023-03-01,Sugar,20.96173913043478,U.S. Cents per Pound,462.12
-2023-04-01,Sugar,24.582,U.S. Cents per Pound,541.93
-2023-05-01,Sugar,25.7295652173913,U.S. Cents per Pound,567.23
-2023-06-01,Sugar,24.76227272727273,U.S. Cents per Pound,545.91
-2023-07-01,Sugar,24.00809523809524,U.S. Cents per Pound,529.28
-2023-08-01,Sugar,24.19304347826087,U.S. Cents per Pound,533.36
-2023-09-01,Sugar,26.56380952380952,U.S. Cents per Pound,585.63
-2023-10-01,Sugar,26.90363636363636,U.S. Cents per Pound,593.12
-2023-11-01,Sugar,27.30954545454545,U.S. Cents per Pound,602.07
-2023-12-01,Sugar,22.14571428571429,U.S. Cents per Pound,488.22
-2024-01-01,Sugar,22.47478260869565,U.S. Cents per Pound,495.48
-2024-02-01,Sugar,23.34190476190476,U.S. Cents per Pound,514.6
-2024-03-01,Sugar,21.76904761904762,U.S. Cents per Pound,479.92
-2024-04-01,Sugar,20.64727272727273,U.S. Cents per Pound,455.19
-2024-05-01,Sugar,18.7995652173913,U.S. Cents per Pound,414.46
-2024-06-01,Sugar,19.1695,U.S. Cents per Pound,422.61
-2024-07-01,Sugar,19.35173913043478,U.S. Cents per Pound,426.63
-2024-08-01,Sugar,18.41954545454545,U.S. Cents per Pound,406.08
-2024-09-01,Sugar,20.6247619047619,U.S. Cents per Pound,454.69
-2024-10-01,Sugar,22.35521739130435,U.S. Cents per Pound,492.84
-2024-11-01,Sugar,21.6552380952381,U.S. Cents per Pound,477.41
-2024-12-01,Sugar,20.31181818181818,U.S. Cents per Pound,447.79
-2025-01-01,Sugar,18.93,U.S. Cents per Pound,417.33
-2025-02-01,Sugar,20.1855,U.S. Cents per Pound,445.01
-2025-03-01,Sugar,19.05619047619048,U.S. Cents per Pound,420.11
-2025-04-01,Sugar,18.17181818181818,U.S. Cents per Pound,400.62
-2025-05-01,Sugar,17.43136363636364,U.S. Cents per Pound,384.29
-2025-06-01,Sugar,16.22619047619048,U.S. Cents per Pound,357.72
-2025-07-01,Sugar,16.36478260869565,U.S. Cents per Pound,360.78
-2025-08-01,Sugar,16.38952380952381,U.S. Cents per Pound,361.32
-2025-09-01,Sugar,15.79,U.S. Cents per Pound,348.11
-2025-10-01,Sugar,15.55869565217391,U.S. Cents per Pound,343.01
-2025-11-01,Sugar,14.623,U.S. Cents per Pound,322.38
-2025-12-01,Sugar,14.935,U.S. Cents per Pound,329.26
-2026-01-01,Sugar,14.78590909090909,U.S. Cents per Pound,325.97
-2026-02-01,Sugar,14.2015,U.S. Cents per Pound,313.09
-2026-03-01,Sugar,14.79636363636364,U.S. Cents per Pound,326.2
-2026-04-01,Sugar,14.09,U.S. Cents per Pound,310.63
-2026-05-01,Sugar,14.77047619047619,U.S. Cents per Pound,325.63
-2026-06-01,Sugar,13.90772727272727,U.S. Cents per Pound,306.61
-2026-07-01,Sugar,14.81227272727273,U.S. Cents per Pound,326.55
+2020-01-01,Coffee Arabica,3.13,U.S. Dollars per Kilogram,3130.0
+2020-02-01,Coffee Arabica,2.99,U.S. Dollars per Kilogram,2990.0
+2020-03-01,Coffee Arabica,3.27,U.S. Dollars per Kilogram,3270.0
+2020-04-01,Coffee Arabica,3.41,U.S. Dollars per Kilogram,3410.0
+2020-05-01,Coffee Arabica,3.3,U.S. Dollars per Kilogram,3300.0
+2020-06-01,Coffee Arabica,3.12,U.S. Dollars per Kilogram,3120.0
+2020-07-01,Coffee Arabica,3.24,U.S. Dollars per Kilogram,3240.0
+2020-08-01,Coffee Arabica,3.6,U.S. Dollars per Kilogram,3600.0
+2020-09-01,Coffee Arabica,3.67,U.S. Dollars per Kilogram,3670.0
+2020-10-01,Coffee Arabica,3.35,U.S. Dollars per Kilogram,3350.0
+2020-11-01,Coffee Arabica,3.32,U.S. Dollars per Kilogram,3320.0
+2020-12-01,Coffee Arabica,3.48,U.S. Dollars per Kilogram,3480.0
+2021-01-01,Coffee Arabica,3.54,U.S. Dollars per Kilogram,3540.0
+2021-02-01,Coffee Arabica,3.67,U.S. Dollars per Kilogram,3670.0
+2021-03-01,Coffee Arabica,3.68,U.S. Dollars per Kilogram,3680.0
+2021-04-01,Coffee Arabica,3.72,U.S. Dollars per Kilogram,3720.0
+2021-05-01,Coffee Arabica,4.11,U.S. Dollars per Kilogram,4110.0
+2021-06-01,Coffee Arabica,4.24,U.S. Dollars per Kilogram,4240.0
+2021-07-01,Coffee Arabica,4.5,U.S. Dollars per Kilogram,4500.0
+2021-08-01,Coffee Arabica,4.77,U.S. Dollars per Kilogram,4770.0
+2021-09-01,Coffee Arabica,4.97,U.S. Dollars per Kilogram,4970.0
+2021-10-01,Coffee Arabica,5.31,U.S. Dollars per Kilogram,5310.0
+2021-11-01,Coffee Arabica,5.71,U.S. Dollars per Kilogram,5710.0
+2021-12-01,Coffee Arabica,5.91,U.S. Dollars per Kilogram,5910.0
+2022-01-01,Coffee Arabica,5.98,U.S. Dollars per Kilogram,5980.0
+2022-02-01,Coffee Arabica,6.17,U.S. Dollars per Kilogram,6170.0
+2022-03-01,Coffee Arabica,5.7,U.S. Dollars per Kilogram,5700.0
+2022-04-01,Coffee Arabica,5.85,U.S. Dollars per Kilogram,5850.0
+2022-05-01,Coffee Arabica,5.74,U.S. Dollars per Kilogram,5740.0
+2022-06-01,Coffee Arabica,6.03,U.S. Dollars per Kilogram,6030.0
+2022-07-01,Coffee Arabica,5.64,U.S. Dollars per Kilogram,5640.0
+2022-08-01,Coffee Arabica,5.92,U.S. Dollars per Kilogram,5920.0
+2022-09-01,Coffee Arabica,5.9,U.S. Dollars per Kilogram,5900.0
+2022-10-01,Coffee Arabica,5.29,U.S. Dollars per Kilogram,5290.0
+2022-11-01,Coffee Arabica,4.72,U.S. Dollars per Kilogram,4720.0
+2022-12-01,Coffee Arabica,4.63,U.S. Dollars per Kilogram,4630.0
+2023-01-01,Coffee Arabica,4.56,U.S. Dollars per Kilogram,4560.0
+2023-02-01,Coffee Arabica,5.06,U.S. Dollars per Kilogram,5060.0
+2023-03-01,Coffee Arabica,4.9,U.S. Dollars per Kilogram,4900.0
+2023-04-01,Coffee Arabica,5.06,U.S. Dollars per Kilogram,5060.0
+2023-05-01,Coffee Arabica,4.85,U.S. Dollars per Kilogram,4850.0
+2023-06-01,Coffee Arabica,4.57,U.S. Dollars per Kilogram,4570.0
+2023-07-01,Coffee Arabica,4.27,U.S. Dollars per Kilogram,4270.0
+2023-08-01,Coffee Arabica,4.12,U.S. Dollars per Kilogram,4120.0
+2023-09-01,Coffee Arabica,4.05,U.S. Dollars per Kilogram,4050.0
+2023-10-01,Coffee Arabica,4.05,U.S. Dollars per Kilogram,4050.0
+2023-11-01,Coffee Arabica,4.35,U.S. Dollars per Kilogram,4350.0
+2023-12-01,Coffee Arabica,4.65,U.S. Dollars per Kilogram,4650.0
+2024-01-01,Coffee Arabica,4.47,U.S. Dollars per Kilogram,4470.0
+2024-02-01,Coffee Arabica,4.6,U.S. Dollars per Kilogram,4600.0
+2024-03-01,Coffee Arabica,4.61,U.S. Dollars per Kilogram,4610.0
+2024-04-01,Coffee Arabica,5.27,U.S. Dollars per Kilogram,5270.0
+2024-05-01,Coffee Arabica,5.08,U.S. Dollars per Kilogram,5080.0
+2024-06-01,Coffee Arabica,5.48,U.S. Dollars per Kilogram,5480.0
+2024-07-01,Coffee Arabica,5.67,U.S. Dollars per Kilogram,5670.0
+2024-08-01,Coffee Arabica,5.76,U.S. Dollars per Kilogram,5760.0
+2024-09-01,Coffee Arabica,6.12,U.S. Dollars per Kilogram,6120.0
+2024-10-01,Coffee Arabica,6.1,U.S. Dollars per Kilogram,6100.0
+2024-11-01,Coffee Arabica,6.72,U.S. Dollars per Kilogram,6720.0
+2024-12-01,Coffee Arabica,7.57,U.S. Dollars per Kilogram,7570.0
+2025-01-01,Coffee Arabica,7.81,U.S. Dollars per Kilogram,7810.0
+2025-02-01,Coffee Arabica,9.05,U.S. Dollars per Kilogram,9050.0
+2025-03-01,Coffee Arabica,8.92,U.S. Dollars per Kilogram,8920.0
+2025-04-01,Coffee Arabica,8.64,U.S. Dollars per Kilogram,8640.0
+2025-05-01,Coffee Arabica,8.77,U.S. Dollars per Kilogram,8770.0
+2025-06-01,Coffee Arabica,8.01,U.S. Dollars per Kilogram,8010.0
+2025-07-01,Coffee Arabica,7.18,U.S. Dollars per Kilogram,7180.0
+2025-08-01,Coffee Arabica,8.08,U.S. Dollars per Kilogram,8080.0
+2025-09-01,Coffee Arabica,8.83,U.S. Dollars per Kilogram,8830.0
+2025-10-01,Coffee Arabica,8.9,U.S. Dollars per Kilogram,8900.0
+2025-11-01,Coffee Arabica,9.05,U.S. Dollars per Kilogram,9050.0
+2025-12-01,Coffee Arabica,8.4,U.S. Dollars per Kilogram,8400.0
+2026-01-01,Coffee Arabica,8.02,U.S. Dollars per Kilogram,8020.0
+2026-02-01,Coffee Arabica,7.08,U.S. Dollars per Kilogram,7080.0
+2026-03-01,Coffee Arabica,7.37,U.S. Dollars per Kilogram,7370.0
+2026-04-01,Coffee Arabica,7.3,U.S. Dollars per Kilogram,7300.0
+2026-05-01,Coffee Arabica,6.95,U.S. Dollars per Kilogram,6950.0
+2026-06-01,Coffee Arabica,6.79,U.S. Dollars per Kilogram,6790.0
+2026-07-01,Coffee Arabica,7.91,U.S. Dollars per Kilogram,7910.0
+2026-08-01,Coffee Arabica,7.97,U.S. Dollars per Kilogram,7970.0
+2026-09-01,Coffee Arabica,7.26,U.S. Dollars per Kilogram,7260.0
+2020-01-01,Coffee Robusta,1.56,U.S. Dollars per Kilogram,1560.0
+2020-02-01,Coffee Robusta,1.5,U.S. Dollars per Kilogram,1500.0
+2020-03-01,Coffee Robusta,1.49,U.S. Dollars per Kilogram,1490.0
+2020-04-01,Coffee Robusta,1.41,U.S. Dollars per Kilogram,1410.0
+2020-05-01,Coffee Robusta,1.42,U.S. Dollars per Kilogram,1420.0
+2020-06-01,Coffee Robusta,1.42,U.S. Dollars per Kilogram,1420.0
+2020-07-01,Coffee Robusta,1.49,U.S. Dollars per Kilogram,1490.0
+2020-08-01,Coffee Robusta,1.6,U.S. Dollars per Kilogram,1600.0
+2020-09-01,Coffee Robusta,1.6,U.S. Dollars per Kilogram,1600.0
+2020-10-01,Coffee Robusta,1.51,U.S. Dollars per Kilogram,1510.0
+2020-11-01,Coffee Robusta,1.6,U.S. Dollars per Kilogram,1600.0
+2020-12-01,Coffee Robusta,1.59,U.S. Dollars per Kilogram,1590.0
+2021-01-01,Coffee Robusta,1.56,U.S. Dollars per Kilogram,1560.0
+2021-02-01,Coffee Robusta,1.62,U.S. Dollars per Kilogram,1620.0
+2021-03-01,Coffee Robusta,1.63,U.S. Dollars per Kilogram,1630.0
+2021-04-01,Coffee Robusta,1.64,U.S. Dollars per Kilogram,1640.0
+2021-05-01,Coffee Robusta,1.76,U.S. Dollars per Kilogram,1760.0
+2021-06-01,Coffee Robusta,1.87,U.S. Dollars per Kilogram,1870.0
+2021-07-01,Coffee Robusta,2.08,U.S. Dollars per Kilogram,2080.0
+2021-08-01,Coffee Robusta,2.1,U.S. Dollars per Kilogram,2100.0
+2021-09-01,Coffee Robusta,2.31,U.S. Dollars per Kilogram,2310.0
+2021-10-01,Coffee Robusta,2.32,U.S. Dollars per Kilogram,2320.0
+2021-11-01,Coffee Robusta,2.41,U.S. Dollars per Kilogram,2410.0
+2021-12-01,Coffee Robusta,2.48,U.S. Dollars per Kilogram,2480.0
+2022-01-01,Coffee Robusta,2.43,U.S. Dollars per Kilogram,2430.0
+2022-02-01,Coffee Robusta,2.41,U.S. Dollars per Kilogram,2410.0
+2022-03-01,Coffee Robusta,2.29,U.S. Dollars per Kilogram,2290.0
+2022-04-01,Coffee Robusta,2.29,U.S. Dollars per Kilogram,2290.0
+2022-05-01,Coffee Robusta,2.27,U.S. Dollars per Kilogram,2270.0
+2022-06-01,Coffee Robusta,2.29,U.S. Dollars per Kilogram,2290.0
+2022-07-01,Coffee Robusta,2.21,U.S. Dollars per Kilogram,2210.0
+2022-08-01,Coffee Robusta,2.42,U.S. Dollars per Kilogram,2420.0
+2022-09-01,Coffee Robusta,2.46,U.S. Dollars per Kilogram,2460.0
+2022-10-01,Coffee Robusta,2.27,U.S. Dollars per Kilogram,2270.0
+2022-11-01,Coffee Robusta,2.04,U.S. Dollars per Kilogram,2040.0
+2022-12-01,Coffee Robusta,2.05,U.S. Dollars per Kilogram,2050.0
+2023-01-01,Coffee Robusta,2.12,U.S. Dollars per Kilogram,2120.0
+2023-02-01,Coffee Robusta,2.29,U.S. Dollars per Kilogram,2290.0
+2023-03-01,Coffee Robusta,2.35,U.S. Dollars per Kilogram,2350.0
+2023-04-01,Coffee Robusta,2.55,U.S. Dollars per Kilogram,2550.0
+2023-05-01,Coffee Robusta,2.7,U.S. Dollars per Kilogram,2700.0
+2023-06-01,Coffee Robusta,2.91,U.S. Dollars per Kilogram,2910.0
+2023-07-01,Coffee Robusta,2.81,U.S. Dollars per Kilogram,2810.0
+2023-08-01,Coffee Robusta,2.75,U.S. Dollars per Kilogram,2750.0
+2023-09-01,Coffee Robusta,2.73,U.S. Dollars per Kilogram,2730.0
+2023-10-01,Coffee Robusta,2.62,U.S. Dollars per Kilogram,2620.0
+2023-11-01,Coffee Robusta,2.7,U.S. Dollars per Kilogram,2700.0
+2023-12-01,Coffee Robusta,2.99,U.S. Dollars per Kilogram,2990.0
+2024-01-01,Coffee Robusta,3.26,U.S. Dollars per Kilogram,3260.0
+2024-02-01,Coffee Robusta,3.38,U.S. Dollars per Kilogram,3380.0
+2024-03-01,Coffee Robusta,3.66,U.S. Dollars per Kilogram,3660.0
+2024-04-01,Coffee Robusta,4.23,U.S. Dollars per Kilogram,4230.0
+2024-05-01,Coffee Robusta,4.04,U.S. Dollars per Kilogram,4040.0
+2024-06-01,Coffee Robusta,4.5,U.S. Dollars per Kilogram,4500.0
+2024-07-01,Coffee Robusta,4.73,U.S. Dollars per Kilogram,4730.0
+2024-08-01,Coffee Robusta,4.73,U.S. Dollars per Kilogram,4730.0
+2024-09-01,Coffee Robusta,5.33,U.S. Dollars per Kilogram,5330.0
+2024-10-01,Coffee Robusta,4.89,U.S. Dollars per Kilogram,4890.0
+2024-11-01,Coffee Robusta,4.98,U.S. Dollars per Kilogram,4980.0
+2024-12-01,Coffee Robusta,5.22,U.S. Dollars per Kilogram,5220.0
+2025-01-01,Coffee Robusta,5.41,U.S. Dollars per Kilogram,5410.0
+2025-02-01,Coffee Robusta,5.81,U.S. Dollars per Kilogram,5810.0
+2025-03-01,Coffee Robusta,5.69,U.S. Dollars per Kilogram,5690.0
+2025-04-01,Coffee Robusta,5.43,U.S. Dollars per Kilogram,5430.0
+2025-05-01,Coffee Robusta,5.24,U.S. Dollars per Kilogram,5240.0
+2025-06-01,Coffee Robusta,4.33,U.S. Dollars per Kilogram,4330.0
+2025-07-01,Coffee Robusta,3.69,U.S. Dollars per Kilogram,3690.0
+2025-08-01,Coffee Robusta,4.39,U.S. Dollars per Kilogram,4390.0
+2025-09-01,Coffee Robusta,4.66,U.S. Dollars per Kilogram,4660.0
+2025-10-01,Coffee Robusta,4.74,U.S. Dollars per Kilogram,4740.0
+2025-11-01,Coffee Robusta,4.74,U.S. Dollars per Kilogram,4740.0
+2025-12-01,Coffee Robusta,4.2,U.S. Dollars per Kilogram,4200.0
+2026-01-01,Coffee Robusta,4.24,U.S. Dollars per Kilogram,4240.0
+2026-02-01,Coffee Robusta,3.96,U.S. Dollars per Kilogram,3960.0
+2026-03-01,Coffee Robusta,3.9,U.S. Dollars per Kilogram,3900.0
+2026-04-01,Coffee Robusta,3.63,U.S. Dollars per Kilogram,3630.0
+2026-05-01,Coffee Robusta,3.67,U.S. Dollars per Kilogram,3670.0
+2026-06-01,Coffee Robusta,3.73,U.S. Dollars per Kilogram,3730.0
+2026-07-01,Coffee Robusta,4.07,U.S. Dollars per Kilogram,4070.0
+2026-08-01,Coffee Robusta,3.98,U.S. Dollars per Kilogram,3980.0
+2026-09-01,Coffee Robusta,3.69,U.S. Dollars per Kilogram,3690.0
+2020-01-01,Cocoa,2.6,U.S. Dollars per Kilogram,2600.0
+2020-02-01,Cocoa,2.72,U.S. Dollars per Kilogram,2720.0
+2020-03-01,Cocoa,2.34,U.S. Dollars per Kilogram,2340.0
+2020-04-01,Cocoa,2.27,U.S. Dollars per Kilogram,2270.0
+2020-05-01,Cocoa,2.32,U.S. Dollars per Kilogram,2320.0
+2020-06-01,Cocoa,2.23,U.S. Dollars per Kilogram,2230.0
+2020-07-01,Cocoa,2.1,U.S. Dollars per Kilogram,2100.0
+2020-08-01,Cocoa,2.35,U.S. Dollars per Kilogram,2350.0
+2020-09-01,Cocoa,2.46,U.S. Dollars per Kilogram,2460.0
+2020-10-01,Cocoa,2.29,U.S. Dollars per Kilogram,2290.0
+2020-11-01,Cocoa,2.36,U.S. Dollars per Kilogram,2360.0
+2020-12-01,Cocoa,2.41,U.S. Dollars per Kilogram,2410.0
+2021-01-01,Cocoa,2.39,U.S. Dollars per Kilogram,2390.0
+2021-02-01,Cocoa,2.41,U.S. Dollars per Kilogram,2410.0
+2021-03-01,Cocoa,2.46,U.S. Dollars per Kilogram,2460.0
+2021-04-01,Cocoa,2.37,U.S. Dollars per Kilogram,2370.0
+2021-05-01,Cocoa,2.41,U.S. Dollars per Kilogram,2410.0
+2021-06-01,Cocoa,2.37,U.S. Dollars per Kilogram,2370.0
+2021-07-01,Cocoa,2.33,U.S. Dollars per Kilogram,2330.0
+2021-08-01,Cocoa,2.48,U.S. Dollars per Kilogram,2480.0
+2021-09-01,Cocoa,2.56,U.S. Dollars per Kilogram,2560.0
+2021-10-01,Cocoa,2.57,U.S. Dollars per Kilogram,2570.0
+2021-11-01,Cocoa,2.39,U.S. Dollars per Kilogram,2390.0
+2021-12-01,Cocoa,2.38,U.S. Dollars per Kilogram,2380.0
+2022-01-01,Cocoa,2.47,U.S. Dollars per Kilogram,2470.0
+2022-02-01,Cocoa,2.55,U.S. Dollars per Kilogram,2550.0
+2022-03-01,Cocoa,2.46,U.S. Dollars per Kilogram,2460.0
+2022-04-01,Cocoa,2.46,U.S. Dollars per Kilogram,2460.0
+2022-05-01,Cocoa,2.37,U.S. Dollars per Kilogram,2370.0
+2022-06-01,Cocoa,2.32,U.S. Dollars per Kilogram,2320.0
+2022-07-01,Cocoa,2.24,U.S. Dollars per Kilogram,2240.0
+2022-08-01,Cocoa,2.32,U.S. Dollars per Kilogram,2320.0
+2022-09-01,Cocoa,2.3,U.S. Dollars per Kilogram,2300.0
+2022-10-01,Cocoa,2.31,U.S. Dollars per Kilogram,2310.0
+2022-11-01,Cocoa,2.41,U.S. Dollars per Kilogram,2410.0
+2022-12-01,Cocoa,2.51,U.S. Dollars per Kilogram,2510.0
+2023-01-01,Cocoa,2.62,U.S. Dollars per Kilogram,2620.0
+2023-02-01,Cocoa,2.65,U.S. Dollars per Kilogram,2650.0
+2023-03-01,Cocoa,2.75,U.S. Dollars per Kilogram,2750.0
+2023-04-01,Cocoa,2.88,U.S. Dollars per Kilogram,2880.0
+2023-05-01,Cocoa,2.96,U.S. Dollars per Kilogram,2960.0
+2023-06-01,Cocoa,3.17,U.S. Dollars per Kilogram,3170.0
+2023-07-01,Cocoa,3.39,U.S. Dollars per Kilogram,3390.0
+2023-08-01,Cocoa,3.46,U.S. Dollars per Kilogram,3460.0
+2023-09-01,Cocoa,3.61,U.S. Dollars per Kilogram,3610.0
+2023-10-01,Cocoa,3.63,U.S. Dollars per Kilogram,3630.0
+2023-11-01,Cocoa,4.03,U.S. Dollars per Kilogram,4030.0
+2023-12-01,Cocoa,4.21,U.S. Dollars per Kilogram,4210.0
+2024-01-01,Cocoa,4.4,U.S. Dollars per Kilogram,4400.0
+2024-02-01,Cocoa,5.56,U.S. Dollars per Kilogram,5560.0
+2024-03-01,Cocoa,7.09,U.S. Dollars per Kilogram,7090.0
+2024-04-01,Cocoa,9.74,U.S. Dollars per Kilogram,9740.0
+2024-05-01,Cocoa,7.54,U.S. Dollars per Kilogram,7540.0
+2024-06-01,Cocoa,8.27,U.S. Dollars per Kilogram,8270.0
+2024-07-01,Cocoa,7.09,U.S. Dollars per Kilogram,7090.0
+2024-08-01,Cocoa,6.88,U.S. Dollars per Kilogram,6880.0
+2024-09-01,Cocoa,6.52,U.S. Dollars per Kilogram,6520.0
+2024-10-01,Cocoa,6.66,U.S. Dollars per Kilogram,6660.0
+2024-11-01,Cocoa,7.89,U.S. Dollars per Kilogram,7890.0
+2024-12-01,Cocoa,10.32,U.S. Dollars per Kilogram,10320.0
+2025-01-01,Cocoa,10.75,U.S. Dollars per Kilogram,10750.0
+2025-02-01,Cocoa,9.86,U.S. Dollars per Kilogram,9860.0
+2025-03-01,Cocoa,8.08,U.S. Dollars per Kilogram,8080.0
+2025-04-01,Cocoa,8.15,U.S. Dollars per Kilogram,8150.0
+2025-05-01,Cocoa,8.99,U.S. Dollars per Kilogram,8990.0
+2025-06-01,Cocoa,8.4,U.S. Dollars per Kilogram,8400.0
+2025-07-01,Cocoa,7.37,U.S. Dollars per Kilogram,7370.0
+2025-08-01,Cocoa,7.6,U.S. Dollars per Kilogram,7600.0
+2025-09-01,Cocoa,7.03,U.S. Dollars per Kilogram,7030.0
+2025-10-01,Cocoa,5.95,U.S. Dollars per Kilogram,5950.0
+2025-11-01,Cocoa,5.61,U.S. Dollars per Kilogram,5610.0
+2025-12-01,Cocoa,5.78,U.S. Dollars per Kilogram,5780.0
+2026-01-01,Cocoa,4.97,U.S. Dollars per Kilogram,4970.0
+2026-02-01,Cocoa,3.59,U.S. Dollars per Kilogram,3590.0
+2026-03-01,Cocoa,3.24,U.S. Dollars per Kilogram,3240.0
+2026-04-01,Cocoa,3.4,U.S. Dollars per Kilogram,3400.0
+2026-05-01,Cocoa,4.16,U.S. Dollars per Kilogram,4160.0
+2026-06-01,Cocoa,4.4,U.S. Dollars per Kilogram,4400.0
+2026-07-01,Cocoa,5.61,U.S. Dollars per Kilogram,5610.0
+2026-08-01,Cocoa,5.95,U.S. Dollars per Kilogram,5950.0
+2026-09-01,Cocoa,5.92,U.S. Dollars per Kilogram,5920.0
+2020-01-01,Sugar,0.31,U.S. Dollars per Kilogram,310.0
+2020-02-01,Sugar,0.33,U.S. Dollars per Kilogram,330.0
+2020-03-01,Sugar,0.26,U.S. Dollars per Kilogram,260.0
+2020-04-01,Sugar,0.23,U.S. Dollars per Kilogram,230.0
+2020-05-01,Sugar,0.24,U.S. Dollars per Kilogram,240.0
+2020-06-01,Sugar,0.27,U.S. Dollars per Kilogram,270.0
+2020-07-01,Sugar,0.27,U.S. Dollars per Kilogram,270.0
+2020-08-01,Sugar,0.29,U.S. Dollars per Kilogram,290.0
+2020-09-01,Sugar,0.28,U.S. Dollars per Kilogram,280.0
+2020-10-01,Sugar,0.3,U.S. Dollars per Kilogram,300.0
+2020-11-01,Sugar,0.31,U.S. Dollars per Kilogram,310.0
+2020-12-01,Sugar,0.31,U.S. Dollars per Kilogram,310.0
+2021-01-01,Sugar,0.34,U.S. Dollars per Kilogram,340.0
+2021-02-01,Sugar,0.36,U.S. Dollars per Kilogram,360.0
+2021-03-01,Sugar,0.34,U.S. Dollars per Kilogram,340.0
+2021-04-01,Sugar,0.36,U.S. Dollars per Kilogram,360.0
+2021-05-01,Sugar,0.38,U.S. Dollars per Kilogram,380.0
+2021-06-01,Sugar,0.38,U.S. Dollars per Kilogram,380.0
+2021-07-01,Sugar,0.39,U.S. Dollars per Kilogram,390.0
+2021-08-01,Sugar,0.43,U.S. Dollars per Kilogram,430.0
+2021-09-01,Sugar,0.43,U.S. Dollars per Kilogram,430.0
+2021-10-01,Sugar,0.42,U.S. Dollars per Kilogram,420.0
+2021-11-01,Sugar,0.43,U.S. Dollars per Kilogram,430.0
+2021-12-01,Sugar,0.42,U.S. Dollars per Kilogram,420.0
+2022-01-01,Sugar,0.4,U.S. Dollars per Kilogram,400.0
+2022-02-01,Sugar,0.39,U.S. Dollars per Kilogram,390.0
+2022-03-01,Sugar,0.42,U.S. Dollars per Kilogram,420.0
+2022-04-01,Sugar,0.43,U.S. Dollars per Kilogram,430.0
+2022-05-01,Sugar,0.43,U.S. Dollars per Kilogram,430.0
+2022-06-01,Sugar,0.42,U.S. Dollars per Kilogram,420.0
+2022-07-01,Sugar,0.4,U.S. Dollars per Kilogram,400.0
+2022-08-01,Sugar,0.39,U.S. Dollars per Kilogram,390.0
+2022-09-01,Sugar,0.39,U.S. Dollars per Kilogram,390.0
+2022-10-01,Sugar,0.39,U.S. Dollars per Kilogram,390.0
+2022-11-01,Sugar,0.41,U.S. Dollars per Kilogram,410.0
+2022-12-01,Sugar,0.42,U.S. Dollars per Kilogram,420.0
+2023-01-01,Sugar,0.42,U.S. Dollars per Kilogram,420.0
+2023-02-01,Sugar,0.45,U.S. Dollars per Kilogram,450.0
+2023-03-01,Sugar,0.45,U.S. Dollars per Kilogram,450.0
+2023-04-01,Sugar,0.53,U.S. Dollars per Kilogram,530.0
+2023-05-01,Sugar,0.56,U.S. Dollars per Kilogram,560.0
+2023-06-01,Sugar,0.54,U.S. Dollars per Kilogram,540.0
+2023-07-01,Sugar,0.52,U.S. Dollars per Kilogram,520.0
+2023-08-01,Sugar,0.53,U.S. Dollars per Kilogram,530.0
+2023-09-01,Sugar,0.58,U.S. Dollars per Kilogram,580.0
+2023-10-01,Sugar,0.57,U.S. Dollars per Kilogram,570.0
+2023-11-01,Sugar,0.57,U.S. Dollars per Kilogram,570.0
+2023-12-01,Sugar,0.48,U.S. Dollars per Kilogram,480.0
+2024-01-01,Sugar,0.48,U.S. Dollars per Kilogram,480.0
+2024-02-01,Sugar,0.5,U.S. Dollars per Kilogram,500.0
+2024-03-01,Sugar,0.48,U.S. Dollars per Kilogram,480.0
+2024-04-01,Sugar,0.45,U.S. Dollars per Kilogram,450.0
+2024-05-01,Sugar,0.42,U.S. Dollars per Kilogram,420.0
+2024-06-01,Sugar,0.43,U.S. Dollars per Kilogram,430.0
+2024-07-01,Sugar,0.43,U.S. Dollars per Kilogram,430.0
+2024-08-01,Sugar,0.41,U.S. Dollars per Kilogram,410.0
+2024-09-01,Sugar,0.45,U.S. Dollars per Kilogram,450.0
+2024-10-01,Sugar,0.46,U.S. Dollars per Kilogram,460.0
+2024-11-01,Sugar,0.45,U.S. Dollars per Kilogram,450.0
+2024-12-01,Sugar,0.44,U.S. Dollars per Kilogram,440.0
+2025-01-01,Sugar,0.4,U.S. Dollars per Kilogram,400.0
+2025-02-01,Sugar,0.42,U.S. Dollars per Kilogram,420.0
+2025-03-01,Sugar,0.42,U.S. Dollars per Kilogram,420.0
+2025-04-01,Sugar,0.4,U.S. Dollars per Kilogram,400.0
+2025-05-01,Sugar,0.39,U.S. Dollars per Kilogram,390.0
+2025-06-01,Sugar,0.37,U.S. Dollars per Kilogram,370.0
+2025-07-01,Sugar,0.37,U.S. Dollars per Kilogram,370.0
+2025-08-01,Sugar,0.37,U.S. Dollars per Kilogram,370.0
+2025-09-01,Sugar,0.35,U.S. Dollars per Kilogram,350.0
+2025-10-01,Sugar,0.34,U.S. Dollars per Kilogram,340.0
+2025-11-01,Sugar,0.32,U.S. Dollars per Kilogram,320.0
+2025-12-01,Sugar,0.32,U.S. Dollars per Kilogram,320.0
+2026-01-01,Sugar,0.32,U.S. Dollars per Kilogram,320.0
+2026-02-01,Sugar,0.31,U.S. Dollars per Kilogram,310.0
+2026-03-01,Sugar,0.33,U.S. Dollars per Kilogram,330.0
+2026-04-01,Sugar,0.32,U.S. Dollars per Kilogram,320.0
+2026-05-01,Sugar,0.34,U.S. Dollars per Kilogram,340.0
+2026-06-01,Sugar,0.32,U.S. Dollars per Kilogram,320.0
+2026-07-01,Sugar,0.34,U.S. Dollars per Kilogram,340.0
+2026-08-01,Sugar,0.38,U.S. Dollars per Kilogram,380.0
+2026-09-01,Sugar,0.41,U.S. Dollars per Kilogram,410.0
 2020-01-01,Tea,280.542589726087,U.S. Cents per Kilogram,2805.43
 2020-02-01,Tea,267.24550411,U.S. Cents per Kilogram,2672.46
 2020-03-01,Tea,260.1179093454545,U.S. Cents per Kilogram,2601.18
@@ -473,85 +481,87 @@ date,commodity,price_original,unit_original,usd_per_ton
 2026-05-01,Wheat,220.8845521666666,U.S. Dollars per Metric Ton,220.88
 2026-06-01,Wheat,199.6482875619048,U.S. Dollars per Metric Ton,199.65
 2026-07-01,Wheat,228.73884495,U.S. Dollars per Metric Ton,228.74
-2020-01-01,Corn,171.8141352040817,U.S. Dollars per Metric Ton,171.81
-2020-02-01,Corn,168.7445984962405,U.S. Dollars per Metric Ton,168.74
-2020-03-01,Corn,162.1791482142857,U.S. Dollars per Metric Ton,162.18
-2020-04-01,Corn,147.0121602040815,U.S. Dollars per Metric Ton,147.01
-2020-05-01,Corn,143.9892437500002,U.S. Dollars per Metric Ton,143.99
-2020-06-01,Corn,148.0423803571428,U.S. Dollars per Metric Ton,148.04
-2020-07-01,Corn,152.5876196428571,U.S. Dollars per Metric Ton,152.59
-2020-08-01,Corn,149.3929998299319,U.S. Dollars per Metric Ton,149.39
-2020-09-01,Corn,166.6025335034014,U.S. Dollars per Metric Ton,166.6
-2020-10-01,Corn,186.7663875,U.S. Dollars per Metric Ton,186.77
-2020-11-01,Corn,190.6250375939849,U.S. Dollars per Metric Ton,190.63
-2020-12-01,Corn,199.1844175170068,U.S. Dollars per Metric Ton,199.18
-2021-01-01,Corn,231.7544614661655,U.S. Dollars per Metric Ton,231.75
-2021-02-01,Corn,245.5540565789474,U.S. Dollars per Metric Ton,245.55
-2021-03-01,Corn,245.7603568322983,U.S. Dollars per Metric Ton,245.76
-2021-04-01,Corn,268.6224488095237,U.S. Dollars per Metric Ton,268.62
-2021-05-01,Corn,304.297549659864,U.S. Dollars per Metric Ton,304.3
-2021-06-01,Corn,292.5237267857143,U.S. Dollars per Metric Ton,292.52
-2021-07-01,Corn,278.445755612245,U.S. Dollars per Metric Ton,278.45
-2021-08-01,Corn,257.020755357143,U.S. Dollars per Metric Ton,257.02
-2021-09-01,Corn,235.8156035714281,U.S. Dollars per Metric Ton,235.82
-2021-10-01,Corn,239.60245085034,U.S. Dollars per Metric Ton,239.6
-2021-11-01,Corn,248.7677460714286,U.S. Dollars per Metric Ton,248.77
-2021-12-01,Corn,264.5731467687075,U.S. Dollars per Metric Ton,264.57
-2022-01-01,Corn,276.7191782142856,U.S. Dollars per Metric Ton,276.72
-2022-02-01,Corn,292.6715930451127,U.S. Dollars per Metric Ton,292.67
-2022-03-01,Corn,335.9306841614907,U.S. Dollars per Metric Ton,335.93
-2022-04-01,Corn,348.5071169642857,U.S. Dollars per Metric Ton,348.51
-2022-05-01,Corn,344.9092996031747,U.S. Dollars per Metric Ton,344.91
-2022-06-01,Corn,335.7171340136054,U.S. Dollars per Metric Ton,335.72
-2022-07-01,Corn,312.6820419642856,U.S. Dollars per Metric Ton,312.68
-2022-08-01,Corn,293.9307903338509,U.S. Dollars per Metric Ton,293.93
-2022-09-01,Corn,312.5461278911564,U.S. Dollars per Metric Ton,312.55
-2022-10-01,Corn,343.5532833333333,U.S. Dollars per Metric Ton,343.55
-2022-11-01,Corn,320.929682857143,U.S. Dollars per Metric Ton,320.93
-2022-12-01,Corn,302.2354051020408,U.S. Dollars per Metric Ton,302.24
-2023-01-01,Corn,302.8399883928572,U.S. Dollars per Metric Ton,302.84
-2023-02-01,Corn,298.2453033834586,U.S. Dollars per Metric Ton,298.25
-2023-03-01,Corn,284.9574049689442,U.S. Dollars per Metric Ton,284.96
-2023-04-01,Corn,291.1797449248119,U.S. Dollars per Metric Ton,291.18
-2023-05-01,Corn,268.1725263605443,U.S. Dollars per Metric Ton,268.17
-2023-06-01,Corn,266.9352396258504,U.S. Dollars per Metric Ton,266.94
-2023-07-01,Corn,235.2719472789116,U.S. Dollars per Metric Ton,235.27
-2023-08-01,Corn,207.6758886645963,U.S. Dollars per Metric Ton,207.68
-2023-09-01,Corn,223.8476664285715,U.S. Dollars per Metric Ton,223.85
-2023-10-01,Corn,221.90251875,U.S. Dollars per Metric Ton,221.9
-2023-11-01,Corn,209.0402968303571,U.S. Dollars per Metric Ton,209.04
-2023-12-01,Corn,207.3979688909774,U.S. Dollars per Metric Ton,207.4
-2024-01-01,Corn,198.7579285289115,U.S. Dollars per Metric Ton,198.76
-2024-02-01,Corn,188.9477444642856,U.S. Dollars per Metric Ton,188.95
-2024-03-01,Corn,190.2272114285714,U.S. Dollars per Metric Ton,190.23
-2024-04-01,Corn,190.9000500000001,U.S. Dollars per Metric Ton,190.9
-2024-05-01,Corn,201.0194705357142,U.S. Dollars per Metric Ton,201.02
-2024-06-01,Corn,191.2409429464286,U.S. Dollars per Metric Ton,191.24
-2024-07-01,Corn,177.7677084464286,U.S. Dollars per Metric Ton,177.77
-2024-08-01,Corn,169.2967424107143,U.S. Dollars per Metric Ton,169.3
-2024-09-01,Corn,183.6558276597744,U.S. Dollars per Metric Ton,183.66
-2024-10-01,Corn,189.5879058618013,U.S. Dollars per Metric Ton,189.59
-2024-11-01,Corn,201.3082701884922,U.S. Dollars per Metric Ton,201.31
-2024-12-01,Corn,202.8299610267858,U.S. Dollars per Metric Ton,202.83
-2025-01-01,Corn,214.3599267857142,U.S. Dollars per Metric Ton,214.36
-2025-02-01,Corn,221.2545443139097,U.S. Dollars per Metric Ton,221.25
-2025-03-01,Corn,207.7516908163266,U.S. Dollars per Metric Ton,207.75
-2025-04-01,Corn,215.5690933673469,U.S. Dollars per Metric Ton,215.57
-2025-05-01,Corn,204.8084481292517,U.S. Dollars per Metric Ton,204.81
-2025-06-01,Corn,195.7190773214286,U.S. Dollars per Metric Ton,195.72
-2025-07-01,Corn,192.4525892142857,U.S. Dollars per Metric Ton,192.45
-2025-08-01,Corn,183.0247028911564,U.S. Dollars per Metric Ton,183.02
-2025-09-01,Corn,196.1459412448979,U.S. Dollars per Metric Ton,196.15
-2025-10-01,Corn,198.0176441964286,U.S. Dollars per Metric Ton,198.02
-2025-11-01,Corn,201.6578882352942,U.S. Dollars per Metric Ton,201.66
-2025-12-01,Corn,205.3150795535714,U.S. Dollars per Metric Ton,205.32
-2026-01-01,Corn,203.8978238392856,U.S. Dollars per Metric Ton,203.9
-2026-02-01,Corn,210.6354865131578,U.S. Dollars per Metric Ton,210.64
-2026-03-01,Corn,213.3041428571428,U.S. Dollars per Metric Ton,213.3
-2026-04-01,Corn,214.5239610119047,U.S. Dollars per Metric Ton,214.52
-2026-05-01,Corn,215.6206469812925,U.S. Dollars per Metric Ton,215.62
-2026-06-01,Corn,195.7818789965986,U.S. Dollars per Metric Ton,195.78
-2026-07-01,Corn,213.1901539821428,U.S. Dollars per Metric Ton,213.19
+2020-01-01,Corn,171.8,U.S. Dollars per Metric Ton,171.8
+2020-02-01,Corn,168.7,U.S. Dollars per Metric Ton,168.7
+2020-03-01,Corn,162.4,U.S. Dollars per Metric Ton,162.4
+2020-04-01,Corn,146.9,U.S. Dollars per Metric Ton,146.9
+2020-05-01,Corn,143.9,U.S. Dollars per Metric Ton,143.9
+2020-06-01,Corn,148.0,U.S. Dollars per Metric Ton,148.0
+2020-07-01,Corn,152.6,U.S. Dollars per Metric Ton,152.6
+2020-08-01,Corn,149.3,U.S. Dollars per Metric Ton,149.3
+2020-09-01,Corn,166.1,U.S. Dollars per Metric Ton,166.1
+2020-10-01,Corn,186.7,U.S. Dollars per Metric Ton,186.7
+2020-11-01,Corn,190.4,U.S. Dollars per Metric Ton,190.4
+2020-12-01,Corn,198.8,U.S. Dollars per Metric Ton,198.8
+2021-01-01,Corn,234.5,U.S. Dollars per Metric Ton,234.5
+2021-02-01,Corn,245.2,U.S. Dollars per Metric Ton,245.2
+2021-03-01,Corn,245.2,U.S. Dollars per Metric Ton,245.2
+2021-04-01,Corn,268.2,U.S. Dollars per Metric Ton,268.2
+2021-05-01,Corn,305.3,U.S. Dollars per Metric Ton,305.3
+2021-06-01,Corn,292.6,U.S. Dollars per Metric Ton,292.6
+2021-07-01,Corn,278.4,U.S. Dollars per Metric Ton,278.4
+2021-08-01,Corn,256.6,U.S. Dollars per Metric Ton,256.6
+2021-09-01,Corn,235.6,U.S. Dollars per Metric Ton,235.6
+2021-10-01,Corn,239.6,U.S. Dollars per Metric Ton,239.6
+2021-11-01,Corn,248.7,U.S. Dollars per Metric Ton,248.7
+2021-12-01,Corn,264.5,U.S. Dollars per Metric Ton,264.5
+2022-01-01,Corn,276.6,U.S. Dollars per Metric Ton,276.6
+2022-02-01,Corn,292.6,U.S. Dollars per Metric Ton,292.6
+2022-03-01,Corn,335.5,U.S. Dollars per Metric Ton,335.5
+2022-04-01,Corn,348.2,U.S. Dollars per Metric Ton,348.2
+2022-05-01,Corn,344.8,U.S. Dollars per Metric Ton,344.8
+2022-06-01,Corn,335.7,U.S. Dollars per Metric Ton,335.7
+2022-07-01,Corn,323.0,U.S. Dollars per Metric Ton,323.0
+2022-08-01,Corn,289.8,U.S. Dollars per Metric Ton,289.8
+2022-09-01,Corn,312.7,U.S. Dollars per Metric Ton,312.7
+2022-10-01,Corn,343.6,U.S. Dollars per Metric Ton,343.6
+2022-11-01,Corn,320.9,U.S. Dollars per Metric Ton,320.9
+2022-12-01,Corn,302.2,U.S. Dollars per Metric Ton,302.2
+2023-01-01,Corn,302.8,U.S. Dollars per Metric Ton,302.8
+2023-02-01,Corn,298.2,U.S. Dollars per Metric Ton,298.2
+2023-03-01,Corn,282.5,U.S. Dollars per Metric Ton,282.5
+2023-04-01,Corn,291.1,U.S. Dollars per Metric Ton,291.1
+2023-05-01,Corn,268.1,U.S. Dollars per Metric Ton,268.1
+2023-06-01,Corn,266.9,U.S. Dollars per Metric Ton,266.9
+2023-07-01,Corn,242.4,U.S. Dollars per Metric Ton,242.4
+2023-08-01,Corn,207.6,U.S. Dollars per Metric Ton,207.6
+2023-09-01,Corn,223.8,U.S. Dollars per Metric Ton,223.8
+2023-10-01,Corn,230.7,U.S. Dollars per Metric Ton,230.7
+2023-11-01,Corn,211.3,U.S. Dollars per Metric Ton,211.3
+2023-12-01,Corn,206.5,U.S. Dollars per Metric Ton,206.5
+2024-01-01,Corn,198.6,U.S. Dollars per Metric Ton,198.6
+2024-02-01,Corn,189.1,U.S. Dollars per Metric Ton,189.1
+2024-03-01,Corn,190.6,U.S. Dollars per Metric Ton,190.6
+2024-04-01,Corn,191.7,U.S. Dollars per Metric Ton,191.7
+2024-05-01,Corn,197.8,U.S. Dollars per Metric Ton,197.8
+2024-06-01,Corn,192.5,U.S. Dollars per Metric Ton,192.5
+2024-07-01,Corn,177.4,U.S. Dollars per Metric Ton,177.4
+2024-08-01,Corn,170.3,U.S. Dollars per Metric Ton,170.3
+2024-09-01,Corn,185.0,U.S. Dollars per Metric Ton,185.0
+2024-10-01,Corn,190.3,U.S. Dollars per Metric Ton,190.3
+2024-11-01,Corn,201.3,U.S. Dollars per Metric Ton,201.3
+2024-12-01,Corn,202.6,U.S. Dollars per Metric Ton,202.6
+2025-01-01,Corn,214.4,U.S. Dollars per Metric Ton,214.4
+2025-02-01,Corn,220.9,U.S. Dollars per Metric Ton,220.9
+2025-03-01,Corn,207.4,U.S. Dollars per Metric Ton,207.4
+2025-04-01,Corn,215.0,U.S. Dollars per Metric Ton,215.0
+2025-05-01,Corn,203.9,U.S. Dollars per Metric Ton,203.9
+2025-06-01,Corn,196.1,U.S. Dollars per Metric Ton,196.1
+2025-07-01,Corn,192.0,U.S. Dollars per Metric Ton,192.0
+2025-08-01,Corn,185.5,U.S. Dollars per Metric Ton,185.5
+2025-09-01,Corn,197.4,U.S. Dollars per Metric Ton,197.4
+2025-10-01,Corn,198.1,U.S. Dollars per Metric Ton,198.1
+2025-11-01,Corn,202.0,U.S. Dollars per Metric Ton,202.0
+2025-12-01,Corn,205.7,U.S. Dollars per Metric Ton,205.7
+2026-01-01,Corn,204.5,U.S. Dollars per Metric Ton,204.5
+2026-02-01,Corn,209.6,U.S. Dollars per Metric Ton,209.6
+2026-03-01,Corn,212.7,U.S. Dollars per Metric Ton,212.7
+2026-04-01,Corn,214.0,U.S. Dollars per Metric Ton,214.0
+2026-05-01,Corn,216.2,U.S. Dollars per Metric Ton,216.2
+2026-06-01,Corn,197.1,U.S. Dollars per Metric Ton,197.1
+2026-07-01,Corn,213.4,U.S. Dollars per Metric Ton,213.4
+2026-08-01,Corn,224.0,U.S. Dollars per Metric Ton,224.0
+2026-09-01,Corn,239.6,U.S. Dollars per Metric Ton,239.6
 2020-01-01,Barley,115.0516597904742,U.S. Dollars per Metric Ton,115.05
 2020-02-01,Barley,110.8359566742724,U.S. Dollars per Metric Ton,110.84
 2020-03-01,Barley,101.676812669613,U.S. Dollars per Metric Ton,101.68
@@ -631,85 +641,87 @@ date,commodity,price_original,unit_original,usd_per_ton
 2026-05-01,Barley,124.9654568970523,U.S. Dollars per Metric Ton,124.97
 2026-06-01,Barley,121.0900080253843,U.S. Dollars per Metric Ton,121.09
 2026-07-01,Barley,121.9043696921157,U.S. Dollars per Metric Ton,121.9
-2020-01-01,Rice,428.5217391304348,U.S. Dollars per Metric Ton,428.52
-2020-02-01,Rice,430.25,U.S. Dollars per Metric Ton,430.25
-2020-03-01,Rice,471.6818181818182,U.S. Dollars per Metric Ton,471.68
-2020-04-01,Rice,542.8181818181819,U.S. Dollars per Metric Ton,542.82
-2020-05-01,Rice,498.8571428571428,U.S. Dollars per Metric Ton,498.86
-2020-06-01,Rice,503.0454545454546,U.S. Dollars per Metric Ton,503.05
-2020-07-01,Rice,464.4782608695652,U.S. Dollars per Metric Ton,464.48
-2020-08-01,Rice,484.4285714285714,U.S. Dollars per Metric Ton,484.43
-2020-09-01,Rice,491.9090909090909,U.S. Dollars per Metric Ton,491.91
-2020-10-01,Rice,458.8636363636364,U.S. Dollars per Metric Ton,458.86
-2020-11-01,Rice,459.8571428571428,U.S. Dollars per Metric Ton,459.86
-2020-12-01,Rice,499.3478260869565,U.S. Dollars per Metric Ton,499.35
-2021-01-01,Rice,518.4761904761905,U.S. Dollars per Metric Ton,518.48
-2021-02-01,Rice,535.75,U.S. Dollars per Metric Ton,535.75
-2021-03-01,Rice,502.3478260869565,U.S. Dollars per Metric Ton,502.35
-2021-04-01,Rice,470.2727272727273,U.S. Dollars per Metric Ton,470.27
-2021-05-01,Rice,477.1904761904762,U.S. Dollars per Metric Ton,477.19
-2021-06-01,Rice,454.8636363636364,U.S. Dollars per Metric Ton,454.86
-2021-07-01,Rice,414.8636363636364,U.S. Dollars per Metric Ton,414.86
-2021-08-01,Rice,386.7727272727273,U.S. Dollars per Metric Ton,386.77
-2021-09-01,Rice,387.0,U.S. Dollars per Metric Ton,387.0
-2021-10-01,Rice,388.9047619047619,U.S. Dollars per Metric Ton,388.9
-2021-11-01,Rice,383.5454545454546,U.S. Dollars per Metric Ton,383.55
-2021-12-01,Rice,383.5652173913044,U.S. Dollars per Metric Ton,383.57
-2022-01-01,Rice,397.0,U.S. Dollars per Metric Ton,397.0
-2022-02-01,Rice,410.0,U.S. Dollars per Metric Ton,410.0
-2022-03-01,Rice,419.4347826086956,U.S. Dollars per Metric Ton,419.43
-2022-04-01,Rice,415.7619047619048,U.S. Dollars per Metric Ton,415.76
-2022-05-01,Rice,425.2727272727273,U.S. Dollars per Metric Ton,425.27
-2022-06-01,Rice,434.1818181818182,U.S. Dollars per Metric Ton,434.18
-2022-07-01,Rice,412.4761904761905,U.S. Dollars per Metric Ton,412.48
-2022-08-01,Rice,411.0869565217391,U.S. Dollars per Metric Ton,411.09
-2022-09-01,Rice,426.8181818181818,U.S. Dollars per Metric Ton,426.82
-2022-10-01,Rice,416.0952380952381,U.S. Dollars per Metric Ton,416.1
-2022-11-01,Rice,416.3181818181818,U.S. Dollars per Metric Ton,416.32
-2022-12-01,Rice,444.2272727272727,U.S. Dollars per Metric Ton,444.23
-2023-01-01,Rice,480.6363636363636,U.S. Dollars per Metric Ton,480.64
-2023-02-01,Rice,484.95,U.S. Dollars per Metric Ton,484.95
-2023-03-01,Rice,453.5652173913044,U.S. Dollars per Metric Ton,453.57
-2023-04-01,Rice,479.5,U.S. Dollars per Metric Ton,479.5
-2023-05-01,Rice,491.7391304347826,U.S. Dollars per Metric Ton,491.74
-2023-06-01,Rice,492.2727272727273,U.S. Dollars per Metric Ton,492.27
-2023-07-01,Rice,512.2380952380952,U.S. Dollars per Metric Ton,512.24
-2023-08-01,Rice,607.9565217391304,U.S. Dollars per Metric Ton,607.96
-2023-09-01,Rice,606.9047619047619,U.S. Dollars per Metric Ton,606.9
-2023-10-01,Rice,574.4545454545455,U.S. Dollars per Metric Ton,574.45
-2023-11-01,Rice,555.4090909090909,U.S. Dollars per Metric Ton,555.41
-2023-12-01,Rice,603.2380952380952,U.S. Dollars per Metric Ton,603.24
-2024-01-01,Rice,629.0869565217391,U.S. Dollars per Metric Ton,629.09
-2024-02-01,Rice,609.5238095238095,U.S. Dollars per Metric Ton,609.52
-2024-03-01,Rice,601.7142857142857,U.S. Dollars per Metric Ton,601.71
-2024-04-01,Rice,570.1363636363636,U.S. Dollars per Metric Ton,570.14
-2024-05-01,Rice,600.5217391304348,U.S. Dollars per Metric Ton,600.52
-2024-06-01,Rice,605.5,U.S. Dollars per Metric Ton,605.5
-2024-07-01,Rice,567.0434782608696,U.S. Dollars per Metric Ton,567.04
-2024-08-01,Rice,563.7727272727273,U.S. Dollars per Metric Ton,563.77
-2024-09-01,Rice,555.0952380952381,U.S. Dollars per Metric Ton,555.1
-2024-10-01,Rice,496.6086956521739,U.S. Dollars per Metric Ton,496.61
-2024-11-01,Rice,487.4285714285714,U.S. Dollars per Metric Ton,487.43
-2024-12-01,Rice,495.6818181818182,U.S. Dollars per Metric Ton,495.68
-2025-01-01,Rice,459.7826086956522,U.S. Dollars per Metric Ton,459.78
-2025-02-01,Rice,423.5,U.S. Dollars per Metric Ton,423.5
-2025-03-01,Rice,417.0,U.S. Dollars per Metric Ton,417.0
-2025-04-01,Rice,403.9090909090909,U.S. Dollars per Metric Ton,403.91
-2025-05-01,Rice,396.4545454545454,U.S. Dollars per Metric Ton,396.45
-2025-06-01,Rice,385.7142857142857,U.S. Dollars per Metric Ton,385.71
-2025-07-01,Rice,367.5652173913044,U.S. Dollars per Metric Ton,367.57
-2025-08-01,Rice,351.2380952380952,U.S. Dollars per Metric Ton,351.24
-2025-09-01,Rice,349.1363636363636,U.S. Dollars per Metric Ton,349.14
-2025-10-01,Rice,330.6086956521739,U.S. Dollars per Metric Ton,330.61
-2025-11-01,Rice,336.0,U.S. Dollars per Metric Ton,336.0
-2025-12-01,Rice,388.6956521739131,U.S. Dollars per Metric Ton,388.7
-2026-01-01,Rice,384.5454545454546,U.S. Dollars per Metric Ton,384.55
-2026-02-01,Rice,388.5,U.S. Dollars per Metric Ton,388.5
-2026-03-01,Rice,383.2727272727273,U.S. Dollars per Metric Ton,383.27
-2026-04-01,Rice,385.9545454545454,U.S. Dollars per Metric Ton,385.95
-2026-05-01,Rice,405.5714285714286,U.S. Dollars per Metric Ton,405.57
-2026-06-01,Rice,444.0,U.S. Dollars per Metric Ton,444.0
-2026-07-01,Rice,464.0,U.S. Dollars per Metric Ton,464.0
+2020-01-01,Rice,426.0,U.S. Dollars per Metric Ton,426.0
+2020-02-01,Rice,426.5,U.S. Dollars per Metric Ton,426.5
+2020-03-01,Rice,469.6,U.S. Dollars per Metric Ton,469.6
+2020-04-01,Rice,543.7,U.S. Dollars per Metric Ton,543.7
+2020-05-01,Rice,492.9,U.S. Dollars per Metric Ton,492.9
+2020-06-01,Rice,493.6,U.S. Dollars per Metric Ton,493.6
+2020-07-01,Rice,459.7,U.S. Dollars per Metric Ton,459.7
+2020-08-01,Rice,480.9,U.S. Dollars per Metric Ton,480.9
+2020-09-01,Rice,483.0,U.S. Dollars per Metric Ton,483.0
+2020-10-01,Rice,454.5,U.S. Dollars per Metric Ton,454.5
+2020-11-01,Rice,468.5,U.S. Dollars per Metric Ton,468.5
+2020-12-01,Rice,496.6,U.S. Dollars per Metric Ton,496.6
+2021-01-01,Rice,517.8,U.S. Dollars per Metric Ton,517.8
+2021-02-01,Rice,531.0,U.S. Dollars per Metric Ton,531.0
+2021-03-01,Rice,504.1,U.S. Dollars per Metric Ton,504.1
+2021-04-01,Rice,477.4,U.S. Dollars per Metric Ton,477.4
+2021-05-01,Rice,462.8,U.S. Dollars per Metric Ton,462.8
+2021-06-01,Rice,438.6,U.S. Dollars per Metric Ton,438.6
+2021-07-01,Rice,397.0,U.S. Dollars per Metric Ton,397.0
+2021-08-01,Rice,381.0,U.S. Dollars per Metric Ton,381.0
+2021-09-01,Rice,381.3,U.S. Dollars per Metric Ton,381.3
+2021-10-01,Rice,382.7,U.S. Dollars per Metric Ton,382.7
+2021-11-01,Rice,378.6,U.S. Dollars per Metric Ton,378.6
+2021-12-01,Rice,381.0,U.S. Dollars per Metric Ton,381.0
+2022-01-01,Rice,403.2,U.S. Dollars per Metric Ton,403.2
+2022-02-01,Rice,406.0,U.S. Dollars per Metric Ton,406.0
+2022-03-01,Rice,407.1,U.S. Dollars per Metric Ton,407.1
+2022-04-01,Rice,409.1,U.S. Dollars per Metric Ton,409.1
+2022-05-01,Rice,442.9,U.S. Dollars per Metric Ton,442.9
+2022-06-01,Rice,427.6,U.S. Dollars per Metric Ton,427.6
+2022-07-01,Rice,405.7,U.S. Dollars per Metric Ton,405.7
+2022-08-01,Rice,412.6,U.S. Dollars per Metric Ton,412.6
+2022-09-01,Rice,423.4,U.S. Dollars per Metric Ton,423.4
+2022-10-01,Rice,411.6,U.S. Dollars per Metric Ton,411.6
+2022-11-01,Rice,417.5,U.S. Dollars per Metric Ton,417.5
+2022-12-01,Rice,446.4,U.S. Dollars per Metric Ton,446.4
+2023-01-01,Rice,484.6,U.S. Dollars per Metric Ton,484.6
+2023-02-01,Rice,469.0,U.S. Dollars per Metric Ton,469.0
+2023-03-01,Rice,460.9,U.S. Dollars per Metric Ton,460.9
+2023-04-01,Rice,482.9,U.S. Dollars per Metric Ton,482.9
+2023-05-01,Rice,492.7,U.S. Dollars per Metric Ton,492.7
+2023-06-01,Rice,495.8,U.S. Dollars per Metric Ton,495.8
+2023-07-01,Rice,533.5,U.S. Dollars per Metric Ton,533.5
+2023-08-01,Rice,626.0,U.S. Dollars per Metric Ton,626.0
+2023-09-01,Rice,609.9,U.S. Dollars per Metric Ton,609.9
+2023-10-01,Rice,574.7,U.S. Dollars per Metric Ton,574.7
+2023-11-01,Rice,574.6,U.S. Dollars per Metric Ton,574.6
+2023-12-01,Rice,629.6,U.S. Dollars per Metric Ton,629.6
+2024-01-01,Rice,648.9,U.S. Dollars per Metric Ton,648.9
+2024-02-01,Rice,619.9,U.S. Dollars per Metric Ton,619.9
+2024-03-01,Rice,607.7,U.S. Dollars per Metric Ton,607.7
+2024-04-01,Rice,578.0,U.S. Dollars per Metric Ton,578.0
+2024-05-01,Rice,606.5,U.S. Dollars per Metric Ton,606.5
+2024-06-01,Rice,613.3,U.S. Dollars per Metric Ton,613.3
+2024-07-01,Rice,570.9,U.S. Dollars per Metric Ton,570.9
+2024-08-01,Rice,566.7,U.S. Dollars per Metric Ton,566.7
+2024-09-01,Rice,564.3,U.S. Dollars per Metric Ton,564.3
+2024-10-01,Rice,504.8,U.S. Dollars per Metric Ton,504.8
+2024-11-01,Rice,489.6,U.S. Dollars per Metric Ton,489.6
+2024-12-01,Rice,501.9,U.S. Dollars per Metric Ton,501.9
+2025-01-01,Rice,464.2,U.S. Dollars per Metric Ton,464.2
+2025-02-01,Rice,419.1,U.S. Dollars per Metric Ton,419.1
+2025-03-01,Rice,404.1,U.S. Dollars per Metric Ton,404.1
+2025-04-01,Rice,396.9,U.S. Dollars per Metric Ton,396.9
+2025-05-01,Rice,405.5,U.S. Dollars per Metric Ton,405.5
+2025-06-01,Rice,393.4,U.S. Dollars per Metric Ton,393.4
+2025-07-01,Rice,376.1,U.S. Dollars per Metric Ton,376.1
+2025-08-01,Rice,357.9,U.S. Dollars per Metric Ton,357.9
+2025-09-01,Rice,355.2,U.S. Dollars per Metric Ton,355.2
+2025-10-01,Rice,335.9,U.S. Dollars per Metric Ton,335.9
+2025-11-01,Rice,338.5,U.S. Dollars per Metric Ton,338.5
+2025-12-01,Rice,389.4,U.S. Dollars per Metric Ton,389.4
+2026-01-01,Rice,382.9,U.S. Dollars per Metric Ton,382.9
+2026-02-01,Rice,385.1,U.S. Dollars per Metric Ton,385.1
+2026-03-01,Rice,365.3,U.S. Dollars per Metric Ton,365.3
+2026-04-01,Rice,385.2,U.S. Dollars per Metric Ton,385.2
+2026-05-01,Rice,420.2,U.S. Dollars per Metric Ton,420.2
+2026-06-01,Rice,469.4,U.S. Dollars per Metric Ton,469.4
+2026-07-01,Rice,454.7,U.S. Dollars per Metric Ton,454.7
+2026-08-01,Rice,452.8,U.S. Dollars per Metric Ton,452.8
+2026-09-01,Rice,473.2,U.S. Dollars per Metric Ton,473.2
 2020-01-01,Soybeans,337.079705,U.S. Dollars per Metric Ton,337.08
 2020-02-01,Soybeans,325.4283145657895,U.S. Dollars per Metric Ton,325.43
 2020-03-01,Soybeans,319.3361563636364,U.S. Dollars per Metric Ton,319.34
@@ -1105,85 +1117,87 @@ date,commodity,price_original,unit_original,usd_per_ton
 2026-05-01,Sunflower Oil,1807.540079285714,U.S. Dollars per Metric Ton,1807.54
 2026-06-01,Sunflower Oil,1805.889583363636,U.S. Dollars per Metric Ton,1805.89
 2026-07-01,Sunflower Oil,1786.892210086957,U.S. Dollars per Metric Ton,1786.89
-2020-01-01,Rapeseed Oil,940.3214530434783,U.S. Dollars per Metric Ton,940.32
-2020-02-01,Rapeseed Oil,890.0421225,U.S. Dollars per Metric Ton,890.04
-2020-03-01,Rapeseed Oil,793.10661,U.S. Dollars per Metric Ton,793.11
-2020-04-01,Rapeseed Oil,759.3401213636364,U.S. Dollars per Metric Ton,759.34
-2020-05-01,Rapeseed Oil,792.7317,U.S. Dollars per Metric Ton,792.73
-2020-06-01,Rapeseed Oil,848.1638309090908,U.S. Dollars per Metric Ton,848.16
-2020-07-01,Rapeseed Oil,891.3357,U.S. Dollars per Metric Ton,891.34
-2020-08-01,Rapeseed Oil,924.926660952381,U.S. Dollars per Metric Ton,924.93
-2020-09-01,Rapeseed Oil,937.5470272727273,U.S. Dollars per Metric Ton,937.55
-2020-10-01,Rapeseed Oil,926.8438181818182,U.S. Dollars per Metric Ton,926.84
-2020-11-01,Rapeseed Oil,1047.152142857143,U.S. Dollars per Metric Ton,1047.15
-2020-12-01,Rapeseed Oil,1085.858465217391,U.S. Dollars per Metric Ton,1085.86
-2021-01-01,Rapeseed Oil,1123.084895238095,U.S. Dollars per Metric Ton,1123.08
-2021-02-01,Rapeseed Oil,1249.118,U.S. Dollars per Metric Ton,1249.12
-2021-03-01,Rapeseed Oil,1282.51047826087,U.S. Dollars per Metric Ton,1282.51
-2021-04-01,Rapeseed Oil,1345.515381818182,U.S. Dollars per Metric Ton,1345.52
-2021-05-01,Rapeseed Oil,1583.066,U.S. Dollars per Metric Ton,1583.07
-2021-06-01,Rapeseed Oil,1595.272181818182,U.S. Dollars per Metric Ton,1595.27
-2021-07-01,Rapeseed Oil,1450.598772727273,U.S. Dollars per Metric Ton,1450.6
-2021-08-01,Rapeseed Oil,1481.322218181818,U.S. Dollars per Metric Ton,1481.32
-2021-09-01,Rapeseed Oil,1623.430977272727,U.S. Dollars per Metric Ton,1623.43
-2021-10-01,Rapeseed Oil,1755.892714285714,U.S. Dollars per Metric Ton,1755.89
-2021-11-01,Rapeseed Oil,1816.900363636364,U.S. Dollars per Metric Ton,1816.9
-2021-12-01,Rapeseed Oil,1813.827065217391,U.S. Dollars per Metric Ton,1813.83
-2022-01-01,Rapeseed Oil,1829.998828571429,U.S. Dollars per Metric Ton,1830.0
-2022-02-01,Rapeseed Oil,1731.73035,U.S. Dollars per Metric Ton,1731.73
-2022-03-01,Rapeseed Oil,2164.063739130435,U.S. Dollars per Metric Ton,2164.06
-2022-04-01,Rapeseed Oil,2290.65980952381,U.S. Dollars per Metric Ton,2290.66
-2022-05-01,Rapeseed Oil,2208.957045454545,U.S. Dollars per Metric Ton,2208.96
-2022-06-01,Rapeseed Oil,2061.027704545455,U.S. Dollars per Metric Ton,2061.03
-2022-07-01,Rapeseed Oil,1884.616238095238,U.S. Dollars per Metric Ton,1884.62
-2022-08-01,Rapeseed Oil,1664.329282608696,U.S. Dollars per Metric Ton,1664.33
-2022-09-01,Rapeseed Oil,1376.401954545455,U.S. Dollars per Metric Ton,1376.4
-2022-10-01,Rapeseed Oil,1381.271857142857,U.S. Dollars per Metric Ton,1381.27
-2022-11-01,Rapeseed Oil,1350.832681818182,U.S. Dollars per Metric Ton,1350.83
-2022-12-01,Rapeseed Oil,1215.657295454545,U.S. Dollars per Metric Ton,1215.66
-2023-01-01,Rapeseed Oil,1184.529659090909,U.S. Dollars per Metric Ton,1184.53
-2023-02-01,Rapeseed Oil,1157.30044,U.S. Dollars per Metric Ton,1157.3
-2023-03-01,Rapeseed Oil,1018.161413043478,U.S. Dollars per Metric Ton,1018.16
-2023-04-01,Rapeseed Oil,995.41132,U.S. Dollars per Metric Ton,995.41
-2023-05-01,Rapeseed Oil,896.0958217391304,U.S. Dollars per Metric Ton,896.1
-2023-06-01,Rapeseed Oil,952.7645,U.S. Dollars per Metric Ton,952.76
-2023-07-01,Rapeseed Oil,1094.239452380952,U.S. Dollars per Metric Ton,1094.24
-2023-08-01,Rapeseed Oil,1034.2192,U.S. Dollars per Metric Ton,1034.22
-2023-09-01,Rapeseed Oil,1025.836619047619,U.S. Dollars per Metric Ton,1025.84
-2023-10-01,Rapeseed Oil,1093.592545454545,U.S. Dollars per Metric Ton,1093.59
-2023-11-01,Rapeseed Oil,1036.680454545455,U.S. Dollars per Metric Ton,1036.68
-2023-12-01,Rapeseed Oil,978.8547619047619,U.S. Dollars per Metric Ton,978.85
-2024-01-01,Rapeseed Oil,932.8794304347826,U.S. Dollars per Metric Ton,932.88
-2024-02-01,Rapeseed Oil,928.1248666666667,U.S. Dollars per Metric Ton,928.12
-2024-03-01,Rapeseed Oil,993.8658904761905,U.S. Dollars per Metric Ton,993.87
-2024-04-01,Rapeseed Oil,1029.082513636364,U.S. Dollars per Metric Ton,1029.08
-2024-05-01,Rapeseed Oil,1091.109630434783,U.S. Dollars per Metric Ton,1091.11
-2024-06-01,Rapeseed Oil,1094.966965,U.S. Dollars per Metric Ton,1094.97
-2024-07-01,Rapeseed Oil,1101.713265217391,U.S. Dollars per Metric Ton,1101.71
-2024-08-01,Rapeseed Oil,1040.518518181818,U.S. Dollars per Metric Ton,1040.52
-2024-09-01,Rapeseed Oil,1044.623695238095,U.S. Dollars per Metric Ton,1044.62
-2024-10-01,Rapeseed Oil,1126.306986956522,U.S. Dollars per Metric Ton,1126.31
-2024-11-01,Rapeseed Oil,1224.947447619048,U.S. Dollars per Metric Ton,1224.95
-2024-12-01,Rapeseed Oil,1155.702772727273,U.S. Dollars per Metric Ton,1155.7
-2025-01-01,Rapeseed Oil,1121.699095652174,U.S. Dollars per Metric Ton,1121.7
-2025-02-01,Rapeseed Oil,1124.44539,U.S. Dollars per Metric Ton,1124.45
-2025-03-01,Rapeseed Oil,1167.413580952381,U.S. Dollars per Metric Ton,1167.41
-2025-04-01,Rapeseed Oil,1229.580690909091,U.S. Dollars per Metric Ton,1229.58
-2025-05-01,Rapeseed Oil,1209.768468181818,U.S. Dollars per Metric Ton,1209.77
-2025-06-01,Rapeseed Oil,1265.730419047619,U.S. Dollars per Metric Ton,1265.73
-2025-07-01,Rapeseed Oil,1240.964304347826,U.S. Dollars per Metric Ton,1240.96
-2025-08-01,Rapeseed Oil,1215.55889047619,U.S. Dollars per Metric Ton,1215.56
-2025-09-01,Rapeseed Oil,1273.7107,U.S. Dollars per Metric Ton,1273.71
-2025-10-01,Rapeseed Oil,1310.45667826087,U.S. Dollars per Metric Ton,1310.46
-2025-11-01,Rapeseed Oil,1274.644325,U.S. Dollars per Metric Ton,1274.64
-2025-12-01,Rapeseed Oil,1256.451556521739,U.S. Dollars per Metric Ton,1256.45
-2026-01-01,Rapeseed Oil,1224.504672727273,U.S. Dollars per Metric Ton,1224.5
-2026-02-01,Rapeseed Oil,1273.640485,U.S. Dollars per Metric Ton,1273.64
-2026-03-01,Rapeseed Oil,1318.389886363636,U.S. Dollars per Metric Ton,1318.39
-2026-04-01,Rapeseed Oil,1340.037413636364,U.S. Dollars per Metric Ton,1340.04
-2026-05-01,Rapeseed Oil,1472.408976190476,U.S. Dollars per Metric Ton,1472.41
-2026-06-01,Rapeseed Oil,1526.195522727273,U.S. Dollars per Metric Ton,1526.2
-2026-07-01,Rapeseed Oil,1500.1025,U.S. Dollars per Metric Ton,1500.1
+2020-01-01,Rapeseed Oil,945.0,U.S. Dollars per Metric Ton,945.0
+2020-02-01,Rapeseed Oil,902.0,U.S. Dollars per Metric Ton,902.0
+2020-03-01,Rapeseed Oil,797.0,U.S. Dollars per Metric Ton,797.0
+2020-04-01,Rapeseed Oil,759.0,U.S. Dollars per Metric Ton,759.0
+2020-05-01,Rapeseed Oil,800.0,U.S. Dollars per Metric Ton,800.0
+2020-06-01,Rapeseed Oil,851.0,U.S. Dollars per Metric Ton,851.0
+2020-07-01,Rapeseed Oil,890.0,U.S. Dollars per Metric Ton,890.0
+2020-08-01,Rapeseed Oil,922.0,U.S. Dollars per Metric Ton,922.0
+2020-09-01,Rapeseed Oil,938.0,U.S. Dollars per Metric Ton,938.0
+2020-10-01,Rapeseed Oil,928.0,U.S. Dollars per Metric Ton,928.0
+2020-11-01,Rapeseed Oil,1048.0,U.S. Dollars per Metric Ton,1048.0
+2020-12-01,Rapeseed Oil,1098.0,U.S. Dollars per Metric Ton,1098.0
+2021-01-01,Rapeseed Oil,1141.0,U.S. Dollars per Metric Ton,1141.0
+2021-02-01,Rapeseed Oil,1272.0,U.S. Dollars per Metric Ton,1272.0
+2021-03-01,Rapeseed Oil,1322.0,U.S. Dollars per Metric Ton,1322.0
+2021-04-01,Rapeseed Oil,1312.0,U.S. Dollars per Metric Ton,1312.0
+2021-05-01,Rapeseed Oil,1531.0,U.S. Dollars per Metric Ton,1531.0
+2021-06-01,Rapeseed Oil,1528.0,U.S. Dollars per Metric Ton,1528.0
+2021-07-01,Rapeseed Oil,1410.0,U.S. Dollars per Metric Ton,1410.0
+2021-08-01,Rapeseed Oil,1519.0,U.S. Dollars per Metric Ton,1519.0
+2021-09-01,Rapeseed Oil,1629.0,U.S. Dollars per Metric Ton,1629.0
+2021-10-01,Rapeseed Oil,1795.0,U.S. Dollars per Metric Ton,1795.0
+2021-11-01,Rapeseed Oil,1825.0,U.S. Dollars per Metric Ton,1825.0
+2021-12-01,Rapeseed Oil,1743.0,U.S. Dollars per Metric Ton,1743.0
+2022-01-01,Rapeseed Oil,1865.0,U.S. Dollars per Metric Ton,1865.0
+2022-02-01,Rapeseed Oil,1744.0,U.S. Dollars per Metric Ton,1744.0
+2022-03-01,Rapeseed Oil,2162.0,U.S. Dollars per Metric Ton,2162.0
+2022-04-01,Rapeseed Oil,2266.0,U.S. Dollars per Metric Ton,2266.0
+2022-05-01,Rapeseed Oil,2218.0,U.S. Dollars per Metric Ton,2218.0
+2022-06-01,Rapeseed Oil,2001.0,U.S. Dollars per Metric Ton,2001.0
+2022-07-01,Rapeseed Oil,1737.0,U.S. Dollars per Metric Ton,1737.0
+2022-08-01,Rapeseed Oil,1639.0,U.S. Dollars per Metric Ton,1639.0
+2022-09-01,Rapeseed Oil,1402.0,U.S. Dollars per Metric Ton,1402.0
+2022-10-01,Rapeseed Oil,1408.0,U.S. Dollars per Metric Ton,1408.0
+2022-11-01,Rapeseed Oil,1378.0,U.S. Dollars per Metric Ton,1378.0
+2022-12-01,Rapeseed Oil,1260.0,U.S. Dollars per Metric Ton,1260.0
+2023-01-01,Rapeseed Oil,1224.0,U.S. Dollars per Metric Ton,1224.0
+2023-02-01,Rapeseed Oil,1189.0,U.S. Dollars per Metric Ton,1189.0
+2023-03-01,Rapeseed Oil,1054.0,U.S. Dollars per Metric Ton,1054.0
+2023-04-01,Rapeseed Oil,1026.0,U.S. Dollars per Metric Ton,1026.0
+2023-05-01,Rapeseed Oil,967.0,U.S. Dollars per Metric Ton,967.0
+2023-06-01,Rapeseed Oil,991.0,U.S. Dollars per Metric Ton,991.0
+2023-07-01,Rapeseed Oil,1108.0,U.S. Dollars per Metric Ton,1108.0
+2023-08-01,Rapeseed Oil,1067.0,U.S. Dollars per Metric Ton,1067.0
+2023-09-01,Rapeseed Oil,1047.0,U.S. Dollars per Metric Ton,1047.0
+2023-10-01,Rapeseed Oil,1060.0,U.S. Dollars per Metric Ton,1060.0
+2023-11-01,Rapeseed Oil,1039.0,U.S. Dollars per Metric Ton,1039.0
+2023-12-01,Rapeseed Oil,1010.0,U.S. Dollars per Metric Ton,1010.0
+2024-01-01,Rapeseed Oil,972.0,U.S. Dollars per Metric Ton,972.0
+2024-02-01,Rapeseed Oil,963.0,U.S. Dollars per Metric Ton,963.0
+2024-03-01,Rapeseed Oil,1029.0,U.S. Dollars per Metric Ton,1029.0
+2024-04-01,Rapeseed Oil,1059.0,U.S. Dollars per Metric Ton,1059.0
+2024-05-01,Rapeseed Oil,1104.0,U.S. Dollars per Metric Ton,1104.0
+2024-06-01,Rapeseed Oil,1099.0,U.S. Dollars per Metric Ton,1099.0
+2024-07-01,Rapeseed Oil,1118.0,U.S. Dollars per Metric Ton,1118.0
+2024-08-01,Rapeseed Oil,1080.0,U.S. Dollars per Metric Ton,1080.0
+2024-09-01,Rapeseed Oil,1083.0,U.S. Dollars per Metric Ton,1083.0
+2024-10-01,Rapeseed Oil,1142.0,U.S. Dollars per Metric Ton,1142.0
+2024-11-01,Rapeseed Oil,1243.0,U.S. Dollars per Metric Ton,1243.0
+2024-12-01,Rapeseed Oil,1181.0,U.S. Dollars per Metric Ton,1181.0
+2025-01-01,Rapeseed Oil,1149.0,U.S. Dollars per Metric Ton,1149.0
+2025-02-01,Rapeseed Oil,1159.0,U.S. Dollars per Metric Ton,1159.0
+2025-03-01,Rapeseed Oil,1193.0,U.S. Dollars per Metric Ton,1193.0
+2025-04-01,Rapeseed Oil,1256.0,U.S. Dollars per Metric Ton,1256.0
+2025-05-01,Rapeseed Oil,1241.0,U.S. Dollars per Metric Ton,1241.0
+2025-06-01,Rapeseed Oil,1252.0,U.S. Dollars per Metric Ton,1252.0
+2025-07-01,Rapeseed Oil,1202.0,U.S. Dollars per Metric Ton,1202.0
+2025-08-01,Rapeseed Oil,1213.0,U.S. Dollars per Metric Ton,1213.0
+2025-09-01,Rapeseed Oil,1268.0,U.S. Dollars per Metric Ton,1268.0
+2025-10-01,Rapeseed Oil,1264.0,U.S. Dollars per Metric Ton,1264.0
+2025-11-01,Rapeseed Oil,1259.0,U.S. Dollars per Metric Ton,1259.0
+2025-12-01,Rapeseed Oil,1258.0,U.S. Dollars per Metric Ton,1258.0
+2026-01-01,Rapeseed Oil,1223.0,U.S. Dollars per Metric Ton,1223.0
+2026-02-01,Rapeseed Oil,1275.0,U.S. Dollars per Metric Ton,1275.0
+2026-03-01,Rapeseed Oil,1304.0,U.S. Dollars per Metric Ton,1304.0
+2026-04-01,Rapeseed Oil,1345.0,U.S. Dollars per Metric Ton,1345.0
+2026-05-01,Rapeseed Oil,1488.0,U.S. Dollars per Metric Ton,1488.0
+2026-06-01,Rapeseed Oil,1522.0,U.S. Dollars per Metric Ton,1522.0
+2026-07-01,Rapeseed Oil,1488.0,U.S. Dollars per Metric Ton,1488.0
+2026-08-01,Rapeseed Oil,1474.0,U.S. Dollars per Metric Ton,1474.0
+2026-09-01,Rapeseed Oil,1440.0,U.S. Dollars per Metric Ton,1440.0
 2020-01-01,Olive Oil,2687.323068217391,U.S. Dollars per Metric Ton,2687.32
 2020-02-01,Olive Oil,2737.9373004,U.S. Dollars per Metric Ton,2737.94
 2020-03-01,Olive Oil,2796.255093772727,U.S. Dollars per Metric Ton,2796.26
@@ -1342,85 +1356,87 @@ date,commodity,price_original,unit_original,usd_per_ton
 2026-05-01,Groundnuts,2491.67195,U.S. Dollars per Metric Ton,2491.67
 2026-06-01,Groundnuts,2513.17195,U.S. Dollars per Metric Ton,2513.17
 2026-07-01,Groundnuts,2523.67195,U.S. Dollars per Metric Ton,2523.67
-2020-01-01,Beef,212.5,U.S. Cents per Pound,4684.77
-2020-02-01,Beef,206.875,U.S. Cents per Pound,4560.77
-2020-03-01,Beef,192.3863636363636,U.S. Cents per Pound,4241.35
-2020-04-01,Beef,195.4318181818182,U.S. Cents per Pound,4308.49
-2020-05-01,Beef,214.9047619047619,U.S. Cents per Pound,4737.79
-2020-06-01,Beef,215.7272727272727,U.S. Cents per Pound,4755.92
-2020-07-01,Beef,199.304347826087,U.S. Cents per Pound,4393.86
-2020-08-01,Beef,200.4285714285714,U.S. Cents per Pound,4418.65
-2020-09-01,Beef,197.7272727272727,U.S. Cents per Pound,4359.1
-2020-10-01,Beef,190.0454545454545,U.S. Cents per Pound,4189.74
-2020-11-01,Beef,190.7857142857143,U.S. Cents per Pound,4206.06
-2020-12-01,Beef,189.1086956521739,U.S. Cents per Pound,4169.09
-2021-01-01,Beef,197.0952380952381,U.S. Cents per Pound,4345.16
-2021-02-01,Beef,204.625,U.S. Cents per Pound,4511.16
-2021-03-01,Beef,205.2826086956522,U.S. Cents per Pound,4525.66
-2021-04-01,Beef,224.8181818181818,U.S. Cents per Pound,4956.34
-2021-05-01,Beef,239.952380952381,U.S. Cents per Pound,5289.99
-2021-06-01,Beef,246.9772727272727,U.S. Cents per Pound,5444.86
-2021-07-01,Beef,245.6818181818182,U.S. Cents per Pound,5416.3
-2021-08-01,Beef,247.1363636363636,U.S. Cents per Pound,5448.37
-2021-09-01,Beef,249.25,U.S. Cents per Pound,5494.97
-2021-10-01,Beef,251.2857142857143,U.S. Cents per Pound,5539.84
-2021-11-01,Beef,258.4545454545454,U.S. Cents per Pound,5697.89
-2021-12-01,Beef,260.9347826086956,U.S. Cents per Pound,5752.57
-2022-01-01,Beef,262.5238095238095,U.S. Cents per Pound,5787.6
-2022-02-01,Beef,269.875,U.S. Cents per Pound,5949.66
-2022-03-01,Beef,275.3043478260869,U.S. Cents per Pound,6069.36
-2022-04-01,Beef,271.3095238095238,U.S. Cents per Pound,5981.29
-2022-05-01,Beef,269.1818181818182,U.S. Cents per Pound,5934.38
-2022-06-01,Beef,262.8409090909091,U.S. Cents per Pound,5794.59
-2022-07-01,Beef,257.6428571428572,U.S. Cents per Pound,5679.99
-2022-08-01,Beef,252.0434782608696,U.S. Cents per Pound,5556.55
-2022-09-01,Beef,246.6136363636364,U.S. Cents per Pound,5436.84
-2022-10-01,Beef,241.5238095238095,U.S. Cents per Pound,5324.63
-2022-11-01,Beef,228.6136363636364,U.S. Cents per Pound,5040.02
-2022-12-01,Beef,213.0,U.S. Cents per Pound,4695.8
-2023-01-01,Beef,211.0,U.S. Cents per Pound,4651.71
-2023-02-01,Beef,216.9,U.S. Cents per Pound,4781.78
-2023-03-01,Beef,238.4782608695652,U.S. Cents per Pound,5257.49
-2023-04-01,Beef,248.375,U.S. Cents per Pound,5475.68
-2023-05-01,Beef,240.9565217391304,U.S. Cents per Pound,5312.13
-2023-06-01,Beef,228.8863636363636,U.S. Cents per Pound,5046.03
-2023-07-01,Beef,216.8809523809524,U.S. Cents per Pound,4781.36
-2023-08-01,Beef,214.3478260869565,U.S. Cents per Pound,4725.51
-2023-09-01,Beef,220.5,U.S. Cents per Pound,4861.14
-2023-10-01,Beef,226.9090909090909,U.S. Cents per Pound,5002.44
-2023-11-01,Beef,221.1590909090909,U.S. Cents per Pound,4875.67
-2023-12-01,Beef,218.9285714285714,U.S. Cents per Pound,4826.5
-2024-01-01,Beef,219.8913043478261,U.S. Cents per Pound,4847.72
-2024-02-01,Beef,234.0,U.S. Cents per Pound,5158.76
-2024-03-01,Beef,250.7619047619048,U.S. Cents per Pound,5528.3
-2024-04-01,Beef,270.5681818181818,U.S. Cents per Pound,5964.95
-2024-05-01,Beef,269.0217391304348,U.S. Cents per Pound,5930.85
-2024-06-01,Beef,263.625,U.S. Cents per Pound,5811.88
-2024-07-01,Beef,270.6304347826087,U.S. Cents per Pound,5966.32
-2024-08-01,Beef,273.5454545454546,U.S. Cents per Pound,6030.58
-2024-09-01,Beef,271.1428571428572,U.S. Cents per Pound,5977.62
-2024-10-01,Beef,272.2173913043478,U.S. Cents per Pound,6001.3
-2024-11-01,Beef,269.5238095238095,U.S. Cents per Pound,5941.92
-2024-12-01,Beef,276.2272727272727,U.S. Cents per Pound,6089.71
-2025-01-01,Beef,281.7608695652174,U.S. Cents per Pound,6211.7
-2025-02-01,Beef,285.875,U.S. Cents per Pound,6302.4
-2025-03-01,Beef,292.1666666666667,U.S. Cents per Pound,6441.11
-2025-04-01,Beef,294.0681818181818,U.S. Cents per Pound,6483.03
-2025-05-01,Beef,292.7272727272727,U.S. Cents per Pound,6453.47
-2025-06-01,Beef,298.2619047619048,U.S. Cents per Pound,6575.48
-2025-07-01,Beef,304.9347826086956,U.S. Cents per Pound,6722.59
-2025-08-01,Beef,309.4285714285714,U.S. Cents per Pound,6821.66
-2025-09-01,Beef,309.9090909090909,U.S. Cents per Pound,6832.26
-2025-10-01,Beef,314.0,U.S. Cents per Pound,6922.44
-2025-11-01,Beef,325.5,U.S. Cents per Pound,7175.97
-2025-12-01,Beef,338.6521739130435,U.S. Cents per Pound,7465.93
-2026-01-01,Beef,330.9545454545454,U.S. Cents per Pound,7296.22
-2026-02-01,Beef,344.5,U.S. Cents per Pound,7594.85
-2026-03-01,Beef,349.7727272727273,U.S. Cents per Pound,7711.09
-2026-04-01,Beef,351.4090909090909,U.S. Cents per Pound,7747.16
-2026-05-01,Beef,346.1428571428572,U.S. Cents per Pound,7631.07
-2026-06-01,Beef,341.6022727272727,U.S. Cents per Pound,7530.96
-2026-07-01,Beef,331.7826086956522,U.S. Cents per Pound,7314.48
+2020-01-01,Beef,5.04,U.S. Dollars per Kilogram,5040.0
+2020-02-01,Beef,4.72,U.S. Dollars per Kilogram,4720.0
+2020-03-01,Beef,4.47,U.S. Dollars per Kilogram,4470.0
+2020-04-01,Beef,4.45,U.S. Dollars per Kilogram,4450.0
+2020-05-01,Beef,5.08,U.S. Dollars per Kilogram,5080.0
+2020-06-01,Beef,5.1,U.S. Dollars per Kilogram,5100.0
+2020-07-01,Beef,4.7,U.S. Dollars per Kilogram,4700.0
+2020-08-01,Beef,4.63,U.S. Dollars per Kilogram,4630.0
+2020-09-01,Beef,4.6,U.S. Dollars per Kilogram,4600.0
+2020-10-01,Beef,4.42,U.S. Dollars per Kilogram,4420.0
+2020-11-01,Beef,4.4,U.S. Dollars per Kilogram,4400.0
+2020-12-01,Beef,4.4,U.S. Dollars per Kilogram,4400.0
+2021-01-01,Beef,4.46,U.S. Dollars per Kilogram,4460.0
+2021-02-01,Beef,4.66,U.S. Dollars per Kilogram,4660.0
+2021-03-01,Beef,4.72,U.S. Dollars per Kilogram,4720.0
+2021-04-01,Beef,5.17,U.S. Dollars per Kilogram,5170.0
+2021-05-01,Beef,5.48,U.S. Dollars per Kilogram,5480.0
+2021-06-01,Beef,5.68,U.S. Dollars per Kilogram,5680.0
+2021-07-01,Beef,5.59,U.S. Dollars per Kilogram,5590.0
+2021-08-01,Beef,5.61,U.S. Dollars per Kilogram,5610.0
+2021-09-01,Beef,5.77,U.S. Dollars per Kilogram,5770.0
+2021-10-01,Beef,5.53,U.S. Dollars per Kilogram,5530.0
+2021-11-01,Beef,5.69,U.S. Dollars per Kilogram,5690.0
+2021-12-01,Beef,5.75,U.S. Dollars per Kilogram,5750.0
+2022-01-01,Beef,5.81,U.S. Dollars per Kilogram,5810.0
+2022-02-01,Beef,5.99,U.S. Dollars per Kilogram,5990.0
+2022-03-01,Beef,6.07,U.S. Dollars per Kilogram,6070.0
+2022-04-01,Beef,5.97,U.S. Dollars per Kilogram,5970.0
+2022-05-01,Beef,5.94,U.S. Dollars per Kilogram,5940.0
+2022-06-01,Beef,5.81,U.S. Dollars per Kilogram,5810.0
+2022-07-01,Beef,5.73,U.S. Dollars per Kilogram,5730.0
+2022-08-01,Beef,5.57,U.S. Dollars per Kilogram,5570.0
+2022-09-01,Beef,5.44,U.S. Dollars per Kilogram,5440.0
+2022-10-01,Beef,5.33,U.S. Dollars per Kilogram,5330.0
+2022-11-01,Beef,5.07,U.S. Dollars per Kilogram,5070.0
+2022-12-01,Beef,4.71,U.S. Dollars per Kilogram,4710.0
+2023-01-01,Beef,4.65,U.S. Dollars per Kilogram,4650.0
+2023-02-01,Beef,4.65,U.S. Dollars per Kilogram,4650.0
+2023-03-01,Beef,4.84,U.S. Dollars per Kilogram,4840.0
+2023-04-01,Beef,5.3,U.S. Dollars per Kilogram,5300.0
+2023-05-01,Beef,5.31,U.S. Dollars per Kilogram,5310.0
+2023-06-01,Beef,5.01,U.S. Dollars per Kilogram,5010.0
+2023-07-01,Beef,4.78,U.S. Dollars per Kilogram,4780.0
+2023-08-01,Beef,4.73,U.S. Dollars per Kilogram,4730.0
+2023-09-01,Beef,4.9,U.S. Dollars per Kilogram,4900.0
+2023-10-01,Beef,4.98,U.S. Dollars per Kilogram,4980.0
+2023-11-01,Beef,4.88,U.S. Dollars per Kilogram,4880.0
+2023-12-01,Beef,4.79,U.S. Dollars per Kilogram,4790.0
+2024-01-01,Beef,5.0,U.S. Dollars per Kilogram,5000.0
+2024-02-01,Beef,5.38,U.S. Dollars per Kilogram,5380.0
+2024-03-01,Beef,5.73,U.S. Dollars per Kilogram,5730.0
+2024-04-01,Beef,6.05,U.S. Dollars per Kilogram,6050.0
+2024-05-01,Beef,5.88,U.S. Dollars per Kilogram,5880.0
+2024-06-01,Beef,5.85,U.S. Dollars per Kilogram,5850.0
+2024-07-01,Beef,6.19,U.S. Dollars per Kilogram,6190.0
+2024-08-01,Beef,6.34,U.S. Dollars per Kilogram,6340.0
+2024-09-01,Beef,6.3,U.S. Dollars per Kilogram,6300.0
+2024-10-01,Beef,6.06,U.S. Dollars per Kilogram,6060.0
+2024-11-01,Beef,6.18,U.S. Dollars per Kilogram,6180.0
+2024-12-01,Beef,6.23,U.S. Dollars per Kilogram,6230.0
+2025-01-01,Beef,6.46,U.S. Dollars per Kilogram,6460.0
+2025-02-01,Beef,6.62,U.S. Dollars per Kilogram,6620.0
+2025-03-01,Beef,6.77,U.S. Dollars per Kilogram,6770.0
+2025-04-01,Beef,6.71,U.S. Dollars per Kilogram,6710.0
+2025-05-01,Beef,6.62,U.S. Dollars per Kilogram,6620.0
+2025-06-01,Beef,6.67,U.S. Dollars per Kilogram,6670.0
+2025-07-01,Beef,6.72,U.S. Dollars per Kilogram,6720.0
+2025-08-01,Beef,6.86,U.S. Dollars per Kilogram,6860.0
+2025-09-01,Beef,6.9,U.S. Dollars per Kilogram,6900.0
+2025-10-01,Beef,7.09,U.S. Dollars per Kilogram,7090.0
+2025-11-01,Beef,7.51,U.S. Dollars per Kilogram,7510.0
+2025-12-01,Beef,7.38,U.S. Dollars per Kilogram,7380.0
+2026-01-01,Beef,7.97,U.S. Dollars per Kilogram,7970.0
+2026-02-01,Beef,8.12,U.S. Dollars per Kilogram,8120.0
+2026-03-01,Beef,8.21,U.S. Dollars per Kilogram,8210.0
+2026-04-01,Beef,8.21,U.S. Dollars per Kilogram,8210.0
+2026-05-01,Beef,7.95,U.S. Dollars per Kilogram,7950.0
+2026-06-01,Beef,7.46,U.S. Dollars per Kilogram,7460.0
+2026-07-01,Beef,7.31,U.S. Dollars per Kilogram,7310.0
+2026-08-01,Beef,7.28,U.S. Dollars per Kilogram,7280.0
+2026-09-01,Beef,6.86,U.S. Dollars per Kilogram,6860.0
 2020-01-01,Lamb,135.0480917225713,U.S. Cents per Pound,2977.27
 2020-02-01,Lamb,128.682071685791,U.S. Cents per Pound,2836.92
 2020-03-01,Lamb,117.463062286377,U.S. Cents per Pound,2589.59
@@ -1737,85 +1753,87 @@ date,commodity,price_original,unit_original,usd_per_ton
 2026-05-01,Shrimp,6.930315068,U.S. Dollars per Kilogram,6930.32
 2026-06-01,Shrimp,6.061063853,U.S. Dollars per Kilogram,6061.06
 2026-07-01,Shrimp,6.538102328,U.S. Dollars per Kilogram,6538.1
-2020-01-01,Cotton,79.06818181818181,U.S. Cents per Pound,1743.14
-2020-02-01,Cotton,76.5675,U.S. Cents per Pound,1688.01
-2020-03-01,Cotton,67.68636363636364,U.S. Cents per Pound,1492.21
-2020-04-01,Cotton,63.5325,U.S. Cents per Pound,1400.64
-2020-05-01,Cotton,65.70263157894738,U.S. Cents per Pound,1448.48
-2020-06-01,Cotton,67.8,U.S. Cents per Pound,1494.72
-2020-07-01,Cotton,68.52391304347826,U.S. Cents per Pound,1510.68
-2020-08-01,Cotton,70.0,U.S. Cents per Pound,1543.22
-2020-09-01,Cotton,70.81363636363636,U.S. Cents per Pound,1561.16
-2020-10-01,Cotton,74.81590909090909,U.S. Cents per Pound,1649.39
-2020-11-01,Cotton,77.72380952380952,U.S. Cents per Pound,1713.5
-2020-12-01,Cotton,81.02142857142857,U.S. Cents per Pound,1786.2
-2021-01-01,Cotton,87.235,U.S. Cents per Pound,1923.18
-2021-02-01,Cotton,92.76,U.S. Cents per Pound,2044.99
-2021-03-01,Cotton,91.45217391304348,U.S. Cents per Pound,2016.15
-2021-04-01,Cotton,90.73,U.S. Cents per Pound,2000.23
-2021-05-01,Cotton,90.88684210526316,U.S. Cents per Pound,2003.69
-2021-06-01,Cotton,94.50454545454545,U.S. Cents per Pound,2083.45
-2021-07-01,Cotton,97.7,U.S. Cents per Pound,2153.89
-2021-08-01,Cotton,101.3047619047619,U.S. Cents per Pound,2233.36
-2021-09-01,Cotton,103.6818181818182,U.S. Cents per Pound,2285.77
-2021-10-01,Cotton,117.3833333333333,U.S. Cents per Pound,2587.83
-2021-11-01,Cotton,126.5431818181818,U.S. Cents per Pound,2789.77
-2021-12-01,Cotton,120.0404761904762,U.S. Cents per Pound,2646.41
-2022-01-01,Cotton,132.3325,U.S. Cents per Pound,2917.4
-2022-02-01,Cotton,138.405,U.S. Cents per Pound,3051.28
-2022-03-01,Cotton,141.1260869565217,U.S. Cents per Pound,3111.27
-2022-04-01,Cotton,155.3157894736842,U.S. Cents per Pound,3424.09
-2022-05-01,Cotton,163.9795454545455,U.S. Cents per Pound,3615.09
-2022-06-01,Cotton,154.4454545454545,U.S. Cents per Pound,3404.9
-2022-07-01,Cotton,131.0357142857143,U.S. Cents per Pound,2888.81
-2022-08-01,Cotton,124.7586956521739,U.S. Cents per Pound,2750.43
-2022-09-01,Cotton,117.9409090909091,U.S. Cents per Pound,2600.13
-2022-10-01,Cotton,100.2761904761905,U.S. Cents per Pound,2210.69
-2022-11-01,Cotton,101.1659090909091,U.S. Cents per Pound,2230.3
-2022-12-01,Cotton,100.8863636363636,U.S. Cents per Pound,2224.14
-2023-01-01,Cotton,100.3113636363636,U.S. Cents per Pound,2211.46
-2023-02-01,Cotton,99.43,U.S. Cents per Pound,2192.03
-2023-03-01,Cotton,95.3913043478261,U.S. Cents per Pound,2103.0
-2023-04-01,Cotton,95.1325,U.S. Cents per Pound,2097.29
-2023-05-01,Cotton,93.88478260869564,U.S. Cents per Pound,2069.78
-2023-06-01,Cotton,92.41818181818182,U.S. Cents per Pound,2037.45
-2023-07-01,Cotton,93.26904761904763,U.S. Cents per Pound,2056.21
-2023-08-01,Cotton,95.99565217391304,U.S. Cents per Pound,2116.32
-2023-09-01,Cotton,97.76904761904763,U.S. Cents per Pound,2155.42
-2023-10-01,Cotton,95.68636363636364,U.S. Cents per Pound,2109.5
-2023-11-01,Cotton,90.43181818181819,U.S. Cents per Pound,1993.66
-2023-12-01,Cotton,90.40714285714286,U.S. Cents per Pound,1993.12
-2024-01-01,Cotton,92.10652173913043,U.S. Cents per Pound,2030.58
-2024-02-01,Cotton,99.35238095238095,U.S. Cents per Pound,2190.32
-2024-03-01,Cotton,99.56428571428572,U.S. Cents per Pound,2194.99
-2024-04-01,Cotton,90.60227272727273,U.S. Cents per Pound,1997.42
-2024-05-01,Cotton,85.88913043478261,U.S. Cents per Pound,1893.51
-2024-06-01,Cotton,83.24,U.S. Cents per Pound,1835.11
-2024-07-01,Cotton,81.38260869565217,U.S. Cents per Pound,1794.16
-2024-08-01,Cotton,79.92727272727274,U.S. Cents per Pound,1762.08
-2024-09-01,Cotton,82.55714285714286,U.S. Cents per Pound,1820.05
-2024-10-01,Cotton,83.69347826086957,U.S. Cents per Pound,1845.11
-2024-11-01,Cotton,81.55238095238094,U.S. Cents per Pound,1797.9
-2024-12-01,Cotton,79.90454545454546,U.S. Cents per Pound,1761.58
-2025-01-01,Cotton,78.23695652173913,U.S. Cents per Pound,1724.81
-2025-02-01,Cotton,78.0975,U.S. Cents per Pound,1721.74
-2025-03-01,Cotton,77.63809523809525,U.S. Cents per Pound,1711.61
-2025-04-01,Cotton,78.28181818181818,U.S. Cents per Pound,1725.8
-2025-05-01,Cotton,77.98863636363636,U.S. Cents per Pound,1719.34
-2025-06-01,Cotton,78.19047619047619,U.S. Cents per Pound,1723.79
-2025-07-01,Cotton,78.90652173913043,U.S. Cents per Pound,1739.57
-2025-08-01,Cotton,78.57380952380952,U.S. Cents per Pound,1732.24
-2025-09-01,Cotton,77.97727272727273,U.S. Cents per Pound,1719.09
-2025-10-01,Cotton,75.98434782608696,U.S. Cents per Pound,1675.15
-2025-11-01,Cotton,75.28,U.S. Cents per Pound,1659.62
-2025-12-01,Cotton,74.06590909090909,U.S. Cents per Pound,1632.86
-2026-01-01,Cotton,74.48636363636363,U.S. Cents per Pound,1642.13
-2026-02-01,Cotton,73.96,U.S. Cents per Pound,1630.52
-2026-03-01,Cotton,76.93863636363636,U.S. Cents per Pound,1696.19
-2026-04-01,Cotton,85.58181818181818,U.S. Cents per Pound,1886.74
-2026-05-01,Cotton,92.09285714285714,U.S. Cents per Pound,2030.28
-2026-06-01,Cotton,86.29318181818182,U.S. Cents per Pound,1902.42
-2026-07-01,Cotton,88.775,U.S. Cents per Pound,1957.13
+2020-01-01,Cotton,1.74,U.S. Dollars per Kilogram,1740.0
+2020-02-01,Cotton,1.69,U.S. Dollars per Kilogram,1690.0
+2020-03-01,Cotton,1.49,U.S. Dollars per Kilogram,1490.0
+2020-04-01,Cotton,1.4,U.S. Dollars per Kilogram,1400.0
+2020-05-01,Cotton,1.45,U.S. Dollars per Kilogram,1450.0
+2020-06-01,Cotton,1.49,U.S. Dollars per Kilogram,1490.0
+2020-07-01,Cotton,1.51,U.S. Dollars per Kilogram,1510.0
+2020-08-01,Cotton,1.54,U.S. Dollars per Kilogram,1540.0
+2020-09-01,Cotton,1.56,U.S. Dollars per Kilogram,1560.0
+2020-10-01,Cotton,1.65,U.S. Dollars per Kilogram,1650.0
+2020-11-01,Cotton,1.71,U.S. Dollars per Kilogram,1710.0
+2020-12-01,Cotton,1.79,U.S. Dollars per Kilogram,1790.0
+2021-01-01,Cotton,1.92,U.S. Dollars per Kilogram,1920.0
+2021-02-01,Cotton,2.05,U.S. Dollars per Kilogram,2050.0
+2021-03-01,Cotton,2.02,U.S. Dollars per Kilogram,2020.0
+2021-04-01,Cotton,2.0,U.S. Dollars per Kilogram,2000.0
+2021-05-01,Cotton,2.0,U.S. Dollars per Kilogram,2000.0
+2021-06-01,Cotton,2.08,U.S. Dollars per Kilogram,2080.0
+2021-07-01,Cotton,2.15,U.S. Dollars per Kilogram,2150.0
+2021-08-01,Cotton,2.23,U.S. Dollars per Kilogram,2230.0
+2021-09-01,Cotton,2.29,U.S. Dollars per Kilogram,2290.0
+2021-10-01,Cotton,2.59,U.S. Dollars per Kilogram,2590.0
+2021-11-01,Cotton,2.79,U.S. Dollars per Kilogram,2790.0
+2021-12-01,Cotton,2.65,U.S. Dollars per Kilogram,2650.0
+2022-01-01,Cotton,2.91,U.S. Dollars per Kilogram,2910.0
+2022-02-01,Cotton,3.05,U.S. Dollars per Kilogram,3050.0
+2022-03-01,Cotton,3.11,U.S. Dollars per Kilogram,3110.0
+2022-04-01,Cotton,3.42,U.S. Dollars per Kilogram,3420.0
+2022-05-01,Cotton,3.61,U.S. Dollars per Kilogram,3610.0
+2022-06-01,Cotton,3.4,U.S. Dollars per Kilogram,3400.0
+2022-07-01,Cotton,2.89,U.S. Dollars per Kilogram,2890.0
+2022-08-01,Cotton,2.74,U.S. Dollars per Kilogram,2740.0
+2022-09-01,Cotton,2.59,U.S. Dollars per Kilogram,2590.0
+2022-10-01,Cotton,2.2,U.S. Dollars per Kilogram,2200.0
+2022-11-01,Cotton,2.23,U.S. Dollars per Kilogram,2230.0
+2022-12-01,Cotton,2.22,U.S. Dollars per Kilogram,2220.0
+2023-01-01,Cotton,2.21,U.S. Dollars per Kilogram,2210.0
+2023-02-01,Cotton,2.19,U.S. Dollars per Kilogram,2190.0
+2023-03-01,Cotton,2.1,U.S. Dollars per Kilogram,2100.0
+2023-04-01,Cotton,2.1,U.S. Dollars per Kilogram,2100.0
+2023-05-01,Cotton,2.07,U.S. Dollars per Kilogram,2070.0
+2023-06-01,Cotton,2.04,U.S. Dollars per Kilogram,2040.0
+2023-07-01,Cotton,2.05,U.S. Dollars per Kilogram,2050.0
+2023-08-01,Cotton,2.11,U.S. Dollars per Kilogram,2110.0
+2023-09-01,Cotton,2.16,U.S. Dollars per Kilogram,2160.0
+2023-10-01,Cotton,2.11,U.S. Dollars per Kilogram,2110.0
+2023-11-01,Cotton,1.99,U.S. Dollars per Kilogram,1990.0
+2023-12-01,Cotton,2.0,U.S. Dollars per Kilogram,2000.0
+2024-01-01,Cotton,2.03,U.S. Dollars per Kilogram,2030.0
+2024-02-01,Cotton,2.2,U.S. Dollars per Kilogram,2200.0
+2024-03-01,Cotton,2.2,U.S. Dollars per Kilogram,2200.0
+2024-04-01,Cotton,1.99,U.S. Dollars per Kilogram,1990.0
+2024-05-01,Cotton,1.91,U.S. Dollars per Kilogram,1910.0
+2024-06-01,Cotton,1.83,U.S. Dollars per Kilogram,1830.0
+2024-07-01,Cotton,1.79,U.S. Dollars per Kilogram,1790.0
+2024-08-01,Cotton,1.76,U.S. Dollars per Kilogram,1760.0
+2024-09-01,Cotton,1.82,U.S. Dollars per Kilogram,1820.0
+2024-10-01,Cotton,1.84,U.S. Dollars per Kilogram,1840.0
+2024-11-01,Cotton,1.8,U.S. Dollars per Kilogram,1800.0
+2024-12-01,Cotton,1.76,U.S. Dollars per Kilogram,1760.0
+2025-01-01,Cotton,1.72,U.S. Dollars per Kilogram,1720.0
+2025-02-01,Cotton,1.72,U.S. Dollars per Kilogram,1720.0
+2025-03-01,Cotton,1.71,U.S. Dollars per Kilogram,1710.0
+2025-04-01,Cotton,1.73,U.S. Dollars per Kilogram,1730.0
+2025-05-01,Cotton,1.72,U.S. Dollars per Kilogram,1720.0
+2025-06-01,Cotton,1.73,U.S. Dollars per Kilogram,1730.0
+2025-07-01,Cotton,1.74,U.S. Dollars per Kilogram,1740.0
+2025-08-01,Cotton,1.73,U.S. Dollars per Kilogram,1730.0
+2025-09-01,Cotton,1.72,U.S. Dollars per Kilogram,1720.0
+2025-10-01,Cotton,1.68,U.S. Dollars per Kilogram,1680.0
+2025-11-01,Cotton,1.66,U.S. Dollars per Kilogram,1660.0
+2025-12-01,Cotton,1.63,U.S. Dollars per Kilogram,1630.0
+2026-01-01,Cotton,1.64,U.S. Dollars per Kilogram,1640.0
+2026-02-01,Cotton,1.63,U.S. Dollars per Kilogram,1630.0
+2026-03-01,Cotton,1.7,U.S. Dollars per Kilogram,1700.0
+2026-04-01,Cotton,1.9,U.S. Dollars per Kilogram,1900.0
+2026-05-01,Cotton,2.03,U.S. Dollars per Kilogram,2030.0
+2026-06-01,Cotton,1.9,U.S. Dollars per Kilogram,1900.0
+2026-07-01,Cotton,1.96,U.S. Dollars per Kilogram,1960.0
+2026-08-01,Cotton,2.11,U.S. Dollars per Kilogram,2110.0
+2026-09-01,Cotton,2.1,U.S. Dollars per Kilogram,2100.0
 2020-01-01,Wool (Coarse),1188.525231223762,U.S. Cents per Kilogram,11885.25
 2020-02-01,Wool (Coarse),1143.091099764525,U.S. Cents per Kilogram,11430.91
 2020-03-01,Wool (Coarse),1008.145571265867,U.S. Cents per Kilogram,10081.46
@@ -2053,82 +2071,84 @@ date,commodity,price_original,unit_original,usd_per_ton
 2026-05-01,Hides,57.83830503,U.S. Cents per Pound,1275.1
 2026-06-01,Hides,57.14219909,U.S. Cents per Pound,1259.76
 2026-07-01,Hides,56.69320116,U.S. Cents per Pound,1249.86
-2020-01-01,Rubber,75.21250827807054,U.S. Cents per Pound,1658.13
-2020-02-01,Rubber,71.6608757971896,U.S. Cents per Pound,1579.84
-2020-03-01,Rubber,68.37294573956673,U.S. Cents per Pound,1507.35
-2020-04-01,Rubber,60.69937114743024,U.S. Cents per Pound,1338.18
-2020-05-01,Rubber,61.37364060725006,U.S. Cents per Pound,1353.04
-2020-06-01,Rubber,64.78543818312123,U.S. Cents per Pound,1428.26
-2020-07-01,Rubber,67.98493725946071,U.S. Cents per Pound,1498.8
-2020-08-01,Rubber,79.9616260398618,U.S. Cents per Pound,1762.83
-2020-09-01,Rubber,89.3124438678774,U.S. Cents per Pound,1968.98
-2020-10-01,Rubber,101.5202784895521,U.S. Cents per Pound,2238.12
-2020-11-01,Rubber,110.151798107092,U.S. Cents per Pound,2428.41
-2020-12-01,Rubber,107.7455957208477,U.S. Cents per Pound,2375.36
-2021-01-01,Rubber,104.3989440357068,U.S. Cents per Pound,2301.58
-2021-02-01,Rubber,105.2461547921082,U.S. Cents per Pound,2320.26
-2021-03-01,Rubber,108.1602153264706,U.S. Cents per Pound,2384.5
-2021-04-01,Rubber,99.32820730146344,U.S. Cents per Pound,2189.79
-2021-05-01,Rubber,105.4149921528426,U.S. Cents per Pound,2323.98
-2021-06-01,Rubber,97.06888261922691,U.S. Cents per Pound,2139.98
-2021-07-01,Rubber,84.92339247752876,U.S. Cents per Pound,1872.22
-2021-08-01,Rubber,86.24961174606929,U.S. Cents per Pound,1901.46
-2021-09-01,Rubber,81.22405757825918,U.S. Cents per Pound,1790.67
-2021-10-01,Rubber,85.53682288838468,U.S. Cents per Pound,1885.74
-2021-11-01,Rubber,88.50245652959951,U.S. Cents per Pound,1951.13
-2021-12-01,Rubber,88.18670873809627,U.S. Cents per Pound,1944.16
-2022-01-01,Rubber,90.21055782856006,U.S. Cents per Pound,1988.78
-2022-02-01,Rubber,96.88996541606072,U.S. Cents per Pound,2136.04
-2022-03-01,Rubber,98.30147204704113,U.S. Cents per Pound,2167.15
-2022-04-01,Rubber,97.06672265299143,U.S. Cents per Pound,2139.93
-2022-05-01,Rubber,96.05448393085264,U.S. Cents per Pound,2117.62
-2022-06-01,Rubber,94.02156298220014,U.S. Cents per Pound,2072.8
-2022-07-01,Rubber,82.93838350718895,U.S. Cents per Pound,1828.46
-2022-08-01,Rubber,73.30455845096834,U.S. Cents per Pound,1616.07
-2022-09-01,Rubber,66.95649879055641,U.S. Cents per Pound,1476.12
-2022-10-01,Rubber,68.53572864948971,U.S. Cents per Pound,1510.94
-2022-11-01,Rubber,65.26583430993259,U.S. Cents per Pound,1438.85
-2022-12-01,Rubber,69.88423484236819,U.S. Cents per Pound,1540.67
-2023-01-01,Rubber,73.95626209752909,U.S. Cents per Pound,1630.44
-2023-02-01,Rubber,73.28700637751635,U.S. Cents per Pound,1615.69
-2023-03-01,Rubber,71.78403613281678,U.S. Cents per Pound,1582.55
-2023-04-01,Rubber,69.80114486850346,U.S. Cents per Pound,1538.84
-2023-05-01,Rubber,70.83740745225543,U.S. Cents per Pound,1561.68
-2023-06-01,Rubber,69.54404016029144,U.S. Cents per Pound,1533.17
-2023-07-01,Rubber,68.07781580758333,U.S. Cents per Pound,1500.84
-2023-08-01,Rubber,67.07455844702409,U.S. Cents per Pound,1478.73
-2023-09-01,Rubber,70.80801312913876,U.S. Cents per Pound,1561.03
-2023-10-01,Rubber,73.19546308124836,U.S. Cents per Pound,1613.67
-2023-11-01,Rubber,76.64689276486314,U.S. Cents per Pound,1689.76
-2023-12-01,Rubber,76.53840355167567,U.S. Cents per Pound,1687.37
-2024-01-01,Rubber,84.60888261133834,U.S. Cents per Pound,1865.29
-2024-02-01,Rubber,93.78573394140705,U.S. Cents per Pound,2067.6
-2024-03-01,Rubber,114.0159777022366,U.S. Cents per Pound,2513.6
-2024-04-01,Rubber,107.7881077835718,U.S. Cents per Pound,2376.3
-2024-05-01,Rubber,100.0093479582204,U.S. Cents per Pound,2204.81
-2024-06-01,Rubber,105.1314965844454,U.S. Cents per Pound,2317.73
-2024-07-01,Rubber,94.7496423518517,U.S. Cents per Pound,2088.85
-2024-08-01,Rubber,107.971606733298,U.S. Cents per Pound,2380.34
-2024-09-01,Rubber,122.8113602128171,U.S. Cents per Pound,2707.5
-2024-10-01,Rubber,119.7859988096144,U.S. Cents per Pound,2640.8
-2024-11-01,Rubber,105.0996370824731,U.S. Cents per Pound,2317.03
-2024-12-01,Rubber,110.0632394914402,U.S. Cents per Pound,2426.45
-2025-01-01,Rubber,108.883991838483,U.S. Cents per Pound,2400.46
-2025-02-01,Rubber,110.2389527446907,U.S. Cents per Pound,2430.33
-2025-03-01,Rubber,108.6268619448941,U.S. Cents per Pound,2394.79
-2025-04-01,Rubber,98.86469818340164,U.S. Cents per Pound,2179.57
-2025-05-01,Rubber,101.0811180817804,U.S. Cents per Pound,2228.43
-2025-06-01,Rubber,100.0237164292648,U.S. Cents per Pound,2205.12
-2025-07-01,Rubber,102.2733682192298,U.S. Cents per Pound,2254.72
-2025-08-01,Rubber,98.32598296823424,U.S. Cents per Pound,2167.69
-2025-09-01,Rubber,96.67095793049477,U.S. Cents per Pound,2131.21
-2025-10-01,Rubber,91.89792345166057,U.S. Cents per Pound,2025.98
-2025-11-01,Rubber,93.174787491722,U.S. Cents per Pound,2054.13
-2025-12-01,Rubber,94.68133448683386,U.S. Cents per Pound,2087.34
-2026-01-01,Rubber,97.14516869945018,U.S. Cents per Pound,2141.66
-2026-02-01,Rubber,103.2422821166459,U.S. Cents per Pound,2276.08
-2026-03-01,Rubber,110.3880198690189,U.S. Cents per Pound,2433.61
-2026-04-01,Rubber,115.9136062203257,U.S. Cents per Pound,2555.43
-2026-05-01,Rubber,127.8808009673192,U.S. Cents per Pound,2819.26
-2026-06-01,Rubber,133.781043280186,U.S. Cents per Pound,2949.34
-2026-07-01,Rubber,129.5048992157791,U.S. Cents per Pound,2855.07
+2020-01-01,Rubber,1.68,U.S. Dollars per Kilogram,1680.0
+2020-02-01,Rubber,1.61,U.S. Dollars per Kilogram,1610.0
+2020-03-01,Rubber,1.5,U.S. Dollars per Kilogram,1500.0
+2020-04-01,Rubber,1.33,U.S. Dollars per Kilogram,1330.0
+2020-05-01,Rubber,1.35,U.S. Dollars per Kilogram,1350.0
+2020-06-01,Rubber,1.4,U.S. Dollars per Kilogram,1400.0
+2020-07-01,Rubber,1.48,U.S. Dollars per Kilogram,1480.0
+2020-08-01,Rubber,1.7,U.S. Dollars per Kilogram,1700.0
+2020-09-01,Rubber,1.86,U.S. Dollars per Kilogram,1860.0
+2020-10-01,Rubber,2.19,U.S. Dollars per Kilogram,2190.0
+2020-11-01,Rubber,2.3,U.S. Dollars per Kilogram,2300.0
+2020-12-01,Rubber,2.33,U.S. Dollars per Kilogram,2330.0
+2021-01-01,Rubber,2.3,U.S. Dollars per Kilogram,2300.0
+2021-02-01,Rubber,2.35,U.S. Dollars per Kilogram,2350.0
+2021-03-01,Rubber,2.37,U.S. Dollars per Kilogram,2370.0
+2021-04-01,Rubber,2.15,U.S. Dollars per Kilogram,2150.0
+2021-05-01,Rubber,2.29,U.S. Dollars per Kilogram,2290.0
+2021-06-01,Rubber,2.12,U.S. Dollars per Kilogram,2120.0
+2021-07-01,Rubber,1.87,U.S. Dollars per Kilogram,1870.0
+2021-08-01,Rubber,1.9,U.S. Dollars per Kilogram,1900.0
+2021-09-01,Rubber,1.79,U.S. Dollars per Kilogram,1790.0
+2021-10-01,Rubber,1.87,U.S. Dollars per Kilogram,1870.0
+2021-11-01,Rubber,1.93,U.S. Dollars per Kilogram,1930.0
+2021-12-01,Rubber,1.92,U.S. Dollars per Kilogram,1920.0
+2022-01-01,Rubber,1.97,U.S. Dollars per Kilogram,1970.0
+2022-02-01,Rubber,2.11,U.S. Dollars per Kilogram,2110.0
+2022-03-01,Rubber,2.12,U.S. Dollars per Kilogram,2120.0
+2022-04-01,Rubber,2.09,U.S. Dollars per Kilogram,2090.0
+2022-05-01,Rubber,2.06,U.S. Dollars per Kilogram,2060.0
+2022-06-01,Rubber,2.03,U.S. Dollars per Kilogram,2030.0
+2022-07-01,Rubber,1.78,U.S. Dollars per Kilogram,1780.0
+2022-08-01,Rubber,1.61,U.S. Dollars per Kilogram,1610.0
+2022-09-01,Rubber,1.48,U.S. Dollars per Kilogram,1480.0
+2022-10-01,Rubber,1.5,U.S. Dollars per Kilogram,1500.0
+2022-11-01,Rubber,1.43,U.S. Dollars per Kilogram,1430.0
+2022-12-01,Rubber,1.54,U.S. Dollars per Kilogram,1540.0
+2023-01-01,Rubber,1.63,U.S. Dollars per Kilogram,1630.0
+2023-02-01,Rubber,1.62,U.S. Dollars per Kilogram,1620.0
+2023-03-01,Rubber,1.58,U.S. Dollars per Kilogram,1580.0
+2023-04-01,Rubber,1.54,U.S. Dollars per Kilogram,1540.0
+2023-05-01,Rubber,1.56,U.S. Dollars per Kilogram,1560.0
+2023-06-01,Rubber,1.53,U.S. Dollars per Kilogram,1530.0
+2023-07-01,Rubber,1.49,U.S. Dollars per Kilogram,1490.0
+2023-08-01,Rubber,1.47,U.S. Dollars per Kilogram,1470.0
+2023-09-01,Rubber,1.55,U.S. Dollars per Kilogram,1550.0
+2023-10-01,Rubber,1.61,U.S. Dollars per Kilogram,1610.0
+2023-11-01,Rubber,1.67,U.S. Dollars per Kilogram,1670.0
+2023-12-01,Rubber,1.66,U.S. Dollars per Kilogram,1660.0
+2024-01-01,Rubber,1.8,U.S. Dollars per Kilogram,1800.0
+2024-02-01,Rubber,2.02,U.S. Dollars per Kilogram,2020.0
+2024-03-01,Rubber,2.39,U.S. Dollars per Kilogram,2390.0
+2024-04-01,Rubber,2.28,U.S. Dollars per Kilogram,2280.0
+2024-05-01,Rubber,2.15,U.S. Dollars per Kilogram,2150.0
+2024-06-01,Rubber,2.26,U.S. Dollars per Kilogram,2260.0
+2024-07-01,Rubber,2.06,U.S. Dollars per Kilogram,2060.0
+2024-08-01,Rubber,2.39,U.S. Dollars per Kilogram,2390.0
+2024-09-01,Rubber,2.65,U.S. Dollars per Kilogram,2650.0
+2024-10-01,Rubber,2.63,U.S. Dollars per Kilogram,2630.0
+2024-11-01,Rubber,2.29,U.S. Dollars per Kilogram,2290.0
+2024-12-01,Rubber,2.38,U.S. Dollars per Kilogram,2380.0
+2025-01-01,Rubber,2.37,U.S. Dollars per Kilogram,2370.0
+2025-02-01,Rubber,2.41,U.S. Dollars per Kilogram,2410.0
+2025-03-01,Rubber,2.36,U.S. Dollars per Kilogram,2360.0
+2025-04-01,Rubber,2.13,U.S. Dollars per Kilogram,2130.0
+2025-05-01,Rubber,2.19,U.S. Dollars per Kilogram,2190.0
+2025-06-01,Rubber,2.16,U.S. Dollars per Kilogram,2160.0
+2025-07-01,Rubber,2.23,U.S. Dollars per Kilogram,2230.0
+2025-08-01,Rubber,2.15,U.S. Dollars per Kilogram,2150.0
+2025-09-01,Rubber,2.11,U.S. Dollars per Kilogram,2110.0
+2025-10-01,Rubber,2.0,U.S. Dollars per Kilogram,2000.0
+2025-11-01,Rubber,2.03,U.S. Dollars per Kilogram,2030.0
+2025-12-01,Rubber,2.06,U.S. Dollars per Kilogram,2060.0
+2026-01-01,Rubber,2.14,U.S. Dollars per Kilogram,2140.0
+2026-02-01,Rubber,2.26,U.S. Dollars per Kilogram,2260.0
+2026-03-01,Rubber,2.39,U.S. Dollars per Kilogram,2390.0
+2026-04-01,Rubber,2.51,U.S. Dollars per Kilogram,2510.0
+2026-05-01,Rubber,2.69,U.S. Dollars per Kilogram,2690.0
+2026-06-01,Rubber,2.86,U.S. Dollars per Kilogram,2860.0
+2026-07-01,Rubber,2.78,U.S. Dollars per Kilogram,2780.0
+2026-08-01,Rubber,2.73,U.S. Dollars per Kilogram,2730.0
+2026-09-01,Rubber,2.75,U.S. Dollars per Kilogram,2750.0

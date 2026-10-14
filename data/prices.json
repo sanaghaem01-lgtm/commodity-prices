@@ -1,5 +1,5 @@
 {
- "source": "FRED (Federal Reserve Bank of St. Louis) / IMF Primary Commodity Prices",
+ "source": "FRED (Federal Reserve Bank of St. Louis) / IMF Primary Commodity Prices + World Bank Pink Sheet",
  "start_date": "2020-01-01",
  "commodities": [
   {
@@ -9,402 +9,413 @@
    "name_en": "Coffee Arabica",
    "color": "#2A78D6",
    "tradingview_symbol": "ICEUS:KC1!",
-   "unit_original": "U.S. Cents per Pound",
+   "source": "World Bank (Pink Sheet)",
+   "unit_original": "U.S. Dollars per Kilogram",
    "series": [
     {
      "date": "2020-01-01",
-     "price_original": 142.9365217391304,
-     "usd_per_ton": 3151.18
+     "price_original": 3.13,
+     "usd_per_ton": 3130.0
     },
     {
      "date": "2020-02-01",
-     "price_original": 135.5005,
-     "usd_per_ton": 2987.24
+     "price_original": 2.99,
+     "usd_per_ton": 2990.0
     },
     {
      "date": "2020-03-01",
-     "price_original": 148.3272727272727,
-     "usd_per_ton": 3270.02
+     "price_original": 3.27,
+     "usd_per_ton": 3270.0
     },
     {
      "date": "2020-04-01",
-     "price_original": 154.6304545454545,
-     "usd_per_ton": 3408.98
+     "price_original": 3.41,
+     "usd_per_ton": 3410.0
     },
     {
      "date": "2020-05-01",
-     "price_original": 149.9161904761905,
-     "usd_per_ton": 3305.05
+     "price_original": 3.3,
+     "usd_per_ton": 3300.0
     },
     {
      "date": "2020-06-01",
-     "price_original": 141.52,
-     "usd_per_ton": 3119.95
+     "price_original": 3.12,
+     "usd_per_ton": 3120.0
     },
     {
      "date": "2020-07-01",
-     "price_original": 146.7808695652174,
-     "usd_per_ton": 3235.93
+     "price_original": 3.24,
+     "usd_per_ton": 3240.0
     },
     {
      "date": "2020-08-01",
-     "price_original": 163.0714285714286,
-     "usd_per_ton": 3595.07
+     "price_original": 3.6,
+     "usd_per_ton": 3600.0
     },
     {
      "date": "2020-09-01",
-     "price_original": 166.5645454545455,
-     "usd_per_ton": 3672.08
+     "price_original": 3.67,
+     "usd_per_ton": 3670.0
     },
     {
      "date": "2020-10-01",
-     "price_original": 152.0568181818182,
-     "usd_per_ton": 3352.24
+     "price_original": 3.35,
+     "usd_per_ton": 3350.0
     },
     {
      "date": "2020-11-01",
-     "price_original": 150.7261904761905,
-     "usd_per_ton": 3322.91
+     "price_original": 3.32,
+     "usd_per_ton": 3320.0
     },
     {
      "date": "2020-12-01",
-     "price_original": 157.9526086956522,
-     "usd_per_ton": 3482.22
+     "price_original": 3.48,
+     "usd_per_ton": 3480.0
     },
     {
      "date": "2021-01-01",
-     "price_original": 160.8195238095238,
-     "usd_per_ton": 3545.43
+     "price_original": 3.54,
+     "usd_per_ton": 3540.0
     },
     {
      "date": "2021-02-01",
-     "price_original": 166.429,
-     "usd_per_ton": 3669.09
+     "price_original": 3.67,
+     "usd_per_ton": 3670.0
     },
     {
      "date": "2021-03-01",
-     "price_original": 167.0508695652174,
-     "usd_per_ton": 3682.8
+     "price_original": 3.68,
+     "usd_per_ton": 3680.0
     },
     {
      "date": "2021-04-01",
-     "price_original": 168.6486363636364,
-     "usd_per_ton": 3718.03
+     "price_original": 3.72,
+     "usd_per_ton": 3720.0
     },
     {
      "date": "2021-05-01",
-     "price_original": 186.4628571428571,
-     "usd_per_ton": 4110.76
+     "price_original": 4.11,
+     "usd_per_ton": 4110.0
     },
     {
      "date": "2021-06-01",
-     "price_original": 192.0645454545455,
-     "usd_per_ton": 4234.25
+     "price_original": 4.24,
+     "usd_per_ton": 4240.0
     },
     {
      "date": "2021-07-01",
-     "price_original": 204.5009090909091,
-     "usd_per_ton": 4508.43
+     "price_original": 4.5,
+     "usd_per_ton": 4500.0
     },
     {
      "date": "2021-08-01",
-     "price_original": 216.4345454545455,
-     "usd_per_ton": 4771.52
+     "price_original": 4.77,
+     "usd_per_ton": 4770.0
     },
     {
      "date": "2021-09-01",
-     "price_original": 225.5368181818182,
-     "usd_per_ton": 4972.18
+     "price_original": 4.97,
+     "usd_per_ton": 4970.0
     },
     {
      "date": "2021-10-01",
-     "price_original": 241.0733333333333,
-     "usd_per_ton": 5314.7
+     "price_original": 5.31,
+     "usd_per_ton": 5310.0
     },
     {
      "date": "2021-11-01",
-     "price_original": 258.9781818181818,
-     "usd_per_ton": 5709.43
+     "price_original": 5.71,
+     "usd_per_ton": 5710.0
     },
     {
      "date": "2021-12-01",
-     "price_original": 268.3291304347826,
-     "usd_per_ton": 5915.58
+     "price_original": 5.91,
+     "usd_per_ton": 5910.0
     },
     {
      "date": "2022-01-01",
-     "price_original": 271.0814285714286,
-     "usd_per_ton": 5976.26
+     "price_original": 5.98,
+     "usd_per_ton": 5980.0
     },
     {
      "date": "2022-02-01",
-     "price_original": 279.8335,
-     "usd_per_ton": 6169.21
+     "price_original": 6.17,
+     "usd_per_ton": 6170.0
     },
     {
      "date": "2022-03-01",
-     "price_original": 258.9934782608696,
-     "usd_per_ton": 5709.77
+     "price_original": 5.7,
+     "usd_per_ton": 5700.0
     },
     {
      "date": "2022-04-01",
-     "price_original": 265.397619047619,
-     "usd_per_ton": 5850.96
+     "price_original": 5.85,
+     "usd_per_ton": 5850.0
     },
     {
      "date": "2022-05-01",
-     "price_original": 260.4495454545455,
-     "usd_per_ton": 5741.87
+     "price_original": 5.74,
+     "usd_per_ton": 5740.0
     },
     {
      "date": "2022-06-01",
-     "price_original": 273.7636363636364,
-     "usd_per_ton": 6035.39
+     "price_original": 6.03,
+     "usd_per_ton": 6030.0
     },
     {
      "date": "2022-07-01",
-     "price_original": 255.9066666666667,
-     "usd_per_ton": 5641.72
+     "price_original": 5.64,
+     "usd_per_ton": 5640.0
     },
     {
      "date": "2022-08-01",
-     "price_original": 268.4834782608696,
-     "usd_per_ton": 5918.99
+     "price_original": 5.92,
+     "usd_per_ton": 5920.0
     },
     {
      "date": "2022-09-01",
-     "price_original": 267.4922727272727,
-     "usd_per_ton": 5897.13
+     "price_original": 5.9,
+     "usd_per_ton": 5900.0
     },
     {
      "date": "2022-10-01",
-     "price_original": 240.082380952381,
-     "usd_per_ton": 5292.86
+     "price_original": 5.29,
+     "usd_per_ton": 5290.0
     },
     {
      "date": "2022-11-01",
-     "price_original": 213.7181818181818,
-     "usd_per_ton": 4711.63
+     "price_original": 4.72,
+     "usd_per_ton": 4720.0
     },
     {
      "date": "2022-12-01",
-     "price_original": 210.3886363636364,
-     "usd_per_ton": 4638.23
+     "price_original": 4.63,
+     "usd_per_ton": 4630.0
     },
     {
      "date": "2023-01-01",
-     "price_original": 206.76,
-     "usd_per_ton": 4558.23
+     "price_original": 4.56,
+     "usd_per_ton": 4560.0
     },
     {
      "date": "2023-02-01",
-     "price_original": 229.506,
-     "usd_per_ton": 5059.69
+     "price_original": 5.06,
+     "usd_per_ton": 5060.0
     },
     {
      "date": "2023-03-01",
-     "price_original": 222.6639130434783,
-     "usd_per_ton": 4908.85
+     "price_original": 4.9,
+     "usd_per_ton": 4900.0
     },
     {
      "date": "2023-04-01",
-     "price_original": 229.9555,
-     "usd_per_ton": 5069.6
+     "price_original": 5.06,
+     "usd_per_ton": 5060.0
     },
     {
      "date": "2023-05-01",
-     "price_original": 220.1213043478261,
-     "usd_per_ton": 4852.79
+     "price_original": 4.85,
+     "usd_per_ton": 4850.0
     },
     {
      "date": "2023-06-01",
-     "price_original": 207.385,
-     "usd_per_ton": 4572.01
+     "price_original": 4.57,
+     "usd_per_ton": 4570.0
     },
     {
      "date": "2023-07-01",
-     "price_original": 193.4942857142857,
-     "usd_per_ton": 4265.78
+     "price_original": 4.27,
+     "usd_per_ton": 4270.0
     },
     {
      "date": "2023-08-01",
-     "price_original": 186.3469565217391,
-     "usd_per_ton": 4108.21
+     "price_original": 4.12,
+     "usd_per_ton": 4120.0
     },
     {
      "date": "2023-09-01",
-     "price_original": 183.5890476190476,
-     "usd_per_ton": 4047.4
+     "price_original": 4.05,
+     "usd_per_ton": 4050.0
     },
     {
      "date": "2023-10-01",
-     "price_original": 183.9513636363636,
-     "usd_per_ton": 4055.39
+     "price_original": 4.05,
+     "usd_per_ton": 4050.0
     },
     {
      "date": "2023-11-01",
-     "price_original": 197.4331818181818,
-     "usd_per_ton": 4352.61
+     "price_original": 4.35,
+     "usd_per_ton": 4350.0
     },
     {
      "date": "2023-12-01",
-     "price_original": 210.3104761904762,
-     "usd_per_ton": 4636.5
+     "price_original": 4.65,
+     "usd_per_ton": 4650.0
     },
     {
      "date": "2024-01-01",
-     "price_original": 203.8791304347826,
-     "usd_per_ton": 4494.72
+     "price_original": 4.47,
+     "usd_per_ton": 4470.0
     },
     {
      "date": "2024-02-01",
-     "price_original": 208.7833333333333,
-     "usd_per_ton": 4602.84
+     "price_original": 4.6,
+     "usd_per_ton": 4600.0
     },
     {
      "date": "2024-03-01",
-     "price_original": 208.9133333333333,
-     "usd_per_ton": 4605.7
+     "price_original": 4.61,
+     "usd_per_ton": 4610.0
     },
     {
      "date": "2024-04-01",
-     "price_original": 239.8663636363636,
-     "usd_per_ton": 5288.09
+     "price_original": 5.27,
+     "usd_per_ton": 5270.0
     },
     {
      "date": "2024-05-01",
-     "price_original": 232.3426086956522,
-     "usd_per_ton": 5122.23
+     "price_original": 5.08,
+     "usd_per_ton": 5080.0
     },
     {
      "date": "2024-06-01",
-     "price_original": 248.405,
-     "usd_per_ton": 5476.34
+     "price_original": 5.48,
+     "usd_per_ton": 5480.0
     },
     {
      "date": "2024-07-01",
-     "price_original": 257.0986956521739,
-     "usd_per_ton": 5668.0
+     "price_original": 5.67,
+     "usd_per_ton": 5670.0
     },
     {
      "date": "2024-08-01",
-     "price_original": 261.4377272727273,
-     "usd_per_ton": 5763.66
+     "price_original": 5.76,
+     "usd_per_ton": 5760.0
     },
     {
      "date": "2024-09-01",
-     "price_original": 278.7604761904762,
-     "usd_per_ton": 6145.55
+     "price_original": 6.12,
+     "usd_per_ton": 6120.0
     },
     {
      "date": "2024-10-01",
-     "price_original": 276.7773913043478,
-     "usd_per_ton": 6101.83
+     "price_original": 6.1,
+     "usd_per_ton": 6100.0
     },
     {
      "date": "2024-11-01",
-     "price_original": 304.9528571428571,
-     "usd_per_ton": 6722.99
+     "price_original": 6.72,
+     "usd_per_ton": 6720.0
     },
     {
      "date": "2024-12-01",
-     "price_original": 344.1186363636364,
-     "usd_per_ton": 7586.44
+     "price_original": 7.57,
+     "usd_per_ton": 7570.0
     },
     {
      "date": "2025-01-01",
-     "price_original": 353.9334782608696,
-     "usd_per_ton": 7802.82
+     "price_original": 7.81,
+     "usd_per_ton": 7810.0
     },
     {
      "date": "2025-02-01",
-     "price_original": 409.5165,
-     "usd_per_ton": 9028.2
+     "price_original": 9.05,
+     "usd_per_ton": 9050.0
     },
     {
      "date": "2025-03-01",
-     "price_original": 404.2104761904762,
-     "usd_per_ton": 8911.22
+     "price_original": 8.92,
+     "usd_per_ton": 8920.0
     },
     {
      "date": "2025-04-01",
-     "price_original": 392.9127272727273,
-     "usd_per_ton": 8662.15
+     "price_original": 8.64,
+     "usd_per_ton": 8640.0
     },
     {
      "date": "2025-05-01",
-     "price_original": 397.5886363636364,
-     "usd_per_ton": 8765.24
+     "price_original": 8.77,
+     "usd_per_ton": 8770.0
     },
     {
      "date": "2025-06-01",
-     "price_original": 363.162380952381,
-     "usd_per_ton": 8006.28
+     "price_original": 8.01,
+     "usd_per_ton": 8010.0
     },
     {
      "date": "2025-07-01",
-     "price_original": 316.725652173913,
-     "usd_per_ton": 6982.53
+     "price_original": 7.18,
+     "usd_per_ton": 7180.0
     },
     {
      "date": "2025-08-01",
-     "price_original": 365.6857142857143,
-     "usd_per_ton": 8061.91
+     "price_original": 8.08,
+     "usd_per_ton": 8080.0
     },
     {
      "date": "2025-09-01",
-     "price_original": 399.5513636363636,
-     "usd_per_ton": 8808.51
+     "price_original": 8.83,
+     "usd_per_ton": 8830.0
     },
     {
      "date": "2025-10-01",
-     "price_original": 403.7926086956522,
-     "usd_per_ton": 8902.01
+     "price_original": 8.9,
+     "usd_per_ton": 8900.0
     },
     {
      "date": "2025-11-01",
-     "price_original": 409.679,
-     "usd_per_ton": 9031.78
+     "price_original": 9.05,
+     "usd_per_ton": 9050.0
     },
     {
      "date": "2025-12-01",
-     "price_original": 380.4172727272727,
-     "usd_per_ton": 8386.68
+     "price_original": 8.4,
+     "usd_per_ton": 8400.0
     },
     {
      "date": "2026-01-01",
-     "price_original": 363.9104545454545,
-     "usd_per_ton": 8022.77
+     "price_original": 8.02,
+     "usd_per_ton": 8020.0
     },
     {
      "date": "2026-02-01",
-     "price_original": 321.3525,
-     "usd_per_ton": 7084.54
+     "price_original": 7.08,
+     "usd_per_ton": 7080.0
     },
     {
      "date": "2026-03-01",
-     "price_original": 334.1118181818182,
-     "usd_per_ton": 7365.83
+     "price_original": 7.37,
+     "usd_per_ton": 7370.0
     },
     {
      "date": "2026-04-01",
-     "price_original": 331.2227272727273,
-     "usd_per_ton": 7302.14
+     "price_original": 7.3,
+     "usd_per_ton": 7300.0
     },
     {
      "date": "2026-05-01",
-     "price_original": 315.0595238095238,
-     "usd_per_ton": 6945.8
+     "price_original": 6.95,
+     "usd_per_ton": 6950.0
     },
     {
      "date": "2026-06-01",
-     "price_original": 307.8263636363636,
-     "usd_per_ton": 6786.34
+     "price_original": 6.79,
+     "usd_per_ton": 6790.0
     },
     {
      "date": "2026-07-01",
-     "price_original": 359.1622727272727,
-     "usd_per_ton": 7918.09
+     "price_original": 7.91,
+     "usd_per_ton": 7910.0
+    },
+    {
+     "date": "2026-08-01",
+     "price_original": 7.97,
+     "usd_per_ton": 7970.0
+    },
+    {
+     "date": "2026-09-01",
+     "price_original": 7.26,
+     "usd_per_ton": 7260.0
     }
    ]
   },
@@ -415,402 +426,413 @@
    "name_en": "Coffee Robusta",
    "color": "#EB6834",
    "tradingview_symbol": "ICEEUR:RC1!",
-   "unit_original": "U.S. Cents per Pound",
+   "source": "World Bank (Pink Sheet)",
+   "unit_original": "U.S. Dollars per Kilogram",
    "series": [
     {
      "date": "2020-01-01",
-     "price_original": 70.58391304347826,
-     "usd_per_ton": 1556.09
+     "price_original": 1.56,
+     "usd_per_ton": 1560.0
     },
     {
      "date": "2020-02-01",
-     "price_original": 68.0665,
-     "usd_per_ton": 1500.59
+     "price_original": 1.5,
+     "usd_per_ton": 1500.0
     },
     {
      "date": "2020-03-01",
-     "price_original": 67.45681818181818,
-     "usd_per_ton": 1487.15
+     "price_original": 1.49,
+     "usd_per_ton": 1490.0
     },
     {
      "date": "2020-04-01",
-     "price_original": 64.02272727272727,
-     "usd_per_ton": 1411.45
+     "price_original": 1.41,
+     "usd_per_ton": 1410.0
     },
     {
      "date": "2020-05-01",
-     "price_original": 64.53714285714285,
-     "usd_per_ton": 1422.79
+     "price_original": 1.42,
+     "usd_per_ton": 1420.0
     },
     {
      "date": "2020-06-01",
-     "price_original": 64.61681818181818,
-     "usd_per_ton": 1424.54
+     "price_original": 1.42,
+     "usd_per_ton": 1420.0
     },
     {
      "date": "2020-07-01",
-     "price_original": 67.68652173913043,
-     "usd_per_ton": 1492.22
+     "price_original": 1.49,
+     "usd_per_ton": 1490.0
     },
     {
      "date": "2020-08-01",
-     "price_original": 72.63857142857142,
-     "usd_per_ton": 1601.39
+     "price_original": 1.6,
+     "usd_per_ton": 1600.0
     },
     {
      "date": "2020-09-01",
-     "price_original": 72.77318181818183,
-     "usd_per_ton": 1604.36
+     "price_original": 1.6,
+     "usd_per_ton": 1600.0
     },
     {
      "date": "2020-10-01",
-     "price_original": 68.35772727272727,
-     "usd_per_ton": 1507.01
+     "price_original": 1.51,
+     "usd_per_ton": 1510.0
     },
     {
      "date": "2020-11-01",
-     "price_original": 72.38238095238096,
-     "usd_per_ton": 1595.74
+     "price_original": 1.6,
+     "usd_per_ton": 1600.0
     },
     {
      "date": "2020-12-01",
-     "price_original": 71.94608695652174,
-     "usd_per_ton": 1586.12
+     "price_original": 1.59,
+     "usd_per_ton": 1590.0
     },
     {
      "date": "2021-01-01",
-     "price_original": 70.81380952380952,
-     "usd_per_ton": 1561.16
+     "price_original": 1.56,
+     "usd_per_ton": 1560.0
     },
     {
      "date": "2021-02-01",
-     "price_original": 73.3715,
-     "usd_per_ton": 1617.55
+     "price_original": 1.62,
+     "usd_per_ton": 1620.0
     },
     {
      "date": "2021-03-01",
-     "price_original": 73.8595652173913,
-     "usd_per_ton": 1628.31
+     "price_original": 1.63,
+     "usd_per_ton": 1630.0
     },
     {
      "date": "2021-04-01",
-     "price_original": 74.465,
-     "usd_per_ton": 1641.66
+     "price_original": 1.64,
+     "usd_per_ton": 1640.0
     },
     {
      "date": "2021-05-01",
-     "price_original": 79.68380952380951,
-     "usd_per_ton": 1756.71
+     "price_original": 1.76,
+     "usd_per_ton": 1760.0
     },
     {
      "date": "2021-06-01",
-     "price_original": 84.92727272727274,
-     "usd_per_ton": 1872.31
+     "price_original": 1.87,
+     "usd_per_ton": 1870.0
     },
     {
      "date": "2021-07-01",
-     "price_original": 94.08909090909091,
-     "usd_per_ton": 2074.29
+     "price_original": 2.08,
+     "usd_per_ton": 2080.0
     },
     {
      "date": "2021-08-01",
-     "price_original": 94.88818181818182,
-     "usd_per_ton": 2091.9
+     "price_original": 2.1,
+     "usd_per_ton": 2100.0
     },
     {
      "date": "2021-09-01",
-     "price_original": 104.5895454545455,
-     "usd_per_ton": 2305.78
+     "price_original": 2.31,
+     "usd_per_ton": 2310.0
     },
     {
      "date": "2021-10-01",
-     "price_original": 105.3047619047619,
-     "usd_per_ton": 2321.55
+     "price_original": 2.32,
+     "usd_per_ton": 2320.0
     },
     {
      "date": "2021-11-01",
-     "price_original": 109.4345454545455,
-     "usd_per_ton": 2412.59
+     "price_original": 2.41,
+     "usd_per_ton": 2410.0
     },
     {
      "date": "2021-12-01",
-     "price_original": 112.4647826086957,
-     "usd_per_ton": 2479.4
+     "price_original": 2.48,
+     "usd_per_ton": 2480.0
     },
     {
      "date": "2022-01-01",
-     "price_original": 109.712380952381,
-     "usd_per_ton": 2418.72
+     "price_original": 2.43,
+     "usd_per_ton": 2430.0
     },
     {
      "date": "2022-02-01",
-     "price_original": 109.4265,
-     "usd_per_ton": 2412.42
+     "price_original": 2.41,
+     "usd_per_ton": 2410.0
     },
     {
      "date": "2022-03-01",
-     "price_original": 103.9247826086957,
-     "usd_per_ton": 2291.13
+     "price_original": 2.29,
+     "usd_per_ton": 2290.0
     },
     {
      "date": "2022-04-01",
-     "price_original": 103.96,
-     "usd_per_ton": 2291.9
+     "price_original": 2.29,
+     "usd_per_ton": 2290.0
     },
     {
      "date": "2022-05-01",
-     "price_original": 103.155,
-     "usd_per_ton": 2274.16
+     "price_original": 2.27,
+     "usd_per_ton": 2270.0
     },
     {
      "date": "2022-06-01",
-     "price_original": 103.8454545454545,
-     "usd_per_ton": 2289.38
+     "price_original": 2.29,
+     "usd_per_ton": 2290.0
     },
     {
      "date": "2022-07-01",
-     "price_original": 100.4442857142857,
-     "usd_per_ton": 2214.39
+     "price_original": 2.21,
+     "usd_per_ton": 2210.0
     },
     {
      "date": "2022-08-01",
-     "price_original": 109.6891304347826,
-     "usd_per_ton": 2418.21
+     "price_original": 2.42,
+     "usd_per_ton": 2420.0
     },
     {
      "date": "2022-09-01",
-     "price_original": 111.3581818181818,
-     "usd_per_ton": 2455.0
+     "price_original": 2.46,
+     "usd_per_ton": 2460.0
     },
     {
      "date": "2022-10-01",
-     "price_original": 103.0119047619048,
-     "usd_per_ton": 2271.0
+     "price_original": 2.27,
+     "usd_per_ton": 2270.0
     },
     {
      "date": "2022-11-01",
-     "price_original": 92.595,
-     "usd_per_ton": 2041.35
+     "price_original": 2.04,
+     "usd_per_ton": 2040.0
     },
     {
      "date": "2022-12-01",
-     "price_original": 92.435,
-     "usd_per_ton": 2037.82
+     "price_original": 2.05,
+     "usd_per_ton": 2050.0
     },
     {
      "date": "2023-01-01",
-     "price_original": 95.97909090909091,
-     "usd_per_ton": 2115.96
+     "price_original": 2.12,
+     "usd_per_ton": 2120.0
     },
     {
      "date": "2023-02-01",
-     "price_original": 103.963,
-     "usd_per_ton": 2291.97
+     "price_original": 2.29,
+     "usd_per_ton": 2290.0
     },
     {
      "date": "2023-03-01",
-     "price_original": 106.4873913043478,
-     "usd_per_ton": 2347.62
+     "price_original": 2.35,
+     "usd_per_ton": 2350.0
     },
     {
      "date": "2023-04-01",
-     "price_original": 115.5835,
-     "usd_per_ton": 2548.15
+     "price_original": 2.55,
+     "usd_per_ton": 2550.0
     },
     {
      "date": "2023-05-01",
-     "price_original": 122.5521739130435,
-     "usd_per_ton": 2701.79
+     "price_original": 2.7,
+     "usd_per_ton": 2700.0
     },
     {
      "date": "2023-06-01",
-     "price_original": 132.1254545454545,
-     "usd_per_ton": 2912.84
+     "price_original": 2.91,
+     "usd_per_ton": 2910.0
     },
     {
      "date": "2023-07-01",
-     "price_original": 127.5833333333333,
-     "usd_per_ton": 2812.7
+     "price_original": 2.81,
+     "usd_per_ton": 2810.0
     },
     {
      "date": "2023-08-01",
-     "price_original": 124.3565217391304,
-     "usd_per_ton": 2741.56
+     "price_original": 2.75,
+     "usd_per_ton": 2750.0
     },
     {
      "date": "2023-09-01",
-     "price_original": 123.8914285714286,
-     "usd_per_ton": 2731.31
+     "price_original": 2.73,
+     "usd_per_ton": 2730.0
     },
     {
      "date": "2023-10-01",
-     "price_original": 118.835,
-     "usd_per_ton": 2619.84
+     "price_original": 2.62,
+     "usd_per_ton": 2620.0
     },
     {
      "date": "2023-11-01",
-     "price_original": 122.7759090909091,
-     "usd_per_ton": 2706.72
+     "price_original": 2.7,
+     "usd_per_ton": 2700.0
     },
     {
      "date": "2023-12-01",
-     "price_original": 135.3919047619048,
-     "usd_per_ton": 2984.85
+     "price_original": 2.99,
+     "usd_per_ton": 2990.0
     },
     {
      "date": "2024-01-01",
-     "price_original": 148.1252173913043,
-     "usd_per_ton": 3265.57
+     "price_original": 3.26,
+     "usd_per_ton": 3260.0
     },
     {
      "date": "2024-02-01",
-     "price_original": 153.227619047619,
-     "usd_per_ton": 3378.06
+     "price_original": 3.38,
+     "usd_per_ton": 3380.0
     },
     {
      "date": "2024-03-01",
-     "price_original": 165.8395238095238,
-     "usd_per_ton": 3656.1
+     "price_original": 3.66,
+     "usd_per_ton": 3660.0
     },
     {
      "date": "2024-04-01",
-     "price_original": 193.675,
-     "usd_per_ton": 4269.76
+     "price_original": 4.23,
+     "usd_per_ton": 4230.0
     },
     {
      "date": "2024-05-01",
-     "price_original": 186.4573913043478,
-     "usd_per_ton": 4110.64
+     "price_original": 4.04,
+     "usd_per_ton": 4040.0
     },
     {
      "date": "2024-06-01",
-     "price_original": 204.327,
-     "usd_per_ton": 4504.59
+     "price_original": 4.5,
+     "usd_per_ton": 4500.0
     },
     {
      "date": "2024-07-01",
-     "price_original": 214.5413043478261,
-     "usd_per_ton": 4729.78
+     "price_original": 4.73,
+     "usd_per_ton": 4730.0
     },
     {
      "date": "2024-08-01",
-     "price_original": 214.6954545454545,
-     "usd_per_ton": 4733.18
+     "price_original": 4.73,
+     "usd_per_ton": 4730.0
     },
     {
      "date": "2024-09-01",
-     "price_original": 242.4619047619048,
-     "usd_per_ton": 5345.32
+     "price_original": 5.33,
+     "usd_per_ton": 5330.0
     },
     {
      "date": "2024-10-01",
-     "price_original": 221.895652173913,
-     "usd_per_ton": 4891.91
+     "price_original": 4.89,
+     "usd_per_ton": 4890.0
     },
     {
      "date": "2024-11-01",
-     "price_original": 226.13,
-     "usd_per_ton": 4985.26
+     "price_original": 4.98,
+     "usd_per_ton": 4980.0
     },
     {
      "date": "2024-12-01",
-     "price_original": 237.6218181818182,
-     "usd_per_ton": 5238.61
+     "price_original": 5.22,
+     "usd_per_ton": 5220.0
     },
     {
      "date": "2025-01-01",
-     "price_original": 244.9391304347826,
-     "usd_per_ton": 5399.93
+     "price_original": 5.41,
+     "usd_per_ton": 5410.0
     },
     {
      "date": "2025-02-01",
-     "price_original": 263.045,
-     "usd_per_ton": 5799.09
+     "price_original": 5.81,
+     "usd_per_ton": 5810.0
     },
     {
      "date": "2025-03-01",
-     "price_original": 257.6842857142857,
-     "usd_per_ton": 5680.91
+     "price_original": 5.69,
+     "usd_per_ton": 5690.0
     },
     {
      "date": "2025-04-01",
-     "price_original": 246.5490909090909,
-     "usd_per_ton": 5435.42
+     "price_original": 5.43,
+     "usd_per_ton": 5430.0
     },
     {
      "date": "2025-05-01",
-     "price_original": 237.3031818181818,
-     "usd_per_ton": 5231.59
+     "price_original": 5.24,
+     "usd_per_ton": 5240.0
     },
     {
      "date": "2025-06-01",
-     "price_original": 196.2138095238095,
-     "usd_per_ton": 4325.73
+     "price_original": 4.33,
+     "usd_per_ton": 4330.0
     },
     {
      "date": "2025-07-01",
-     "price_original": 167.1678260869565,
-     "usd_per_ton": 3685.38
+     "price_original": 3.69,
+     "usd_per_ton": 3690.0
     },
     {
      "date": "2025-08-01",
-     "price_original": 198.8609523809524,
-     "usd_per_ton": 4384.09
+     "price_original": 4.39,
+     "usd_per_ton": 4390.0
     },
     {
      "date": "2025-09-01",
-     "price_original": 210.8413636363636,
-     "usd_per_ton": 4648.21
+     "price_original": 4.66,
+     "usd_per_ton": 4660.0
     },
     {
      "date": "2025-10-01",
-     "price_original": 215.06,
-     "usd_per_ton": 4741.21
+     "price_original": 4.74,
+     "usd_per_ton": 4740.0
     },
     {
      "date": "2025-11-01",
-     "price_original": 214.826,
-     "usd_per_ton": 4736.05
+     "price_original": 4.74,
+     "usd_per_ton": 4740.0
     },
     {
      "date": "2025-12-01",
-     "price_original": 190.2381818181818,
-     "usd_per_ton": 4193.99
+     "price_original": 4.2,
+     "usd_per_ton": 4200.0
     },
     {
      "date": "2026-01-01",
-     "price_original": 192.2890909090909,
-     "usd_per_ton": 4239.21
+     "price_original": 4.24,
+     "usd_per_ton": 4240.0
     },
     {
      "date": "2026-02-01",
-     "price_original": 179.5945,
-     "usd_per_ton": 3959.34
+     "price_original": 3.96,
+     "usd_per_ton": 3960.0
     },
     {
      "date": "2026-03-01",
-     "price_original": 176.7640909090909,
-     "usd_per_ton": 3896.94
+     "price_original": 3.9,
+     "usd_per_ton": 3900.0
     },
     {
      "date": "2026-04-01",
-     "price_original": 164.645,
-     "usd_per_ton": 3629.76
+     "price_original": 3.63,
+     "usd_per_ton": 3630.0
     },
     {
      "date": "2026-05-01",
-     "price_original": 166.512380952381,
-     "usd_per_ton": 3670.93
+     "price_original": 3.67,
+     "usd_per_ton": 3670.0
     },
     {
      "date": "2026-06-01",
-     "price_original": 169.3904545454545,
-     "usd_per_ton": 3734.38
+     "price_original": 3.73,
+     "usd_per_ton": 3730.0
     },
     {
      "date": "2026-07-01",
-     "price_original": 185.2304545454545,
-     "usd_per_ton": 4083.59
+     "price_original": 4.07,
+     "usd_per_ton": 4070.0
+    },
+    {
+     "date": "2026-08-01",
+     "price_original": 3.98,
+     "usd_per_ton": 3980.0
+    },
+    {
+     "date": "2026-09-01",
+     "price_original": 3.69,
+     "usd_per_ton": 3690.0
     }
    ]
   },
@@ -821,402 +843,413 @@
    "name_en": "Cocoa",
    "color": "#1BAF7A",
    "tradingview_symbol": "ICEUS:CC1!",
-   "unit_original": "U.S. Dollars per Metric Ton",
+   "source": "World Bank (Pink Sheet)",
+   "unit_original": "U.S. Dollars per Kilogram",
    "series": [
     {
      "date": "2020-01-01",
-     "price_original": 2603.075561212662,
-     "usd_per_ton": 2603.08
+     "price_original": 2.6,
+     "usd_per_ton": 2600.0
     },
     {
      "date": "2020-02-01",
-     "price_original": 2716.214397777276,
-     "usd_per_ton": 2716.21
+     "price_original": 2.72,
+     "usd_per_ton": 2720.0
     },
     {
      "date": "2020-03-01",
-     "price_original": 2338.470536222704,
-     "usd_per_ton": 2338.47
+     "price_original": 2.34,
+     "usd_per_ton": 2340.0
     },
     {
      "date": "2020-04-01",
-     "price_original": 2270.238696846814,
-     "usd_per_ton": 2270.24
+     "price_original": 2.27,
+     "usd_per_ton": 2270.0
     },
     {
      "date": "2020-05-01",
-     "price_original": 2317.453931564956,
-     "usd_per_ton": 2317.45
+     "price_original": 2.32,
+     "usd_per_ton": 2320.0
     },
     {
      "date": "2020-06-01",
-     "price_original": 2228.617635584422,
-     "usd_per_ton": 2228.62
+     "price_original": 2.23,
+     "usd_per_ton": 2230.0
     },
     {
      "date": "2020-07-01",
-     "price_original": 2102.07713180143,
-     "usd_per_ton": 2102.08
+     "price_original": 2.1,
+     "usd_per_ton": 2100.0
     },
     {
      "date": "2020-08-01",
-     "price_original": 2348.676309262007,
-     "usd_per_ton": 2348.68
+     "price_original": 2.35,
+     "usd_per_ton": 2350.0
     },
     {
      "date": "2020-09-01",
-     "price_original": 2457.611923658554,
-     "usd_per_ton": 2457.61
+     "price_original": 2.46,
+     "usd_per_ton": 2460.0
     },
     {
      "date": "2020-10-01",
-     "price_original": 2292.054175567769,
-     "usd_per_ton": 2292.05
+     "price_original": 2.29,
+     "usd_per_ton": 2290.0
     },
     {
      "date": "2020-11-01",
-     "price_original": 2359.243716161572,
-     "usd_per_ton": 2359.24
+     "price_original": 2.36,
+     "usd_per_ton": 2360.0
     },
     {
      "date": "2020-12-01",
-     "price_original": 2405.76492397114,
-     "usd_per_ton": 2405.76
+     "price_original": 2.41,
+     "usd_per_ton": 2410.0
     },
     {
      "date": "2021-01-01",
-     "price_original": 2392.973563420423,
-     "usd_per_ton": 2392.97
+     "price_original": 2.39,
+     "usd_per_ton": 2390.0
     },
     {
      "date": "2021-02-01",
-     "price_original": 2383.028506656238,
-     "usd_per_ton": 2383.03
+     "price_original": 2.41,
+     "usd_per_ton": 2410.0
     },
     {
      "date": "2021-03-01",
-     "price_original": 2471.204322165759,
-     "usd_per_ton": 2471.2
+     "price_original": 2.46,
+     "usd_per_ton": 2460.0
     },
     {
      "date": "2021-04-01",
-     "price_original": 2366.486057293951,
-     "usd_per_ton": 2366.49
+     "price_original": 2.37,
+     "usd_per_ton": 2370.0
     },
     {
      "date": "2021-05-01",
-     "price_original": 2409.357431265938,
-     "usd_per_ton": 2409.36
+     "price_original": 2.41,
+     "usd_per_ton": 2410.0
     },
     {
      "date": "2021-06-01",
-     "price_original": 2366.29376388017,
-     "usd_per_ton": 2366.29
+     "price_original": 2.37,
+     "usd_per_ton": 2370.0
     },
     {
      "date": "2021-07-01",
-     "price_original": 2328.27955315558,
-     "usd_per_ton": 2328.28
+     "price_original": 2.33,
+     "usd_per_ton": 2330.0
     },
     {
      "date": "2021-08-01",
-     "price_original": 2477.500361669303,
-     "usd_per_ton": 2477.5
+     "price_original": 2.48,
+     "usd_per_ton": 2480.0
     },
     {
      "date": "2021-09-01",
-     "price_original": 2552.76442186016,
-     "usd_per_ton": 2552.76
+     "price_original": 2.56,
+     "usd_per_ton": 2560.0
     },
     {
      "date": "2021-10-01",
-     "price_original": 2573.725247930012,
-     "usd_per_ton": 2573.73
+     "price_original": 2.57,
+     "usd_per_ton": 2570.0
     },
     {
      "date": "2021-11-01",
-     "price_original": 2405.874465485019,
-     "usd_per_ton": 2405.87
+     "price_original": 2.39,
+     "usd_per_ton": 2390.0
     },
     {
      "date": "2021-12-01",
-     "price_original": 2378.73085848743,
-     "usd_per_ton": 2378.73
+     "price_original": 2.38,
+     "usd_per_ton": 2380.0
     },
     {
      "date": "2022-01-01",
-     "price_original": 2467.356862582399,
-     "usd_per_ton": 2467.36
+     "price_original": 2.47,
+     "usd_per_ton": 2470.0
     },
     {
      "date": "2022-02-01",
-     "price_original": 2551.326883584084,
-     "usd_per_ton": 2551.33
+     "price_original": 2.55,
+     "usd_per_ton": 2550.0
     },
     {
      "date": "2022-03-01",
-     "price_original": 2459.398319640722,
-     "usd_per_ton": 2459.4
+     "price_original": 2.46,
+     "usd_per_ton": 2460.0
     },
     {
      "date": "2022-04-01",
-     "price_original": 2457.384107289146,
-     "usd_per_ton": 2457.38
+     "price_original": 2.46,
+     "usd_per_ton": 2460.0
     },
     {
      "date": "2022-05-01",
-     "price_original": 2363.871129036004,
-     "usd_per_ton": 2363.87
+     "price_original": 2.37,
+     "usd_per_ton": 2370.0
     },
     {
      "date": "2022-06-01",
-     "price_original": 2323.116687244048,
-     "usd_per_ton": 2323.12
+     "price_original": 2.32,
+     "usd_per_ton": 2320.0
     },
     {
      "date": "2022-07-01",
-     "price_original": 2239.402286127753,
-     "usd_per_ton": 2239.4
+     "price_original": 2.24,
+     "usd_per_ton": 2240.0
     },
     {
      "date": "2022-08-01",
-     "price_original": 2270.102773614096,
-     "usd_per_ton": 2270.1
+     "price_original": 2.32,
+     "usd_per_ton": 2320.0
     },
     {
      "date": "2022-09-01",
-     "price_original": 2220.214244629552,
-     "usd_per_ton": 2220.21
+     "price_original": 2.3,
+     "usd_per_ton": 2300.0
     },
     {
      "date": "2022-10-01",
-     "price_original": 2243.631098250515,
-     "usd_per_ton": 2243.63
+     "price_original": 2.31,
+     "usd_per_ton": 2310.0
     },
     {
      "date": "2022-11-01",
-     "price_original": 2380.803070269115,
-     "usd_per_ton": 2380.8
+     "price_original": 2.41,
+     "usd_per_ton": 2410.0
     },
     {
      "date": "2022-12-01",
-     "price_original": 2456.226953758389,
-     "usd_per_ton": 2456.23
+     "price_original": 2.51,
+     "usd_per_ton": 2510.0
     },
     {
      "date": "2023-01-01",
-     "price_original": 2540.076523955292,
-     "usd_per_ton": 2540.08
+     "price_original": 2.62,
+     "usd_per_ton": 2620.0
     },
     {
      "date": "2023-02-01",
-     "price_original": 2586.526817028014,
-     "usd_per_ton": 2586.53
+     "price_original": 2.65,
+     "usd_per_ton": 2650.0
     },
     {
      "date": "2023-03-01",
-     "price_original": 2665.791316276091,
-     "usd_per_ton": 2665.79
+     "price_original": 2.75,
+     "usd_per_ton": 2750.0
     },
     {
      "date": "2023-04-01",
-     "price_original": 2823.273984567432,
-     "usd_per_ton": 2823.27
+     "price_original": 2.88,
+     "usd_per_ton": 2880.0
     },
     {
      "date": "2023-05-01",
-     "price_original": 2905.341733304136,
-     "usd_per_ton": 2905.34
+     "price_original": 2.96,
+     "usd_per_ton": 2960.0
     },
     {
      "date": "2023-06-01",
-     "price_original": 3124.43913501557,
-     "usd_per_ton": 3124.44
+     "price_original": 3.17,
+     "usd_per_ton": 3170.0
     },
     {
      "date": "2023-07-01",
-     "price_original": 3346.634548507881,
-     "usd_per_ton": 3346.63
+     "price_original": 3.39,
+     "usd_per_ton": 3390.0
     },
     {
      "date": "2023-08-01",
-     "price_original": 3434.406596186068,
-     "usd_per_ton": 3434.41
+     "price_original": 3.46,
+     "usd_per_ton": 3460.0
     },
     {
      "date": "2023-09-01",
-     "price_original": 3629.166883389024,
-     "usd_per_ton": 3629.17
+     "price_original": 3.61,
+     "usd_per_ton": 3610.0
     },
     {
      "date": "2023-10-01",
-     "price_original": 3691.614716182179,
-     "usd_per_ton": 3691.61
+     "price_original": 3.63,
+     "usd_per_ton": 3630.0
     },
     {
      "date": "2023-11-01",
-     "price_original": 4095.356207101358,
-     "usd_per_ton": 4095.36
+     "price_original": 4.03,
+     "usd_per_ton": 4030.0
     },
     {
      "date": "2023-12-01",
-     "price_original": 4253.904329112389,
-     "usd_per_ton": 4253.9
+     "price_original": 4.21,
+     "usd_per_ton": 4210.0
     },
     {
      "date": "2024-01-01",
-     "price_original": 4442.919775442222,
-     "usd_per_ton": 4442.92
+     "price_original": 4.4,
+     "usd_per_ton": 4400.0
     },
     {
      "date": "2024-02-01",
-     "price_original": 5640.087618677671,
-     "usd_per_ton": 5640.09
+     "price_original": 5.56,
+     "usd_per_ton": 5560.0
     },
     {
      "date": "2024-03-01",
-     "price_original": 7297.553884071729,
-     "usd_per_ton": 7297.55
+     "price_original": 7.09,
+     "usd_per_ton": 7090.0
     },
     {
      "date": "2024-04-01",
-     "price_original": 9865.206034438286,
-     "usd_per_ton": 9865.21
+     "price_original": 9.74,
+     "usd_per_ton": 9740.0
     },
     {
      "date": "2024-05-01",
-     "price_original": 7768.098379830387,
-     "usd_per_ton": 7768.1
+     "price_original": 7.54,
+     "usd_per_ton": 7540.0
     },
     {
      "date": "2024-06-01",
-     "price_original": 8380.12660951907,
-     "usd_per_ton": 8380.13
+     "price_original": 8.27,
+     "usd_per_ton": 8270.0
     },
     {
      "date": "2024-07-01",
-     "price_original": 7164.628035294687,
-     "usd_per_ton": 7164.63
+     "price_original": 7.09,
+     "usd_per_ton": 7090.0
     },
     {
      "date": "2024-08-01",
-     "price_original": 6791.953817048214,
-     "usd_per_ton": 6791.95
+     "price_original": 6.88,
+     "usd_per_ton": 6880.0
     },
     {
      "date": "2024-09-01",
-     "price_original": 6421.825658655629,
-     "usd_per_ton": 6421.83
+     "price_original": 6.52,
+     "usd_per_ton": 6520.0
     },
     {
      "date": "2024-10-01",
-     "price_original": 6582.858019361083,
-     "usd_per_ton": 6582.86
+     "price_original": 6.66,
+     "usd_per_ton": 6660.0
     },
     {
      "date": "2024-11-01",
-     "price_original": 7919.328269586367,
-     "usd_per_ton": 7919.33
+     "price_original": 7.89,
+     "usd_per_ton": 7890.0
     },
     {
      "date": "2024-12-01",
-     "price_original": 10412.18571198528,
-     "usd_per_ton": 10412.19
+     "price_original": 10.32,
+     "usd_per_ton": 10320.0
     },
     {
      "date": "2025-01-01",
-     "price_original": 10710.34548327711,
-     "usd_per_ton": 10710.35
+     "price_original": 10.75,
+     "usd_per_ton": 10750.0
     },
     {
      "date": "2025-02-01",
-     "price_original": 9792.664209159075,
-     "usd_per_ton": 9792.66
+     "price_original": 9.86,
+     "usd_per_ton": 9860.0
     },
     {
      "date": "2025-03-01",
-     "price_original": 8079.556127661486,
-     "usd_per_ton": 8079.56
+     "price_original": 8.08,
+     "usd_per_ton": 8080.0
     },
     {
      "date": "2025-04-01",
-     "price_original": 8132.218491705632,
-     "usd_per_ton": 8132.22
+     "price_original": 8.15,
+     "usd_per_ton": 8150.0
     },
     {
      "date": "2025-05-01",
-     "price_original": 9000.787338851027,
-     "usd_per_ton": 9000.79
+     "price_original": 8.99,
+     "usd_per_ton": 8990.0
     },
     {
      "date": "2025-06-01",
-     "price_original": 8401.952731292095,
-     "usd_per_ton": 8401.95
+     "price_original": 8.4,
+     "usd_per_ton": 8400.0
     },
     {
      "date": "2025-07-01",
-     "price_original": 7371.890765758022,
-     "usd_per_ton": 7371.89
+     "price_original": 7.37,
+     "usd_per_ton": 7370.0
     },
     {
      "date": "2025-08-01",
-     "price_original": 7604.123627133267,
-     "usd_per_ton": 7604.12
+     "price_original": 7.6,
+     "usd_per_ton": 7600.0
     },
     {
      "date": "2025-09-01",
-     "price_original": 7006.525855528091,
-     "usd_per_ton": 7006.53
+     "price_original": 7.03,
+     "usd_per_ton": 7030.0
     },
     {
      "date": "2025-10-01",
-     "price_original": 5953.5678143082,
-     "usd_per_ton": 5953.57
+     "price_original": 5.95,
+     "usd_per_ton": 5950.0
     },
     {
      "date": "2025-11-01",
-     "price_original": 5590.70810325549,
-     "usd_per_ton": 5590.71
+     "price_original": 5.61,
+     "usd_per_ton": 5610.0
     },
     {
      "date": "2025-12-01",
-     "price_original": 5814.856918567877,
-     "usd_per_ton": 5814.86
+     "price_original": 5.78,
+     "usd_per_ton": 5780.0
     },
     {
      "date": "2026-01-01",
-     "price_original": 5018.131520727123,
-     "usd_per_ton": 5018.13
+     "price_original": 4.97,
+     "usd_per_ton": 4970.0
     },
     {
      "date": "2026-02-01",
-     "price_original": 3587.185951183889,
-     "usd_per_ton": 3587.19
+     "price_original": 3.59,
+     "usd_per_ton": 3590.0
     },
     {
      "date": "2026-03-01",
-     "price_original": 3241.488951294424,
-     "usd_per_ton": 3241.49
+     "price_original": 3.24,
+     "usd_per_ton": 3240.0
     },
     {
      "date": "2026-04-01",
-     "price_original": 3392.143554226435,
-     "usd_per_ton": 3392.14
+     "price_original": 3.4,
+     "usd_per_ton": 3400.0
     },
     {
      "date": "2026-05-01",
-     "price_original": 4142.973092507544,
-     "usd_per_ton": 4142.97
+     "price_original": 4.16,
+     "usd_per_ton": 4160.0
     },
     {
      "date": "2026-06-01",
-     "price_original": 4395.458431945616,
-     "usd_per_ton": 4395.46
+     "price_original": 4.4,
+     "usd_per_ton": 4400.0
     },
     {
      "date": "2026-07-01",
-     "price_original": 5619.189873586655,
-     "usd_per_ton": 5619.19
+     "price_original": 5.61,
+     "usd_per_ton": 5610.0
+    },
+    {
+     "date": "2026-08-01",
+     "price_original": 5.95,
+     "usd_per_ton": 5950.0
+    },
+    {
+     "date": "2026-09-01",
+     "price_original": 5.92,
+     "usd_per_ton": 5920.0
     }
    ]
   },
@@ -1227,402 +1260,413 @@
    "name_en": "Sugar",
    "color": "#EDA100",
    "tradingview_symbol": "ICEUS:SB1!",
-   "unit_original": "U.S. Cents per Pound",
+   "source": "World Bank (Pink Sheet)",
+   "unit_original": "U.S. Dollars per Kilogram",
    "series": [
     {
      "date": "2020-01-01",
-     "price_original": 14.16666666666667,
-     "usd_per_ton": 312.32
+     "price_original": 0.31,
+     "usd_per_ton": 310.0
     },
     {
      "date": "2020-02-01",
-     "price_original": 15.07105263157895,
-     "usd_per_ton": 332.26
+     "price_original": 0.33,
+     "usd_per_ton": 330.0
     },
     {
      "date": "2020-03-01",
-     "price_original": 11.805,
-     "usd_per_ton": 260.25
+     "price_original": 0.26,
+     "usd_per_ton": 260.0
     },
     {
      "date": "2020-04-01",
-     "price_original": 10.05190476190476,
-     "usd_per_ton": 221.6
+     "price_original": 0.23,
+     "usd_per_ton": 230.0
     },
     {
      "date": "2020-05-01",
-     "price_original": 10.641,
-     "usd_per_ton": 234.59
+     "price_original": 0.24,
+     "usd_per_ton": 240.0
     },
     {
      "date": "2020-06-01",
-     "price_original": 11.82818181818182,
-     "usd_per_ton": 260.76
+     "price_original": 0.27,
+     "usd_per_ton": 270.0
     },
     {
      "date": "2020-07-01",
-     "price_original": 11.90181818181818,
-     "usd_per_ton": 262.39
+     "price_original": 0.27,
+     "usd_per_ton": 270.0
     },
     {
      "date": "2020-08-01",
-     "price_original": 12.81428571428571,
-     "usd_per_ton": 282.5
+     "price_original": 0.29,
+     "usd_per_ton": 290.0
     },
     {
      "date": "2020-09-01",
-     "price_original": 12.44142857142857,
-     "usd_per_ton": 274.28
+     "price_original": 0.28,
+     "usd_per_ton": 280.0
     },
     {
      "date": "2020-10-01",
-     "price_original": 14.28772727272727,
-     "usd_per_ton": 314.99
+     "price_original": 0.3,
+     "usd_per_ton": 300.0
     },
     {
      "date": "2020-11-01",
-     "price_original": 14.9335,
-     "usd_per_ton": 329.22
+     "price_original": 0.31,
+     "usd_per_ton": 310.0
     },
     {
      "date": "2020-12-01",
-     "price_original": 14.66772727272727,
-     "usd_per_ton": 323.36
+     "price_original": 0.31,
+     "usd_per_ton": 310.0
     },
     {
      "date": "2021-01-01",
-     "price_original": 15.91631578947368,
-     "usd_per_ton": 350.89
+     "price_original": 0.34,
+     "usd_per_ton": 340.0
     },
     {
      "date": "2021-02-01",
-     "price_original": 17.00052631578947,
-     "usd_per_ton": 374.79
+     "price_original": 0.36,
+     "usd_per_ton": 360.0
     },
     {
      "date": "2021-03-01",
-     "price_original": 15.80565217391304,
-     "usd_per_ton": 348.45
+     "price_original": 0.34,
+     "usd_per_ton": 340.0
     },
     {
      "date": "2021-04-01",
-     "price_original": 16.23761904761905,
-     "usd_per_ton": 357.97
+     "price_original": 0.36,
+     "usd_per_ton": 360.0
     },
     {
      "date": "2021-05-01",
-     "price_original": 17.20333333333333,
-     "usd_per_ton": 379.26
+     "price_original": 0.38,
+     "usd_per_ton": 380.0
     },
     {
      "date": "2021-06-01",
-     "price_original": 17.21409090909091,
-     "usd_per_ton": 379.5
+     "price_original": 0.38,
+     "usd_per_ton": 380.0
     },
     {
      "date": "2021-07-01",
-     "price_original": 17.7147619047619,
-     "usd_per_ton": 390.54
+     "price_original": 0.39,
+     "usd_per_ton": 390.0
     },
     {
      "date": "2021-08-01",
-     "price_original": 19.38363636363636,
-     "usd_per_ton": 427.33
+     "price_original": 0.43,
+     "usd_per_ton": 430.0
     },
     {
      "date": "2021-09-01",
-     "price_original": 19.26428571428571,
-     "usd_per_ton": 424.7
+     "price_original": 0.43,
+     "usd_per_ton": 430.0
     },
     {
      "date": "2021-10-01",
-     "price_original": 19.61904761904762,
-     "usd_per_ton": 432.52
+     "price_original": 0.42,
+     "usd_per_ton": 420.0
     },
     {
      "date": "2021-11-01",
-     "price_original": 19.74619047619048,
-     "usd_per_ton": 435.32
+     "price_original": 0.43,
+     "usd_per_ton": 430.0
     },
     {
      "date": "2021-12-01",
-     "price_original": 19.16727272727273,
-     "usd_per_ton": 422.56
+     "price_original": 0.42,
+     "usd_per_ton": 420.0
     },
     {
      "date": "2022-01-01",
-     "price_original": 18.461,
-     "usd_per_ton": 406.99
+     "price_original": 0.4,
+     "usd_per_ton": 400.0
     },
     {
      "date": "2022-02-01",
-     "price_original": 18.20315789473684,
-     "usd_per_ton": 401.31
+     "price_original": 0.39,
+     "usd_per_ton": 390.0
     },
     {
      "date": "2022-03-01",
-     "price_original": 19.10782608695652,
-     "usd_per_ton": 421.25
+     "price_original": 0.42,
+     "usd_per_ton": 420.0
     },
     {
      "date": "2022-04-01",
-     "price_original": 19.69904761904762,
-     "usd_per_ton": 434.29
+     "price_original": 0.43,
+     "usd_per_ton": 430.0
     },
     {
      "date": "2022-05-01",
-     "price_original": 19.28090909090909,
-     "usd_per_ton": 425.07
+     "price_original": 0.43,
+     "usd_per_ton": 430.0
     },
     {
      "date": "2022-06-01",
-     "price_original": 18.79409090909091,
-     "usd_per_ton": 414.33
+     "price_original": 0.42,
+     "usd_per_ton": 420.0
     },
     {
      "date": "2022-07-01",
-     "price_original": 18.34,
-     "usd_per_ton": 404.32
+     "price_original": 0.4,
+     "usd_per_ton": 400.0
     },
     {
      "date": "2022-08-01",
-     "price_original": 18.06260869565217,
-     "usd_per_ton": 398.21
+     "price_original": 0.39,
+     "usd_per_ton": 390.0
     },
     {
      "date": "2022-09-01",
-     "price_original": 18.18590909090909,
-     "usd_per_ton": 400.93
+     "price_original": 0.39,
+     "usd_per_ton": 390.0
     },
     {
      "date": "2022-10-01",
-     "price_original": 18.30095238095238,
-     "usd_per_ton": 403.46
+     "price_original": 0.39,
+     "usd_per_ton": 390.0
     },
     {
      "date": "2022-11-01",
-     "price_original": 19.40590909090909,
-     "usd_per_ton": 427.82
+     "price_original": 0.41,
+     "usd_per_ton": 410.0
     },
     {
      "date": "2022-12-01",
-     "price_original": 20.065,
-     "usd_per_ton": 442.35
+     "price_original": 0.42,
+     "usd_per_ton": 420.0
     },
     {
      "date": "2023-01-01",
-     "price_original": 19.94318181818182,
-     "usd_per_ton": 439.67
+     "price_original": 0.42,
+     "usd_per_ton": 420.0
     },
     {
      "date": "2023-02-01",
-     "price_original": 21.4035,
-     "usd_per_ton": 471.86
+     "price_original": 0.45,
+     "usd_per_ton": 450.0
     },
     {
      "date": "2023-03-01",
-     "price_original": 20.96173913043478,
-     "usd_per_ton": 462.12
+     "price_original": 0.45,
+     "usd_per_ton": 450.0
     },
     {
      "date": "2023-04-01",
-     "price_original": 24.582,
-     "usd_per_ton": 541.93
+     "price_original": 0.53,
+     "usd_per_ton": 530.0
     },
     {
      "date": "2023-05-01",
-     "price_original": 25.7295652173913,
-     "usd_per_ton": 567.23
+     "price_original": 0.56,
+     "usd_per_ton": 560.0
     },
     {
      "date": "2023-06-01",
-     "price_original": 24.76227272727273,
-     "usd_per_ton": 545.91
+     "price_original": 0.54,
+     "usd_per_ton": 540.0
     },
     {
      "date": "2023-07-01",
-     "price_original": 24.00809523809524,
-     "usd_per_ton": 529.28
+     "price_original": 0.52,
+     "usd_per_ton": 520.0
     },
     {
      "date": "2023-08-01",
-     "price_original": 24.19304347826087,
-     "usd_per_ton": 533.36
+     "price_original": 0.53,
+     "usd_per_ton": 530.0
     },
     {
      "date": "2023-09-01",
-     "price_original": 26.56380952380952,
-     "usd_per_ton": 585.63
+     "price_original": 0.58,
+     "usd_per_ton": 580.0
     },
     {
      "date": "2023-10-01",
-     "price_original": 26.90363636363636,
-     "usd_per_ton": 593.12
+     "price_original": 0.57,
+     "usd_per_ton": 570.0
     },
     {
      "date": "2023-11-01",
-     "price_original": 27.30954545454545,
-     "usd_per_ton": 602.07
+     "price_original": 0.57,
+     "usd_per_ton": 570.0
     },
     {
      "date": "2023-12-01",
-     "price_original": 22.14571428571429,
-     "usd_per_ton": 488.22
+     "price_original": 0.48,
+     "usd_per_ton": 480.0
     },
     {
      "date": "2024-01-01",
-     "price_original": 22.47478260869565,
-     "usd_per_ton": 495.48
+     "price_original": 0.48,
+     "usd_per_ton": 480.0
     },
     {
      "date": "2024-02-01",
-     "price_original": 23.34190476190476,
-     "usd_per_ton": 514.6
+     "price_original": 0.5,
+     "usd_per_ton": 500.0
     },
     {
      "date": "2024-03-01",
-     "price_original": 21.76904761904762,
-     "usd_per_ton": 479.92
+     "price_original": 0.48,
+     "usd_per_ton": 480.0
     },
     {
      "date": "2024-04-01",
-     "price_original": 20.64727272727273,
-     "usd_per_ton": 455.19
+     "price_original": 0.45,
+     "usd_per_ton": 450.0
     },
     {
      "date": "2024-05-01",
-     "price_original": 18.7995652173913,
-     "usd_per_ton": 414.46
+     "price_original": 0.42,
+     "usd_per_ton": 420.0
     },
     {
      "date": "2024-06-01",
-     "price_original": 19.1695,
-     "usd_per_ton": 422.61
+     "price_original": 0.43,
+     "usd_per_ton": 430.0
     },
     {
      "date": "2024-07-01",
-     "price_original": 19.35173913043478,
-     "usd_per_ton": 426.63
+     "price_original": 0.43,
+     "usd_per_ton": 430.0
     },
     {
      "date": "2024-08-01",
-     "price_original": 18.41954545454545,
-     "usd_per_ton": 406.08
+     "price_original": 0.41,
+     "usd_per_ton": 410.0
     },
     {
      "date": "2024-09-01",
-     "price_original": 20.6247619047619,
-     "usd_per_ton": 454.69
+     "price_original": 0.45,
+     "usd_per_ton": 450.0
     },
     {
      "date": "2024-10-01",
-     "price_original": 22.35521739130435,
-     "usd_per_ton": 492.84
+     "price_original": 0.46,
+     "usd_per_ton": 460.0
     },
     {
      "date": "2024-11-01",
-     "price_original": 21.6552380952381,
-     "usd_per_ton": 477.41
+     "price_original": 0.45,
+     "usd_per_ton": 450.0
     },
     {
      "date": "2024-12-01",
-     "price_original": 20.31181818181818,
-     "usd_per_ton": 447.79
+     "price_original": 0.44,
+     "usd_per_ton": 440.0
     },
     {
      "date": "2025-01-01",
-     "price_original": 18.93,
-     "usd_per_ton": 417.33
+     "price_original": 0.4,
+     "usd_per_ton": 400.0
     },
     {
      "date": "2025-02-01",
-     "price_original": 20.1855,
-     "usd_per_ton": 445.01
+     "price_original": 0.42,
+     "usd_per_ton": 420.0
     },
     {
      "date": "2025-03-01",
-     "price_original": 19.05619047619048,
-     "usd_per_ton": 420.11
+     "price_original": 0.42,
+     "usd_per_ton": 420.0
     },
     {
      "date": "2025-04-01",
-     "price_original": 18.17181818181818,
-     "usd_per_ton": 400.62
+     "price_original": 0.4,
+     "usd_per_ton": 400.0
     },
     {
      "date": "2025-05-01",
-     "price_original": 17.43136363636364,
-     "usd_per_ton": 384.29
+     "price_original": 0.39,
+     "usd_per_ton": 390.0
     },
     {
      "date": "2025-06-01",
-     "price_original": 16.22619047619048,
-     "usd_per_ton": 357.72
+     "price_original": 0.37,
+     "usd_per_ton": 370.0
     },
     {
      "date": "2025-07-01",
-     "price_original": 16.36478260869565,
-     "usd_per_ton": 360.78
+     "price_original": 0.37,
+     "usd_per_ton": 370.0
     },
     {
      "date": "2025-08-01",
-     "price_original": 16.38952380952381,
-     "usd_per_ton": 361.32
+     "price_original": 0.37,
+     "usd_per_ton": 370.0
     },
     {
      "date": "2025-09-01",
-     "price_original": 15.79,
-     "usd_per_ton": 348.11
+     "price_original": 0.35,
+     "usd_per_ton": 350.0
     },
     {
      "date": "2025-10-01",
-     "price_original": 15.55869565217391,
-     "usd_per_ton": 343.01
+     "price_original": 0.34,
+     "usd_per_ton": 340.0
     },
     {
      "date": "2025-11-01",
-     "price_original": 14.623,
-     "usd_per_ton": 322.38
+     "price_original": 0.32,
+     "usd_per_ton": 320.0
     },
     {
      "date": "2025-12-01",
-     "price_original": 14.935,
-     "usd_per_ton": 329.26
+     "price_original": 0.32,
+     "usd_per_ton": 320.0
     },
     {
      "date": "2026-01-01",
-     "price_original": 14.78590909090909,
-     "usd_per_ton": 325.97
+     "price_original": 0.32,
+     "usd_per_ton": 320.0
     },
     {
      "date": "2026-02-01",
-     "price_original": 14.2015,
-     "usd_per_ton": 313.09
+     "price_original": 0.31,
+     "usd_per_ton": 310.0
     },
     {
      "date": "2026-03-01",
-     "price_original": 14.79636363636364,
-     "usd_per_ton": 326.2
+     "price_original": 0.33,
+     "usd_per_ton": 330.0
     },
     {
      "date": "2026-04-01",
-     "price_original": 14.09,
-     "usd_per_ton": 310.63
+     "price_original": 0.32,
+     "usd_per_ton": 320.0
     },
     {
      "date": "2026-05-01",
-     "price_original": 14.77047619047619,
-     "usd_per_ton": 325.63
+     "price_original": 0.34,
+     "usd_per_ton": 340.0
     },
     {
      "date": "2026-06-01",
-     "price_original": 13.90772727272727,
-     "usd_per_ton": 306.61
+     "price_original": 0.32,
+     "usd_per_ton": 320.0
     },
     {
      "date": "2026-07-01",
-     "price_original": 14.81227272727273,
-     "usd_per_ton": 326.55
+     "price_original": 0.34,
+     "usd_per_ton": 340.0
+    },
+    {
+     "date": "2026-08-01",
+     "price_original": 0.38,
+     "usd_per_ton": 380.0
+    },
+    {
+     "date": "2026-09-01",
+     "price_original": 0.41,
+     "usd_per_ton": 410.0
     }
    ]
   },
@@ -1633,6 +1677,7 @@
    "name_en": "Tea",
    "color": "#E87BA4",
    "tradingview_symbol": null,
+   "source": "FRED / IMF",
    "unit_original": "U.S. Cents per Kilogram",
    "series": [
     {
@@ -2039,6 +2084,7 @@
    "name_en": "Wheat",
    "color": "#2A78D6",
    "tradingview_symbol": "CBOT:KE1!",
+   "source": "FRED / IMF",
    "unit_original": "U.S. Dollars per Metric Ton",
    "series": [
     {
@@ -2445,402 +2491,413 @@
    "name_en": "Corn",
    "color": "#EB6834",
    "tradingview_symbol": "CBOT:ZC1!",
+   "source": "World Bank (Pink Sheet)",
    "unit_original": "U.S. Dollars per Metric Ton",
    "series": [
     {
      "date": "2020-01-01",
-     "price_original": 171.8141352040817,
-     "usd_per_ton": 171.81
+     "price_original": 171.8,
+     "usd_per_ton": 171.8
     },
     {
      "date": "2020-02-01",
-     "price_original": 168.7445984962405,
-     "usd_per_ton": 168.74
+     "price_original": 168.7,
+     "usd_per_ton": 168.7
     },
     {
      "date": "2020-03-01",
-     "price_original": 162.1791482142857,
-     "usd_per_ton": 162.18
+     "price_original": 162.4,
+     "usd_per_ton": 162.4
     },
     {
      "date": "2020-04-01",
-     "price_original": 147.0121602040815,
-     "usd_per_ton": 147.01
+     "price_original": 146.9,
+     "usd_per_ton": 146.9
     },
     {
      "date": "2020-05-01",
-     "price_original": 143.9892437500002,
-     "usd_per_ton": 143.99
+     "price_original": 143.9,
+     "usd_per_ton": 143.9
     },
     {
      "date": "2020-06-01",
-     "price_original": 148.0423803571428,
-     "usd_per_ton": 148.04
+     "price_original": 148.0,
+     "usd_per_ton": 148.0
     },
     {
      "date": "2020-07-01",
-     "price_original": 152.5876196428571,
-     "usd_per_ton": 152.59
+     "price_original": 152.6,
+     "usd_per_ton": 152.6
     },
     {
      "date": "2020-08-01",
-     "price_original": 149.3929998299319,
-     "usd_per_ton": 149.39
+     "price_original": 149.3,
+     "usd_per_ton": 149.3
     },
     {
      "date": "2020-09-01",
-     "price_original": 166.6025335034014,
-     "usd_per_ton": 166.6
+     "price_original": 166.1,
+     "usd_per_ton": 166.1
     },
     {
      "date": "2020-10-01",
-     "price_original": 186.7663875,
-     "usd_per_ton": 186.77
+     "price_original": 186.7,
+     "usd_per_ton": 186.7
     },
     {
      "date": "2020-11-01",
-     "price_original": 190.6250375939849,
-     "usd_per_ton": 190.63
+     "price_original": 190.4,
+     "usd_per_ton": 190.4
     },
     {
      "date": "2020-12-01",
-     "price_original": 199.1844175170068,
-     "usd_per_ton": 199.18
+     "price_original": 198.8,
+     "usd_per_ton": 198.8
     },
     {
      "date": "2021-01-01",
-     "price_original": 231.7544614661655,
-     "usd_per_ton": 231.75
+     "price_original": 234.5,
+     "usd_per_ton": 234.5
     },
     {
      "date": "2021-02-01",
-     "price_original": 245.5540565789474,
-     "usd_per_ton": 245.55
+     "price_original": 245.2,
+     "usd_per_ton": 245.2
     },
     {
      "date": "2021-03-01",
-     "price_original": 245.7603568322983,
-     "usd_per_ton": 245.76
+     "price_original": 245.2,
+     "usd_per_ton": 245.2
     },
     {
      "date": "2021-04-01",
-     "price_original": 268.6224488095237,
-     "usd_per_ton": 268.62
+     "price_original": 268.2,
+     "usd_per_ton": 268.2
     },
     {
      "date": "2021-05-01",
-     "price_original": 304.297549659864,
-     "usd_per_ton": 304.3
+     "price_original": 305.3,
+     "usd_per_ton": 305.3
     },
     {
      "date": "2021-06-01",
-     "price_original": 292.5237267857143,
-     "usd_per_ton": 292.52
+     "price_original": 292.6,
+     "usd_per_ton": 292.6
     },
     {
      "date": "2021-07-01",
-     "price_original": 278.445755612245,
-     "usd_per_ton": 278.45
+     "price_original": 278.4,
+     "usd_per_ton": 278.4
     },
     {
      "date": "2021-08-01",
-     "price_original": 257.020755357143,
-     "usd_per_ton": 257.02
+     "price_original": 256.6,
+     "usd_per_ton": 256.6
     },
     {
      "date": "2021-09-01",
-     "price_original": 235.8156035714281,
-     "usd_per_ton": 235.82
+     "price_original": 235.6,
+     "usd_per_ton": 235.6
     },
     {
      "date": "2021-10-01",
-     "price_original": 239.60245085034,
+     "price_original": 239.6,
      "usd_per_ton": 239.6
     },
     {
      "date": "2021-11-01",
-     "price_original": 248.7677460714286,
-     "usd_per_ton": 248.77
+     "price_original": 248.7,
+     "usd_per_ton": 248.7
     },
     {
      "date": "2021-12-01",
-     "price_original": 264.5731467687075,
-     "usd_per_ton": 264.57
+     "price_original": 264.5,
+     "usd_per_ton": 264.5
     },
     {
      "date": "2022-01-01",
-     "price_original": 276.7191782142856,
-     "usd_per_ton": 276.72
+     "price_original": 276.6,
+     "usd_per_ton": 276.6
     },
     {
      "date": "2022-02-01",
-     "price_original": 292.6715930451127,
-     "usd_per_ton": 292.67
+     "price_original": 292.6,
+     "usd_per_ton": 292.6
     },
     {
      "date": "2022-03-01",
-     "price_original": 335.9306841614907,
-     "usd_per_ton": 335.93
+     "price_original": 335.5,
+     "usd_per_ton": 335.5
     },
     {
      "date": "2022-04-01",
-     "price_original": 348.5071169642857,
-     "usd_per_ton": 348.51
+     "price_original": 348.2,
+     "usd_per_ton": 348.2
     },
     {
      "date": "2022-05-01",
-     "price_original": 344.9092996031747,
-     "usd_per_ton": 344.91
+     "price_original": 344.8,
+     "usd_per_ton": 344.8
     },
     {
      "date": "2022-06-01",
-     "price_original": 335.7171340136054,
-     "usd_per_ton": 335.72
+     "price_original": 335.7,
+     "usd_per_ton": 335.7
     },
     {
      "date": "2022-07-01",
-     "price_original": 312.6820419642856,
-     "usd_per_ton": 312.68
+     "price_original": 323.0,
+     "usd_per_ton": 323.0
     },
     {
      "date": "2022-08-01",
-     "price_original": 293.9307903338509,
-     "usd_per_ton": 293.93
+     "price_original": 289.8,
+     "usd_per_ton": 289.8
     },
     {
      "date": "2022-09-01",
-     "price_original": 312.5461278911564,
-     "usd_per_ton": 312.55
+     "price_original": 312.7,
+     "usd_per_ton": 312.7
     },
     {
      "date": "2022-10-01",
-     "price_original": 343.5532833333333,
-     "usd_per_ton": 343.55
+     "price_original": 343.6,
+     "usd_per_ton": 343.6
     },
     {
      "date": "2022-11-01",
-     "price_original": 320.929682857143,
-     "usd_per_ton": 320.93
+     "price_original": 320.9,
+     "usd_per_ton": 320.9
     },
     {
      "date": "2022-12-01",
-     "price_original": 302.2354051020408,
-     "usd_per_ton": 302.24
+     "price_original": 302.2,
+     "usd_per_ton": 302.2
     },
     {
      "date": "2023-01-01",
-     "price_original": 302.8399883928572,
-     "usd_per_ton": 302.84
+     "price_original": 302.8,
+     "usd_per_ton": 302.8
     },
     {
      "date": "2023-02-01",
-     "price_original": 298.2453033834586,
-     "usd_per_ton": 298.25
+     "price_original": 298.2,
+     "usd_per_ton": 298.2
     },
     {
      "date": "2023-03-01",
-     "price_original": 284.9574049689442,
-     "usd_per_ton": 284.96
+     "price_original": 282.5,
+     "usd_per_ton": 282.5
     },
     {
      "date": "2023-04-01",
-     "price_original": 291.1797449248119,
-     "usd_per_ton": 291.18
+     "price_original": 291.1,
+     "usd_per_ton": 291.1
     },
     {
      "date": "2023-05-01",
-     "price_original": 268.1725263605443,
-     "usd_per_ton": 268.17
+     "price_original": 268.1,
+     "usd_per_ton": 268.1
     },
     {
      "date": "2023-06-01",
-     "price_original": 266.9352396258504,
-     "usd_per_ton": 266.94
+     "price_original": 266.9,
+     "usd_per_ton": 266.9
     },
     {
      "date": "2023-07-01",
-     "price_original": 235.2719472789116,
-     "usd_per_ton": 235.27
+     "price_original": 242.4,
+     "usd_per_ton": 242.4
     },
     {
      "date": "2023-08-01",
-     "price_original": 207.6758886645963,
-     "usd_per_ton": 207.68
+     "price_original": 207.6,
+     "usd_per_ton": 207.6
     },
     {
      "date": "2023-09-01",
-     "price_original": 223.8476664285715,
-     "usd_per_ton": 223.85
+     "price_original": 223.8,
+     "usd_per_ton": 223.8
     },
     {
      "date": "2023-10-01",
-     "price_original": 221.90251875,
-     "usd_per_ton": 221.9
+     "price_original": 230.7,
+     "usd_per_ton": 230.7
     },
     {
      "date": "2023-11-01",
-     "price_original": 209.0402968303571,
-     "usd_per_ton": 209.04
+     "price_original": 211.3,
+     "usd_per_ton": 211.3
     },
     {
      "date": "2023-12-01",
-     "price_original": 207.3979688909774,
-     "usd_per_ton": 207.4
+     "price_original": 206.5,
+     "usd_per_ton": 206.5
     },
     {
      "date": "2024-01-01",
-     "price_original": 198.7579285289115,
-     "usd_per_ton": 198.76
+     "price_original": 198.6,
+     "usd_per_ton": 198.6
     },
     {
      "date": "2024-02-01",
-     "price_original": 188.9477444642856,
-     "usd_per_ton": 188.95
+     "price_original": 189.1,
+     "usd_per_ton": 189.1
     },
     {
      "date": "2024-03-01",
-     "price_original": 190.2272114285714,
-     "usd_per_ton": 190.23
+     "price_original": 190.6,
+     "usd_per_ton": 190.6
     },
     {
      "date": "2024-04-01",
-     "price_original": 190.9000500000001,
-     "usd_per_ton": 190.9
+     "price_original": 191.7,
+     "usd_per_ton": 191.7
     },
     {
      "date": "2024-05-01",
-     "price_original": 201.0194705357142,
-     "usd_per_ton": 201.02
+     "price_original": 197.8,
+     "usd_per_ton": 197.8
     },
     {
      "date": "2024-06-01",
-     "price_original": 191.2409429464286,
-     "usd_per_ton": 191.24
+     "price_original": 192.5,
+     "usd_per_ton": 192.5
     },
     {
      "date": "2024-07-01",
-     "price_original": 177.7677084464286,
-     "usd_per_ton": 177.77
+     "price_original": 177.4,
+     "usd_per_ton": 177.4
     },
     {
      "date": "2024-08-01",
-     "price_original": 169.2967424107143,
-     "usd_per_ton": 169.3
+     "price_original": 170.3,
+     "usd_per_ton": 170.3
     },
     {
      "date": "2024-09-01",
-     "price_original": 183.6558276597744,
-     "usd_per_ton": 183.66
+     "price_original": 185.0,
+     "usd_per_ton": 185.0
     },
     {
      "date": "2024-10-01",
-     "price_original": 189.5879058618013,
-     "usd_per_ton": 189.59
+     "price_original": 190.3,
+     "usd_per_ton": 190.3
     },
     {
      "date": "2024-11-01",
-     "price_original": 201.3082701884922,
-     "usd_per_ton": 201.31
+     "price_original": 201.3,
+     "usd_per_ton": 201.3
     },
     {
      "date": "2024-12-01",
-     "price_original": 202.8299610267858,
-     "usd_per_ton": 202.83
+     "price_original": 202.6,
+     "usd_per_ton": 202.6
     },
     {
      "date": "2025-01-01",
-     "price_original": 214.3599267857142,
-     "usd_per_ton": 214.36
+     "price_original": 214.4,
+     "usd_per_ton": 214.4
     },
     {
      "date": "2025-02-01",
-     "price_original": 221.2545443139097,
-     "usd_per_ton": 221.25
+     "price_original": 220.9,
+     "usd_per_ton": 220.9
     },
     {
      "date": "2025-03-01",
-     "price_original": 207.7516908163266,
-     "usd_per_ton": 207.75
+     "price_original": 207.4,
+     "usd_per_ton": 207.4
     },
     {
      "date": "2025-04-01",
-     "price_original": 215.5690933673469,
-     "usd_per_ton": 215.57
+     "price_original": 215.0,
+     "usd_per_ton": 215.0
     },
     {
      "date": "2025-05-01",
-     "price_original": 204.8084481292517,
-     "usd_per_ton": 204.81
-    },
-    {
-     "date": "2025-06-01",
-     "price_original": 195.7190773214286,
-     "usd_per_ton": 195.72
-    },
-    {
-     "date": "2025-07-01",
-     "price_original": 192.4525892142857,
-     "usd_per_ton": 192.45
-    },
-    {
-     "date": "2025-08-01",
-     "price_original": 183.0247028911564,
-     "usd_per_ton": 183.02
-    },
-    {
-     "date": "2025-09-01",
-     "price_original": 196.1459412448979,
-     "usd_per_ton": 196.15
-    },
-    {
-     "date": "2025-10-01",
-     "price_original": 198.0176441964286,
-     "usd_per_ton": 198.02
-    },
-    {
-     "date": "2025-11-01",
-     "price_original": 201.6578882352942,
-     "usd_per_ton": 201.66
-    },
-    {
-     "date": "2025-12-01",
-     "price_original": 205.3150795535714,
-     "usd_per_ton": 205.32
-    },
-    {
-     "date": "2026-01-01",
-     "price_original": 203.8978238392856,
+     "price_original": 203.9,
      "usd_per_ton": 203.9
     },
     {
+     "date": "2025-06-01",
+     "price_original": 196.1,
+     "usd_per_ton": 196.1
+    },
+    {
+     "date": "2025-07-01",
+     "price_original": 192.0,
+     "usd_per_ton": 192.0
+    },
+    {
+     "date": "2025-08-01",
+     "price_original": 185.5,
+     "usd_per_ton": 185.5
+    },
+    {
+     "date": "2025-09-01",
+     "price_original": 197.4,
+     "usd_per_ton": 197.4
+    },
+    {
+     "date": "2025-10-01",
+     "price_original": 198.1,
+     "usd_per_ton": 198.1
+    },
+    {
+     "date": "2025-11-01",
+     "price_original": 202.0,
+     "usd_per_ton": 202.0
+    },
+    {
+     "date": "2025-12-01",
+     "price_original": 205.7,
+     "usd_per_ton": 205.7
+    },
+    {
+     "date": "2026-01-01",
+     "price_original": 204.5,
+     "usd_per_ton": 204.5
+    },
+    {
      "date": "2026-02-01",
-     "price_original": 210.6354865131578,
-     "usd_per_ton": 210.64
+     "price_original": 209.6,
+     "usd_per_ton": 209.6
     },
     {
      "date": "2026-03-01",
-     "price_original": 213.3041428571428,
-     "usd_per_ton": 213.3
+     "price_original": 212.7,
+     "usd_per_ton": 212.7
     },
     {
      "date": "2026-04-01",
-     "price_original": 214.5239610119047,
-     "usd_per_ton": 214.52
+     "price_original": 214.0,
+     "usd_per_ton": 214.0
     },
     {
      "date": "2026-05-01",
-     "price_original": 215.6206469812925,
-     "usd_per_ton": 215.62
+     "price_original": 216.2,
+     "usd_per_ton": 216.2
     },
     {
      "date": "2026-06-01",
-     "price_original": 195.7818789965986,
-     "usd_per_ton": 195.78
+     "price_original": 197.1,
+     "usd_per_ton": 197.1
     },
     {
      "date": "2026-07-01",
-     "price_original": 213.1901539821428,
-     "usd_per_ton": 213.19
+     "price_original": 213.4,
+     "usd_per_ton": 213.4
+    },
+    {
+     "date": "2026-08-01",
+     "price_original": 224.0,
+     "usd_per_ton": 224.0
+    },
+    {
+     "date": "2026-09-01",
+     "price_original": 239.6,
+     "usd_per_ton": 239.6
     }
    ]
   },
@@ -2851,6 +2908,7 @@
    "name_en": "Barley",
    "color": "#1BAF7A",
    "tradingview_symbol": null,
+   "source": "FRED / IMF",
    "unit_original": "U.S. Dollars per Metric Ton",
    "series": [
     {
@@ -3257,402 +3315,413 @@
    "name_en": "Rice",
    "color": "#EDA100",
    "tradingview_symbol": null,
+   "source": "World Bank (Pink Sheet)",
    "unit_original": "U.S. Dollars per Metric Ton",
    "series": [
     {
      "date": "2020-01-01",
-     "price_original": 428.5217391304348,
-     "usd_per_ton": 428.52
+     "price_original": 426.0,
+     "usd_per_ton": 426.0
     },
     {
      "date": "2020-02-01",
-     "price_original": 430.25,
-     "usd_per_ton": 430.25
+     "price_original": 426.5,
+     "usd_per_ton": 426.5
     },
     {
      "date": "2020-03-01",
-     "price_original": 471.6818181818182,
-     "usd_per_ton": 471.68
+     "price_original": 469.6,
+     "usd_per_ton": 469.6
     },
     {
      "date": "2020-04-01",
-     "price_original": 542.8181818181819,
-     "usd_per_ton": 542.82
+     "price_original": 543.7,
+     "usd_per_ton": 543.7
     },
     {
      "date": "2020-05-01",
-     "price_original": 498.8571428571428,
-     "usd_per_ton": 498.86
+     "price_original": 492.9,
+     "usd_per_ton": 492.9
     },
     {
      "date": "2020-06-01",
-     "price_original": 503.0454545454546,
-     "usd_per_ton": 503.05
+     "price_original": 493.6,
+     "usd_per_ton": 493.6
     },
     {
      "date": "2020-07-01",
-     "price_original": 464.4782608695652,
-     "usd_per_ton": 464.48
+     "price_original": 459.7,
+     "usd_per_ton": 459.7
     },
     {
      "date": "2020-08-01",
-     "price_original": 484.4285714285714,
-     "usd_per_ton": 484.43
+     "price_original": 480.9,
+     "usd_per_ton": 480.9
     },
     {
      "date": "2020-09-01",
-     "price_original": 491.9090909090909,
-     "usd_per_ton": 491.91
+     "price_original": 483.0,
+     "usd_per_ton": 483.0
     },
     {
      "date": "2020-10-01",
-     "price_original": 458.8636363636364,
-     "usd_per_ton": 458.86
+     "price_original": 454.5,
+     "usd_per_ton": 454.5
     },
     {
      "date": "2020-11-01",
-     "price_original": 459.8571428571428,
-     "usd_per_ton": 459.86
+     "price_original": 468.5,
+     "usd_per_ton": 468.5
     },
     {
      "date": "2020-12-01",
-     "price_original": 499.3478260869565,
-     "usd_per_ton": 499.35
+     "price_original": 496.6,
+     "usd_per_ton": 496.6
     },
     {
      "date": "2021-01-01",
-     "price_original": 518.4761904761905,
-     "usd_per_ton": 518.48
+     "price_original": 517.8,
+     "usd_per_ton": 517.8
     },
     {
      "date": "2021-02-01",
-     "price_original": 535.75,
-     "usd_per_ton": 535.75
+     "price_original": 531.0,
+     "usd_per_ton": 531.0
     },
     {
      "date": "2021-03-01",
-     "price_original": 502.3478260869565,
-     "usd_per_ton": 502.35
+     "price_original": 504.1,
+     "usd_per_ton": 504.1
     },
     {
      "date": "2021-04-01",
-     "price_original": 470.2727272727273,
-     "usd_per_ton": 470.27
+     "price_original": 477.4,
+     "usd_per_ton": 477.4
     },
     {
      "date": "2021-05-01",
-     "price_original": 477.1904761904762,
-     "usd_per_ton": 477.19
+     "price_original": 462.8,
+     "usd_per_ton": 462.8
     },
     {
      "date": "2021-06-01",
-     "price_original": 454.8636363636364,
-     "usd_per_ton": 454.86
+     "price_original": 438.6,
+     "usd_per_ton": 438.6
     },
     {
      "date": "2021-07-01",
-     "price_original": 414.8636363636364,
-     "usd_per_ton": 414.86
-    },
-    {
-     "date": "2021-08-01",
-     "price_original": 386.7727272727273,
-     "usd_per_ton": 386.77
-    },
-    {
-     "date": "2021-09-01",
-     "price_original": 387.0,
-     "usd_per_ton": 387.0
-    },
-    {
-     "date": "2021-10-01",
-     "price_original": 388.9047619047619,
-     "usd_per_ton": 388.9
-    },
-    {
-     "date": "2021-11-01",
-     "price_original": 383.5454545454546,
-     "usd_per_ton": 383.55
-    },
-    {
-     "date": "2021-12-01",
-     "price_original": 383.5652173913044,
-     "usd_per_ton": 383.57
-    },
-    {
-     "date": "2022-01-01",
      "price_original": 397.0,
      "usd_per_ton": 397.0
     },
     {
+     "date": "2021-08-01",
+     "price_original": 381.0,
+     "usd_per_ton": 381.0
+    },
+    {
+     "date": "2021-09-01",
+     "price_original": 381.3,
+     "usd_per_ton": 381.3
+    },
+    {
+     "date": "2021-10-01",
+     "price_original": 382.7,
+     "usd_per_ton": 382.7
+    },
+    {
+     "date": "2021-11-01",
+     "price_original": 378.6,
+     "usd_per_ton": 378.6
+    },
+    {
+     "date": "2021-12-01",
+     "price_original": 381.0,
+     "usd_per_ton": 381.0
+    },
+    {
+     "date": "2022-01-01",
+     "price_original": 403.2,
+     "usd_per_ton": 403.2
+    },
+    {
      "date": "2022-02-01",
-     "price_original": 410.0,
-     "usd_per_ton": 410.0
+     "price_original": 406.0,
+     "usd_per_ton": 406.0
     },
     {
      "date": "2022-03-01",
-     "price_original": 419.4347826086956,
-     "usd_per_ton": 419.43
+     "price_original": 407.1,
+     "usd_per_ton": 407.1
     },
     {
      "date": "2022-04-01",
-     "price_original": 415.7619047619048,
-     "usd_per_ton": 415.76
+     "price_original": 409.1,
+     "usd_per_ton": 409.1
     },
     {
      "date": "2022-05-01",
-     "price_original": 425.2727272727273,
-     "usd_per_ton": 425.27
+     "price_original": 442.9,
+     "usd_per_ton": 442.9
     },
     {
      "date": "2022-06-01",
-     "price_original": 434.1818181818182,
-     "usd_per_ton": 434.18
+     "price_original": 427.6,
+     "usd_per_ton": 427.6
     },
     {
      "date": "2022-07-01",
-     "price_original": 412.4761904761905,
-     "usd_per_ton": 412.48
+     "price_original": 405.7,
+     "usd_per_ton": 405.7
     },
     {
      "date": "2022-08-01",
-     "price_original": 411.0869565217391,
-     "usd_per_ton": 411.09
+     "price_original": 412.6,
+     "usd_per_ton": 412.6
     },
     {
      "date": "2022-09-01",
-     "price_original": 426.8181818181818,
-     "usd_per_ton": 426.82
+     "price_original": 423.4,
+     "usd_per_ton": 423.4
     },
     {
      "date": "2022-10-01",
-     "price_original": 416.0952380952381,
-     "usd_per_ton": 416.1
+     "price_original": 411.6,
+     "usd_per_ton": 411.6
     },
     {
      "date": "2022-11-01",
-     "price_original": 416.3181818181818,
-     "usd_per_ton": 416.32
+     "price_original": 417.5,
+     "usd_per_ton": 417.5
     },
     {
      "date": "2022-12-01",
-     "price_original": 444.2272727272727,
-     "usd_per_ton": 444.23
+     "price_original": 446.4,
+     "usd_per_ton": 446.4
     },
     {
      "date": "2023-01-01",
-     "price_original": 480.6363636363636,
-     "usd_per_ton": 480.64
+     "price_original": 484.6,
+     "usd_per_ton": 484.6
     },
     {
      "date": "2023-02-01",
-     "price_original": 484.95,
-     "usd_per_ton": 484.95
+     "price_original": 469.0,
+     "usd_per_ton": 469.0
     },
     {
      "date": "2023-03-01",
-     "price_original": 453.5652173913044,
-     "usd_per_ton": 453.57
+     "price_original": 460.9,
+     "usd_per_ton": 460.9
     },
     {
      "date": "2023-04-01",
-     "price_original": 479.5,
-     "usd_per_ton": 479.5
+     "price_original": 482.9,
+     "usd_per_ton": 482.9
     },
     {
      "date": "2023-05-01",
-     "price_original": 491.7391304347826,
-     "usd_per_ton": 491.74
+     "price_original": 492.7,
+     "usd_per_ton": 492.7
     },
     {
      "date": "2023-06-01",
-     "price_original": 492.2727272727273,
-     "usd_per_ton": 492.27
+     "price_original": 495.8,
+     "usd_per_ton": 495.8
     },
     {
      "date": "2023-07-01",
-     "price_original": 512.2380952380952,
-     "usd_per_ton": 512.24
+     "price_original": 533.5,
+     "usd_per_ton": 533.5
     },
     {
      "date": "2023-08-01",
-     "price_original": 607.9565217391304,
-     "usd_per_ton": 607.96
+     "price_original": 626.0,
+     "usd_per_ton": 626.0
     },
     {
      "date": "2023-09-01",
-     "price_original": 606.9047619047619,
-     "usd_per_ton": 606.9
+     "price_original": 609.9,
+     "usd_per_ton": 609.9
     },
     {
      "date": "2023-10-01",
-     "price_original": 574.4545454545455,
-     "usd_per_ton": 574.45
+     "price_original": 574.7,
+     "usd_per_ton": 574.7
     },
     {
      "date": "2023-11-01",
-     "price_original": 555.4090909090909,
-     "usd_per_ton": 555.41
+     "price_original": 574.6,
+     "usd_per_ton": 574.6
     },
     {
      "date": "2023-12-01",
-     "price_original": 603.2380952380952,
-     "usd_per_ton": 603.24
+     "price_original": 629.6,
+     "usd_per_ton": 629.6
     },
     {
      "date": "2024-01-01",
-     "price_original": 629.0869565217391,
-     "usd_per_ton": 629.09
+     "price_original": 648.9,
+     "usd_per_ton": 648.9
     },
     {
      "date": "2024-02-01",
-     "price_original": 609.5238095238095,
-     "usd_per_ton": 609.52
+     "price_original": 619.9,
+     "usd_per_ton": 619.9
     },
     {
      "date": "2024-03-01",
-     "price_original": 601.7142857142857,
-     "usd_per_ton": 601.71
+     "price_original": 607.7,
+     "usd_per_ton": 607.7
     },
     {
      "date": "2024-04-01",
-     "price_original": 570.1363636363636,
-     "usd_per_ton": 570.14
+     "price_original": 578.0,
+     "usd_per_ton": 578.0
     },
     {
      "date": "2024-05-01",
-     "price_original": 600.5217391304348,
-     "usd_per_ton": 600.52
+     "price_original": 606.5,
+     "usd_per_ton": 606.5
     },
     {
      "date": "2024-06-01",
-     "price_original": 605.5,
-     "usd_per_ton": 605.5
+     "price_original": 613.3,
+     "usd_per_ton": 613.3
     },
     {
      "date": "2024-07-01",
-     "price_original": 567.0434782608696,
-     "usd_per_ton": 567.04
+     "price_original": 570.9,
+     "usd_per_ton": 570.9
     },
     {
      "date": "2024-08-01",
-     "price_original": 563.7727272727273,
-     "usd_per_ton": 563.77
+     "price_original": 566.7,
+     "usd_per_ton": 566.7
     },
     {
      "date": "2024-09-01",
-     "price_original": 555.0952380952381,
-     "usd_per_ton": 555.1
+     "price_original": 564.3,
+     "usd_per_ton": 564.3
     },
     {
      "date": "2024-10-01",
-     "price_original": 496.6086956521739,
-     "usd_per_ton": 496.61
+     "price_original": 504.8,
+     "usd_per_ton": 504.8
     },
     {
      "date": "2024-11-01",
-     "price_original": 487.4285714285714,
-     "usd_per_ton": 487.43
+     "price_original": 489.6,
+     "usd_per_ton": 489.6
     },
     {
      "date": "2024-12-01",
-     "price_original": 495.6818181818182,
-     "usd_per_ton": 495.68
+     "price_original": 501.9,
+     "usd_per_ton": 501.9
     },
     {
      "date": "2025-01-01",
-     "price_original": 459.7826086956522,
-     "usd_per_ton": 459.78
+     "price_original": 464.2,
+     "usd_per_ton": 464.2
     },
     {
      "date": "2025-02-01",
-     "price_original": 423.5,
-     "usd_per_ton": 423.5
+     "price_original": 419.1,
+     "usd_per_ton": 419.1
     },
     {
      "date": "2025-03-01",
-     "price_original": 417.0,
-     "usd_per_ton": 417.0
+     "price_original": 404.1,
+     "usd_per_ton": 404.1
     },
     {
      "date": "2025-04-01",
-     "price_original": 403.9090909090909,
-     "usd_per_ton": 403.91
+     "price_original": 396.9,
+     "usd_per_ton": 396.9
     },
     {
      "date": "2025-05-01",
-     "price_original": 396.4545454545454,
-     "usd_per_ton": 396.45
+     "price_original": 405.5,
+     "usd_per_ton": 405.5
     },
     {
      "date": "2025-06-01",
-     "price_original": 385.7142857142857,
-     "usd_per_ton": 385.71
+     "price_original": 393.4,
+     "usd_per_ton": 393.4
     },
     {
      "date": "2025-07-01",
-     "price_original": 367.5652173913044,
-     "usd_per_ton": 367.57
+     "price_original": 376.1,
+     "usd_per_ton": 376.1
     },
     {
      "date": "2025-08-01",
-     "price_original": 351.2380952380952,
-     "usd_per_ton": 351.24
+     "price_original": 357.9,
+     "usd_per_ton": 357.9
     },
     {
      "date": "2025-09-01",
-     "price_original": 349.1363636363636,
-     "usd_per_ton": 349.14
+     "price_original": 355.2,
+     "usd_per_ton": 355.2
     },
     {
      "date": "2025-10-01",
-     "price_original": 330.6086956521739,
-     "usd_per_ton": 330.61
+     "price_original": 335.9,
+     "usd_per_ton": 335.9
     },
     {
      "date": "2025-11-01",
-     "price_original": 336.0,
-     "usd_per_ton": 336.0
+     "price_original": 338.5,
+     "usd_per_ton": 338.5
     },
     {
      "date": "2025-12-01",
-     "price_original": 388.6956521739131,
-     "usd_per_ton": 388.7
+     "price_original": 389.4,
+     "usd_per_ton": 389.4
     },
     {
      "date": "2026-01-01",
-     "price_original": 384.5454545454546,
-     "usd_per_ton": 384.55
+     "price_original": 382.9,
+     "usd_per_ton": 382.9
     },
     {
      "date": "2026-02-01",
-     "price_original": 388.5,
-     "usd_per_ton": 388.5
+     "price_original": 385.1,
+     "usd_per_ton": 385.1
     },
     {
      "date": "2026-03-01",
-     "price_original": 383.2727272727273,
-     "usd_per_ton": 383.27
+     "price_original": 365.3,
+     "usd_per_ton": 365.3
     },
     {
      "date": "2026-04-01",
-     "price_original": 385.9545454545454,
-     "usd_per_ton": 385.95
+     "price_original": 385.2,
+     "usd_per_ton": 385.2
     },
     {
      "date": "2026-05-01",
-     "price_original": 405.5714285714286,
-     "usd_per_ton": 405.57
+     "price_original": 420.2,
+     "usd_per_ton": 420.2
     },
     {
      "date": "2026-06-01",
-     "price_original": 444.0,
-     "usd_per_ton": 444.0
+     "price_original": 469.4,
+     "usd_per_ton": 469.4
     },
     {
      "date": "2026-07-01",
-     "price_original": 464.0,
-     "usd_per_ton": 464.0
+     "price_original": 454.7,
+     "usd_per_ton": 454.7
+    },
+    {
+     "date": "2026-08-01",
+     "price_original": 452.8,
+     "usd_per_ton": 452.8
+    },
+    {
+     "date": "2026-09-01",
+     "price_original": 473.2,
+     "usd_per_ton": 473.2
     }
    ]
   },
@@ -3663,6 +3732,7 @@
    "name_en": "Soybeans",
    "color": "#2A78D6",
    "tradingview_symbol": "CBOT:ZS1!",
+   "source": "FRED / IMF",
    "unit_original": "U.S. Dollars per Metric Ton",
    "series": [
     {
@@ -4069,6 +4139,7 @@
    "name_en": "Soybean Meal",
    "color": "#EB6834",
    "tradingview_symbol": "CBOT:ZM1!",
+   "source": "FRED / IMF",
    "unit_original": "U.S. Dollars per Metric Ton",
    "series": [
     {
@@ -4475,6 +4546,7 @@
    "name_en": "Soybean Oil",
    "color": "#1BAF7A",
    "tradingview_symbol": "CBOT:ZL1!",
+   "source": "FRED / IMF",
    "unit_original": "U.S. Dollars per Metric Ton",
    "series": [
     {
@@ -4881,6 +4953,7 @@
    "name_en": "Palm Oil",
    "color": "#EDA100",
    "tradingview_symbol": "MYX:FCPO1!",
+   "source": "FRED / IMF",
    "unit_original": "U.S. Dollars per Metric Ton",
    "series": [
     {
@@ -5287,6 +5360,7 @@
    "name_en": "Sunflower Oil",
    "color": "#E87BA4",
    "tradingview_symbol": null,
+   "source": "FRED / IMF",
    "unit_original": "U.S. Dollars per Metric Ton",
    "series": [
     {
@@ -5693,402 +5767,413 @@
    "name_en": "Rapeseed Oil",
    "color": "#008300",
    "tradingview_symbol": null,
+   "source": "World Bank (Pink Sheet)",
    "unit_original": "U.S. Dollars per Metric Ton",
    "series": [
     {
      "date": "2020-01-01",
-     "price_original": 940.3214530434783,
-     "usd_per_ton": 940.32
+     "price_original": 945.0,
+     "usd_per_ton": 945.0
     },
     {
      "date": "2020-02-01",
-     "price_original": 890.0421225,
-     "usd_per_ton": 890.04
+     "price_original": 902.0,
+     "usd_per_ton": 902.0
     },
     {
      "date": "2020-03-01",
-     "price_original": 793.10661,
-     "usd_per_ton": 793.11
+     "price_original": 797.0,
+     "usd_per_ton": 797.0
     },
     {
      "date": "2020-04-01",
-     "price_original": 759.3401213636364,
-     "usd_per_ton": 759.34
+     "price_original": 759.0,
+     "usd_per_ton": 759.0
     },
     {
      "date": "2020-05-01",
-     "price_original": 792.7317,
-     "usd_per_ton": 792.73
+     "price_original": 800.0,
+     "usd_per_ton": 800.0
     },
     {
      "date": "2020-06-01",
-     "price_original": 848.1638309090908,
-     "usd_per_ton": 848.16
+     "price_original": 851.0,
+     "usd_per_ton": 851.0
     },
     {
      "date": "2020-07-01",
-     "price_original": 891.3357,
-     "usd_per_ton": 891.34
+     "price_original": 890.0,
+     "usd_per_ton": 890.0
     },
     {
      "date": "2020-08-01",
-     "price_original": 924.926660952381,
-     "usd_per_ton": 924.93
+     "price_original": 922.0,
+     "usd_per_ton": 922.0
     },
     {
      "date": "2020-09-01",
-     "price_original": 937.5470272727273,
-     "usd_per_ton": 937.55
+     "price_original": 938.0,
+     "usd_per_ton": 938.0
     },
     {
      "date": "2020-10-01",
-     "price_original": 926.8438181818182,
-     "usd_per_ton": 926.84
+     "price_original": 928.0,
+     "usd_per_ton": 928.0
     },
     {
      "date": "2020-11-01",
-     "price_original": 1047.152142857143,
-     "usd_per_ton": 1047.15
+     "price_original": 1048.0,
+     "usd_per_ton": 1048.0
     },
     {
      "date": "2020-12-01",
-     "price_original": 1085.858465217391,
-     "usd_per_ton": 1085.86
+     "price_original": 1098.0,
+     "usd_per_ton": 1098.0
     },
     {
      "date": "2021-01-01",
-     "price_original": 1123.084895238095,
-     "usd_per_ton": 1123.08
+     "price_original": 1141.0,
+     "usd_per_ton": 1141.0
     },
     {
      "date": "2021-02-01",
-     "price_original": 1249.118,
-     "usd_per_ton": 1249.12
+     "price_original": 1272.0,
+     "usd_per_ton": 1272.0
     },
     {
      "date": "2021-03-01",
-     "price_original": 1282.51047826087,
-     "usd_per_ton": 1282.51
+     "price_original": 1322.0,
+     "usd_per_ton": 1322.0
     },
     {
      "date": "2021-04-01",
-     "price_original": 1345.515381818182,
-     "usd_per_ton": 1345.52
+     "price_original": 1312.0,
+     "usd_per_ton": 1312.0
     },
     {
      "date": "2021-05-01",
-     "price_original": 1583.066,
-     "usd_per_ton": 1583.07
+     "price_original": 1531.0,
+     "usd_per_ton": 1531.0
     },
     {
      "date": "2021-06-01",
-     "price_original": 1595.272181818182,
-     "usd_per_ton": 1595.27
+     "price_original": 1528.0,
+     "usd_per_ton": 1528.0
     },
     {
      "date": "2021-07-01",
-     "price_original": 1450.598772727273,
-     "usd_per_ton": 1450.6
+     "price_original": 1410.0,
+     "usd_per_ton": 1410.0
     },
     {
      "date": "2021-08-01",
-     "price_original": 1481.322218181818,
-     "usd_per_ton": 1481.32
+     "price_original": 1519.0,
+     "usd_per_ton": 1519.0
     },
     {
      "date": "2021-09-01",
-     "price_original": 1623.430977272727,
-     "usd_per_ton": 1623.43
+     "price_original": 1629.0,
+     "usd_per_ton": 1629.0
     },
     {
      "date": "2021-10-01",
-     "price_original": 1755.892714285714,
-     "usd_per_ton": 1755.89
+     "price_original": 1795.0,
+     "usd_per_ton": 1795.0
     },
     {
      "date": "2021-11-01",
-     "price_original": 1816.900363636364,
-     "usd_per_ton": 1816.9
+     "price_original": 1825.0,
+     "usd_per_ton": 1825.0
     },
     {
      "date": "2021-12-01",
-     "price_original": 1813.827065217391,
-     "usd_per_ton": 1813.83
+     "price_original": 1743.0,
+     "usd_per_ton": 1743.0
     },
     {
      "date": "2022-01-01",
-     "price_original": 1829.998828571429,
-     "usd_per_ton": 1830.0
+     "price_original": 1865.0,
+     "usd_per_ton": 1865.0
     },
     {
      "date": "2022-02-01",
-     "price_original": 1731.73035,
-     "usd_per_ton": 1731.73
+     "price_original": 1744.0,
+     "usd_per_ton": 1744.0
     },
     {
      "date": "2022-03-01",
-     "price_original": 2164.063739130435,
-     "usd_per_ton": 2164.06
+     "price_original": 2162.0,
+     "usd_per_ton": 2162.0
     },
     {
      "date": "2022-04-01",
-     "price_original": 2290.65980952381,
-     "usd_per_ton": 2290.66
+     "price_original": 2266.0,
+     "usd_per_ton": 2266.0
     },
     {
      "date": "2022-05-01",
-     "price_original": 2208.957045454545,
-     "usd_per_ton": 2208.96
+     "price_original": 2218.0,
+     "usd_per_ton": 2218.0
     },
     {
      "date": "2022-06-01",
-     "price_original": 2061.027704545455,
-     "usd_per_ton": 2061.03
+     "price_original": 2001.0,
+     "usd_per_ton": 2001.0
     },
     {
      "date": "2022-07-01",
-     "price_original": 1884.616238095238,
-     "usd_per_ton": 1884.62
+     "price_original": 1737.0,
+     "usd_per_ton": 1737.0
     },
     {
      "date": "2022-08-01",
-     "price_original": 1664.329282608696,
-     "usd_per_ton": 1664.33
+     "price_original": 1639.0,
+     "usd_per_ton": 1639.0
     },
     {
      "date": "2022-09-01",
-     "price_original": 1376.401954545455,
-     "usd_per_ton": 1376.4
+     "price_original": 1402.0,
+     "usd_per_ton": 1402.0
     },
     {
      "date": "2022-10-01",
-     "price_original": 1381.271857142857,
-     "usd_per_ton": 1381.27
+     "price_original": 1408.0,
+     "usd_per_ton": 1408.0
     },
     {
      "date": "2022-11-01",
-     "price_original": 1350.832681818182,
-     "usd_per_ton": 1350.83
+     "price_original": 1378.0,
+     "usd_per_ton": 1378.0
     },
     {
      "date": "2022-12-01",
-     "price_original": 1215.657295454545,
-     "usd_per_ton": 1215.66
+     "price_original": 1260.0,
+     "usd_per_ton": 1260.0
     },
     {
      "date": "2023-01-01",
-     "price_original": 1184.529659090909,
-     "usd_per_ton": 1184.53
+     "price_original": 1224.0,
+     "usd_per_ton": 1224.0
     },
     {
      "date": "2023-02-01",
-     "price_original": 1157.30044,
-     "usd_per_ton": 1157.3
+     "price_original": 1189.0,
+     "usd_per_ton": 1189.0
     },
     {
      "date": "2023-03-01",
-     "price_original": 1018.161413043478,
-     "usd_per_ton": 1018.16
+     "price_original": 1054.0,
+     "usd_per_ton": 1054.0
     },
     {
      "date": "2023-04-01",
-     "price_original": 995.41132,
-     "usd_per_ton": 995.41
+     "price_original": 1026.0,
+     "usd_per_ton": 1026.0
     },
     {
      "date": "2023-05-01",
-     "price_original": 896.0958217391304,
-     "usd_per_ton": 896.1
+     "price_original": 967.0,
+     "usd_per_ton": 967.0
     },
     {
      "date": "2023-06-01",
-     "price_original": 952.7645,
-     "usd_per_ton": 952.76
+     "price_original": 991.0,
+     "usd_per_ton": 991.0
     },
     {
      "date": "2023-07-01",
-     "price_original": 1094.239452380952,
-     "usd_per_ton": 1094.24
+     "price_original": 1108.0,
+     "usd_per_ton": 1108.0
     },
     {
      "date": "2023-08-01",
-     "price_original": 1034.2192,
-     "usd_per_ton": 1034.22
+     "price_original": 1067.0,
+     "usd_per_ton": 1067.0
     },
     {
      "date": "2023-09-01",
-     "price_original": 1025.836619047619,
-     "usd_per_ton": 1025.84
+     "price_original": 1047.0,
+     "usd_per_ton": 1047.0
     },
     {
      "date": "2023-10-01",
-     "price_original": 1093.592545454545,
-     "usd_per_ton": 1093.59
+     "price_original": 1060.0,
+     "usd_per_ton": 1060.0
     },
     {
      "date": "2023-11-01",
-     "price_original": 1036.680454545455,
-     "usd_per_ton": 1036.68
+     "price_original": 1039.0,
+     "usd_per_ton": 1039.0
     },
     {
      "date": "2023-12-01",
-     "price_original": 978.8547619047619,
-     "usd_per_ton": 978.85
+     "price_original": 1010.0,
+     "usd_per_ton": 1010.0
     },
     {
      "date": "2024-01-01",
-     "price_original": 932.8794304347826,
-     "usd_per_ton": 932.88
+     "price_original": 972.0,
+     "usd_per_ton": 972.0
     },
     {
      "date": "2024-02-01",
-     "price_original": 928.1248666666667,
-     "usd_per_ton": 928.12
+     "price_original": 963.0,
+     "usd_per_ton": 963.0
     },
     {
      "date": "2024-03-01",
-     "price_original": 993.8658904761905,
-     "usd_per_ton": 993.87
+     "price_original": 1029.0,
+     "usd_per_ton": 1029.0
     },
     {
      "date": "2024-04-01",
-     "price_original": 1029.082513636364,
-     "usd_per_ton": 1029.08
+     "price_original": 1059.0,
+     "usd_per_ton": 1059.0
     },
     {
      "date": "2024-05-01",
-     "price_original": 1091.109630434783,
-     "usd_per_ton": 1091.11
+     "price_original": 1104.0,
+     "usd_per_ton": 1104.0
     },
     {
      "date": "2024-06-01",
-     "price_original": 1094.966965,
-     "usd_per_ton": 1094.97
+     "price_original": 1099.0,
+     "usd_per_ton": 1099.0
     },
     {
      "date": "2024-07-01",
-     "price_original": 1101.713265217391,
-     "usd_per_ton": 1101.71
+     "price_original": 1118.0,
+     "usd_per_ton": 1118.0
     },
     {
      "date": "2024-08-01",
-     "price_original": 1040.518518181818,
-     "usd_per_ton": 1040.52
+     "price_original": 1080.0,
+     "usd_per_ton": 1080.0
     },
     {
      "date": "2024-09-01",
-     "price_original": 1044.623695238095,
-     "usd_per_ton": 1044.62
+     "price_original": 1083.0,
+     "usd_per_ton": 1083.0
     },
     {
      "date": "2024-10-01",
-     "price_original": 1126.306986956522,
-     "usd_per_ton": 1126.31
+     "price_original": 1142.0,
+     "usd_per_ton": 1142.0
     },
     {
      "date": "2024-11-01",
-     "price_original": 1224.947447619048,
-     "usd_per_ton": 1224.95
+     "price_original": 1243.0,
+     "usd_per_ton": 1243.0
     },
     {
      "date": "2024-12-01",
-     "price_original": 1155.702772727273,
-     "usd_per_ton": 1155.7
+     "price_original": 1181.0,
+     "usd_per_ton": 1181.0
     },
     {
      "date": "2025-01-01",
-     "price_original": 1121.699095652174,
-     "usd_per_ton": 1121.7
+     "price_original": 1149.0,
+     "usd_per_ton": 1149.0
     },
     {
      "date": "2025-02-01",
-     "price_original": 1124.44539,
-     "usd_per_ton": 1124.45
+     "price_original": 1159.0,
+     "usd_per_ton": 1159.0
     },
     {
      "date": "2025-03-01",
-     "price_original": 1167.413580952381,
-     "usd_per_ton": 1167.41
+     "price_original": 1193.0,
+     "usd_per_ton": 1193.0
     },
     {
      "date": "2025-04-01",
-     "price_original": 1229.580690909091,
-     "usd_per_ton": 1229.58
+     "price_original": 1256.0,
+     "usd_per_ton": 1256.0
     },
     {
      "date": "2025-05-01",
-     "price_original": 1209.768468181818,
-     "usd_per_ton": 1209.77
+     "price_original": 1241.0,
+     "usd_per_ton": 1241.0
     },
     {
      "date": "2025-06-01",
-     "price_original": 1265.730419047619,
-     "usd_per_ton": 1265.73
+     "price_original": 1252.0,
+     "usd_per_ton": 1252.0
     },
     {
      "date": "2025-07-01",
-     "price_original": 1240.964304347826,
-     "usd_per_ton": 1240.96
+     "price_original": 1202.0,
+     "usd_per_ton": 1202.0
     },
     {
      "date": "2025-08-01",
-     "price_original": 1215.55889047619,
-     "usd_per_ton": 1215.56
+     "price_original": 1213.0,
+     "usd_per_ton": 1213.0
     },
     {
      "date": "2025-09-01",
-     "price_original": 1273.7107,
-     "usd_per_ton": 1273.71
+     "price_original": 1268.0,
+     "usd_per_ton": 1268.0
     },
     {
      "date": "2025-10-01",
-     "price_original": 1310.45667826087,
-     "usd_per_ton": 1310.46
+     "price_original": 1264.0,
+     "usd_per_ton": 1264.0
     },
     {
      "date": "2025-11-01",
-     "price_original": 1274.644325,
-     "usd_per_ton": 1274.64
+     "price_original": 1259.0,
+     "usd_per_ton": 1259.0
     },
     {
      "date": "2025-12-01",
-     "price_original": 1256.451556521739,
-     "usd_per_ton": 1256.45
+     "price_original": 1258.0,
+     "usd_per_ton": 1258.0
     },
     {
      "date": "2026-01-01",
-     "price_original": 1224.504672727273,
-     "usd_per_ton": 1224.5
+     "price_original": 1223.0,
+     "usd_per_ton": 1223.0
     },
     {
      "date": "2026-02-01",
-     "price_original": 1273.640485,
-     "usd_per_ton": 1273.64
+     "price_original": 1275.0,
+     "usd_per_ton": 1275.0
     },
     {
      "date": "2026-03-01",
-     "price_original": 1318.389886363636,
-     "usd_per_ton": 1318.39
+     "price_original": 1304.0,
+     "usd_per_ton": 1304.0
     },
     {
      "date": "2026-04-01",
-     "price_original": 1340.037413636364,
-     "usd_per_ton": 1340.04
+     "price_original": 1345.0,
+     "usd_per_ton": 1345.0
     },
     {
      "date": "2026-05-01",
-     "price_original": 1472.408976190476,
-     "usd_per_ton": 1472.41
+     "price_original": 1488.0,
+     "usd_per_ton": 1488.0
     },
     {
      "date": "2026-06-01",
-     "price_original": 1526.195522727273,
-     "usd_per_ton": 1526.2
+     "price_original": 1522.0,
+     "usd_per_ton": 1522.0
     },
     {
      "date": "2026-07-01",
-     "price_original": 1500.1025,
-     "usd_per_ton": 1500.1
+     "price_original": 1488.0,
+     "usd_per_ton": 1488.0
+    },
+    {
+     "date": "2026-08-01",
+     "price_original": 1474.0,
+     "usd_per_ton": 1474.0
+    },
+    {
+     "date": "2026-09-01",
+     "price_original": 1440.0,
+     "usd_per_ton": 1440.0
     }
    ]
   },
@@ -6099,6 +6184,7 @@
    "name_en": "Olive Oil",
    "color": "#4A3AA7",
    "tradingview_symbol": null,
+   "source": "FRED / IMF",
    "unit_original": "U.S. Dollars per Metric Ton",
    "series": [
     {
@@ -6505,6 +6591,7 @@
    "name_en": "Groundnuts",
    "color": "#E34948",
    "tradingview_symbol": null,
+   "source": "FRED / IMF",
    "unit_original": "U.S. Dollars per Metric Ton",
    "series": [
     {
@@ -6911,402 +6998,413 @@
    "name_en": "Beef",
    "color": "#2A78D6",
    "tradingview_symbol": null,
-   "unit_original": "U.S. Cents per Pound",
+   "source": "World Bank (Pink Sheet)",
+   "unit_original": "U.S. Dollars per Kilogram",
    "series": [
     {
      "date": "2020-01-01",
-     "price_original": 212.5,
-     "usd_per_ton": 4684.77
+     "price_original": 5.04,
+     "usd_per_ton": 5040.0
     },
     {
      "date": "2020-02-01",
-     "price_original": 206.875,
-     "usd_per_ton": 4560.77
+     "price_original": 4.72,
+     "usd_per_ton": 4720.0
     },
     {
      "date": "2020-03-01",
-     "price_original": 192.3863636363636,
-     "usd_per_ton": 4241.35
+     "price_original": 4.47,
+     "usd_per_ton": 4470.0
     },
     {
      "date": "2020-04-01",
-     "price_original": 195.4318181818182,
-     "usd_per_ton": 4308.49
+     "price_original": 4.45,
+     "usd_per_ton": 4450.0
     },
     {
      "date": "2020-05-01",
-     "price_original": 214.9047619047619,
-     "usd_per_ton": 4737.79
+     "price_original": 5.08,
+     "usd_per_ton": 5080.0
     },
     {
      "date": "2020-06-01",
-     "price_original": 215.7272727272727,
-     "usd_per_ton": 4755.92
+     "price_original": 5.1,
+     "usd_per_ton": 5100.0
     },
     {
      "date": "2020-07-01",
-     "price_original": 199.304347826087,
-     "usd_per_ton": 4393.86
+     "price_original": 4.7,
+     "usd_per_ton": 4700.0
     },
     {
      "date": "2020-08-01",
-     "price_original": 200.4285714285714,
-     "usd_per_ton": 4418.65
+     "price_original": 4.63,
+     "usd_per_ton": 4630.0
     },
     {
      "date": "2020-09-01",
-     "price_original": 197.7272727272727,
-     "usd_per_ton": 4359.1
+     "price_original": 4.6,
+     "usd_per_ton": 4600.0
     },
     {
      "date": "2020-10-01",
-     "price_original": 190.0454545454545,
-     "usd_per_ton": 4189.74
+     "price_original": 4.42,
+     "usd_per_ton": 4420.0
     },
     {
      "date": "2020-11-01",
-     "price_original": 190.7857142857143,
-     "usd_per_ton": 4206.06
+     "price_original": 4.4,
+     "usd_per_ton": 4400.0
     },
     {
      "date": "2020-12-01",
-     "price_original": 189.1086956521739,
-     "usd_per_ton": 4169.09
+     "price_original": 4.4,
+     "usd_per_ton": 4400.0
     },
     {
      "date": "2021-01-01",
-     "price_original": 197.0952380952381,
-     "usd_per_ton": 4345.16
+     "price_original": 4.46,
+     "usd_per_ton": 4460.0
     },
     {
      "date": "2021-02-01",
-     "price_original": 204.625,
-     "usd_per_ton": 4511.16
+     "price_original": 4.66,
+     "usd_per_ton": 4660.0
     },
     {
      "date": "2021-03-01",
-     "price_original": 205.2826086956522,
-     "usd_per_ton": 4525.66
+     "price_original": 4.72,
+     "usd_per_ton": 4720.0
     },
     {
      "date": "2021-04-01",
-     "price_original": 224.8181818181818,
-     "usd_per_ton": 4956.34
+     "price_original": 5.17,
+     "usd_per_ton": 5170.0
     },
     {
      "date": "2021-05-01",
-     "price_original": 239.952380952381,
-     "usd_per_ton": 5289.99
+     "price_original": 5.48,
+     "usd_per_ton": 5480.0
     },
     {
      "date": "2021-06-01",
-     "price_original": 246.9772727272727,
-     "usd_per_ton": 5444.86
+     "price_original": 5.68,
+     "usd_per_ton": 5680.0
     },
     {
      "date": "2021-07-01",
-     "price_original": 245.6818181818182,
-     "usd_per_ton": 5416.3
+     "price_original": 5.59,
+     "usd_per_ton": 5590.0
     },
     {
      "date": "2021-08-01",
-     "price_original": 247.1363636363636,
-     "usd_per_ton": 5448.37
+     "price_original": 5.61,
+     "usd_per_ton": 5610.0
     },
     {
      "date": "2021-09-01",
-     "price_original": 249.25,
-     "usd_per_ton": 5494.97
+     "price_original": 5.77,
+     "usd_per_ton": 5770.0
     },
     {
      "date": "2021-10-01",
-     "price_original": 251.2857142857143,
-     "usd_per_ton": 5539.84
+     "price_original": 5.53,
+     "usd_per_ton": 5530.0
     },
     {
      "date": "2021-11-01",
-     "price_original": 258.4545454545454,
-     "usd_per_ton": 5697.89
+     "price_original": 5.69,
+     "usd_per_ton": 5690.0
     },
     {
      "date": "2021-12-01",
-     "price_original": 260.9347826086956,
-     "usd_per_ton": 5752.57
+     "price_original": 5.75,
+     "usd_per_ton": 5750.0
     },
     {
      "date": "2022-01-01",
-     "price_original": 262.5238095238095,
-     "usd_per_ton": 5787.6
+     "price_original": 5.81,
+     "usd_per_ton": 5810.0
     },
     {
      "date": "2022-02-01",
-     "price_original": 269.875,
-     "usd_per_ton": 5949.66
+     "price_original": 5.99,
+     "usd_per_ton": 5990.0
     },
     {
      "date": "2022-03-01",
-     "price_original": 275.3043478260869,
-     "usd_per_ton": 6069.36
+     "price_original": 6.07,
+     "usd_per_ton": 6070.0
     },
     {
      "date": "2022-04-01",
-     "price_original": 271.3095238095238,
-     "usd_per_ton": 5981.29
+     "price_original": 5.97,
+     "usd_per_ton": 5970.0
     },
     {
      "date": "2022-05-01",
-     "price_original": 269.1818181818182,
-     "usd_per_ton": 5934.38
+     "price_original": 5.94,
+     "usd_per_ton": 5940.0
     },
     {
      "date": "2022-06-01",
-     "price_original": 262.8409090909091,
-     "usd_per_ton": 5794.59
+     "price_original": 5.81,
+     "usd_per_ton": 5810.0
     },
     {
      "date": "2022-07-01",
-     "price_original": 257.6428571428572,
-     "usd_per_ton": 5679.99
+     "price_original": 5.73,
+     "usd_per_ton": 5730.0
     },
     {
      "date": "2022-08-01",
-     "price_original": 252.0434782608696,
-     "usd_per_ton": 5556.55
+     "price_original": 5.57,
+     "usd_per_ton": 5570.0
     },
     {
      "date": "2022-09-01",
-     "price_original": 246.6136363636364,
-     "usd_per_ton": 5436.84
+     "price_original": 5.44,
+     "usd_per_ton": 5440.0
     },
     {
      "date": "2022-10-01",
-     "price_original": 241.5238095238095,
-     "usd_per_ton": 5324.63
+     "price_original": 5.33,
+     "usd_per_ton": 5330.0
     },
     {
      "date": "2022-11-01",
-     "price_original": 228.6136363636364,
-     "usd_per_ton": 5040.02
+     "price_original": 5.07,
+     "usd_per_ton": 5070.0
     },
     {
      "date": "2022-12-01",
-     "price_original": 213.0,
-     "usd_per_ton": 4695.8
+     "price_original": 4.71,
+     "usd_per_ton": 4710.0
     },
     {
      "date": "2023-01-01",
-     "price_original": 211.0,
-     "usd_per_ton": 4651.71
+     "price_original": 4.65,
+     "usd_per_ton": 4650.0
     },
     {
      "date": "2023-02-01",
-     "price_original": 216.9,
-     "usd_per_ton": 4781.78
+     "price_original": 4.65,
+     "usd_per_ton": 4650.0
     },
     {
      "date": "2023-03-01",
-     "price_original": 238.4782608695652,
-     "usd_per_ton": 5257.49
+     "price_original": 4.84,
+     "usd_per_ton": 4840.0
     },
     {
      "date": "2023-04-01",
-     "price_original": 248.375,
-     "usd_per_ton": 5475.68
+     "price_original": 5.3,
+     "usd_per_ton": 5300.0
     },
     {
      "date": "2023-05-01",
-     "price_original": 240.9565217391304,
-     "usd_per_ton": 5312.13
+     "price_original": 5.31,
+     "usd_per_ton": 5310.0
     },
     {
      "date": "2023-06-01",
-     "price_original": 228.8863636363636,
-     "usd_per_ton": 5046.03
+     "price_original": 5.01,
+     "usd_per_ton": 5010.0
     },
     {
      "date": "2023-07-01",
-     "price_original": 216.8809523809524,
-     "usd_per_ton": 4781.36
+     "price_original": 4.78,
+     "usd_per_ton": 4780.0
     },
     {
      "date": "2023-08-01",
-     "price_original": 214.3478260869565,
-     "usd_per_ton": 4725.51
+     "price_original": 4.73,
+     "usd_per_ton": 4730.0
     },
     {
      "date": "2023-09-01",
-     "price_original": 220.5,
-     "usd_per_ton": 4861.14
+     "price_original": 4.9,
+     "usd_per_ton": 4900.0
     },
     {
      "date": "2023-10-01",
-     "price_original": 226.9090909090909,
-     "usd_per_ton": 5002.44
+     "price_original": 4.98,
+     "usd_per_ton": 4980.0
     },
     {
      "date": "2023-11-01",
-     "price_original": 221.1590909090909,
-     "usd_per_ton": 4875.67
+     "price_original": 4.88,
+     "usd_per_ton": 4880.0
     },
     {
      "date": "2023-12-01",
-     "price_original": 218.9285714285714,
-     "usd_per_ton": 4826.5
+     "price_original": 4.79,
+     "usd_per_ton": 4790.0
     },
     {
      "date": "2024-01-01",
-     "price_original": 219.8913043478261,
-     "usd_per_ton": 4847.72
+     "price_original": 5.0,
+     "usd_per_ton": 5000.0
     },
     {
      "date": "2024-02-01",
-     "price_original": 234.0,
-     "usd_per_ton": 5158.76
+     "price_original": 5.38,
+     "usd_per_ton": 5380.0
     },
     {
      "date": "2024-03-01",
-     "price_original": 250.7619047619048,
-     "usd_per_ton": 5528.3
+     "price_original": 5.73,
+     "usd_per_ton": 5730.0
     },
     {
      "date": "2024-04-01",
-     "price_original": 270.5681818181818,
-     "usd_per_ton": 5964.95
+     "price_original": 6.05,
+     "usd_per_ton": 6050.0
     },
     {
      "date": "2024-05-01",
-     "price_original": 269.0217391304348,
-     "usd_per_ton": 5930.85
+     "price_original": 5.88,
+     "usd_per_ton": 5880.0
     },
     {
      "date": "2024-06-01",
-     "price_original": 263.625,
-     "usd_per_ton": 5811.88
+     "price_original": 5.85,
+     "usd_per_ton": 5850.0
     },
     {
      "date": "2024-07-01",
-     "price_original": 270.6304347826087,
-     "usd_per_ton": 5966.32
+     "price_original": 6.19,
+     "usd_per_ton": 6190.0
     },
     {
      "date": "2024-08-01",
-     "price_original": 273.5454545454546,
-     "usd_per_ton": 6030.58
+     "price_original": 6.34,
+     "usd_per_ton": 6340.0
     },
     {
      "date": "2024-09-01",
-     "price_original": 271.1428571428572,
-     "usd_per_ton": 5977.62
+     "price_original": 6.3,
+     "usd_per_ton": 6300.0
     },
     {
      "date": "2024-10-01",
-     "price_original": 272.2173913043478,
-     "usd_per_ton": 6001.3
+     "price_original": 6.06,
+     "usd_per_ton": 6060.0
     },
     {
      "date": "2024-11-01",
-     "price_original": 269.5238095238095,
-     "usd_per_ton": 5941.92
+     "price_original": 6.18,
+     "usd_per_ton": 6180.0
     },
     {
      "date": "2024-12-01",
-     "price_original": 276.2272727272727,
-     "usd_per_ton": 6089.71
+     "price_original": 6.23,
+     "usd_per_ton": 6230.0
     },
     {
      "date": "2025-01-01",
-     "price_original": 281.7608695652174,
-     "usd_per_ton": 6211.7
+     "price_original": 6.46,
+     "usd_per_ton": 6460.0
     },
     {
      "date": "2025-02-01",
-     "price_original": 285.875,
-     "usd_per_ton": 6302.4
+     "price_original": 6.62,
+     "usd_per_ton": 6620.0
     },
     {
      "date": "2025-03-01",
-     "price_original": 292.1666666666667,
-     "usd_per_ton": 6441.11
+     "price_original": 6.77,
+     "usd_per_ton": 6770.0
     },
     {
      "date": "2025-04-01",
-     "price_original": 294.0681818181818,
-     "usd_per_ton": 6483.03
+     "price_original": 6.71,
+     "usd_per_ton": 6710.0
     },
     {
      "date": "2025-05-01",
-     "price_original": 292.7272727272727,
-     "usd_per_ton": 6453.47
+     "price_original": 6.62,
+     "usd_per_ton": 6620.0
     },
     {
      "date": "2025-06-01",
-     "price_original": 298.2619047619048,
-     "usd_per_ton": 6575.48
+     "price_original": 6.67,
+     "usd_per_ton": 6670.0
     },
     {
      "date": "2025-07-01",
-     "price_original": 304.9347826086956,
-     "usd_per_ton": 6722.59
+     "price_original": 6.72,
+     "usd_per_ton": 6720.0
     },
     {
      "date": "2025-08-01",
-     "price_original": 309.4285714285714,
-     "usd_per_ton": 6821.66
+     "price_original": 6.86,
+     "usd_per_ton": 6860.0
     },
     {
      "date": "2025-09-01",
-     "price_original": 309.9090909090909,
-     "usd_per_ton": 6832.26
+     "price_original": 6.9,
+     "usd_per_ton": 6900.0
     },
     {
      "date": "2025-10-01",
-     "price_original": 314.0,
-     "usd_per_ton": 6922.44
+     "price_original": 7.09,
+     "usd_per_ton": 7090.0
     },
     {
      "date": "2025-11-01",
-     "price_original": 325.5,
-     "usd_per_ton": 7175.97
+     "price_original": 7.51,
+     "usd_per_ton": 7510.0
     },
     {
      "date": "2025-12-01",
-     "price_original": 338.6521739130435,
-     "usd_per_ton": 7465.93
+     "price_original": 7.38,
+     "usd_per_ton": 7380.0
     },
     {
      "date": "2026-01-01",
-     "price_original": 330.9545454545454,
-     "usd_per_ton": 7296.22
+     "price_original": 7.97,
+     "usd_per_ton": 7970.0
     },
     {
      "date": "2026-02-01",
-     "price_original": 344.5,
-     "usd_per_ton": 7594.85
+     "price_original": 8.12,
+     "usd_per_ton": 8120.0
     },
     {
      "date": "2026-03-01",
-     "price_original": 349.7727272727273,
-     "usd_per_ton": 7711.09
+     "price_original": 8.21,
+     "usd_per_ton": 8210.0
     },
     {
      "date": "2026-04-01",
-     "price_original": 351.4090909090909,
-     "usd_per_ton": 7747.16
+     "price_original": 8.21,
+     "usd_per_ton": 8210.0
     },
     {
      "date": "2026-05-01",
-     "price_original": 346.1428571428572,
-     "usd_per_ton": 7631.07
+     "price_original": 7.95,
+     "usd_per_ton": 7950.0
     },
     {
      "date": "2026-06-01",
-     "price_original": 341.6022727272727,
-     "usd_per_ton": 7530.96
+     "price_original": 7.46,
+     "usd_per_ton": 7460.0
     },
     {
      "date": "2026-07-01",
-     "price_original": 331.7826086956522,
-     "usd_per_ton": 7314.48
+     "price_original": 7.31,
+     "usd_per_ton": 7310.0
+    },
+    {
+     "date": "2026-08-01",
+     "price_original": 7.28,
+     "usd_per_ton": 7280.0
+    },
+    {
+     "date": "2026-09-01",
+     "price_original": 6.86,
+     "usd_per_ton": 6860.0
     }
    ]
   },
@@ -7317,6 +7415,7 @@
    "name_en": "Lamb",
    "color": "#EB6834",
    "tradingview_symbol": null,
+   "source": "FRED / IMF",
    "unit_original": "U.S. Cents per Pound",
    "series": [
     {
@@ -7723,6 +7822,7 @@
    "name_en": "Poultry",
    "color": "#1BAF7A",
    "tradingview_symbol": null,
+   "source": "FRED / IMF",
    "unit_original": "U.S. Cents per Pound",
    "series": [
     {
@@ -8129,6 +8229,7 @@
    "name_en": "Fish (Salmon)",
    "color": "#EDA100",
    "tradingview_symbol": null,
+   "source": "FRED / IMF",
    "unit_original": "U.S. Dollars per Kilogram",
    "series": [
     {
@@ -8535,6 +8636,7 @@
    "name_en": "Shrimp",
    "color": "#E87BA4",
    "tradingview_symbol": null,
+   "source": "FRED / IMF",
    "unit_original": "U.S. Dollars per Kilogram",
    "series": [
     {
@@ -8941,402 +9043,413 @@
    "name_en": "Cotton",
    "color": "#2A78D6",
    "tradingview_symbol": "ICEUS:CT1!",
-   "unit_original": "U.S. Cents per Pound",
+   "source": "World Bank (Pink Sheet)",
+   "unit_original": "U.S. Dollars per Kilogram",
    "series": [
     {
      "date": "2020-01-01",
-     "price_original": 79.06818181818181,
-     "usd_per_ton": 1743.14
+     "price_original": 1.74,
+     "usd_per_ton": 1740.0
     },
     {
      "date": "2020-02-01",
-     "price_original": 76.5675,
-     "usd_per_ton": 1688.01
+     "price_original": 1.69,
+     "usd_per_ton": 1690.0
     },
     {
      "date": "2020-03-01",
-     "price_original": 67.68636363636364,
-     "usd_per_ton": 1492.21
+     "price_original": 1.49,
+     "usd_per_ton": 1490.0
     },
     {
      "date": "2020-04-01",
-     "price_original": 63.5325,
-     "usd_per_ton": 1400.64
+     "price_original": 1.4,
+     "usd_per_ton": 1400.0
     },
     {
      "date": "2020-05-01",
-     "price_original": 65.70263157894738,
-     "usd_per_ton": 1448.48
+     "price_original": 1.45,
+     "usd_per_ton": 1450.0
     },
     {
      "date": "2020-06-01",
-     "price_original": 67.8,
-     "usd_per_ton": 1494.72
+     "price_original": 1.49,
+     "usd_per_ton": 1490.0
     },
     {
      "date": "2020-07-01",
-     "price_original": 68.52391304347826,
-     "usd_per_ton": 1510.68
+     "price_original": 1.51,
+     "usd_per_ton": 1510.0
     },
     {
      "date": "2020-08-01",
-     "price_original": 70.0,
-     "usd_per_ton": 1543.22
+     "price_original": 1.54,
+     "usd_per_ton": 1540.0
     },
     {
      "date": "2020-09-01",
-     "price_original": 70.81363636363636,
-     "usd_per_ton": 1561.16
+     "price_original": 1.56,
+     "usd_per_ton": 1560.0
     },
     {
      "date": "2020-10-01",
-     "price_original": 74.81590909090909,
-     "usd_per_ton": 1649.39
+     "price_original": 1.65,
+     "usd_per_ton": 1650.0
     },
     {
      "date": "2020-11-01",
-     "price_original": 77.72380952380952,
-     "usd_per_ton": 1713.5
+     "price_original": 1.71,
+     "usd_per_ton": 1710.0
     },
     {
      "date": "2020-12-01",
-     "price_original": 81.02142857142857,
-     "usd_per_ton": 1786.2
+     "price_original": 1.79,
+     "usd_per_ton": 1790.0
     },
     {
      "date": "2021-01-01",
-     "price_original": 87.235,
-     "usd_per_ton": 1923.18
+     "price_original": 1.92,
+     "usd_per_ton": 1920.0
     },
     {
      "date": "2021-02-01",
-     "price_original": 92.76,
-     "usd_per_ton": 2044.99
+     "price_original": 2.05,
+     "usd_per_ton": 2050.0
     },
     {
      "date": "2021-03-01",
-     "price_original": 91.45217391304348,
-     "usd_per_ton": 2016.15
+     "price_original": 2.02,
+     "usd_per_ton": 2020.0
     },
     {
      "date": "2021-04-01",
-     "price_original": 90.73,
-     "usd_per_ton": 2000.23
+     "price_original": 2.0,
+     "usd_per_ton": 2000.0
     },
     {
      "date": "2021-05-01",
-     "price_original": 90.88684210526316,
-     "usd_per_ton": 2003.69
+     "price_original": 2.0,
+     "usd_per_ton": 2000.0
     },
     {
      "date": "2021-06-01",
-     "price_original": 94.50454545454545,
-     "usd_per_ton": 2083.45
+     "price_original": 2.08,
+     "usd_per_ton": 2080.0
     },
     {
      "date": "2021-07-01",
-     "price_original": 97.7,
-     "usd_per_ton": 2153.89
+     "price_original": 2.15,
+     "usd_per_ton": 2150.0
     },
     {
      "date": "2021-08-01",
-     "price_original": 101.3047619047619,
-     "usd_per_ton": 2233.36
+     "price_original": 2.23,
+     "usd_per_ton": 2230.0
     },
     {
      "date": "2021-09-01",
-     "price_original": 103.6818181818182,
-     "usd_per_ton": 2285.77
+     "price_original": 2.29,
+     "usd_per_ton": 2290.0
     },
     {
      "date": "2021-10-01",
-     "price_original": 117.3833333333333,
-     "usd_per_ton": 2587.83
+     "price_original": 2.59,
+     "usd_per_ton": 2590.0
     },
     {
      "date": "2021-11-01",
-     "price_original": 126.5431818181818,
-     "usd_per_ton": 2789.77
+     "price_original": 2.79,
+     "usd_per_ton": 2790.0
     },
     {
      "date": "2021-12-01",
-     "price_original": 120.0404761904762,
-     "usd_per_ton": 2646.41
+     "price_original": 2.65,
+     "usd_per_ton": 2650.0
     },
     {
      "date": "2022-01-01",
-     "price_original": 132.3325,
-     "usd_per_ton": 2917.4
+     "price_original": 2.91,
+     "usd_per_ton": 2910.0
     },
     {
      "date": "2022-02-01",
-     "price_original": 138.405,
-     "usd_per_ton": 3051.28
+     "price_original": 3.05,
+     "usd_per_ton": 3050.0
     },
     {
      "date": "2022-03-01",
-     "price_original": 141.1260869565217,
-     "usd_per_ton": 3111.27
+     "price_original": 3.11,
+     "usd_per_ton": 3110.0
     },
     {
      "date": "2022-04-01",
-     "price_original": 155.3157894736842,
-     "usd_per_ton": 3424.09
+     "price_original": 3.42,
+     "usd_per_ton": 3420.0
     },
     {
      "date": "2022-05-01",
-     "price_original": 163.9795454545455,
-     "usd_per_ton": 3615.09
+     "price_original": 3.61,
+     "usd_per_ton": 3610.0
     },
     {
      "date": "2022-06-01",
-     "price_original": 154.4454545454545,
-     "usd_per_ton": 3404.9
+     "price_original": 3.4,
+     "usd_per_ton": 3400.0
     },
     {
      "date": "2022-07-01",
-     "price_original": 131.0357142857143,
-     "usd_per_ton": 2888.81
+     "price_original": 2.89,
+     "usd_per_ton": 2890.0
     },
     {
      "date": "2022-08-01",
-     "price_original": 124.7586956521739,
-     "usd_per_ton": 2750.43
+     "price_original": 2.74,
+     "usd_per_ton": 2740.0
     },
     {
      "date": "2022-09-01",
-     "price_original": 117.9409090909091,
-     "usd_per_ton": 2600.13
+     "price_original": 2.59,
+     "usd_per_ton": 2590.0
     },
     {
      "date": "2022-10-01",
-     "price_original": 100.2761904761905,
-     "usd_per_ton": 2210.69
+     "price_original": 2.2,
+     "usd_per_ton": 2200.0
     },
     {
      "date": "2022-11-01",
-     "price_original": 101.1659090909091,
-     "usd_per_ton": 2230.3
+     "price_original": 2.23,
+     "usd_per_ton": 2230.0
     },
     {
      "date": "2022-12-01",
-     "price_original": 100.8863636363636,
-     "usd_per_ton": 2224.14
+     "price_original": 2.22,
+     "usd_per_ton": 2220.0
     },
     {
      "date": "2023-01-01",
-     "price_original": 100.3113636363636,
-     "usd_per_ton": 2211.46
+     "price_original": 2.21,
+     "usd_per_ton": 2210.0
     },
     {
      "date": "2023-02-01",
-     "price_original": 99.43,
-     "usd_per_ton": 2192.03
+     "price_original": 2.19,
+     "usd_per_ton": 2190.0
     },
     {
      "date": "2023-03-01",
-     "price_original": 95.3913043478261,
-     "usd_per_ton": 2103.0
+     "price_original": 2.1,
+     "usd_per_ton": 2100.0
     },
     {
      "date": "2023-04-01",
-     "price_original": 95.1325,
-     "usd_per_ton": 2097.29
+     "price_original": 2.1,
+     "usd_per_ton": 2100.0
     },
     {
      "date": "2023-05-01",
-     "price_original": 93.88478260869564,
-     "usd_per_ton": 2069.78
+     "price_original": 2.07,
+     "usd_per_ton": 2070.0
     },
     {
      "date": "2023-06-01",
-     "price_original": 92.41818181818182,
-     "usd_per_ton": 2037.45
+     "price_original": 2.04,
+     "usd_per_ton": 2040.0
     },
     {
      "date": "2023-07-01",
-     "price_original": 93.26904761904763,
-     "usd_per_ton": 2056.21
+     "price_original": 2.05,
+     "usd_per_ton": 2050.0
     },
     {
      "date": "2023-08-01",
-     "price_original": 95.99565217391304,
-     "usd_per_ton": 2116.32
+     "price_original": 2.11,
+     "usd_per_ton": 2110.0
     },
     {
      "date": "2023-09-01",
-     "price_original": 97.76904761904763,
-     "usd_per_ton": 2155.42
+     "price_original": 2.16,
+     "usd_per_ton": 2160.0
     },
     {
      "date": "2023-10-01",
-     "price_original": 95.68636363636364,
-     "usd_per_ton": 2109.5
+     "price_original": 2.11,
+     "usd_per_ton": 2110.0
     },
     {
      "date": "2023-11-01",
-     "price_original": 90.43181818181819,
-     "usd_per_ton": 1993.66
+     "price_original": 1.99,
+     "usd_per_ton": 1990.0
     },
     {
      "date": "2023-12-01",
-     "price_original": 90.40714285714286,
-     "usd_per_ton": 1993.12
+     "price_original": 2.0,
+     "usd_per_ton": 2000.0
     },
     {
      "date": "2024-01-01",
-     "price_original": 92.10652173913043,
-     "usd_per_ton": 2030.58
+     "price_original": 2.03,
+     "usd_per_ton": 2030.0
     },
     {
      "date": "2024-02-01",
-     "price_original": 99.35238095238095,
-     "usd_per_ton": 2190.32
+     "price_original": 2.2,
+     "usd_per_ton": 2200.0
     },
     {
      "date": "2024-03-01",
-     "price_original": 99.56428571428572,
-     "usd_per_ton": 2194.99
+     "price_original": 2.2,
+     "usd_per_ton": 2200.0
     },
     {
      "date": "2024-04-01",
-     "price_original": 90.60227272727273,
-     "usd_per_ton": 1997.42
+     "price_original": 1.99,
+     "usd_per_ton": 1990.0
     },
     {
      "date": "2024-05-01",
-     "price_original": 85.88913043478261,
-     "usd_per_ton": 1893.51
+     "price_original": 1.91,
+     "usd_per_ton": 1910.0
     },
     {
      "date": "2024-06-01",
-     "price_original": 83.24,
-     "usd_per_ton": 1835.11
+     "price_original": 1.83,
+     "usd_per_ton": 1830.0
     },
     {
      "date": "2024-07-01",
-     "price_original": 81.38260869565217,
-     "usd_per_ton": 1794.16
+     "price_original": 1.79,
+     "usd_per_ton": 1790.0
     },
     {
      "date": "2024-08-01",
-     "price_original": 79.92727272727274,
-     "usd_per_ton": 1762.08
+     "price_original": 1.76,
+     "usd_per_ton": 1760.0
     },
     {
      "date": "2024-09-01",
-     "price_original": 82.55714285714286,
-     "usd_per_ton": 1820.05
+     "price_original": 1.82,
+     "usd_per_ton": 1820.0
     },
     {
      "date": "2024-10-01",
-     "price_original": 83.69347826086957,
-     "usd_per_ton": 1845.11
+     "price_original": 1.84,
+     "usd_per_ton": 1840.0
     },
     {
      "date": "2024-11-01",
-     "price_original": 81.55238095238094,
-     "usd_per_ton": 1797.9
+     "price_original": 1.8,
+     "usd_per_ton": 1800.0
     },
     {
      "date": "2024-12-01",
-     "price_original": 79.90454545454546,
-     "usd_per_ton": 1761.58
+     "price_original": 1.76,
+     "usd_per_ton": 1760.0
     },
     {
      "date": "2025-01-01",
-     "price_original": 78.23695652173913,
-     "usd_per_ton": 1724.81
+     "price_original": 1.72,
+     "usd_per_ton": 1720.0
     },
     {
      "date": "2025-02-01",
-     "price_original": 78.0975,
-     "usd_per_ton": 1721.74
+     "price_original": 1.72,
+     "usd_per_ton": 1720.0
     },
     {
      "date": "2025-03-01",
-     "price_original": 77.63809523809525,
-     "usd_per_ton": 1711.61
+     "price_original": 1.71,
+     "usd_per_ton": 1710.0
     },
     {
      "date": "2025-04-01",
-     "price_original": 78.28181818181818,
-     "usd_per_ton": 1725.8
+     "price_original": 1.73,
+     "usd_per_ton": 1730.0
     },
     {
      "date": "2025-05-01",
-     "price_original": 77.98863636363636,
-     "usd_per_ton": 1719.34
+     "price_original": 1.72,
+     "usd_per_ton": 1720.0
     },
     {
      "date": "2025-06-01",
-     "price_original": 78.19047619047619,
-     "usd_per_ton": 1723.79
+     "price_original": 1.73,
+     "usd_per_ton": 1730.0
     },
     {
      "date": "2025-07-01",
-     "price_original": 78.90652173913043,
-     "usd_per_ton": 1739.57
+     "price_original": 1.74,
+     "usd_per_ton": 1740.0
     },
     {
      "date": "2025-08-01",
-     "price_original": 78.57380952380952,
-     "usd_per_ton": 1732.24
+     "price_original": 1.73,
+     "usd_per_ton": 1730.0
     },
     {
      "date": "2025-09-01",
-     "price_original": 77.97727272727273,
-     "usd_per_ton": 1719.09
+     "price_original": 1.72,
+     "usd_per_ton": 1720.0
     },
     {
      "date": "2025-10-01",
-     "price_original": 75.98434782608696,
-     "usd_per_ton": 1675.15
+     "price_original": 1.68,
+     "usd_per_ton": 1680.0
     },
     {
      "date": "2025-11-01",
-     "price_original": 75.28,
-     "usd_per_ton": 1659.62
+     "price_original": 1.66,
+     "usd_per_ton": 1660.0
     },
     {
      "date": "2025-12-01",
-     "price_original": 74.06590909090909,
-     "usd_per_ton": 1632.86
+     "price_original": 1.63,
+     "usd_per_ton": 1630.0
     },
     {
      "date": "2026-01-01",
-     "price_original": 74.48636363636363,
-     "usd_per_ton": 1642.13
+     "price_original": 1.64,
+     "usd_per_ton": 1640.0
     },
     {
      "date": "2026-02-01",
-     "price_original": 73.96,
-     "usd_per_ton": 1630.52
+     "price_original": 1.63,
+     "usd_per_ton": 1630.0
     },
     {
      "date": "2026-03-01",
-     "price_original": 76.93863636363636,
-     "usd_per_ton": 1696.19
+     "price_original": 1.7,
+     "usd_per_ton": 1700.0
     },
     {
      "date": "2026-04-01",
-     "price_original": 85.58181818181818,
-     "usd_per_ton": 1886.74
+     "price_original": 1.9,
+     "usd_per_ton": 1900.0
     },
     {
      "date": "2026-05-01",
-     "price_original": 92.09285714285714,
-     "usd_per_ton": 2030.28
+     "price_original": 2.03,
+     "usd_per_ton": 2030.0
     },
     {
      "date": "2026-06-01",
-     "price_original": 86.29318181818182,
-     "usd_per_ton": 1902.42
+     "price_original": 1.9,
+     "usd_per_ton": 1900.0
     },
     {
      "date": "2026-07-01",
-     "price_original": 88.775,
-     "usd_per_ton": 1957.13
+     "price_original": 1.96,
+     "usd_per_ton": 1960.0
+    },
+    {
+     "date": "2026-08-01",
+     "price_original": 2.11,
+     "usd_per_ton": 2110.0
+    },
+    {
+     "date": "2026-09-01",
+     "price_original": 2.1,
+     "usd_per_ton": 2100.0
     }
    ]
   },
@@ -9347,6 +9460,7 @@
    "name_en": "Wool (Coarse)",
    "color": "#EB6834",
    "tradingview_symbol": null,
+   "source": "FRED / IMF",
    "unit_original": "U.S. Cents per Kilogram",
    "series": [
     {
@@ -9753,6 +9867,7 @@
    "name_en": "Wool (Fine)",
    "color": "#1BAF7A",
    "tradingview_symbol": null,
+   "source": "FRED / IMF",
    "unit_original": "U.S. Cents per Kilogram",
    "series": [
     {
@@ -10159,6 +10274,7 @@
    "name_en": "Hides",
    "color": "#EDA100",
    "tradingview_symbol": null,
+   "source": "FRED / IMF",
    "unit_original": "U.S. Cents per Pound",
    "series": [
     {
@@ -10565,405 +10681,416 @@
    "name_en": "Rubber",
    "color": "#E87BA4",
    "tradingview_symbol": null,
-   "unit_original": "U.S. Cents per Pound",
+   "source": "World Bank (Pink Sheet)",
+   "unit_original": "U.S. Dollars per Kilogram",
    "series": [
     {
      "date": "2020-01-01",
-     "price_original": 75.21250827807054,
-     "usd_per_ton": 1658.13
+     "price_original": 1.68,
+     "usd_per_ton": 1680.0
     },
     {
      "date": "2020-02-01",
-     "price_original": 71.6608757971896,
-     "usd_per_ton": 1579.84
+     "price_original": 1.61,
+     "usd_per_ton": 1610.0
     },
     {
      "date": "2020-03-01",
-     "price_original": 68.37294573956673,
-     "usd_per_ton": 1507.35
+     "price_original": 1.5,
+     "usd_per_ton": 1500.0
     },
     {
      "date": "2020-04-01",
-     "price_original": 60.69937114743024,
-     "usd_per_ton": 1338.18
+     "price_original": 1.33,
+     "usd_per_ton": 1330.0
     },
     {
      "date": "2020-05-01",
-     "price_original": 61.37364060725006,
-     "usd_per_ton": 1353.04
+     "price_original": 1.35,
+     "usd_per_ton": 1350.0
     },
     {
      "date": "2020-06-01",
-     "price_original": 64.78543818312123,
-     "usd_per_ton": 1428.26
+     "price_original": 1.4,
+     "usd_per_ton": 1400.0
     },
     {
      "date": "2020-07-01",
-     "price_original": 67.98493725946071,
-     "usd_per_ton": 1498.8
+     "price_original": 1.48,
+     "usd_per_ton": 1480.0
     },
     {
      "date": "2020-08-01",
-     "price_original": 79.9616260398618,
-     "usd_per_ton": 1762.83
+     "price_original": 1.7,
+     "usd_per_ton": 1700.0
     },
     {
      "date": "2020-09-01",
-     "price_original": 89.3124438678774,
-     "usd_per_ton": 1968.98
+     "price_original": 1.86,
+     "usd_per_ton": 1860.0
     },
     {
      "date": "2020-10-01",
-     "price_original": 101.5202784895521,
-     "usd_per_ton": 2238.12
+     "price_original": 2.19,
+     "usd_per_ton": 2190.0
     },
     {
      "date": "2020-11-01",
-     "price_original": 110.151798107092,
-     "usd_per_ton": 2428.41
+     "price_original": 2.3,
+     "usd_per_ton": 2300.0
     },
     {
      "date": "2020-12-01",
-     "price_original": 107.7455957208477,
-     "usd_per_ton": 2375.36
+     "price_original": 2.33,
+     "usd_per_ton": 2330.0
     },
     {
      "date": "2021-01-01",
-     "price_original": 104.3989440357068,
-     "usd_per_ton": 2301.58
+     "price_original": 2.3,
+     "usd_per_ton": 2300.0
     },
     {
      "date": "2021-02-01",
-     "price_original": 105.2461547921082,
-     "usd_per_ton": 2320.26
+     "price_original": 2.35,
+     "usd_per_ton": 2350.0
     },
     {
      "date": "2021-03-01",
-     "price_original": 108.1602153264706,
-     "usd_per_ton": 2384.5
+     "price_original": 2.37,
+     "usd_per_ton": 2370.0
     },
     {
      "date": "2021-04-01",
-     "price_original": 99.32820730146344,
-     "usd_per_ton": 2189.79
+     "price_original": 2.15,
+     "usd_per_ton": 2150.0
     },
     {
      "date": "2021-05-01",
-     "price_original": 105.4149921528426,
-     "usd_per_ton": 2323.98
+     "price_original": 2.29,
+     "usd_per_ton": 2290.0
     },
     {
      "date": "2021-06-01",
-     "price_original": 97.06888261922691,
-     "usd_per_ton": 2139.98
+     "price_original": 2.12,
+     "usd_per_ton": 2120.0
     },
     {
      "date": "2021-07-01",
-     "price_original": 84.92339247752876,
-     "usd_per_ton": 1872.22
+     "price_original": 1.87,
+     "usd_per_ton": 1870.0
     },
     {
      "date": "2021-08-01",
-     "price_original": 86.24961174606929,
-     "usd_per_ton": 1901.46
+     "price_original": 1.9,
+     "usd_per_ton": 1900.0
     },
     {
      "date": "2021-09-01",
-     "price_original": 81.22405757825918,
-     "usd_per_ton": 1790.67
+     "price_original": 1.79,
+     "usd_per_ton": 1790.0
     },
     {
      "date": "2021-10-01",
-     "price_original": 85.53682288838468,
-     "usd_per_ton": 1885.74
+     "price_original": 1.87,
+     "usd_per_ton": 1870.0
     },
     {
      "date": "2021-11-01",
-     "price_original": 88.50245652959951,
-     "usd_per_ton": 1951.13
+     "price_original": 1.93,
+     "usd_per_ton": 1930.0
     },
     {
      "date": "2021-12-01",
-     "price_original": 88.18670873809627,
-     "usd_per_ton": 1944.16
+     "price_original": 1.92,
+     "usd_per_ton": 1920.0
     },
     {
      "date": "2022-01-01",
-     "price_original": 90.21055782856006,
-     "usd_per_ton": 1988.78
+     "price_original": 1.97,
+     "usd_per_ton": 1970.0
     },
     {
      "date": "2022-02-01",
-     "price_original": 96.88996541606072,
-     "usd_per_ton": 2136.04
+     "price_original": 2.11,
+     "usd_per_ton": 2110.0
     },
     {
      "date": "2022-03-01",
-     "price_original": 98.30147204704113,
-     "usd_per_ton": 2167.15
+     "price_original": 2.12,
+     "usd_per_ton": 2120.0
     },
     {
      "date": "2022-04-01",
-     "price_original": 97.06672265299143,
-     "usd_per_ton": 2139.93
+     "price_original": 2.09,
+     "usd_per_ton": 2090.0
     },
     {
      "date": "2022-05-01",
-     "price_original": 96.05448393085264,
-     "usd_per_ton": 2117.62
+     "price_original": 2.06,
+     "usd_per_ton": 2060.0
     },
     {
      "date": "2022-06-01",
-     "price_original": 94.02156298220014,
-     "usd_per_ton": 2072.8
+     "price_original": 2.03,
+     "usd_per_ton": 2030.0
     },
     {
      "date": "2022-07-01",
-     "price_original": 82.93838350718895,
-     "usd_per_ton": 1828.46
+     "price_original": 1.78,
+     "usd_per_ton": 1780.0
     },
     {
      "date": "2022-08-01",
-     "price_original": 73.30455845096834,
-     "usd_per_ton": 1616.07
+     "price_original": 1.61,
+     "usd_per_ton": 1610.0
     },
     {
      "date": "2022-09-01",
-     "price_original": 66.95649879055641,
-     "usd_per_ton": 1476.12
+     "price_original": 1.48,
+     "usd_per_ton": 1480.0
     },
     {
      "date": "2022-10-01",
-     "price_original": 68.53572864948971,
-     "usd_per_ton": 1510.94
+     "price_original": 1.5,
+     "usd_per_ton": 1500.0
     },
     {
      "date": "2022-11-01",
-     "price_original": 65.26583430993259,
-     "usd_per_ton": 1438.85
+     "price_original": 1.43,
+     "usd_per_ton": 1430.0
     },
     {
      "date": "2022-12-01",
-     "price_original": 69.88423484236819,
-     "usd_per_ton": 1540.67
+     "price_original": 1.54,
+     "usd_per_ton": 1540.0
     },
     {
      "date": "2023-01-01",
-     "price_original": 73.95626209752909,
-     "usd_per_ton": 1630.44
+     "price_original": 1.63,
+     "usd_per_ton": 1630.0
     },
     {
      "date": "2023-02-01",
-     "price_original": 73.28700637751635,
-     "usd_per_ton": 1615.69
+     "price_original": 1.62,
+     "usd_per_ton": 1620.0
     },
     {
      "date": "2023-03-01",
-     "price_original": 71.78403613281678,
-     "usd_per_ton": 1582.55
+     "price_original": 1.58,
+     "usd_per_ton": 1580.0
     },
     {
      "date": "2023-04-01",
-     "price_original": 69.80114486850346,
-     "usd_per_ton": 1538.84
+     "price_original": 1.54,
+     "usd_per_ton": 1540.0
     },
     {
      "date": "2023-05-01",
-     "price_original": 70.83740745225543,
-     "usd_per_ton": 1561.68
+     "price_original": 1.56,
+     "usd_per_ton": 1560.0
     },
     {
      "date": "2023-06-01",
-     "price_original": 69.54404016029144,
-     "usd_per_ton": 1533.17
+     "price_original": 1.53,
+     "usd_per_ton": 1530.0
     },
     {
      "date": "2023-07-01",
-     "price_original": 68.07781580758333,
-     "usd_per_ton": 1500.84
+     "price_original": 1.49,
+     "usd_per_ton": 1490.0
     },
     {
      "date": "2023-08-01",
-     "price_original": 67.07455844702409,
-     "usd_per_ton": 1478.73
+     "price_original": 1.47,
+     "usd_per_ton": 1470.0
     },
     {
      "date": "2023-09-01",
-     "price_original": 70.80801312913876,
-     "usd_per_ton": 1561.03
+     "price_original": 1.55,
+     "usd_per_ton": 1550.0
     },
     {
      "date": "2023-10-01",
-     "price_original": 73.19546308124836,
-     "usd_per_ton": 1613.67
+     "price_original": 1.61,
+     "usd_per_ton": 1610.0
     },
     {
      "date": "2023-11-01",
-     "price_original": 76.64689276486314,
-     "usd_per_ton": 1689.76
+     "price_original": 1.67,
+     "usd_per_ton": 1670.0
     },
     {
      "date": "2023-12-01",
-     "price_original": 76.53840355167567,
-     "usd_per_ton": 1687.37
+     "price_original": 1.66,
+     "usd_per_ton": 1660.0
     },
     {
      "date": "2024-01-01",
-     "price_original": 84.60888261133834,
-     "usd_per_ton": 1865.29
+     "price_original": 1.8,
+     "usd_per_ton": 1800.0
     },
     {
      "date": "2024-02-01",
-     "price_original": 93.78573394140705,
-     "usd_per_ton": 2067.6
+     "price_original": 2.02,
+     "usd_per_ton": 2020.0
     },
     {
      "date": "2024-03-01",
-     "price_original": 114.0159777022366,
-     "usd_per_ton": 2513.6
+     "price_original": 2.39,
+     "usd_per_ton": 2390.0
     },
     {
      "date": "2024-04-01",
-     "price_original": 107.7881077835718,
-     "usd_per_ton": 2376.3
+     "price_original": 2.28,
+     "usd_per_ton": 2280.0
     },
     {
      "date": "2024-05-01",
-     "price_original": 100.0093479582204,
-     "usd_per_ton": 2204.81
+     "price_original": 2.15,
+     "usd_per_ton": 2150.0
     },
     {
      "date": "2024-06-01",
-     "price_original": 105.1314965844454,
-     "usd_per_ton": 2317.73
+     "price_original": 2.26,
+     "usd_per_ton": 2260.0
     },
     {
      "date": "2024-07-01",
-     "price_original": 94.7496423518517,
-     "usd_per_ton": 2088.85
+     "price_original": 2.06,
+     "usd_per_ton": 2060.0
     },
     {
      "date": "2024-08-01",
-     "price_original": 107.971606733298,
-     "usd_per_ton": 2380.34
+     "price_original": 2.39,
+     "usd_per_ton": 2390.0
     },
     {
      "date": "2024-09-01",
-     "price_original": 122.8113602128171,
-     "usd_per_ton": 2707.5
+     "price_original": 2.65,
+     "usd_per_ton": 2650.0
     },
     {
      "date": "2024-10-01",
-     "price_original": 119.7859988096144,
-     "usd_per_ton": 2640.8
+     "price_original": 2.63,
+     "usd_per_ton": 2630.0
     },
     {
      "date": "2024-11-01",
-     "price_original": 105.0996370824731,
-     "usd_per_ton": 2317.03
+     "price_original": 2.29,
+     "usd_per_ton": 2290.0
     },
     {
      "date": "2024-12-01",
-     "price_original": 110.0632394914402,
-     "usd_per_ton": 2426.45
+     "price_original": 2.38,
+     "usd_per_ton": 2380.0
     },
     {
      "date": "2025-01-01",
-     "price_original": 108.883991838483,
-     "usd_per_ton": 2400.46
+     "price_original": 2.37,
+     "usd_per_ton": 2370.0
     },
     {
      "date": "2025-02-01",
-     "price_original": 110.2389527446907,
-     "usd_per_ton": 2430.33
+     "price_original": 2.41,
+     "usd_per_ton": 2410.0
     },
     {
      "date": "2025-03-01",
-     "price_original": 108.6268619448941,
-     "usd_per_ton": 2394.79
+     "price_original": 2.36,
+     "usd_per_ton": 2360.0
     },
     {
      "date": "2025-04-01",
-     "price_original": 98.86469818340164,
-     "usd_per_ton": 2179.57
+     "price_original": 2.13,
+     "usd_per_ton": 2130.0
     },
     {
      "date": "2025-05-01",
-     "price_original": 101.0811180817804,
-     "usd_per_ton": 2228.43
+     "price_original": 2.19,
+     "usd_per_ton": 2190.0
     },
     {
      "date": "2025-06-01",
-     "price_original": 100.0237164292648,
-     "usd_per_ton": 2205.12
+     "price_original": 2.16,
+     "usd_per_ton": 2160.0
     },
     {
      "date": "2025-07-01",
-     "price_original": 102.2733682192298,
-     "usd_per_ton": 2254.72
+     "price_original": 2.23,
+     "usd_per_ton": 2230.0
     },
     {
      "date": "2025-08-01",
-     "price_original": 98.32598296823424,
-     "usd_per_ton": 2167.69
+     "price_original": 2.15,
+     "usd_per_ton": 2150.0
     },
     {
      "date": "2025-09-01",
-     "price_original": 96.67095793049477,
-     "usd_per_ton": 2131.21
+     "price_original": 2.11,
+     "usd_per_ton": 2110.0
     },
     {
      "date": "2025-10-01",
-     "price_original": 91.89792345166057,
-     "usd_per_ton": 2025.98
+     "price_original": 2.0,
+     "usd_per_ton": 2000.0
     },
     {
      "date": "2025-11-01",
-     "price_original": 93.174787491722,
-     "usd_per_ton": 2054.13
+     "price_original": 2.03,
+     "usd_per_ton": 2030.0
     },
     {
      "date": "2025-12-01",
-     "price_original": 94.68133448683386,
-     "usd_per_ton": 2087.34
+     "price_original": 2.06,
+     "usd_per_ton": 2060.0
     },
     {
      "date": "2026-01-01",
-     "price_original": 97.14516869945018,
-     "usd_per_ton": 2141.66
+     "price_original": 2.14,
+     "usd_per_ton": 2140.0
     },
     {
      "date": "2026-02-01",
-     "price_original": 103.2422821166459,
-     "usd_per_ton": 2276.08
+     "price_original": 2.26,
+     "usd_per_ton": 2260.0
     },
     {
      "date": "2026-03-01",
-     "price_original": 110.3880198690189,
-     "usd_per_ton": 2433.61
+     "price_original": 2.39,
+     "usd_per_ton": 2390.0
     },
     {
      "date": "2026-04-01",
-     "price_original": 115.9136062203257,
-     "usd_per_ton": 2555.43
+     "price_original": 2.51,
+     "usd_per_ton": 2510.0
     },
     {
      "date": "2026-05-01",
-     "price_original": 127.8808009673192,
-     "usd_per_ton": 2819.26
+     "price_original": 2.69,
+     "usd_per_ton": 2690.0
     },
     {
      "date": "2026-06-01",
-     "price_original": 133.781043280186,
-     "usd_per_ton": 2949.34
+     "price_original": 2.86,
+     "usd_per_ton": 2860.0
     },
     {
      "date": "2026-07-01",
-     "price_original": 129.5048992157791,
-     "usd_per_ton": 2855.07
+     "price_original": 2.78,
+     "usd_per_ton": 2780.0
+    },
+    {
+     "date": "2026-08-01",
+     "price_original": 2.73,
+     "usd_per_ton": 2730.0
+    },
+    {
+     "date": "2026-09-01",
+     "price_original": 2.75,
+     "usd_per_ton": 2750.0
     }
    ]
   }
  ],
- "last_updated": "2026-10-11T09:47:37Z"
+ "last_updated": "2026-10-14T13:14:42Z"
 }
