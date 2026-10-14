@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
-<link rel="stylesheet" href="style.css?v=20261014">
+<link rel="stylesheet" href="style.css?v=20261014b">
 </head>
 <body>
 <div class="wrap">
@@ -26,11 +26,13 @@
   <div class="stale" id="stale" role="alert" hidden></div>
 
   <div class="note">
-    قیمت مرجع جهانی است و با قیمت فیزیکی تأمین‌کننده (بسته به مبدأ، گرید و شرط تحویل) فرق دارد؛
-    این صفحه پیش‌بینی یا توصیه‌ی خرید نیست.
+    قیمت مرجع جهانی است و با قیمت فیزیکی تأمین‌کننده (بسته به مبدأ، گرید و شرط تحویل) فرق دارد.
+    این سایت خودش پیش‌بینی نمی‌کند؛ پیش‌بینی‌های نمایش‌داده‌شده از بانک جهانی است. هیچ‌کدام توصیه‌ی خرید نیست.
   </div>
 
   <nav class="seg cat-bar" id="pick-category" role="group" aria-label="گروه کالا"></nav>
+
+  <section class="alerts" id="alerts" aria-label="هشدارها" hidden></section>
 
   <section class="cards" id="cards" aria-label="خلاصه‌ی قیمت کالاها"></section>
 
@@ -105,7 +107,7 @@ const UNITS_FA = {
   "u.s. cents per kilogram": "سنت بر کیلوگرم",
 };
 
-const state = { data: null, news: null, harvest: null, category: null, commodity: null, range: "24", chart: null };
+const state = { data: null, news: null, harvest: null, forecasts: null, category: null, commodity: null, range: "24", chart: null };
 const ALL = "all";          // گروه «همه»
 const COMPARE = "compare";  // مقایسه‌ی همه‌ی کالاهای یک گروه
 
@@ -162,7 +164,58 @@ function selectCategory(cat) {
   try { history.replaceState(null, "", "#" + encodeURIComponent(cat)); } catch (e) { /* بی‌اهمیت */ }
   document.querySelectorAll("#pick-category button").forEach((b) =>
     b.setAttribute("aria-pressed", String(b.dataset.cat === cat)));
-  renderCards(); renderAnalysis(); renderCommodityPicker(); renderChart(); renderLive(); renderNews(); renderHarvest();
+  renderAlerts(); renderCards(); renderAnalysis(); renderCommodityPicker(); renderChart(); renderLive(); renderNews(); renderHarvest();
+}
+
+// ---------- پیش‌بینی بانک جهانی (با ذکر منبع؛ این سایت خودش پیش‌بینی نمی‌کند) ----------
+function forecastLine(c) {
+  const f = state.forecasts?.items?.[c.fred_id];
+  if (!f) return "";
+  return `<div class="forecast">پیش‌بینی بانک جهانی (${esc(state.forecasts.edition)}):
+    میانگین 2026 ≈ ${num(fmtPrice(f.y2026))} · 2027 ≈ ${num(fmtPrice(f.y2027))} دلار بر تن${f.note ? ` <span class="meta">(${esc(f.note)})</span>` : ""}</div>`;
+}
+
+// ---------- هشدارها: فقط واقعیت‌های آخرین ماه، بدون پیش‌بینی ----------
+const ALERT_MOVE = 10;   // تغییر ماهانه‌ی دست‌کم ۱۰٪
+const ALERT_STREAK = 4;  // دست‌کم ۴ ماه پیاپی در یک جهت
+
+function alertFor(c) {
+  const st = stats(c);
+  const p = st.last.usd_per_ton;
+  const parts = [];
+  let score = 0;
+  if (st.mom != null && Math.abs(st.mom) >= ALERT_MOVE) {
+    parts.push(`در ${monthLabel(st.last.date)} ${num(fmt0(Math.abs(st.mom)) + "%")} ${st.mom > 0 ? "گران‌تر" : "ارزان‌تر"} از ماه قبل شد`);
+    score += Math.abs(st.mom);
+  }
+  if (p === st.max.usd_per_ton) { parts.push("به بالاترین قیمت 2 سال اخیر رسید"); score += 10; }
+  else if (p === st.min.usd_per_ton) { parts.push("به پایین‌ترین قیمت 2 سال اخیر رسید"); score += 10; }
+  if (st.streak >= ALERT_STREAK) {
+    parts.push(`${num(st.streak)} ماه پیاپی ${st.dir > 0 ? "افزایش" : "کاهش"} داشته است`);
+    score += st.streak * 2;
+  }
+  return parts.length ? { c, score, text: parts.join("، ") } : null;
+}
+const fmt0 = (v) => v.toFixed(1);
+
+function renderAlerts() {
+  const el = document.getElementById("alerts");
+  const list = inCategory().map(alertFor).filter(Boolean).sort((a, b) => b.score - a.score);
+  if (!list.length) { el.hidden = true; return; }
+  const item = (a) => `<li><button class="alert-link" data-id="${esc(a.c.fred_id)}" data-cat="${esc(a.c.category)}">
+      <span class="swatch" style="background:${esc(a.c.color)}"></span><b>${esc(a.c.name_fa)}</b></button>: ${a.text}.</li>`;
+  const shown = state.category === ALL ? list.slice(0, 6) : list;
+  const rest = state.category === ALL ? list.slice(6) : [];
+  el.innerHTML = `<h2>هشدارها <span class="meta">(${num(list.length)})</span></h2>
+    <ul>${shown.map(item).join("")}</ul>
+    ${rest.length ? `<details><summary class="meta">نمایش ${num(rest.length)} هشدار دیگر</summary><ul>${rest.map(item).join("")}</ul></details>` : ""}
+    <p class="meta">هشدارها فقط تغییرهای مهم آخرین ماه را می‌گویند (تغییر ماهانه‌ی ${num(ALERT_MOVE + "%")} یا بیشتر، رسیدن به بالاترین یا پایین‌ترین قیمت 2 سال، یا ${num(ALERT_STREAK)} ماه پیاپی در یک جهت). پیش‌بینی نیستند.</p>`;
+  el.hidden = false;
+  el.querySelectorAll(".alert-link").forEach((b) => b.addEventListener("click", () => {
+    if (state.category === ALL) selectCategory(b.dataset.cat);
+    select(b.dataset.id);
+    document.getElementById("cards").scrollIntoView({ behavior: "smooth", block: "start" });
+  }));
 }
 
 // ---------- کارت‌ها ----------
@@ -180,6 +233,7 @@ function cardHtml(c) {
         <dt>کمترین 2 سال اخیر</dt><dd>${num(fmtPrice(st.min.usd_per_ton))} <span class="meta">(${monthLabel(st.min.date)})</span></dd>
         <dt>بیشترین 2 سال اخیر</dt><dd>${num(fmtPrice(st.max.usd_per_ton))} <span class="meta">(${monthLabel(st.max.date)})</span></dd>
       </dl>
+      ${forecastLine(c)}
     </button>`;
 }
 
@@ -495,6 +549,10 @@ async function init() {
   document.getElementById("meta").innerHTML =
     `آخرین داده: <b>${monthLabel(latest)}</b> · ${num(d.commodities.length)} کالا · منبع: FRED / IMF · آخرین به‌روزرسانی: ${num((d.last_updated || "").slice(0, 10))}`;
   renderStaleWarning();
+  try {
+    const res = await fetch("config/forecasts.json", { cache: "no-cache" });
+    if (res.ok) state.forecasts = await res.json();
+  } catch (e) { /* بدون پیش‌بینی هم صفحه کار می‌کند */ }
   Chart.defaults.font.family = '"Vazirmatn", system-ui, sans-serif';
   // گروه از آدرس صفحه (مثلاً ‎#غلات‎) تا بشود لینک یک گروه را برای کسی فرستاد
   let fromHash = "";

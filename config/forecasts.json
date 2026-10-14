@@ -1,0 +1,24 @@
+{
+  "source": "World Bank — Commodity Markets Outlook",
+  "edition": "آوریل 2026",
+  "url": "https://thedocs.worldbank.org/en/doc/f3138644a1e8e2bb631399ae11d6c408-0050012026/related/CMO-April-2026-Forecasts.pdf",
+  "next_edition": "اواخر اکتبر 2026",
+  "note": "میانگین سالانه، به دلار بر تن (از جدول 1 گزارش، تبدیل‌شده از دلار بر کیلوگرم در صورت لزوم). پیش‌بینی بانک جهانی است، نه این سایت.",
+
+  "items": {
+    "PCOFFOTMUSDM": {"wb_name": "Coffee, Arabica", "y2025": 8470, "y2026": 7250, "y2027": 7000},
+    "PCOFFROBUSDM": {"wb_name": "Coffee, Robusta", "y2025": 4860, "y2026": 4000, "y2027": 3900},
+    "PCOCOUSDM":    {"wb_name": "Cocoa", "y2025": 7800, "y2026": 3800, "y2027": 4200},
+    "PSUGAISAUSDM": {"wb_name": "Sugar, World", "y2025": 370, "y2026": 350, "y2027": 340},
+    "PTEAUSDM":     {"wb_name": "Tea, average", "y2025": 2910, "y2026": 2850, "y2027": 3000, "note": "میانگین جهانی چای، نه فقط کنیا"},
+    "PWHEAMTUSDM":  {"wb_name": "Wheat, U.S., HRW", "y2025": 243, "y2026": 253, "y2027": 260},
+    "PMAIZMTUSDM":  {"wb_name": "Maize", "y2025": 203, "y2026": 211, "y2027": 214},
+    "PRICENPQUSDM": {"wb_name": "Rice, Thailand, 5%", "y2025": 408, "y2026": 401, "y2027": 413},
+    "PSOYBUSDM":    {"wb_name": "Soybeans", "y2025": 414, "y2026": 441, "y2027": 446},
+    "PSMEAUSDM":    {"wb_name": "Soybean meal", "y2025": 366, "y2026": 359, "y2027": 363},
+    "PSOILUSDM":    {"wb_name": "Soybean oil", "y2025": 1140, "y2026": 1233, "y2027": 1236},
+    "PPOILUSDM":    {"wb_name": "Palm oil", "y2025": 1007, "y2026": 1089, "y2027": 1096},
+    "PBEEFUSDM":    {"wb_name": "Beef", "y2025": 6860, "y2026": 7600, "y2027": 7810},
+    "PCOTTINDUSDM": {"wb_name": "Cotton", "y2025": 1710, "y2026": 1650, "y2027": 1750}
+  }
+}

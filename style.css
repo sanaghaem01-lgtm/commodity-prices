@@ -189,3 +189,15 @@ h3.chart-title { font-size: 1rem; margin: 20px 0 6px; }
 .cols span { font-size: 0.66rem; color: var(--muted); margin-top: 3px; white-space: nowrap; }
 .cols b { font-size: 0.62rem; font-weight: 500; color: var(--ink-2); margin-bottom: 2px; }
 .page-pick { margin: 16px 0 4px; }
+
+/* هشدارها و پیش‌بینی بانک جهانی */
+.alerts { background: var(--surface); border: 1px solid var(--border); border-inline-start: 4px solid #2A78D6;
+          border-radius: 12px; padding: 12px 16px; margin-bottom: 16px; }
+.alerts[hidden] { display: none; }
+.alerts h2 { font-size: 1rem; margin: 0 0 6px; }
+.alerts ul { margin: 0; padding-inline-start: 18px; font-size: 0.92rem; }
+.alerts li { margin: 4px 0; }
+.alert-link { font: inherit; background: none; border: 0; padding: 0; cursor: pointer; color: var(--ink);
+              display: inline-flex; align-items: center; gap: 6px; text-decoration: underline; text-underline-offset: 3px; }
+.alerts p.meta { margin: 8px 0 0; font-size: 0.8rem; }
+.forecast { margin-top: 10px; padding-top: 8px; border-top: 1px dashed var(--grid); font-size: 0.8rem; color: var(--ink-2); }
