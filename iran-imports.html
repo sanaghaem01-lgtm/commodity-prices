@@ -279,7 +279,8 @@ async function init() {
     if (state.imports) renderImports(sel);
   });
 }
-document.fonts?.ready.then(init) ?? init();
+// منتظر فونت بمان، ولی حداکثر ۱.۵ ثانیه؛ اگر فونت گوگل کند یا مسدود باشد، صفحه نباید گیر کند
+Promise.race([document.fonts?.ready, new Promise((r) => setTimeout(r, 1500))]).then(init);
 </script>
 </body>
 </html>
