@@ -201,3 +201,4 @@ h3.chart-title { font-size: 1rem; margin: 20px 0 6px; }
               display: inline-flex; align-items: center; gap: 6px; text-decoration: underline; text-underline-offset: 3px; }
 .alerts p.meta { margin: 8px 0 0; font-size: 0.8rem; }
 .forecast { margin-top: 10px; padding-top: 8px; border-top: 1px dashed var(--grid); font-size: 0.8rem; color: var(--ink-2); }
+.card .src { color: var(--muted); }

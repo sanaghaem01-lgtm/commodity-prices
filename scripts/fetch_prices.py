@@ -3,6 +3,9 @@
 اجرا:  python3 -m scripts.fetch_prices
 کلید API فقط از متغیر محیطی FRED_API_KEY خوانده می‌شود.
 
+منبع هر کالا: اگر در تنظیمات کلید "worldbank" داشته باشد از Pink Sheet بانک جهانی (تأخیر ~1 ماه)،
+وگرنه از FRED / IMF (تأخیر ~2 تا 3 ماه). کل تاریخچه‌ی هر کالا از یک منبع می‌آید تا سری وصله‌دار نشود.
+
 اگر داده‌ی یک کالا خطا داشته باشد یا ناقص باشد، داده‌ی قبلیِ همان کالا حفظ می‌شود،
 بقیه‌ی کالاها به‌روز می‌شوند و برنامه با کد خطا تمام می‌شود (تا workflow در GitHub قرمز شود).
 """
@@ -21,7 +24,9 @@ ROOT = Path(__file__).resolve().parent.parent
 CONFIG_PATH = ROOT / "config" / "commodities.json"
 DATA_DIR = ROOT / "data"
 START_DATE = "2020-01-01"
-SOURCE = "FRED (Federal Reserve Bank of St. Louis) / IMF Primary Commodity Prices"
+SOURCE = "FRED (Federal Reserve Bank of St. Louis) / IMF Primary Commodity Prices + World Bank Pink Sheet"
+SOURCE_FRED = "FRED / IMF"
+SOURCE_WB = "World Bank (Pink Sheet)"
 MAX_STALE_DAYS = 180  # اگر آخرین داده‌ی یک کالا قدیمی‌تر از این باشد، احتمالاً سری متوقف شده
 CSV_COLUMNS = ["date", "commodity", "price_original", "unit_original", "usd_per_ton"]
 
@@ -46,16 +51,22 @@ def metadata(c):
         "name_en": c["name_en"],
         "color": c["color"],
         "tradingview_symbol": c.get("tradingview_symbol"),  # اختیاری؛ فقط برای لینک داشبورد
+        "source": SOURCE_WB if c.get("worldbank") else SOURCE_FRED,
     }
 
 
-def build_dataset(config, fetch_series, start=START_DATE):
+def build_dataset(config, fetch_series, start=START_DATE, fetch_worldbank=None):
     """داده‌ی همه‌ی کالاها را می‌گیرد. خروجی: (dataset, errors) و هر خطا به شکل (شناسه، پیام)."""
     commodities, errors = [], []
     for c in config:
         sid = c["fred_id"]
         try:
-            result = fetch_series(sid, start)
+            if c.get("worldbank"):
+                if fetch_worldbank is None:
+                    raise RuntimeError("منبع بانک جهانی تعریف نشده است")
+                result = fetch_worldbank(c["worldbank"]["column"], start)
+            else:
+                result = fetch_series(sid, start)
             unit = result["unit"]
             series = [
                 {"date": d, "price_original": v, "usd_per_ton": to_usd_per_ton(v, unit)}
@@ -145,10 +156,11 @@ def main():
         return 1
 
     from scripts.fred_source import make_fetcher
+    from scripts import worldbank_source
 
     config = load_config()
     existing = load_existing()
-    dataset, errors = build_dataset(config, make_fetcher(api_key))
+    dataset, errors = build_dataset(config, make_fetcher(api_key), fetch_worldbank=worldbank_source.make_fetcher())
     errors += validate(dataset, existing)
     bad_ids = {sid for sid, _ in errors}
     dataset = merge_with_existing(config, dataset, existing, bad_ids)
@@ -162,7 +174,7 @@ def main():
     for c in dataset["commodities"]:
         last = c["series"][-1]
         flag = "  (داده‌ی قبلی حفظ شد)" if c["fred_id"] in bad_ids else ""
-        print(f"{c['name_en']}: {len(c['series'])} ماه، آخرین: {last['date']} = {last['usd_per_ton']} USD/t ({c['unit_original']}){flag}")
+        print(f"{c['name_en']} [{c['source']}]: {len(c['series'])} ماه، آخرین: {last['date']} = {last['usd_per_ton']} USD/t ({c['unit_original']}){flag}")
 
     if has_changed(dataset, existing):
         dataset["last_updated"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")

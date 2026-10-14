@@ -1,33 +1,33 @@
 [
-  {"fred_id": "PCOFFOTMUSDM", "category": "قهوه، کاکائو، شکر و چای", "name_fa": "قهوه عربیکا", "name_en": "Coffee Arabica", "color": "#2A78D6", "tradingview_symbol": "ICEUS:KC1!"},
-  {"fred_id": "PCOFFROBUSDM", "category": "قهوه، کاکائو، شکر و چای", "name_fa": "قهوه روبوستا", "name_en": "Coffee Robusta", "color": "#EB6834", "tradingview_symbol": "ICEEUR:RC1!"},
-  {"fred_id": "PCOCOUSDM", "category": "قهوه، کاکائو، شکر و چای", "name_fa": "کاکائو", "name_en": "Cocoa", "color": "#1BAF7A", "tradingview_symbol": "ICEUS:CC1!"},
-  {"fred_id": "PSUGAISAUSDM", "category": "قهوه، کاکائو، شکر و چای", "name_fa": "شکر", "name_en": "Sugar", "color": "#EDA100", "tradingview_symbol": "ICEUS:SB1!"},
+  {"fred_id": "PCOFFOTMUSDM", "worldbank": {"column": "Coffee, Arabica"}, "category": "قهوه، کاکائو، شکر و چای", "name_fa": "قهوه عربیکا", "name_en": "Coffee Arabica", "color": "#2A78D6", "tradingview_symbol": "ICEUS:KC1!"},
+  {"fred_id": "PCOFFROBUSDM", "worldbank": {"column": "Coffee, Robusta"}, "category": "قهوه، کاکائو، شکر و چای", "name_fa": "قهوه روبوستا", "name_en": "Coffee Robusta", "color": "#EB6834", "tradingview_symbol": "ICEEUR:RC1!"},
+  {"fred_id": "PCOCOUSDM", "worldbank": {"column": "Cocoa"}, "category": "قهوه، کاکائو، شکر و چای", "name_fa": "کاکائو", "name_en": "Cocoa", "color": "#1BAF7A", "tradingview_symbol": "ICEUS:CC1!"},
+  {"fred_id": "PSUGAISAUSDM", "worldbank": {"column": "Sugar, world"}, "category": "قهوه، کاکائو، شکر و چای", "name_fa": "شکر", "name_en": "Sugar", "color": "#EDA100", "tradingview_symbol": "ICEUS:SB1!"},
   {"fred_id": "PTEAUSDM", "category": "قهوه، کاکائو، شکر و چای", "name_fa": "چای (کنیا)", "name_en": "Tea", "color": "#E87BA4"},
 
   {"fred_id": "PWHEAMTUSDM", "category": "غلات", "name_fa": "گندم", "name_en": "Wheat", "color": "#2A78D6", "tradingview_symbol": "CBOT:KE1!"},
-  {"fred_id": "PMAIZMTUSDM", "category": "غلات", "name_fa": "ذرت", "name_en": "Corn", "color": "#EB6834", "tradingview_symbol": "CBOT:ZC1!"},
+  {"fred_id": "PMAIZMTUSDM", "worldbank": {"column": "Maize"}, "category": "غلات", "name_fa": "ذرت", "name_en": "Corn", "color": "#EB6834", "tradingview_symbol": "CBOT:ZC1!"},
   {"fred_id": "PBARLUSDM", "category": "غلات", "name_fa": "جو", "name_en": "Barley", "color": "#1BAF7A"},
-  {"fred_id": "PRICENPQUSDM", "category": "غلات", "name_fa": "برنج (تایلند)", "name_en": "Rice", "color": "#EDA100"},
+  {"fred_id": "PRICENPQUSDM", "worldbank": {"column": "Rice, Thai A.1"}, "category": "غلات", "name_fa": "برنج (تایلند)", "name_en": "Rice", "color": "#EDA100"},
 
   {"fred_id": "PSOYBUSDM", "category": "دانه‌های روغنی و روغن", "name_fa": "سویا", "name_en": "Soybeans", "color": "#2A78D6", "tradingview_symbol": "CBOT:ZS1!"},
   {"fred_id": "PSMEAUSDM", "category": "دانه‌های روغنی و روغن", "name_fa": "کنجاله سویا", "name_en": "Soybean Meal", "color": "#EB6834", "tradingview_symbol": "CBOT:ZM1!"},
   {"fred_id": "PSOILUSDM", "category": "دانه‌های روغنی و روغن", "name_fa": "روغن سویا", "name_en": "Soybean Oil", "color": "#1BAF7A", "tradingview_symbol": "CBOT:ZL1!"},
   {"fred_id": "PPOILUSDM", "category": "دانه‌های روغنی و روغن", "name_fa": "روغن پالم", "name_en": "Palm Oil", "color": "#EDA100", "tradingview_symbol": "MYX:FCPO1!"},
   {"fred_id": "PSUNOUSDM", "category": "دانه‌های روغنی و روغن", "name_fa": "روغن آفتابگردان", "name_en": "Sunflower Oil", "color": "#E87BA4"},
-  {"fred_id": "PROILUSDM", "category": "دانه‌های روغنی و روغن", "name_fa": "روغن کلزا", "name_en": "Rapeseed Oil", "color": "#008300"},
+  {"fred_id": "PROILUSDM", "worldbank": {"column": "Rapeseed oil"}, "category": "دانه‌های روغنی و روغن", "name_fa": "روغن کلزا", "name_en": "Rapeseed Oil", "color": "#008300"},
   {"fred_id": "POLVOILUSDM", "category": "دانه‌های روغنی و روغن", "name_fa": "روغن زیتون", "name_en": "Olive Oil", "color": "#4A3AA7"},
   {"fred_id": "PGNUTSUSDM", "category": "دانه‌های روغنی و روغن", "name_fa": "بادام‌زمینی", "name_en": "Groundnuts", "color": "#E34948"},
 
-  {"fred_id": "PBEEFUSDM", "category": "گوشت و آبزیان", "name_fa": "گوشت گاو", "name_en": "Beef", "color": "#2A78D6"},
+  {"fred_id": "PBEEFUSDM", "worldbank": {"column": "Beef"}, "category": "گوشت و آبزیان", "name_fa": "گوشت گاو", "name_en": "Beef", "color": "#2A78D6"},
   {"fred_id": "PLAMBUSDM", "category": "گوشت و آبزیان", "name_fa": "گوشت گوسفند", "name_en": "Lamb", "color": "#EB6834"},
   {"fred_id": "PPOULTUSDM", "category": "گوشت و آبزیان", "name_fa": "مرغ", "name_en": "Poultry", "color": "#1BAF7A"},
   {"fred_id": "PSALMUSDM", "category": "گوشت و آبزیان", "name_fa": "ماهی سالمون", "name_en": "Fish (Salmon)", "color": "#EDA100"},
   {"fred_id": "PSHRIUSDM", "category": "گوشت و آبزیان", "name_fa": "میگو", "name_en": "Shrimp", "color": "#E87BA4"},
 
-  {"fred_id": "PCOTTINDUSDM", "category": "مواد اولیه‌ی کشاورزی", "name_fa": "پنبه", "name_en": "Cotton", "color": "#2A78D6", "tradingview_symbol": "ICEUS:CT1!"},
+  {"fred_id": "PCOTTINDUSDM", "worldbank": {"column": "Cotton, A Index"}, "category": "مواد اولیه‌ی کشاورزی", "name_fa": "پنبه", "name_en": "Cotton", "color": "#2A78D6", "tradingview_symbol": "ICEUS:CT1!"},
   {"fred_id": "PWOOLCUSDM", "category": "مواد اولیه‌ی کشاورزی", "name_fa": "پشم درشت", "name_en": "Wool (Coarse)", "color": "#EB6834"},
   {"fred_id": "PWOOLFUSDM", "category": "مواد اولیه‌ی کشاورزی", "name_fa": "پشم ظریف", "name_en": "Wool (Fine)", "color": "#1BAF7A"},
   {"fred_id": "PHIDEUSDM", "category": "مواد اولیه‌ی کشاورزی", "name_fa": "چرم خام", "name_en": "Hides", "color": "#EDA100"},
-  {"fred_id": "PRUBBUSDM", "category": "مواد اولیه‌ی کشاورزی", "name_fa": "لاستیک طبیعی", "name_en": "Rubber", "color": "#E87BA4"}
+  {"fred_id": "PRUBBUSDM", "worldbank": {"column": "Rubber, RSS3"}, "category": "مواد اولیه‌ی کشاورزی", "name_fa": "لاستیک طبیعی", "name_en": "Rubber", "color": "#E87BA4"}
 ]

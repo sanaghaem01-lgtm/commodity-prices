@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
-<link rel="stylesheet" href="style.css?v=20261014b">
+<link rel="stylesheet" href="style.css?v=20261014c">
 </head>
 <body>
 <div class="wrap">
@@ -89,10 +89,10 @@
 
 
   <footer>
-    منبع: <a href="https://fred.stlouisfed.org/" target="_blank" rel="noopener">FRED</a>
-    (بانک فدرال رزرو سنت‌لوئیس) — قیمت‌های ماهانه‌ی کالای IMF.
+    منبع قیمت‌ها: <a href="https://www.worldbank.org/en/research/commodity-markets" target="_blank" rel="noopener">بانک جهانی (Pink Sheet)</a>
+    برای 10 کالا، با حدود 1 ماه تأخیر؛ و <a href="https://fred.stlouisfed.org/" target="_blank" rel="noopener">FRED</a>
+    (بانک فدرال رزرو سنت‌لوئیس، قیمت‌های ماهانه‌ی IMF) برای بقیه، با حدود 2 تا 3 ماه تأخیر. منبع هر کالا روی کارتش نوشته شده.
     همه‌ی قیمت‌ها به دلار بر تن تبدیل شده‌اند (مثلاً سنت بر پوند × 22.046).
-    داده‌ی IMF معمولاً با 1 تا 2 ماه تأخیر منتشر می‌شود.
     · <a href="data/prices.csv">دانلود CSV</a>
   </footer>
 </div>
@@ -218,6 +218,8 @@ function renderAlerts() {
   }));
 }
 
+const sourceFa = (s) => (s && s.startsWith("World Bank") ? "بانک جهانی" : "FRED / IMF");
+
 // ---------- کارت‌ها ----------
 function cardHtml(c) {
   const st = stats(c);
@@ -226,7 +228,8 @@ function cardHtml(c) {
     <button class="card" data-id="${esc(c.fred_id)}" aria-pressed="${state.commodity === c.fred_id}">
       <div class="card-title"><span class="swatch" style="background:${esc(c.color)}"></span>${esc(c.name_fa)}</div>
       <div class="hero">${num(fmtPrice(st.last.usd_per_ton))} <small>دلار بر تن</small></div>
-      <div class="sub">${monthLabel(st.last.date)} · ${num(st.last.price_original.toLocaleString("en-US", { maximumFractionDigits: 2 }))} ${esc(unitFa(c.unit_original))}</div>
+      <div class="sub">${monthLabel(st.last.date)} · ${num(st.last.price_original.toLocaleString("en-US", { maximumFractionDigits: 2 }))} ${esc(unitFa(c.unit_original))}
+        · <span class="src">${esc(sourceFa(c.source))}</span></div>
       <dl class="rows">
         <dt>نسبت به ماه قبل</dt><dd>${delta(st.mom)}</dd>
         <dt>نسبت به سال قبل</dt><dd>${delta(st.yoy)}</dd>
@@ -547,7 +550,7 @@ async function init() {
   d.commodities = d.commodities.filter((c) => c.series.length);
   const latest = d.commodities.map((c) => c.series[c.series.length - 1].date).sort().pop();
   document.getElementById("meta").innerHTML =
-    `آخرین داده: <b>${monthLabel(latest)}</b> · ${num(d.commodities.length)} کالا · منبع: FRED / IMF · آخرین به‌روزرسانی: ${num((d.last_updated || "").slice(0, 10))}`;
+    `آخرین داده: <b>${monthLabel(latest)}</b> · ${num(d.commodities.length)} کالا · منبع: بانک جهانی و FRED / IMF · آخرین به‌روزرسانی: ${num((d.last_updated || "").slice(0, 10))}`;
   renderStaleWarning();
   try {
     const res = await fetch("config/forecasts.json", { cache: "no-cache" });
