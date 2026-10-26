@@ -402,6 +402,8 @@ date,commodity,price_original,unit_original,usd_per_ton
 2026-05-01,Tea,287.369144952381,U.S. Cents per Kilogram,2873.69
 2026-06-01,Tea,275.9202378045455,U.S. Cents per Kilogram,2759.2
 2026-07-01,Tea,273.1432294956522,U.S. Cents per Kilogram,2731.43
+2026-08-01,Tea,294.0864149428571,U.S. Cents per Kilogram,2940.86
+2026-09-01,Tea,310.2137725909091,U.S. Cents per Kilogram,3102.14
 2020-01-01,Wheat,178.2417773015873,U.S. Dollars per Metric Ton,178.24
 2020-02-01,Wheat,172.2311028070175,U.S. Dollars per Metric Ton,172.23
 2020-03-01,Wheat,170.8747516666666,U.S. Dollars per Metric Ton,170.87
@@ -481,6 +483,8 @@ date,commodity,price_original,unit_original,usd_per_ton
 2026-05-01,Wheat,220.8845521666666,U.S. Dollars per Metric Ton,220.88
 2026-06-01,Wheat,199.6482875619048,U.S. Dollars per Metric Ton,199.65
 2026-07-01,Wheat,228.73884495,U.S. Dollars per Metric Ton,228.74
+2026-08-01,Wheat,237.8554019809524,U.S. Dollars per Metric Ton,237.86
+2026-09-01,Wheat,246.85180245,U.S. Dollars per Metric Ton,246.85
 2020-01-01,Corn,171.8,U.S. Dollars per Metric Ton,171.8
 2020-02-01,Corn,168.7,U.S. Dollars per Metric Ton,168.7
 2020-03-01,Corn,162.4,U.S. Dollars per Metric Ton,162.4
@@ -641,6 +645,8 @@ date,commodity,price_original,unit_original,usd_per_ton
 2026-05-01,Barley,124.9654568970523,U.S. Dollars per Metric Ton,124.97
 2026-06-01,Barley,121.0900080253843,U.S. Dollars per Metric Ton,121.09
 2026-07-01,Barley,121.9043696921157,U.S. Dollars per Metric Ton,121.9
+2026-08-01,Barley,124.1710257387747,U.S. Dollars per Metric Ton,124.17
+2026-09-01,Barley,125.1051854735405,U.S. Dollars per Metric Ton,125.11
 2020-01-01,Rice,426.0,U.S. Dollars per Metric Ton,426.0
 2020-02-01,Rice,426.5,U.S. Dollars per Metric Ton,426.5
 2020-03-01,Rice,469.6,U.S. Dollars per Metric Ton,469.6
@@ -801,6 +807,8 @@ date,commodity,price_original,unit_original,usd_per_ton
 2026-05-01,Soybeans,439.149647497951,U.S. Dollars per Metric Ton,439.15
 2026-06-01,Soybeans,414.542332960393,U.S. Dollars per Metric Ton,414.54
 2026-07-01,Soybeans,442.4505721529122,U.S. Dollars per Metric Ton,442.45
+2026-08-01,Soybeans,449.043925962608,U.S. Dollars per Metric Ton,449.04
+2026-09-01,Soybeans,481.7223363582059,U.S. Dollars per Metric Ton,481.72
 2020-01-01,Soybean Meal,327.9796075368095,U.S. Dollars per Metric Ton,327.98
 2020-02-01,Soybean Meal,320.6449551635789,U.S. Dollars per Metric Ton,320.64
 2020-03-01,Soybean Meal,341.4559597903636,U.S. Dollars per Metric Ton,341.46
@@ -880,6 +888,8 @@ date,commodity,price_original,unit_original,usd_per_ton
 2026-05-01,Soybean Meal,322.0874319356683,U.S. Dollars per Metric Ton,322.09
 2026-06-01,Soybean Meal,296.1593875998523,U.S. Dollars per Metric Ton,296.16
 2026-07-01,Soybean Meal,329.4329095064775,U.S. Dollars per Metric Ton,329.43
+2026-08-01,Soybean Meal,367.665544124595,U.S. Dollars per Metric Ton,367.67
+2026-09-01,Soybean Meal,488.2656993089945,U.S. Dollars per Metric Ton,488.27
 2020-01-01,Soybean Oil,728.0285131428572,U.S. Dollars per Metric Ton,728.03
 2020-02-01,Soybean Oil,666.8627402105263,U.S. Dollars per Metric Ton,666.86
 2020-03-01,Soybean Oil,592.932549,U.S. Dollars per Metric Ton,592.93
@@ -959,6 +969,8 @@ date,commodity,price_original,unit_original,usd_per_ton
 2026-05-01,Soybean Oil,1615.924825470154,U.S. Dollars per Metric Ton,1615.92
 2026-06-01,Soybean Oil,1581.357763089017,U.S. Dollars per Metric Ton,1581.36
 2026-07-01,Soybean Oil,1590.383802874623,U.S. Dollars per Metric Ton,1590.38
+2026-08-01,Soybean Oil,1577.085584494794,U.S. Dollars per Metric Ton,1577.09
+2026-09-01,Soybean Oil,1596.491412653566,U.S. Dollars per Metric Ton,1596.49
 2020-01-01,Palm Oil,726.5856019038262,U.S. Dollars per Metric Ton,726.59
 2020-02-01,Palm Oil,642.25215585718,U.S. Dollars per Metric Ton,642.25
 2020-03-01,Palm Oil,557.90283704059,U.S. Dollars per Metric Ton,557.9
@@ -1038,6 +1050,8 @@ date,commodity,price_original,unit_original,usd_per_ton
 2026-05-01,Palm Oil,1130.026757355915,U.S. Dollars per Metric Ton,1130.03
 2026-06-01,Palm Oil,1108.681095730554,U.S. Dollars per Metric Ton,1108.68
 2026-07-01,Palm Oil,1106.469929089015,U.S. Dollars per Metric Ton,1106.47
+2026-08-01,Palm Oil,1131.585213143737,U.S. Dollars per Metric Ton,1131.59
+2026-09-01,Palm Oil,1133.128854318491,U.S. Dollars per Metric Ton,1133.13
 2020-01-01,Sunflower Oil,1000.215851465217,U.S. Dollars per Metric Ton,1000.22
 2020-02-01,Sunflower Oil,913.6840625,U.S. Dollars per Metric Ton,913.68
 2020-03-01,Sunflower Oil,846.996875,U.S. Dollars per Metric Ton,847.0
@@ -1117,6 +1131,8 @@ date,commodity,price_original,unit_original,usd_per_ton
 2026-05-01,Sunflower Oil,1807.540079285714,U.S. Dollars per Metric Ton,1807.54
 2026-06-01,Sunflower Oil,1805.889583363636,U.S. Dollars per Metric Ton,1805.89
 2026-07-01,Sunflower Oil,1786.892210086957,U.S. Dollars per Metric Ton,1786.89
+2026-08-01,Sunflower Oil,1794.674008,U.S. Dollars per Metric Ton,1794.67
+2026-09-01,Sunflower Oil,1676.527083272727,U.S. Dollars per Metric Ton,1676.53
 2020-01-01,Rapeseed Oil,945.0,U.S. Dollars per Metric Ton,945.0
 2020-02-01,Rapeseed Oil,902.0,U.S. Dollars per Metric Ton,902.0
 2020-03-01,Rapeseed Oil,797.0,U.S. Dollars per Metric Ton,797.0
@@ -1277,6 +1293,8 @@ date,commodity,price_original,unit_original,usd_per_ton
 2026-05-01,Olive Oil,6195.911363571429,U.S. Dollars per Metric Ton,6195.91
 2026-06-01,Olive Oil,6153.5823425,U.S. Dollars per Metric Ton,6153.58
 2026-07-01,Olive Oil,6185.217099456522,U.S. Dollars per Metric Ton,6185.22
+2026-08-01,Olive Oil,6261.785875714286,U.S. Dollars per Metric Ton,6261.79
+2026-09-01,Olive Oil,6205.01161125,U.S. Dollars per Metric Ton,6205.01
 2020-01-01,Groundnuts,1884.615256826087,U.S. Dollars per Metric Ton,1884.62
 2020-02-01,Groundnuts,1927.676573,U.S. Dollars per Metric Ton,1927.68
 2020-03-01,Groundnuts,1910.10832,U.S. Dollars per Metric Ton,1910.11
@@ -1356,6 +1374,8 @@ date,commodity,price_original,unit_original,usd_per_ton
 2026-05-01,Groundnuts,2491.67195,U.S. Dollars per Metric Ton,2491.67
 2026-06-01,Groundnuts,2513.17195,U.S. Dollars per Metric Ton,2513.17
 2026-07-01,Groundnuts,2523.67195,U.S. Dollars per Metric Ton,2523.67
+2026-08-01,Groundnuts,2523.67195,U.S. Dollars per Metric Ton,2523.67
+2026-09-01,Groundnuts,2523.67195,U.S. Dollars per Metric Ton,2523.67
 2020-01-01,Beef,5.04,U.S. Dollars per Kilogram,5040.0
 2020-02-01,Beef,4.72,U.S. Dollars per Kilogram,4720.0
 2020-03-01,Beef,4.47,U.S. Dollars per Kilogram,4470.0
@@ -1516,6 +1536,8 @@ date,commodity,price_original,unit_original,usd_per_ton
 2026-05-01,Lamb,169.3264312744141,U.S. Cents per Pound,3732.97
 2026-06-01,Lamb,168.6977566805753,U.S. Cents per Pound,3719.11
 2026-07-01,Lamb,170.2056314219599,U.S. Cents per Pound,3752.35
+2026-08-01,Lamb,168.1244724818638,U.S. Cents per Pound,3706.47
+2026-09-01,Lamb,166.0264192060991,U.S. Cents per Pound,3660.22
 2020-01-01,Poultry,121.7091641633407,U.S. Cents per Pound,2683.2
 2020-02-01,Poultry,108.4255237579346,U.S. Cents per Pound,2390.35
 2020-03-01,Poultry,108.4102443348278,U.S. Cents per Pound,2390.01
@@ -1595,6 +1617,8 @@ date,commodity,price_original,unit_original,usd_per_ton
 2026-05-01,Poultry,167.8010944184803,U.S. Cents per Pound,3699.34
 2026-06-01,Poultry,167.1097238714045,U.S. Cents per Pound,3684.1
 2026-07-01,Poultry,166.2929614523183,U.S. Cents per Pound,3666.09
+2026-08-01,Poultry,164.8704383486793,U.S. Cents per Pound,3634.73
+2026-09-01,Poultry,163.1823029951616,U.S. Cents per Pound,3597.52
 2020-01-01,Fish (Salmon),8.427607391191566,U.S. Dollars per Kilogram,8427.61
 2020-02-01,Fish (Salmon),7.29450798034668,U.S. Dollars per Kilogram,7294.51
 2020-03-01,Fish (Salmon),6.241109631278298,U.S. Dollars per Kilogram,6241.11
@@ -1674,6 +1698,8 @@ date,commodity,price_original,unit_original,usd_per_ton
 2026-05-01,Fish (Salmon),8.564031532832555,U.S. Dollars per Kilogram,8564.03
 2026-06-01,Fish (Salmon),7.497015346180309,U.S. Dollars per Kilogram,7497.02
 2026-07-01,Fish (Salmon),7.135598742443582,U.S. Dollars per Kilogram,7135.6
+2026-08-01,Fish (Salmon),7.806495938982282,U.S. Dollars per Kilogram,7806.5
+2026-09-01,Fish (Salmon),7.577719818462025,U.S. Dollars per Kilogram,7577.72
 2020-01-01,Shrimp,8.05955,U.S. Dollars per Kilogram,8059.55
 2020-02-01,Shrimp,7.5080425,U.S. Dollars per Kilogram,7508.04
 2020-03-01,Shrimp,7.502631,U.S. Dollars per Kilogram,7502.63
@@ -1752,7 +1778,9 @@ date,commodity,price_original,unit_original,usd_per_ton
 2026-04-01,Shrimp,7.016045516,U.S. Dollars per Kilogram,7016.05
 2026-05-01,Shrimp,6.930315068,U.S. Dollars per Kilogram,6930.32
 2026-06-01,Shrimp,6.061063853,U.S. Dollars per Kilogram,6061.06
-2026-07-01,Shrimp,6.538102328,U.S. Dollars per Kilogram,6538.1
+2026-07-01,Shrimp,6.533314848,U.S. Dollars per Kilogram,6533.31
+2026-08-01,Shrimp,6.710866913,U.S. Dollars per Kilogram,6710.87
+2026-09-01,Shrimp,6.998634183,U.S. Dollars per Kilogram,6998.63
 2020-01-01,Cotton,1.74,U.S. Dollars per Kilogram,1740.0
 2020-02-01,Cotton,1.69,U.S. Dollars per Kilogram,1690.0
 2020-03-01,Cotton,1.49,U.S. Dollars per Kilogram,1490.0
@@ -1913,6 +1941,8 @@ date,commodity,price_original,unit_original,usd_per_ton
 2026-05-01,Wool (Coarse),1541.58043125,U.S. Cents per Kilogram,15415.8
 2026-06-01,Wool (Coarse),1550.65328,U.S. Cents per Kilogram,15506.53
 2026-07-01,Wool (Coarse),1483.992925,U.S. Cents per Kilogram,14839.93
+2026-08-01,Wool (Coarse),1463.509375,U.S. Cents per Kilogram,14635.09
+2026-09-01,Wool (Coarse),1482.371922222222,U.S. Cents per Kilogram,14823.72
 2020-01-01,Wool (Fine),1255.18035,U.S. Cents per Kilogram,12551.8
 2020-02-01,Wool (Fine),1224.221957142857,U.S. Cents per Kilogram,12242.22
 2020-03-01,Wool (Fine),1066.098422222222,U.S. Cents per Kilogram,10660.98
@@ -1992,6 +2022,8 @@ date,commodity,price_original,unit_original,usd_per_ton
 2026-05-01,Wool (Fine),1685.200911764706,U.S. Cents per Kilogram,16852.01
 2026-06-01,Wool (Fine),1693.5405375,U.S. Cents per Kilogram,16935.41
 2026-07-01,Wool (Fine),1600.7030625,U.S. Cents per Kilogram,16007.03
+2026-08-01,Wool (Fine),1594.6128,U.S. Cents per Kilogram,15946.13
+2026-09-01,Wool (Fine),1630.95442,U.S. Cents per Kilogram,16309.54
 2020-01-01,Hides,38.00582653043478,U.S. Cents per Pound,837.88
 2020-02-01,Hides,39.341606414,U.S. Cents per Pound,867.33
 2020-03-01,Hides,40.33202728136364,U.S. Cents per Pound,889.16
@@ -2071,6 +2103,8 @@ date,commodity,price_original,unit_original,usd_per_ton
 2026-05-01,Hides,57.83830503,U.S. Cents per Pound,1275.1
 2026-06-01,Hides,57.14219909,U.S. Cents per Pound,1259.76
 2026-07-01,Hides,56.69320116,U.S. Cents per Pound,1249.86
+2026-08-01,Hides,58.06965266714286,U.S. Cents per Pound,1280.2
+2026-09-01,Hides,57.65533438,U.S. Cents per Pound,1271.07
 2020-01-01,Rubber,1.68,U.S. Dollars per Kilogram,1680.0
 2020-02-01,Rubber,1.61,U.S. Dollars per Kilogram,1610.0
 2020-03-01,Rubber,1.5,U.S. Dollars per Kilogram,1500.0
