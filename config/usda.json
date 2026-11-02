@@ -1,0 +1,29 @@
+{
+  "seasons": 3,
+  "top_n": 5,
+
+  "commodities": [
+    {"key": "corn", "name_fa": "ذرت", "psd": "Corn", "file": "grains_pulses"},
+    {"key": "rice", "name_fa": "برنج", "psd": "Rice, Milled", "file": "grains_pulses"},
+    {"key": "coffee", "name_fa": "قهوه", "psd": "Coffee, Green", "file": "coffee"},
+    {"key": "soymeal", "name_fa": "کنجاله‌ی سویا", "psd": "Meal, Soybean", "file": "oilseeds"},
+    {"key": "soyoil", "name_fa": "روغن سویا", "psd": "Oil, Soybean", "file": "oilseeds"},
+    {"key": "soybeans", "name_fa": "دانه‌ی سویا", "psd": "Oilseed, Soybean", "file": "oilseeds"},
+    {"key": "wheat", "name_fa": "گندم", "psd": "Wheat", "file": "grains_pulses"},
+    {"key": "barley", "name_fa": "جو", "psd": "Barley", "file": "grains_pulses"},
+    {"key": "palmoil", "name_fa": "روغن پالم", "psd": "Oil, Palm", "file": "oilseeds"},
+    {"key": "sunoil", "name_fa": "روغن آفتابگردان", "psd": "Oil, Sunflowerseed", "file": "oilseeds"}
+  ],
+
+  "country_fa": {
+    "Algeria": "الجزایر", "Argentina": "آرژانتین", "Australia": "استرالیا", "Bangladesh": "بنگلادش", "Bolivia": "بولیوی",
+    "Brazil": "برزیل", "Cambodia": "کامبوج", "Canada": "کانادا", "China": "چین", "Colombia": "کلمبیا", "Egypt": "مصر",
+    "Ethiopia": "اتیوپی", "European Union": "اتحادیه‌ی اروپا", "Guatemala": "گواتمالا", "Honduras": "هندوراس", "India": "هند",
+    "Indonesia": "اندونزی", "Iran": "ایران", "Iraq": "عراق", "Japan": "ژاپن", "Jordan": "اردن", "Kazakhstan": "قزاقستان",
+    "Korea, South": "کره‌ی جنوبی", "Malaysia": "مالزی", "Mexico": "مکزیک", "Morocco": "مراکش", "Myanmar": "میانمار",
+    "Nigeria": "نیجریه", "Pakistan": "پاکستان", "Papua New Guinea": "پاپوآ گینه‌ی نو", "Paraguay": "پاراگوئه", "Peru": "پرو",
+    "Philippines": "فیلیپین", "Russia": "روسیه", "Saudi Arabia": "عربستان", "Switzerland": "سوئیس", "Taiwan": "تایوان",
+    "Thailand": "تایلند", "Turkey": "ترکیه", "Uganda": "اوگاندا", "Ukraine": "اوکراین", "United Arab Emirates": "امارات",
+    "United Kingdom": "بریتانیا", "United States": "آمریکا", "Uruguay": "اروگوئه", "Vietnam": "ویتنام"
+  }
+}

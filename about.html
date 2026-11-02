@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261014c">
+<link rel="stylesheet" href="style.css?v=20261102">
 <style>
   .about td, .about th { white-space: normal; vertical-align: top; text-align: right; }
   .about td.when { white-space: nowrap; }
@@ -24,6 +24,7 @@
       <a href="./">قیمت جهانی</a>
       <a href="iran.html">بازار ایران</a>
       <a href="iran-imports.html">آمار واردات ایران</a>
+      <a href="supply-demand.html">عرضه و تقاضا</a>
       <a href="about.html" aria-current="page">درباره‌ی داده‌ها</a>
     </nav>
     <h1>درباره‌ی داده‌ها</h1>
@@ -75,6 +76,11 @@
             <td class="when">دستی</td>
             <td>تاریخ‌های رمضان و محرم تا خرداد 1407 وارد شده و باید سالانه تمدید شود<small>فایل: config/iran_demand.json</small></td>
             <td>—</td></tr>
+          <tr><td>عرضه و تقاضای جهانی و ایران (10 کالا)</td><td>عرضه و تقاضا</td>
+            <td>وزارت کشاورزی آمریکا (USDA FAS، پایگاه PSD)</td>
+            <td class="when">روز 15 هر ماه، 12:30</td>
+            <td>3 فصل تجاری؛ فصل آخر پیش‌بینی خود USDA است. USDA هر ماه بعد از گزارش WASDE به‌روز می‌کند (قهوه دو بار در سال). کاکائو را ندارد</td>
+            <td class="fresh" data-file="data/usda.json"></td></tr>
           <tr><td>آمار گمرک ایران</td><td>آمار واردات ایران</td>
             <td>گمرک ایران، از سامانه‌ی آمار اتاق بازرگانی تهران</td>
             <td class="when">روز 3 هر ماه، 11:30</td>
@@ -106,7 +112,7 @@
     <h2>نکته‌های مهم</h2>
     <ul>
       <li>قیمت‌ها <b>مرجع جهانی</b> هستند و با قیمت فیزیکی تأمین‌کننده (بسته به مبدأ، گرید و شرط تحویل) فرق دارند.</li>
-      <li>این سایت <b>خودش پیش‌بینی نمی‌کند</b>؛ پیش‌بینی‌های نمایش‌داده‌شده از <b>بانک جهانی</b> و با ذکر منبع است. هیچ بخشی <b>توصیه‌ی خرید</b> نیست.</li>
+      <li>این سایت <b>خودش پیش‌بینی نمی‌کند</b>؛ پیش‌بینی‌های نمایش‌داده‌شده از <b>بانک جهانی</b> و <b>USDA</b> و با ذکر منبع است. هیچ بخشی <b>توصیه‌ی خرید</b> نیست.</li>
       <li>این سایت <b>عمومی</b> است و فقط از داده‌های عمومی ساخته شده؛ هیچ اطلاعات داخلی شرکت در آن نیست.</li>
       <li>در آمار گمرک، «کشور» کشور <b>طرف معامله</b> است، نه لزوماً کشور تولیدکننده.</li>
     </ul>

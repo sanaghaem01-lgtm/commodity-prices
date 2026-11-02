@@ -202,3 +202,9 @@ h3.chart-title { font-size: 1rem; margin: 20px 0 6px; }
 .alerts p.meta { margin: 8px 0 0; font-size: 0.8rem; }
 .forecast { margin-top: 10px; padding-top: 8px; border-top: 1px dashed var(--grid); font-size: 0.8rem; color: var(--ink-2); }
 .card .src { color: var(--muted); }
+
+/* جدول صفحه‌ی عرضه و تقاضا */
+table.sd th, table.sd td { padding: 6px 8px; text-align: right; white-space: nowrap; }
+table.sd td:first-child { white-space: normal; min-width: 5.5rem; }
+table.sd th small { display: block; font-weight: 400; font-size: 0.72rem; color: var(--muted); }
+table.sd td:nth-last-child(2) { font-weight: 700; }

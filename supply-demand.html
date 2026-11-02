@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>عرضه و تقاضا</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=20261102">
+<script src="iran-common.js?v=20261102"></script>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <nav class="nav" aria-label="صفحه‌ها">
+      <a href="./">قیمت جهانی</a>
+      <a href="iran.html">بازار ایران</a>
+      <a href="iran-imports.html">آمار واردات ایران</a>
+      <a href="supply-demand.html" aria-current="page">عرضه و تقاضا</a>
+      <a href="about.html">درباره‌ی داده‌ها</a>
+    </nav>
+    <h1>عرضه و تقاضا</h1>
+    <p class="meta">دنیا چقدر تولید و مصرف می‌کند، چه کسی می‌فروشد و می‌خرد، و سهم ایران چقدر است. منبع: وزارت کشاورزی آمریکا (USDA).</p>
+  </header>
+
+  <div class="seg page-pick" id="pick" role="group" aria-label="انتخاب کالا"></div>
+  <p class="error" id="load-error" hidden></p>
+
+  <section class="panel" style="margin-top:12px">
+    <h2>بازار جهانی <span class="meta">(میلیون تن)</span></h2>
+    <p class="meta" id="version"></p>
+    <div class="table-scroll" id="world"></div>
+    <p class="meta" style="margin-top:8px">هر چه «نسبت ذخایر به مصرف» کمتر باشد، بازار تنگ‌تر است. این نسبت فقط توصیف وضعیت است. «تغییر» یعنی فصل آخر نسبت به فصل قبل.</p>
+  </section>
+
+  <section class="panel">
+    <h2>صادرکنندگان و واردکنندگان اصلی <span class="meta" id="rank-season"></span></h2>
+    <div class="breakdown" id="ranks"></div>
+    <p id="iran-rank" style="margin-bottom:0"></p>
+  </section>
+
+  <section class="panel">
+    <h2>ایران <span class="meta">(هزار تن)</span></h2>
+    <div class="table-scroll" id="iran"></div>
+    <p class="meta" style="margin-top:8px">«وابستگی به واردات» یعنی واردات تقسیم بر مصرف. این‌ها برآورد USDA است و با آمار گمرک ایران فرق دارد: «فصل» USDA فصل تجاری است و سال گمرک سال شمسی.
+      آمار گمرک در صفحه‌ی <a href="iran-imports.html">آمار واردات ایران</a> است.</p>
+  </section>
+
+  <div class="caveat" style="margin-bottom:20px">
+    <b>توجه:</b> ستون «پیش‌بینی» از خود USDA است، نه این سایت، و هر ماه ممکن است عوض شود. «فصل» هر کالا و کشور ماه‌های متفاوتی دارد.
+    این صفحه توصیه‌ی خرید نیست.
+  </div>
+
+  <footer>
+    منبع: <a href="https://apps.fas.usda.gov/psdonline/app/index.html" target="_blank" rel="noopener">USDA FAS — پایگاه PSD</a>؛ هر ماه بعد از گزارش WASDE به‌روز می‌شود.
+    · کاکائو در این پایگاه نیست؛ برای آن <a href="https://www.icco.org/" target="_blank" rel="noopener">گزارش‌های فصلی سازمان بین‌المللی کاکائو (ICCO)</a> را ببینید.
+  </footer>
+</div>
+
+<script>
+const seasonLabel = (s) => `${s}/${String((s + 1) % 100).padStart(2, "0")}`;
+const qty = (kt) => (kt >= 10000 ? `${num(fmt(kt / 1000, 1))} میلیون تن` : `${num(fmt(kt))} هزار تن`);
+const million = (kt) => num(fmt(kt / 1000, 1));
+const thousand = (kt) => num(fmt(kt));
+const pctChange = (now, prev) => (prev ? ((now - prev) / prev) * 100 : null);
+const arrow = (p) => (p == null ? "—" : `${p > 0 ? "▲" : p < 0 ? "▼" : "■"} ${num(fmt(Math.abs(p), 1) + "%")}`);
+
+function table(c, rows) {
+  const heads = c.seasons.map((s, i) => {
+    const tag = i === c.seasons.length - 1 ? "پیش‌بینی" : i === c.seasons.length - 2 ? "برآورد" : "";
+    return `<th>${num(seasonLabel(s))}${tag ? `<small>${tag}</small>` : ""}</th>`;
+  }).join("");
+  return `<table class="sd"><thead><tr><th></th>${heads}<th>تغییر</th></tr></thead><tbody>${rows.map((r) => {
+    const vals = c.seasons.map((s) => r.get(String(s)));
+    const [prev, now] = vals.slice(-2);
+    return `<tr><td>${r.label}</td>${vals.map((v) => `<td>${v == null ? "—" : r.show(v)}</td>`).join("")}
+      <td>${now == null || prev == null ? "—" : r.diff ? r.diff(now, prev) : arrow(pctChange(now, prev))}</td></tr>`;
+  }).join("")}</tbody></table>`;
+}
+
+function ranks(title, list, total) {
+  return `<div><h3>${title}</h3><ul class="bars">${list.map((x) => `<li><span class="name">${esc(x.country)}</span>
+    <span class="track"><span class="fill" style="display:block;width:${x.share.toFixed(1)}%"></span></span>
+    <span class="val">${num(fmt(x.share, 1) + "%")} از کل دنیا · ${qty(x.kt)}</span></li>`).join("")}</ul></div>`;
+}
+
+const ratio = (a, b) => (a != null && b ? (a / b) * 100 : null);
+const pointDiff = (now, prev) => `${now > prev ? "▲" : now < prev ? "▼" : "■"} ${num(fmt(Math.abs(now - prev), 1))} واحد`;
+
+function render(c) {
+  const last = String(c.seasons[c.seasons.length - 1]);
+  document.getElementById("version").innerHTML =
+    `نسخه‌ی USDA: ${monthLabel(c.release)} · فصل آخر، ${seasonLabel(+last)}، پیش‌بینی خود USDA است.`;
+  const w = (k) => (s) => c.world[s]?.[k];
+  document.getElementById("world").innerHTML = table(c, [
+    { label: "تولید", get: w("production"), show: million },
+    { label: "مصرف", get: w("consumption"), show: million },
+    { label: "صادرات", get: w("exports"), show: million },
+    { label: "ذخایر پایان فصل", get: w("stocks"), show: million },
+    { label: "نسبت ذخایر به مصرف", get: (s) => ratio(c.world[s]?.stocks, c.world[s]?.consumption),
+      show: (v) => num(fmt(v, 1) + "%"), diff: pointDiff },
+  ]);
+
+  document.getElementById("rank-season").textContent = `(فصل ${seasonLabel(+last)})`;
+  document.getElementById("ranks").innerHTML =
+    ranks("صادرکنندگان", c.top_exporters) + ranks("واردکنندگان", c.top_importers);
+  const ir = c.iran[last];
+  document.getElementById("iran-rank").innerHTML = c.iran_import_rank && ir?.imports
+    ? `ایران با ${qty(ir.imports)} واردات، <b>رتبه‌ی ${num(c.iran_import_rank)}</b> در میان واردکنندگان دنیاست.`
+    : `USDA برای این کالا واردات قابل‌توجهی برای ایران ثبت نکرده است.`;
+
+  const i = (k) => (s) => c.iran[s]?.[k];
+  document.getElementById("iran").innerHTML = Object.keys(c.iran).length ? table(c, [
+    { label: "تولید داخلی", get: i("production"), show: thousand },
+    { label: "واردات", get: i("imports"), show: thousand },
+    { label: "مصرف", get: i("consumption"), show: thousand },
+    { label: "ذخایر پایان فصل", get: i("stocks"), show: thousand },
+    { label: "وابستگی به واردات", get: (s) => ratio(c.iran[s]?.imports, c.iran[s]?.consumption),
+      show: (v) => num(fmt(v, 0) + "%"), diff: pointDiff },
+  ]) : `<p class="soon">USDA برای ایران در این کالا داده‌ای ندارد.</p>`;
+}
+
+async function init() {
+  try {
+    const data = await getJson("data/usda.json");
+    setupPicker(data.commodities, render);
+  } catch (e) {
+    const el = document.getElementById("load-error");
+    el.textContent = `داده بارگذاری نشد (${e.message}).`;
+    el.hidden = false;
+  }
+}
+// منتظر فونت بمان، ولی حداکثر ۱.۵ ثانیه؛ اگر فونت گوگل کند یا مسدود باشد، صفحه نباید گیر کند
+Promise.race([document.fonts?.ready, new Promise((r) => setTimeout(r, 1500))]).then(init);
+</script>
+</body>
+</html>

@@ -1,0 +1,1116 @@
+{
+ "source": "USDA FAS — Production, Supply and Distribution (PSD)",
+ "commodities": [
+  {
+   "key": "corn",
+   "name_fa": "ذرت",
+   "release": "2026-10",
+   "seasons": [
+    2024,
+    2025,
+    2026
+   ],
+   "world": {
+    "2024": {
+     "production": 1234983.0,
+     "consumption": 1252134.0,
+     "exports": 187583.0,
+     "imports": 186553.0,
+     "stocks": 295641.0
+    },
+    "2025": {
+     "production": 1330621.0,
+     "consumption": 1301525.0,
+     "exports": 215957.0,
+     "imports": 198382.0,
+     "stocks": 307162.0
+    },
+    "2026": {
+     "production": 1293750.0,
+     "consumption": 1313129.0,
+     "exports": 210719.0,
+     "imports": 203376.0,
+     "stocks": 280440.0
+    }
+   },
+   "iran": {
+    "2024": {
+     "consumption": 11250.0,
+     "stocks": 1306.0,
+     "exports": 0.0,
+     "imports": 9800.0,
+     "production": 1400.0
+    },
+    "2025": {
+     "consumption": 9850.0,
+     "stocks": 1356.0,
+     "exports": 0.0,
+     "imports": 8500.0,
+     "production": 1400.0
+    },
+    "2026": {
+     "consumption": 9850.0,
+     "stocks": 1406.0,
+     "exports": 0.0,
+     "imports": 8500.0,
+     "production": 1400.0
+    }
+   },
+   "iran_import_rank": 8,
+   "top_exporters": [
+    {
+     "country": "آمریکا",
+     "kt": 83824.0,
+     "share": 39.8
+    },
+    {
+     "country": "برزیل",
+     "kt": 43000.0,
+     "share": 20.4
+    },
+    {
+     "country": "آرژانتین",
+     "kt": 38000.0,
+     "share": 18.0
+    },
+    {
+     "country": "اوکراین",
+     "kt": 22000.0,
+     "share": 10.4
+    },
+    {
+     "country": "روسیه",
+     "kt": 3700.0,
+     "share": 1.8
+    }
+   ],
+   "top_importers": [
+    {
+     "country": "مکزیک",
+     "kt": 27200.0,
+     "share": 13.4
+    },
+    {
+     "country": "اتحادیه‌ی اروپا",
+     "kt": 23500.0,
+     "share": 11.6
+    },
+    {
+     "country": "ژاپن",
+     "kt": 15500.0,
+     "share": 7.6
+    },
+    {
+     "country": "ویتنام",
+     "kt": 14600.0,
+     "share": 7.2
+    },
+    {
+     "country": "مصر",
+     "kt": 13500.0,
+     "share": 6.6
+    }
+   ]
+  },
+  {
+   "key": "rice",
+   "name_fa": "برنج",
+   "release": "2026-10",
+   "seasons": [
+    2024,
+    2025,
+    2026
+   ],
+   "world": {
+    "2024": {
+     "production": 542157.0,
+     "consumption": 527517.0,
+     "exports": 61431.0,
+     "imports": 58009.0,
+     "stocks": 191628.0
+    },
+    "2025": {
+     "production": 545653.0,
+     "consumption": 530474.0,
+     "exports": 58533.0,
+     "imports": 55943.0,
+     "stocks": 204217.0
+    },
+    "2026": {
+     "production": 533083.0,
+     "consumption": 536200.0,
+     "exports": 61347.0,
+     "imports": 58745.0,
+     "stocks": 198498.0
+    }
+   },
+   "iran": {
+    "2024": {
+     "consumption": 3100.0,
+     "stocks": 830.0,
+     "exports": 0.0,
+     "imports": 1702.0,
+     "production": 2000.0
+    },
+    "2025": {
+     "consumption": 3050.0,
+     "stocks": 580.0,
+     "exports": 0.0,
+     "imports": 800.0,
+     "production": 2000.0
+    },
+    "2026": {
+     "consumption": 3050.0,
+     "stocks": 430.0,
+     "exports": 0.0,
+     "imports": 900.0,
+     "production": 2000.0
+    }
+   },
+   "iran_import_rank": 19,
+   "top_exporters": [
+    {
+     "country": "هند",
+     "kt": 24000.0,
+     "share": 39.1
+    },
+    {
+     "country": "ویتنام",
+     "kt": 8100.0,
+     "share": 13.2
+    },
+    {
+     "country": "تایلند",
+     "kt": 7500.0,
+     "share": 12.2
+    },
+    {
+     "country": "پاکستان",
+     "kt": 4800.0,
+     "share": 7.8
+    },
+    {
+     "country": "کامبوج",
+     "kt": 3600.0,
+     "share": 5.9
+    }
+   ],
+   "top_importers": [
+    {
+     "country": "فیلیپین",
+     "kt": 5600.0,
+     "share": 9.5
+    },
+    {
+     "country": "ویتنام",
+     "kt": 3600.0,
+     "share": 6.1
+    },
+    {
+     "country": "چین",
+     "kt": 3500.0,
+     "share": 6.0
+    },
+    {
+     "country": "نیجریه",
+     "kt": 2900.0,
+     "share": 4.9
+    },
+    {
+     "country": "اتحادیه‌ی اروپا",
+     "kt": 2350.0,
+     "share": 4.0
+    }
+   ]
+  },
+  {
+   "key": "coffee",
+   "name_fa": "قهوه",
+   "release": "2026-07",
+   "seasons": [
+    2024,
+    2025,
+    2026
+   ],
+   "world": {
+    "2024": {
+     "production": 10609.0,
+     "consumption": 10305.7,
+     "exports": 8864.8,
+     "imports": 8494.8,
+     "stocks": 1320.6
+    },
+    "2025": {
+     "production": 10729.8,
+     "consumption": 10407.5,
+     "exports": 8756.5,
+     "imports": 8575.9,
+     "stocks": 1462.2
+    },
+    "2026": {
+     "production": 11380.0,
+     "consumption": 10784.2,
+     "exports": 9532.4,
+     "imports": 9051.4,
+     "stocks": 1577.0
+    }
+   },
+   "iran": {
+    "2024": {
+     "consumption": 51.3,
+     "stocks": 0.0,
+     "exports": 0.0,
+     "imports": 51.3,
+     "production": 0.0
+    },
+    "2025": {
+     "consumption": 42.0,
+     "stocks": 0.0,
+     "exports": 0.0,
+     "imports": 42.0,
+     "production": 0.0
+    },
+    "2026": {
+     "consumption": 46.5,
+     "stocks": 0.0,
+     "exports": 0.0,
+     "imports": 46.5,
+     "production": 0.0
+    }
+   },
+   "iran_import_rank": 30,
+   "top_exporters": [
+    {
+     "country": "برزیل",
+     "kt": 2944.2,
+     "share": 30.9
+    },
+    {
+     "country": "ویتنام",
+     "kt": 1737.0,
+     "share": 18.2
+    },
+    {
+     "country": "کلمبیا",
+     "kt": 804.0,
+     "share": 8.4
+    },
+    {
+     "country": "اندونزی",
+     "kt": 483.0,
+     "share": 5.1
+    },
+    {
+     "country": "اتیوپی",
+     "kt": 427.8,
+     "share": 4.5
+    }
+   ],
+   "top_importers": [
+    {
+     "country": "اتحادیه‌ی اروپا",
+     "kt": 3000.0,
+     "share": 33.1
+    },
+    {
+     "country": "آمریکا",
+     "kt": 1614.0,
+     "share": 17.8
+    },
+    {
+     "country": "ژاپن",
+     "kt": 420.0,
+     "share": 4.6
+    },
+    {
+     "country": "فیلیپین",
+     "kt": 375.0,
+     "share": 4.1
+    },
+    {
+     "country": "چین",
+     "kt": 363.0,
+     "share": 4.0
+    }
+   ]
+  },
+  {
+   "key": "soymeal",
+   "name_fa": "کنجاله‌ی سویا",
+   "release": "2026-10",
+   "seasons": [
+    2024,
+    2025,
+    2026
+   ],
+   "world": {
+    "2024": {
+     "production": 281754.0,
+     "consumption": 272841.0,
+     "exports": 82888.0,
+     "imports": 77733.0,
+     "stocks": 18063.0
+    },
+    "2025": {
+     "production": 293939.0,
+     "consumption": 288052.0,
+     "exports": 86978.0,
+     "imports": 82280.0,
+     "stocks": 19252.0
+    },
+    "2026": {
+     "production": 302404.0,
+     "consumption": 297805.0,
+     "exports": 90053.0,
+     "imports": 86090.0,
+     "stocks": 19888.0
+    }
+   },
+   "iran": {
+    "2024": {
+     "consumption": 5100.0,
+     "stocks": 543.0,
+     "exports": 0.0,
+     "imports": 2805.0,
+     "production": 2252.0
+    },
+    "2025": {
+     "consumption": 4700.0,
+     "stocks": 418.0,
+     "exports": 0.0,
+     "imports": 2600.0,
+     "production": 1975.0
+    },
+    "2026": {
+     "consumption": 4450.0,
+     "stocks": 306.0,
+     "exports": 0.0,
+     "imports": 2600.0,
+     "production": 1738.0
+    }
+   },
+   "iran_import_rank": 7,
+   "top_exporters": [
+    {
+     "country": "آرژانتین",
+     "kt": 30000.0,
+     "share": 33.3
+    },
+    {
+     "country": "برزیل",
+     "kt": 27100.0,
+     "share": 30.1
+    },
+    {
+     "country": "آمریکا",
+     "kt": 20593.0,
+     "share": 22.9
+    },
+    {
+     "country": "بولیوی",
+     "kt": 2025.0,
+     "share": 2.2
+    },
+    {
+     "country": "پاراگوئه",
+     "kt": 2000.0,
+     "share": 2.2
+    }
+   ],
+   "top_importers": [
+    {
+     "country": "اتحادیه‌ی اروپا",
+     "kt": 20400.0,
+     "share": 23.7
+    },
+    {
+     "country": "اندونزی",
+     "kt": 6900.0,
+     "share": 8.0
+    },
+    {
+     "country": "ویتنام",
+     "kt": 6500.0,
+     "share": 7.6
+    },
+    {
+     "country": "فیلیپین",
+     "kt": 3850.0,
+     "share": 4.5
+    },
+    {
+     "country": "تایلند",
+     "kt": 3400.0,
+     "share": 3.9
+    }
+   ]
+  },
+  {
+   "key": "soyoil",
+   "name_fa": "روغن سویا",
+   "release": "2026-10",
+   "seasons": [
+    2024,
+    2025,
+    2026
+   ],
+   "world": {
+    "2024": {
+     "production": 70065.0,
+     "consumption": 68238.0,
+     "exports": 15258.0,
+     "imports": 14184.0,
+     "stocks": 6466.0
+    },
+    "2025": {
+     "production": 73600.0,
+     "consumption": 71975.0,
+     "exports": 15495.0,
+     "imports": 13819.0,
+     "stocks": 6415.0
+    },
+    "2026": {
+     "production": 75241.0,
+     "consumption": 73483.0,
+     "exports": 14949.0,
+     "imports": 13630.0,
+     "stocks": 6854.0
+    }
+   },
+   "iran": {
+    "2024": {
+     "consumption": 525.0,
+     "stocks": 127.0,
+     "exports": 0.0,
+     "imports": 26.0,
+     "production": 522.0
+    },
+    "2025": {
+     "consumption": 650.0,
+     "stocks": 85.0,
+     "exports": 0.0,
+     "imports": 150.0,
+     "production": 458.0
+    },
+    "2026": {
+     "consumption": 585.0,
+     "stocks": 53.0,
+     "exports": 0.0,
+     "imports": 150.0,
+     "production": 403.0
+    }
+   },
+   "iran_import_rank": 19,
+   "top_exporters": [
+    {
+     "country": "آرژانتین",
+     "kt": 6750.0,
+     "share": 45.2
+    },
+    {
+     "country": "برزیل",
+     "kt": 1700.0,
+     "share": 11.4
+    },
+    {
+     "country": "چین",
+     "kt": 1000.0,
+     "share": 6.7
+    },
+    {
+     "country": "اتحادیه‌ی اروپا",
+     "kt": 800.0,
+     "share": 5.4
+    },
+    {
+     "country": "روسیه",
+     "kt": 700.0,
+     "share": 4.7
+    }
+   ],
+   "top_importers": [
+    {
+     "country": "هند",
+     "kt": 5000.0,
+     "share": 36.7
+    },
+    {
+     "country": "بنگلادش",
+     "kt": 800.0,
+     "share": 5.9
+    },
+    {
+     "country": "اتحادیه‌ی اروپا",
+     "kt": 650.0,
+     "share": 4.8
+    },
+    {
+     "country": "مراکش",
+     "kt": 650.0,
+     "share": 4.8
+    },
+    {
+     "country": "پرو",
+     "kt": 600.0,
+     "share": 4.4
+    }
+   ]
+  },
+  {
+   "key": "soybeans",
+   "name_fa": "دانه‌ی سویا",
+   "release": "2026-10",
+   "seasons": [
+    2024,
+    2025,
+    2026
+   ],
+   "world": {
+    "2024": {
+     "production": 428112.0,
+     "consumption": 412058.0,
+     "exports": 184330.0,
+     "imports": 179145.0,
+     "stocks": 125965.0
+    },
+    "2025": {
+     "production": 429185.0,
+     "consumption": 432327.0,
+     "exports": 186423.0,
+     "imports": 188527.0,
+     "stocks": 124927.0
+    },
+    "2026": {
+     "production": 442700.0,
+     "consumption": 442177.0,
+     "exports": 191995.0,
+     "imports": 190823.0,
+     "stocks": 124278.0
+    }
+   },
+   "iran": {
+    "2024": {
+     "consumption": 2855.0,
+     "stocks": 438.0,
+     "exports": 0.0,
+     "imports": 2693.0,
+     "production": 170.0
+    },
+    "2025": {
+     "consumption": 2505.0,
+     "stocks": 253.0,
+     "exports": 0.0,
+     "imports": 2150.0,
+     "production": 170.0
+    },
+    "2026": {
+     "consumption": 2205.0,
+     "stocks": 218.0,
+     "exports": 0.0,
+     "imports": 2000.0,
+     "production": 170.0
+    }
+   },
+   "iran_import_rank": 15,
+   "top_exporters": [
+    {
+     "country": "برزیل",
+     "kt": 118000.0,
+     "share": 61.5
+    },
+    {
+     "country": "آمریکا",
+     "kt": 46130.0,
+     "share": 24.0
+    },
+    {
+     "country": "پاراگوئه",
+     "kt": 7350.0,
+     "share": 3.8
+    },
+    {
+     "country": "آرژانتین",
+     "kt": 6450.0,
+     "share": 3.4
+    },
+    {
+     "country": "کانادا",
+     "kt": 5700.0,
+     "share": 3.0
+    }
+   ],
+   "top_importers": [
+    {
+     "country": "چین",
+     "kt": 115000.0,
+     "share": 60.3
+    },
+    {
+     "country": "اتحادیه‌ی اروپا",
+     "kt": 13700.0,
+     "share": 7.2
+    },
+    {
+     "country": "مکزیک",
+     "kt": 6750.0,
+     "share": 3.5
+    },
+    {
+     "country": "آرژانتین",
+     "kt": 6500.0,
+     "share": 3.4
+    },
+    {
+     "country": "مصر",
+     "kt": 5000.0,
+     "share": 2.6
+    }
+   ]
+  },
+  {
+   "key": "wheat",
+   "name_fa": "گندم",
+   "release": "2026-10",
+   "seasons": [
+    2024,
+    2025,
+    2026
+   ],
+   "world": {
+    "2024": {
+     "production": 799059.0,
+     "consumption": 799303.0,
+     "exports": 210878.0,
+     "imports": 201753.0,
+     "stocks": 260395.0
+    },
+    "2025": {
+     "production": 844057.0,
+     "consumption": 817563.0,
+     "exports": 226911.0,
+     "imports": 221572.0,
+     "stocks": 281550.0
+    },
+    "2026": {
+     "production": 822390.0,
+     "consumption": 823729.0,
+     "exports": 208968.0,
+     "imports": 204795.0,
+     "stocks": 276038.0
+    }
+   },
+   "iran": {
+    "2024": {
+     "consumption": 16900.0,
+     "stocks": 3336.0,
+     "exports": 250.0,
+     "imports": 900.0,
+     "production": 16000.0
+    },
+    "2025": {
+     "consumption": 16950.0,
+     "stocks": 2486.0,
+     "exports": 200.0,
+     "imports": 2800.0,
+     "production": 13500.0
+    },
+    "2026": {
+     "consumption": 17050.0,
+     "stocks": 3236.0,
+     "exports": 200.0,
+     "imports": 2000.0,
+     "production": 16000.0
+    }
+   },
+   "iran_import_rank": 31,
+   "top_exporters": [
+    {
+     "country": "روسیه",
+     "kt": 40000.0,
+     "share": 19.1
+    },
+    {
+     "country": "اتحادیه‌ی اروپا",
+     "kt": 31000.0,
+     "share": 14.8
+    },
+    {
+     "country": "کانادا",
+     "kt": 30500.0,
+     "share": 14.6
+    },
+    {
+     "country": "استرالیا",
+     "kt": 23500.0,
+     "share": 11.2
+    },
+    {
+     "country": "آمریکا",
+     "kt": 20412.0,
+     "share": 9.8
+    }
+   ],
+   "top_importers": [
+    {
+     "country": "اندونزی",
+     "kt": 12500.0,
+     "share": 6.1
+    },
+    {
+     "country": "مصر",
+     "kt": 11500.0,
+     "share": 5.6
+    },
+    {
+     "country": "الجزایر",
+     "kt": 8300.0,
+     "share": 4.1
+    },
+    {
+     "country": "برزیل",
+     "kt": 7500.0,
+     "share": 3.7
+    },
+    {
+     "country": "فیلیپین",
+     "kt": 7100.0,
+     "share": 3.5
+    }
+   ]
+  },
+  {
+   "key": "barley",
+   "name_fa": "جو",
+   "release": "2026-10",
+   "seasons": [
+    2024,
+    2025,
+    2026
+   ],
+   "world": {
+    "2024": {
+     "production": 143422.0,
+     "consumption": 145761.0,
+     "exports": 30320.0,
+     "imports": 29308.0,
+     "stocks": 18321.0
+    },
+    "2025": {
+     "production": 154419.0,
+     "consumption": 150604.0,
+     "exports": 37067.0,
+     "imports": 35576.0,
+     "stocks": 20645.0
+    },
+    "2026": {
+     "production": 160088.0,
+     "consumption": 156533.0,
+     "exports": 31442.0,
+     "imports": 30707.0,
+     "stocks": 23465.0
+    }
+   },
+   "iran": {
+    "2024": {
+     "consumption": 5300.0,
+     "stocks": 482.0,
+     "exports": 0.0,
+     "imports": 2300.0,
+     "production": 3100.0
+    },
+    "2025": {
+     "consumption": 5800.0,
+     "stocks": 682.0,
+     "exports": 0.0,
+     "imports": 3000.0,
+     "production": 3000.0
+    },
+    "2026": {
+     "consumption": 5800.0,
+     "stocks": 682.0,
+     "exports": 0.0,
+     "imports": 2300.0,
+     "production": 3500.0
+    }
+   },
+   "iran_import_rank": 3,
+   "top_exporters": [
+    {
+     "country": "استرالیا",
+     "kt": 10000.0,
+     "share": 31.8
+    },
+    {
+     "country": "اتحادیه‌ی اروپا",
+     "kt": 7200.0,
+     "share": 22.9
+    },
+    {
+     "country": "آرژانتین",
+     "kt": 3400.0,
+     "share": 10.8
+    },
+    {
+     "country": "کانادا",
+     "kt": 3300.0,
+     "share": 10.5
+    },
+    {
+     "country": "روسیه",
+     "kt": 3200.0,
+     "share": 10.2
+    }
+   ],
+   "top_importers": [
+    {
+     "country": "چین",
+     "kt": 13000.0,
+     "share": 42.3
+    },
+    {
+     "country": "عربستان",
+     "kt": 4600.0,
+     "share": 15.0
+    },
+    {
+     "country": "ایران",
+     "kt": 2300.0,
+     "share": 7.5
+    },
+    {
+     "country": "ژاپن",
+     "kt": 1150.0,
+     "share": 3.7
+    },
+    {
+     "country": "اردن",
+     "kt": 950.0,
+     "share": 3.1
+    }
+   ]
+  },
+  {
+   "key": "palmoil",
+   "name_fa": "روغن پالم",
+   "release": "2026-10",
+   "seasons": [
+    2024,
+    2025,
+    2026
+   ],
+   "world": {
+    "2024": {
+     "production": 78944.0,
+     "consumption": 76252.0,
+     "exports": 45019.0,
+     "imports": 41385.0,
+     "stocks": 15022.0
+    },
+    "2025": {
+     "production": 81442.0,
+     "consumption": 77248.0,
+     "exports": 45967.0,
+     "imports": 41930.0,
+     "stocks": 15179.0
+    },
+    "2026": {
+     "production": 78921.0,
+     "consumption": 78059.0,
+     "exports": 43747.0,
+     "imports": 41403.0,
+     "stocks": 13697.0
+    }
+   },
+   "iran": {
+    "2024": {
+     "consumption": 520.0,
+     "stocks": 115.0,
+     "exports": 3.0,
+     "imports": 496.0,
+     "production": 0.0
+    },
+    "2025": {
+     "consumption": 450.0,
+     "stocks": 62.0,
+     "exports": 3.0,
+     "imports": 400.0,
+     "production": 0.0
+    },
+    "2026": {
+     "consumption": 400.0,
+     "stocks": 59.0,
+     "exports": 3.0,
+     "imports": 400.0,
+     "production": 0.0
+    }
+   },
+   "iran_import_rank": 26,
+   "top_exporters": [
+    {
+     "country": "اندونزی",
+     "kt": 21600.0,
+     "share": 49.4
+    },
+    {
+     "country": "مالزی",
+     "kt": 16200.0,
+     "share": 37.0
+    },
+    {
+     "country": "تایلند",
+     "kt": 1000.0,
+     "share": 2.3
+    },
+    {
+     "country": "گواتمالا",
+     "kt": 850.0,
+     "share": 1.9
+    },
+    {
+     "country": "پاپوآ گینه‌ی نو",
+     "kt": 850.0,
+     "share": 1.9
+    }
+   ],
+   "top_importers": [
+    {
+     "country": "هند",
+     "kt": 8400.0,
+     "share": 20.3
+    },
+    {
+     "country": "چین",
+     "kt": 3700.0,
+     "share": 8.9
+    },
+    {
+     "country": "پاکستان",
+     "kt": 3500.0,
+     "share": 8.5
+    },
+    {
+     "country": "اتحادیه‌ی اروپا",
+     "kt": 3100.0,
+     "share": 7.5
+    },
+    {
+     "country": "آمریکا",
+     "kt": 1700.0,
+     "share": 4.1
+    }
+   ]
+  },
+  {
+   "key": "sunoil",
+   "name_fa": "روغن آفتابگردان",
+   "release": "2026-10",
+   "seasons": [
+    2024,
+    2025,
+    2026
+   ],
+   "world": {
+    "2024": {
+     "production": 20414.0,
+     "consumption": 19102.0,
+     "exports": 13662.0,
+     "imports": 12006.0,
+     "stocks": 2547.0
+    },
+    "2025": {
+     "production": 21107.0,
+     "consumption": 19040.0,
+     "exports": 13589.0,
+     "imports": 11364.0,
+     "stocks": 2389.0
+    },
+    "2026": {
+     "production": 23894.0,
+     "consumption": 21898.0,
+     "exports": 15968.0,
+     "imports": 14468.0,
+     "stocks": 2885.0
+    }
+   },
+   "iran": {
+    "2024": {
+     "consumption": 1050.0,
+     "stocks": 307.0,
+     "exports": 0.0,
+     "imports": 1150.0,
+     "production": 25.0
+    },
+    "2025": {
+     "consumption": 860.0,
+     "stocks": 174.0,
+     "exports": 0.0,
+     "imports": 700.0,
+     "production": 27.0
+    },
+    "2026": {
+     "consumption": 975.0,
+     "stocks": 176.0,
+     "exports": 0.0,
+     "imports": 950.0,
+     "production": 27.0
+    }
+   },
+   "iran_import_rank": 5,
+   "top_exporters": [
+    {
+     "country": "روسیه",
+     "kt": 5100.0,
+     "share": 31.9
+    },
+    {
+     "country": "اوکراین",
+     "kt": 5000.0,
+     "share": 31.3
+    },
+    {
+     "country": "آرژانتین",
+     "kt": 2050.0,
+     "share": 12.8
+    },
+    {
+     "country": "ترکیه",
+     "kt": 1100.0,
+     "share": 6.9
+    },
+    {
+     "country": "قزاقستان",
+     "kt": 950.0,
+     "share": 5.9
+    }
+   ],
+   "top_importers": [
+    {
+     "country": "هند",
+     "kt": 3850.0,
+     "share": 26.6
+    },
+    {
+     "country": "اتحادیه‌ی اروپا",
+     "kt": 2700.0,
+     "share": 18.7
+    },
+    {
+     "country": "ترکیه",
+     "kt": 1600.0,
+     "share": 11.1
+    },
+    {
+     "country": "چین",
+     "kt": 1150.0,
+     "share": 7.9
+    },
+    {
+     "country": "ایران",
+     "kt": 950.0,
+     "share": 6.6
+    }
+   ]
+  }
+ ],
+ "last_updated": "2026-11-02T08:22:07Z"
+}
