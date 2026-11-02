@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
-<link rel="stylesheet" href="style.css?v=20261102">
+<link rel="stylesheet" href="style.css?v=20261102b">
 </head>
 <body>
 <div class="wrap">
@@ -173,7 +173,8 @@ function forecastLine(c) {
   const f = state.forecasts?.items?.[c.fred_id];
   if (!f) return "";
   return `<div class="forecast">پیش‌بینی بانک جهانی (${esc(state.forecasts.edition)}):
-    میانگین 2026 ≈ ${num(fmtPrice(f.y2026))} · 2027 ≈ ${num(fmtPrice(f.y2027))} دلار بر تن${f.note ? ` <span class="meta">(${esc(f.note)})</span>` : ""}</div>`;
+    میانگین 2026 ≈ ${num(fmtPrice(f.y2026))} · 2027 ≈ ${num(fmtPrice(f.y2027))} · 2028 ≈ ${num(fmtPrice(f.y2028))} دلار بر تن${f.note ? ` <span class="meta">(${esc(f.note)})</span>` : ""}
+    ${f.different_series ? `<div class="meta">بانک جهانی این کالا را در بازار یا مبدأ دیگری می‌سنجد؛ با قیمت بالای کارت مستقیم مقایسه نکنید.</div>` : ""}</div>`;
 }
 
 // ---------- هشدارها: فقط واقعیت‌های آخرین ماه، بدون پیش‌بینی ----------

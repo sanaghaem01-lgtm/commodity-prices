@@ -12,7 +12,7 @@ class TestForecasts(unittest.TestCase):
         self.assertRegex(f["url"], r"^https://")
         for fid, x in f["items"].items():
             self.assertIn(fid, ids, f"شناسه‌ی ناشناخته در پیش‌بینی‌ها: {fid}")
-            for y in ("y2026", "y2027"):
+            for y in ("y2026", "y2027", "y2028"):
                 self.assertGreater(x[y], 0, fid)
             # پیش‌بینی بانک جهانی به دلار بر تن است؛ عدد خیلی کوچک یعنی تبدیل از دلار بر کیلو فراموش شده
             self.assertGreater(x["y2026"], 100, f"{fid}: واحد را بررسی کنید (دلار بر تن؟)")
