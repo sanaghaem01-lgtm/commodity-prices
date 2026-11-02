@@ -77,7 +77,8 @@ def read_sheet(xlsx_bytes, sheet_name=SHEET):
     rows = []
     for row in re.findall(r"<row [^>]*>(.*?)</row>", z.read(target).decode("utf-8"), re.S):
         cells = {}
-        for ref, attrs, body in re.findall(r'<c r="([A-Z]+\d+)"([^>]*)>(.*?)</c>', row, re.S):
+        # خانه‌ی خالی به شکل <c .../> است و نباید مقدار خانه‌ی بعدی را بگیرد
+        for ref, attrs, body in re.findall(r'<c r="([A-Z]+\d+)"([^>/]*)(?:/>|>(.*?)</c>)', row, re.S):
             v = re.search(r"<v>(.*?)</v>", body)
             if v:
                 cells[_col_index(ref)] = strings[int(v.group(1))] if 't="s"' in attrs else v.group(1)

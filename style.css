@@ -208,3 +208,4 @@ table.sd th, table.sd td { padding: 6px 8px; text-align: right; white-space: now
 table.sd td:first-child { white-space: normal; min-width: 5.5rem; }
 table.sd th small { display: block; font-weight: 400; font-size: 0.72rem; color: var(--muted); }
 table.sd td:nth-last-child(2) { font-weight: 700; }
+.partial { display: block; color: var(--muted); font-size: 0.75rem; }

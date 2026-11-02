@@ -8,8 +8,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
-<link rel="stylesheet" href="style.css?v=20261102b">
-<script src="iran-common.js?v=20261102b"></script>
+<link rel="stylesheet" href="style.css?v=20261102c">
+<script src="iran-common.js?v=20261102c"></script>
 </head>
 <body>
 <div class="wrap">
@@ -34,8 +34,9 @@
     <div class="breakdown" id="customs-breakdown"></div>
     <div class="caveat">
       <b>توجه:</b> «کشور» در آمار گمرک <b>کشور طرف معامله</b> است، نه لزوماً کشور تولیدکننده
-      (مثلاً ذرت برزیل که از یک شرکت اماراتی خریده شده، «امارات» ثبت می‌شود). آمار گمرک با تأخیر زیاد منتشر می‌شود؛
-      برای ماه‌های اخیر، بخش «آمار کشورهای صادرکننده» پایین همین صفحه را ببینید.
+      (مثلاً ذرت برزیل که از یک شرکت اماراتی خریده شده، «امارات» ثبت می‌شود).
+      ارزش گمرکی <b>CIF</b> است (با حمل و بیمه) و با نرخ بانک مرکزی در روز اظهار حساب شده، پس با قیمت جهانی مستقیم مقایسه نمی‌شود.
+      دوره‌ی ناقص را از روی «میانگین ماهانه» با سال‌های دیگر مقایسه کنید. برای ماه‌های اخیر، بخش «آمار کشورهای صادرکننده» پایین همین صفحه را ببینید.
     </div>
   </section>
 
@@ -65,7 +66,7 @@
   </section>
 
   <footer>
-    آمار گمرک: <a href="https://service.tccim.ir/stats" target="_blank" rel="noopener">سامانه‌ی آمار اتاق بازرگانی تهران</a>. ·
+    آمار گمرک: <a href="https://www.irica.ir/" target="_blank" rel="noopener">گمرک جمهوری اسلامی ایران</a> (منوی آمار). ·
     آمار کشورهای صادرکننده: <a href="https://comtradeplus.un.org/" target="_blank" rel="noopener">UN Comtrade</a>
     (ارزش FOB صادرکننده). · قیمت جهانی: FRED / IMF.
   </footer>
@@ -78,61 +79,54 @@ const MIN_SHARE_OF_TYPICAL_MONTH = 0.05; // ماه‌های خیلی کم‌حج
 const state = { imports: null, prices: null, customs: null, charts: {} };
 
 // ---------- آمار گمرک ----------
-const yearLabel = (y) => `${y} (مارس ${y + 621} تا مارس ${y + 622})`;
-
-function groupSum(rows, key) {
-  const m = {};
-  rows.forEach((r) => {
-    const k = typeof key === "function" ? key(r) : r[key];
-    const x = m[k] ||= { tons: 0, usd: 0 };
-    x.tons += r.tons; x.usd += r.usd;
-  });
-  return Object.entries(m).sort((a, b) => b[1].tons - a[1].tons);
+function yearLabel(y) {
+  // سال شمسی از حدود 21 مارس شروع می‌شود؛ دوره‌ی ناقص زودتر تمام می‌شود
+  const start = y.year + 621;
+  const endMonth = (2 + y.months) % 12;   // 0 = ژانویه
+  const endYear = start + (2 + y.months >= 12 ? 1 : 0);
+  return `${y.year} (مارس ${start} تا ${MONTHS_FA[endMonth]} ${endYear})`;
 }
 
-function barList(title, entries, total, limit = 6) {
-  const shown = entries.slice(0, limit);
-  const rest = entries.slice(limit);
-  if (rest.length) shown.push(["سایر", rest.reduce((a, [, x]) => ({ tons: a.tons + x.tons, usd: a.usd + x.usd }), { tons: 0, usd: 0 })]);
-  return `<div><h3>${esc(title)}</h3><ul class="bars">${shown.map(([name, x]) => {
+function barList(title, entries, total) {
+  const others = total - entries.reduce((a, x) => a + x.tons, 0);
+  const shown = others > total * 0.001 ? [...entries, { name: "سایر", tons: others }] : entries;
+  return `<div><h3>${esc(title)}</h3><ul class="bars">${shown.map((x) => {
     const share = total ? (x.tons / total) * 100 : 0;
-    return `<li><span class="name" title="${esc(name)}">${esc(name)}</span>
+    return `<li><span class="name" title="${esc(x.name)}">${esc(x.name)}</span>
       <span class="track"><span class="fill" style="display:block;width:${share.toFixed(1)}%"></span></span>
-      <span class="val">${num(fmt(share, 1) + "%")} · ${num(fmt(x.tons))} تن${x.tons ? " · " + num(fmt(x.usd / x.tons)) + " دلار/تن" : ""}</span></li>`;
+      <span class="val">${num(fmt(share, 1) + "%")} · ${num(fmt(x.tons))} تن${x.usd && x.tons ? " · " + num(fmt(x.usd / x.tons)) + " دلار/تن" : ""}</span></li>`;
   }).join("")}</ul></div>`;
 }
 
 function renderCustoms(sel) {
   const c = state.customs?.commodities.find((x) => x.hs === sel.customs_hs);
-  if (!c) {
-    document.getElementById("customs-years").innerHTML = `<p class="soon">برای این کالا آمار گمرک تعریف نشده است.</p>`;
-    document.getElementById("customs-breakdown").innerHTML = "";
-    return;
-  }
-  const years = groupSum(c.rows, "year").map(([y, x]) => [+y, x]).sort((a, b) => a[0] - b[0]);
+  const years = c ? c.years : [];
+  const breakdown = document.getElementById("customs-breakdown");
   if (!years.length) {
-    document.getElementById("customs-years").innerHTML = `<p class="soon">برای این کالا داده‌ای منتشر نشده است.</p>`;
-    document.getElementById("customs-breakdown").innerHTML = "";
+    document.getElementById("customs-years").innerHTML = `<p class="soon">برای این کالا آمار گمرک تعریف نشده است.</p>`;
+    breakdown.innerHTML = "";
     return;
   }
+  const perMonth = (y) => y.tons / y.months;
   document.getElementById("customs-years").innerHTML = `<table>
-    <thead><tr><th>سال</th><th>مقدار (تن)</th><th>ارزش (دلار)</th><th>میانگین (دلار/تن)</th><th>تغییر مقدار نسبت به سال قبل</th></tr></thead>
-    <tbody>${years.slice().reverse().map(([y, x], i, arr) => {
-      const prev = arr[i + 1]?.[1];
-      const ch = prev && prev.tons ? ((x.tons - prev.tons) / prev.tons) * 100 : null;
-      return `<tr><td>${yearLabel(y)}</td><td class="num">${fmt(x.tons)}</td><td class="num">${fmt(x.usd)}</td>
-        <td class="num">${x.tons ? fmt(x.usd / x.tons) : "—"}</td>
+    <thead><tr><th>سال</th><th>مقدار (تن)</th><th>میانگین ماهانه (تن)</th><th>ارزش (دلار)</th><th>میانگین (دلار/تن)</th><th>تغییر میانگین ماهانه نسبت به سال قبل</th></tr></thead>
+    <tbody>${years.slice().reverse().map((y, i, arr) => {
+      const prev = arr[i + 1];
+      const ch = prev && prev.tons ? ((perMonth(y) - perMonth(prev)) / perMonth(prev)) * 100 : null;
+      return `<tr><td>${yearLabel(y)}${y.partial ? `<small class="partial">${num(y.months)} ماهه، قطعی نشده</small>` : ""}</td>
+        <td class="num">${fmt(y.tons)}</td><td class="num">${fmt(perMonth(y))}</td><td class="num">${fmt(y.usd)}</td>
+        <td class="num">${y.tons ? fmt(y.usd / y.tons) : "—"}</td>
         <td class="num">${ch == null ? "—" : (ch > 0 ? "▲ " : ch < 0 ? "▼ " : "") + fmt(Math.abs(ch), 1) + "%"}</td></tr>`;
     }).join("")}</tbody></table>`;
 
-  const [lastYear, lastTotal] = years[years.length - 1];
-  const rows = c.rows.filter((r) => r.year === lastYear);
-  document.getElementById("customs-breakdown").innerHTML =
-    `<p class="meta" style="grid-column:1/-1;margin:8px 0 0">جزئیات سال ${lastYear}:</p>` +
-    barList("کشور طرف معامله", groupSum(rows, "country"), lastTotal.tons) +
-    barList("گمرک ورودی", groupSum(rows, "customs"), lastTotal.tons, 5) +
-    barList("نوع کالا (کد تعرفه)", groupSum(rows, (r) => `${r.code} — ${r.desc}`), lastTotal.tons, 5);
+  const last = [...years].reverse().find((y) => y.tons > 0);
+  breakdown.innerHTML = !last ? "" :
+    `<p class="meta" style="grid-column:1/-1;margin:8px 0 0">جزئیات سال ${last.year}${last.partial ? ` (${num(last.months)} ماهه)` : ""}:</p>` +
+    barList("کشور طرف معامله", last.countries, last.tons) +
+    barList("گمرک ورودی", last.customs, last.tons) +
+    barList("نوع کالا (کد تعرفه)", last.codes, last.tons);
 }
+
 // ---------- واردات ----------
 function renderImports(sel) {
   const c = sel.mirror_hs && state.imports?.commodities.find((x) => x.hs === sel.mirror_hs);
@@ -264,10 +258,10 @@ async function init() {
   if (!ok(config)) return;
 
   if (state.customs) {
-    const yrs = state.customs.commodities.flatMap((c) => c.rows.map((r) => r.year));
+    const ys = state.customs.commodities[0].years;
+    const newest = ys[ys.length - 1];
     document.getElementById("customs-meta").innerHTML =
-      `منبع: گمرک ایران، از سامانه‌ی آمار اتاق بازرگانی تهران · آخرین سال منتشرشده: ${yrs.length ? yearLabel(Math.max(...yrs)) : "—"}` +
-      ` · به‌روزرسانی: ${num((state.customs.last_updated || "").slice(0, 10))}`;
+      `منبع: گمرک جمهوری اسلامی ایران · آخرین دوره: ${yearLabel(newest)}${newest.partial ? ` (${num(newest.months)} ماهه)` : ""}`;
     document.getElementById("customs-panel").hidden = false;
   }
   if (state.imports) {

@@ -4,6 +4,14 @@
     {"key": "rice", "name_fa": "برنج", "mirror_hs": "1006", "customs_hs": "1006"},
     {"key": "coffee", "name_fa": "قهوه", "customs_hs": "0901"},
     {"key": "cocoa", "name_fa": "کاکائو", "customs_hs": "1801"},
-    {"key": "oil", "name_fa": "روغن", "customs_hs": "1507"}
+    {"key": "oil", "name_fa": "روغن سویا", "customs_hs": "1507"},
+    {"key": "soymeal", "name_fa": "کنجاله‌ی سویا", "customs_hs": "2304"},
+    {"key": "soybeans", "name_fa": "دانه‌ی سویا", "customs_hs": "1201"},
+    {"key": "wheat", "name_fa": "گندم", "customs_hs": "1001"},
+    {"key": "barley", "name_fa": "جو", "customs_hs": "1003"},
+    {"key": "sugar", "name_fa": "شکر", "customs_hs": "1701"},
+    {"key": "tea", "name_fa": "چای", "customs_hs": "0902"},
+    {"key": "palmoil", "name_fa": "روغن پالم", "customs_hs": "1511"},
+    {"key": "sunoil", "name_fa": "روغن آفتابگردان", "customs_hs": "15121"}
   ]
 }

@@ -7,8 +7,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261102b">
-<script src="iran-common.js?v=20261102b"></script>
+<link rel="stylesheet" href="style.css?v=20261102c">
+<script src="iran-common.js?v=20261102c"></script>
 </head>
 <body>
 <div class="wrap">
@@ -52,8 +52,7 @@ function sigFlow(c) {
   const mirror = c.mirror_hs && state.imports?.commodities.find((x) => x.hs === c.mirror_hs);
   if (!mirror || !mirror.rows.length) {
     el.innerHTML = `<h3>۱. جریان واردات اخیر</h3>
-      <p>برای ${esc(c.name_fa)} آمار ماهانه‌ی به‌روز در دسترس نیست؛ آمار کشورهای صادرکننده برای این کالا پوشش کافی ندارد
-      (بیشتر از راه امارات وارد می‌شود).</p><p class="muted">آمار سالانه‌ی گمرک این کالا در صفحه‌ی <a href="iran-imports.html">آمار واردات ایران</a> است.</p>`;
+      <p>برای ${esc(c.name_fa)} آمار ماهانه‌ی به‌روز نداریم: آمار کشورهای صادرکننده فعلاً فقط برای ذرت و برنج نشان داده می‌شود.</p><p class="muted">آمار سالانه‌ی گمرک این کالا در صفحه‌ی <a href="iran-imports.html">آمار واردات ایران</a> است.</p>`;
     return;
   }
   const tonsOf = (p) => mirror.rows.filter((r) => r.period === p).reduce((a, r) => a + (r.tons || 0), 0);
@@ -100,27 +99,24 @@ function sigDemand(c) {
 function sigPattern(c) {
   const el = document.getElementById("sig-pattern");
   const cu = state.customs?.commodities.find((x) => x.hs === c.customs_hs);
-  const monthly = cu ? cu.rows.filter((r) => r.month) : [];
-  if (!monthly.length) {
+  const years = Object.keys(cu?.monthly || {}).sort();
+  // میانگین سهم هر ماه از کل همان سال، تا یک سال پرحجم الگو را تعیین نکند
+  const usable = years.map((y) => cu.monthly[y]).filter((m) => m.reduce((a, b) => a + b, 0) > 0);
+  if (!usable.length) {
     el.innerHTML = `<h3>۳. الگوی ماهانه‌ی واردات ایران</h3><p class="muted">آمار ماهانه‌ی گمرک برای این کالا موجود نیست.</p>`;
     return;
   }
-  const year = Math.max(...monthly.map((r) => r.year));
-  const rows = monthly.filter((r) => r.year === year);
-  const total = rows.reduce((a, r) => a + r.tons, 0);
-  const by = Array.from({ length: 12 }, (_, i) => rows.filter((r) => r.month === i + 1).reduce((a, r) => a + r.tons, 0));
-  const max = Math.max(...by);
-  const peak = by.indexOf(max);
-  el.innerHTML = `<h3>۳. الگوی ماهانه‌ی واردات ایران (گمرک، سال ${year})</h3>
-    <div class="cols" role="img" aria-label="سهم هر ماه از واردات سال ${year}">${by.map((t, i) => {
-      const share = total ? (t / total) * 100 : 0;
-      return `<div class="col" title="${MONTHS_IR[i]}: ${fmt(share, 1)}% از واردات سال (${fmt(t)} تن)">
-        <b>${num(fmt(share, 0) + "%")}</b>
-        <div class="bar" style="height:${max ? Math.max(2, (t / max) * 90).toFixed(0) : 0}px"></div>
-        <span>${MONTHS_IR[i].slice(0, 3)}</span></div>`;
-    }).join("")}</div>
-    <p>بیشترین واردات: <b>${MONTHS_IR[peak]}</b> (${num(fmt(total ? (max / total) * 100 : 0, 1) + "%")} از کل سال).</p>
-    <p class="muted">فقط یک سال داده‌ی ماهانه منتشر شده؛ ممکن است الگوی همه‌ی سال‌ها نباشد. عدد بالای هر ستون سهم آن ماه از واردات کل سال است.</p>`;
+  const shares = Array.from({ length: 12 }, (_, i) =>
+    usable.reduce((a, m) => a + (m[i] / m.reduce((x, y) => x + y, 0)) * 100, 0) / usable.length);
+  const max = Math.max(...shares);
+  const peak = shares.indexOf(max);
+  el.innerHTML = `<h3>۳. الگوی ماهانه‌ی واردات ایران (گمرک، ${years.join(" و ")})</h3>
+    <div class="cols" role="img" aria-label="میانگین سهم هر ماه از واردات سال">${shares.map((s, i) => `<div class="col" title="${MONTHS_IR[i]}: ${fmt(s, 1)}% از واردات سال">
+        <b>${num(fmt(s, 0) + "%")}</b>
+        <div class="bar" style="height:${Math.max(2, (s / max) * 90).toFixed(0)}px"></div>
+        <span>${MONTHS_IR[i].slice(0, 3)}</span></div>`).join("")}</div>
+    <p>بیشترین واردات: <b>${MONTHS_IR[peak]}</b> (به‌طور میانگین ${num(fmt(max, 1) + "%")} از کل سال).</p>
+    <p class="muted">میانگین ${num(usable.length)} سال؛ گمرک برای سال‌های بعد آمار ماهانه را در این فایل‌ها نداده است. ممکن است الگوی همه‌ی سال‌ها نباشد. عدد بالای هر ستون سهم آن ماه از واردات کل سال است.</p>`;
 }
 
 function renderSignals(c) {
