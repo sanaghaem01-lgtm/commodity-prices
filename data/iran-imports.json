@@ -1184,9 +1184,16 @@
      "country_fa": "هند",
      "tons": 92797.8,
      "usd": 83034132
+    },
+    {
+     "period": "2026-08",
+     "country": "India",
+     "country_fa": "هند",
+     "tons": 94642.9,
+     "usd": 90405673
     }
    ]
   }
  ],
- "last_updated": "2026-10-11T11:57:41Z"
+ "last_updated": "2026-11-02T16:41:25Z"
 }
