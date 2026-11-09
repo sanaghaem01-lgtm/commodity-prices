@@ -3,16 +3,22 @@
  "categories": {
   "قهوه، کاکائو، شکر و چای": [
    {
-    "title": "Browns Plantations commissions new orthodox tea production line",
-    "url": "https://www.foodbusinessmea.com/browns-plantations-commissions-new-orthodox-tea-production-line/",
+    "title": "Ghana COCOBOD relaunches free fertilizer programme to boost cocoa production",
+    "url": "https://www.foodbusinessmea.com/ghana-cocobod-relaunches-free-fertilizer-programme-to-boost-cocoa-production/",
     "source": "Food Business MEA",
-    "date": "2026-11-05"
+    "date": "2026-11-09"
    },
    {
-    "title": "Kenya targets sugar export market within three years",
-    "url": "https://www.foodbusinessmea.com/kenya-targets-sugar-export-market-within-three-years/",
+    "title": "Kenya sugar production jumps 56.7% to 690,521 tonnes",
+    "url": "https://www.foodbusinessmea.com/kenya-sugar-production-jumps-56-7-to-690521-tonnes/",
     "source": "Food Business MEA",
-    "date": "2026-11-05"
+    "date": "2026-11-09"
+   },
+   {
+    "title": "Weekly Coffee News: Costa Rica Harvest Concerns + Restoring Iconic Coffee Sign",
+    "url": "https://dailycoffeenews.com/2026/11/06/weekly-coffee-news-costa-rica-harvest-concerns-restoring-iconic-coffee-sign/",
+    "source": "Daily Coffee News",
+    "date": "2026-11-06"
    },
    {
     "title": "Keurig and Luckin Report Growth Amid Coffee Market Shifts",
@@ -21,63 +27,69 @@
     "date": "2026-11-03"
    },
    {
+    "title": "Sugar maple trees and autumn foliage on the farm",
+    "url": "https://www.farmprogress.com/conservation-and-sustainability/sugar-maple-trees-and-autumn-foliage-on-the-farm",
+    "source": "Farm Progress",
+    "date": "2026-11-06"
+   },
+   {
     "title": "Kraft Heinz to sell North American coffee business for $650M",
     "url": "https://www.foodnavigator.com/Article/2026/11/04/kraft-heinz-to-sell-coffee-business-in-650m-deal/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS",
     "source": "BeverageDaily",
-    "date": "2026-11-04"
-   },
-   {
-    "title": "Hundreds of Cuppers to Help Build a Kenya Coffee Flavor Atlas",
-    "url": "https://dailycoffeenews.com/2026/11/04/hundreds-of-cuppers-to-help-build-a-kenya-coffee-flavor-atlas/",
-    "source": "Daily Coffee News",
-    "date": "2026-11-04"
-   },
-   {
-    "title": "Cargill debuts reduced sugar brand",
-    "url": "https://www.foodbusinessnews.net/articles/31301-cargill-debuts-reduced-sugar-brand",
-    "source": "Food Business News",
     "date": "2026-11-04"
    }
   ],
   "غلات": [
    {
-    "title": "Corn, soybean harvest prices top spring guarantees",
-    "url": "https://www.farmprogress.com/tv-and-radio/corn-soybean-harvest-prices-top-spring-guarantees",
-    "source": "Farm Progress",
-    "date": "2026-11-05"
-   },
-   {
-    "title": "US whole wheat flour production erodes further",
-    "url": "https://www.world-grain.com/articles/23418-us-whole-wheat-flour-production-erodes-further",
+    "title": "Canadian wheat output expected to fall by 10%",
+    "url": "https://www.world-grain.com/articles/23432-canadian-wheat-output-expected-to-fall-by-10",
     "source": "World-Grain",
-    "date": "2026-11-05"
+    "date": "2026-11-09"
    },
    {
-    "title": "Record grain ending stocks forecast in Ukraine",
-    "url": "https://www.world-grain.com/articles/23415-record-grain-ending-stocks-forecast-in-ukraine",
-    "source": "World-Grain",
-    "date": "2026-11-04"
-   },
-   {
-    "title": "Late-season weather robbed corn yields",
-    "url": "https://www.farmprogress.com/corn/late-season-weather-robbed-corn-yields",
+    "title": "Do corn exports belong back in the spotlight?",
+    "url": "https://www.farmprogress.com/markets-and-quotes/afternoon-market-recap",
     "source": "Farm Progress",
-    "date": "2026-11-04"
+    "date": "2026-11-06"
+   },
+   {
+    "title": "Corn output decline forecast for South Africa",
+    "url": "https://www.world-grain.com/articles/23427-corn-output-decline-forecast-for-south-africa",
+    "source": "World-Grain",
+    "date": "2026-11-06"
+   },
+   {
+    "title": "Why corn prices could rally: Mexico's record buy signals market bottom",
+    "url": "https://www.farmprogress.com/corn/why-corn-prices-could-rally-mexico-s-record-buy-signals-market-bottom",
+    "source": "Farm Progress",
+    "date": "2026-11-06"
+   },
+   {
+    "title": "Whole wheat flour production off 1.3%",
+    "url": "https://www.bakingbusiness.com/articles/67200-whole-wheat-flour-production-off-13",
+    "source": "Baking Business",
+    "date": "2026-11-05"
    },
    {
     "title": "Decoding crop stress: Mycovolt sets sights on Asia’s rice sector following UK potato trials",
     "url": "https://www.agnavigator.com/Article/2026/11/03/mycovolt-sets-sights-on-asias-rice-sector-following-uk-potato-trials/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS",
     "source": "FeedNavigator",
     "date": "2026-11-03"
-   },
-   {
-    "title": "Flour production slips in quarter",
-    "url": "https://www.bakingbusiness.com/articles/67180-flour-production-slips-in-quarter",
-    "source": "Baking Business",
-    "date": "2026-11-02"
    }
   ],
   "دانه‌های روغنی و روغن": [
+   {
+    "title": "Europe’s soybean harvest set to plunge as drought cuts output",
+    "url": "https://www.agnavigator.com/Article/2026/11/06/europes-soybean-harvest-set-to-plunge-as-drought-cuts-output/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS",
+    "source": "FeedNavigator",
+    "date": "2026-11-06"
+   },
+   {
+    "title": "Will soybean prices recover in November after October’s sell-off?",
+    "url": "https://www.farmprogress.com/soybean/will-soybean-prices-recover-in-november-after-october-s-sell-off-",
+    "source": "Farm Progress",
+    "date": "2026-11-06"
+   },
    {
     "title": "Corn, soybean harvest prices top spring guarantees",
     "url": "https://www.farmprogress.com/tv-and-radio/corn-soybean-harvest-prices-top-spring-guarantees",
@@ -85,64 +97,57 @@
     "date": "2026-11-05"
    },
    {
-    "title": "USDA Exports: Spain buys soybeans",
-    "url": "https://www.farmprogress.com/marketing/flash-sales",
-    "source": "Farm Progress",
-    "date": "2026-11-04"
+    "title": "Canadian canola groups welcome China agreement",
+    "url": "https://www.world-grain.com/articles/23430-canadian-canola-groups-welcome-china-agreement",
+    "source": "World-Grain",
+    "date": "2026-11-06"
+   },
+   {
+    "title": "Fire reportedly damages Russian oilseed processor",
+    "url": "https://www.world-grain.com/articles/23425-fire-reportedly-damages-russian-oilseed-processor",
+    "source": "World-Grain",
+    "date": "2026-11-06"
    }
   ],
   "گوشت و آبزیان": [
    {
-    "title": "UCN launches weekly fresh Norwegian Atlantic salmon, DDP Poland price assessments",
-    "url": "https://www.undercurrentnews.com/2026/11/05/ucn-launches-weekly-fresh-norwegian-atlantic-salmon-ddp-poland-price-assessments/",
+    "title": "Chilean salmon prices to Brazil ease in week 46 on improved supply",
+    "url": "https://www.undercurrentnews.com/2026/11/09/chilean-salmon-prices-to-brazil-ease-in-week-46-on-improved-supply/",
     "source": "Undercurrent News",
-    "date": "2026-11-05"
+    "date": "2026-11-09"
    },
    {
-    "title": "US wholesale: Chilean salmon’s frozen squeeze deepens as fresh prices pull further ahead",
-    "url": "https://www.undercurrentnews.com/2026/11/05/us-wholesale-chilean-salmons-frozen-squeeze-deepens-as-fresh-pulls-further-ahead/",
+    "title": "Week 46 ‘market pulse’ updates available on key seafood commodities",
+    "url": "https://www.undercurrentnews.com/2026/11/09/week-46-market-pulse-updates-available-on-key-seafood-commodities/",
     "source": "Undercurrent News",
-    "date": "2026-11-05"
+    "date": "2026-11-09"
    },
    {
-    "title": "USMEF warns port dispute could disrupt meat exports",
-    "url": "https://www.meatpoultry.com/articles/34264-usmef-warns-port-dispute-could-disrupt-meat-exports",
-    "source": "Meat+Poultry",
-    "date": "2026-11-02"
-   },
-   {
-    "title": "Who controls the next decade of beef demand?",
-    "url": "https://www.feedstuffs.com/commentary/who-controls-the-next-decade-of-beef-demand-",
+    "title": "Tyson and Allied Beef plan partnership to bolster cattle supply",
+    "url": "https://www.feedstuffs.com/agribusiness-news/tyson-and-allied-beef-plan-partnership-to-bolster-cattle-supply",
     "source": "Feedstuffs",
-    "date": "2026-10-29"
+    "date": "2026-11-09"
    },
    {
-    "title": "Can you feed rejected soybeans to beef cattle?",
-    "url": "https://www.farmprogress.com/livestock/can-you-feed-rejected-soybeans-to-beef-cattle-",
+    "title": "U.S. beef exports stay strong despite record-high prices in September",
+    "url": "https://www.farmprogress.com/tv-and-radio/u-s-beef-exports-stay-strong-despite-record-high-prices-in-september",
     "source": "Farm Progress",
-    "date": "2026-11-05"
+    "date": "2026-11-09"
    },
    {
-    "title": "Cybersecurity breaches in Europe disrupt retail meat cold storage",
-    "url": "https://www.meatpoultry.com/articles/34273-cybersecurity-breaches-in-europe-disrupt-retail-meat-cold-storage",
+    "title": "Norway targets US$3B in seafood exports to China by 2035",
+    "url": "https://www.foodbusinessmea.com/norway-targets-us3b-in-seafood-exports-to-china-by-2035/",
+    "source": "Food Business MEA",
+    "date": "2026-11-07"
+   },
+   {
+    "title": "USMEF: US beef exports outperform pork in September",
+    "url": "https://www.meatpoultry.com/articles/34287-usmef-us-beef-exports-outperform-pork-in-september",
     "source": "Meat+Poultry",
-    "date": "2026-11-04"
+    "date": "2026-11-06"
    }
   ],
-  "مواد اولیه‌ی کشاورزی": [
-   {
-    "title": "For a Chinese Trade Deal, Cotton’s Wait Continues",
-    "url": "https://www.cottongrower.com/opinion/for-a-chinese-trade-deal-cottons-wait-continues/",
-    "source": "Cotton Grower",
-    "date": "2026-10-30"
-   },
-   {
-    "title": "Election Day Primer! Cotton on the Ballot",
-    "url": "https://www.cottongrower.com/companion/election-day-primer-cotton-on-the-ballot/",
-    "source": "Cotton Grower",
-    "date": "2026-10-30"
-   }
-  ]
+  "مواد اولیه‌ی کشاورزی": []
  },
  "reports": {
   "_همه": [
@@ -194,5 +199,5 @@
    }
   ]
  },
- "last_updated": "2026-11-05T14:49:52Z"
+ "last_updated": "2026-11-09T16:41:40Z"
 }
