@@ -80,6 +80,7 @@ date,commodity,price_original,unit_original,usd_per_ton
 2026-07-01,Coffee Arabica,7.91,U.S. Dollars per Kilogram,7910.0
 2026-08-01,Coffee Arabica,7.97,U.S. Dollars per Kilogram,7970.0
 2026-09-01,Coffee Arabica,7.26,U.S. Dollars per Kilogram,7260.0
+2026-10-01,Coffee Arabica,7.4,U.S. Dollars per Kilogram,7400.0
 2020-01-01,Coffee Robusta,1.56,U.S. Dollars per Kilogram,1560.0
 2020-02-01,Coffee Robusta,1.5,U.S. Dollars per Kilogram,1500.0
 2020-03-01,Coffee Robusta,1.49,U.S. Dollars per Kilogram,1490.0
@@ -161,6 +162,7 @@ date,commodity,price_original,unit_original,usd_per_ton
 2026-07-01,Coffee Robusta,4.07,U.S. Dollars per Kilogram,4070.0
 2026-08-01,Coffee Robusta,3.98,U.S. Dollars per Kilogram,3980.0
 2026-09-01,Coffee Robusta,3.69,U.S. Dollars per Kilogram,3690.0
+2026-10-01,Coffee Robusta,3.63,U.S. Dollars per Kilogram,3630.0
 2020-01-01,Cocoa,2.6,U.S. Dollars per Kilogram,2600.0
 2020-02-01,Cocoa,2.72,U.S. Dollars per Kilogram,2720.0
 2020-03-01,Cocoa,2.34,U.S. Dollars per Kilogram,2340.0
@@ -242,6 +244,7 @@ date,commodity,price_original,unit_original,usd_per_ton
 2026-07-01,Cocoa,5.61,U.S. Dollars per Kilogram,5610.0
 2026-08-01,Cocoa,5.95,U.S. Dollars per Kilogram,5950.0
 2026-09-01,Cocoa,5.92,U.S. Dollars per Kilogram,5920.0
+2026-10-01,Cocoa,5.75,U.S. Dollars per Kilogram,5750.0
 2020-01-01,Sugar,0.31,U.S. Dollars per Kilogram,310.0
 2020-02-01,Sugar,0.33,U.S. Dollars per Kilogram,330.0
 2020-03-01,Sugar,0.26,U.S. Dollars per Kilogram,260.0
@@ -323,6 +326,7 @@ date,commodity,price_original,unit_original,usd_per_ton
 2026-07-01,Sugar,0.34,U.S. Dollars per Kilogram,340.0
 2026-08-01,Sugar,0.38,U.S. Dollars per Kilogram,380.0
 2026-09-01,Sugar,0.41,U.S. Dollars per Kilogram,410.0
+2026-10-01,Sugar,0.43,U.S. Dollars per Kilogram,430.0
 2020-01-01,Tea,280.542589726087,U.S. Cents per Kilogram,2805.43
 2020-02-01,Tea,267.24550411,U.S. Cents per Kilogram,2672.46
 2020-03-01,Tea,260.1179093454545,U.S. Cents per Kilogram,2601.18
@@ -566,6 +570,7 @@ date,commodity,price_original,unit_original,usd_per_ton
 2026-07-01,Corn,213.4,U.S. Dollars per Metric Ton,213.4
 2026-08-01,Corn,224.0,U.S. Dollars per Metric Ton,224.0
 2026-09-01,Corn,239.6,U.S. Dollars per Metric Ton,239.6
+2026-10-01,Corn,226.5,U.S. Dollars per Metric Ton,226.5
 2020-01-01,Barley,115.0516597904742,U.S. Dollars per Metric Ton,115.05
 2020-02-01,Barley,110.8359566742724,U.S. Dollars per Metric Ton,110.84
 2020-03-01,Barley,101.676812669613,U.S. Dollars per Metric Ton,101.68
@@ -728,6 +733,7 @@ date,commodity,price_original,unit_original,usd_per_ton
 2026-07-01,Rice,454.7,U.S. Dollars per Metric Ton,454.7
 2026-08-01,Rice,452.8,U.S. Dollars per Metric Ton,452.8
 2026-09-01,Rice,473.2,U.S. Dollars per Metric Ton,473.2
+2026-10-01,Rice,467.4,U.S. Dollars per Metric Ton,467.4
 2020-01-01,Soybeans,337.079705,U.S. Dollars per Metric Ton,337.08
 2020-02-01,Soybeans,325.4283145657895,U.S. Dollars per Metric Ton,325.43
 2020-03-01,Soybeans,319.3361563636364,U.S. Dollars per Metric Ton,319.34
@@ -1213,7 +1219,8 @@ date,commodity,price_original,unit_original,usd_per_ton
 2026-06-01,Rapeseed Oil,1522.0,U.S. Dollars per Metric Ton,1522.0
 2026-07-01,Rapeseed Oil,1488.0,U.S. Dollars per Metric Ton,1488.0
 2026-08-01,Rapeseed Oil,1474.0,U.S. Dollars per Metric Ton,1474.0
-2026-09-01,Rapeseed Oil,1440.0,U.S. Dollars per Metric Ton,1440.0
+2026-09-01,Rapeseed Oil,1442.0,U.S. Dollars per Metric Ton,1442.0
+2026-10-01,Rapeseed Oil,1405.0,U.S. Dollars per Metric Ton,1405.0
 2020-01-01,Olive Oil,2687.323068217391,U.S. Dollars per Metric Ton,2687.32
 2020-02-01,Olive Oil,2737.9373004,U.S. Dollars per Metric Ton,2737.94
 2020-03-01,Olive Oil,2796.255093772727,U.S. Dollars per Metric Ton,2796.26
@@ -1457,6 +1464,7 @@ date,commodity,price_original,unit_original,usd_per_ton
 2026-07-01,Beef,7.31,U.S. Dollars per Kilogram,7310.0
 2026-08-01,Beef,7.28,U.S. Dollars per Kilogram,7280.0
 2026-09-01,Beef,6.86,U.S. Dollars per Kilogram,6860.0
+2026-10-01,Beef,6.83,U.S. Dollars per Kilogram,6830.0
 2020-01-01,Lamb,135.0480917225713,U.S. Cents per Pound,2977.27
 2020-02-01,Lamb,128.682071685791,U.S. Cents per Pound,2836.92
 2020-03-01,Lamb,117.463062286377,U.S. Cents per Pound,2589.59
@@ -1862,6 +1870,7 @@ date,commodity,price_original,unit_original,usd_per_ton
 2026-07-01,Cotton,1.96,U.S. Dollars per Kilogram,1960.0
 2026-08-01,Cotton,2.11,U.S. Dollars per Kilogram,2110.0
 2026-09-01,Cotton,2.1,U.S. Dollars per Kilogram,2100.0
+2026-10-01,Cotton,2.0,U.S. Dollars per Kilogram,2000.0
 2020-01-01,Wool (Coarse),1188.525231223762,U.S. Cents per Kilogram,11885.25
 2020-02-01,Wool (Coarse),1143.091099764525,U.S. Cents per Kilogram,11430.91
 2020-03-01,Wool (Coarse),1008.145571265867,U.S. Cents per Kilogram,10081.46
@@ -2186,3 +2195,4 @@ date,commodity,price_original,unit_original,usd_per_ton
 2026-07-01,Rubber,2.78,U.S. Dollars per Kilogram,2780.0
 2026-08-01,Rubber,2.73,U.S. Dollars per Kilogram,2730.0
 2026-09-01,Rubber,2.75,U.S. Dollars per Kilogram,2750.0
+2026-10-01,Rubber,2.83,U.S. Dollars per Kilogram,2830.0
