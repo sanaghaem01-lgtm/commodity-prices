@@ -1166,6 +1166,13 @@
     },
     {
      "period": "2026-05",
+     "country": "Kazakhstan",
+     "country_fa": "قزاقستان",
+     "tons": 180.0,
+     "usd": 18000
+    },
+    {
+     "period": "2026-05",
      "country": "Oman",
      "country_fa": "عمان",
      "tons": 50.1,
@@ -1195,5 +1202,5 @@
    ]
   }
  ],
- "last_updated": "2026-11-02T16:41:25Z"
+ "last_updated": "2026-11-09T16:59:19Z"
 }
