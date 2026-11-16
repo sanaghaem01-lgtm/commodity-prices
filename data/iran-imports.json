@@ -509,8 +509,15 @@
      "period": "2026-01",
      "country": "Brazil",
      "country_fa": "برزیل",
-     "tons": 1171716.1,
-     "usd": 273249692
+     "tons": 1120298.2,
+     "usd": 261137935
+    },
+    {
+     "period": "2026-01",
+     "country": "Türkiye",
+     "country_fa": "ترکیه",
+     "tons": 677.0,
+     "usd": 364751
     },
     {
      "period": "2026-01",
@@ -532,6 +539,13 @@
      "country_fa": "برزیل",
      "tons": 160366.8,
      "usd": 35245659
+    },
+    {
+     "period": "2026-02",
+     "country": "Türkiye",
+     "country_fa": "ترکیه",
+     "tons": 608.0,
+     "usd": 331049
     },
     {
      "period": "2026-02",
@@ -563,6 +577,13 @@
     },
     {
      "period": "2026-04",
+     "country": "Türkiye",
+     "country_fa": "ترکیه",
+     "tons": 729.0,
+     "usd": 341870
+    },
+    {
+     "period": "2026-04",
      "country": "Oman",
      "country_fa": "عمان",
      "tons": 50.1,
@@ -577,10 +598,24 @@
     },
     {
      "period": "2026-05",
+     "country": "Türkiye",
+     "country_fa": "ترکیه",
+     "tons": 324.0,
+     "usd": 198858
+    },
+    {
+     "period": "2026-05",
      "country": "Oman",
      "country_fa": "عمان",
      "tons": 66.1,
      "usd": 37256
+    },
+    {
+     "period": "2026-06",
+     "country": "Türkiye",
+     "country_fa": "ترکیه",
+     "tons": 175.0,
+     "usd": 98450
     },
     {
      "period": "2026-06",
@@ -597,11 +632,32 @@
      "usd": 22522684
     },
     {
+     "period": "2026-07",
+     "country": "Türkiye",
+     "country_fa": "ترکیه",
+     "tons": 100.0,
+     "usd": 63250
+    },
+    {
      "period": "2026-08",
      "country": "Brazil",
      "country_fa": "برزیل",
      "tons": 426985.6,
-     "usd": 93554217
+     "usd": 93549315
+    },
+    {
+     "period": "2026-08",
+     "country": "Türkiye",
+     "country_fa": "ترکیه",
+     "tons": 175.0,
+     "usd": 123875
+    },
+    {
+     "period": "2026-09",
+     "country": "Brazil",
+     "country_fa": "برزیل",
+     "tons": 853503.7,
+     "usd": 193218921
     }
    ]
   },
@@ -1089,6 +1145,13 @@
     },
     {
      "period": "2026-02",
+     "country": "Türkiye",
+     "country_fa": "ترکیه",
+     "tons": 304.8,
+     "usd": 177595
+    },
+    {
+     "period": "2026-02",
      "country": "Kazakhstan",
      "country_fa": "قزاقستان",
      "tons": 138.0,
@@ -1110,6 +1173,13 @@
     },
     {
      "period": "2026-03",
+     "country": "Türkiye",
+     "country_fa": "ترکیه",
+     "tons": 178.5,
+     "usd": 84171
+    },
+    {
+     "period": "2026-03",
      "country": "Oman",
      "country_fa": "عمان",
      "tons": 3.6,
@@ -1128,6 +1198,13 @@
      "country_fa": "هند",
      "tons": 40371.3,
      "usd": 32753950
+    },
+    {
+     "period": "2026-04",
+     "country": "Türkiye",
+     "country_fa": "ترکیه",
+     "tons": 135.2,
+     "usd": 80525
     },
     {
      "period": "2026-04",
@@ -1166,6 +1243,13 @@
     },
     {
      "period": "2026-05",
+     "country": "Türkiye",
+     "country_fa": "ترکیه",
+     "tons": 241.5,
+     "usd": 130727
+    },
+    {
+     "period": "2026-05",
      "country": "Kazakhstan",
      "country_fa": "قزاقستان",
      "tons": 180.0,
@@ -1186,6 +1270,13 @@
      "usd": 40758354
     },
     {
+     "period": "2026-06",
+     "country": "Türkiye",
+     "country_fa": "ترکیه",
+     "tons": 373.5,
+     "usd": 206546
+    },
+    {
      "period": "2026-07",
      "country": "India",
      "country_fa": "هند",
@@ -1193,14 +1284,28 @@
      "usd": 83034132
     },
     {
+     "period": "2026-07",
+     "country": "Türkiye",
+     "country_fa": "ترکیه",
+     "tons": 296.0,
+     "usd": 287296
+    },
+    {
      "period": "2026-08",
      "country": "India",
      "country_fa": "هند",
      "tons": 94642.9,
      "usd": 90405673
+    },
+    {
+     "period": "2026-08",
+     "country": "Türkiye",
+     "country_fa": "ترکیه",
+     "tons": 50.2,
+     "usd": 28718
     }
    ]
   }
  ],
- "last_updated": "2026-11-09T16:59:19Z"
+ "last_updated": "2026-11-16T16:37:37Z"
 }
